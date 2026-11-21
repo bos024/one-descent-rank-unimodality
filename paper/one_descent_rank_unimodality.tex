@@ -1,0 +1,448 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\DeclareMathSizes{10}{10}{8}{8}
+\DeclareMathSizes{10.95}{10.95}{8}{8}
+\setlength{\emergencystretch}{1.8em}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\coef}[2]{[z^{#1}]#2}
+\newcommand{\pos}[1]{(#1)_+}
+\newcommand{\Prb}{\mathbb P}
+\newcommand{\NN}{\mathbb Z_{\geq0}}
+\title{Rank-unimodality of one-descent composition ideals}
+\hypersetup{unicode=true,
+  pdftitle={Rank-unimodality of one-descent composition ideals},
+  pdfauthor={Zhang Yibo and Zhang Zhanhe}}
+% The byline uses the title-page space otherwise reserved for an empty date.
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \begingroup\centering
+  \vspace*{0.6em}%
+  {\LARGE\@title\par}\vspace{0.85em}%
+  \@author\par
+  \endgroup
+  \vspace{0.85em}}
+\makeatother
+\author{\begin{tabular}{@{}c@{\hspace{2em}}c@{}}
+  \normalsize Zhang Yibo &
+  \normalsize Zhang Zhanhe\\[-1pt]
+  \footnotesize\href{https://orcid.org/0009-0002-2005-5781}{ORCID 0009-0002-2005-5781} &
+  \footnotesize\href{https://orcid.org/0009-0007-2883-9640}{ORCID 0009-0007-2883-9640}
+\end{tabular}\endgraf\vspace{3pt}%
+{\footnotesize Both authors contributed equally as joint first authors. Zhang Zhanhe is the corresponding author.\endgraf}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+The principal ideal of a composition consists of its distinct generalized
+subwords, ranked by the sum of their parts. We prove rank-unimodality for
+every composition with at most one descent and for every bitonic composition.
+Both the part sizes and the number of parts are unrestricted. The main
+ingredient is a coupling for a monotone host. If a subword is chosen uniformly
+among those of weight at most \(n\), its length and its unused weight can be
+made to increase weakly when \(n\) increases by one. A decreasing threshold
+on the next available part then compares the positive difference of two
+ordinary rank coefficients with an earlier cumulative ratio. This supplies
+the coefficient inequality in the hereditary reduction at a strict peak.
+\end{abstract}
+
+\section{Principal ideals and a coefficient inequality}
+A composition is a finite word on the positive integers. Its weight is the
+sum of its letters. The empty word has weight zero. Write \(u\preceq w\)
+if the letters of \(u\) can be assigned in order to distinct positions of
+\(w\), each assigned letter at most the letter in its position. Set
+\[
+                  F_w(z)=\sum_{u\preceq w}z^{\wt(u)}.
+\]
+Each word is counted once, independently of its number of embeddings. A
+descent is an index \(i\) with \(w_i>w_{i+1}\). A bitonic word weakly
+increases and then weakly decreases. A sequence is unimodal if it weakly
+increases up to some index and weakly decreases from that index onwards.
+
+\begin{theorem}\label{thm:main}
+If \(w\) has at most one descent, the coefficients of \(F_w\) are unimodal.
+The same holds if \(w\) is bitonic.
+\end{theorem}
+
+Under the usual correspondence between compositions and layered permutations,
+weight is permutation length and generalized subword containment is pattern
+containment. The theorem settles the one-descent case of Vatter's
+Conjecture~2.6 \cite{vatter}; the descent here is in the sequence of layer
+sizes. Sagan's rectangular theorem and the monotone-host corollary give
+earlier cases \cite{sagan,vatter}. Zhang derived the symmetric peak
+identity of Section 4 and proved the cases of a single final part and
+of a peak at least the combined arm weight minus two \cite{zhang}.
+Chen reports rank-unimodality for hosts of length at most six, tail
+log-concavity for bitonic hosts with parts at most five, and tail
+log-concavity for the ordinary product of two monotone arms \cite{chen}.
+
+We call a weakly increasing host an arm. We use zero for the maximum
+of an empty arm and \(\max(X,Y)\) for the largest part of either arm.
+For an arm \(X\), let
+\(A_i=[z^i]F_X\), \(G_i=\sum_{k=0}^i A_k\), and
+\(D_i=\max(A_i-A_{i-1},0)\) for \(i\ge2\). Coefficients at negative indices
+are zero. The inequality that will be used at a peak is
+\begin{equation}
+            G_jD_{N-1}\ \ge\ G_{j-1}D_N
+            \qquad (1\le j\le N-3,\ D_{N-1}D_N>0).              \label{eq:bridge}
+\end{equation}
+We will obtain it also for \(j=N-2\) when \(N\ge3\).
+The distinctions between \(G\), the coefficients \(A_i\), and the clipped
+differences \(D_i\) are essential. Already \(F_{(1,2)}=1+z+2z^2+z^3\) fails coefficient
+log-concavity at rank one.
+
+\section{Length and unused weight for a monotone host}
+Given \(b_0\ge b_1\ge\cdots\ge b_{H-1}\ge1\), set \(b_H=0\),
+\(S_t=z+\cdots+z^t\), \(S_0=0\), and
+\[
+ P_0=1,\qquad P_\ell=\prod_{r=0}^{\ell-1}S_{b_r}\quad(1\le\ell\le H).
+\]
+A word of length \(\ell\) fits the decreasing host \((b_0,\ldots,b_{H-1})\)
+if and only if it fits its first \(\ell\) positions. Hence
+\(F=\sum_{\ell=0}^H P_\ell\) is the rank polynomial. Reversal gives the
+same weight and length counts for the reversed increasing host. Write
+\(p_\ell(k)=[z^k]P_\ell\),
+\(C_\ell(n)=\sum_{k\le n}p_\ell(k)\), and
+\(C(n)=\sum_\ell C_\ell(n)\), with \(C_\ell(n)=0\) for \(n<0\).
+In particular \(C(n)>0\) for \(n\ge0\), including beyond the total weight.
+
+\begin{theorem}\label{thm:coupling}
+At budget \(n\), choose uniformly from the words of weight at most \(n\).
+Write \(K\) for the weight, \(J\) for the number of parts, and \(n-K\)
+for the unused weight. The choices at budgets \(n\) and \(n+1\) admit
+a coupling in which all three quantities \(K,J,n-K\) increase weakly.
+Moreover \(C(n)\) is log-concave for every \(n\ge0\). In particular,
+for every nonincreasing sequence of nonnegative integer thresholds
+\(s_0,\ldots,s_H\),
+\begin{equation}
+          \frac{\sum_{\ell=0}^{H}C_\ell(n-s_\ell)}{C(n)}
+          \quad\hbox{is nondecreasing in }n.                       \label{eq:threshold}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+First condition on exact weight. For \(i<j,\ k<k'\), the layer counts obey
+\begin{equation}
+              p_i(k)p_j(k')\ge p_i(k')p_j(k).                       \label{eq:tp}
+\end{equation}
+Indeed \(P_j=P_i\,\prod_{i\le r<j}S_{b_r}\).
+The coefficients of \(P_i\) form a log-concave sequence on an interval.
+Each nonnegative translate has increasing ratio to that sequence on
+common support. In cross-multiplied form this remains true at either
+zero boundary. Sum over the translates to get \eqref{eq:tp}.
+For completeness, the indicator of an integer interval has nonnegative order-two minors
+in its Toeplitz matrix. This property is equivalent, on interval support,
+to log-concavity, by multiplying successive ratio inequalities. For two
+such matrices it passes to their product by the order-two Cauchy--Binet
+formula. For a prescribed pair of rows and columns all nonzero summands
+are finite. This proves the asserted log-concavity for products of the
+shifted intervals, including the singleton \(P_0\).
+
+Summing \eqref{eq:tp} over \(i<d\le j\) shows that
+\(\Prb(J\ge d\mid K=k)\) is nondecreasing in \(k\), wherever that
+conditional distribution is defined. All possible weights form the
+full interval from zero to \(\sum b_r\). The distribution at a higher
+weight can therefore be coupled with the one at a lower weight to have
+at least as many parts. Explicitly, use the same uniform random number
+in the two inverse distribution functions.
+
+Next suppose the successive ratios \(C(i)/C(i-1)\), \(1\le i\le n\),
+are nonincreasing. For the moment \(n\ge1\). We construct the coupling
+from budget \(n-1\) to budget \(n\). At budget \(v\) the weight has
+distribution function \(C(\min(k,v))/C(v)\) for \(k\ge0\).
+Increasing the budget increases the weight in stochastic order. It
+increases it by at most one in the common-quantile coupling, since
+\[
+        \frac{C(k)}{C(n-1)}\le\frac{C(k+1)}{C(n)}
+                \qquad (0\le k\le n-1).
+\]
+For \(k=n-1\) this is equality, and for smaller \(k\) it is the
+assumed ordering of ratios. Thus, in this coupling,
+\(K_{n-1}\le K_n\le K_{n-1}+1\). Both the weight and the unused
+weight increase weakly. Conditional on these two weights, use the
+length coupling just proved. If the actual words are desired, choose
+uniformly within each layer of fixed weight and length. Each marginal
+then has precisely the required law. Since \(s_J\) weakly decreases as
+\(J\) increases, the probability of \(n-K_n\ge s_{J_n}\) increases at
+this step. That probability is exactly \eqref{eq:threshold}.
+
+It remains to justify the assumed ordering of ratios. The layer identity
+\((1-z)S_t=z-z^{t+1}\) gives, on summing \(P_{\ell+1}=P_\ell S_{b_\ell}\),
+\[
+ (1-2z)F=1-z-z\sum_{\ell=0}^H z^{b_\ell}P_\ell .
+\]
+The terminal \(b_H=0\) accounts for the last layer. Dividing by \(1-z\)
+and taking coefficients at \(n+1\), for all \(n\ge0\), gives
+\begin{equation}
+       \frac{C(n+1)}{C(n)}
+            =2-\frac{\sum_\ell C_\ell(n-b_\ell)}{C(n)}.              \label{eq:rec}
+\end{equation}
+There is only one ratio to consider through \(n=1\). If the ratios
+are ordered through \(n\), the preceding coupling makes the fraction
+on the right of \eqref{eq:rec} at budget \(n\) at least its value at
+\(n-1\), since \(b_0\ge\cdots\ge b_H\). Thus the next ratio is at
+most the last. This proves the induction. It includes the empty host,
+the budget-zero comparison, and the constant tail of \(C\). The
+coupling and \eqref{eq:threshold} now hold at every step.
+\end{proof}
+
+For equal capacities, log-concavity of \(C\) also follows by applying
+the compound-distribution theorem of Bad\'ia, Sang\"uesa and Federgruen
+\cite{badia} to uniform positive summands and a truncated geometric
+distribution on the number of summands. In Theorem~\ref{thm:coupling},
+the uniform summands can have different supports. The exact number
+of words in each layer enters both the conditional law and
+\eqref{eq:rec}.
+
+\section{The derivative and the cumulative sequence of the same arm}
+Put \([t]=1+\cdots+z^{t-1}\). We may write a nonrectangular arm
+as \(X=1^\alpha(t_1,\ldots,t_h)\), with \(\alpha\ge1\),
+\(2\le t_1\le\cdots\le t_h\), \(h\ge1\). If the minimum letter of a
+nonempty arm is \(c>1\), replace its first letter by \(c\) copies of one:
+the initial polynomial in both cases is \([c+1]\), and every subsequent
+append applies \(F\mapsto1+S_tF\). A word of ones or a single letter
+has an interval polynomial.
+
+Form the reference host with decreasing capacities \(t_h,\ldots,t_2\),
+omitting \(t_1\). Use the preceding notation \(P_\ell,C_\ell,C\)
+for \(0\le\ell<h\), and set \(P_h=\prod_{i=1}^h S_{t_i}\). The two
+sequences measured against \(C\) below run in opposite directions.
+
+\begin{theorem}\label{thm:sandwich}
+For every such arm the sequence \(D_{m+2}/C(m)\) is nonincreasing,
+and \(G_m/C(m)\) is nondecreasing, for \(m\ge0\). The reference
+\(C\) is positive and log-concave.
+\end{theorem}
+
+\begin{proof}
+Start the append recurrence with \((1-z)^{-1}\) in place of
+\([\alpha+1]\), and let \(a_m\) be the resulting signed coefficient
+difference at ranks \(m+2,m+1\). The initial differences vanish.
+An append with capacity \(t\) changes their generating function by
+\(d\mapsto[t-1]+S_t d\). Iterating gives
+\[
+ a(z)=\sum_{\ell=0}^{h-1}[t_{h-\ell}-1]P_\ell(z),\qquad
+ a_m=C(m)-\sum_{\ell=0}^{h-1}C_\ell(m-t_{h-\ell}+1).
+\]
+The thresholds \(t_{h-\ell}-1\) decrease with \(\ell\). By
+\eqref{eq:threshold} the ratio \(a_m/C(m)\) is nonincreasing.
+
+We give the finite-padding argument to keep track of the positive part.
+In the signed difference, the correction from replacing the initial
+series by \([\alpha+1]\) is the subtraction of the polynomial
+\(T=z^{\alpha-1}P_h\). Hence \(D_{m+2}=(a_m-T_m)_+\).
+For \(i=h-\ell\), its corresponding summand in \(a\) and the whole
+correction have the same last factor:
+\[
+  A_i=P_\ell[t_i-1],\qquad
+  T=P_\ell\, z^{\alpha+i-1}\prod_{j=1}^i[t_j].
+\]
+The coefficients of the second factor of \(T\) are nondecreasing
+on the support \(0,\ldots,t_i-2\) of \([t_i-1]\), since the factor
+\([t_i]\) has no outgoing term on that interval. Its ratio to
+\([t_i-1]\) is therefore increasing in the cross-product sense, also
+at the zero boundaries. Convolution with \(P_\ell\) preserves that
+order: expand each resulting determinant by Cauchy--Binet and use
+the nonnegative Toeplitz minors of \(P_\ell\). Thus
+\(T_m(A_i)_{m'}\le T_{m'}(A_i)_m\) for \(m<m'\). Sum over \(i\).
+It follows that \((a_m-T_m)_+/a_m\) is nonincreasing on the
+support of \(a\). Every summand of \(a\) has interval support
+starting at \(\ell\) and reaching at least \(\ell\); the summands
+together have interval support from zero. Beyond it \(D_{m+2}=0\).
+Multiplying the two decreasing nonnegative ratios proves the first
+assertion with its zero tail.
+
+For the second assertion the actual cumulative is exactly
+\[
+        G_m=C(m)+[z^m]\,\frac{P_h[\alpha+1]}{1-z}.
+\]
+Write the additional coefficient as \(V_m\). For each
+\(\ell<h\), \(V\) is a nonnegative convolution of \(C_\ell\):
+the remaining factor is \([\alpha+1]\prod_{i=1}^{h-\ell}S_{t_i}\).
+The sequence \(C_\ell\) is log-concave as a convolution of
+\(P_\ell\) with the all-ones sequence. Its translates therefore
+give \(V_{m+1}C_\ell(m)\ge V_m C_\ell(m+1)\), with zero extension
+at negative indices. Summing gives the same inequality with \(C\)
+in place of \(C_\ell\), and hence \(G/C\) is nondecreasing.
+Log-concavity of \(C\) is Theorem~\ref{thm:coupling}.
+\end{proof}
+
+\begin{corollary}\label{cor:full}
+For every normalized nonrectangular arm, every \(N\ge3\), and
+every \(1\le j\le N-2\), \(G_jD_{N-1}\ge G_{j-1}D_N\).
+\end{corollary}
+\begin{proof}
+For a positive adjacent derivative pair, apply Theorem~\ref{thm:sandwich}
+and compare the adjacent ratios of the positive log-concave sequence \(C\):
+\[
+ \frac{D_N}{D_{N-1}}\le \frac{C(N-2)}{C(N-3)}
+       \le\frac{C(j)}{C(j-1)}\le\frac{G_j}{G_{j-1}}.
+\]
+A zero current derivative gives the inequality immediately. A zero
+previous derivative forces a zero current derivative by the first
+assertion of Theorem~\ref{thm:sandwich}.
+\end{proof}
+
+
+\section{Passage to a peak}
+We record the reduction from single-arm inequalities to the coefficients
+at a peak. Its two inductions concern different objects. The first concerns
+the ordinary product for shorter arms; the second concerns rank polynomials
+at smaller peaks and at proper deletions of the same peak. The technical
+companion to this article contains the coefficient and boundary lemmas
+for these inductions \cite{companion}.
+
+\begin{lemma}[Hereditary coefficient criterion]\label{lem:criterion}
+Let \(\mathcal A\) be a class of increasing normalized arms closed under
+deleting the final part, with its interval and empty bases included. Suppose
+every nonrectangular arm in \(\mathcal A\) satisfies \eqref{eq:bridge}.
+For \(X,Y\in\mathcal A\), write \(A=F_X\), \(B=F_Y\),
+\(q_T=z^{\wt(T)}F_T(1/z)\), and \(p=q_Xq_Y\). Then
+\(\bigl(2^j(p_j-p_{j-1})_+\bigr)_{j\ge0}\) is unimodal.
+For every integer \(M>\max(X,Y)\) the three polynomials
+\begin{equation}
+      A+B+(S_M-1)AB,\qquad A+(S_M-1)AB,\qquad B+(S_M-1)AB
+                                                                  \label{eq:peak}
+\end{equation}
+have unimodal coefficients.
+\end{lemma}
+
+We describe the use of the hypothesis; this identifies the precise
+input supplied by Corollary~\ref{cor:full}. Set \(P=AB\),
+\(e_n=2P_{n-1}-P_n\), \(E_B=1-z+(2z-1)B\), and \(w_j=[z^j](1-z)E_B\).
+While both ordinary factors rise, the single-arm coefficient bounds
+give \(w_j\ge0\) on the prefix in question, with \(w_j=0\) for \(j<3\).
+Write \(J_n=[z^n]E_BA=\sum_{j=3}^nw_jG_{n-j}\), where \(G\) is the
+cumulative sequence of \(A\). Termwise application of \eqref{eq:bridge}
+gives
+\[
+        J_{n+1}D_n\ge J_nD_{n+1},\qquad J_{n+1}\ge J_n,
+        \qquad e_n=J_n-D_n .
+\]
+The unused term in the first sum is nonnegative. If \(e_{n+1}\ge0\)
+and both differences are positive, then
+\[
+ J_{n+1}(e_{n+1}-e_n)
+    =J_{n+1}D_n-J_nD_{n+1}
+      +(J_{n+1}-J_n)e_{n+1}\ge0.
+\]
+Here \(J_{n+1}>0\); if \(e_{n+1}<0\), the ratio inequality instead gives
+\(J_n<D_n\). This is the comparison on the common rising prefix, including
+the case \(e_{n+1}=0\). The companion proves the mixed and nonrising
+comparisons for true arms without hypothesis \eqref{eq:bridge}.
+
+For clarity, the rest of the criterion uses the following identities.
+Deleting \(t\) from a heavier arm \(X=Zt\) yields
+\[
+           q_Xq_Y=[t]q_Zq_Y+z^{\wt(X)}q_Y .
+\]
+The closed interval comparison of the companion propagates the weighted
+positive-difference conclusion from the shorter product to its interval
+convolution. The terminal summand begins after the first ordinary mode
+of \(q_Xq_Y\), so the new positive differences are a truncation of the
+window differences. This proves the first conclusion by induction with
+the rectangular and one-part bases. In the peak induction the reversal
+of \(1+(S_M-1)B\) is
+\[
+               \delta_M(Y)=([M]-z^M)q_Y+z^{\wt(Y)+M}.
+\]
+Reversal of the corresponding relative in \eqref{eq:peak} is
+\(q_X\delta_M(Y)\). At a least failing peak, choose a relative with
+the fewest parts. Deletion from the heavier arm gives the already
+unimodal proper relative; its interval convolution supplies the required
+initial signs. The weighted positive-difference conclusion controls
+the remaining central signs. Stripping all copies of the largest arm
+part gives the lower-peak initial case. The reflection and terminal
+joins give both relatives and the complete core. The ranges at the
+first interval boundary, at a string of zero differences, and at the
+transition to the lower peak are included in the companion's reduction.
+In particular this criterion uses \eqref{eq:bridge} at all deletion
+prefixes. No assertion about an individual tested peak enters it.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Take \(\mathcal A\) to be all increasing arms, normalized as in
+Section~3. Each final deletion is again an increasing arm. All
+nonrectangular members, including every proper prefix, satisfy
+\eqref{eq:bridge} by Corollary~\ref{cor:full}. Lemma~\ref{lem:criterion}
+therefore gives all three conclusions in \eqref{eq:peak} at every
+strict peak.
+
+To identify these polynomials, take any words \(U,V\) with letters at
+most \(M\), and write \(A=F_U,\ B=F_V\). A word under \(U,M,V\) either
+fits \(U\), or has a unique longest prefix \(u\) fitting \(U\) followed
+by a letter \(x\le M\) for which \(ux\) fails in \(U\). The remainder
+fits \(V\): in any embedding the failing letter lies at or to the right
+of the displayed \(M\). Conversely \(u,x\), and any word fitting \(V\)
+give a valid word by assigning \(x\) to \(M\). The possible failing
+extensions have polynomial \(S_M A-(A-1)\). Thus
+\[
+            F_{U,M,V}=A+\{1+(S_M-1)A\}B.
+\]
+This proves the first identity in \eqref{eq:peak} for the core and
+also shows that reversing either arm leaves its polynomial unchanged.
+
+For a word with exactly one descent, let \(M\) be the upper letter of that
+descent. Write the word \(X,M^{r+1},Y,E\), where \(X,Y,E\) are weakly
+increasing, all parts of \(X,Y\) are strictly below \(M\), and every
+part of \(E\) is at least \(M\). Start with the strict core \(X,M,Y\).
+Each extra central \(M\) sends its polynomial \(F\) to \(1+S_MF\),
+as follows from the preceding identity and \(F_{X,M}=1+S_MF_X\).
+Each letter \(t\) of \(E\) is a current global maximum and likewise
+sends \(F\) to \(1+S_tF\). If \(F\) has constant term one and is
+unimodal, interval convolution preserves unimodality, and the first
+two coefficients of \(1+S_tF\) are \(1,1\). Thus each step preserves
+the conclusion. A monotone host follows directly by the same append
+induction. For a bitonic host choose its central maximum, strip
+repeated maxima, and reverse its decreasing right arm. Reversal
+preserves \(F_Y\), so the strict-core result and the same restoration
+complete the proof.
+\end{proof}
+
+\section{Scope and verification}
+The distinction between a cumulative statement and a rank statement can
+be seen even for \(1,3,2,3\). Its cumulative sequence \(1,4,6,9\) is
+log-concave, while the coefficients have a strict decrease followed by a
+strict increase. In the proof of Theorem~\ref{thm:main},
+Theorem~\ref{thm:coupling} supplies a joint monotonicity statement;
+the specific thresholds \(t_{h-\ell}-1\) identify an ordinary difference.
+The separate deepest-layer and finite-padding comparisons are what turn
+that statement into \eqref{eq:bridge}.
+
+The companion includes the Lean proofs of the finite transport,
+the induction in \eqref{eq:rec}, the exact arm recurrences (including
+finite padding), and the scalar ratio transfers. It also
+includes exact checks that construct distinct subwords by their first
+possible embedding, independently of the peak formula. The identification
+of the composition layers, the application of the transport to them,
+and the full strict-peak reduction are mathematical proofs. General
+hosts with multiple descents outside the bitonic class remain covered
+only to the extent of other known results.
+
+\begin{thebibliography}{9}
+\bibitem{badia} F.~G. Bad\'ia, C. Sang\"uesa and A. Federgruen,
+Log-concavity of compound distributions with applications in operational
+and actuarial models, \emph{Probability in the Engineering and
+Informational Sciences} \textbf{35} (2021), no.~2.
+\url{https://doi.org/10.1017/S0269964819000329}.
+\bibitem{chen} L. Chen, Rank-unimodality and tail log-concavity of
+composition ideals, preprint, 2026. \url{https://ssrn.com/abstract=7385218}.
+\bibitem{sagan} B.~E. Sagan, Compositions inside a rectangle and
+unimodality, \emph{Journal of Algebraic Combinatorics} \textbf{29}
+(2009), 405--411. \url{https://arxiv.org/abs/0707.1052}.
+\bibitem{vatter} V. Vatter, An assortment of problems in permutation
+patterns: unimodality, equivalence, derangements, and sorting,
+arXiv:2602.16355v3 (2026). \url{https://arxiv.org/abs/2602.16355}.
+\bibitem{zhang} Z. Zhang, Rank-unimodality for one-descent families in
+generalized subword order, preprint, 2026. \url{https://ssrn.com/abstract=7397439}.
+\bibitem{companion} Technical companion to the present paper,
+\emph{The hereditary strict-peak reduction}, with mathematical proofs,
+finite certificates, and verification sources. Included with the manuscript.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,162 @@
+{
+  "publication_version": "v1.0.2",
+  "review_date": "2026-11-21",
+  "title": "Rank-unimodality of one-descent composition ideals",
+  "review": "Internal proof and reproducibility review of the preprint.",
+  "status": "Proof complete within the stated scope.",
+  "statement": "For every composition with at most one adjacent descent and every bitonic composition, the coefficients counting distinct generalized subwords by total weight are unimodal, with arbitrary weight, part sizes and number of parts. The hosts and coefficients are undilated.",
+  "scope_boundary": "Vatter’s Conjecture 2.6 for all compositions has wider scope. The paper proves the one-descent case and the bitonic class.",
+  "proof_chain": [
+    "Theorem 2.1 couples weight, number of parts and unused budget on a monotone host at successive budgets. This gives monotonicity for decreasing layer thresholds and log-concavity of the reference cumulative.",
+    "Theorem 3.1 and Corollary 3.2 use two comparisons against that reference to prove G_j D_(N-1) >= G_(j-1) D_N on every deletion prefix, N >= 3 and 1 <= j <= N-2.",
+    "The hereditary coefficient criterion yields unimodality of the dyadically weighted positive differences of the reversed product for every arm pair. The strict-peak induction proves coefficient unimodality of the core and both relatives.",
+    "The greedy distinct-prefix identity identifies the core. Reversal of the right arm, restoration of peak multiplicities and final record parts give the stated hosts."
+  ],
+  "reviewed_remaining_premises": [],
+  "strict_peak_boundary": {
+    "source": "strict_peak_reduction.tex, section 4",
+    "algebra": "For p=q_X q_Y and W=([M]-z^M)p, (1-z)W=(1-2z^M+z^(M+1))p. For n<M this gives Delta W_n=p_n>=0. Together with deletion on n<b this covers the prefix through max(b,M)-1. At b>M the joining edge starts at b-1>=sigma. At b<=M there is no preceding negative difference.",
+    "interpretation": "This proves the boundary step directly for arbitrary arm and peak weights."
+  },
+  "exhaustive_proof_certificate": {
+    "scope": "First missing weights 10, 11, 12 after the analytic reduction in the mixed case; all admissible owner/rank inputs in the remaining states.",
+    "counts": {
+      "complete_rank_states": 3241,
+      "rank_strict_head_paid": 859,
+      "rank_source_paid": 1983,
+      "unpaid_rank_states": 399,
+      "complete_owner_rank_inputs": 1858242,
+      "noncritical_owner_edges": 1786199,
+      "positive_curvature_owner_edges": 72043,
+      "direct_owner_source_paid": 72043,
+      "distinct_canonical_owners": 945847
+    },
+    "public_source": "reduction/first_missing_twelve_original_criterion_proof.tex",
+    "public_reconstruction": "reduction/verify_first_missing_twelve_head_certificate.py"
+  },
+  "additional_combinatorial_checks": {
+    "literal_distinct_words": {
+      "status": "PASS_LITERAL_HOSTS_AND_ALL_JOINT_UPPER_SETS",
+      "max_host_weight": 14,
+      "counts": {
+        "distinct_hosts": 6095,
+        "one_descent_or_monotone": 5020,
+        "bitonic": 3332,
+        "both_classes": 2257,
+        "genuine_rank_coefficients": 82468,
+        "distinct_word_memberships": 907940,
+        "exact_joint_upper_sets": 210461
+      },
+      "digest": "4e0e8a0144c2586ee0fc83f043b3cb9c4e3ab6d308a52b4f0c25e08bcf020f88"
+    },
+    "arm_and_product": {
+      "status": "PASS_DEPTH_SLACK_TRUE_ARMS_AND_ORIGINAL_COEFFICIENTS",
+      "counts": {
+        "depth_capacity_minor_edges": 122852,
+        "all_delays_lower_envelope_checks": 368556,
+        "actual_arms": 9081,
+        "true_cumulative_LC_edges": 359475,
+        "actual_strict_pairs": 160,
+        "actual_original_ranks": 42695
+      },
+      "digest": "0993b2292b0d84bd375fa984a4cac89c5402f68ee1ac92153eec2b7d84e4f8b3"
+    },
+    "strict_peak_join": {
+      "counts": {
+        "heavier_arm_above_peak": 9883,
+        "heavier_arm_below_peak": 7656,
+        "heavier_arm_equal_to_peak": 3741,
+        "reverse_half_edges": 297373,
+        "strict_peak_instances": 21280
+      },
+      "maximum_arm_weight": 10,
+      "sha256": "91c6279ab5189ecf32a643857de37df4e4555060b4cba92d461d114cc311b752",
+      "status": "PASS_EXACT_STRICT_PEAK_JOIN_BOUNDARIES"
+    }
+  },
+  "six_clean_replays": [
+    "audit_depth_slack_bridge.py",
+    "verify_literal_principal_ideals.py",
+    "verify_first_missing_twelve_head_certificate.py",
+    "verify_complete_mixed_unrestricted_C_original.py",
+    "verify_one_hereditary_C_arm_arbitrary_other.py",
+    "check_peak_boundary.py"
+  ],
+  "formal_verification": {
+    "toolchain": {
+      "platform": "Windows x86_64",
+      "python": "3.12.14",
+      "lean": "4.34.0",
+      "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+      "mathlib_lean_toolchain": "leanprover/lean4:v4.34.0",
+      "mathlib_dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+      "mathlib_revision_status": "The installed .git/HEAD branch reference and the enclosing lake-manifest both identify this revision. No assertion is made that every installed source or compiled object was independently compared with the remote repository.",
+      "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435"
+    },
+    "transport_and_scalar_theorems": 19,
+    "arm_polynomial_identities": 7,
+    "checked_sources": [
+      "DepthSlackTransport.lean",
+      "DepthSlackArmIdentities.lean"
+    ],
+    "scope": "Arbitrary budgets and finite capacity lists for the stated modules. Word-model identifications, Toeplitz comparisons and the strict-peak reduction are written proofs."
+  },
+  "archive_integrity": {
+    "sha256_inventory_entries_in_full_release": 1036,
+    "files_including_full_manifest": 1037,
+    "historical_proof_inputs": 990,
+    "historical_digest_comparisons": 1850,
+    "original_research_supplement_sha256": "ee5053d8f246c8e5600e29eda3f8b13c108efe0f3ebecd41cfb16355219c46af",
+    "public_portability": "Replaced machine-specific directories with local paths, kept numeric inputs and all 183 Lean sources byte-for-byte, and refreshed file-level digest references after portability edits.",
+    "proof_inputs_unchanged_by_kind": {
+      "lean": 183,
+      "binary_and_serialized_and_gzip": 8
+    }
+  },
+  "publication_documents": {
+    "one_descent_rank_unimodality": {
+      "pages": 6,
+      "pdf_sha256": "9f9cd5799753c032a1690ba2e10f5f14864b11edb2429a2ec44aaaa7c6cdbfc2",
+      "latex_sha256": "81694e4813fa4eefa622f9736c7433be722336914154b5b2c36a46bcdb0807b9"
+    },
+    "strict_peak_reduction": {
+      "pages": 5,
+      "pdf_sha256": "6c17160dd78582670d6950fc93e9f1eb6bd2b24e46958860ff5aac8f8c2e7232",
+      "latex_sha256": "c21b755f38b6929bb27486538626456947a8b5fa80f190c8579733a11a49a9cb"
+    },
+    "detailed_coefficient_lemmas": {
+      "pages": 31,
+      "pdf_sha256": "6e4724c2738446051424788daf310c226c7d72e17d0d24b1a09fe66620d1be15",
+      "latex_sha256": "81cdbdffbb4f45fb0d2fa83e316deb6278fa610e83df0b7bec61566dbfda1a8d"
+    }
+  },
+  "publication_checks": "All 42 pages were rendered and checked against the previous edition. The three title pages, PDF author metadata, author order, ORCID link targets, equal contribution and correspondence were checked. The citation file was validated against the CFF 1.2.0 schema.",
+  "authors": [
+    {
+      "name": "Zhang Yibo",
+      "family_name": "Zhang",
+      "given_name": "Yibo",
+      "orcid": "https://orcid.org/0009-0002-2005-5781",
+      "equal_contribution": true,
+      "joint_first_author": true,
+      "corresponding_author": false
+    },
+    {
+      "name": "Zhang Zhanhe",
+      "family_name": "Zhang",
+      "given_name": "Zhanhe",
+      "orcid": "https://orcid.org/0009-0007-2883-9640",
+      "equal_contribution": true,
+      "joint_first_author": true,
+      "corresponding_author": true
+    }
+  ],
+  "authorship_statement": "Both authors contributed equally as joint first authors. Zhang Zhanhe is the corresponding author.",
+  "citation_file": "CITATION.cff",
+  "publication_update": {
+    "scope": "Pinyin author names throughout the publication files, updated citation metadata, and corresponding checksums.",
+    "previous_version": "v1.0.1",
+    "previous_local_delivery_sha256": "df9551a7828f0d3bb8ee379adf48dcb427c05993e1f7ba35d21f1a25c241a19c",
+    "version": "v1.0.2"
+  }
+}

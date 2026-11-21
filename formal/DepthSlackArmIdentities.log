@@ -1,0 +1,7 @@
+'DepthSlackArmIdentities.interval_loss' depends on axioms: [propext, Quot.sound]
+'DepthSlackArmIdentities.step_loss' depends on axioms: [propext, Quot.sound]
+'DepthSlackArmIdentities.all_depth_births' depends on axioms: [propext, Quot.sound]
+'DepthSlackArmIdentities.deepest_split' depends on axioms: [propext]
+'DepthSlackArmIdentities.signed_finite_padding' depends on axioms: [propext, Quot.sound]
+'DepthSlackArmIdentities.threshold_complement' depends on axioms: [propext, Quot.sound]
+'DepthSlackArmIdentities.proper_is_reference_host' depends on axioms: [propext]

@@ -1,0 +1,2149 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,lmodern}
+\usepackage[T1]{fontenc}
+\DeclareMathSizes{10}{10}{8}{8}
+\DeclareMathSizes{10.95}{10.95}{8}{8}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\emergencystretch}{1.8em}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{claim}[proposition]{Claim}\renewcommand{\UrlFont}{\normalfont\ttfamily}
+\newcommand{\Del}{\Delta}
+\newcommand{\coef}[2]{[z^{#1}]#2}
+\newcommand{\Iv}[2]{I_{[#1,#2]}}
+\newcommand{\len}{\ell}
+\renewcommand{\labelitemi}{\(\bullet\)}\renewcommand{\labelitemii}{\(-\)}\def\UrlBreaks{\do\_\do\.\do\/}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\pos}[1]{(#1)_+}
+
+
+\title{Detailed coefficient lemmas}
+\hypersetup{unicode=true,
+  pdftitle={Detailed coefficient lemmas},
+  pdfauthor={Zhang Yibo and Zhang Zhanhe}}
+% The byline uses the title-page space otherwise reserved for an empty date.
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \begingroup\centering
+  \vspace*{0.6em}%
+  {\LARGE\@title\par}\vspace{0.85em}%
+  \@author\par
+  \endgroup
+  \vspace{0.85em}}
+\makeatother
+\author{\begin{tabular}{@{}c@{\hspace{2em}}c@{}}
+  \normalsize Zhang Yibo &
+  \normalsize Zhang Zhanhe\\[-1pt]
+  \footnotesize\href{https://orcid.org/0009-0002-2005-5781}{ORCID 0009-0002-2005-5781} &
+  \footnotesize\href{https://orcid.org/0009-0007-2883-9640}{ORCID 0009-0007-2883-9640}
+\end{tabular}\endgraf\vspace{3pt}%
+{\footnotesize Both authors contributed equally as joint first authors. Zhang Zhanhe is the corresponding author.\endgraf}}
+\date{}
+\begin{document}
+\maketitle
+This appendix collects the mathematical source proofs used in the
+strict-peak reduction of \emph{Rank-unimodality of one-descent composition
+ideals}. The companion introduces their notation and gives the logical
+order of use. Each excerpt identifies its source under \path{reduction/}.
+The original files preserve the notation and the state of the investigation
+at the time each lemma was proved. The single-arm inequality denoted by
+(C) in these excerpts is Corollary 3.2 of the article.
+\setcounter{tocdepth}{1}\tableofcontents\clearpage
+
+
+\section{Ordinary products and the first mode}
+
+\noindent{\small Source\enspace\path{formal_arm_extensions.tex}.}\par\medskip
+
+\begin{proposition}[Ordinary products with no later return to one]
+If $T=1^\alpha U$ and $W=1^\beta V$, with all parts of the
+formal skeletons $U,V$ at least two, then $A_TA_W$ is unimodal.
+The skeletons may have arbitrary internal order. Its reverse
+also has unimodal positive first differences and is log-concave
+on its rising side.
+\end{proposition}
+\begin{proof}
+For every formal arm, the lowest height layer is $[0,a]$,
+and every higher layer has endpoint sum at least $a+1$.
+This follows by induction from $1+S_tA$: uniform convolution
+gives all layers of $S_tA$ endpoint sum at least $a+t+1$,
+and adding the initial constant only changes its lowest layer.
+In the stated class, every nonrectangular polynomial has second
+layer exactly $[2,a-1]$, since both coefficients at those two
+ranks are at least two and the adjacent end coefficients are one.
+
+The ordinary-product proof therefore applies verbatim within
+this deletion-closed class. For completeness, write $a\ge b$.
+Layer centers give growth through $\lceil(a+b)/2\rceil$.
+When $a=b$ and both factors are nonrectangular, the product of
+the two second layers pays for the only negative unit from the
+two lowest layers at rank $a+1$, extending growth to that rank.
+Deleting a last part $t$ of the heavier arm gives
+$A_TA_W=A_W+S_t(A_{T^-}A_W)$. By induction the window term
+is unimodal. If $a>b$, its tail joins the guaranteed increasing
+segment after the correction $A_W$ has vanished; if $a=b$,
+use the extra rank of growth just proved. Rectangular factors
+are uniform-window base cases. Thus the product is unimodal.
+
+The reverse-prefix proof in {\normalfont\path{joint_rising_differences.tex}}
+uses only this product unimodality, the same strengthened midpoint,
+and the formal append recurrence. Those inputs all hold within
+the present deletion-closed class, proving the two additional
+reverse properties.
+\end{proof}
+
+\noindent{\small Source\enspace\path{joint_rising_differences.tex}.}\par\medskip
+
+\begin{proposition}
+Let $X,Y$ be increasing arms and
+$p(z)=z^{a+b}F_X(1/z)F_Y(1/z)$, with $a=\operatorname{wt}X$
+and $b=\operatorname{wt}Y$. Then $p$ is unimodal and log-concave
+on its rising side. In addition, the positive part of its
+first-difference sequence is unimodal.
+\end{proposition}
+\begin{proof}
+Ordinary two-arm product unimodality is an established input;
+the proof by interval layers and final-part deletion is reproduced
+in the supplied foundation. Its strengthened midpoint assertion
+says that, when $a=b$ and both factors are nonrectangular,
+$(F_XF_Y)_{a+1}\ge(F_XF_Y)_a$.
+
+Induct on the total number of arm parts for the two additional
+properties. If either arm polynomial is an interval, apply the
+uniform-window results to the reverse of the other arm. Otherwise
+orient $a\ge b$ and write $X=Zt$. Reversal gives
+\[
+ p=[t]q_Zq_Y+z^a q_Y.
+\]
+Let $m_0$ be the first mode of $p$. First-half increase of the
+ordinary product and its unimodality imply that its last mode
+is at least $\lceil(a+b)/2\rceil$. Thus
+$m_0\le\lfloor(a+b)/2\rfloor$. If $a>b$, this gives $m_0<a$.
+If $a=b$, the strengthened midpoint assertion implies that the
+last forward mode is at least $a+1$, and hence $m_0\le a-1$.
+This reasoning explicitly allows a maximal plateau.
+
+In both weight cases $m_0<a$. Up to and including
+$m_0$, $p$ agrees with the uniform window $[t]q_Zq_Y$; the
+added term begins at $a$. The positive first differences of
+$p$ are therefore a prefix of those of this window, followed
+by zeros. The window has unimodal positive first differences
+by induction and the uniform-window lemma. This proves that
+the positive first differences of $p$ are unimodal.
+
+For log-concavity before the first mode, the same agreement
+and the rising-side window lemma apply. A window cannot have
+passed its first mode and then strictly increase to the first
+mode of $p$; consequently its relevant prefix lies on its
+rising side. Log-concavity at a mode is automatic, since both
+neighbors are at most the mode value. Interior points of a
+maximal plateau also satisfy equality. This proves rising-side
+log-concavity of $p$, including its last mode.
+\end{proof}
+
+
+\section{The two weighted base cases}
+
+\noindent{\small Source\enspace\path{binary_ternary_A2_original_family_proof.tex}.}\par\medskip
+
+First suppose one arm is rectangular, $q_X=[\alpha+1]$, and put
+$b=\deg q_Y$. If $\alpha\ge b$, the first ordinary product mode is
+$b$. Its positive differences are $(q_Y)_0,\ldots,(q_Y)_b$, then
+zeros. Their weighted values increase, since actual ideal growth
+gives $2(q_Y)_n\ge(q_Y)_{n-1}$. If $\alpha<b$, the first product
+mode $\sigma$ is below $b$: at rank $b$ the window difference is
+$1-(q_Y)_{b-\alpha-1}\le0$, and ordinary window unimodality applies.
+The single-arm corrected source
+$e_Y=(2-z)q_Y-z^b+z^{b+1}$ is nonnegative unimodal.
+The product source equals $[\alpha+1]e_Y$ at every rank below $b$.
+Its prefix through $\sigma$ is unimodal, and (3), followed by the
+zero positive-difference tail, proves A2. This includes the empty
+arm and two rectangles. We do NOT assert full raw-source shape
+for rectangular pairs.
+
+\noindent{\small Source\enspace\path{deficit_cumulative_ratios.tex}.}\par\medskip
+
+For an increasing arm $T$ of weight $c$, write
+\[
+ E_T=1-z+(2z-1)F_T,\quad R_T=z^{c+1}E_T(1/z),\quad
+ C_T(n)=\sum_{j=0}^n[z^j]R_T.
+\]
+All cumulative sequences are zero at negative indices and constant
+after their finite input ends. The empty arm has $R_\varnothing=1$.
+
+\begin{theorem}\label{thm:deficit-cumulative-lc}
+For every increasing arm, $C_T$ is log-concave on all integer indices.
+\end{theorem}
+\begin{proof}
+Induct using $R_{Tt}=[t]R_T+z^c$. The empty case is constant one
+on the nonnegative integers. For a nonempty prefix the positive
+support of $R_T$ is $[0,d]$, where $d=c+1-\kappa\le c-1$;
+the increasing condition gives $\kappa\le t+1$. Its mass $m$ equals
+$F_T(1)\ge c+1$, since every rank from zero to $c$ is nonempty.
+
+Set $w=[t]R_T$ and $v_n=\sum_{j=0}^n w_j=[t]C_T(n)$.
+By induction and log-concave convolution, $v$ is log-concave.
+The new cumulative sequence is $h_n=v_n+\mathbf1_{n\ge c}$.
+We check the joining edge and subsequent centers.
+
+If $c\ge t$, then
+\[
+ w_{c-1}-w_c=R_T(c-t)\ge1.
+\]
+Indeed $0\le c-t\le d$. The known unimodality of $R_T$
+and of a uniform window makes $w$ nonincreasing from $c-1$
+onward. Thus $v$ is concave there. Writing
+$V=v_{c-2}$, $x=w_{c-1}$ and $y=w_c$, the determinant at
+the only left joining center is
+\[
+ h_{c-1}^2-h_{c-2}h_c=V(x-y-1)+x^2\ge0.
+\]
+
+If $1\le c<t$, then $w_n=m$ on $[c-1,t-1]$ and is
+nonincreasing afterward. Again $v$ is concave from $c-1$.
+At the joining center its determinant is
+\[
+ m^2-v_{c-2}\ge m^2-(c-1)m\ge0.
+\]
+In both cases the determinant at $c$ is the old determinant
+plus $2v_c+1-v_{c-1}\ge0$. At every center $n\ge c+1$ it is
+the old determinant plus $2v_n-v_{n-1}-v_{n+1}\ge0$.
+Earlier centers are unchanged. Finally, for the empty prefix
+$c=0$, the new cumulative sequence is $2,3,\ldots,t+1$ followed
+by a constant tail, which is log-concave. This closes induction.
+\end{proof}
+
+\begin{lemma}[A cumulative premise implies actual prefix-to-tail ratios]
+Let $p$ be a finite nonnegative sequence, $p_0>0$, and suppose
+its cumulative sequence $C_n$ is log-concave. For every $t\ge2$,
+the actual coefficients $w=[t]p$ satisfy
+\[
+ w_{k+1}w_j\ge w_kw_{j+1}\qquad(0\le k\le t-2,\ j\ge k).
+\]
+\end{lemma}
+\begin{proof}
+Fix $k$ and put $r=C_{k+1}/C_k$. Since $w_k=C_k$ and
+$w_{k+1}=C_{k+1}$, it suffices to show $w_{j+1}\le rw_j$.
+For $k\le j\le k+t$, cumulative log-concavity gives
+$C_{j+1}\le rC_j$ and $C_{j+1-t}\ge rC_{j-t}$;
+zero extension covers negative lower indices. Subtraction proves
+the claim. For $i\ge k+1$, the same premise gives
+\[
+ p_{i+1}C_{i-1}\le p_iC_i,\qquad
+ p_{i+1}\le (C_i/C_{i-1})p_i\le rp_i.
+\]
+Summing these inequalities over the window proves the remaining
+case $j\ge k+t$. All denominators used are positive.
+\end{proof}
+
+\begin{corollary}\label{cor:deficit-window-ratios}
+For every increasing arm $T$ and every $t\ge2$, $[t]R_T$
+has the prefix-to-tail coefficient comparison through $t-2$.
+The window need not exceed the largest part of $T$.
+\end{corollary}
+
+\begin{proposition}[The heavier one-part terminal case at weight two]
+Let $A=F_{1^\alpha t}$ and let $B$ be any nonrectangular
+increasing-arm polynomial. Suppose $t\ge2$, $\alpha\ge1$,
+and $a=\alpha+t\ge b=\deg B$. For $q=z^{a+b}(AB)(1/z)$,
+the sequence $2^j\max(q_j-q_{j-1},0)$ is unimodal.
+\end{proposition}
+\begin{proof}
+The identity $A=1+z[t][\alpha+1]$ permits exchange of the
+two interval factors. We may therefore assume $\alpha\ge t-1$.
+The exchanged capacity is smaller if an exchange was needed.
+Put $q_B=z^bB(1/z)$ and $V=[t]q_B$. Then
+\[
+ q=[\alpha+1]V+z^a q_B.
+\]
+Its first mode $s$ is strictly less than $a$, by ordinary-product
+first-half growth and the extra midpoint rank for equal nonrectangular
+arms. Through $s$, its positive differences are
+$d_j=V_j-V_{j-\alpha-1}$. They are $V_j$ for $j\le\alpha$.
+The sequence $2^jV_j$ is nondecreasing: in forward order the
+coefficients of $[t]B$ grow by a factor at most two. For ranks
+below $t$ use $f_n\le\sum_{i<n}f_i$; afterward use
+$f_n\le2f_{n-1}$ termwise.
+
+For $\alpha+1\le j\le s$, set $k=j-\alpha-1\le t-2$.
+Also $s\le\deg V=b+t-1$, so $k<b$ by normalization.
+Writing $W=[t]R_B$, the exact identity is
+\[
+ (2-z)V=W+z^b-z^{b+t},\qquad
+ 2d_j-d_{j-1}=W_j-W_k+\mathbf1_{j=b}.
+\]
+The negative terminal monomial is outside $j\le s$ and neither
+monomial affects the head index $k<b$. By the preceding corollary,
+$W_{k+\alpha+1}/W_k$ is nonincreasing wherever its denominator
+is positive. Thus $W_j-W_k$ has no negative-to-positive change.
+If such a difference was already negative before $j=b$, it is
+at most $-1$ at $b$, by integrality and the ordered ratios; the
+extra unit still cannot make it positive. Zero endpoints are
+handled directly. The actual weighted differences have the same
+single-crossing property. Joining to their nondecreasing initial
+segment and then to terminal zeros proves the proposition.
+\end{proof}
+
+\section{Tilt and the common rising prefix}
+
+\noindent{\small Source\enspace\path{clipped_forward_ratio_frontier.tex}.}\par\medskip
+
+Let $A=F_X$, $B=F_Y$, with weights $a,b$, and put
+\[
+ D_n=\max(A_n-A_{n-1},0)\quad(n\ge2),\qquad H=E_B A.
+\]
+Here $D_0=D_1=0$. The following is an \emph{unproved}
+generation-dependent comparison:
+\[
+ \frac{\min(H_n,D_n)}{D_n}\le
+ \frac{\min(H_{n+1},D_{n+1})}{D_{n+1}}
+ \quad\left(2\le n<\min(a,b),\ D_nD_{n+1}>0\right).
+                                                        \tag{R}
+\]
+All ratios can be cross multiplied. Full, unclipped ratio
+monotonicity is false; subtracting a single unit does not
+repair it either. The clipping and the stated range must
+not be silently removed.
+
+\begin{proposition}[Conditional coefficient-tilt consequence]
+If (R) holds for a given pair of increasing nonrectangular
+arms, then the coefficients of $A(z/2)B(z/2)$ are unimodal.
+Equivalently $2^j(q_Xq_Y)_j$ is unimodal.
+This is coefficient tilt, not the weighted-positive-difference
+property needed to finish the original conjecture.
+\end{proposition}
+\begin{proof}
+The exact identity
+\[
+ (2z-1)AB=E_B A-(1-z)A                              \tag{1}
+\]
+shows that, while $A$ is rising, its rank-$n$ coefficient
+is $H_n-D_n$. Once $H_n\ge D_n>0$, (R) forces
+$H_{n+1}\ge D_{n+1}$ whenever the latter denominator is
+positive. If it vanishes, initial interval support of the
+ordinary positive differences shows that $A$ has finished
+rising; the coefficient in (1) is then nonnegative forever.
+
+Only ranks through $\min(a,b)$ require this argument.
+Orient $a\le b$. For $n>a$, every nonzero summand in
+$[z^n]AB=\sum_{i=0}^{a}A_iB_{n-i}$ uses $n-i\ge1$.
+The elementary actual-ideal growth bound
+$B_r\le2B_{r-1}$ therefore gives
+$[z^n]AB\le2[z^{n-1}]AB$ directly. The initial ranks
+are $1,2,5$ in $AB$, so its tilt starts with a plateau
+and a rise. Identity (1), (R) and the terminal growth bound
+exclude every later decrease followed by a strict rise.
+\end{proof}
+
+
+\noindent{\small Source\enspace\path{clipped_forward_ratio_frontier.tex}.}\par\medskip
+
+For a single increasing nonrectangular arm $A$, write
+$G_j=\sum_{i\le j}A_i$, zero when $j<0$. The following
+single-arm assertion is still \emph{unproved}:
+\[
+ G_{n+1-r}D_n\ge G_{n-r}D_{n+1}
+ \quad\left(r\ge3,\ D_nD_{n+1}>0,\ n\ge2\right).
+                                                        \tag{C}
+\]
+Unlike (R), this assertion has no clipping. Broad and targeted
+finite tests do not constitute its proof.
+
+\begin{proposition}[Conditional single-arm reduction]
+If (C) holds for every increasing arm, then (R) holds for
+every pair of such nonrectangular arms. Consequently their
+ordinary product has unimodal factor-two coefficient tilt.
+\end{proposition}
+\begin{proof}
+At a pair of ranks where $B$ is still strictly rising,
+the established single-arm deficit mode ordering gives
+$\Delta E_B(j)\ge0$ throughout the prefix in question.
+Since $E_B(j)=0$ for $j\le2$, summation of its differences
+gives the exact coefficient identity
+\[
+ H_n=(E_B A)_n
+       =\sum_{j=3}^{n}\Delta E_B(j)\,G_{n-j}.
+                                                        \tag{2}
+\]
+Apply (C) to every $j$ in this sum. The new term at $j=n+1$
+has zero old coefficient and a nonnegative new coefficient.
+Multiplying by the nonnegative $\Delta E_B(j)$ and summing
+therefore proves the \emph{unclipped} ratio comparison
+$H_{n+1}D_n\ge H_nD_{n+1}$ in this range. Clipping preserves
+this comparison at threshold one.
+
+If $B$ has already ceased strictly rising at rank $n+1$,
+its positive-difference initial support implies it never
+strictly rises again. Use the symmetric version of (1):
+\[
+ (2z-1)AB=E_A B-(1-z)B.
+\]
+Its coefficients at this and all later ranks are nonnegative,
+because $E_A B\ge0$ and $B_j-B_{j-1}\le0$ there.
+Thus $H_{n+1}\ge D_{n+1}$ whenever $D_{n+1}>0$, and
+the new clipped ratio is one. The same argument handles
+leaving the rising support of $A$ as in the earlier proof.
+These cases establish (R).
+\end{proof}
+
+\noindent{\small Source\enspace\path{C_to_coupled_S_rising_window.tex}.}\par\medskip
+
+\begin{theorem}[Nonrecovering reverse deficit from one-arm C]
+Let $A=F_Z$, $B=F_Y$ be actual increasing nonrectangular arms, and
+assume $A$ has property C. Set $D_i=(A_i-A_{i-1})^+$,
+$D_0=D_1=0$, $E_B=1-z+(2z-1)B$, and $H=E_BA$.
+At a forward comparison $j\ge2$, assume
+$D_jD_{j+1}>0$ and $E_B$ is nondecreasing throughout ranks
+zero through $j+1$. If
+\[
+                    2(AB)_j-(AB)_{j+1}\ge0,
+\]
+then
+\[
+            2(AB)_{j-1}-(AB)_j
+                       \le2(AB)_j-(AB)_{j+1}.           \tag{1}
+\]
+In particular the deficit monotonicity premise holds whenever $B$
+is still strictly rising at $j+1$, by the established single-arm
+ordinary/deficit mode ordering. If both ordinary factors are still
+strictly rising, the theorem applies whenever either one has C.
+\end{theorem}
+\begin{proof}
+Write $w_r=E_B(r)-E_B(r-1)$. Nonrectangularity gives $w_r=0$
+for $r<3$; the prefix hypothesis gives $w_r\ge0$ through $j+1$.
+The exact source identities are
+\[
+ H_j=\sum_{r=3}^j w_rG_A(j-r),\qquad
+ H_{j+1}=\sum_{r=3}^{j+1}w_rG_A(j+1-r).
+\]
+Multiply the shift-$r$ C inequalities by $w_r$ and sum, retaining
+the nonnegative newly born $r=j+1$ term. This proves
+$H_{j+1}D_j\ge H_jD_{j+1}$. Also
+$H_{j+1}-H_j=\sum_rw_rA_{j+1-r}\ge0$.
+
+The exact identity
+\[
+                    (2z-1)AB=E_BA-(1-z)A
+\]
+identifies the two deficits in (1) with $H_j-D_j$ and
+$H_{j+1}-D_{j+1}$. The latter is nonnegative by hypothesis.
+These facts imply its monotonicity by the positive decomposition
+\[
+\begin{split}
+ H_{j+1}\bigl((H_{j+1}-D_{j+1})-(H_j-D_j)\bigr)
+  ={}&(H_{j+1}D_j-H_jD_{j+1})\\
+    &+(H_{j+1}-H_j)(H_{j+1}-D_{j+1})\ge0.
+\end{split}
+\]
+Here $H_{j+1}\ge D_{j+1}>0$, so division proves (1).
+This step uses BOTH the unclipped ratio comparison and monotonicity
+of the actual source convolution; clipping alone would not suffice.
+\end{proof}
+
+\begin{corollary}[Correct coupled S on the two-rising-factor branch]
+Put $p=q_Zq_Y$, $a=\operatorname{wt}Z$, $b=\operatorname{wt}Y$,
+and $R_i=2p_i-p_{i-1}$. At a usual S crossing index $n$ set
+$j=a+b-n$. If $j\ge2$, both $F_Z,F_Y$ are still strictly rising
+at $j+1$, at least one of them has C, and $R_n\ge0$, then
+\[
+                         R_{n+1}\le R_n.                \tag{2}
+\]
+Assume, as in the A2 induction, that the OLD weighted positive
+differences $2^iu_i$ are unimodal. For $k<\ell$, with $\ell$ their
+first mode, one has $u_k\le2u_{k+1}$. Formula (2) is exactly
+$v_n\le2v_{n+1}$, where $v_n=p_{n-1}-p_n$ in the crossing
+range. Adding gives
+\[
+                    u_k+v_n\le2(u_{k+1}+v_{n+1}),
+\]
+which is S. Strict weighted fall is not needed inside this positive
+branch, although it cannot be removed from general S.
+\end{corollary}
+
+\section{The common nonincreasing phase}
+
+\noindent{\small Source\enspace\path{agent_bothdeclining_first_birth.tex}.}\par\medskip
+
+Let $Z,Y$ be actual increasing normalized arms, of weights $a,b$,
+with forward polynomials $A,B$, and write $P=AB$,
+$q_Z=z^aA(1/z)$, $q_Y=z^bB(1/z)$.
+The POSITIVE corrected reverse source is
+\[
+ \widetilde e_Y=z^{b+1}E_Y(1/z)
+    =(2-z)q_Y-z^b+z^{b+1},
+ \qquad E_Y=1-z+(2z-1)B.
+\]
+It must not be confused with the raw polynomial $(2-z)q_Y$.
+For every actual increasing arm, $E_Y$ and $\widetilde e_Y$ are
+nonnegative and unimodal by the legal-maximum append argument in
+{\normalfont\path{deficit_unimodality.tex}}. Every height interval of
+$\widetilde e_Y$ has endpoint sum at most $b-1$, by
+{\normalfont\path{deficit_forward_reflection.tex}}. Every height interval
+of $q_Z$ has endpoint sum at most its degree $a$.
+These are established SINGLE-arm inputs, independent of general A2.
+
+Put $\kappa=\kappa_Y$, $r=a-j$, $n=a+b-j$, and
+\[
+ C_Z=\Delta q_Z(r+1)-\Delta q_Z(r),\qquad
+ T=P_{j+1}-3P_j+2P_{j-1}.
+\]
+All coefficient sequences are zero-extended.
+
+\begin{proposition}[Unconditional first-height payment]
+If $j\le b$ and $2j\le a+b+2$, then
+\[
+ \boxed{T\le C_Z-q_Z(r+\kappa-1).}                 \tag{1}
+\]
+In particular (1) holds whenever $j\le\min(a,b)$.
+No source-prefix, OLD A2, weighted-tail, head, or mode assumption
+is used in this assertion.
+\end{proposition}
+\begin{proof}
+The corrected source identity is
+\[
+ (2-z)q_Zq_Y=\widetilde e_Yq_Z+z^b(1-z)q_Z.
+\]
+Taking its difference at $n+1$ gives exactly
+\[
+ T=C_Z-\{(\widetilde e_Yq_Z)_n
+                  -(\widetilde e_Yq_Z)_{n+1}\}.    \tag{2}
+\]
+Every product of one height interval of $\widetilde e_Y$ and
+one height interval of $q_Z$ is symmetric unimodal and has
+endpoint sum at most $a+b-1$. The assumption
+$2j\le a+b+2$ says $2n+1\ge a+b-1$, so every such
+component has a nonnegative drop from $n$ to $n+1$.
+
+The lowest height interval of $\widetilde e_Y$ is exactly
+$[0,b+1-\kappa]$: the forward source has positive interval
+support $[\kappa,b+1]$, and its final coefficient is two.
+The drop contributed by this ONE layer convolved with $q_Z$ is
+\[
+ q_Z(n-(b+1-\kappa))-q_Z(n+1)
+   =q_Z(r+\kappa-1),
+\]
+because $j\le b$ implies $n\ge a$ and hence $q_Z(n+1)=0$.
+All remaining layer-product drops are nonnegative. Substitution
+in (2) proves (1).
+\end{proof}
+
+\paragraph{Consequences of the already proved first-birth payments.}
+Suppose $Z=1^\alpha U$, $h=|U|\ge2$, $D=a-\alpha-h$,
+and $A_{j+1}\le A_j$. Throughout the FULL region
+$j\le b$, $2j\le a+b+2$,
+all first-birth arguments in {\normalfont\path{source_birth_gap_nonrecovery.tex}},
+{\normalfont\path{source_birth_gap_refinements.tex}}, and
+{\normalfont\path{arbitrary_source_gap_finite_owner.tex}} remain valid
+with (1) replacing the nondecreasing-source convolution bound.
+Their scalar/primitive/reflection statements use no other source-prefix
+assumption. Consequently:
+\begin{itemize}
+\item $\alpha\ge\kappa-5$ forces $T\le0$;
+\item if $h\ge4$, $\alpha\ge\kappa-6$ forces $T\le0$;
+\item if $T>0$, then, for $d=\kappa-\alpha$,
+      $d\ge6$ and $D\le2d(d-3)$, hence
+      $a\le\alpha+4d(d-3)$ and $j\le a+1$.
+\end{itemize}
+The earlier gap-five and gap-six proofs retain their exhaustive finite
+small-reverse-rank complements; this note supplies a new source payment,
+not a new independent formalization of those complements.
+The negative reverse-rank cases also transfer: $r\le-2$ has
+$C_Z=0$, and $r=-1$ has $C_Z=1$, paid by the same support
+coefficient used in the earlier birth arguments. Thus the displayed
+full region is not being silently restricted to $r\ge0$.
+If BOTH $A$ and $B$ are nonincreasing and $j\le\min(a,b)$, these
+necessary bounds apply in BOTH orientations. This does not itself
+exclude simultaneous first-birth failure; the capacity argument below
+does exclude it in this common-short-rank region.
+
+\begin{proposition}[The second lowest layer pays the second birth]
+Assume the first-height proposition's full scope, $\kappa\ge4$,
+and $A_{j+1}\le A_j$. Put $v=r+\kappa-1$. If
+\[
+                         C_Z\le q_Z(v)+q_Z(v+2),     \tag{3}
+\]
+then $T\le0$.
+\end{proposition}
+\begin{proof}
+The early normalized source bound gives $E_Y(\kappa+2)\ge2$.
+Since $\widetilde e_Y(0)=2$, the SECOND height interval also
+starts at zero. Its right endpoint is $b+1-\kappa-\delta$
+for some $\delta\in\{0,1,2\}$. At the compared edge its drop
+after convolution with $q_Z$ is exactly $q_Z(v+\delta)$.
+The first two height layers are distinct, even when their
+endpoints agree, so
+\[
+                T\le C_Z-q_Z(v)-q_Z(v+\delta).
+\]
+If $C_Z\le q_Z(v)$, the first-height proposition already pays.
+Otherwise $C_Z>q_Z(v)\ge0$, so $r\ge-1$; the premise on $A$
+gives $\Delta q_Z(r)\ge0$, including its zero extension at $r=-1$.
+Hence
+\[
+ q_Z(r+1)\ge\Delta q_Z(r+1)\ge C_Z>q_Z(v),
+ \qquad r+1<v.
+\]
+Unimodality of $q_Z$ therefore puts $v$ after its first mode
+and makes $q_Z(v+\delta)\ge q_Z(v+2)$.
+Now (3) pays the two-layer bound.
+\end{proof}
+
+Consequently the full absolute first-weight-eight theorem for
+$h\ge4$ from {\normalfont\path{source_birth_gap_refinements.tex}} also
+transfers to $j\le b$, $2j\le a+b+2$ without a source-prefix
+assumption. Its only non-first-birth finite complement uses exactly
+the two-term criterion (3); the same canonical initial exchange,
+exhaustive small-rank complement, and earlier first-birth proof apply.
+Thus an owner with at least four non-one parts has $T\le0$
+throughout this region whenever $\kappa_Y\le8$.
+
+\begin{proposition}[A later source increment with its subtraction removed]
+Assume $2j\le a+b+2$, let $L\ge2$ and $L\le\kappa-3$, and suppose
+\[
+                       b-j\ge\kappa+L-2.            \tag{4}
+\]
+Then
+\[
+ \boxed{T\le C_Z-2^{L-2}q_Z(r+\kappa-1+L).}         \tag{5}
+\]
+\end{proposition}
+\begin{proof}
+The proved early source-curvature profile gives
+$\Delta E_Y(\kappa+L)\ge2^{L-2}$.
+Under reversal, this counts at least $2^{L-2}$ distinct
+height intervals of $\widetilde e_Y$ whose RIGHT endpoint is
+$R=b+1-\kappa-L$. For each such interval $[\ell,R]$,
+its endpoint-sum bound gives
+\[
+ \ell+R\le b-1,\qquad \ell\le\kappa+L-2\le b-j.
+\]
+Its drop after convolution with $q_Z$ is
+\[
+ q_Z(n-R)-q_Z(n+1-\ell)
+    =q_Z(r+\kappa-1+L),
+\]
+since $n+1-\ell\ge a+1$ by (4). Every unselected
+layer-product has a nonnegative drop by the same upper-center
+comparison as before. Equation (2) proves (4).
+\end{proof}
+
+Thus the linear-degree argument of
+{\normalfont\path{source_curvature_linear_owner.tex}} also transfers
+to this region whenever its $L=d-(D-2r-2)-3\ge2$ satisfies (4).
+For $L=0,1$, that proof uses only the first birth, so (4) is unnecessary.
+Without (4), dropping the second coefficient of a higher height interval
+would be unjustified. In particular no global source-prefix assumption
+has silently been replaced by an unconditional positive convolution.
+
+\begin{lemma}[The owner's last capacity pays a primitive curvature]
+Suppose $Z=Z^-t$, $t\ge2$, and $A_{j+1}\le A_j$.
+Write $r=a-j$ as above. For every integer $1\le\delta\le t$,
+\[
+                    C_Z\le q_Z(r+\delta)
+                 \quad\hbox{whenever }C_Z>0.        \tag{6}
+\]
+\end{lemma}
+\begin{proof}
+For $r\le-2$ the premise $C_Z>0$ is impossible. For $r=-1$,
+$C_Z=1$ and $q_Z(\delta-1)\ge1$, since
+$0\le\delta-1\le t-1<a$. Assume $r\ge0$.
+The last two ordinary coefficients of $q_Z$ are both one.
+Thus $\Delta q_Z(r)\ge0$ and $C_Z>0$ force $r\le a-2$:
+at $r=a-1$, the first condition gives $q_Z(a-2)\le1$, whereas
+the second would require $q_Z(a-2)>1$; the later cases have
+nonpositive curvature or a negative first difference.
+
+Put $Q=q_{Z^-}$ and $W=[t]Q$. The terminal unit of
+$q_Z=W+z^a$ is absent through $r+1$, so
+\[
+ \Delta q_Z(r)=Q_r-Q_{r-t}\ge0,\qquad
+ C_Z=\Delta Q(r+1)-\Delta Q(r+1-t)>0.                \tag{7}
+\]
+If $\Delta Q(r+1)\le0$, (7) gives
+$\Delta Q(r+1-t)<0$. Unimodality of $Q$ then makes it
+nonincreasing from this strict negative edge onwards. Hence
+$Q_r\le Q_{r+1-t}<Q_{r-t}$, contradicting (7).
+Therefore $\Delta Q(r+1)>0$. No earlier difference of a
+unimodal sequence can be negative before a positive difference,
+so $\Delta Q(r+1-t)\ge0$. Consequently
+\[
+ C_Z\le\Delta Q(r+1)\le Q_{r+1}.
+\]
+The interval sum $W_{r+\delta}$ includes the summand $Q_{r+1}$,
+because its contributing old indices range from
+$r+\delta-t+1$ to $r+\delta$ and $1\le\delta\le t$.
+All summands are nonnegative, proving (6).
+\end{proof}
+
+\begin{theorem}[Complete common-short-rank both-nonincreasing theorem]
+Suppose BOTH arms are nonrectangular, BOTH ordinary factors
+are nonincreasing at $j+1$, and
+$j\le\min(a,b)$. Then $T\le0$, with no source-prefix,
+nonnegative-tail, OLD A2, head, or product-mode assumption.
+\end{theorem}
+\begin{proof}
+Orient the arms so the last capacity $t$ of $Z$ is at least
+the last capacity of $Y$. The first missing weight satisfies
+$\kappa_Y\le\max(Y)+1$, so $1\le\kappa_Y-1\le t$.
+If $C_Z\le0$, the first-height proposition pays immediately.
+Otherwise apply (6) with $\delta=\kappa_Y-1$, and then (1).
+\end{proof}
+
+More generally, within the first-height proposition's full scope,
+a nonincreasing owner $Z$ with last capacity at least
+$\kappa_Y-1$ always has $T\le0$. In particular a positive
+recovery in that full scope requires
+$\kappa_Y\ge\max(Z)+2$. This capacity exclusion is independent
+of the earlier source/initial-run gap exclusions.
+
+\begin{theorem}[The entire both-nonincreasing first half]
+For two actual nonrectangular increasing arms, suppose BOTH forward
+factors are nonincreasing at $j+1$ and
+\[
+                             2j\le a+b+2.           \tag{8}
+\]
+Then $T\le0$. No source-prefix, nonnegative-tail, OLD A2,
+head, or product-mode assumption is needed.
+\end{theorem}
+\begin{proof}
+Orient $a\le b$. The preceding theorem handles $j\le a$.
+If $a+2\le j\le b$, then $r=a-j\le-2$, so $C_Z=0$,
+and the first-height proposition gives $T\le0$.
+If $j=a+1\le b$, then $C_Z=1$. The opposite nonincreasing
+premise forces $\kappa_Y\le j+1=a+2$: otherwise both opposite
+coefficients are still universal and strictly double.
+Thus $0\le\kappa_Y-2\le a$, and the first-height proposition
+pays $C_Z$ by $q_Z(\kappa_Y-2)\ge1$.
+
+It remains that $j>b$. Integrality, (8), and $a\le b$ force
+$a=b$, $j=a+1$, $n=a-1$. All source-layer products still
+have nonnegative drops, because their endpoint sums are at most
+$a+b-1=2n+1$. The lowest source height interval contributes
+\[
+ q_Z(\kappa_Y-2)-q_Z(a)=q_Z(\kappa_Y-2)-1.
+\]
+If $g$ is the opposite non-one count, then
+$3\le\kappa_Y\le g+2$ and $2g\le a-1$ imply
+$1\le\kappa_Y-2\le a-2$.
+Every interior coefficient of $q_Z$ on $[1,a-2]$ is at
+least two: $q_Z(1)=h+1\ge2$, $q_Z(a-2)=A_2=2$, and
+unimodality bounds every intervening coefficient below by
+the smaller endpoint value. The displayed drop is therefore
+at least one and pays $C_Z=1$.
+\end{proof}
+
+The nonrectangular hypothesis in this first-half theorem is real.
+For two equal all-ones arms of weight $a$, the triangular product
+has $T=1$ at $j=a+1$, which satisfies (8); that edge is after
+the ordinary product mode and therefore is not a proper S edge.
+
+\section{The reverse half of a product tail}
+
+\noindent{\small Source\enspace\path{agent_half_lc_actual_weak_curvature.tex}.}\par\medskip
+
+For a polynomial $p$, zero-extend its coefficients and write
+\[
+ E_p(n)=2p_n-p_{n-1},\qquad
+ T_p(n)=E_p(n+1)-E_p(n)=2p_{n+1}-3p_n+p_{n-1}.
+\]
+\begin{theorem}[Ordinary half-tail source nonrecovery]\label{thm:actual-half-tail}
+Let $X,Y$ be normalized actual increasing nonempty arms, and put
+$p=q_Xq_Y$, $D=\operatorname{wt}X+\operatorname{wt}Y$.
+If $\nu$ is the LAST ordinary coefficient mode of $p$, then
+\[
+                        T_p(n)\le0\qquad(\nu<n,\ 2n\le D). \tag{W}
+\]
+No nonnegative-source hypothesis is required. In fact $E_p(n)\ge0$
+through this whole half range independently of (W).
+\end{theorem}
+
+\paragraph{Actual inputs used in the proof.}
+A normalized arm $Z=1^\alpha U$ has non-one count $h$, weight $w$,
+ordinary polynomial $q_Z$, main interval product
+$K_Z=[\alpha+1]\prod_{u\in U}[u]$ of degree $w-h$, and corrected source
+\[
+ e_Z=(2-z)q_Z-z^w+z^{w+1}.
+\]
+The established actual inputs are:
+\begin{itemize}
+\item $q_Z$ is positive on $[0,\operatorname{wt}Z]$, unimodal,
+and every ordinary height interval has endpoint sum at most its weight;
+\item $e_Z$ is nonnegative unimodal, positive exactly on
+$[0,\operatorname{wt}Z+1-\kappa_Z]$, starts with coefficient two,
+and every height interval has endpoint sum at most $\operatorname{wt}Z-1$;
+\item $q_Z\succeq K_Z$ and
+$(q_Z(j)-q_Z(j-1))^+\le K_Z(j)$ at every rank;
+\item $2h\le\operatorname{wt}Z-1$ and
+$\operatorname{wt}Z\ge\kappa_Z(\kappa_Z-1)/2$;
+\item for a nonrectangular arm, its second ordinary height interval is
+exactly $[1,\operatorname{wt}Z-2]$.
+\end{itemize}
+The main-box derivative bound is
+{\normalfont\path{main_box_derivative_envelope.tex}}; the mass bound is
+{\normalfont\path{first_defect_mass.tex}}. The remaining shape inputs are the
+established ordinary and corrected-source layer theorems.
+
+\paragraph{A window identity and its crossing case.}
+Suppose $p$ is unimodal, with first mode $m$ and last mode $\ell$,
+and $w=[t]p$. On the ordinary tail of $w$, put $k=n+1-t$.
+Then
+\[
+ T_w(n)=E_p(n+1)-E_p(k),\qquad
+ \Delta w_{n+1}-\Delta w_n=\Delta p_{n+1}-\Delta p_k.   \tag{1}
+\]
+The first window mode is at least $m$. If $k\le\ell$, the leaving
+input increment is nonnegative, and the entering input increment is
+nonpositive because $n$ is after the window mode and therefore at least
+the first old mode. Hence $\Delta w_{n+1}\le\Delta w_n$; since the window
+is on its ordinary tail, $\Delta w_{n+1}\le0$ as well. Therefore
+\[
+ T_w(n)=\Delta w_{n+1}+(\Delta w_{n+1}-\Delta w_n)\le0. \tag{2}
+\]
+This includes all maximum plateaus and negative leaving indices.
+Only the case $k>\ell$ needs a source comparison.
+
+\begin{lemma}[Rectangle-factor base]
+Statement (W) holds whenever at least one arm is rectangular.
+\end{lemma}
+\begin{proof}
+Write $p=[A+1]q$ with $\deg q=b$.
+If $A\ge b$, its maximum plateau is exactly $[b,A]$, so there is no
+strict post-LAST-mode position through $(A+b)/2$.
+If $A<b$, write $e=(2-z)q-z^b+z^{b+1}$. Its proved unimodality and
+the causal averaging relation $2q_j=e_j+q_{j-1}$ below rank $b$ imply
+that the source mode is no later than the first $q$ mode. Consequently
+the raw source of $q$ is nonincreasing after its ordinary mode up to
+rank $b-1$. The window argument (1)--(2) pays every required comparison
+with $n+1<b$: in its noncrossing case both source endpoints lie in
+this monotone prefix.
+
+The only remaining possibility is $n+1=b$, which the half-range
+condition permits only for $b-A\in\{1,2\}$. The exact identity
+\[
+                  (2-z)p=[A+1]e+z^b-z^{A+b+1}
+\]
+gives
+$T_p(b-1)=1-e_{b-A-1}\le0$, since $e_0=2$ and $e_1\ge1$.
+Two rectangular factors can also be handled directly by their
+log-concave trapezoidal product.
+\end{proof}
+
+\paragraph{Induction setup and the NEW terminal-source edges.}
+Assume both new arms are nonrectangular. Choose the NEW heavier arm,
+of weight $a\ge b$, delete its last non-one part $t$, and call its
+old weight $c=a-t$. Let $p$ be the old ordinary product, and $P$ the
+new one. Then
+\[
+                          P=[t]p+z^a q_Y.              \tag{3}
+\]
+The total non-one count decreases by one, so (W) holds for $p$ by
+induction. The first mode of $P$ is strictly below $a$.
+At that mode $P$ agrees with $w=[t]p$, and $w\le P$ everywhere,
+so $\max w=\max P$ and every maximum of $w$ is also a maximum of $P$.
+In particular
+$\operatorname{lastmode}w\le\operatorname{lastmode}P$.
+Thus a strict ordinary-tail position of $P$ is on the window tail.
+
+The source in (3) can affect a half-range coefficient triple only when
+$n\ge a-1$, hence only for NEW weight gaps $a-b=0,1,2$.
+Those edges are all covered by the proved theorem ``the entire
+both-nonincreasing first half'' in
+{\normalfont\path{agent_bothdeclining_first_birth.tex}}:
+\[
+\begin{array}{c|c|c}
+a-b&n&j=a+b-n\\\hline
+2&a-1&a-1=b+1\\
+1&a-1&a\\
+0&a-1,\ a&a+1,\ a
+\end{array}
+\]
+At each listed forward edge both actual factors are nonincreasing,
+and $2j\le a+b+2$. That theorem gives $T_P(n)\le0$ without a mode,
+source-sign or OLD assumption. Henceforth
+\[
+                              n+1<a.                   \tag{4}
+\]
+Then $T_P(n)=T_w(n)$ and $k=n+1-t<c$.
+By (2) a possible failure must have $k>\ell$, the LAST old mode.
+
+\paragraph{An OLD rectangular arm created by deletion.}
+The unchanged old opposite arm is nonrectangular. If the deleted arm
+has become the rectangle $[c+1]$, the old product is $[c+1]q_Y$ and
+its LAST mode is at least $c$: it strictly increases through rank $c$
+when $c<b$, and has maximum plateau $[b,c]$ when $c\ge b$.
+But (4) gives $k<c\le\ell$, so (2) pays the edge.
+The remaining induction case therefore has BOTH old arms nonrectangular.
+
+\paragraph{The OLD positive source prefix and the entering correction.}
+Orient the OLD weights as $M\ge s$, write $d=M+s$, and let
+$\kappa\ge3$ be the larger old arm's first missing weight. Put
+\[
+ R=M+1-\kappa,\quad
+ C=e_Lq_S,\quad E=(2-z)p.
+\]
+Then
+\[
+                         E=C+z^M(1-z)q_S.              \tag{5}
+\]
+Thus $E_j=C_j\ge0$ below $M$.
+Every interval-product component of $C$ has endpoint sum at most
+$M+s-1=d-1$, so $C$ is nonincreasing from $\lfloor d/2\rfloor$ onwards.
+Together with the old induction hypothesis, this proves
+\[
+ E_u\ge E_v\quad(\ell<u\le v<M).                       \tag{6}
+\]
+No global sign-prefix or OLD A1 assertion is used.
+
+If $n\le M-2$, both source endpoints in (1) lie in this old prefix,
+so (6) pays the edge. Suppose now $n\ge M-1$.
+
+\begin{lemma}[The initial entering-source boundary]
+The position $n=M-1$ is always paid.
+\end{lemma}
+\begin{proof}
+Here the entering value is $E_M=C_M+1$.
+If $\kappa\le s+2$ and $M>s$, pair the lowest source layer $[0,R]$
+with the lowest ordinary layer $[0,s]$. Its trapezoid loses exactly
+one at $M-1\to M$, because the leaving point $\kappa-2$ lies in
+$[0,s]$. All other component differences are nonnegative, so
+$E_M\le E_{M-1}\le E_k$.
+If $M=s$, use the second ordinary layer $[1,s-2]$ instead: the leaving
+point $\kappa-2$ belongs to it because $3\le\kappa\le M$.
+
+If $\kappa>s+2$, then $C$ has support endpoint
+$R+s=M+s+1-\kappa\le M-2$, so $E_M=1$.
+The half-range condition gives $k=M-t\le s+2$.
+Since $s\ge3$, this case has $\kappa\ge6$, and first-missing mass
+gives $R\ge2$. The convolution $C$ is positive on all of $[0,R+s]$,
+which contains $[0,s+2]$. Since $k>\ell\ge0$ and $k<M$,
+$E_k=C_k\ge1=E_M$.
+\end{proof}
+
+\paragraph{All later entering-source positions.}
+Write $n=M+r$, $r\ge0$. Equations (1) and (5) give
+\[
+ T_P(n)=C_{M+r+1}+q_S(r+1)-q_S(r)-E_k.                 \tag{7}
+\]
+The new half-range condition gives
+\[
+                      k\le k_*:=s-r+1.                 \tag{8}
+\]
+Every comparison of a component at $M-1$ with $M+r+1$ has nonnegative
+drop, since the two indices sum to $2M+r\ge d-1$.
+
+\begin{lemma}[Late entering-source payment]
+If $r+3\ge\kappa$, then (7) is nonpositive.
+\end{lemma}
+\begin{proof}
+For each $q_S$ height interval $[A,B]$ starting at $A=r+1$, pair it
+with the lowest source layer $[0,R]$. At $M-1$ this convolution counts
+the entire interval, because $B\le s-r-1\le M-1$ and
+$M-1-R=\kappa-2\le A$. At $M+r+1$ it misses at least $A$, since
+$M+r+1-R=r+\kappa\ge A+1$.
+Thus the total drop is at least the number of such starting layers,
+which is at least $q_S(r+1)-q_S(r)$. Therefore
+$E_{M+r+1}\le E_{M-1}\le E_k$, by (6).
+\end{proof}
+
+Only $0\le r\le\kappa-4$ remains. Let $h_S$ be the old short arm's
+non-one count and $m_S=s-h_S$ the degree of its main interval product.
+
+\begin{lemma}[A short main-box payment]
+If $m_S\ge\kappa+r-1$, then (7) is nonpositive.
+\end{lemma}
+\begin{proof}
+The lowest source layer contributes exactly
+\[
+ \sum_{u=\kappa-2}^{\kappa+r-1}q_S(u)
+                  -\sum_{u=M}^{M+r+1}q_S(u)             \tag{9}
+\]
+to $C_{M-1}-C_{M+r+1}$. The second sum is zero if $M>s$, and one if
+$M=s$. Let $K_S$ be the short arm's main interval product. Its symmetry
+and unimodality, together with $r+1\le\kappa-2$ and
+$\kappa+r-1\le m_S$, give
+\[
+ q_S(\kappa-2)\ge K_S(\kappa-2)\ge K_S(r+1)
+                         \ge(q_S(r+1)-q_S(r))^+.
+\]
+There is at least one further positive coefficient in (9), namely
+$q_S(\kappa-1)\ge1$, since $\kappa-1\le m_S\le s$.
+It pays the possible terminal penalty one. Other component drops are
+nonnegative, so again $E_{M+r+1}\le E_{M-1}\le E_k$.
+\end{proof}
+
+\begin{lemma}[A virtual central head payment]
+Suppose $k_*<M$ and $\kappa\le M-s+2r+1$. Then (7) is nonpositive.
+The number $M-s+2r$ is only a comparison width, not a claimed legal arm part.
+\end{lemma}
+\begin{proof}
+Compare $C_{k_*}$ with $C_{M+r+1}$. Their indices sum to $d+2$,
+so every component has nonnegative drop. For a $q_S$ height interval
+beginning at $A=r+1$, its right endpoint obeys
+$B\le s-r-1=k_*-2$. At the head $k_*$ the lowest source layer counts
+all of $[A,B]$, since
+\[
+                   k_*-R=s-r+1-(M+1-\kappa)\le A.
+\]
+At the tail it misses $A$ as in the late payment.
+Thus $E_{M+r+1}\le C_{k_*}=E_{k_*}\le E_k$ by (6) and (8).
+\end{proof}
+
+\paragraph{The two resources cover every nonexceptional head.}
+Suppose $k_*<M$. If both preceding payments failed, then
+\[
+ M\le s+\kappa-2r-2,\qquad m_S\le\kappa+r-2.
+\]
+Normalization $2m_S\ge s+1$ gives $s\le2\kappa+2r-5$, and hence
+$M\le3\kappa-7$. This contradicts first-missing mass:
+\[
+ \kappa(\kappa-1)/2>3\kappa-7
+       \quad(\kappa\ge3),
+\]
+because the doubled gap is
+$(\kappa-3)(\kappa-4)+2>0$ for every integer $\kappa\ge3$.
+
+\paragraph{The three exceptional heads are also covered.}
+The condition $k_*=s-r+1\ge M\ge s$ has only three possibilities.
+\begin{itemize}
+\item $M=s,r=0$: mass gives $s\ge2\kappa-3$, so
+$2m_S\ge s+1$ implies $m_S\ge\kappa-1$ and the main-box payment applies.
+\item $M=s+1,r=0$: mass gives $M\ge2\kappa-3$, and
+$2m_S\ge s+1=M$ implies the same integer bound $m_S\ge\kappa-1$.
+\item $M=s,r=1$: for $\kappa\le4$ the late payment already applies;
+for $\kappa\ge5$, mass gives $s\ge2\kappa-1$, hence
+$m_S\ge\kappa$ and the main-box payment applies.
+\end{itemize}
+This pays every source-free half-range comparison after the last new mode.
+Together with the NEW terminal-source edges and the rectangular cases,
+the induction is complete, proving (W).
+
+
+\section{The closed interval comparison}
+
+\noindent{\small Source\enspace\path{coupled_source_window_A2_and_kappa_nine_original_proof.tex}.}\par\medskip
+
+\begin{theorem}[A complete source-to-window A2 bridge]
+Let $p$ be an actual old ordinary arm product. Assume FULL OLD A2
+and coefficient tilt A1 for $p$. Put $u=(\Delta p)^+$, let $m$ be
+the LAST ordinary mode of $p$, and let $\ell$ be the first mode of
+$2^nu_n$. Set $E_n=2p_n-p_{n-1}$.
+Assume the following CLOSED-gap proper comparison for every $t\ge1$:
+whenever $n>m$, $k=n-t\ge0$, $k<\ell$,
+\[
+ p_n>p_k,\quad p_{n+1}>p_{k+1},\quad 0\le E_n\le E_k,
+\]
+one has $E_{n+1}-E_n\le E_{k+1}-E_k$.
+Then EVERY ordinary uniform window $[t]p$ has FULL A2.
+This theorem concludes weighted-positive-D UI, not whole raw-source UI.
+\end{theorem}
+\begin{proof}
+Put $v=[t]p$ and $w_n=\Delta v_n=p_n-p_{n-t}$. Uniform convolution
+makes $v$ ordinarily UI. Its positive differences have initial interval
+support: before the old first mode the entering term strictly exceeds
+the outgoing term; across the old mode interval its differences are
+nonincreasing; after that interval they are nonpositive. This also
+follows directly from the established actual positive-difference support.
+Write $\sigma$ for its first mode and $f_n=2^n(w_n)^+$.
+
+First build a COMPLETE UI head comparison, including its first boundary.
+For $n\le m$, every signed old difference is nonnegative, so
+$w_n=([t]u)_n$. Its weighted sequence is convolution of the old A2
+sequence by $(1,2,\ldots,2^{t-1})$, a log-concave kernel without holes.
+Such convolution preserves UI. Denote this WHOLE UI sequence by $g$.
+At $m+1$, signed convolution and clipping give $f_{m+1}\le g_{m+1}$.
+Alternatively, for $n<t$ one has $w_n=p_n$ and $f_n=2^np_n$,
+whose whole sequence is UI by A1; at $t$, $f_t\le2^tp_t$.
+Choose
+\[
+                         c=\max(m,t-1).
+\]
+If $m\ge t-1$ use the first head sequence; otherwise use the second.
+In either case $f=g$ through $c$, $f_{c+1}\le g_{c+1}$, and $g$ is
+WHOLE UI. An earlier strict fall of $f$ therefore forces
+$f_{c+1}\le f_c$. It remains to propagate NONSTRICT falls after this
+boundary; using strict falls alone would leave an equality gap.
+
+At a crossing $n>m$, $n\ge t$, if $w_n,w_{n+1}>0$, set $k=n-t$.
+If $k\ge\ell$, the old weighted geometric tail gives
+\[
+ w_n\le\sum_{i=k+1}^{\mathrm{firstmode}(p)}u_i\le2u_{k+1}.
+\]
+The finite sum bound follows from $2u_{i+1}\le u_i$ throughout the
+used tail; its sharper telescoping form subtracts the last coefficient.
+Also
+\[
+ w_{n+1}=w_n-u_{k+1}-(p_n-p_{n+1}),\qquad p_n-p_{n+1}\ge0,
+\]
+so $2w_{n+1}\le w_n$ unconditionally in this branch.
+
+If $k<\ell$, then $E_k,E_{k+1}>0$ and
+$H=E_{k+1}-E_k=2u_{k+1}-u_k\ge0$. A nonstrict weighted fall means
+\[
+          2w_n-w_{n-1}=E_n-E_k\le0.                    \tag{1}
+\]
+If $E_n<0$, A1 implies $E_{n+1}\le0$, hence
+$2w_{n+1}-w_n=E_{n+1}-E_{k+1}<0$.
+Otherwise the CLOSED-gap hypothesis and (1) give
+\[
+ E_{n+1}-E_{k+1}\le E_n-E_k\le0,
+\]
+again proving $2w_{n+1}\le w_n$. Once the positive-difference support
+ends, $f$ is zero and every later edge is nonincreasing.
+Thus nonstrict falls propagate throughout the entire crossing range.
+The kernel-checked head/boundary/closed-cross lemma excludes every
+strict fall followed by a later rise of $f$. Finiteness supplies a
+whole up/down mode. This proves FULL A2 for $[t]p$.
+\end{proof}
+
+\paragraph{The relative raw-kernel theorem retains a strict surplus at equality.}
+The frozen relative-head proof assumes $0\le E_n<E_k$, but its exact
+lower bound is stronger: with $\lambda=C/d_r>0$,
+\[
+ H\ge\lambda E_k+1,\qquad E_n\ge d_r>0,\quad T\le C.
+\]
+Thus $E_n\le E_k$ already gives $H\ge C+1>T$. Its proof of the
+raw-kernel convolution inequality used neither strictness of the gap
+nor C. The CLOSED-gap extension is therefore valid, with no appeal to
+an unproved continuity or equality argument. It covers every $r\ge k$.
+
+\section{Small first missing weights}
+
+\noindent{\small Source\enspace\path{coupled_source_window_A2_and_kappa_nine_original_proof.tex}.}\par\medskip
+
+\begin{theorem}
+Every final-deletion-closed class of ACTUAL normalized increasing arms
+with FULL C and $\kappa\le9$ has FULL pair A2. The ORIGINAL strict
+core and BOTH relatives are coefficient UI at EVERY strict peak,
+including ONE arbitrary legal heavier append.
+For an old nonrectangular pair with maximum first missing weight nine,
+EVERY ordinary uniform window of its reverse product has FULL A2.
+No whole raw-source-window UI conclusion is asserted.
+\end{theorem}
+
+\subsection{All positive mixed recoveries have shared forward rank at most ten}
+The old maximum-$\kappa\le8$ class and arbitrary heavier append are
+frozen. Consider an old pair of maximum first missing weight nine,
+with FULL OLD A2 in the count induction. A1 follows from FULL C.
+Both-rising C and both-nonrising actual resources give $T\le0$ after
+the LAST ordinary product mode whenever the current source is nonnegative.
+The latter includes both halves by combining the unconditional forward
+both-nonincreasing theorem and the actual reverse half-tail theorem.
+Only mixed recovery remains.
+
+If its rising opposite has $\kappa\le8$, the complete frozen pointwise
+exceptions have owner weight at most eight. An owner of first missing
+weight nine has weight at least 36, so none is possible. Hence a positive
+new mixed recovery must have opposite first missing weight NINE.
+With $Z=1^\alpha U$ the nonincreasing owner, use the exact initial
+exchange $\alpha_* =\max(\alpha,t_1-1)$.
+The frozen absolute-nine theorem pays all owners with $h\ge6$.
+The gap-six theorem pays $h=4,5$ when $\alpha_*\ge3$; the gap-five
+theorem pays $h=2,3$ when $\alpha_*\ge4$.
+The remaining canonical domain is
+\[
+\begin{array}{c|c|c|c}
+ \alpha& h& t_1& D_{\max}\\\hline
+ 1&2,3,4,5&2&71\\
+ 2&2,3,4,5&2,3&56\\
+ 3&2,3&2,3,4&36
+\end{array}                                                     \tag{2}
+\]
+Here $D=\sum(t_i-1)$, $d=9-\alpha$, and the unbounded necessary
+bound is $D\le\min(2d(d-3),12d-25)$.
+
+For $r=a-j\ge0$, positive recovery forces positive primitive curvature,
+$D=2r+2+e$, and $0\le e\le d-3$. Put $L=d-e-3$ and
+\[
+ R_m=\frac{\binom{r+e+m+2}{m}}{\binom r m}.
+\]
+The genuine compulsory source increments give the frozen sufficient
+rank payment
+\[
+ \frac{\mathbf1_{L\le r}}{R_L}
+ +\sum_{\substack{2\le v\le6\\L+v\le r}}
+       \frac{2^{v-2}}{R_{L+v}}\ \ge\ \frac{e+1}{r+1}.    \tag{3}
+\]
+All these offsets are in the mode-free early-source range through
+$\kappa-3=6$; included birth reads have nonnegative actual indices.
+The old CI-relative/reflection proof of (3) applies for every $h\ge2$,
+not only the $h\ge6$ specialization of the earlier nine-threshold result.
+
+The COMPLETE rank grammar (2)--(3) has 406 states. Exact rational
+arithmetic pays 291. Its remaining 115 states have $D\le25$.
+For EVERY remaining state enumerate all sorted partitions of $D$ into
+the specified counts, with minimum increment at most $\alpha$.
+This reconstructs 2143 distinct canonical owners and ALL 4377 used
+owner/rank inputs. Of these, 3757 have nonpositive curvature and are
+irrelevant to positive recovery. At the 620 positive-curvature inputs,
+the direct complete compulsory-source bound pays 601:
+\[
+ F_Z(v)+F_Z(v-2)+2F_Z(v-3)+4F_Z(v-4)
+                  +8F_Z(v-5)+16F_Z(v-6)\ge C,
+ \qquad v=a-r-8.                                      \tag{4}
+\]
+The ONLY 19 source-unpaid candidates all have $j=a-r\le10$.
+All rational numerators/positive denominators, nonpositive-curvature
+classifications, payments (4), and candidate rank bounds reduce to
+719 distinct nonnegative integer obligations in six ordinary-kernel
+chunks and ONE complete public aggregate. An independent degree/maximum-part
+grammar must reconstruct the entire rank and owner partition, every
+category, every numerator, and the public obligations.
+
+For $r\le-2$ no primitive curvature is available. At $r=-1$, the
+unit birth is absent only when $a+2-9<0$, so $a\le6$ and $j=a+1\le7$.
+One-part owners have positive primitive curvature ONLY at this same
+negative index and are handled by the identical bound. Therefore
+\[
+             T>0\quad\Longrightarrow\quad j\le10       \tag{5}
+\]
+throughout the entire new mixed/source-prefix region, independently
+of every opposite capacity, count, padding and weight.
+
+\subsection{A genuine strict opposite head pays all nineteen candidates}
+At a proper crossing, BOTH strict positive windows give
+\[
+                  k+n+2<a+b,\qquad k+1\le j-2\le8.
+\]
+This uses actual upper-centre reflection of $q_Zq_Y$, not a synthetic
+scalar rank profile. Also $j\le a+1$, hence $k+1\le a-1$.
+The entire used RAW owner source $R_Z=(2-z)q_Z$ is consequently
+nonnegative, because it agrees with the corrected positive source
+below degree $a$; its constant coefficient is two.
+
+The opposite main interval product has degree $M$ and largest factor
+degree $B$. Its complete first-missing staircase forces
+\[
+ M\ge1+\frac{7\cdot8}{2}=29,\qquad
+ M-B\ge1+\frac{6\cdot7}{2}=22.
+\]
+The exact CI positive-primitive support formula gives positive
+differences through $\min(\lfloor M/2\rfloor,M-B)\ge14$.
+Every other actual shifted-CI summand has endpoint sum at least $M$,
+so its differences are nonnegative through $\lfloor M/2\rfloor$.
+Thus the ACTUAL opposite coefficients satisfy
+\[
+                       \Delta q_Y(i)\ge1\quad(0\le i\le14).      \tag{6}
+\]
+No coefficientwise lower bound is differentiated to obtain (6).
+
+The exact head increment is $H=[z^{k+1}]R_Z(1-z)q_Y$.
+All used terms are nonnegative. If $0\le r<k$, its owner term $r+1$
+and (6) give
+\[
+ H\ge R_Z(r+1)\Delta q_Y(k-r)
+   \ge R_Z(r+1)=q_Z(r+1)+d_{r+1}\ge C\ge T.
+\]
+For $r=-1$ the owner-constant term gives $H\ge2\ge T$.
+For $r\ge k$, the CLOSED-gap relative raw-kernel proof above gives
+$H>T$. Every positive recovery is therefore paid at EVERY proper
+closed-gap head. For $T\le0$, FULL OLD A2 gives $H\ge0$.
+Terminal forward ranks zero/one are paid directly or have negative
+current source. This proves the complete closed-gap source criterion.
+
+\subsection{FULL induction and original coefficients}
+The first theorem gives FULL A2 for EVERY uniform window of an old
+maximum-nine pair. In the non-one-count induction orient a heavier
+new arm $Zt$. Empty, rectangular and heavier-one-part bases are frozen.
+If the old pair has maximum first missing weight at most eight, its
+frozen arbitrary heavier-append theorem applies. Otherwise use the new
+window theorem. The exact actual correction starts at the new heavier
+weight, and the NEW first ordinary mode is strictly below that weight.
+Hence its positive differences are a terminal truncation of the window's
+positive differences, followed by zeros; FULL A2 is preserved.
+This closes the induction and also proves ONE arbitrary extra legal
+heavier append without requiring C of that new arm. The frozen proper
+deletion and lower-peak/reflection joins then give ORIGINAL coefficient
+UI of the strict core and BOTH relatives.
+
+Let A15 be A14 together with ALL max-four-prefix arms followed by FOUR
+successive dominant capacities $T_i\ge2(W_0+\sum_{j<i}T_j)$, with
+$T_1\ge\max(5,2W_0)$, and all max-eight tails of nonbinary weight at
+most 32. Binary counts and initial padding are arbitrary. Frozen
+dominant C and max-four/fixed-weight C give FULL C; final deletion
+closure and $\kappa\le9$ are exact. Thus BOTH original arms may
+independently have FOUR such jumps, arbitrary strict peak, and ONE
+further legal heavier append. No amplification is used.
+
+
+\section{First missing weights ten through twelve}
+
+\noindent{\small Source\enspace\path{first_missing_twelve_original_criterion_proof.tex}.}\par\medskip
+
+All notation and actual-model lemmas are those of the frozen
+{\normalfont\path{coupled_source_window_A2_and_kappa_nine_original_proof.tex}}.
+In particular FULL C, FULL A1 and FULL A2 have their original coefficient
+meanings. No conclusion about raw-source-window unimodality is used here.
+
+\begin{theorem}
+Every final-deletion-closed class of normalized ACTUAL increasing arms
+with FULL C and first missing weight at most twelve has FULL pair A2.
+Its ORIGINAL unamplified strict core and BOTH relatives have unimodal
+coefficients at EVERY strict peak. ONE further arbitrary legal append
+to the heavier arm is also permitted without assuming C of that new arm.
+\end{theorem}
+
+\subsection{The unbounded reduction and the complete finite domain}
+Work in the count induction, assuming FULL OLD A2 for an old pair.
+Let $p=q_Zq_Y$, $a=\operatorname{wt}Z$, $b=\operatorname{wt}Y$,
+$j=a+b-n$, $r=a-j$, $E_i=2p_i-p_{i-1}$, and
+$T=E_{n+1}-E_n$. The relevant proper CLOSED-gap comparison is
+\[
+ n>\operatorname{lastmode}(p),\quad k<\operatorname{firstmode}(2^i(\Delta p_i)^+),
+ \quad p_n>p_k,\quad p_{n+1}>p_{k+1},\quad 0\le E_n\le E_k.
+\]
+Both-forward-rising C and both-forward-nonincreasing actual theorems
+cover their entire respective phases. In the mixed phase orient $Z$ as
+the nonincreasing arm. The opposite source prefix is nondecreasing at
+all used ranks by the frozen slope/source mode ordering. Write
+$K=\kappa_Y$. A nonpositive $T$ is paid by the nonnegative OLD-A2
+head increment, so consider $T>0$.
+
+The frozen nine-threshold proof handles $K\le9$ when both first
+missing weights are at most nine. If instead the owner has first missing
+weight at least ten, it has at least eight non-one parts. The absolute
+eight theorem for four-part owners and absolute nine theorem for six-part
+owners therefore exclude positive recovery for EVERY $K\le9$ in this
+new situation. It suffices to treat $10\le K\le12$ and arbitrary owners.
+
+Use the exact initial exchange to impose $t_1-1\le\alpha$ for
+$Z=1^\alpha(t_1,\ldots,t_h)$ without changing its weight, count or
+polynomial. For $r\ge0$, positive recovery requires
+\[
+ \begin{gathered}
+ d=K-\alpha\ge6,\qquad D=\sum_i(t_i-1)=2r+2+e,\\
+ 0\le e\le d-3,\qquad D\le D_{\max}:=\min(2d(d-3),12d-25).
+ \end{gathered}
+                                                        \tag{1}
+\]
+The gap-six theorem excludes $h\ge4$ at $d\le6$.
+The UNBOUNDED gap-eight theorem for six-part owners excludes
+$h\ge6$ at $d\le8$, at every $K$, not just $K=9$. Thus
+\[
+ 1\le\alpha\le K-6,\qquad
+ 2\le h\le h_{\max}:=\min\left(D,
+ \begin{cases}3&d\le6,\\5&7\le d\le8,\\D&d\ge9.\end{cases}\right).
+                                                        \tag{2}
+\]
+All parameters discarded by (1)--(2) are covered by the frozen
+UNBOUNDED lemmas; no capacity or count cutoff is a premise.
+
+Put
+\[
+ M_K=1+(K-2)(K-1)/2,\quad O_K=1+(K-3)(K-2)/2,
+ \quad S_K=\lfloor M_K/2\rfloor.
+\]
+Their exact values are
+\[
+\begin{array}{c|rrr}K&M_K&O_K&S_K\\\hline
+10&37&29&18\\11&46&37&23\\12&56&46&28
+\end{array}.                                             \tag{3}
+\]
+For a rank state (1), let $j_{\max}=\alpha+D+h_{\max}-r$.
+If $j_{\max}-2\le S_K$, every owner in that state has its proper
+head inside the strict opposite prefix established below. Such a state
+needs no source payment.
+
+For every remaining state apply the genuine source-sum/CI-ratio test.
+Set $L=d-e-3$ and
+\[
+ b_m=\begin{cases}
+ \binom r m/\binom{r+e+m+2}m&0\le m\le r,\\0&\text{otherwise}.
+ \end{cases}
+\]
+The following sufficient condition pays the entire positive curvature
+$C=(\Delta q_Z)_{r+1}-(\Delta q_Z)_r$:
+\[
+             b_L+\sum_{v=2}^{K-3}2^{v-2}b_{L+v}
+                           \ge\frac{e+1}{r+1}.          \tag{4}
+\]
+It is the frozen arbitrary-count source-ratio argument, with ALL
+available early mode-free source increments. It does not differentiate
+a lower bound for source coefficients.
+
+The COMPLETE rank grammar (1)--(4) gives the following exact partition:
+\[
+\begin{array}{c|rrrr}
+ K&\text{all ranks}&\text{strict head}&\text{source (4)}&\text{owner complement}\\\hline
+10&684&170&451&63\\
+11&1048&279&641&128\\
+12&1509&410&891&208\\\hline
+\text{total}&3241&859&1983&399
+\end{array}.                                             \tag{5}
+\]
+For each complementary rank, any owner not already inside the strict
+head must have
+\[
+ h\ge h_{\min}:=\max(2,S_K+3-\alpha-D+r).              \tag{6}
+\]
+Enumerate ALL partitions of $D$ into $h_{\min}\le h\le h_{\max}$
+positive sorted increments, with minimum at most $\alpha$.
+The largest remaining $D$ is respectively $33,39,47$ for $K=10,11,12$.
+This is the complete complement of the proved unbounded reductions,
+including every owner rank, rather than a chosen sample of arms.
+
+Construct each actual $F_Z$ and compute the signed primitive and curvature.
+There are 1,858,242 owner/rank inputs, including 945,847 distinct owners
+when counted separately at each $K$. Exactly 1,786,199 have negative
+primitive or nonpositive curvature. ALL 72,043 positive-curvature inputs
+are paid by the actual source sum
+\[
+ C\le F_Z(v)+\sum_{i=2}^{K-3}2^{i-2}F_Z(v-i),
+                  \qquad v=j+1-K,                       \tag{7}
+\]
+using zero extension. By $K$ the positive-curvature counts are
+$4877,17998,49168$. There is NO unpaid owner outside the strict-head range.
+
+The independent verifier enumerates ranks by total degree and reverse
+rank, and partitions by MAXIMUM part, whereas the builder enumerates
+source gap and excess, and partitions by MINIMUM part. It reconstructs
+the actual polynomial as a sum of positive suffix boxes, with a closed
+binomial formula for its binary block; it does not reuse the builder's
+chronological actual-arm recurrence. Product fractions independently
+reconstruct the rational ratios in (4). It matches every noncritical
+classification, every critical coefficient operand, all 399 layer hashes,
+the complete state hash, and every line of the 72,043-row critical stream.
+
+The explicit Lean certificate contains ALL 72,043 source SUM inequalities
+(7), 3266 distinct integer numerator/positive-denominator tests for (4),
+and 63 distinct strict-head rank pairs. These are 75,372 obligations in
+754 chunks, compiled in 31 memory-bounded modules, and ONE final public
+aggregate containing EVERY module's complete conjunction. Noncritical curvature classifications
+and exhaustion of the word grammar are independently exact Python checks,
+not an end-to-end Lean implementation of words or their enumerator.
+Four further generic Lean reports check (2), (3), proper-head safety,
+and all negative-birth guards. Standard axioms only are required.
+
+At $r\le-2$ positive curvature is absent. At $r=-1$ a source-unpaid
+unit birth requires $a+2<K$, so $j=a+1\le K-2$. This includes the
+only possible one-part-owner birth exception. By (3),
+$j-2\le K-4\le S_K$. Consequently the complete conclusion is
+\[
+ T>0\quad\Longrightarrow\quad j-2\le S_K
+          \qquad(10\le K\le12).                       \tag{8}
+\]
+
+\subsection{Strict actual heads, closed-gap compensation and the full induction}
+The BOTH positive windows imply $k+n+2<a+b$, hence
+$k+1\le j-2\le S_K$. Also $j\le a+1$, so $k+1\le a-1$.
+The used raw owner source $R_Z=(2-z)q_Z$ therefore agrees with the
+nonnegative corrected source throughout the entire used prefix.
+
+The exact opposite first-missing staircase gives its main interval product
+degree $M\ge M_K$, and degree outside its largest factor at least $O_K$.
+The CI positive-primitive support formula and $2S_K\le M_K$,
+$S_K\le O_K$ give strictly positive main-box differences through $S_K$.
+EVERY proper shifted-CI source has endpoint sum at least $M$, so its
+differences are nonnegative through that head, including birth boundaries.
+Thus the ACTUAL, SIGNED opposite differences satisfy
+\[
+                       \Delta q_Y(s)\ge1\quad(0\le s\le S_K).   \tag{9}
+\]
+This uses genuine CI differences, not differentiation of a coefficient bound.
+
+For $H=E_{k+1}-E_k=[z^{k+1}]R_Z(1-z)q_Y$, all used summands
+are nonnegative. If $0\le r<k$, select the owner index $r+1$:
+\[
+ H\ge R_Z(r+1)\Delta q_Y(k-r)
+ \ge q_Z(r+1)+(\Delta q_Z)_{r+1}\ge C\ge T.
+\]
+At $r=-1$ select the constant owner term to obtain $H\ge2\ge T$.
+For $r\ge k$, the frozen raw-relative LC kernel retains its strict
+$+1$ surplus and applies to CLOSED $E_n\le E_k$, including equality.
+All positive recoveries are paid. Nonpositive recoveries use $H\ge0$
+from FULL OLD A2. This proves the entire closed-gap proper S criterion.
+
+The frozen WHOLE closed-gap S-to-window theorem now proves FULL A2 for
+EVERY $[t]p$. In the count induction the old maximum-nine case is frozen;
+the new maximum-ten-through-twelve case uses the criterion just proved.
+Orient the newly appended arm as the heavier arm. Its actual terminal
+correction starts at its new weight, strictly after the new first ordinary
+mode. Hence positive differences are a truncation of the uniform window's
+positive differences. FULL A2 follows, as does ONE arbitrary further
+legal heavier append. Frozen proper deletion, lower peak, reflection and
+relative joins give ORIGINAL coefficient unimodality at every strict peak.
+
+
+\section{Dyadic bounds and a strict earlier increment}
+
+\noindent{\small Source\enspace\path{actual_dyadic_slope_thinness_and_high_source_mixed_S_proof.tex}.}\par\medskip
+
+Set $\rho=3/5$, $b=35/32$, $c=3/2$, $q=b^2/(2\rho)=6125/6144$,
+and $v=b/(2\rho)=175/192$. For $t\ge2$ put
+\[
+ s_t=S_t(\rho)=\tfrac32(1-\rho^t).
+\]
+All capacities, counts, weights and initial runs below are UNBOUNDED.
+
+\subsection{A uniform positive evaluation bound, including the whole append fold}
+For EVERY formal word $1^\beta V$, allowing $\beta=0$, let
+$M=\beta+\sum_{t\in V}(t-1)$. Then
+\[
+                       F_{1^\beta V}(\rho)\le10b^M-125/22<10b^M. \tag{1}
+\]
+The bound does not require ordered capacities. To prove it, first note
+\[
+ 0\le s_t\le b^{t-1}\quad(t\ge2),\qquad
+ s_t\ge147/125=1+22/125\quad(t\ge3).                  \tag{2}
+\]
+For $t=2,3,4,5$ the upper bounds are four explicit rational inequalities.
+For $t\ge6$, use $s_t\le3/2\le b^5\le b^{t-1}$.
+The seed $[\beta+1](\rho)\le5/2$ and $b^\beta\ge1$ establish
+(1) at the empty capacity word, including $\beta=0$.
+If (1) holds before appending $t$, then $F'=1+s_tF$ and $M'=M+t-1$.
+For $t\ge3$, the negative offset pays the whole new unit:
+$(125/22)(s_t-1)\ge1$. For $t=2$, use $b^M\ge1$ and the exact
+positive margin
+\[
+           10(b-24/25)-1-(125/22)/25=97/880>0.
+\]
+This proves the ENTIRE arbitrary-length fold, not a sampled range.
+
+\subsection{A count-free first-missing penalty and a uniform power block}
+Let $K=\kappa_Y\ge20$ and $n=K-2\ge18$. The LAST $n$ non-one
+capacities of the ordered actual arm $Y$ are respectively at least
+$2,3,\ldots,n+1$. Their skeleton degree is at least
+$D_n=n(n+1)/2$. Write $M_0$ for the earlier prefix's skeleton degree.
+Since $s_t\le c$, the whole tail fold satisfies
+\[
+ F_Y(\rho)+2\le c^n(F_{Y_0}(\rho)+2)
+                  \le10c^n b^{M_0}.                  \tag{3}
+\]
+The last bound RETAINS the negative offset $125/22>2$ in (1).
+The exact integer power checks are
+\[
+ q^{224}\le\tfrac12,\qquad
+           2240c^{18}\le b^{171},\qquad c\le b^5.    \tag{4}
+\]
+They imply, for EVERY integer $m\ge0$ and $n\ge18$,
+\[
+                 m q^m\le224,\qquad2240c^n\le b^{D_n}. \tag{5}
+\]
+Indeed write $m=224a+r$, $0\le r<224$. Then
+$m q^m\le224(a+1)2^{-a}\le224$ by $a+1\le2^a$.
+For the second assertion start at $n=18$, use
+$D_{n+1}=D_n+n+1$, and multiply by $b^{n+1}\ge b^5\ge c$.
+Thus (5) is a whole unbounded block/triangle induction.
+
+\subsection{The ACTUAL forward slope is dyadically thin outside its strict CI head}
+Let $M=\beta+\sum(t-1)$ be the main-box degree of $Y$, and
+$B=\max(\beta,\max(t-1))$. Put
+\[
+                            s_Y=\min(\lfloor M/2\rfloor,M-B).
+\]
+Then for EVERY $m>s_Y$,
+\[
+                          m\,\Delta F_Y(m)\le2^m.    \tag{6}
+\]
+First suppose $M<2m$. Positivity of coefficients, (3), and
+$M\ge M_0+D_n$ give
+\[
+ b^{D_n}\frac{F_Y(m)}{2^m}
+        \le10c^n q^m.
+\]
+Multiplication by $m$ and (5) prove $mF_Y(m)\le2^m$,
+which is stronger than (6).
+
+It remains to treat $m>M-B=:O$. The first-missing staircase gives
+$O\ge1+(K-3)(K-2)/2\ge154$.
+If the largest interval is the last capacity interval $[T]$, delete it
+to obtain the actual prefix $Y_0$ with skeleton degree $O$. The exact
+forward recurrence gives
+\[
+ \Delta F_Y(m)=F_{Y_0}(m-1)-F_{Y_0}(m-T-1)\le F_{Y_0}(m-1).
+\]
+Write $j=m-1\ge O$. From (1) and positivity,
+\[
+                   \frac{\Delta F_Y(m)}{2^m}\le5v^j.
+\]
+If instead the initial interval $[\beta+1]$ is largest, write
+$F_Y=A+P[\beta+1]$ by positive suffix boxes, where
+$A$ is their proper-suffix sum and $P=\prod S_t$.
+Then coefficientwise
+\[
+ (1-z)F_Y=(1-z)A+P(1-z^{\beta+1})\preceq A+P=:F_{0,V}.
+\]
+This is the allowed zero-initial-run formal fold of skeleton degree $O$,
+so (1) gives $\Delta F_Y(m)/2^m\le10v^m$.
+The exact base $10\cdot101v^{100}<1$, followed by the decreasing-ratio
+induction $v(j+2)\le j+1$ for $j\ge100$, proves
+$10(j+1)v^j\le1$ for EVERY $j\ge100$. Since $O\ge154$,
+both largest-factor cases prove (6). These cases cover the actual minimum
+in $s_Y$, including ties, plateaus and zero/negative slopes.
+
+\subsection{An indexed curvature gap for ANY actual mixed owner}
+Let $Z=1^\alpha U$ have $h\ge2$ non-one parts, skeleton degree $D$,
+weight $a=\alpha+D+h$, and ordinary reversal $Q=q_Z$.
+At a mixed/source-prefix recovery rank let $r=a-j\ge0$,
+$Q_r\ge Q_{r-1}$ and
+\[
+                           C=Q_{r+1}-2Q_r+Q_{r-1}>0.
+\]
+The frozen primitive-center theorem gives $D\ge2r+2$.
+The frozen ordinary Hilbert realization gives
+$(r+1)Q_{r+1}\le(h+r+1)Q_r$, including every padding and capacity.
+We claim the stronger indexed gap
+\[
+                    (j+1)(2Q_r-Q_{r-1})\ge4Q_{r+1}.  \tag{7}
+\]
+For $r\ge2$ it suffices to show
+$(j+1)(r+1)\ge4(h+r+1)$, because $2Q_r-Q_{r-1}\ge Q_r$.
+We have $j+r\ge2h+1$ and $j\ge h+r+3$.
+For $r\ge3$ use
+$(h+r+4)(r+1)-4(h+r+1)=h(r-3)+r(r+1)\ge0$.
+For $r=2$, split at $h=6$ and use the respective two bounds on $j$.
+For $r=1$, use $Q_0=1,Q_1=h+1$,
+$2Q_2\le(h+1)(h+2)$ and $j\ge2h$; the remaining positive polynomial
+is $2h^2-2h-3\ge1$ at $h\ge2$.
+For $r=0$, $Q_{-1}=0,Q_0=1,Q_1=h+1$ and $j\ge2h+1$ give (7)
+directly. No first-missing bound or C assumption is used for the owner.
+
+\subsection{A whole dyadic source sum pays the indexed gap}
+Write $A=F_Z$, $B=F_Y$, $N=j+1$, and
+$E_B=1-z+(2z-1)B$. Its entire prefix through $N$ is nondecreasing
+in the mixed region; put $w_s=\Delta E_B(s)\ge0$.
+Its first possible birth is at least three. The actual doubling law
+$A_{i+1}\le2A_i$ gives, for every used $s$,
+\[
+                       A_{N-s}\ge2^{2-s}A_{N-2}.
+\]
+The COMPLETE telescoping identity, including the rank-two correction, is
+\[
+ 4\sum_{s=2}^N2^{-s}w_s
+                   =1-4\,2^{-N}\Delta B_N.           \tag{8}
+\]
+It follows from $B_0=B_1=1$ and $E_B(s)=2B_{s-1}-B_s$ for $s\ge2$.
+Consequently
+\[
+ \Delta(E_BA)_N\ge A_{N-2}(1-4\,2^{-N}\Delta B_N).    \tag{9}
+\]
+The exact mixed tail increment is $T=C-\Delta(E_BA)_N$.
+By (7), (9), and $N\Delta B_N\le2^N$ one obtains $T\le0$.
+Thus positive recovery NECESSARILY has
+\[
+                           N\Delta F_Y(N)>2^N.         \tag{10}
+\]
+For $K\ge20$, (6) contradicts (10) whenever $N>s_Y$.
+Therefore EVERY positive mixed recovery at nonnegative reverse rank has
+\[
+                              j+1\le s_Y.             \tag{11}
+\]
+This retains the actual opposite main degree and largest interval.
+It does NOT replace them by a first-missing-only linear surrogate.
+
+\subsection{All properly conditioned mixed CLOSED S heads at first missing twenty or above}
+At both strict positive windows, the frozen reflection guard gives
+$k+1\le j-2$ and $k+1\le a-1$. By (11), the ACTUAL signed opposite
+differences satisfy $\Delta q_Y(i)\ge1$ throughout every used head:
+the main CI has positive primitive support through $s_Y$, while each
+proper shifted-CI summand has nonnegative differences there.
+All used coefficients of the raw owner source $R_Z=(2-z)q_Z$ are
+nonnegative by the second guard. If $0\le r<k$, its index $r+1$ term
+pays $H\ge R_Z(r+1)\Delta q_Y(k-r)\ge C\ge T$.
+The frozen relative raw-kernel theorem with $+1$ surplus pays $r\ge k$,
+including CLOSED source equality $0\le E_n=E_k$.
+
+For $r\le-2$ positive recovery is impossible. At $r=-1$ the first
+source birth pays the unit curvature unless $a\le K-3$, whence
+$j\le K-2$ and $k+1\le K-4\le s_Y$; the raw constant term pays.
+One-part owners have only this same negative-rank birth exception.
+For nonpositive $T$, the usual OLD-A2 head gives $H\ge0$.
+This proves the ENTIRE mixed proper CLOSED S comparison for EVERY
+$K\ge20$, without capacity, count, weight, padding or amplification bounds.
+
+\section{The fourteen-terminal-part bound}
+
+\noindent{\small Source\enspace\path{fixed_terminal_fourteen_slope_thinness_proof.tex}.}\par\medskip
+
+
+Keep $\rho=3/5$, $b=35/32$, $q=6125/6144$, $v=175/192$,
+$K_0=125/22$, and $s_t=S_t(\rho)$. Put $r_t=s_t/b^{t-1}$.
+The frozen norm gives $F(\rho)+K_0\le10b^M$ for EVERY formal word.
+For every append $t\ge3$, its stronger exact step is
+\[
+       F'(\rho)+K_0\le s_t(F(\rho)+K_0),              \tag{1}
+\]
+because $K_0(s_t-1)\ge1$. Thus an ENTIRE arbitrary tail of capacities
+at least three has multiplicative transport of this offset norm.
+
+\subsection{Three new sharp but elementary unbounded scalar bounds}
+The ratios $r_t$ decrease for all $t\ge4$, and $r_3\le r_4$.
+Indeed $s_{t+1}=s_t+\rho^{t+1}$ and, for $t\ge4$,
+\[
+ \rho^{t+1}\le\rho^5\le(b-1)s_4\le(b-1)s_t.
+\]
+Consequently $r_t\le r_{\max(4,L)}$ whenever $t\ge L\ge3$.
+For ten arbitrary capacities $u_i\ge i+3$, $i=0,\ldots,9$,
+\[
+ \prod_{i=0}^9r_{u_i}\le P_*:=r_4^2\prod_{t=5}^{12}r_t.        \tag{2}
+\]
+
+A sharper WHOLE block gives
+\[
+                      m q^m\le128\qquad(m\ge0).       \tag{3}
+\]
+Use $q^{16}\le20/21$, write $m=16a+r$, $0\le r<16$, and
+$(a+1)(20/21)^a\le8$. The latter sequence increases through index 19
+and decreases thereafter; alternatively check indices 0..19 exactly
+and use the decreasing-ratio induction after 19. This is a fixed
+scalar base plus unbounded induction, with NO finite word premise.
+
+For EVERY integer $i\ge0$,
+\[
+                       (i+1)\rho^i\le6/5.             \tag{4}
+\]
+Index zero is one, index one is $6/5$, and the consecutive ratio is
+at most one after index one. Since $[u][w]$ has coefficient at rank
+$i$ at most $i+1$, (4) gives, for every nonnegative polynomial $G$,
+\[
+              \rho^k[z^k]([u][w]G)\le(6/5)G(\rho).   \tag{5}
+\]
+This is a WHOLE convolution bound: bound each weighted kernel
+coefficient and sum all used nonnegative $G$ terms. It does not
+differentiate a coefficient inequality.
+
+The single exact terminal-template constant is
+\[
+                \frac{41472}{125}P_*\le b^{39}.        \tag{6}
+\]
+The ratio of the two sides is approximately $0.9764430749$;
+only the exact rational inequality, not this decimal, is a proof input.
+
+\subsection{Bulk slope bound from a fixed last fourteen parts}
+If an ACTUAL increasing arm has first missing weight at least sixteen,
+it has at least fourteen non-one parts, and its LAST fourteen capacities
+are at least $2,3,\ldots,15$. This fixed template suffices; no upper
+bound on the first missing weight or any capacity is imposed.
+
+Write the last three capacities as $w,u,T$, in nondecreasing order,
+and let $G$ be the earlier forward arm, of skeleton degree $M_G$.
+The first of the terminal fourteen capacities is absorbed into the
+earlier prefix. The following TEN capacities are respectively at least
+$3,4,\ldots,12$, so the frozen global norm and (1)--(2) give
+\[
+                       G(\rho)+K_0\le10b^{M_G}P_*.
+                                                               \tag{7}
+\]
+The three deleted capacities are at least $13,14,15$, so their total
+skeleton degree is at least $12+13+14=39$.
+
+Consider any $m$ with $M\le2m$, where $M$ is the whole main-box degree.
+The prefix before the LAST TWO parts has skeleton degree at least
+$1+1+\cdots+12=79$. Since $T\ge u$, this implies $M\ge2u+4$.
+Hence $m-1>u$. The exact forward identities therefore give
+\[
+ \begin{split}
+ \Delta F_Y(m)&\le F_{Gwu}(m-1),\\
+ F_{Gwu}&=1+S_u+S_uS_wG,\\
+ F_{Gwu}(m-1)&=[z^{m-3}]([u][w]G).
+ \end{split}                                                    \tag{8}
+\]
+Both source terms in the middle line vanish at the used coefficient;
+this support guard is essential. Apply (5), (7), and the removed degree:
+\[
+ b^{39}\frac{\Delta F_Y(m)}{2^m}
+     \le10\rho^3(6/5)q^m P_*.
+\]
+Multiplication by $m$ and (3)--(6), using
+$10\rho^3(6/5)\cdot128=41472/125$, prove
+\[
+                          m\Delta F_Y(m)\le2^m.       \tag{9}
+\]
+No curvature, C, A1, A2 or source-prefix premise is used for this slope bound.
+
+\subsection{Other-degree branch and all mixed proper heads}
+Let $s_Y=\min(\lfloor M/2\rfloor,M-B)$, with $B$ the largest interval
+degree. The nonbulk alternative $m>M-B$ is exactly the same as in the
+frozen twenty-threshold proof. For first missing at least sixteen,
+$M-B\ge1+13\cdot14/2=92$. Replace the old large-read base 100 by 80:
+\[
+                10(j+1)(175/192)^j\le1\qquad(j\ge80),
+\]
+whose base is an exact rational check and whose consecutive ratio
+decreases thereafter. This covers BOTH a largest last capacity and a
+largest initial interval, including the zero-initial-run formal comparison.
+Combining with (9) gives EVERY $m>s_Y$ the signed slope bound (9).
+
+The frozen COMPLETE indexed-owner gap and dyadic-prefix/source-sum
+theorems then imply every positive mixed recovery has $j+1\le s_Y$.
+All properly conditioned CLOSED S heads are paid by the genuine strict
+opposite derivative prefix, the one-term absolute budget, the frozen
+relative $+1$ surplus and the negative-birth unit argument. Nonpositive
+recoveries retain the usual OLD nonnegative head budget.
+
+\section{First missing weights thirteen through fifteen}
+
+\noindent{\small Source\enspace\path{complete_mixed_source_unrestricted_C_original_criterion_proof.tex}.}\par\medskip
+
+Keep $\rho=3/5$, $b=35/32$, $q=6125/6144<1$, $v=175/192$,
+$K_0=125/22$, and $r_t=S_t(\rho)/b^{t-1}$. Frozen whole-fold norm:
+$F(\rho)+K_0\le10b^M$. Frozen whole offset contraction for all
+capacities at least three and the ratio envelope $r_t\le r_{\max(4,L)}$
+for $t\ge L\ge3$ are available.
+
+\subsection{A new constant-density theorem for EVERY first missing weight at least thirteen}
+Theorem: for ANY actual $Y$ with $\kappa_Y\ge13$,
+\[
+ s_Y=\min(\lfloor M/2\rfloor,M-B),\quad m>s_Y
+       \quad\Longrightarrow\quad20\,\Delta F_Y(m)\le2^m.       \tag{1}
+\]
+This is a CONSTANT density bound, weaker than $m\Delta F\le2^m$
+when $m>20$, and is deliberately paired below with a stronger owner gap.
+
+Such a $Y$ has LAST ELEVEN capacities at least $2,3,\ldots,12$.
+Absorb the first into the unrestricted earlier prefix. The next TWO
+capacities are at least three and four. Let $G$ be the prefix after
+these first three terminal capacities, with skeleton degree $M_G$.
+Offset contraction and the ratio envelope give
+\[
+                      G(\rho)\le10b^{M_G}r_4^2.       \tag{2}
+\]
+There remain EIGHT capacities at least $5,6,\ldots,12$, with total
+skeleton degree at least $4+5+\cdots+11=60$.
+
+Delete the LAST capacity $T$. Then
+$\Delta F_Y(m)\le F_{Y_0}(m-1)$.
+Expand the other SEVEN last capacities of $Y_0$:
+\[
+ F_{Y_0}=\sum_{\ell=0}^6\prod_{\text{last }\ell}S_t
+             +\left(\prod_{\text{last }7}S_t\right)G.          \tag{3}
+\]
+The positive source sum at rank $m-1$ has at most the number of
+compositions of $m-1$ with at most six parts. Their cut sets have size
+at most five. List each cut set in increasing order and pad with zeroes
+to a five-tuple; this is an injection into $m^5$ tuples. Thus its
+coefficient $U_m$ satisfies $U_m\le m^5$ for $m\ge2$.
+The empty-product source has zero coefficient at the ranks used here.
+
+For the SEVEN interval kernel, stars and bars give
+\[
+ [z^i]\prod_{\text{last }7}[t]\le\binom{i+6}{6},\qquad
+                \binom{i+6}{6}\rho^i\le3003\rho^8.     \tag{4}
+\]
+The last sequence has its two maxima at indices eight and nine.
+Its consecutive ratio is $\rho(i+7)/(i+1)$; this gives a whole
+unbounded proof, not a chosen coefficient range. The same WHOLE
+positive weighted-convolution argument as the frozen two-interval
+bound now yields
+\[
+ \rho^m\bigl(F_{Y_0}(m-1)-U_m\bigr)
+                         \le3003\rho^{16}G(\rho).    \tag{5}
+\]
+It is ESSENTIAL to retain $U_m$; those seven source products do NOT
+all vanish. Their entire contribution is paid separately.
+
+In the BULK $M\le2m$, the eleven-part staircase gives $M\ge67$,
+so $m\ge34$, and $M_G+60\le M\le2m$. Exact rational bases are
+\[
+ 25\cdot30030\rho^{16}r_4^2\le b^{60},\qquad
+              100\cdot34^5\le2^{34}.                 \tag{6}
+\]
+The whole induction $100m^5\le2^m$ holds for every $m\ge34$:
+$(m+1)/m\le35/34$ and $(35/34)^5<2$.
+Equations (2), (5), (6) and $q^m\le1$ give the long-kernel
+density at most $1/25$. The ENTIRE source sum gives density at most
+$m^5/2^m\le1/100$. Their sum is $1/20$, proving (1) in the bulk.
+Numerically the long-kernel constant before allocating $1/25$ is
+approximately $0.03899449166$; only the exact inequality (6) is used.
+
+In the NONBULK $m>M-B$, the old largest-factor proof applies with
+smaller degree thresholds. If the last capacity interval is largest,
+$O=M-B\ge1+10\cdot11/2=56$, $j=m-1\ge O$, and
+$\Delta F_Y(m)/2^m\le5v^j\le1/20$, from $100v^{56}\le1$.
+If the initial interval is largest, its other degree is at least
+$1+\cdots+11=66$, $m\ge67$, and
+$\Delta F_Y(m)/2^m\le10v^m\le1/20$, from $200v^{67}\le1$.
+Both are unbounded decreasing-power statements; zero and negative
+slopes cause no issue. This proves (1) for all capacities, counts, weights and initial runs.
+
+\subsection{The remaining first-missing values force a FIVE-to-one raw owner gap}
+Take a positive mixed/source-prefix recovery with rising-opposite
+first missing $K\in\{13,14,15\}$. At nonnegative owner reverse rank
+$r$, frozen first-source and primitive facts give
+\[
+ D=2r+2+e,\quad h\le D,\quad \alpha+e+3\le K,\quad
+       j=\alpha+h+r+2+e.                              \tag{7}
+\]
+If $j-2\le s_Y$, the genuine strict opposite head already pays every
+proper absolute head. Otherwise
+\[
+ j-2>s_Y\ge S_K=\left\lfloor\frac{1+(K-2)(K-1)/2}{2}\right\rfloor,
+ \qquad(S_{13},S_{14},S_{15})=(33,39,46).
+\]
+The finite THREE-value arithmetic of (7), without any finite owner
+enumeration, implies
+\[
+                               e\le2r+2.              \tag{8}
+\]
+This is an exact unbounded linear-integer implication, checkable by
+splitting ONLY $K=13,14,15$. In particular
+$h+r+1\le3r+3+e\le5(r+1)$.
+The frozen ordinary Hilbert growth and mixed owner phase now give,
+with $Q=q_Z(r+1)$ and $R=2q_Z(r)-q_Z(r-1)$,
+\[
+ (r+1)Q\le(h+r+1)q_Z(r)\le5(r+1)q_Z(r),\quad
+                   R\ge q_Z(r),\quad\boxed{Q\le5R}.  \tag{9}
+\]
+
+Put $N=j+1$. The frozen WHOLE dyadic source-prefix sum pays
+\[
+             \text{source}\ge Q\left(1-4\,2^{-N}\Delta F_Y(N)\right).
+\]
+Here $j-2>s_Y$ gives $N>s_Y$, so (1) implies
+$4\,2^{-N}\Delta F_Y(N)\le1/5$.
+By (9), the whole source pays $Q-R=C$, hence $T\le0$, contradicting
+positive recovery. Thus every positive mixed recovery at $K=13,14,15$
+is inside the genuine strict-head range. The negative-rank birth is
+paid by the first source unless $j\le K-2$, also inside that head.
+One-part owners have only this same birth exception.
+Frozen absolute one-term and relative $+1$ head payments therefore
+prove ENTIRE correctly conditioned MIXED proper CLOSED S at these
+last three values. No arbitrary opposite capacity/count/padding cutoff
+or finite word certificate is a premise.
+
+\section{Proper deletion and the peak join}
+
+\noindent{\small Source\enspace\path{inductive_signed_window.tex}.}\par\medskip
+
+Write $[m]=1+\cdots+z^{m-1}$, $q_T=z^{\operatorname{wt}T}F_T(1/z)$,
+and
+\[
+ \delta_M(T)=([M]-z^M)q_T+z^{\operatorname{wt}T+M}.
+\]
+This is the reversal of the nonnegative single-arm relative kernel
+$1+(S_M-1)F_T$. In particular $\delta_M(\varnothing)=[M]$.
+All sequences below have zero extension at negative indices.
+
+\begin{lemma}[A proper relative polynomial supplies the signed prefix]
+Let $X,Y$ be nonrectangular increasing arms below a strict peak $M$.
+Orient their weights as $a=\operatorname{wt}X\le b=\operatorname{wt}Y$,
+write $Y=Zt$ and $c=b-t$, and put
+\[
+ q=q_Xq_Y,\quad \sigma=\min\operatorname{argmax}q,
+ \quad d=(\Delta q)^+.
+\]
+If $q_X\delta_M(Z)$ is unimodal, then $([M]-z^M)d$
+has no negative-to-positive coefficient change through rank $\sigma$.
+\end{lemma}
+\begin{proof}
+Ordinary two-arm unimodality and its strengthened midpoint bound
+give $\sigma<b$. The strict peak gives $c+M=b+(M-t)>b$.
+The exact reverse append identity is
+\[
+ q=[t]q_Xq_Z+z^bq_X.
+\]
+Set $V=[t]q_X\delta_M(Z)$. Then
+\[
+ V=([M]-z^M)q-z^b([M]-z^M)q_X
+                      +z^{c+M}[t]q_X.
+\]
+The two corrections start strictly after $\sigma$. Therefore
+$\Delta V_j=([M]-z^M)\Delta q_j$ for every $0\le j\le\sigma$.
+On this prefix $q$ is nondecreasing, so $d_j=\Delta q_j$;
+causality of multiplication by a polynomial with nonnegative powers
+gives
+\[
+                 [z^j]([M]-z^M)d=\Delta V_j
+                       \qquad(0\le j\le\sigma).
+\]
+Uniform convolution preserves unimodality, so the premise makes
+$V=[t](q_X\delta_M(Z))$ unimodal. Its differences cannot have
+a negative coefficient followed by a positive one. This proves
+the claimed prefix property. No assertion about the later
+coefficients of $([M]-z^M)d$ is needed.
+\end{proof}
+
+\begin{corollary}[Only the A2 premise is needed in a least-counterexample proof]
+At a least relative counterexample at fixed peak $M$, the signed
+prefix premise in {\normalfont\path{general_base_join_route.tex}} holds
+automatically. Consequently the general unamplified one-descent
+conjecture would follow from the single assertion
+\[
+       2^j\max(\Delta(q_Xq_Y)_j,0)\quad\hbox{is unimodal}
+       \tag{A2}
+\]
+for every pair of nonrectangular increasing arms.
+\end{corollary}
+\begin{proof}
+Choose the least failing peak, then a relative counterexample with
+the fewest total arm parts. Empty or rectangular arms are already
+known. The established relative deletion reduction gives
+$|a-b|\le M-4$ and equivalence of core and both relative
+unimodality in this band. The relative polynomial with arms
+$X,Z$ has fewer parts, in the required orientation as well,
+so it is unimodal. Its reversal is $q_X\delta_M(Z)$; the lemma
+supplies the signed prefix premise.
+
+Take $t_0$ to be the largest arm part. The base polynomial
+$J_{t_0}=A+B+(S_{t_0}-1)AB$ is unimodal: remove all arm
+occurrences of $t_0$ using $J=1+S_{t_0}J^{\rm smaller}$,
+and apply the least-peak hypothesis to the remaining strict
+peak $t_0<M$ (or the elementary empty-arm case).
+The conditional general base-peak join, now using only (A2)
+as a new structural input, makes the core unimodal. Balanced
+core-relative equivalence contradicts the chosen counterexample.
+\end{proof}
+
+\noindent{\small Source\enspace\path{short_prefix_reflection_join.tex}.}\par\medskip
+
+Let $a\le b$ be the weights of two nonrectangular increasing arms,
+$D=a+b$, $N=D+M$, $R=\lfloor N/2\rfloor$, and
+\[
+ q=q_Xq_Y,\quad \sigma=\min\operatorname{argmax}q,
+ \quad d_j=\max(q_j-q_{j-1},0).
+\]
+Established ordinary-product results give unimodality of $q$,
+unimodality of $d$, $d_0=1$, $\sigma<b$, and reverse reflection
+\[
+                         q_{D-n}\ge q_n\qquad(n\ge D/2).
+\]
+The last inequality follows by reversing the ordinary height-layer
+endpoint sums, each at least $D$.
+
+\begin{lemma}[A finite halving tail with one spare endpoint]
+Suppose $d\ge0$ is unimodal and $d_0>0$.
+If $k\le a-2$ and $2d_{i+1}\le d_i$ for $k\le i\le a-2$,
+then
+\[
+                   \sum_{i=k+1}^{h}d_i\le d_k
+                              \qquad(k\le h\le a).
+\]
+\end{lemma}
+\begin{proof}
+For $h\le a-1$, sum $d_{i+1}\le d_i-d_{i+1}$ to get
+the stronger bound $\sum_{i=k+1}^h d_i\le d_k-d_h$.
+The first halving edge forces the global unweighted mode to
+be at most $k$: otherwise unimodality and $d_0>0$ would give
+$0<d_k\le d_{k+1}\le d_k/2$, a contradiction.
+Thus $d_a\le d_{a-1}$. This pays the one additional endpoint
+when $h=a$.
+\end{proof}
+
+\begin{proposition}[A shorter-prefix base-peak join]
+Assume $b>M$ and $b-a\le M-4$. Suppose
+\begin{enumerate}
+\item the finite sequence $(2^jd_j)_{0\le j<a}$ is unimodal;
+\item the proper relative polynomial $q_X\delta_M(Y^-)$ is unimodal;
+\item for some $2\le t<M$, the base
+$J_t=A+B+(S_t-1)AB$ is unimodal.
+\end{enumerate}
+Then the strict core $H_M$ is unimodal.
+\end{proposition}
+\begin{proof}
+Put $w=([M]-z^M)q$. Before rank $R+1$ the reverse core
+equals $w$, because the arm corrections start at $a+M,b+M>R$.
+The exact proper-relative identity proved in
+{\normalfont\path{inductive_signed_window.tex}} shows that $w$ agrees,
+through rank $b-1$, with the unimodal polynomial
+$V=[\max Y]q_X\delta_M(Y^-)$.
+Thus $\Delta w$ has no negative-to-positive change there.
+
+Choose a mode $\ell$ of the truncated weighted sequence in
+the first premise. It may be chosen with
+$\ell\le\min(\sigma,a-1)$. For
+\[
+              b\le n=M+k\le\min(R,M+\sigma)
+\]
+one has $0\le k\le a-2$ and the exact difference is
+\[
+                   J_k:=\Delta w_{M+k}=q_{M+k}-q_k-d_k.
+\]
+If $k<\ell$, weighted increase gives
+$2d_{k+1}\ge d_k$. Hence $q_k+d_k$ is nondecreasing,
+while $q_{M+k}$ is nonincreasing since $M+k\ge b>\sigma$.
+The $J_k$ are therefore nonincreasing in this range. The same
+comparison includes the joining edge from $n=b-1$ whenever
+the new range begins before $M+\ell$; here $b-1\ge\sigma$.
+
+If $k\ge\ell$, set $h=D-M-k=D-n$. The bounds on $n$
+give $k\le h\le a$, and reflection gives $q_n\le q_h$.
+Weighted decrease gives every halving edge through $a-1$.
+The preceding lemma yields
+\[
+ q_n-q_k\le q_h-q_k
+       \le\sum_{i=k+1}^{h}d_i\le d_k.
+\]
+Thus $J_k\le0$. These comparisons extend the no-revival
+prefix through $\min(R,M+\sigma)$.
+
+For the remaining ranks $M+\sigma<n\le R$, use the established
+base-peak join exactly as in {\normalfont\path{general_base_join_route.tex}}:
+the last forward product mode $p=D-\sigma$ exceeds both arm weights,
+$\Delta J_t(p+1)>0$, and
+$H_M=J_t+z^{t+1}[M-t]AB$ supplies forward increase at each
+corresponding rank. Thus all these remaining reverse differences
+are nonpositive. Forward first-half growth joins the final reverse
+tail, proving core unimodality.
+\end{proof}
+
+The base-peak step remains necessary in this argument: past
+$M+\sigma$, $\Delta q_k$ is negative and cannot be replaced by
+its positive part in the displayed formula for $J_k$.
+
+\begin{corollary}[A still weaker universal target]
+The general conjecture follows if, for every nonrectangular
+arm pair, $(2^jd_j)_{0\le j<\min(a,b)}$ is unimodal.
+It is enough instead to prove coefficient unimodality of
+$(2-z)q_Xq_Y$ restricted to this prefix. The full A2 theorem
+or full mixed-deficit theorem is not required by this route.
+\end{corollary}
+\begin{proof}
+Use a least-peak, least-relative counterexample. Known small
+peaks and $N\le3M+8$ are excluded, so $b>M$; balance gives
+the other size hypothesis. Proper-relative deletion gives the
+second premise, and least-peak induction supplies $J_t$ after
+stripping repeated arm maxima.
+For the alternative premise, through the first reverse mode,
+\[
+ \Delta((2-z)q)_j=2d_j-d_{j-1}.
+\]
+These are, up to a positive factor, the successive differences
+of $2^jd_j$. Truncate at the earlier of the prefix endpoint
+and $\sigma$; subsequent positive differences of $q$ are zero.
+Hence prefix unimodality of $(2-z)q$ supplies the required
+truncated weighted-difference property.
+\end{proof}
+
+\noindent{\small Source\enspace\path{general_base_join_route.tex}.}\par\medskip
+
+\begin{proposition}[Conditional general propagation]
+Assume these two properties for the given increasing arms and
+strict peak $M$. If $2\le t<M$ and
+$J_t=A+B+(S_t-1)AB$ is unimodal, then the balanced core
+$H_M=A+B+(S_M-1)AB$ is unimodal whenever $|\deg A-\deg B|<M$.
+\end{proposition}
+\begin{proof}
+Put $w=([M]-z^M)q$ and choose a mode $\ell$ of $2^jd_j$.
+Through rank $s$, its difference sequence agrees with
+$([M]-z^M)d$, so the second premise gives single crossing.
+For $n=M+k$ in the crossing range $k+M\ge s$, $k<\ell$,
+the first premise gives $d_{k+1}\ge d_k/2$. Therefore
+$q_k+d_k$ is nondecreasing and $q_{k+M}$ is nonincreasing,
+making $\Delta w_{M+k}=q_{k+M}-q_k-d_k$ nonincreasing.
+For $\ell\le k<s$, the same premise instead gives
+\[
+ \Delta w_{M+k}\le d_k\left(\sum_{i=1}^M2^{-i}-1\right)
+                    =-2^{-M}d_k\le0.
+\]
+At $k=s$ this difference is again nonpositive. Thus the reverse
+core has the needed single crossing through rank $M+s$.
+
+The rest is the same base-peak join as in the binary theorem.
+If a remaining reverse rank $M+s<n\le\lfloor N/2\rfloor$
+exists, then $p=D-s>\max(\deg A,\deg B)$. Hence
+\[
+ \Delta J_t(p+1)=2P_p-P_{p+1}-P_{p-t}>0.
+\]
+Its unimodality gives growth through $p+1$. The identity
+\[
+                      H_M=J_t+z^{t+1}[M-t]P
+\]
+then gives $\Delta H_M(j+1)=\Delta J_t(j+1)+P_{j-t}-P_{j-M}
+\ge0$ at every corresponding $j=N-n<p$.
+Forward first-half growth completes the proof.
+\end{proof}
+
+\end{document}

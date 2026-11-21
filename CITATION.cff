@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the preprint below. Both authors contributed equally as joint first authors. Zhang Zhanhe is the corresponding author."
+title: "Rank-unimodality of one-descent composition ideals"
+version: "1.0.2"
+authors:
+  - family-names: Zhang
+    given-names: Yibo
+    orcid: "https://orcid.org/0009-0002-2005-5781"
+  - family-names: Zhang
+    given-names: Zhanhe
+    orcid: "https://orcid.org/0009-0007-2883-9640"
+contact:
+  - family-names: Zhang
+    given-names: Zhanhe
+    orcid: "https://orcid.org/0009-0007-2883-9640"
+preferred-citation:
+  type: unpublished
+  title: "Rank-unimodality of one-descent composition ideals"
+  year: 2026
+  version: "1.0.2"
+  authors:
+    - family-names: Zhang
+      given-names: Yibo
+      orcid: "https://orcid.org/0009-0002-2005-5781"
+    - family-names: Zhang
+      given-names: Zhanhe
+      orcid: "https://orcid.org/0009-0007-2883-9640"

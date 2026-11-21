@@ -1,0 +1,1 @@
+{"counts": {"heavier_arm_above_peak": 9883, "heavier_arm_below_peak": 7656, "heavier_arm_equal_to_peak": 3741, "reverse_half_edges": 297373, "strict_peak_instances": 21280}, "maximum_arm_weight": 10, "sha256": "91c6279ab5189ecf32a643857de37df4e4555060b4cba92d461d114cc311b752", "status": "PASS_EXACT_STRICT_PEAK_JOIN_BOUNDARIES"}
