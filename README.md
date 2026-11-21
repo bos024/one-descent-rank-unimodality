@@ -7,6 +7,8 @@ Both authors contributed equally as joint first authors. Zhang Zhanhe is the cor
 
 Preprint v1.0.2 · 21 November 2026
 
+Public manuscripts and verification materials (v1.0.2) are archived on Zenodo: [10.5281/zenodo.24420830](https://doi.org/10.5281/zenodo.24420830).
+
 For a composition $w$, consider the distinct words obtained by deleting parts and decreasing the surviving parts to positive integers. Count each word once and rank it by its total weight. If the part sizes of $w$ have at most one adjacent descent, these counts form a unimodal sequence. The same holds for every bitonic composition, whose parts first weakly increase and then weakly decrease. There is no restriction on the lengths or part sizes.
 
 The proof couples the weight, length and unused weight of a subword of a monotone composition at successive budgets. This gives a coefficient inequality at every deletion prefix of an arm. A strict-peak induction turns that inequality into unimodality of the original rank coefficients. The result settles the one-descent case of Conjecture 2.6 in Vatter's *An assortment of problems in permutation patterns*. [Conjecture and context](https://arxiv.org/abs/2602.16355)
