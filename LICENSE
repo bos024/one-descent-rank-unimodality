@@ -1,0 +1,7 @@
+Copyright (c) 2026 Zhang Yibo and Zhang Zhanhe.
+
+The MIT License in LICENSES/MIT.txt applies to the authors’ original Python and Lean source code in verify.py, checks/*.py, and formal/*.lean.
+
+For the authors’ other original files in this repository, including the manuscripts and appendices in paper/, permission is granted to download and read the files and to use them to verify the reported results. The authors reserve all other rights in those files, subject to applicable law.
+
+Third-party materials remain subject to their respective terms.
