@@ -1,0 +1,8 @@
+'MixedBinaryAllCounts.all_finite_binary_seed_three_startup_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryAllCounts.complete_analytic_first_four_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedBinaryAllCounts.complete_all_binary_and_four_count_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryAllCounts.exact_cassini_counter_triple_is_protected' depends on axioms: [propext, Quot.sound]

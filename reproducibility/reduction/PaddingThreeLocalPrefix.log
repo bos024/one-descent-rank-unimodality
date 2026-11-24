@@ -1,0 +1,7 @@
+'PaddingThreeLocalPrefix.relaxed_first_row_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeLocalPrefix.relaxed_interior_row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeLocalPrefix.relaxed_final_row_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeLocalPrefix.binary_second_primitive_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeLocalPrefix.concave_junction_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeLocalPrefix.unperturbed_interval_junction_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeLocalPrefix.exact_perturbed_last_junction' depends on axioms: [propext, Classical.choice, Quot.sound]

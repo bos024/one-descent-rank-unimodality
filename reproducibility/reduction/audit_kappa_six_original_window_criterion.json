@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXACT_QA_KAPPA_SIX_LEGAL_WINDOW_COEFFICIENT_CRITERION",
+  "counts": {
+    "class_single_arm_full_C_minimum_ratio_checks": 110462,
+    "class_single_arm_literal_shifts_represented": 3681131,
+    "actual_class_FULL_A2_pairs": 1012,
+    "whole_post_LAST_mode_Q_comparisons": 73300,
+    "normal_entire_raw_source_cones": 998,
+    "ALL_positive_three_or_longer_source_windows": 5050,
+    "legal_heavier_append_source_windows": 3030,
+    "legal_heavier_append_FULL_A2": 3036,
+    "complete_exceptional_source_classifications": 12,
+    "TRUE_greedy_ORIGINAL_kappa_six_class_pairs": 62,
+    "TRUE_greedy_ORIGINAL_rank_counts": 7272
+  },
+  "state_sha256": "7e56ee1a3d4f6b214560b53ced4e9c155e8074e716fa9097814f195f52958507",
+  "seconds": 0.8589999999994689,
+  "scope": "Finite QA ONLY. Criterion theorem still under written/Lean audit; no whole raw-source UI at kappa6 asserted. General conjecture OPEN."
+}

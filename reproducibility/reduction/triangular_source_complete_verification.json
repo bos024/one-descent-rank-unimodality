@@ -1,0 +1,69 @@
+{
+  "status": "PASS_UNBOUNDED_TRIANGULAR_SOURCE_CURVATURE_WITH_COMPLETE_INDEPENDENT_JETS",
+  "triangular_source_TC": "PROVED for ALL actual normalized sorted arms; kappa+3<=n<=FIRST positive-derivative mode",
+  "new_scoped_reports": 21,
+  "kernels": {
+    "TriangularSourceLargeAppend": 8,
+    "TriangularSourceComplete": 12,
+    "LowKappaBoundaryCertificate": 1
+  },
+  "formal_scope": "21 scoped generic/kernel-decide reports. Written actual induction and exact finite grammar coverage, two independently rebuilt complete state sets; NOT end-to-end Lean verification of actual arms or enumeration.",
+  "pre_old_peak": {
+    "N": 13,
+    "states": 117964,
+    "appends": 472829,
+    "boundaries": 34806,
+    "rejected": 53,
+    "state_sha256": "526205da2a6368adb89f615f46cac17c978e9bfdfb2f0ed84c342ad09d648567"
+  },
+  "early_old_peak": {
+    "N": 45,
+    "M_cap": 128,
+    "states": 657439,
+    "appends": 10873783,
+    "guarded_comparisons": 4961907,
+    "state_sha256": "25f6737af1aef9f9b7dfeaed7d4073070a7218d546c6727a52956b3078ca3101"
+  },
+  "unbounded_audit": [
+    "ALL legal kappa transitions and unit dents covered",
+    "Late old peak: nondecreasing universal D prefix plus FIRST mode gives M>=delta+1",
+    "Early old peak: new first mode<=old support end+1 gives whole positive tail payment and rank<=45",
+    "Slope pruning uses proved coefficientwise positive-D append monotonicity",
+    "Clipping preserves coefficients; no unproved preservation of global modes",
+    "Both finite grammars are complete; necessary mode guards are supersets"
+  ],
+  "exact_full_state_set_equality": true,
+  "general_original": "OPEN",
+  "general_A2": "OPEN",
+  "general_C": "OPEN",
+  "source_overlap_remainder": "Triangular single-arm budget alone does NOT pay arbitrary later two-source convolution",
+  "sha256": {
+    "triangular_source_large_kappa_append.tex": "22938d68e12d45a5f1bb3a17483152b71caa343df80cb73e90373e993ec9a567",
+    "triangular_source_curvature_complete.tex": "2f2396bfe7930721e4828196686942a6bee433d0176307be4f02dc4608281102",
+    "agent_postcount_source_mode_payment.tex": "f3b69acbf6fa4e84c5baac4475812e999b35f4245121aa8381d129cece91baf3",
+    "general_forward_difference_growth.tex": "bb92b275211f490ccfce8c9a2c6748f42ede2e9f646a3ddbb392d673f11185c8",
+    "positive_derivative_append_order.tex": "9f53b2c4fe96b21142705c0d8f45cd1fd57acbef3e2f27a119043365fac14a37",
+    "first_source_multiplicity_profile.tex": "dfeacd94ba0cb6cacf324a35082d7c877e7c36ed5827b2fb6f50f8b4c8fe44ce",
+    "early_normalized_source_dyadic_profile.tex": "04568e304713e446cded7d8f910dfbe003c4c00dec48f30558fbe72cc15b25e2",
+    "verify_triangular_source_complete.py": "ac90e3dea12f50a27fb961d16668a14fab85daf1f11f0ef4af8f7992a914a8eb",
+    "probe_triangular_source_induction.py": "cb670ff5233efbc73f0c95da1b7be7a48647cf2447d5b117287b93cdced5c45a",
+    "probe_triangular_source_induction.json": "e6ba59d55ddbdd94aaed5d77a0a1efdd71a2cfd36911377631c9772b0b1288b6",
+    "build_low_kappa_boundary_certificate.py": "31559dee155ba8cdc92ddf08a06a1c8b41d25492670a9c7916b4921617e1f543",
+    "TriangularSourceLargeAppend.lean": "12c63be8c1e44607de3e41ea81dda0993306ad952d8072df6e0dd4b40369039a",
+    "TriangularSourceLargeAppend.log": "259e0fe5bf6b5c19884beef7f333ef7e0ec0b276a4ec88e45ab48f23388c3e45",
+    "TriangularSourceComplete.lean": "9d29151cd29cb85620912feb9c3eb2450251075fc7b254908f4608e589948056",
+    "TriangularSourceComplete.log": "4143d0625f60558330d6bc22b516fb9936bef89f8f050728570c548df367d02f",
+    "LowKappaBoundaryCertificate.lean": "a658b4831ef31c4ec21edeff460e3ec86bf4042b32fb046ac370f1ad43db7b5a",
+    "LowKappaBoundaryCertificate.log": "ce5ee0f4cf7b83db830072aa4d6fe94cb1501a0333606134e36841821a125c11",
+    "probe_low_kappa_triangular_boundaries.py": "bcb4b8b399abc25297e593cd169a6aa37d71b6bc1279a35391ef6b91ad1acc75",
+    "probe_low_kappa_triangular_boundaries.json": "63c8e524d6d110f11eb2bd8a165a83e9d4ee8af0bde9311ac7fa05de05391f9b",
+    "verify_low_kappa_triangular_boundaries.py": "073fed780028f9445f5232bcb9c4a535d53c9f78e7dfd846be11e10f759f76b2",
+    "verify_low_kappa_triangular_boundaries.json": "e46b3c0727e8dbeda68f2bff64a8a2da191b08af10ca6b8fdafc51f5d05bc954",
+    "probe_low_kappa_small_peak_TC.py": "488fbb9e08aaccf6dd18f89b5e09ca97cd0e7debb3e98ab64a2fc66524744235",
+    "probe_low_kappa_small_peak_TC.json": "cbc2f323f7f3c6c97a9b606f0c1c101cc0d8c54a6d1000c464b157f46dff38ff",
+    "verify_low_kappa_small_peak_TC.py": "d23e65fd242f3d1211ab5adf231906ea48abe97eb397d82baf44a03670a0ca16",
+    "verify_low_kappa_small_peak_TC.json": "09d7e4fc13e28f33188fbc49586ab3ff2977531cd91ee6cae34a33761e80b6dc",
+    "low_kappa_boundary_states.bin": "17d4de844aa3a0a0b79fecb3dea67073aba65152a13fa0318aff1ed6afe73a11",
+    "low_kappa_small_peak_states.bin": "25f6737af1aef9f9b7dfeaed7d4073070a7218d546c6727a52956b3078ca3101"
+  }
+}

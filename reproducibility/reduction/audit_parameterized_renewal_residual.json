@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_QA_PASS_PARAMETERIZED_RESIDUAL_AND_ALL_DELAY_POSITIVE_COUPLED_SOURCE",
+  "counts": {
+    "rational_parameter_ALLorder_minor_reads": 72700,
+    "parameter_complete_boundary_contexts": 300,
+    "EXACTadjacent_root_parameter_minor_reads": 1220,
+    "positive_numerator_cumulative_root_gap_reads": 4560,
+    "ALLdelay_EXACTpositive_coupled_identity_and_two_sided_reads": 23040,
+    "positive_numerator_contexts": 48
+  },
+  "state_sha256": "34d7b82c69103a31e9790da9499c15045aa64995cfff9969f8ed6e2c12f0bd55",
+  "seconds": 7.0,
+  "scope": "ALLsymbolicproofs haveNOnewfinitepremise. ParameterenvelopeincludesADJACENTrootsofthepreviousorder. ALLdelaypositivecoupledlowerboundNOTmonotonicity,CDFgrowthNOTcoefficientUI. Generaloriginal/C/A2andmixed3/4remainOPEN."
+}

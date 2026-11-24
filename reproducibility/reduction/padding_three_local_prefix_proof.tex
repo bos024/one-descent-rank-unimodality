@@ -1,0 +1,181 @@
+\section{Padding three by local prefix closure}
+This all-degree written proof has passed independent exact arithmetic,
+complete reconstruction of its small exceptions and nine scoped Lean
+certificates. General C/A2/original UI remain OPEN.
+
+For $P=1+z+2z^2+z^3$, let $R=(1+z)P=(1,2,3,3,1)$.
+Both $R$ and its positive primitive $(1,1,1)$ are globally LC.
+For every CI $L$ of degree $h$ and $u\ge h+1$, put
+\[
+ c=q^2\psi^uL(-\phi),\qquad
+ J=\{P(1+z)^uL-c\}/(1+qz),\qquad K=u-2.
+\]
+We prove that $J$ is positive through rank $K+1$, is ordinary LC
+at centres $1,\ldots,K$, and has an LC positive primitive at these
+same centres. Global ordinary LC beyond this prefix is not required.
+
+\paragraph{A genuinely local prefix-window lemma.}
+Suppose $a_0,\ldots,a_{K+1}$ are positive, ordinary LC through
+centre $K$, and their positive primitive is LC through centre $K$.
+Truncate $a$ above $K+1$. This is globally LC. Its positive primitive
+is also globally LC: the ordinary ratios make its support initial;
+all nontrivial primitive minors were assumed, and its last retained
+entry has next value zero. Apply the registered global window theorem.
+Causality shows that $[t]a$ has BOTH desired properties through $K$.
+This uses no information at centres larger than $K$.
+
+\paragraph{A relaxed robust budget, including its last centre.}
+For every $v\ge7$, every nonnegative LC numerator $N$ with $N_0=1$
+and $a=N_1\le(v+3)/2$, and $B=NQ_v$, one has
+\[
+ M_B(s)\ge q^s(B_{s+1}+2qB_s+q^2B_{s-1})
+                         \quad(1\le s\le v-1).       \tag{2}
+\]
+There is NO degree bound on $N$. The old Cauchy--Binet proof applies
+unchanged after the following two improvements of its row-zero payments.
+At $s=1$ its doubled margin is bounded below by the concave polynomial
+\[
+ f(a)=q^2v(v-1)+2a(q^2v-qa-1).
+\]
+At $a=0$ it is nonnegative. At $a=(v+3)/2$, use $q\le5/8$ to get
+\[
+ f(a)\ge(7v^2-34v-93)/16
+        =\{7(v-7)^2+64(v-7)+12\}/16>0.
+\]
+For $2\le s\le v-2$, $Q_s\ge v-q$ and $q^s\le q^2$.
+Twice the row-zero margin is at least
+$(3q-1)v-3q-1=(3q-1)(v-4)+9q-5>0$.
+At $s=v-1$ the existing final-row kernel pays all $k\ge1$.
+For $k=0$, $Q_{v-1}\ge3/2$, whereas
+\[
+ q^{v-1}(v+q+a)\le q^{v-1}(3v/2+3/2+q)\le4/3.
+\]
+For the last inequality the expression decreases from $v=7$ onward;
+its initial value is at most $(2/3)^6(38/3)=2432/2187<4/3$.
+The LC bound $N_{s+1}\le aN_s$ pays the missing row as before.
+Thus (2) includes $s=v-1$ even when $\deg N\ge v$.
+
+\paragraph{The all-length binary base.}
+At $L=1$, $J_{u+1}=(1+z)J_u+\phi c_u$, $c_u=q^2\psi^u$.
+Its entire ordinary and positive-primitive LC at $u=8$ follows
+by exact division. For every $u\ge8$, the update changes only the
+constant ordinary coefficient and primitive ranks zero/one, so all
+ordinary centres at least two and primitive centres at least three
+inherit the registered weighted two-term theorem.
+Put $w=u+1$, $a=(u^2+u+4)/2$, $b=(u^3+11u+6)/6$.
+The first ordinary minor is $w^2-(1-c)(a+qw)>0$, since
+$a\le w^2/2$, $|c|<1/6$, $q<2/3$, $w\ge9$.
+The old arbitrary-real first-primitive lemma applies with $w\ge6$,
+$a\le w^2/2$, $c\ge-1/4$ and gives at least $3/2$.
+At centre two the exact primitive minor is $M_{20}+cA$, where
+\[
+ M_{20}=a^2+a-wb-w-\phi H,\quad
+ H=aw+a-w^2-b,\quad A=w-a+\phi(a-b).
+\]
+For $u\ge8$, $H\ge0$, $-2b\le A\le0$. Therefore its minor is at least
+\[
+ a^2+a-wb-w-2H-b/3
+ =u^4/12-7u^3/18-u^2/12-5u/18-1/3>0.
+\]
+At $u=8+x$, this polynomial has coefficients
+$(403/3,1699/18,271/12,41/18,1/12)$, all positive.
+Also $H(8+x)$ has coefficients $(198,427/6,17/2,1/3)$.
+This proves the binary base for EVERY $u\ge8$ by induction.
+
+\paragraph{Appending any CI interval at fixed $u\ge8$.}
+Let $L'=L_0[t]$, $r=\operatorname{len}L_0$, $t\ge3$ and
+$u\ge\deg L_0+t$. The divided-quotient correction to $[t]J_{L_0}$
+has degree $t-2$. The local prefix-window lemma therefore inherits
+ordinary centres $t,\ldots,K$ and primitive centres $t+1,\ldots,K$.
+For the low primitive head use
+\[
+ B=P L_0Q_u,\quad a_* =\phi^2c,\quad X_n=B_n-a_*\psi^n.
+\]
+Through index $u-1$, $B$ agrees with $RL_0Q_{u-1}$. The numerator
+$RL_0$ is LC and has first coefficient $r+2\le(u+2)/2$.
+Apply (2) with $v=u-1$ to prove $X$ LC at every centre $1,\ldots,K$.
+The bound $|a_*|\le(4/5)q<1/2$ suffices for the alternating error.
+The head $X_0,\ldots,X_{u-1}$ is positive: for $1\le n\le u-2$
+use $Q_{u,n}\ge u-q$, and at $n=u-1$ use the $P_1Q_{u,u-2}$
+term. The actual primitive has
+\[
+ d_n=X_n\ (1\le n<t),\quad d_t=X_t-1,\quad
+                            d_{t+1}=X_{t+1}-B_1.       \tag{3}
+\]
+These formulas are used only in the head. Centre one is paid by
+the existing first-primitive lemma: with $w=u+|L'|+1$,
+$E_2=(w^2-u+|L'|+3)/2\le w^2/2$ and $|c|<1/5$.
+Centres $2,\ldots,t-2$ use $X$ LC; lowering the next value at
+centre $t-1$ improves the minor.
+
+If $t\le K$, the last primitive raw minor is
+$M_X(t)+1+B_1X_{t-1}-2X_t$.
+Here
+\[
+ B_1=u+r+q^2,\quad D=B_1^2-2B_2=u-r-3-q^2,
+ \quad B_{t-1}\ge(r+2)(u-q),\quad 2r\le u-3.
+\]
+Ordinary LC of $RL_0Q_{u-1}$ in this head gives
+$B_1B_t\le B_2B_{t-1}$. Consequently
+\[
+ B_1B_{t-1}-2B_t\ge u/2.                            \tag{4}
+\]
+Indeed it suffices to check
+\[
+ F(r)=(u-r-4)(r+2)(u-1)-(u/2)(u+r+1)\ge0.
+\]
+This is concave in $0\le r\le(u-3)/2$. Its endpoint values are
+$(3u^2-21u+16)/2$ and $(u^3-8u^2+5)/4$, both positive for $u\ge8$.
+The alternating correction is at most
+$(4/5)q^t(B_1+2q)\le(1/5)(B_1+2q)\le u/3$.
+Thus the perturbed gap in (4) is at least $u/6$ and the junction
+minor at least $1+u/6$.
+
+It remains to assemble ordinary LC in the low head, without assuming
+the conclusion. For centres below $t-1$, the signed primitive is
+positive and LC including its correctly normalized $d_0$; ordinary
+cumulative LC gives the required ordinary minors. At centre $t-1$,
+if $d_t>0$ use the already paid primitive minor and the same cumulative
+argument; if $d_t\le0$, $J_{t-1}$ is a local maximum and its ordinary
+minor is automatic. This also covers $t>K$ using only the read prefix.
+All later ordinary centres through $K$ were inherited independently.
+Therefore ordinary ratios prohibit a recovery of positive differences
+after their first nonpositive value. This justifies every clipped
+primitive boundary in (3), completing the local simultaneous induction.
+
+Positivity of $J$ on the read prefix follows directly from
+$J_n=(RL'Q_{u-1})_n-c\psi^n$ for $n\le u-1$.
+At $n\le u-2$ the quotient coefficients are at least one, and at
+$n=u-1$ the $R_1Q_{u-1,u-2}$ term exceeds one; $|c|<1/5$.
+
+\paragraph{Complete small exceptions and actual consequence.}
+For $1\le u\le7$, degree $h\le u-1\le6$. Up to factor order the
+possible degree partitions are the empty partition and
+$(2),(3),(4),(2,2),(5),(2,3),(6),(2,4),(3,3),(2,2,2)$,
+restricted by $h\le u-1$. These give exactly THIRTY contexts.
+Exact quotient arithmetic verifies positive read coefficients and both
+prefix LC properties; all are included in the finite scalar certificate.
+The separate binary $u=8$ full-support base is also included.
+
+Finally $P(-\phi)=q^2$ and
+$(1-z)P=1+z^2(1-z-z^2)$. Hence at the actual padding-three entry
+$m=h,u=m+1$, the raw geometric deficit at $u+s$ equals $d_s$ for
+$1\le s\le u$. The first mode bound $e\le2m$ reads primitive
+centres only through $u-2$. The existing two actual strict seeds,
+backward integration, fixed-padding count propagation and late-C
+read joining give the same ALL-degree actual consequence as padding
+one/two, now at padding three. The complete actual argument is stated
+in \texttt{actual\_padding\_three\_CI\_entrance.tex}.
+
+\paragraph{Formal scope.}
+\texttt{PaddingThreeLocalPrefix.lean} certifies seven new scalar
+statements, including all three relaxed robust payments and the
+arbitrary-real binary second head. The separate small-case module
+certifies the fine golden-root interval and all 399 distinct scalar
+margins of the thirty complete low-degree contexts and binary $u=8$
+base by ordinary kernel reduction. The independent verifier rebuilds
+the bounded cases with a separate combinations-with-replacement
+capacity grammar. The local-window proof, quotient identities,
+capacity-grammar coverage, entire CI induction and actual-arm
+identification are written arguments. There is no claim of an
+end-to-end Lean formalization of composition unimodality.

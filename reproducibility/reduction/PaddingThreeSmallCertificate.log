@@ -1,0 +1,2 @@
+'PaddingThreeSmallCertificate.golden_fine_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaddingThreeSmallCertificate.all_scalar_margins' depends on axioms: [propext, Classical.choice, Quot.sound]

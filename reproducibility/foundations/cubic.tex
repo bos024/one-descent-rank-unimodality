@@ -1,0 +1,80 @@
+\section{A cubic finite-obstruction theorem}\label{sec:cubic}
+The quadratic one-arm bound can be combined with a second, independent reduction. A sufficiently large disparity between the non-one skeleton weights forces a single crossing of the central differences. This gives an explicit polynomial bound on the weight of an entire minimal obstruction.
+
+\begin{lemma}[Initial growth of the reversed kernel]\label{lem:reversekernelgrowth}
+Let $Y$ be an increasing strict arm and put $e_Y=\wt Y-\len Y$. The reversed kernel $\delta_Y=D_Y\rev$ is nondecreasing through rank
+\[
+ \left\lfloor\frac{e_Y+M}{2}\right\rfloor.
+\]
+\end{lemma}
+\begin{proof}
+We express $\delta_Y$ as a sum of products of intervals, each with center at least $(e_Y+M-1)/2$. The empty case is $[M]$. If $Y=Zt$, with $c=\wt Z$ and $l=\len Z$, use
+\[
+ \delta_{Zt}=[t]\delta_Z+z^{c+t}[M-t].
+\]
+Multiplication by $[t]$ raises every center by $(t-1)/2$, exactly matching the increase in $e_Y$. The correction interval has endpoint sum $2c+t+M-1$, whereas the required sum is $c-l+t+M-2$; their difference is $c+l+1>0$. Every interval product is symmetric and unimodal, and hence nondecreasing through the claimed common rank. Sum the inequalities.
+\end{proof}
+
+\begin{theorem}[An unbalanced non-one skeleton]\label{thm:skeletonimbalance}
+Let $M\ge4$, $X=1^\alpha U$ and $Y=1^\beta V$ be increasing strict arms, with $U,V$ consisting of non-one parts. Put $u=\wt U$, $v=\wt V$, and assume
+\[
+ u\ge2,\qquad |\wt X-\wt Y|\le M-4,\qquad v\ge4u+3M-12.
+\]
+Then $Q_{X,Y}$ and $H$ are unimodal.
+\end{theorem}
+\begin{proof}
+Put $a=\wt X$, $b=\wt Y$, $\eta=a-b$, and $R=b+M$. Since $b\ge v\ge4u+3M-12\ge2M-1$, and $V$ has at least two parts, the stronger kernel reflection applies. It gives monotonicity of $D_Y$ through rank $2u+2M-4$. The two-step reflection also makes $Q$ nondecreasing through rank $b+3$, since $\eta\ge4-M$.
+
+Use the nonnegative polynomial $K_U=(1-z)F_U+z\RR_U$ from Lemma~\ref{lem:prefixreverse}, of degree at most $u$. The exact padding identity gives
+\begin{equation}\label{eq:skeletondifference}
+ \Del Q(n)=(K_UD_Y)_n-(\RR_UD_Y)_{n-\alpha-1}.
+\end{equation}
+We show that these differences are nonincreasing from rank $b+4$ through rank $R+u+1$.
+
+First, $\len V\le v/2$, so $e_Y=v-\len V\ge v/2\ge2u+M-8$. Lemma~\ref{lem:reversekernelgrowth} therefore makes $\delta_Y$ nondecreasing through rank $L=u+M-4$, including zero extension to negative ranks. Write $K_U^*=z^uK_U(1/z)\ge0$. For $b+4\le n\le R+u$, let $r=u+R-n\le L$. Then
+\[
+ (K_UD_Y)_n-(K_UD_Y)_{n+1}
+ =(K_U^*\delta_Y)_r-(K_U^*\delta_Y)_{r-1}\ge0.
+\]
+Second, the larger index needed for consecutive coefficients of the negative term in~\eqref{eq:skeletondifference} is at most
+\[
+ (R+u+1)-\alpha-1=M+2u-\eta\le2u+2M-4.
+\]
+Convolution with the nonnegative $\RR_U$ preserves the known initial monotonicity of $D_Y$. Thus the subtracted term is nondecreasing throughout this interval. The asserted decrease of $\Del Q$ follows.
+
+For every $n\ge R+u+1$, the first term in~\eqref{eq:skeletondifference} is zero, so $\Del Q(n)\le0$. Before rank $b+4$ the differences are nonnegative, and between these two regions they are nonincreasing. Hence no negative difference can be followed by a positive one. The balanced-band equivalence gives unimodality of $H$.
+\end{proof}
+
+\begin{theorem}[Polynomial finite verification bound]\label{thm:cubicbound}
+Fix an integer $M\ge4$. If there is a strict core whose relative polynomial $Q$ is not unimodal, then there is one whose full core weight is less than $160M^3$.
+Consequently, unimodality of all one-descent compositions of descent peak $M$ can be established by a finite exact check of the strict relative cores below this weight bound.
+\end{theorem}
+\begin{proof}
+Choose a counterexample with the fewest total arm parts. Its arms are nonrectangular and its weights differ by at most $M-4$. By Theorem~\ref{thm:uniformcentral}, we may exchange the arms so that the number of non-one parts in $U$ is less than $N_M=\max\{48,8M(M-3)\}$. Thus
+\[
+ 2\le u\le(M-1)(N_M-1)<8M^2(M-1).
+\]
+The preceding theorem forces $v<4u+3M-12$. Put $D=M+u+v$ and $s=\len U+\len V$. Then
+\[
+ D<5u+4M-12<40M^2(M-1)+4M-12<40M^3.
+\]
+Write $X=1^\alpha U$ and $Y=1^\beta V$. In the balanced band $H$ is also nonunimodal. Lemma~\ref{lem:longones} therefore forces $\min(\alpha,\beta)<D-s$. Weight balance gives
+\[
+ |\alpha-\beta|\le u+v+M-4=D-4.
+\]
+Therefore
+\[
+ \wt{X,M,Y}=D+\alpha+\beta
+ \le4D-2s-6<4D<160M^3.
+\]
+Every reduction used here has an analytic proof. For the finite verification principle in Theorem~\ref{thm:finiteprinciple}, suppose all complete strict cores below the bound have unimodal rank polynomials. A minimal relative counterexample would lie in the balanced band, so its complete core would also be a counterexample below the same bound, a contradiction. Thus all strict relative cores are unimodal. The heavier-arm orientation, repeated-maximum recurrence, and restoration of the increasing tail then give the one-descent statement as in the proof of Theorem~\ref{thm:main}.
+\end{proof}
+
+\begin{corollary}[Linear bound for a single non-one part]\label{cor:linearshort}
+If a minimal counterexample at peak $M\ge4$ has an arm with exactly one non-one part, then its total core weight is less than $36M$.
+\end{corollary}
+\begin{proof}
+Orient that arm as $X$. Then $u\le M-1$, and Theorem~\ref{thm:skeletonimbalance} forces $v<4u+3M-12$. Thus $D=M+u+v<9M-17$. The same long-run and balance calculation gives total weight less than $4D<36M$.
+\end{proof}
+
+The finite verification bound is polynomial in the peak; the number of cores below it need not be polynomial. No exhaustive computation of this general domain has been performed here, and no unrestricted unimodality conclusion is inferred. This bound is for relative unimodality; the relative tail-log-concavity bound reported in Chen's abstract concerns a stronger property.

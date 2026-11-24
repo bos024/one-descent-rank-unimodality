@@ -1,0 +1,11 @@
+{
+  "status": "EXACT_QA_PASS_UNIVERSAL_SHARP_POLYNACCI_AND_GOLDEN_RESIDUAL_MINOR_ENVELOPES",
+  "counts": {
+    "ALLorder_ordinary_absolute_minor_reads": 161080,
+    "ALLorder_golden_residual_SHARP_constant_minor_reads": 158916,
+    "EXACTsharp_boundary_formula_orders": 82
+  },
+  "state_sha256": "aafcea7a529acf031469724b2374e3e116ce3edb39acb25dd385d2c3a4ac36e7",
+  "seconds": 2.937000000005355,
+  "scope": "UniversalallorderproofusespositiveprobabilityquadratictransportandCOMPLETEsymbolicbands,NOTfiniteQA. Ordinaryconstant1attainedn=t;goldenconstantphi2optimalasn=t1,t->infty. NOgeneralC/A2/originalUIclaim."
+}

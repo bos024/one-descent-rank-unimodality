@@ -1,0 +1,33 @@
+'InfiniteThreeFourReference.exact_quadratic_norm_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfiniteThreeFourReference.entire_residual_quadratic_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfiniteThreeFourReference.whole_norm_coercivity_and_absolute_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.ordinary_minor_from_absolute_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.whole_scaled_minor_decay_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfiniteThreeFourReference.complete_four_corner_polynomial_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.generic_corrected_tail_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfiniteThreeFourReference.cumulative_negative_constant_improves_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.coupled_negative_constant_preserves_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.whole_reference_tail_polynomial_identity' depends on axioms: [propext, Quot.sound]
+'InfiniteThreeFourReference.source_constant_and_tail_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfiniteThreeFourReference.cubic_reciprocal_root_rational_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.cumulative_log_concavity_entry_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.exact_one_unit_cumulative_boundary_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfiniteThreeFourReference.whole_nonnegative_three_step_recurrence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

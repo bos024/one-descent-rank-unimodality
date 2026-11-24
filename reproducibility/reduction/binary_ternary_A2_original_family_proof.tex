@@ -1,0 +1,226 @@
+\section{From complete binary/ternary C to actual coefficient unimodality}
+This is a theorem about the ORIGINAL coefficients, with no amplification.
+Let $\mathcal B_3$ be the normalized increasing arms
+$1^\alpha2^u3^r$, $\alpha\ge1$, $u,r\ge0$, together with the empty
+arm when a deletion reaches it. An initial part of size $a$ can be
+replaced by $a$ ones, so this normalization preserves arm polynomials.
+All coefficients are zero extended. Write $[t]=1+\cdots+z^{t-1}$,
+$S_t=z[t]$, $q_X=z^{a}F_X(1/z)$, $a=\operatorname{wt}X$.
+
+The proof gives a larger class $\mathcal A_4$: the union of
+$\mathcal B_3$, all $1^\alpha2^uT$ ($T\ge2$), and all arms having
+at most TWO arbitrary non-one parts. Include rectangles and the empty
+arm. Every member has complete C: use the new binary/ternary theorem
+or the existing at-most-two-nonbinary-capacities theorem in
+\texttt{two\_nonbinary\_complete\_C\_proof.tex}.
+Every nonrectangular member has $3\le\kappa\le4$.
+For binary-prefix one-jump arms use $\kappa(1^\alpha2^u)=3$ when
+$u>0$, and $\kappa(ZT)=\min(T+1,\kappa(Z)+1)$; for two-part
+skeletons use $\kappa\le h+2$. Both facts include arbitrary padding.
+This union is closed under final-part deletion, and its pair family
+is closed under arm exchange.
+
+\begin{theorem}[Full A2 and full source shape for all binary/ternary pairs]
+For every $X,Y\in\mathcal A_4$, put $p=q_Xq_Y$ and
+$d_n=(p_n-p_{n-1})^+$. Then $(2^nd_n)_{n\ge0}$ is unimodal.
+If both arms are nonrectangular, the positive part of the ENTIRE
+raw source $E=(2-z)p$ is unimodal, its positive support is an initial
+interval, and all its other coefficients are nonpositive.
+Both arm counts and initial runs of ones are unrestricted.
+\end{theorem}
+
+\subsection{An unconditional tail resource independent of A2}
+The complete C theorems for the specified arms in $\mathcal A_4$
+are the single-arm inputs; the only new one is the all-count
+binary/ternary theorem. They are not finite diagnostics. The clipped-ratio argument in
+\texttt{clipped\_forward\_ratio\_frontier.tex} gives coefficient tilt A1:
+$2^np_n$ is unimodal for every nonrectangular pair in this class.
+Consequently $E_i<0$ implies $E_j\le0$ at every $j>i$.
+This consequence does NOT assume A2.
+
+We next prove, independently of A2, that if $\nu$ is the LAST
+ordinary mode of a nonrectangular pair, then
+\[
+ n>\nu,\quad E_n\ge0\quad\Longrightarrow\quad E_{n+1}\le E_n.
+ \tag{Q}
+\]
+Put $D=a+b$ and $j=D-n$. At $j\ge2$ classify each ordinary forward
+arm by whether $F(j+1)>F(j)$.
+If both rise, complete C and the source-prefix theorem in
+\texttt{C\_to\_coupled\_S\_rising\_window.tex} prove (Q), including
+the case where the source at $n$ is zero. If both do not rise,
+the first-half theorem in \texttt{agent\_bothdeclining\_first\_birth.tex}
+applies when $2j\le D+2$. Otherwise $2n\le D$, and the actual
+post-LAST-mode theorem in
+\texttt{agent\_half\_lc\_actual\_weak\_curvature.tex} applies.
+Neither of these two nonrising resources needs an A2 hypothesis.
+
+Here is a direct proof of the mixed case that also includes arms
+with only ONE non-one part. Orient $A=F_Z$ nonincreasing at $j+1$
+and $B=F_Y$ strictly rising there. Its source
+$E_Y=1-z+(2z-1)B$ has nonnegative increments through $j+1$.
+Its first positive increment is at $3\le\kappa\le4$, of size at least
+one, because $Y\in\mathcal A_4$ is nonrectangular.
+Put $Q=E_YA$, $r=a-j$, and $s_r=\Delta q_Z(r)$. The exact identity is
+\[
+ E_{n+1}-E_n=(s_{r+1}-s_r)-(Q_{j+1}-Q_j),\qquad
+ Q_{j+1}-Q_j=\sum_i\Delta E_Y(i) A_{j+1-i}.       \tag{1}
+\]
+The sum is nonnegative. For $r\le-2$ the first term vanishes.
+For $r=-1$ it equals one, and its compulsory birth term has
+index $a+2-\kappa\in[1,a-1]$ since $a\ge3$; hence that term pays it.
+
+For $r\ge0$, a putative positive value in (1) forces
+$d_{r+1}>d_r>0$ for the owner's actual reverse positive differences.
+Let $H=\sum_{t\in Z,\ t>1}(t-1)$, $M=\alpha+H$, and
+$C=d_{r+1}-d_r>0$. The established single-arm skeleton bound is
+\[
+ H\ge2r+2,\qquad (r+1)C\le(H-2r-1)d_r.           \tag{2}
+\]
+Every positive box of $q_Z$ has endpoint sum at least $M$.
+Thus $q_Z(v)\ge q_Z(w)$ if $w\le v$ and $w+v\le M$.
+If $2r+\kappa\le M$, take $w=r+1$, $v=r+\kappa-1$;
+then the compulsory term $A_{j+1-\kappa}=q_Z(v)$ pays
+$C\le q_Z(r+1)$.
+Otherwise $\kappa\le4$, $\alpha\ge1$, and $H\ge2r+2$
+force EXACTLY $\kappa=4$, $\alpha=1$, $H=2r+2$.
+Now $r+v=M$, so $q_Z(v)\ge q_Z(r)\ge d_r\ge C$ by (2).
+These reflection comparisons also prove that the birth is in the
+actual support, so no absent source is charged. This proves the
+mixed case, without a finite entrance or a minimum count of two.
+
+At the remaining reverse terminal ranks, $j=1$ gives
+$E_n=2(AB)_1-(AB)_2=4-5=-1$, so its nonnegative premise fails.
+At $j=0$, $E_n=0$, $E_{n+1}=-1$; the next rank has negative source,
+and beyond it the source is zero. Negative forward ranks are zero.
+Thus (Q) holds at EVERY required rank.
+
+\subsection{Full old A2 supplies a signed source suitable for every window}
+Suppose A2 holds for a nonrectangular pair in $\mathcal A_4$.
+Let $\mu,\nu$ be the first and last ordinary modes of $p$.
+Through $\mu$, $d_n=\Delta p_n$ and the exact identity
+\[
+ 2^{n+1}d_{n+1}-2^nd_n=2^n(E_{n+1}-E_n)          \tag{3}
+\]
+transfers A2 to unimodality of $E_0,\ldots,E_\mu$.
+All these source values are positive. Over the maximum plateau,
+$E_\mu\ge\max p$ and $E_{\mu+1}=\cdots=E_\nu=\max p$;
+also $E_{\nu+1}\le\max p$. For later comparisons (Q) pays whenever
+the current source is nonnegative; if it is negative, A1 precludes
+any later positive source. It follows that $E^+$ is unimodal with
+initial positive support. Zero values after its mode cannot be
+followed by a positive value, by (Q); negative values cannot be
+followed by a positive value, by A1. This checks zeros and the
+ENTIRE plateau, rather than identifying first and last modes.
+
+The signed-window lemma of \texttt{signed\_kernel\_extension.tex}
+therefore makes $([t]E)^+$ unimodal with initial positive support
+for EVERY integer $t\ge1$. The lemma applies to the whole raw
+source, including its negative terminal coefficient.
+
+\subsection{A full A2 induction, including its bases}
+First suppose one arm is rectangular, $q_X=[\alpha+1]$, and put
+$b=\deg q_Y$. If $\alpha\ge b$, the first ordinary product mode is
+$b$. Its positive differences are $(q_Y)_0,\ldots,(q_Y)_b$, then
+zeros. Their weighted values increase, since actual ideal growth
+gives $2(q_Y)_n\ge(q_Y)_{n-1}$. If $\alpha<b$, the first product
+mode $\sigma$ is below $b$: at rank $b$ the window difference is
+$1-(q_Y)_{b-\alpha-1}\le0$, and ordinary window unimodality applies.
+The single-arm corrected source
+$e_Y=(2-z)q_Y-z^b+z^{b+1}$ is nonnegative unimodal.
+The product source equals $[\alpha+1]e_Y$ at every rank below $b$.
+Its prefix through $\sigma$ is unimodal, and (3), followed by the
+zero positive-difference tail, proves A2. This includes the empty
+arm and two rectangles. We do NOT assert full raw-source shape
+for rectangular pairs.
+
+Induct on the total number of non-one parts in a nonrectangular
+$\mathcal A_4$ pair and orient a heavier arm as $X$.
+If $X$ has only one non-one part, the full heavier-one-part A2
+theorem of \texttt{deficit\_cumulative\_ratios.tex} applies.
+Otherwise write $X=Zt$ with its actual legal final capacity $t$;
+both $Z,Y$ are still
+nonrectangular and belong to $\mathcal A_4$. Full OLD A2 holds by
+the smaller-count hypothesis. The preceding source argument applies
+to $p=q_Zq_Y$. The exact NEW product and source are
+\[
+ q_Xq_Y=[t]p+z^a q_Y,\qquad
+ (2-z)q_Xq_Y=[t]E+z^a(2-z)q_Y.                 \tag{4}
+\]
+The NEW first ordinary mode $\sigma$ satisfies $\sigma<a$,
+including equal weights, by the strengthened ordinary midpoint
+theorem. Hence its source through $\sigma$ equals $[t]E$.
+These source values are positive, so they equal $([t]E)^+$.
+Signed-window unimodality and (3) prove NEW A2 through $\sigma$;
+all later NEW positive differences vanish. The induction closes.
+Applying the preceding source argument once more to the now-proved
+full A2 gives the full-source assertion of the theorem.
+Only FULL old A2 is used here; a truncated old hypothesis is not
+substituted at any window read.
+
+\begin{corollary}[An arbitrary heavier final jump]
+Let $Z,Y\in\mathcal A_4$, append ANY legal final part $t$ to $Z$,
+and assume $a=\operatorname{wt}(Zt)\ge\operatorname{wt}Y$.
+Then A2 holds for $q_{Zt}q_Y$, with no upper bound on $t$.
+\end{corollary}
+\begin{proof}
+For both old arms nonrectangular, (4), full old A2, A1, (Q), and
+the signed-window lemma apply for this arbitrary $t$ as well.
+If $Z$ is rectangular, use the heavier-one-part base; if $Y$ is
+rectangular, use the rectangular base. Empty bases are included.
+\end{proof}
+
+\begin{theorem}[Original coefficient theorem with an arbitrary strict peak]
+Let $X,Y\in\mathcal A_4$ and let $M>\max(X,Y)$ be any strict peak.
+Then the ORIGINAL core and BOTH relative polynomials
+\[
+ F_X+F_Y+(S_M-1)F_XF_Y,\quad
+ F_X(1+(S_M-1)F_Y),\quad F_Y(1+(S_M-1)F_X)
+\]
+are coefficient unimodal. The same holds if one arm is $Zt$,
+$Z,Y\in\mathcal A_4$, for ONE arbitrary legal final jump $t$,
+provided $\operatorname{wt}(Zt)\ge\operatorname{wt}Y$.
+The strict peak $M$ is unrestricted above the arm capacities.
+\end{theorem}
+\begin{proof}
+Use the least-peak, least-relative-counterexample route in
+\texttt{inductive\_signed\_window.tex}, or its shorter-prefix
+refinement in \texttt{short\_prefix\_reflection\_join.tex}.
+The family of all $\mathcal A_4$ pairs, adjoined to the stated
+heavier-final-jump pairs, is closed under arm exchange and deleting
+a final part. Deleting the exceptional jump gives a $\mathcal A_4$
+pair; deleting from the opposite arm preserves its weight inequality.
+The full A2 statements just proved supply the required weighted
+positive-difference input, while deletion of a proper relative
+polynomial supplies the signed prefix by leastness.
+
+For completeness the lower-peak base also stays in this family.
+Let $t_0$ be the largest arm capacity. For an $\mathcal A_4$
+pair, removing all occurrences of $t_0$ leaves another such pair.
+For a qualifying exceptional jump, if $t_0=t$, remove this jump
+first and obtain an $\mathcal A_4$ pair. If $t_0>t$, all occurrences
+of $t_0$ lie in the opposite arm: removing them preserves the
+qualifying heavier arm. Continue stripping all maxima to obtain a
+strict peak $t_0<M$ in the same family. Thus least-peak induction
+or the rectangular base applies.
+Restore each removed maximum by $J=1+S_{t_0}J^{\rm smaller}$.
+The existing base-peak join contradicts the balanced relative
+counterexample. Both relative assertions follow, and heavier-first
+core-relative equivalence supplies the core assertion everywhere.
+\end{proof}
+
+\paragraph{Scope and verification.}
+The same proof applies to ANY final-deletion-closed class of normalized
+arms with complete C and first missing weight at most four; the stated
+$\mathcal A_4$ is an explicit class for which all these inputs are proved.
+These are unbounded original COEFFICIENT theorems, not inferences
+from cumulative log-concavity and not conclusions of finite tests.
+They retain arbitrarily large peaks, arbitrarily many twos and
+threes, and the stated arbitrary heavier jump. They do NOT solve
+the original conjecture for arbitrary arm capacities or general C/A2.
+The new Lean file checks the small-first-missing mixed payment,
+whole-function positive-source splice and absence of holes, exact
+source/weighted-difference identity, and the relevant mode/source
+index arithmetic. The actual arm membership, prior shape resources,
+signed-window and least-counterexample assemblies are written proofs;
+no end-to-end Lean formalization of compositions is claimed.

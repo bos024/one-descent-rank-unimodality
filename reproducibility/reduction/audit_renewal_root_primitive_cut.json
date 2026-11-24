@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_QA_PASS_ALL_ORDER_RENEWAL_ROOT_CUT_UNDER_PROOF_AUDIT",
+  "counts": {
+    "EXACT_rational_all_width_notch_profiles": 1050,
+    "EXACT_renewal_root_LC_minors": 4821,
+    "EXACT_bilateral_kernel_and_source_identity_reads": 5532,
+    "EXACT_algebraic_root_profiles": 237,
+    "EXACT_FULL_cut_model_LC_minors": 1386,
+    "EXACT_nonsymmetric_or_binomial_cut_models": 126
+  },
+  "state_sha256": "b258cb13dc40656b7b4edf064bb814fddc8fbecf1b45f7efac7d70fab6f82156",
+  "seconds": 0.4850000000005821,
+  "scope": "QAONLY, writtenproofALLt>=2/ell>=0NOcountbound. ExactZ[q]/(q+...+q^t-1)withINTEGERisolatingintervalsigns;noirreducibilityassumption/noFLOAT;zeroonlyexactresiduezero. RationalnotchcasesINDEPENDENTofrootconstraintwhenh<=p."
+}

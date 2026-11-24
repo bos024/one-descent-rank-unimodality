@@ -1,0 +1,115 @@
+\section{Every opposite first missing weight at most nine, for six-part owners}
+\begin{theorem}[Sharp first-source threshold nine when $h\ge6$]
+Let both actual increasing old arms have at least two non-one parts,
+with named owner $Z=1^\alpha U$ having $h=|U|\ge6$.
+If $F_Z(j+1)\le F_Z(j)$ and the opposite SOURCE $E_Y$ has
+nondecreasing prefix through $j+1$, then EVERY
+$\kappa_Y\le9$ gives tail nonrecovery $e_{n+1}\le e_n$.
+Consequently all-head S follows with the usual OLD A2 head input,
+without C or a first-half premise. Threshold nine is optimal for
+this pointwise statement uniformly over $h\ge6$.
+\end{theorem}
+\begin{proof}
+The previous threshold-eight theorem handles $\kappa_Y\le8$.
+Take $\kappa_Y=9$ and use the exact canonical initial exchange
+$\alpha_* =\max(\alpha,t_1-1)$, keeping the same rank polynomial,
+weight and non-one count. If $\alpha_*\ge3$, the sharp gap-six
+theorem applies. Thus only the canonical cases
+\[
+        \alpha=1,\quad t_1=2;\qquad
+        \alpha=2,\quad t_1\le3                         \tag{1}
+\]
+remain. Here $d=9-\alpha$ is eight or seven.
+Negative reverse ranks are paid by the first birth:
+at $r=-1$ its forward index is $D+h+2-d\ge0$ because
+$D\ge h\ge6$; for $r\le-2$ there is no primitive curvature.
+
+Suppose $r\ge0$ and the tail recovers. The established skeleton
+and source reductions give
+\[
+ e=D-2r-2\ge0,\quad C=d_{r+1}-d_r>0,\quad
+ (r+1)C\le(e+1)d_r,
+ \quad D\le\min\{2d(d-3),12d-25\}.
+\]
+The $s=d-e-2\le0$ cases are already paid by the first birth.
+Otherwise $L=s-1=d-e-3\ge0$ and $0\le e\le d-3$.
+For $0\le m\le r$ put
+\[
+ R_m=\prod_{i=0}^{m-1}\frac{r+e+3+i}{r-i}
+     =\frac{{r+e+m+2\choose m}}{{r\choose m}}.
+\]
+The source has compulsory increments $w_0\ge1$ and
+$w_t\ge2^{t-2}$ for $2\le t\le6$, relative to its first birth.
+For every included $t$ with $L+t\le r$, lower-center reflection
+and the exact CI backward ratios give
+\[
+ F_Z(j+1-9-t)\ge d_{r-L-t}\ge d_r/R_{L+t}.
+\]
+Thus the ENTIRE source difference pays $C$ whenever
+\[
+ \mathbf1_{L\le r}/R_L+
+ \sum_{\substack{2\le t\le6\\L+t\le r}}
+                    2^{t-2}/R_{L+t}\ \ge\ \frac{e+1}{r+1}.       \tag{2}
+\]
+Absent terms are zero. Each retained birth is within the assumed
+source prefix because its forward index is at least $h$.
+
+The proved unbounded owner bounds reduce the residual geometry to
+\[
+ \begin{array}{c|c|c|c}
+ \alpha&d&e&D\\\hline
+ 1&8&0,\ldots,5&6\le D\le71,\\
+ 2&7&0,\ldots,4&6\le D\le56,
+ \end{array}\qquad D=2r+2+e.                         \tag{3}
+\]
+Evaluate (2) in exact rationals throughout (3): it pays 244
+complete rank states. Independent products of individual fractions
+agree with the binomial-ratio evaluation at every state.
+Exactly 82 rank states remain, with maximum $D$ only 25.
+
+For each of these 82 states enumerate ALL partitions of $D$ into
+$h\ge6$ positive capacity increments. In (1) their minimum is
+at most $\alpha$. There are exactly 13544 owners across these
+states, of which 2464 have strict positive primitive curvature.
+Every critical owner satisfies
+\[
+ F_Z(b_0)+\sum_{t=2}^{6}2^{t-2}F_Z(b_0-t)\ge C,
+               \qquad b_0=D-r+h+1-d.                 \tag{4}
+\]
+Use zero extension at negative indices. Formula (4) directly
+lower-bounds the source difference; all remaining source terms
+are nonnegative by the source-prefix premise.
+
+This is a complete finite complement of the proved unbounded
+reductions. A separate enumeration by maximum part, independent
+reverse-polynomial construction and individual-ratio arithmetic
+rebuilds ALL 82 layers, all counts and every critical coefficient.
+The canonical critical-state SHA-256 is
+\texttt{3f3ba4731fac7114d057d01cfa124ed0b12e995c921d069e05d852f5a93cc2cc}.
+Thus (4) pays every remaining state, contradicting positive recovery.
+This completes the theorem for all capacities, padding and counts.
+\end{proof}
+
+For sharpness choose $Z=(1,2,2,2,2,2,2)$ and $Y=1\,9^g$ for
+any $g\ge12$, at $j=12$. Then $\kappa_Y=10$ and the opposite
+source prefix is nondecreasing there, but
+\[
+                         e_n=17,\qquad e_{n+1}=19.
+\]
+The owner reverse primitive has $d_1=6$, $d_2=14$, not fifteen:
+the initial run has length one. The resulting recovery is two.
+Head one pays it; at $g=12$ its exact budget is 345.
+This is a sharpness family for pointwise nonrecovery, not an
+original-UI or properly compensated S counterexample.
+
+Four scoped standard-axiom Lean reports check the simultaneous
+source-payment implication, relative-CI scalar compensation,
+complete canonical rank geometry and the negative-rank birth.
+The finite programs and their full independent reconstruction
+are exact computer certificates, not end-to-end Lean program proofs.
+The old threshold eight remains sharp when owners with four or
+five non-one parts are included. For owners with at least six,
+an unresolved positive recovery with opposite source prefix still
+nondecreasing now requires $\kappa_Y\ge10$.
+General source-prefix decline, both-forward-rising late overlap,
+C/S/A2 and original unamplified coefficient unimodality remain OPEN.

@@ -1,0 +1,191 @@
+\section{Root-adapted residual envelopes and an all-delay positive coupled source}
+These are auxiliary unbounded theorems. General actual C, full A2,
+mixed three/four actual-arm C, and the original general one-descent
+coefficient-unimodality conjecture remain OPEN. In particular a positive
+coupled lower bound is not a decreasing coupled ratio.
+
+Let $t\ge2$, $q+\cdots+q^t=1$, $\lambda=q^{-1}$, $d=2-\lambda=q^t$,
+$P_t=1-z-\cdots-z^t=(1-\lambda z)B_t$, and $h=1/P_t$.
+The preceding universal renewal theorem gives
+\[
+ (1-z)B_t=1-A_t,\quad A_t=\sum_{i=1}^t a_i z^i,
+ \quad a_i=q^{t-i+1}>0,\quad\sum_i a_i=1,
+ \quad U=(1-A_t)^{-1},\quad U_0=1,\quad0<U_n<1\ (n>0).
+\]
+Write $M_f(n)=f_n^2-f_{n-1}f_{n+1}$ and use zero extension.
+
+\begin{theorem}[A continuously parameterized all-order residual envelope]
+For $t\ge3$ and $1\le\theta<2-2^{1-t}$ put
+\[
+ k=(1-\theta z)h,\quad p=(2-\theta)2^{t-2}>1/2,
+ \quad b=2p-1>0,\quad
+ C=\theta+\max\{1,(\theta-1)^2/b\}.
+\]
+Then $k_n>0$ for every $n\ge2$, and for every $n\ge3$,
+\[
+                      |M_k(n)|\le C k_{n-1}.                 \tag{1}
+\]
+There is no finite-order or spectral hypothesis. In particular the
+residual $h_t-\lambda_{t-1}z h_t$ is admissible for EVERY $t\ge3$,
+where $\lambda_{t-1}$ is the positive renewal root of order $t-1$.
+If $1\le\theta$ and $\theta^2+2\theta\le6$, the uniform constant
+$C=1+\theta$ works for all $t\ge3$ and is optimal uniformly in $t$.
+This includes $\theta=\phi$, recovering the preceding $\phi^2$ bound.
+\end{theorem}
+\begin{proof}
+For $2\le n\le t$, $k_n=(2-\theta)2^{n-2}$. The next three reads are
+\[
+ k_{t+1}=2p-1=b,\quad k_{t+2}=4p-3+\theta=2b+\theta-1,
+ \quad k_{t+3}=8p-8+3\theta.
+\]
+The recurrence $k_n=\sum_{i=1}^t k_{n-i}$, starting at $t+2$,
+then proves positivity: all its indices are at least two. The exact
+complete initial minor band, $3\le n\le t+2$, is
+\[
+ 0\ (n<t),\qquad M_k(t)=p/2,\qquad
+ M_k(t+1)=1-(1+\theta)p,\qquad
+ M_k(t+2)=\theta b+(\theta-1)^2.                    \tag{2}
+\]
+The zero band may be empty. Equation (2) is bounded by (1), since
+$C\ge\theta+1\ge2$, $p>1/2$, and
+$C b\ge\theta b+(\theta-1)^2$.
+
+Set $e_n=k_n-\lambda k_{n-1}$ and
+$w_n=\lambda e_n-e_{n+1}$. After $n=t+2$ both satisfy the
+EXACT probability recurrence with weights $a_i$. At $n\ge t+3$,
+$H_n=k_{n-1}>0$ is a supersolution for that probability recurrence,
+because each $a_i<1$ and $k_{n-1}=\sum_i k_{n-i-1}$.
+The existing probability-quadratic transport theorem therefore proves
+(1) everywhere from the complete band $3,\ldots,t+2$, provided
+$w_n\ge-C$ on this band. Here
+\[
+ \begin{array}{c|c}
+ 3\le n<t&-d^2 k_{n-1}\\
+ n=t&1-d^2 k_{t-1}\\
+ n=t+1&-(\theta+1)+2d-d^2p\\
+ n=t+2&\theta-2d(\theta-1)-d^2b.
+ \end{array}                                                   \tag{3}
+\]
+The strict ordinary rounding theorem gives $d2^{t-1}<1$ (equivalently
+$U_t<1$), hence $dp<1$. The first two lines are greater than $-1$;
+the third is greater than $-(\theta+1)$; and the last is greater than
+$\theta-2d\theta+d^2\ge1-\theta\ge-(\theta+1)$.
+The middle inequality is exactly
+$(1-d)(2\theta-1-d)\ge0$. Thus the entire band is paid.
+The identity $M_k=e_n^2+H_n w_n$ identifies the transported quadratic
+with the desired minor. No positivity of $k_1=1-\theta$ is used.
+
+For the adjacent-root assertion put $m=t-1$ and
+$\theta=\lambda_m$. Since $2-\theta=\theta^{-m}$ and $\theta<2$,
+$2p=(2/\theta)^m>1$. For a fixed $\theta$ satisfying
+$\theta^2+2\theta\le6$, the smallest $b$ occurs at $t=3$ and equals
+$7-4\theta\ge(\theta-1)^2>0$ (with positivity direct at $\theta=1$).
+This yields $C=\theta+1$. Finally the second boundary minor gives
+$M_k(t+1)/k_t=-(\theta+1)+1/p\longrightarrow-(\theta+1)$ as
+$t\to\infty$, proving uniform optimality.
+\end{proof}
+
+\begin{theorem}[All delays: an exact positive slope--cumulative kernel]
+Let $N(z)$ be ANY polynomial with nonnegative real coefficients and put
+$F=N/P_t$, $G=F/(1-z)$, and $D=(1-z)F$, with signed $D$.
+For EVERY integer $r\ge2$ define
+\[
+ \rho_r=\lambda^{r-2}(\lambda-1)^2,\qquad
+ B_r(z)=\sum_{i=2}^t a_i z^i+
+       (\lambda-1)^2z^2\sum_{j=0}^{r-3}(\lambda z)^j,
+\]
+where the final sum is empty at $r=2$. Then the WHOLE formal-series
+identity is
+\[
+                 D-\rho_r z^rG=N\{1+B_r U\}.             \tag{4}
+\]
+Every coefficient on the right is nonnegative. Consequently, for all
+$n\ge0$, $D_n\ge\rho_r G_{n-r}+N_n$, and the sharper two-sided bound is
+\[
+ N_n\ \le\ D_n-\rho_r G_{n-r}\ \le\
+ N_n+(\lambda-1)\lambda^{r-2}\sum_{i=0}^{n-2}N_i.           \tag{5}
+\]
+The upper sum is empty at $n=0,1$. When $N=1$, the constant $\rho_r$
+is optimal for a lower bound $D_n\ge cG_{n-r}$ valid for all $n$.
+\end{theorem}
+\begin{proof}
+For $m=r-2$ the finite identity
+\[
+ (1-\lambda z)\left\{1+(\lambda-2)z+
+ (\lambda-1)^2z^2\sum_{j=0}^{m-1}(\lambda z)^j\right\}
+     =(1-z)^2-\lambda^m(\lambda-1)^2z^{m+2}
+                                                               \tag{6}
+\]
+follows by a finite geometric sum, including $m=0$. Since $a_1=d$,
+the expression in braces is $1-A_t+B_r$. Dividing (6) by
+$(1-z)P_t$ proves (4). In particular this retains both the initial
+atom and the zero at rank one; it is not an asymptotic identity.
+The coefficients of $B_r$ are nonnegative, supported at ranks at
+least two, and their mass telescopes to
+\[
+ B_r(1)=1-d+(\lambda-1)^2\sum_{j=0}^{r-3}\lambda^j
+                         =(\lambda-1)\lambda^{r-2}.
+\]
+Use $0<U_n\le1$ to obtain (5), including both initial ranks.
+For optimality when $N=1$, the residual in (5) is bounded independently
+of $n$. Moreover $G_n-\lambda G_{n-1}=U_n>0$ and $G_0=1$, so
+$G_n\ge\lambda^n\to\infty$. Divide (5) by $G_{n-r}$ and let $n$
+increase. This avoids a conjugate-root asymptotic theorem.
+\end{proof}
+
+\begin{corollary}[An arbitrary tail at or above the reference capacity]
+Start with $F_\varnothing=1/P_t$, and append ANY finite capacity list
+$v_1,\ldots,v_h$ with $v_i\ge t$, using
+$F_{Vv}=1+S_vF_V$. There is no ordering requirement on this auxiliary
+list. Then $F_V=N_V/P_t$ with $N_V\ge0$ coefficientwise,
+$(N_V)_0=1$, and $(N_V)_i=0$ for $1\le i\le t$.
+Thus (4)--(5) hold at EVERY rank and for EVERY delay $r\ge2$.
+Also $G_n>\lambda G_{n-1}$ for every $n\ge1$.
+\end{corollary}
+\begin{proof}
+The numerator recurrence has the exact positive form
+\[
+ N_{Vv}=P_t+S_vN_V
+     =1+z^{t+1}[v-t]+S_v(N_V-1).
+\]
+This proves the numerator assertions by induction. The cumulative
+root gap is $(1-\lambda z)G=N_VU$, whose coefficients are strictly
+positive because $(N_V)_0=1$ and every $U_n>0$.
+\end{proof}
+
+\begin{corollary}[An explicit protected head on every actual arm]
+For every actual normalized arm $1^\alpha V$, $\alpha\ge1$, with
+$h$ non-one parts all at least $t\ge2$, let $N_V$ be the numerator
+of the preceding infinite reference with the SAME capacity word.
+For every $r\ge2$ and $0\le n\le h+1$, its signed ordinary slope
+and actual cumulative counts obey (5), with this $N_V$. In particular
+$D_n\ge\rho_rG_{n-r}+(N_V)_n$ on this complete protected head.
+\end{corollary}
+\begin{proof}
+The finite base $[\alpha+1]$ and $h_t$ agree at ranks zero and one
+and first differ at rank two. Every append multiplies their difference
+by $S_v$, whose lowest exponent is one. The exact difference between
+the final finite arm and the infinite reference therefore first occurs
+at rank $h+2$. All reads in (4)--(5) at $n\le h+1$ agree, including
+the cumulative reads. This uses no assumption of finite actual C.
+The same prefix identity holds for formal unordered words, but their
+recursion is not identified with a composition ideal.
+\end{proof}
+
+\paragraph{Logical boundary and verification.}
+The infinite-reference corollary is NOT a theorem about all finite
+actual arms: their finite-count loss has a negative numerator and
+cannot be discarded. Even in the infinite model, (5) is a lower bound,
+not monotonicity of $D_n/G_{n-r}$, so it does NOT prove C. No claim of
+general original coefficient UI is inferred from either this bound
+or cumulative growth. The new continuously parameterized envelope
+likewise supplies a residual estimate, not a mixed-arm entrance.
+The new Lean reports check complete symbolic boundary minors and their
+bounds, lower probability-source bands, the arbitrary-natural-delay
+identity (6), the finite-mass identity, positive convolution bounds,
+the entire numerator recursion, adjacent-root power entrance, and
+uniform-constant arithmetic. The preceding full probability-quadratic
+induction is reused, without recounting it. Actual series identification
+and the all-order assembly above are written proofs. Exact primary and
+independent closed-count/root-field audits are QA only, not finite
+premises of any unbounded theorem.

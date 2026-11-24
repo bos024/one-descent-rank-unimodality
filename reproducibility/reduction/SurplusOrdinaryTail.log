@@ -1,0 +1,12 @@
+'SurplusOrdinaryTail.cumulative_head_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.cumulative_quotient_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.cumulative_ratio_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.whole_cumulative_prefix_LC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.cumulative_source_startup_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.first_startup_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.second_startup_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.reference_amplitude_boundary_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.first_missing_ordinary_boundary_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusOrdinaryTail.constant_reference_density_excludes_strict_growth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

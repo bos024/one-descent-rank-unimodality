@@ -1,0 +1,106 @@
+% Complete relative-growth induction; no weighted-difference or general core conclusion.
+\section{Ordinary positive differences grow no faster than the main box}
+Let $q_X$ be a reversed formal ordinary arm and
+$K_X=[\alpha+1]\prod_{t\in U}[t]$ its main interval product.
+For a product $q$ of one or two such arms, possibly multiplied
+by additional interval polynomials, let $K$ be the corresponding
+product of their main boxes and the same additional intervals.
+Put $u_j=\max(q_j-q_{j-1},0)$, with $q_{-1}=0$.
+
+\begin{theorem}[Relative growth of the positive differences]
+For all $i<j$,
+\[
+                         u_j K_i\le u_i K_j.             \tag{1}
+\]
+The positive differences have support contained in that of $K$.
+Thus their density relative to the main box is nonincreasing.
+In particular $u\preceq K$, and on the strictly rising side
+of $q$ every positive curvature satisfies the stronger bound
+\[
+              q_j-2q_{j-1}+q_{j-2}\le K_j-K_{j-1}.       \tag{2}
+\]
+Arbitrary internal order of the formal capacities at least
+two is allowed. No claim is made for a general strict core.
+\end{theorem}
+
+\begin{proof}
+We use two elementary operations on nonnegative finite sequences.
+Say $a/b$ decreases when $a_jb_i\le a_ib_j$ for $i<j$,
+interpreting this by cross multiplication even at zeros.
+Convolution by an interval $[t]$ preserves this order.
+For adjacent windows this follows by expanding the new ratio
+cross product: the entering right endpoint has a no larger
+ratio than each coefficient of the old window, and the outgoing
+left endpoint has a no smaller ratio. Summing those pairwise
+inequalities gives the assertion. The equivalent full pairwise
+statement is the usual $2\times2$ minor expansion for the
+interval-convolution matrix, whose minors are nonnegative.
+
+Now let a unimodal sequence $p$ have positive and negative
+difference parts $u=(\Delta p)^+$ and $v=(-\Delta p)^+$.
+Their supports are ordered: every positive difference is
+before every negative difference. Hence $v/u$ increases.
+After convolving with $[t]$, write $U=[t]u$, $V=[t]v$.
+The new positive differences are $(U-V)^+$, and their ratio
+to $U$ decreases, since $V/U$ increases. Explicitly,
+\[
+ V_iU_j\le V_jU_i
+ \ \Longrightarrow\
+       (U_j-V_j)^+U_i\le(U_i-V_i)^+U_j.
+\]
+If $u/K$ decreases, the first window-order fact gives
+$U/([t]K)$ decreasing. Multiplying these two density
+comparisons proves that the positive differences of $[t]p$
+have decreasing density relative to $[t]K$.
+Zero support endpoints cause no issue because
+$(U-V)^+\le U$; the cross-multiplied transitivity implication
+is valid there as well.
+
+For a single ordinary arm the initial interval has positive
+differences supported only at zero. Appending $t$ replaces
+$q$ by $[t]q+z^{a+t}$. The last added unit only changes a
+terminal negative difference to zero, so it leaves the positive
+differences of $[t]q$ unchanged. The preceding operation
+therefore proves the induction, with new main box $[t]K$.
+
+For two arms use induction on the combined non-one count.
+A rectangular factor is the same interval-window operation.
+Otherwise orient the weights as $a\ge b$. The established
+ordinary-product mode theorem puts its first mode strictly
+before $a$. Deleting the last part $t$ of the heavier arm gives
+\[
+                     q_Xq_Y=[t]q_Zq_Y+z^a q_Y.
+\]
+The source is strictly after the first mode. Both the whole
+ordinary product and the old window are unimodal, and the
+window is coefficientwise no larger than the whole product.
+At the first mode they agree and attain the same global
+maximum. They therefore have exactly the same positive
+differences: those before that mode, where the source is absent.
+Apply induction and the window operation again.
+Further interval factors are handled by the same operation.
+
+Finally $u_0=K_0=1$, so (1) implies $u\preceq K$.
+At a positive rising-side curvature, put
+$u_0=u_{j-1}$, $u_1=u_j$, $K_0=K_{j-1}$, $K_1=K_j$.
+Here $K_0>0$, $0\le u_0\le K_0$, $u_1>u_0$ and
+$u_1K_0\le u_0K_1$. These inequalities force $K_1\ge K_0$
+and
+\[
+ (u_1-u_0)K_0\le u_0(K_1-K_0)\le K_0(K_1-K_0).
+\]
+Cancel $K_0$ to obtain (2).
+\end{proof}
+
+\texttt{OrdinaryRelativeGrowth.lean} checks the unbounded
+finite-window cross-product transport, positive-part ratio
+implication, zero-endpoint transitivity and curvature consequence.
+The induction's ordinary-polynomial identifications and source
+mode inputs are the written proof above, using previously
+established ordinary shape theorems. No end-to-end Lean
+formalization of all arm objects is asserted.
+
+The relative-growth statement alone does not give unimodality
+of $2^j u_j$: a decreasing relative density can drop quickly
+and later flatten. In particular no general undilated
+one-descent conclusion is inferred from this theorem.

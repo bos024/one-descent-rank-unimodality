@@ -1,0 +1,207 @@
+{
+  "status": "PASS_UNBOUNDED_WEAKER_COUNT_WEDGE_ALL_PADDING_C_FROM_PHYSICAL_W",
+  "new_scoped_reports": 28,
+  "kernels": {
+    "CountWedgeBoundaryPositive": {
+      "reference_amplification_all_large": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_mass_two_fifths": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interval_product_sum_margin": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_previous_read_budget": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "finite_padding_positive_correction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "uniform_actual_golden_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "renewal_response_prefix_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "loss_cumulative_prefix_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "geometric_interval_lower": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "all_distance_boundary_constant": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "increasing_pair_source_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "complete_C_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "wedge_head_and_weight_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "WeakerCountWedgeC": {
+      "golden_rational_two_sided": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CI_prefix_mass_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ordinary_positive_kernel_upper": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "padding_one_ordinary_gap_upper": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "finite_padding_next_correction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "next_actual_golden_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seed_budgets_padding_one": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seed_budgets_padding_two": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "seed_budgets_padding_at_least_three": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "preceding_ordinary_ratio_resource": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ordinary_seed_transfer": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "complete_missing_prefix_reads": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "weaker_wedge_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "nine_gap_new_wedge_or_small": [
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_entry_cumulative_resource": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "039923c6c7dca022f3ee9a79b6fe9e2d76679bbcb3eab365277a4f9a7cad8f18",
+  "QA": {
+    "nine_quarters_CI_head_ratios": 33139,
+    "fifteen_eighths_next_CI_ratio": 1195,
+    "refined_reference_mass_and_TWO_read_budgets": 1195,
+    "exact_current_AND_previous_ordinary_golden_kernel_identities": 2390,
+    "ALL_padding_current_W_thirteen_eighths_golden_bounds": 36724,
+    "ALL_padding_BOTH_ordinary_seed_determinants": 73448,
+    "ALL_padding_next_gap_and_ordinary_gap_upper_bounds": 36724,
+    "ALL_distance_current_W_plus_one_C_source_payments": 127776,
+    "ALL_prefix_STRONG_C_entrance_products": 604616,
+    "exact_prefix_minimum_all_shift_C_payments": 919470,
+    "logical_shift_coverage": 258970212,
+    "actual_hosts": 4780,
+    "profiles_outside_OLD_sharp_wedge": 948,
+    "CI_profiles": 1195
+  },
+  "independent_counts": {
+    "independent_complete_CI_head_reads": 6385,
+    "independent_reverse_quotient_and_ordinary_kernel_identities": 1564,
+    "independent_ALL_padding_two_ordinary_seeds": 15116,
+    "independent_ALL_padding_gap_classes": 7558,
+    "independent_positive_box_STRONG_entrance_reads": 123728,
+    "independent_positive_box_entire_halfline_C_minima": 189408,
+    "independent_positive_box_hosts": 1564,
+    "independent_profiles_outside_OLD_cone": 272,
+    "independent_CI_profiles": 391
+  },
+  "independent_state_sha256": "3e0bcb7fa4c6d49a300aa572c6b9dbb9f06890dda473bacdb334e799bb64f645",
+  "new_finite_entrance_certificates": 0,
+  "theorem": "PROVED ALL actual normalized1^alpha2^uV,allpadding/counts/capacities/ranks/shiftsUNBOUNDED: if4w+30>=13delta (equiv17u+4r+30>=13h), EVERYCshift>=3 atEVERYcurrentN>=W. r1/lowdelta/weight<=32 use OLDcomplete results. Remainingunboundedcase hasW>=33,delta>=5,r>=2. ALLfiniteQAonly; no new finite entrance premise.",
+  "boundary_resource": "PROVED correct finite-padding D golden correction Ecurrent-phiEprevious isNONNEGATIVE throughtwo needed reads. ExactphysicalW gap>=13/8 E_(delta-3). Reference mass<=2/5 currentD,previousD<=13/20currentD,twocumulative resources>=3/5 and6/5currentD. ALLdistance243/32E resource exceedsFULL198/29E loss,margin711/928E.",
+  "entrance": "PROVED ALLpadding TWO actual ordinaryseeds atW-1/W whenD_(W+1)>D_W>0; exact ordinarypositivekernel includes missingtopunitphi. Separatealpha1/alpha2/alpha>=3 budgets closeALLstrongGprefixreads throughW. UniversalpremodeDLC propagatesEVERYlatercurrent usingitsOWNratio. Flatentry handledbyDLC,notUIalone; no generic ordinaryLC claimed.",
+  "uniform_nine_gap": "PROVED ALLu>=h-9,EVERYactualCshift>=3 atEVERYcurrentN>=W. Newcone failure withdelta<=9 forcesW<=30,OLDweight32completeC paysALL. No new finite table.",
+  "uniform_five_gap": "PROVED ALLu>=h-5,EVERYactualCshift>=3 atEVERYcurrentN>=W-1: registeredW-1boundaryplusnewhalflineW closesOLDu=h-5/currentW gap.",
+  "formal_scope": "TWENTY-EIGHT NEW standard-axiom scoped Lean reports; full arbitrary-prefix renewal/CI/cumulative/geometric and finite-product inductions,allpaddingbudgetalgebra/allintegerconeguards. Model/root/CI identification and full sequence assembly WRITTEN,not end-to-end actual-arm Lean. Earlierfourfinite referenceprefixcertificates reused,notrecounted.",
+  "remaining": "GeneralC atN<W-1 and complementary countcone,fullA2 andoriginalunamplified coefficientUIremainOPEN. LateC residual nowdelta>=10,newconeviolation17u+4r+30<13h,W>32 andpreviousautomaticconeviolations. FirstunresolvedfullCnononecount6unchanged. No CDFLC/finiteQA substitution fororiginalUI.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "weaker_count_wedge_C_entrance_proof.tex": "fdea5c924732f7a0f64709409c96204d822e2f62ae72ea29ac1c739bf7eb93c0",
+    "CountWedgeBoundaryPositive.lean": "047fda75b24606d924c2f081f6b3c409562b3c9540621e924a98b9cec5b6ca23",
+    "CountWedgeBoundaryPositive.log": "a17399b0c9e1192aeb3bfc55a97444baaf1f85f270167d017fc593e7aaa44cc9",
+    "WeakerCountWedgeC.lean": "6e3b1c2fed1d6c30f077c058af888eae961f0ebd9f4a79a4c962aca32161173f",
+    "WeakerCountWedgeC.log": "ee5018f7a96f0b6c70b29d2ad76cc54baf3c168d122345ef79cfdab08187dbe4",
+    "audit_weaker_count_wedge_C_entrance.py": "2f0d46c021f4f7c04de23c116a29ca09a95bf493542a5698d34840703c81b9c4",
+    "audit_weaker_count_wedge_C_entrance.json": "234df05cf7b2420750fa8d200c62fc6df3fb54d1cc0145a7e5b0824d567769f1",
+    "verify_weaker_count_wedge_C_entrance.py": "e129624ced25a2b211c54b1606506cbf6a1ffac457429b804c660b578658db71",
+    "previous_boundary_C_verification.json": "e4a02f19b0885472b5842873030e836f277903ead80e0d9f1fc392664752e2e0",
+    "physical_boundary_golden_C_verification.json": "56058fd7ac38393c7f9e9365e951feb318a71516b205319e1c272f20f7b1a950",
+    "ordinary_golden_growth_source_verification.json": "ae495815227227e1df4d497a290f7fb3819cce5ac0dbfeccdbf71ce7d6c2e59c",
+    "golden_tail_large_shift_C_verification.json": "7ef01e16055ffba17369332f1f0f6caa88833e6dd0c344a10fd878b983110fcd",
+    "sharp_CI_count_wedge_verification.json": "e5f8d6dc0efbf6132b18cf186947e847841c6ae50667eb7e38f45b133ad5a534",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17"
+  }
+}

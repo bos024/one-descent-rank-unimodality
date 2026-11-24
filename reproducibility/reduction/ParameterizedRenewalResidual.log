@@ -1,0 +1,23 @@
+'ParameterizedRenewalResidual.complete_parameter_boundary_identities' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.complete_parameter_boundary_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.complete_parameter_probability_lower_band' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.adjacent_root_power_entrance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParameterizedRenewalResidual.uniform_parameter_constant_arithmetic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.all_delay_finite_polynomial_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.all_delay_positive_forcing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.positive_finite_convolution_two_sided' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ParameterizedRenewalResidual.whole_arbitrary_tail_numerator_recursion' depends on axioms: [propext, Quot.sound]

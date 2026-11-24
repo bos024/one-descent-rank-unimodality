@@ -1,0 +1,210 @@
+\section{Complete actual C for every pure ternary block}
+Write $[t]=1+\cdots+z^{t-1}$ and $S=z[3]$.
+For the actual increasing arm $X=1^\alpha3^r$, put
+\[
+ F_X=\sum_{j<r}S^j+S^r[\alpha+1],\quad
+ D_N=(F_N-F_{N-1})^+\ (N\ge2),\quad D_0=D_1=0,
+ \qquad G_k=\sum_{i=0}^kF_i.
+\]
+We use zero extension at negative indices. Property C is
+\[
+ G_kD_{N-1}\ge G_{k-1}D_N
+       \quad(N\ge4,\ 1\le k\le N-3).                 \tag{C}
+\]
+These are exactly all shifts at least three. The cases $k\le0$
+are automatic. This section proves (C) for EVERY $\alpha\ge1$
+and $r\ge0$. It does not prove general C or original unimodality.
+
+\paragraph{The analytic large-block range.}
+Assume first $r\ge18$. Let $H=(1-S)^{-1}$, with coefficients
+$h_n$, and let $R_N=h_N-h_{N-1}$ for $N\ge2$. Let
+$\lambda^3=\lambda^2+\lambda+1$, $1<\lambda<2$, and set
+$a=\lambda-1$, $b=1/\lambda$, $B=1+az+bz^2$.
+The frozen proper-quotient and full-primitive theorems give
+\[
+ E=[3]^r=BJ+R_0+R_1z,                              \tag{1}
+\]
+where J is positive, globally LC, and has globally LC full positive
+primitive. The pure norm is $b^{r+1}\le1/64$ for $r\ge18$,
+so this is in the proved norm cone. Write M for the FIRST mode of J,
+and $x_s=\sum_{j\ge1}b^jJ_{s+j}$, $Y_s=x_s+x_{s-1}$.
+Ordinary LC convolution gives global LC of Y, and
+\[
+                \lambda Y_{s-1}-Y_s=J_s+J_{s-1}\ge0. \tag{2}
+\]
+In particular $Y_s\le\lambda Y_{s-1}<2Y_{s-1}$ whenever
+the predecessor is positive.
+
+\paragraph{Exact identification, including the low-degree remainder.}
+Put $d^\infty=(1+z)\sum_{j<r}S^j$. Directly from the displayed
+actual F one obtains the exact signed/clipped identity
+\[
+ d_n=D_{n+2}
+   =\bigl(d^\infty_n-(z^{\alpha+r-1}E)_n\bigr)^+.
+                                                               \tag{3}
+\]
+The whole residual is
+\[
+ \lambda d^\infty_{n-1}-d^\infty_n
+ =[z^n]\frac{(1+z)(z^rE-1)}{B}
+ =[z^n]\{z^r(1+z)J+C\},\qquad \deg C\le r.       \tag{4}
+\]
+Here $C=(1+z)(z^r(R_0+R_1z)-1)/B$ is a polynomial: at the
+two roots of B, $S=1$ and therefore $z^rE=S^r=1$.
+The roots are distinct; equivalently this divisibility follows by
+reducing powers using $S\equiv1\pmod B$.
+The future-geometric solution of (4), with finite terminal support,
+gives exactly
+\[
+                  d^\infty_{r+s}=Y_s\quad(s\ge0).     \tag{5}
+\]
+Equation (5) is NOT asserted at $s=-1$. With $c=\alpha-1$,
+(3) becomes $(Y_s-E_{s-c})^+$ for $s\ge0$.
+
+Let L be the first mode of the actual D. The registered actual
+finite-padding density $D/d^\infty$ is nonincreasing, hence
+the actual shifted first mode is no later than that of $d^\infty$.
+The sequence $x_s$ is nonincreasing from $s=M-1$, so Y is
+nonincreasing from $s=M$. Using the already proved unimodality of
+$d^\infty$ and (5) gives
+\[
+                         L-2\le r+M.                \tag{6}
+\]
+Thus every strict pre-L centre $N=r+2+s$ has $s<M$.
+The new all-order cut theorem at $t=3$ proves actual D LC for
+all such centres with $s\ge c+3$. Its degree-one remainder
+is absent on every one of the three source reads. This is the
+precise place (1), (5), and the first-mode guard are used.
+
+\paragraph{All three startup centres and the first physical centre.}
+The source coefficients are
+\[
+ E_0=1,\quad E_1=r,\quad E_2=r(r+1)/2,
+ \quad E_3=r(r-1)(r+4)/6.
+\]
+Before the source starts the Y triple is LC. At centre $c-1$
+only the next value is lowered, improving its minor. At centres
+$c,c+1,c+2$ with $s\ge1$, expand the new minor about
+$Y=(P,T,U)$ and use $T\le2P$. Respectively the lower bounds are
+\[
+\begin{split}
+ M_Y+(r-4)P+1,&\\
+ M_Y+(E_2-4r)P+U+r^2-E_2,&\\
+ M_Y+(E_3-4E_2)P+rU+E_2^2-rE_3.&
+\end{split}                                                   \tag{7}
+\]
+Every term is nonnegative for $r\ge18$; in particular
+$E_2^2-rE_3=r^2(r^2+11)/12$. At a strict pre-L centre all actual
+three values are positive, so the signed formulas in (7) are valid.
+A zero neighbour makes the LC assertion automatic. No previous
+Y value outside the exact range (5) has been substituted.
+
+The omitted physical centre is $A=r+2$, where the previous
+actual value is still $R_{A-1}$. The exact first two losses are
+\[
+ \begin{array}{c|ccc}
+ &\alpha=1&\alpha=2&\alpha\ge3\\ \hline
+ R_A-D_A&2&1&1\\
+ R_{A+1}-D_{A+1}&2r+2&r+3&r+2 .
+ \end{array}                                                   \tag{8}
+\]
+For a strict pre-L centre these are signed losses, without clipping.
+The frozen tribonacci minor bound gives
+$R_A^2-R_{A-1}R_{A+1}\ge-R_{A-1}$, and
+$R_A\le2R_{A-1}$. For losses $v,w$ in (8), the new minor is
+at least
+\[
+                    (w-4v-1)R_{A-1}+v^2\ge0.       \tag{9}
+\]
+Combining (6)--(9) proves
+\[
+       D_N^2\ge D_{N-1}D_{N+1}\qquad(A\le N<L).     \tag{10}
+\]
+Only strict pre-first-mode LC is asserted. Post-mode actual D LC
+is not needed and is not claimed.
+
+\paragraph{The actual ordinary entry seed.}
+Put $T_n=h_n-\lambda h_{n-1}$, with $h_{-1}=0$.
+Its generating function is $1/B$, so $T_0=1,T_1=-a$ and
+$T_{n+2}=-bT_n-aT_{n+1}$. The exact invariant is
+\[
+ bT_{n-1}^2+aT_{n-1}T_n+T_n^2=b^n\quad(n\ge1).
+\]
+The registered coercivity bound for this quadratic form gives
+$T_n^2\le4b^n<1$ for $n\ge3$, since $b<3/5$.
+Consequently $|\lambda R_A-R_{A+1}|=|T_A-T_{A+1}|<2$.
+Equations (8) and $\lambda<2$ imply
+\[
+             \lambda D_A-D_{A+1}\ge r-4>0.         \tag{11}
+\]
+In the only nontrivial case $D_{A+1}>D_A>0$, set
+$\mu_1=D_{A+1}/D_A$. Since
+$D_A\le R_A=h_r+h_{r-1}\le2h_r$, (11) gives
+\[
+ h_{r+1}-\mu h_r
+   =T_{r+1}+(\lambda-\mu)h_r
+   \ge-1+(r-4)/2\ge6>0\quad\text{for every }\mu\le\mu_1.
+                                                               \tag{12}
+\]
+This is the ordinary F entry at index $A-1$. It is not inferred
+from cumulative LC of the actual sequence.
+
+\paragraph{All ranks and all shifts of C.}
+Through $A-1$ the actual F and D coincide with H and its derivative.
+The registered renewal cumulative is globally LC, its adjacent
+ratios tend to lambda and are therefore at least lambda, and H
+has full C. Thus all $N<A$ satisfy C; at $N=A$, only the current
+D is lowered and C still holds.
+
+For $A<N\le L$, discard the automatic case $D_N\le D_{N-1}$.
+Otherwise let $\mu=D_N/D_{N-1}>1$. By (10),
+$\mu\le\mu_1<\lambda$ and $D_j-\mu D_{j-1}\ge0$
+for every $A\le j\le N$. The true seed (12) and
+\[
+ (F_j-\mu F_{j-1})-(F_{j-1}-\mu F_{j-2})
+                         =D_j-\mu D_{j-1}
+\]
+make every later F residual nonnegative through N. The protected
+G residual at $A-1$ is nonnegative by its reference ratio at least
+lambda. One more cumulative summation gives
+$G_k-\mu G_{k-1}\ge0$ for all $A\le k\le N-3$;
+the earlier $k$ were already paid by the protected prefix.
+Multiplication by $D_{N-1}$ proves (C). For $N>L$, unimodality
+of the actual D gives $D_N\le D_{N-1}$, and increasing G pays C
+directly, including terminal zero entries. This completes the
+unbounded $r\ge18$, arbitrary-alpha proof.
+
+\paragraph{The complete small-block entrance.}
+For $r\le10$, the registered nonbinary-weight-at-most-32 theorem
+already supplies full C, with every padding length; $r=0$ is also
+immediate. For $11\le r\le17$, the registered sorted first-D-mode
+bound gives $L\le2r$ independently of alpha. By (3) the first
+finite-padding perturbation occurs at original rank
+$\alpha+r+1$. Every $\alpha\ge r$ consequently has the same
+F,D prefix through $2r$ as $\alpha=r$. It suffices to check exactly
+\[
+ 11\le r\le17,\quad 1\le\alpha\le r,\quad
+ 4\le N\le2r,\quad1\le k\le N-3.                 \tag{13}
+\]
+There are exactly 98 hosts. ALL literal integer products in (13)
+are reconstructed independently from positive suffix-box sums and
+the append recurrence; their complete margins are included in a
+single ordinary Lean-kernel integer certificate. This is an explicit
+complete finite premise, not a random-test substitute.
+
+\paragraph{Formal scope and remaining problem.}
+The new generic Lean module checks the full residual-norm induction,
+the all-index strict bound, first-physical minor and growth gap,
+all three startup minors and their unbounded source budgets,
+the true ordinary entry, the entire bounded double-cumulative
+transfer induction, and the exact small-padding reduction.
+Actual generating functions, first-mode comparisons, ratio chains,
+and the composition-to-C assembly are the written proof. One
+additional aggregate checks the complete finite integer entrance.
+Neither module claims an end-to-end formalization of compositions.
+
+This theorem adds an unbounded ACTUAL family to complete C.
+The extra source of a mixed $1^\alpha2^u3^r$ arm is still present:
+its whole tribonacci residual cannot be replaced by the quotient
+of $[2]^u[3]^r$ alone. General C, full A2 and ORIGINAL one-descent
+unimodality remain OPEN.

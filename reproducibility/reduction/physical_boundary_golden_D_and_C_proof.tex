@@ -1,0 +1,98 @@
+\section{Pay the previous physical boundary exactly: the missing r units matter}
+The unbounded written theorem uses eight new scoped Lean kernels, independent positive-suffix reconstruction and the registered inputs named below.
+The original unamplified coefficient conjecture remains OPEN.
+
+Write W=h+r,w=u+r,delta=h-u,phi=1+q,psi=-q,
+L=prod[t],E=(1+z)^u L,c=psi^u L(-phi),J=(E-c)/(1+qz),
+rho=q^h abs(L(-phi)) in(0,1),rho<=(2q^2)^r.
+For u>=0 define C=L sum_(i=0)^(u-1)(z+z^2)^i, with C=0 whenu0.
+Infinite INITIAL padding at FIXED u has the exact three reads
+\[
+ F^inf_W=P+sum_(j<=h-2)C_j,
+ F^inf_(W-1)=P-1+sum_(j<=h-3)C_j,
+ F^inf_(W-2)=P-r-1+sum_(j<=h-4)C_j,
+\]
+where P=prod(t),negative coefficient indices zero. The proper suffix
+term has degree<=W-3 and vanishes at all three reads. These identities
+follow from Fbin^inf=(1+z^2 sum_(i<u)(z+z^2)^i)/(1-z) and the TOP
+CI coefficients L_h=1,L_(h-1)=r. Thus
+\[
+ a=D^inf_(W-1)=C_(h-3)+r,\qquad b=D^inf_W=C_(h-2)+1.
+\]
+Discarding the r previous units would give a wrong boundary theorem.
+
+\paragraph{Every h>=u+2 has b<phi*a.}
+For u0 the pair is(r,1), immediate. Supposeu>=1 anddelta>=2.
+At n=delta-2>=0, the exact conjugate/geometric inverse identity is
+\[
+ phi*a-b=phi+J_n=phi+f_n-phi^2 rho,
+ \quad f_n=[z^n]E/(1+qz).
+\]
+The extra phi is the ENTIRE missing top numerator contribution at
+physical W. The already registered monotone divided-head induction
+gives f_n>=q^2 E_n when h<=3u+2, since n is below the symmetric middle.
+If n0 then f0=1, and the gap is phi^2(1-rho)>0.
+If n>=1, monotone CI head gives E_n>=E1=w>=2. Since rho<=2q^2,
+phi^2 rho<=2, so the gap is at least phi+2q^2-2=q^2>0.
+
+If h>=3u+3, every symmetric CI row
+L z^i(1+z)^i,0<=i<u, has center at most(h+3u-3)/2.
+This is no larger than the middle of h-3,h-2. Hence
+C_(h-3)>=C_(h-2), and a>=b>0 because r>=1.
+This closes the complementary cone without any spectral-head premise.
+
+\paragraph{The whole protected-boundary regime u>=h-1.}
+Here actual prefixes through W agree with the infinite-BINARY reference,
+for EVERY padding. Its numerator B has degreeW,leading coefficient1,
+and B(-phi)=(-phi)^r L(-phi). Exact coefficient extraction at W,
+retaining the one missing coefficient of (1-z)B, gives
+\[
+ phi*a-b=phi-phi^2 rho.
+\]
+For r>=2 this is at least phi-4q^2=5q-3=q^5>0.
+For a SINGLE interval t, it is exactly +q^(t-1) when t is even,
+and -q^(t-1) when t is odd. Thus the exceptions to the universal
+physical-W derivative golden ceiling are exactly the already solved
+one-factor odd-capacity family u>=h-1; every padding has that protected
+counteredge. No exception is claimed for the ORIGINAL coefficient UI.
+
+Finite-padding derivative density from the registered same-word theorem
+transfers the positive golden gap whenever actual D_(W-1)>0.
+Zero predecessors imply zero current slopes by the actual initial positive
+support. Therefore EVERY r>=2,EVERYu,h,EVERYpadding has
+D_W<phi D_(W-1) on its positive support; one-factor delta>=2 also does.
+
+\paragraph{Move a real C entrance one physical rank earlier.}
+Every actual G prefix through w+1 matches its infinite-BINARY reference,
+and all its positive adjacent ratios exceed phi. At currentN=W,
+every shift R>=max(3,delta-1) reads k=W-R<=w+1.
+The boundary derivative golden bound pays every such C comparison.
+The exceptional one-factor family uses its OLD complete-C theorem.
+Consequently ALLactualprofiles,ALLpadding satisfy C at currentW for
+ALLR>=max(3,h-u-1), including outside every whole-arm count wedge.
+
+If u>=h-4 this includes EVERY shift at least3. Combining with the
+registered all-padding late-C theorem gives EVERY C comparison at
+EVERYcurrentN>=W, improving its old start W+1 by ONE physical rank,
+at ALLu>=h-4, ALLcapacities/counts/paddings.
+For the infinite-BINARY reference, r>=2 gives the same golden boundary
+without any binary-count condition and its cumulative ratios always
+exceedphi. The one-factor reference has OLD completeC. Thus its earlier
+homogeneous complete-C halfline also improves from N>=W+1 to N>=W.
+
+General C at N<W, shorter-shift boundary C outsideu>=h-4,
+the complete A2 induction and original coefficient UI remain OPEN.
+Even D-LC does NOT generally start one rank earlier: actual
+alpha3,u46,V=(12,18,20) has a NEGATIVE positive-D minor atW50.
+This is a control against strengthening a golden edge into derivative LC.
+
+\paragraph{Verification scope.}
+Eight new scoped reports check the previous CI-unit arithmetic,
+both positive head payments and multiple-factor spectral payment,
+ALL-integer complementary row geometry and reference entry,
+and both complete C read-domain guards. The earlier ALL-prefix
+divided-head induction, finite-padding density, golden C payment,
+CI interval norm and late-C inputs are reused and NOT recounted.
+The actual root/model/CI extraction and mode/source assembly is
+written, not an end-to-end Lean composition theorem. ALL finite
+profiles are QA only; no new finite entrance premise is introduced.

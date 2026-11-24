@@ -1,0 +1,9 @@
+'TribonacciInverseClosure.root_interval_from_cubic_endpoint_signs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TribonacciInverseClosure.quadratic_interval_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciInverseClosure.strict_finite_Bernstein_combination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TribonacciInverseClosure.all_counts_from_complete_entrance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciInverseClosure.excluded_pure_two_negative_minor' depends on axioms: [propext, Classical.choice, Quot.sound]

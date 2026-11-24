@@ -1,0 +1,115 @@
+{
+  "status": "PASS_PARAMETERIZED_ALL_ORDER_RESIDUAL_ENVELOPES_AND_ALL_DELAY_POSITIVE_COUPLED_RENEWAL_SOURCE",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "ParameterizedRenewalResidual.complete_parameter_boundary_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.complete_parameter_boundary_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.complete_parameter_probability_lower_band": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.adjacent_root_power_entrance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.uniform_parameter_constant_arithmetic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.all_delay_finite_polynomial_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.all_delay_positive_forcing_mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.positive_finite_convolution_two_sided": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ParameterizedRenewalResidual.whole_arbitrary_tail_numerator_recursion": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "parameter_envelope": "EVERYt>=3,1<=theta<2-2^(1-t):k=h_t-theta*z*h_t ALLpositivefromn2;ABS(M_k(n))<=C*kprev ALLn>=3,C=theta+max(1,(theta-1)^2/((2-theta)*2^(t-1)-1)). COMPLETEsymbolicbandandWHOLEprobabilityquadratictransport. NOfinite/spectralpremise.",
+  "adjacent_root": "EVERYt>=3 theta=lambda_(t-1) ADMISSIBLE;2p=(2/theta)^(t-1)>1. Includesrootmatched3/4andALLadjacentorders.",
+  "sharp_uniform": "EVERYtheta>=1 withtheta^2+2theta<=6:ALLt>=3 C=theta+1. UNIFORMconstantOPTIMALviaEXACTM_k(t1)/k_t=-(theta+1)+1/k_t,ast->infty. Goldenphi2recoveredasSPECIALcase,notrecounted.",
+  "coupled_identity": "ANYnonnegativepolynomialN,F=N/P_t,G=F/(1-z),SIGNEDD=(1-z)F,ANYr>=2:rho=lambda^(r-2)(lambda-1)^2;EXACTD-rho*z^rG=N*(1+B_r/(1-A_t)),ALLBcoeffnonnegativeatindices>=2,mass(lambda-1)lambda^(r-2). Initialatomandrank1zeroRETAINED.",
+  "coupled_bound": "ALLn:N_n<=D_n-rho*G_(n-r)<=N_n+(lambda-1)lambda^(r-2)SUM_i<=n-2N_i. rhoOPTIMALwhenN1,boundedresidual/exponentiallygrowingG,NOconjugateasymptotics. LowerboundNOTmonotonicity/C.",
+  "reference_and_actual_head": "INFINITEorder-treferencefollowedANYcaps>=t,arbitraryorder,hasnonnegativeNviaNnew=1+z^(t+1)[v-t]+S_v(N-1);G_n>lambda*Gprev. Everyfiniteactual1alphaVwithhNONONEcaps>=t sharesEXACTreferenceheadthroughh+1,FIRSTlossath+2,soALLdelayboundsapplythroughh+1. NOgeneralfiniteactualextension.",
+  "formal_scope": "NINEnewCLEANstandardaxiomSCOPEDreports:parameterboundaryidentities/ALLbandminorpayments/probabilitylowerbands/adjacentrootpowerentrance/uniformconstantarithmetic/ENTIREarbitrarynatural-delayCommRingidentity/wholefiniteforcingmass/positivefiniteconvolutionTWO-SIDEDbounds/numeratorrecursionalgebra. PreviousFIVEquadratictransportandTHREErenewalreportsREUSEDNOTrecounted. Fullseries/model/positivityandALLorderassemblyWRITTEN,notendtoendLeanactualcompositions. NOnewfiniteproofpremises.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "mixed_three_four_single_arm_C": "OPEN",
+  "counts": {
+    "independent_closed_counts_INTEGER_parameter_minor_checks": 29650,
+    "independent_complete_parameter_contexts": 205,
+    "independent_ALLdelay_coupled_closed_count_and_Jkernel_reads": 14600,
+    "independent_finite_padding_protected_heads_with_FIRSTloss": 120
+  },
+  "primary_QA": {
+    "rational_parameter_ALLorder_minor_reads": 72700,
+    "parameter_complete_boundary_contexts": 300,
+    "EXACTadjacent_root_parameter_minor_reads": 1220,
+    "positive_numerator_cumulative_root_gap_reads": 4560,
+    "ALLdelay_EXACTpositive_coupled_identity_and_two_sided_reads": 23040,
+    "positive_numerator_contexts": 48
+  },
+  "independent_state_sha256": "f2e3eb584f190988997e8265d9a90762fa75e570aa250d72fa8608bdc2c75700",
+  "seconds": 1.9060000000026776,
+  "local_files": [
+    "parameterized_renewal_residual_and_coupled_source_proof.tex",
+    "ParameterizedRenewalResidual.lean",
+    "ParameterizedRenewalResidual.log",
+    "audit_parameterized_renewal_residual.py",
+    "audit_parameterized_renewal_residual.json",
+    "verify_parameterized_renewal_residual.py"
+  ],
+  "dependency_files": [
+    "universal_polynacci_minor_bounds_verification.json",
+    "universal_polynacci_minor_and_golden_residual_bounds_proof.tex",
+    "ProbabilityQuadraticMinorEnvelope.lean",
+    "ProbabilityQuadraticMinorEnvelope.log",
+    "universal_renewal_rounding_verification.json",
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex",
+    "UniversalRenewalRounding.lean",
+    "UniversalRenewalRounding.log",
+    "verify_universal_renewal_rounding.py",
+    "verify_renewal_root_primitive_cut.py"
+  ],
+  "sha256": {
+    "parameterized_renewal_residual_and_coupled_source_proof.tex": "a39909d541249e0cd0bcf789c8c6db84c40c181dff9033733e6385a94dcd67bd",
+    "ParameterizedRenewalResidual.lean": "80f46d715797109d9d33c1d3b1a17f88a48b4191dc12636da34f60c3897e6c78",
+    "ParameterizedRenewalResidual.log": "ab101f8fb061e13d708e2aabf5dbf4f06c380830d509e1ca12956d7721c79953",
+    "audit_parameterized_renewal_residual.py": "2a039397563f7ccc2ebda40ad1824f921d72ad980007b09b6a5fb8fbf4d9a6a3",
+    "audit_parameterized_renewal_residual.json": "3c6e4d5c16cb4c5e488316fde95a25ca9a8258ef182632e70353eb4ca43e16e5",
+    "verify_parameterized_renewal_residual.py": "d4feaf62d157cc1e039f4abd0e91f752be60cdfaeb310698a8fff5cdc64c7e7d",
+    "universal_polynacci_minor_bounds_verification.json": "61f80879d82fa85db154b8c94921002df513bfbf832476d86b2080fcef1daa80",
+    "universal_polynacci_minor_and_golden_residual_bounds_proof.tex": "9bc9f56d7f1618300646d68ac61e61a963181e33c331825f86415649e8e88a7d",
+    "ProbabilityQuadraticMinorEnvelope.lean": "833253b5fc5dce535b5b80658cd96daee1a73f7dd2132da1cdd7bc60c3c16b57",
+    "ProbabilityQuadraticMinorEnvelope.log": "e9d962a7c5272fb06eda9769b7f54fc49c3ad07e52f9c1a2e6005c09ee34540b",
+    "universal_renewal_rounding_verification.json": "a5d423e6a8b856308d0e916ff3645b152def0d2aaec1322e3c8151b3a7aa8aba",
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex": "2e919bb31820e95bbcdd4bf30161d4fc2d494b0a0cb7a9c7fd83745e0e6639de",
+    "UniversalRenewalRounding.lean": "0a5109f219608db5250b09ccdb45df8f3774b7db2d0780810c6368f07e78bc90",
+    "UniversalRenewalRounding.log": "4b43b1d628eecb56b2c5135e27854be7ea4ec01e4bf1ff30e710feb282a7f28d",
+    "verify_universal_renewal_rounding.py": "deb91beecfe98ad9033fb99103c30612934202d428edbc73eb839b745d332c0e",
+    "verify_renewal_root_primitive_cut.py": "1c4c7584a55a90cd19abcb1e1f83fe10a76f31ad70f6ab5a97c62d499534c06e"
+  }
+}

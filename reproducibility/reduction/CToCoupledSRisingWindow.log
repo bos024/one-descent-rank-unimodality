@@ -1,0 +1,5 @@
+'CToCoupledSRisingWindow.monotone_nonnegative_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CToCoupledSRisingWindow.S_from_nonrecovering_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CToCoupledSRisingWindow.two_defects_force_two_positive_slopes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

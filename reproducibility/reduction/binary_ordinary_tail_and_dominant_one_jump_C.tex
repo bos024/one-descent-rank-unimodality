@@ -1,0 +1,185 @@
+\section{The whole ordinary binary tail is log-concave}
+This section concerns the FORWARD ordinary polynomial, not its reversal
+and not its positive derivative.  Let
+\[
+ F_h=F_{1^\alpha2^h},\qquad\alpha\ge1,\quad h\ge0,
+ \qquad f_n=\operatorname{Fib}(n+1).
+\]
+All sequences are zero-extended.  The following assertions hold for
+every initial padding length, without a count or rank cutoff.
+
+\begin{theorem}[Ordinary binary full-tail induction]
+The actual ordinary coefficients satisfy
+\[
+ F_h(n)=f_n\ (0\le n\le h+1),\quad
+ 0\le F_h(n)\le f_n,\quad F_h(h+2)\le f_{h+2}-1.       \tag{1}
+\]
+For every centre $n\ge h+1$,
+\[
+ \mathfrak m_h(n):=F_h(n)^2-F_h(n-1)F_h(n+1)\ge0.      \tag{2}
+\]
+Moreover $\mathfrak m_h(n)\ge1$ whenever additionally
+$F_h(n)>F_h(n-1)$.  Statement (2) includes the ENTIRE tail
+beyond the ordinary mode, through the terminal support and zero extension.
+\end{theorem}
+\begin{proof}
+The exact actual recurrence is $F_{h+1}=1+(z+z^2)F_h$.
+For $h=0$, the sequence is the indicator of $[0,\alpha]$;
+(1)--(2) and the conditional strict assertion follow directly.
+The recurrence proves (1) by induction.  In particular the first
+possible defect of $F_{h+1}$ is the sum of the old first defect
+and one exact Fibonacci value, so at least one unit is missing.
+
+At the new boundary centre $n=h+2$, the three coefficients are
+$f_{h+1}, f_{h+2}$ and at most $f_{h+3}-1$.
+Cassini therefore gives
+\[
+ \mathfrak m_{h+1}(h+2)
+       \ge f_{h+1}+(-1)^{h+2}\ge1.                      \tag{3}
+\]
+For $h=0$ this lower bound is two; for $h\ge1$ use
+$f_{h+1}\ge2$.  Every later centre $n\ge h+3$ is a
+two-term window of four old consecutive values $A,B,C,D$:
+\[
+ (B+C)^2-(A+B)(C+D)
+   =(B^2-AC)+(C^2-BD)+(BC-AD).                          \tag{4}
+\]
+The two old log-concavity assertions apply at centres $n-2,n-1$.
+If $B>0$, multiplying them by $C,A$ shows $BC\ge AD$.
+If $B=0$, interval support forces $C=D=0$, so the new minor
+is zero.  Thus every term of (4) is nonnegative.
+If the new coefficient grows, $C>A$; hence either $B>A$ or
+$C>B$.  The corresponding old minor is at least one by the
+induction hypothesis, and so is (4).  This proves the full
+unbounded induction, rather than only an induction before old modes.
+\end{proof}
+
+\begin{corollary}[Relative Fibonacci LC on the whole rising prefix]
+If $h\ge1$ and $R$ is the FIRST ordinary mode of $F_h$, the
+sequence $F_h(n)/f_n$ is log-concave through $R$.
+\end{corollary}
+\begin{proof}
+At $n\le h+1$, the two earlier/current values have their exact
+Fibonacci values and the next one is bounded above by its reference;
+this proves the relative minor, including the first-defect boundary.
+For $h+2\le n\le R$, the actual ordinary prefix strictly grows.
+Here one uses the established interval support of positive ordinary
+slopes starting at two; the initial equality $F_h(0)=F_h(1)$
+causes no exception.  Thus (2) has integer minor at least one.
+Put $A=F_h(n-1),B=F_h(n),C=F_h(n+1)$ and
+$r=f_{n-1},s=f_n,t=f_{n+1}$.  Cassini and (1) give
+\[
+ B^2rt-ACs^2
+   =rt(B^2-AC)-AC(s^2-rt)\ge rt-AC\ge0.               \tag{5}
+\]
+This is the desired relative LC.  No relative LC is asserted
+after the FIRST ordinary mode: a long constant ordinary plateau
+would make that stronger statement false.
+\end{proof}
+
+\section{A new unbounded nonbinary property-C family}
+Let $B=1^\alpha2^h$ with $h\ge1$, and let $R$ be its first
+ordinary forward mode.  Append a capacity $L\ge3$, making the
+actual sorted arm $Y=BL$.
+
+\begin{theorem}[Every capacity at or beyond the old first mode]
+If $L\ge R$, then $Y$ has complete property C: at every
+positive-slope comparison rank $N$ and every shift $s\ge3$,
+\[
+           G_Y(N-s)D_Y(N-1)\ge G_Y(N-s-1)D_Y(N).        \tag{6}
+\]
+In particular $L\ge\max(3,2h)$ is a sufficient capacity bound
+independent of the initial padding.  Counts, padding, capacities,
+comparison ranks and shifts are all unbounded.
+\end{theorem}
+\begin{proof}
+First the reference $r_n=\operatorname{Fib}(n)$ for $n\ge2$
+has complete C.  For any fixed comparison choose a previously proved
+one-jump infinite-binary reference with capacity larger than every
+read rank.  Its slopes agree with $r$ through that comparison,
+so its complete-C theorem applies.  This is finite-prefix agreement,
+not an analytic limiting argument.  Its normalization is $r_2=1$.
+
+Consider the temporary slope prefix
+\[
+                      \widehat D_n=F_h(n-1),\quad n\ge2.
+\]
+Through rank $R+1$, the preceding relative-LC corollary supplies
+normalized relative LC of $\widehat D_n/r_n$.
+Its first two normalized values are one, since
+$F_h(1)=1$ and $F_h(2)=2$.
+The proved normalized-relative-C inheritance theorem therefore
+gives every C comparison of $\widehat D$ at $N\le R+1$.
+All temporary cumulatives use their required shared atom one at
+zero and shared zero slope at one.
+
+The exact actual append identity, for $n\ge2$, is
+\[
+ \Delta F_Y(n)=F_h(n-1)-F_h(n-L-1).                    \tag{7}
+\]
+If $L\ge R+1$, the actual slopes agree with $\widehat D$
+through $R+1$.  With $M=\max F_h$, (7) is always at most
+$M$, and equals $M$ first at $R+1$.  Thus the new FIRST
+positive-slope mode is exactly $R+1$.
+Every increasing comparison lies through that mode by the established
+actual positive-slope unimodality.  Its cumulative reads are also
+inside the common prefix, so the temporary C comparisons prove (6).
+Decreasing or flat current slopes are immediate from $G_Y(k)\ge
+G_Y(k-1)\ge0$.
+
+The exact boundary $L=R$ requires retaining the outgoing unit.
+For $n\le R$ the same prefix agreement holds.  At $n=R+1$,
+the actual slope is $M-1$, rather than the temporary value $M$.
+For $n<R+1$, the integer first-mode property gives
+$F_h(n-1)\le M-1$.
+For $n\ge R+1$, if the entering coefficient in (7) is positive,
+interval support makes the outgoing coefficient at least one;
+otherwise the signed slope is nonpositive.  Thus every positive
+slope is at most $M-1$, attained at $R+1$, and the new first
+slope mode is at most $R+1$.
+
+The only additional potentially increasing current edge is
+$N=R+1$.  Its preceding slope agrees with $\widehat D$;
+all cumulative reads have rank at most $N-3=R-2$ and also agree.
+Replacing the current slope $M$ by $M-1$ increases each C minor
+by the nonnegative earlier cumulative $G_Y(N-s-1)$.
+Thus that edge is paid as well.  This proves the sharp-boundary
+version $L\ge R$, not only $L>R$.
+
+Finally the first ordinary mode of a binary arm satisfies $R\le2h$.
+At $h=0$ its first mode is zero.  Under a binary append every
+edge beyond old first mode plus two is nonpositive, because
+$\Delta F_{h+1}(n)=F_h(n-1)-F_h(n-3)$ there.
+Hence $R_{h+1}\le R_h+2$, and induction gives the count bound.
+\end{proof}
+
+\begin{corollary}[All-depth coupled consequences]
+For an arm in this one-jump family against an arbitrary opposite
+arm, the existing one-arm-C bridge proves tail nonrecovery at
+EVERY overlap depth when both ordinary factors rise and the current
+tail is nonnegative.  The usual OLD head is retained for all-head S.
+If both counts are at least two, the ENTIRE proper zero-head S
+comparison holds without OLD A2 or a phase condition, by the complete
+one-arm-C zero-head bridge and its already proved phase forcing.
+\end{corollary}
+
+\paragraph{Verification and remaining domain.}
+The new Lean file proves the strict first-defect boundary, the
+growth-sensitive two-term LC window lemma, the FULL unbounded
+ordinary-family tail induction, the rising-prefix relative-LC
+implication, count-to-mode induction, current-slope C improvement
+and support/outgoing-unit budget.  The actual word recurrence,
+rectangular base, first-mode/support identification and application
+of the already proved relative-C/zero-head theorems are the explicit
+written assembly above.  The earlier normalized-relative-C and
+one-jump reference kernels are reused without recounting.
+The separate actual-word QA is finite corroboration, not the proof.
+No end-to-end Lean actual-composition theorem is claimed.
+
+Capacities $3\le L<R$ are outside this theorem.  The complete
+first-missing-four family and the first unresolved general C count
+six are still open outside the recorded regions.  This is a NEW
+unbounded nonbinary C family and coupled-comparison resource;
+it does not prove full A2 for lighter binary arms, full original
+coefficient UI for every one-jump arm, or upgrade the existing
+original least-counterexample bounds.

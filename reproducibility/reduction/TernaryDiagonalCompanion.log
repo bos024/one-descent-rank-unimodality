@@ -1,0 +1,3 @@
+'TernaryDiagonalCompanion.exact_positive_diagonal_recurrence' depends on axioms: [propext, Quot.sound]
+'TernaryDiagonalCompanion.exact_positive_defect_recurrence' depends on axioms: [propext, Quot.sound]
+'TernaryDiagonalCompanion.exact_positive_derivative_defect_source' depends on axioms: [propext, Quot.sound]

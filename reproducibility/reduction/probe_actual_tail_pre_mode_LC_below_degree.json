@@ -1,0 +1,40 @@
+{
+  "status": "FINITE_ONLY_BELOW_DEGREE_ACTUAL_TAIL_LC_DIAGNOSTIC",
+  "counts": {
+    "actual_tail_contexts": 925454,
+    "CI_tails": 2435,
+    "all_tail_pre_mode_minors": 6294248,
+    "nonempty_LC_band_contexts": 588138
+  },
+  "degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "counter": null,
+  "state_sha256": "8f1999a7db2d72ab0bfad1109785b2d58a45478f1f2e96f1bc374f6959eeb3c1",
+  "seconds": 8.515999999995984,
+  "scope": "Finite complete CI degree grammar ONLY. Actual signed tail from physical W uses the indispensable one-unit numerator atom. Tests 1<=u<h and a degree-dependent padding clamp plus infinite case; no universal LC, shorter-count C, or original UI conclusion."
+}

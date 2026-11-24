@@ -1,0 +1,106 @@
+\section{Four-unit degree gap: three ordinary seeds and a uniform reference ratio}
+The registered universal h>u late-D-LC theorem and the three-unit
+C entrance are inputs. This refinement proves ALL actual late C
+at u>=h-4, with every capacity, factor count and padding unbounded.
+Earlier C, A2 and original coefficient UI remain OPEN.
+
+Let w=u+r and W=w+4. The first reference derivative loss is at W-2.
+Let l0,l1,l2,l3 be its total loss through W+1. Put a=l0,
+S=l0+l1,b=l2,c=l3. The reference x=Dref_W,y=Dref_(W+1) obeys
+A=x^2+xy-y^2>0, y<phi*x<2x. Its relevant ordinary values are
+\[
+ Fref_(W-3)=y-x+1-B_(W-1)<=y-x+1,
+\]
+\[
+ Fref_(W-2)=x-1,\quad Fref_(W-1)=y,\quad Fref_W=x+y.
+\]
+The loss at W-2 acts on Fref_(W-2)=x-1, hence the ACTUAL
+value is F_(W-2)=x-1-a. This numerator unit is retained in every seed.
+Actual F_(W-1)=y-S, F_W=x+y-S-b; D_W=x-b,D_(W+1)=y-c.
+
+The last ordinary seed is
+Q=(x+y-S-b)(x-b)-(y-S)(y-c), paid by the h=u+3 generic
+argument with S replacing its a, PROVIDED x>=S,b>=2S,c>=3b.
+The middle seed is now
+\[
+ P=(y-S)(x-b)-(x-1-a)(y-c)
+   =x(c-S)-y(b-1-a)+S*b-(1+a)c.
+\]
+It has the SAME generic positive payment with e=1+a replacing
+the earlier loss coefficient: if x>=2e,S>=e,b>=2S,c>=3b,
+then P>=(S-e)(b-2e)+2e^2>=2e^2, provided b>=2e.
+The EARLIEST seed is bounded below, when y-c>0, by
+\[
+ R=(x-1-a)(x-b)-(y-x+1)(y-c)
+ =A+y(c-1)-x(c+b+1+a)+c+(1+a)b.
+\]
+If y>=3x/2 and c>=3b and b>=2(1+a)+3, this is strictly positive.
+Indeed R>=A+x(c/2-b-(1+a)-3/2)+c+(1+a)b>0.
+
+At w>=11 all required loss inequalities follow from the stronger
+CI-factor-count differential bound below. Direct formula checks use
+E0=1,E1=w,E2=choose(w,2)+r,
+E3=choose(w,3)+r*w-m3, 0<=m3=#capacity3<=r.
+The losses l0,l1,l2 are EXACTLY those from the triple-subdegree
+theorem; l3 is
+\[
+ 2E3+E2+2w+3\ (alpha1),\quad E3+2E2+2w+3\ (alpha2),
+\]
+\[
+ E3+E2+3w+3\ (alpha3),\quad E3+E2+2w+4\ (alpha4),
+\]
+and E3+E2+2w+3 for alpha>=5. Here S>=1+a and b>=2(1+a)+3
+are automatic at w>=11. The largest S is 2w+3, while
+x>=Fib(W-1)=Fib(w+3)>=2w+3. Also x>=2(1+a).
+
+The reference lower ratio y>=3x/2 has a short
+unbounded spectral proof. The registered whole-word norm gives
+t=|B(-phi)|/(B(q)phi^(2W-2))<=q^(W+r-2)<=q^6 when W+r>=8.
+Then y/x=(phi-q*t)/(1+t)>=3/2; at t=q^6 it is equality because
+q^6=5-8q and q^2+q=1. For w>=11 one has W+r>=16.
+This is a written use of an ALREADY registered full-word norm,
+not a finite reference-ratio extrapolation.
+
+These loss/reference/three-seed arguments imply that the unchanged
+reference G prefix through W-3 (ratios>phi) extends successively to
+W-2,W-1,W. Universal late-D-LC then integrates all later C reads.
+For w<11, W=w+4<=14<32 and the OLD weight32 complete-C theorem
+already closes EVERY capacity profile and padding. Thus no new finite
+entrance certificate is necessary. Hence h=u+4 is closed and the
+all-padding actual late-C threshold is u>=h-4. General earlier C/A2/UI
+remain OPEN; first unresolved full-C count6 is unchanged.
+
+\paragraph{A stronger actual-CI loss-growth theorem.}
+For each interval I_t=[t],t>=2, the polynomial
+(1+z)I_t'-I_t has coefficients zero at0, 2n at1<=n<=t-2,
+and t-2 at n=t-1. All are nonnegative. Applying the product rule
+to E=(1+z)^u prod[t], with EXACTLY w=u+r factors, gives
+\[
+ (1+z)E'-wE>=0\quad\hbox{coefficientwise}.
+\]
+Multiplication by ANY nonnegative power series preserves this
+inequality, because its derivative contributes only nonnegative
+coefficients. Thus the ENTIRE loss series
+L=E*(1/(1-z-z^2)+z^(alpha-1)) satisfies
+\[
+ j L_j >=(w-j+1)L_(j-1)\quad(j>=1).
+\]
+Using factor count w rather than u here REQUIRES actual interval
+factors. For w>=11 it gives l1>=w*a, b>=5*l1, c>=3*b.
+Together with 1<=a<=2 and exact l1<=2w+1, this yields
+S>=1+a,b>=2S,b>=2(1+a)+3 and S<=2w+3.
+The reference bound x>=Fib(w+3)>=2w+3 holds already w>=4:
+start at Fib7=13>=11 and each later Fibonacci increment is >=2.
+
+\paragraph{Formal and independent scope.}
+Nine new scoped unbounded real-algebra reports in
+\texttt{FourSubdegreeCEntrance.lean} check product/interval source
+identities, the complete loss-growth seed cone, homogeneous reference
+ratio and all three actual ordinary-seed payments. The product-rule
+coefficient assembly, standard Fibonacci induction, old whole-word
+spectral norm, actual source/reference/mode identification and read
+integrations are written proofs, not end-to-end Lean formal composition.
+All finite profiles are QA ONLY, with NO new finite premise. The old
+complete weight32 theorem handles the explicitly bounded small-w band.
+Potential actual late-C failures now need u>=9,u+5<=h<=3u-2,
+maxcap<=2u-1,W>32. This is not a general C or original UI theorem.

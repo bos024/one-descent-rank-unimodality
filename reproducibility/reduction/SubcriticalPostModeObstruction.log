@@ -1,0 +1,11 @@
+24_GENERAL_UNIMODALITY/SubcriticalPostModeObstruction.lean:57:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'SubcriticalPostModeObstruction.exact_factor_product' does not depend on any axioms
+'SubcriticalPostModeObstruction.exact_weight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubcriticalPostModeObstruction.plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubcriticalPostModeObstruction.first_endpoint_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubcriticalPostModeObstruction.initial_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubcriticalPostModeObstruction.one_sample_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubcriticalPostModeObstruction.parameter_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubcriticalPostModeObstruction.unbounded_gap_domain' depends on axioms: [propext, Classical.choice, Quot.sound]

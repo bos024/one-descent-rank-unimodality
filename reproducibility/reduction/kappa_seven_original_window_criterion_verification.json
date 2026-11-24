@@ -1,0 +1,195 @@
+{
+  "status": "PASS_FIRST_MISSING_SEVEN_LEGAL_WINDOW_FULL_A2_AND_ORIGINAL_A13_COEFFICIENT_CRITERION",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "GeneralFiniteSourcePatch": {
+      "GeneralFiniteSourcePatch.arbitrary_finite_patch_no_revival": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GeneralFiniteSourcePatch.whole_body_guarded_critical_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GeneralFiniteSourcePatch.entire_finite_window_patch_up_down": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "KappaSevenWindowRepair": {
+      "KappaSevenWindowRepair.complete_small_owner_degree_and_one_part_cover": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "KappaSevenWindowRepair.sole_binary_three_positive_exception": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "KappaSevenWindowRepair.complete_four_exception_prefix_mode_and_body_budgets": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "KappaSevenWindowRepair.all_four_exceptional_patch_read_guards": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "KappaSevenWindowRepair.every_new_exceptional_heavier_append_has_four_window": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    "KappaSevenOwnerCertificate": {
+      "KappaSevenOwnerCertificate.complete_all_owner_payments": [
+        "propext"
+      ]
+    }
+  },
+  "criterion": "ANYfinaldeletionclosedACTUALFULLCclass/kappa<=7=>FULLpairA2/ORIGINALstrictCOREandBOTHrelativesANYstrictpeak+ONEarbitrarylegalheavierappend. RawsourceUI/THREEwindowUIat7remainFALSE. Four-or-longerwindowspositiveUI/initialsupportforBOTHnonrect.",
+  "complete_owners": "OLDgap6h>=4/initialexchange-gap5alphaStar>=2/OLDfiniteownerboundd6D<=36 leaveEXACT341alpha1first2/h2or3owners. ALL853positivecurvatureedges reconstructed;851paidbyFIRST+SECONDcompulsorybirths,71distinctintegerobligationsONEkernelaggregate. ONLYunpaidbinary2/r0/C1 andbinary3/r0/C2. IndependentDEGREEpartitiongrammar/statehash/publicaggregateMATCH.",
+  "exceptions": "CompleteFOURnewsourcepolynomialtypes:onepartweight3/onepartweight4/binary2/binary3eta=delta1. EveryENTIREpositiveUIprefix/strictLASTmodeedge/bodymin/criticalblock/sign-tailretained. Binary3c0=2<criticalheight4,soFIRSToutgoingedgeMUSTbeallowed;newgeneralpatchhandlesit. No sourceUIassumedacrossbadpatch.",
+  "general_patch": "NEWunboundedfiniteHEIGHT/WIDTHcoefficientrepair:positiveUIprefix0..L,E>=0throughRthen<=0,bodyE>=Hon1..B,criticalE<=HonL+1..R,andR<=t+B =>WHOLEpositiveuniformwindowUI/initialsupport. ExactglobalNoRev/firstoutgoingexception/signedtail/clipping/wholefiniteupdownKERNELchecked. NoCUMULATIVELC-to-coefficientinference.",
+  "legality": "NEWexceptionalownerweight<=7,oppositekappa7weight>=21:heavierappendforces t>=b-a>=14 ORlegalsortedappendtokappa7arm t>=6. ThusALLnewexceptionsuse>=4windows;maxkappa<=6usesfrozen3repair. Actualt3counterX1/2,Y1/6^5window3,1,2retained.",
+  "original_A13": "A13=A12 UNIONALLmax4prefixT1T2 withT1>=max5,2W0/T2>=2(W0+T1) UNIONmaxcap6/nonbinaryweight<=32arms. ALLuniformFULLC/kappa<=7/finaldeletionclosed. BOTHarmsmayhaveTWOindependentdominantjumps/nooldweightorder;ORIGINALCORE/BOTHrelativesANYstrictpeak+ONEfurtherlegalheavierappend. NOamplification.",
+  "formal_scope": "NINEnewreports:THREEgenericunboundedHEIGHT/WIDTHsourcepatchkernels+FIVEcompleteowner/source/mode/read/legalguardkernels+ONEordinarykernelaggregateALL71finiteownerproofmargins. NEWfinitepremiseEXPLICITCOMPLETE341owner/853edges/2exceptions. Actualinitialexchange/gap/finiteowner/sourceprofile/oldC-A1-Q/FULLA2/originalassemblyWRITTENandFROZENoldinputsreused,NOTendtoendLeancompositions. GeneralFiniteSourcePatch importsfrozenKappaSix;recompileold.oleanfirstwithoutoverwritingold.log. ExtraQAONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "finite_proof_counts": {
+    "all_positive_curvature_edges": 853,
+    "unpaid_exception_edges": 2,
+    "complete_owner_states": 341,
+    "kernel_payment_obligations": 851
+  },
+  "finite_state_sha256": "e895a2f2bec58d117107a3fa4df7444e33bfd41a40350c0f60eabee84d23dc81",
+  "next": "GeneralHEIGHT/WIDTHpatchforhigherfirstmissingweightsandgeneralhighercapacityC. GeneraloriginalobjectiveNOTcomplete.",
+  "independent_counts": {
+    "all_positive_curvature_edges": 853,
+    "unpaid_exception_edges": 2,
+    "complete_owner_states": 341,
+    "kernel_payment_obligations": 851,
+    "independent_arbitrary_height_width_source_patch_profiles": 1800,
+    "independent_first_outgoing_below_body_height_profiles": 1305,
+    "independent_complete_exceptional_source_windows": 345,
+    "independent_ENTIRE_source_profile_onepart3": 15,
+    "independent_ENTIRE_source_profile_onepart4": 30,
+    "independent_ENTIRE_source_profile_binary2": 15,
+    "independent_ENTIRE_source_profile_binary3": 9,
+    "independent_extra_heavier_append_originals": 4,
+    "independent_TRUE_greedy_BOTH_two_dominant_originals": 16,
+    "independent_TRUE_greedy_ORIGINAL_rank_counts": 4627
+  },
+  "primary_QA": {
+    "kappa_seven_single_arm_full_C_minimum_ratio_checks": 203383,
+    "kappa_seven_single_arm_literal_shifts_represented": 15616698,
+    "actual_class_FULL_A2_pairs": 1260,
+    "four_or_longer_source_windows": 6300,
+    "legal_heavier_append_FULL_A2_pairs": 2520,
+    "exact_source_exception_onepart3": 12,
+    "exact_source_exception_onepart4": 24,
+    "exact_source_exception_binary2": 12,
+    "exact_source_exception_binary3": 6,
+    "extra_heavier_append_ORIGINAL_ideals": 4,
+    "TRUE_greedy_BOTH_two_dominant_ORIGINAL_ideals": 24,
+    "TRUE_greedy_ORIGINAL_rank_counts": 7528
+  },
+  "seconds": 0.31300000000010186,
+  "local_files": [
+    "kappa_seven_legal_window_original_criterion_proof.tex",
+    "GeneralFiniteSourcePatch.lean",
+    "GeneralFiniteSourcePatch.log",
+    "KappaSevenWindowRepair.lean",
+    "KappaSevenWindowRepair.log",
+    "KappaSevenOwnerCertificate.lean",
+    "KappaSevenOwnerCertificate.log",
+    "build_kappa_seven_owner_certificate.py",
+    "kappa_seven_owner_certificate_data.json",
+    "audit_kappa_seven_original_window_criterion.py",
+    "audit_kappa_seven_original_window_criterion.json",
+    "verify_kappa_seven_original_window_criterion.py"
+  ],
+  "dependency_files": [
+    "kappa_six_original_window_criterion_verification.json",
+    "kappa_six_legal_window_original_criterion_proof.tex",
+    "KappaSixWindowRepair.lean",
+    "KappaSixWindowRepair.log",
+    "source_birth_gap_nonrecovery.tex",
+    "SourceBirthGapNonrecovery.lean",
+    "SourceBirthGapNonrecovery.log",
+    "audit_source_birth_gap_complement.json",
+    "verify_source_birth_gap_complement.json",
+    "source_birth_gap_refinements.tex",
+    "SourceBirthGapRefinements.lean",
+    "SourceBirthGapRefinements.log",
+    "audit_source_birth_gap_refinements.json",
+    "verify_source_birth_gap_refinements.json",
+    "arbitrary_source_gap_finite_owner.tex",
+    "ArbitrarySourceGapFiniteOwner.lean",
+    "ArbitrarySourceGapFiniteOwner.log",
+    "C_to_coupled_S_rising_window.tex",
+    "agent_bothdeclining_first_birth.tex",
+    "agent_half_lc_actual_weak_curvature.tex",
+    "binary_ternary_A2_original_family_verification.json",
+    "binary_ternary_A2_original_family_proof.tex",
+    "complete_capacity_four_verification.json",
+    "complete_capacity_four_C_original_proof.tex",
+    "relative_golden_head_dominant_C_verification.json",
+    "relative_golden_head_dominant_C_proof.tex",
+    "multitail_binary_prefix_finite_principle_verification.json",
+    "multitail_binary_prefix_finite_principle.tex",
+    "inductive_signed_window.tex",
+    "short_prefix_reflection_join.tex",
+    "verify_binary_ternary_A2_original_family.py"
+  ],
+  "sha256": {
+    "kappa_seven_legal_window_original_criterion_proof.tex": "5f79f3b6594709c092328f221d315a8497e6fbae4dfa6c39e872e62d1972dd61",
+    "GeneralFiniteSourcePatch.lean": "797ef5181c6dc7438e0581ead447b48d7addff5214e40f74004768fb17bb15e0",
+    "GeneralFiniteSourcePatch.log": "ff37707a79636080af3ce990387f69c333b63902d19d4a3037e45e19c3cf49a2",
+    "KappaSevenWindowRepair.lean": "e90b23ef06c7194f833d74482f897ba60009e2e67675db998d61a25e0f6b61b0",
+    "KappaSevenWindowRepair.log": "ea122dea0f6ca704e3f837bc5ff1f1e4288dc4aee1862c4e3ae98b017dd1ce14",
+    "KappaSevenOwnerCertificate.lean": "c8e861274045a3534d73ddcb69bd6db3d247982c6ffc0a01e78ba9cc62766c65",
+    "KappaSevenOwnerCertificate.log": "3b8cfbbedfdd79238c3dc82ae6062a43189e846a46ec959f14d6f2ca624aaabb",
+    "build_kappa_seven_owner_certificate.py": "2fd8dacb64952cbd30e872aec4073b3bca08608f2d26d767a90d26a6884980be",
+    "kappa_seven_owner_certificate_data.json": "0bda059bba289f616b55593bd16ee8e0d03a44cc0b46a7d5f720bb7b7288d1e9",
+    "audit_kappa_seven_original_window_criterion.py": "67159570e4f6339605edbdfe32b397303437dafdd6d242436d44a0d42cd8f6c2",
+    "audit_kappa_seven_original_window_criterion.json": "758b6010a8cd0ff301fb6f83d24699f636c3d89d4ed4fa6461dc2c9de30190d9",
+    "verify_kappa_seven_original_window_criterion.py": "1e3605c6967f5bbb9b9ecc201cc2952a681ae09487835a158675a327b2d501ec",
+    "kappa_six_original_window_criterion_verification.json": "15f56875d9a3c9c55ca012abdaa963ab22defb93521c4488532aff8481edafad",
+    "kappa_six_legal_window_original_criterion_proof.tex": "5def5e3181e0b3bcf3de5b51117d1b2dd4875095edebefb08f6778de278efe3b",
+    "KappaSixWindowRepair.lean": "b1c45a857f467e4539a68fed833f1e47c23c67bc55471620c26b52c22f419e06",
+    "KappaSixWindowRepair.log": "e3a0291c47101fda74f15a40d8ee54b6cdca0813120e60b5ba2e9325a149141a",
+    "source_birth_gap_nonrecovery.tex": "e3b634da5a447e575a38a5075d6e805e33a6dd5af6dad157371d70e66a839d90",
+    "SourceBirthGapNonrecovery.lean": "62e50135937dbdbef9a548d9db2614a6548cf9d08887ada5219b5c34deddf4eb",
+    "SourceBirthGapNonrecovery.log": "bad2b0b311457d82116b927d41fc174c5952992341048e9e37495b2d785c7aea",
+    "audit_source_birth_gap_complement.json": "832df93a5198dc76bd184e95518a664e7a8d4faae1f60c24162417ebe8fab3c5",
+    "verify_source_birth_gap_complement.json": "5733c0c9904363ee9e45d78cbd220d581e020fcdb13c88111cdc899387230958",
+    "source_birth_gap_refinements.tex": "737f00f954eee291dde67b6327737bd7c67251ba3d78e4efa813977987251e7d",
+    "SourceBirthGapRefinements.lean": "f0a10f22dac513c2952d25a9b79eb32da4da1354b900a4df93620075a4298606",
+    "SourceBirthGapRefinements.log": "ef6fb15f0a4d5c08f314e19ec289f4c18376e44e0e807582c19911da620b3bc3",
+    "audit_source_birth_gap_refinements.json": "dc35f79ae0a4f9a6673853deb1bdad6c8675cde8823bdee1a1662b42a0de3b2c",
+    "verify_source_birth_gap_refinements.json": "2c3a520a1f3bc2370ce10d2ebc5fe3bbb33266d7bcc800f4e35b19a8f2611dc9",
+    "arbitrary_source_gap_finite_owner.tex": "b9799892cf64b0d0e9d36799c69125eafd660a51c893227b15613a253f48ab4e",
+    "ArbitrarySourceGapFiniteOwner.lean": "a7c84f305474ced5916c07510edfe691c56aa06348089415f4cff957d1bf993b",
+    "ArbitrarySourceGapFiniteOwner.log": "f2493e0212b9680d4614be5c4bf2f0532aa3674fc9bd8876e89f40fb92616352",
+    "C_to_coupled_S_rising_window.tex": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "agent_bothdeclining_first_birth.tex": "c646a7eddfb2486a02136832a5dc19f99021f807100ddffac346ba95e22478e9",
+    "agent_half_lc_actual_weak_curvature.tex": "0191ec32500869be5d687ece5be011db4de6df7cfe47bf6cd1186ab4bc0b7674",
+    "binary_ternary_A2_original_family_verification.json": "5c3d0a808f9b392876e4e771f38bf555c05a6272aaf8a13a287b77986e3dc47d",
+    "binary_ternary_A2_original_family_proof.tex": "956160d8e49eaa86fbb62f8f63cacbbc411bfc2e7f2fac3bd4cf3003512ae393",
+    "complete_capacity_four_verification.json": "adc69f456023c06268414b14cdc43c1cb8637cfd3584e9c2ce4ccd0e07ec6fef",
+    "complete_capacity_four_C_original_proof.tex": "ba118d982ad418b7a1d8216b6c9a67f003e4daa02aa89ca4210d522ffe60e0ca",
+    "relative_golden_head_dominant_C_verification.json": "d46f4ac30d9e4169e1d7355ccf8b24c001e110994f600bce48391ed880cdd4e8",
+    "relative_golden_head_dominant_C_proof.tex": "b5c5b3c1348f6106d6ca74cda28e07df6a60a6c57dc33de10d4d49b128a43e62",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "multitail_binary_prefix_finite_principle.tex": "f62e1ebcf0f9eaff68400b6117314c881a58f5955974a917b75d258153244417",
+    "inductive_signed_window.tex": "c1b3b891a505f5160fb78f290b743d4dbc40dc260b7b58a194bb167e4904c1ae",
+    "short_prefix_reflection_join.tex": "ac6fc6b522d4e88d2c38cad6244b25d552c995dd528958921fcd28d47a60790a",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505"
+  }
+}

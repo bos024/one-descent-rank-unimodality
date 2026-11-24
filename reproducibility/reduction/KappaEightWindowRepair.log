@@ -1,0 +1,13 @@
+'KappaEightWindowRepair.complete_canonical_small_padding_and_negative_rank_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaEightWindowRepair.small_three_part_only_positive_source_exceptions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaEightWindowRepair.complete_ten_exception_prefix_mode_and_body_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaEightWindowRepair.all_ten_exceptional_patch_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaEightWindowRepair.every_new_exceptional_heavier_append_has_five_window' depends on axioms: [propext, Quot.sound]

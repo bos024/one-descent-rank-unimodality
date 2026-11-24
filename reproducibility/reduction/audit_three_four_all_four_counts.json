@@ -1,0 +1,25 @@
+{
+  "status": "EXACT_QA_PASS_ALL_ALPHA_ALL_FOUR_COUNTS_AT_THREE_COUNT_AT_LEAST_FIFTY",
+  "counts": {
+    "near_phase_ENTIRE_ordinary_tail_minors": 177500,
+    "actual_complete_C_worst_prefix_reads": 766548,
+    "logical_ALLshift_C_comparisons": 136556394,
+    "actual_ALLfour_count_hosts": 2430,
+    "hosts_OUTSIDE_old_ternary_surplus": 1610,
+    "four_phase_ENTIRE_ordinary_tail_minors": 464105,
+    "analytic_MOVING_diagonal_seed_QA_hosts": 45,
+    "actual_FULL_A2_pairs": 108,
+    "actual_Q_guarded_tail_edges": 24416,
+    "ENTIRE_signed_source_windows": 480,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 96,
+    "A7_ALLfour_ORIGINAL_ORIGINAL_cores": 96,
+    "A7_ALLfour_ORIGINAL_BOTH_relative_polynomials": 192,
+    "A7_ALLfour_ORIGINAL_coefficient_comparisons": 121464,
+    "A7_heavier_append_ORIGINAL_ORIGINAL_cores": 12,
+    "A7_heavier_append_ORIGINAL_BOTH_relative_polynomials": 24,
+    "A7_heavier_append_ORIGINAL_coefficient_comparisons": 14409
+  },
+  "state_sha256": "5b9670c04651262849ae09acd9c285363a2ba4572c6054cd2b332dd47bc78a18",
+  "seconds": 4.7810000000026776,
+  "scope": "ALLalpha>=1/r>=50/ALLs>=0 ACTUALFULLC proofbyanalyticMOVINGdiagonalseed+whole4heredity+nearcubiccut. NOnewfinitepremise. ORIGINALA7NOcount-ratio. Generaloriginal/C/A2andremainingr<50/binaryprefixmixedOPEN."
+}

@@ -1,0 +1,7 @@
+'OneJumpReferenceC.recurrence_minor_negates' depends on axioms: [propext]
+'OneJumpReferenceC.constant_shift_cumulative_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpReferenceC.constant_shift_C_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpReferenceC.amplitude_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpReferenceC.bounded_amplitude_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpReferenceC.prefix_C_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpReferenceC.prefix_LC_payment' depends on axioms: [propext, Classical.choice, Quot.sound]

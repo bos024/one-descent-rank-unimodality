@@ -1,0 +1,26 @@
+{
+  "status": "PASS_UNBOUNDED_NORMALIZED_RELATIVE_C_INHERITANCE_AND_ONE_JUMP_REFERENCES",
+  "kernels": {
+    "RelativeCClosure": 7,
+    "OneJumpReferenceC": 7
+  },
+  "new_scoped_reports": 14,
+  "inheritance": "ANY nonnegative reference slopes r2=1 with property C at a current rank for EVERY shift>=3: normalized geometric tilting a^(n-2),0<a<=1 preserves C. Full C passes to EVERY normalized nonincreasing relatively log-concave density. Exact positive-kernel identity includes preserved rank-zero atom correction; low/high threshold alternatives cover all parameters/ranks.",
+  "read_prefix_refinement": "For k=N-R, either universal k*DN<=(k+1)*Dprev pays C, or only current a<=1 and density ratio order on ranks3..k are needed. No relative-LC/order hypothesis at unread ranks k+1..N-1. This is a sufficient criterion, not a proved all-actual invariant.",
+  "reference": "EVERY L>=3, infinite binary H2=1/(1-z-z^2) followed by capacityL: rN=FibN-Fib(N-L), positive cumulative g is LC and has complete C at EVERY rank/shift. Constant-shift Fibonacci Cassini amplitude CL=LucasL-1-(-1)^L paid by (L-1)*FibL. ALL normalized geometric tilts and relative-LC descendants inherit C.",
+  "formal_scope": "14 NEW scoped Lean kernels: rational tilt identity/positive kernel/universal cumulative ratio/two-branch payment/density comparison; Cassini recurrence/constant-shift minors/amplitude/endpoint payments. Entire sequence-level formal-series/LR/Fibonacci assembly is the accompanying unbounded WRITTEN proof, not end-to-end Lean. Exact finite QA is independent corroboration only, not finite extrapolation.",
+  "remaining": "Actual finite binary-prefix+ONE-jump relative-LC bridge not proved. General multi-tail reference and actual read-prefix order not proved. General nonbinaryC>=6, general A2, ORIGINAL unamplified coefficient UI remain OPEN; no original least-counterexample count upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "relative_C_inheritance_and_one_jump_reference.tex": "40b81bdb24ea6ff2f82a4c26e5df76cb5f4d24451a5b8dbdbf28a489e5fa3063",
+    "audit_relative_C_and_one_jump_reference.py": "f4de1f0e89f6ba4648810260abb2ea50cd3769616f8876400d09eec4343da8c0",
+    "audit_relative_C_and_one_jump_reference.json": "98de5b8637a2501f6f6d8dc167fbab295dba3d7636df06dd58386c8d68982eaa",
+    "verify_relative_C_inheritance.py": "03ff152250ef57b08b00984311d0327af7bc2810600658addff1d6737dde8336",
+    "RelativeCClosure.lean": "ae5af8160f993dee05e509b09968ebde0a74b4855aac1a0027c8e796e5e28e87",
+    "RelativeCClosure.log": "fa36ebdb2e95fa2d6ba2503ca384b7d5f983d6d11db97804f341f1093cb6a473",
+    "OneJumpReferenceC.lean": "b8c17459983a8ee091328cb112bdca9580b6639bd1d7b5611bd1bae946cf52aa",
+    "OneJumpReferenceC.log": "553a9483bab330ad37d363f86dc0c4916303eb0d4b3a84c08d0e54af564002a1"
+  }
+}

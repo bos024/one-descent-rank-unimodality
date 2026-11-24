@@ -1,0 +1,12 @@
+{
+  "status": "PASS_DEPTH_SLACK_TRUE_ARMS_AND_ORIGINAL_COEFFICIENTS",
+  "counts": {
+    "depth_capacity_minor_edges": 122852,
+    "all_delays_lower_envelope_checks": 368556,
+    "actual_arms": 9081,
+    "true_cumulative_LC_edges": 359475,
+    "actual_strict_pairs": 160,
+    "actual_original_ranks": 42695
+  },
+  "digest": "0993b2292b0d84bd375fa984a4cac89c5402f68ee1ac92153eec2b7d84e4f8b3"
+}

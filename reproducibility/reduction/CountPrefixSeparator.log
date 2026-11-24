@@ -1,0 +1,8 @@
+'CountPrefixSeparator.unbounded_cascade_prefix_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountPrefixSeparator.Fibonacci_and_doubling_pay_three_halves' depends on axioms: [propext, Quot.sound]
+'CountPrefixSeparator.one_negative_coefficient_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountPrefixSeparator.interval_contains_compensator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountPrefixSeparator.stationary_budget_jet_allocation' depends on axioms: [propext, Quot.sound]
+'CountPrefixSeparator.allocated_unknown_reads_stay_inside_count_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,122 @@
+{
+  "status": "PASS_UNBOUNDED_SHARPER_ACTUAL_CI_COUNT_WEDGE_LATE_C",
+  "new_scoped_reports": 12,
+  "kernels": {
+    "SharpCICountWedge": {
+      "interval_amplification_all_capacities": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "fifteen_rank_amplification": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_mass_budget": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_ratio_eight_fifths": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_cumulative_mass_resources": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sharp_wedge_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sharp_wedge_source_growth": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "doubling_loss_finite_sum": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sharp_entry_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sharp_interior_prefix_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sharp_last_prefix_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sharp_ordinary_seed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "bd0cfcd4bf120342f7cd90f107c11c94a201d44e933c08e72aa2d31f78deefdd",
+  "QA": {
+    "all_capacity_amplification_exact_QA": 178,
+    "exact_reference_numerator_mass_and_CDF_resources": 1337,
+    "reference_CDF_dyadic_growth_comparisons": 127745,
+    "actual_loss_nine_quarters_growth_comparisons": 112122,
+    "exact_integer_sharp_dyadic_prefix_payments": 112122,
+    "actual_ordinary_boundary_seed_payments": 8022,
+    "all_prefix_strong_C_seed_products": 750426,
+    "strictly_growing_actual_boundary_hosts": 8022,
+    "exact_prefix_minimum_all_shift_C_payments": 1438925,
+    "logical_shift_coverage": 373674035,
+    "literal_all_shift_C_products": 1816861,
+    "actual_hosts": 8022,
+    "CI_profiles": 1337,
+    "profiles_beyond_previous_wedge": 511
+  },
+  "independent_counts": {
+    "independent_numerator_mass_resources": 235,
+    "independent_reference_dyadic_CDF_comparisons": 12126,
+    "independent_literal_loss_nine_quarters_growth_comparisons": 11205,
+    "independent_all_prefix_C_seed_products": 59455,
+    "independent_literal_sharp_dyadic_prefix_payments": 11205,
+    "independent_strictly_growing_boundary_hosts": 1175,
+    "independent_all_shift_C_minimum_payments": 115345,
+    "independent_literal_C_read_products": 336117,
+    "independent_actual_hosts": 1175,
+    "independent_CI_profiles": 235,
+    "independent_profiles_beyond_previous_wedge": 157
+  },
+  "independent_state_sha256": "bc05e9bac177e3a823f63e253bf75b11f867c3c771ae0c173f24fcc348573f42",
+  "new_finite_entrance_certificates": 0,
+  "reference_mass": "PROVED ALL reference CI words with W>=15: entire nonnegative numerator mass M=B(1)=prodV-Aproper<=Dref(W)/2. NEW all-capacity induction phi^t*S_t(q)>=t*(8/7)^t is kernel checked for EVERYt>=3; product and Binet assemblies give x>=2prodV. This is NOT a finite-capacity extrapolation.",
+  "reference_resources": "PROVED W+r>=12 gives y>=8x/5 by old whole-word norm and t<=q10=34-55q. Exact coefficient identity Gref(n)=Fref(n+2)-prefixB(n+2) yields Gref(W-2)>=2x and Gref(W-1)>=7x/2. No cumulative LC assumed.",
+  "source_and_seed": "CI-count cone4w+17>=13delta makes every required loss ratio>=9/4; doubling finite-sum induction gives entire source prefix<=2current loss. Stronger reference mass pays EVERY G read, including the last. With earlier total loss a<=b, generic ordinary determinant has NEW margin Q>=A+7b2/20>0; universal late-D-LC integrates all later C reads.",
+  "wedge": "PROVED EVERY sorted actual1^alpha2^uV with nonemptyV>=3: 17u+4r+17>=13h implies EVERYCshift>=3 at EVERYN>=W+1,ALLcapacities/counts/paddings. delta<=4 old; ENTIRE delta>=5 new cone is analytic and unbounded, W>=17. NO NEW FINITE ENTRANCE PREMISE.",
+  "formal_scope": "TWELVE new scoped kernel reports include ALL-NATURAL-CAPACITY interval amplification and a genuine finite-sum loss induction, whole reference-mass/ratio and complete source/ordinary/prefix payments. Product, Binet, coefficient/source, actual mode and read-integration assembly WRITTEN, not end-to-end Lean composition theorem. All finite profiles QA ONLY.",
+  "remaining": "Actual late C now holds in UNIONu>=h-4 OR17u+4r+17>=13h. Potential failures requireu>=9,u+5<=h<=3u-2,maxcap<=2u-1,W>32,AND17u+4r+17<13h. Earlier actual/reference C, general C/A2/original coefficient UI remain OPEN; first original unresolved full-C count6 unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_union": "u>=h-4 OR17u+4r+17>=13h",
+  "sha256": {
+    "sharp_CI_count_wedge_late_C_proof.tex": "bdbc799e79465b7196c8f34ad42374a5d71db8403f850ffd54637d90a94b6c03",
+    "SharpCICountWedge.lean": "d98a669eed96ea408bb2ae2360a26c8506c7db2877005edc770530c8e4efa624",
+    "SharpCICountWedge.log": "baa3a0a2ab1ec33db976ee4ffa5a89ee31ed61926068972a8c8ce1b82591ef47",
+    "audit_sharp_CI_count_wedge.py": "e4bdc310d8091ec88290d9cabce4560834555393eac6e75c6412085cf711ddda",
+    "audit_sharp_CI_count_wedge.json": "46c918793c546a43a35cf421db7dcd311b3044110bbc21fc8e2b23132edf7a8a",
+    "verify_sharp_CI_count_wedge.py": "5cbb9a6937135fda323ca0825d457df8988ba1034e0f2a5fe10eb35e62dc2689",
+    "CI_count_wedge_late_C_verification.json": "3e8676ab7c860593ae249ebfcdfddbc8ab08314d451e0fd82095ad0a0b2372a4",
+    "four_subdegree_C_entrance_verification.json": "10fbbaf92959db642d74dfb169423162a37101f003f6c45b9565ebac99bda369",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc"
+  }
+}

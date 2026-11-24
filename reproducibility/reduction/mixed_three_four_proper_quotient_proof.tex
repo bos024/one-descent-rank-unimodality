@@ -1,0 +1,142 @@
+\section{A proper quadratic quotient theorem for the ternary/four norm cone}
+Let $\lambda=\lambda_3$, $a=\lambda-1$, $b=1/\lambda$, and
+$B=1+az+bz^2$, so $P_3=(1-\lambda z)B$.
+For $E=[3]^r[4]^s$, use ACTUAL polynomial division
+\[
+                   E=BJ+R_0+R_1z.                         \tag{1}
+\]
+This is the proper polynomial quotient, not a zero-truncated inverse.
+General finite actual mixed3/4 C, full A2 and original one-descent
+coefficient unimodality remain OPEN.
+
+\begin{theorem}
+For every $r\ge32$, $s\ge0$ such that
+\[
+                         b^{r+1}4^s\le1/64,              \tag{2}
+\]
+$J$ is strictly positive on its entire coefficient interval and is
+globally ordinary log-concave. Its two remainders satisfy
+$|R_0|,|R_1|\le1/4$. In particular this holds for EVERY
+\[
+                         s\ge16,\qquad r\ge3s-4.         \tag{3}
+\]
+Both counts are unbounded. No new finite entrance is needed.
+\end{theorem}
+
+\subsection{Forward locality replaces reverse endpoint repairs}
+The exact identity $[4]=2-P_3$ gives the COMPLETE quotient update
+\[
+ J_{r,s+1}=[4]J_{r,s}-(1-\lambda z)(R_0+R_1z),\qquad
+ (R_0,R_1)_{r,s+1}=2(R_0,R_1)_{r,s}.                      \tag{4}
+\]
+The correction in (4) is confined to ranks ZERO, ONE, TWO.
+Consequently every new ordinary minor with centre at least FOUR is
+exactly the corresponding uniform-convolution minor. Only centres
+one, two and three, and positivity at ranks zero through two, need
+a new payment. No signed correction is discarded.
+
+The previously proved ternary remainder map and its dual norm give
+\[
+ bR_0^2-aR_0R_1+R_1^2=b^{r+1}4^s.                       \tag{5}
+\]
+The initial remainder for $E=1$ is $(1,0)$, of norm $b$;
+each ternary factor multiplies the norm by $b$ and each four factor
+by FOUR. The generic complete two-natural-count induction is checked
+again in the new kernel, and the earlier exact ternary map is reused.
+The earlier coercivity theorem gives
+\[
+ (R_0^2+R_1^2)/4\le bR_0^2-aR_0R_1+R_1^2.
+\]
+Thus (2) puts BOTH remainders in the quarter box, with no phase
+assumption. We retain the exact remainders rather than replacing
+them by their norm in the polynomial update.
+
+\subsection{Three robust head minors at all real counts}
+Here is a field-independent head payment. Assume merely
+$0\le a,b\le1$, $|R_0|,|R_1|\le1/4$, and $w=r+s\ge32$.
+The first CI coefficients have the exact forms and bounds
+\[
+ E_1=w,\quad E_2=w(w+1)/2,
+\]
+\[
+ E_3=w(w+1)(w+2)/6-r\in[U_3-w,U_3],\quad
+ E_4=w(w+1)(w+2)(w+3)/24-rw-s\le U_4,
+\]
+where $U_3=w(w+1)(w+2)/6$, $U_4=w(w+1)(w+2)(w+3)/24$.
+Coefficient comparison in (1) gives
+\[
+ J_0=1-R_0,\quad J_1=w-aJ_0-R_1,\quad
+ J_i=E_i-aJ_{i-1}-bJ_{i-2}\ (2\le i\le4).
+\]
+Define
+\[
+ L_1=w-3/2,\quad L_2=E_2-w-3/2,\quad
+ L_3=U_3-E_2-2w-1/4.
+\]
+The complete successive bounds are
+\[
+ 3/4\le J_0\le5/4,\quad L_1\le J_1\le w+1/4,
+ \quad L_2\le J_2\le E_2,
+ \quad L_3\le J_3\le U_3,\quad J_4\le U_4.                \tag{6}
+\]
+For each step, a nonnegative mixture $ax+by$ lies between zero and
+$x+y$. Positivity of each preceding coefficient follows from the
+already paid lower bound; in particular $J_0,J_1,J_2>0$.
+The THREE complete scalar budgets are
+\[
+ L_1^2\ge(5/4)E_2,\quad
+ L_2^2\ge(w+1/4)U_3,\quad
+ L_3^2\ge E_2U_4.                                      \tag{7}
+\]
+Every inequality in (7), and $L_i\ge0$, is a polynomial with
+nonnegative rational coefficients after $w=32+x$, $x\ge0$.
+This whole REAL-count statement is kernel checked; no bounded integer
+sample is its proof. Combining (6)--(7) proves ALL three head minors
+$J_1^2-J_0J_2$, $J_2^2-J_1J_3$, $J_3^2-J_2J_4\ge0$.
+The kernel includes the full coefficient-bound assembly, not just
+the three sufficient polynomials.
+
+\subsection{A complete induction throughout the norm cone}
+Fix any $r\ge32$. At $s=0$ use the EXISTING pure-ternary proper
+quotient theorem, proved for every $r\ge18$ in
+\texttt{tribonacci\_rich\_reverse\_quotient\_proof.tex}.
+In particular this is a previously proved unbounded pure entrance,
+not an assumed new diagonal.
+
+Fix a target $s$ obeying (2). Every earlier four count has SMALLER
+norm, since it is $b^{r+1}4^j$ with $j\le s$. Suppose $J_{r,j}$
+is positive globally LC. Uniform convolution by $[4]$ is positive
+globally LC. By (4), all coefficients at ranks at least three are
+unchanged; all minor centres at least four are unchanged as well.
+The new remainder is in the quarter box by its target norm, so
+(6)--(7) pay the new ranks zero, one, two and all THREE missing
+minor centres. This proves positive interval support and global LC
+of $J_{r,j+1}$. The entire increasing-norm target induction is
+kernel checked, including the NEW-norm guard used in this step.
+It proves every target (2). No primitive LC is inferred from ordinary
+LC of $J$.
+
+For the explicit cone (3), the exact reciprocal-root bounds
+$1/2\le b\le6/11$ give $4b^3\le2/3$. If $r+4\ge3s$, then
+\[
+ (b^{r+1}4^s)b^3=b^{r+4}4^s\le(4b^3)^s.
+\]
+Since $b^3\ge1/8$, for every $s\ge16$,
+\[
+ b^{r+1}4^s\le8(2/3)^s\le8(2/3)^{16}<1/64.
+\]
+Also $r\ge3s-4\ge44>32$. This proves the entire explicit cone,
+with all natural exponents and threshold arithmetic kernel checked.
+
+\paragraph{Exact scope.}
+Nine new clean scoped reports cover the real-count head polynomials,
+full three-head-minor assembly, unit-mixture bounds, proper four-factor
+correction, norm scale, whole two-count norm, whole target induction,
+generic interval-minor payment and the entire explicit norm cone.
+The earlier pure-ternary quotient/coercivity/root certificates are
+reused without recounting. Polynomial division and LC-convolution
+identifications are written proofs. There is NO new finite proof
+premise; extra exact tests are QA only. This theorem is not an actual
+finite-arm derivative theorem. Its finite-count source and both
+remainder coefficients must still be retained in a subsequent actual
+ordinary-tail or C bridge.

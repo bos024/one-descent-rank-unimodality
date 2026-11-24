@@ -1,0 +1,136 @@
+{
+  "status": "PASS_ALL_STATIONARY_THREE_REFERENCE_AND_BINARY_DENSE_ACTUAL_COMPLETE_C",
+  "new_scoped_reports": 5,
+  "kernels": {
+    "StationaryTernaryReferenceC": {
+      "StationaryTernaryReferenceC.whole_unperturbed_golden_reference_controls": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryTernaryReferenceC.complete_both_left_golden_residual_entrances": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryTernaryReferenceC.whole_terminal_budget_inherited_from_forward_CI": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryTernaryReferenceC.all_two_ended_window_read_guards": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "StationaryTernaryReferenceBase": {
+      "StationaryTernaryReferenceBase.complete_fixed_six_residual_tail": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "reference": "EVERYr>=0:infiniteBINARYreferenceR=B3r+S3r*H2 hasFULLC EVERYcurrent/EVERYshift>=3,THREEcountUNBOUNDED. r<=5OLDweight32actualfiniteprefixlimit;ALLr>=6NEWresidualtailinduction+ordinaryentry+OLDlateReferenceC.",
+  "residual": "ALLr>=6:H=R-phi*zR hasSTRICTLYpositiveH2..H_W andLCatEVERYr+3<=n<W=3r. ALTERNATINGtailH_(W+j)=(-q)^j*tauKEPT,tau=(2q\u00b2)^r. CompleteprefixHtailONLY,notfullalternatingFPSLC.",
+  "reference_ordinary": "ALLr>=6:ordinaryREFERENCEF LC EVERYcentre r+3<=n<=W. FIRSTlatecentreW+1STRICTLYNEGATIVEforALLr>=1. ReferenceordinaryLCNOTclaimedbeyondW;referenceFULLCindependentlyinheritsOLDlateCfromW-1.",
+  "actual": "EVERYACTUAL1alpha2u3r,ALLalpha>=1,r>=0,u>=max(0,2r-3):FULLC EVERYcurrent/EVERYshift>=3. BOTHbinaryandternarycountsUNBOUNDED. Atu=2r-3firstbinarylossEXACTLYW-1lowersonlycurrentD;earlierprefixreference. AllN>=WOLDuniversalACTUALC. r<=5OLDweight32/purebinary.",
+  "heredity": "EntireHLCr-append:unperturbedKcontrols|M_K|<=Kprev/K<=2KprevALLn>=6;TWOnewleftentriespaidbylosses1,r+2-phi,(r\u00b2+5r+10)/2-phi(r+2),c-4b-1=r(r-7)/2+(2-phi)(r-2)>=0. MiddleLC3windowfromtruncatedpositiveoldtail;penultimatenextlowered;oneNEWterminalminor=OLDpureforwardCIcorner+2q*tau>=0.",
+  "entrance": "ONEcompletefixedr6base:11positiveH8..H18+9positiveLCminorscentres9..17. TWOindependentrebuilds:C/(1+qz)forwardvsCLOSEDpositiveB3r+S3rH2/Fibonacci-binomialsum. ALL20scalarswithinternallyPROVEDexactquadraticrootintervalkernelcheckedinONEaggregate;NOnewactualhostfiniteentrance.",
+  "formal_scope": "FOURnewcleanstandardaxiomgenericreports(fullunperturbedKrecurrence/minormajorant,completeTWOleftpayments,oldCIterminalbudgetinheritance,two-endedNatreadguards)+ONEfixedbaseaggregate. Genericthirdrecurrencehelpersreused/copied,notseparatelyrecounted. Wholecoefficient/reference/actualassemblyWRITTEN,notendtoendLeancompositions.",
+  "remaining": "OriginalgeneralUI/generalC/fullA2OPEN. Richr>=2u/u>=33criticalordinarydiagonalSTILLOPEN. NewACTUALbinarydenseconeisu>=2r-3,notallmixed2/3profiles. Finiteordinaryactual/reference-relativeLCdiagnosticremainsUNPROVED.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "counts": {
+    "COMPLETE_independent_fixed_six_H_tail_values": 11,
+    "COMPLETE_independent_fixed_six_H_tail_minors": 9,
+    "independent_reference_H_LC_tail_minors": 4080,
+    "independent_reference_ordinary_LC_head_minors": 4140,
+    "independent_reference_FIRST_late_LC_failure_controls": 60,
+    "independent_terminal_corner_payments_from_OLD_forward_CI": 60,
+    "independent_REFERENCE_all_shift_prefix_payments": 10470,
+    "independent_REFERENCE_logical_shift_reads": 1143680,
+    "independent_closed_reference_hosts": 60,
+    "independent_exact_ACTUAL_FIRSTbinary_loss_and_prefix_controls": 330,
+    "independent_ACTUAL_dense_all_shift_prefix_payments": 50898,
+    "independent_ACTUAL_dense_logical_shift_reads": 6678929,
+    "independent_positive_suffix_box_dense_hosts": 330
+  },
+  "QA": {
+    "exact_golden_residual_LC_tail_minors": 22185,
+    "exact_reference_ordinary_LC_head_minors": 22330,
+    "exact_reference_FIRST_late_ordinary_LC_failure_controls": 145,
+    "exact_prefix_minimum_all_shift_C_payments": 178638,
+    "logical_shift_coverage": 41508803,
+    "infinite_binary_stationary_three_reference_hosts": 145,
+    "actual_binary_dense_complete_C_hosts": 548
+  },
+  "independent_state_sha256": "30bbe711cd8fa8ee600088d2e59b3b4513beea4c02e334c8e9c51195be73155c",
+  "seconds": 2.7039999999979045,
+  "local_files": [
+    "stationary_ternary_reference_and_binary_dense_C_proof.tex",
+    "StationaryTernaryReferenceC.lean",
+    "StationaryTernaryReferenceC.log",
+    "StationaryTernaryReferenceBase.lean",
+    "StationaryTernaryReferenceBase.log",
+    "build_stationary_ternary_reference_base.py",
+    "stationary_ternary_reference_base_data.json",
+    "audit_stationary_ternary_reference_C.py",
+    "audit_stationary_ternary_reference_C.json",
+    "verify_stationary_ternary_reference_C.py"
+  ],
+  "dependency_files": [
+    "ternary_forward_inverse_verification.json",
+    "ternary_forward_inverse_clean_log_verification.json",
+    "ternary_forward_inverse_and_diagonal_companion.tex",
+    "ordinary_tail_to_complete_C_verification.json",
+    "OrdinaryTailToCompleteC.lean",
+    "OrdinaryTailToCompleteC.log",
+    "pure_ternary_complete_C_verification.json",
+    "first_missing_renewal_envelope.tex",
+    "reference_ordinary_golden_prefix_verification.json",
+    "previous_boundary_C_verification.json",
+    "previous_boundary_C_proof.tex",
+    "universal_physical_boundary_C_verification.json",
+    "multitail_binary_prefix_finite_principle_verification.json",
+    "RenewalRootPrimitiveCut.lean",
+    "RenewalRootPrimitiveCut.log",
+    "TernaryRichCompleteC.lean",
+    "TernaryRichCompleteC.log",
+    "verify_ternary_forward_inverse.py",
+    "verify_subdegree_CI_entrance.py"
+  ],
+  "sha256": {
+    "stationary_ternary_reference_and_binary_dense_C_proof.tex": "4a16936d3517b631109c091162ad477a8cc4dc54d746f7abfc99241bbb586f47",
+    "StationaryTernaryReferenceC.lean": "21a4d8cd1c4263c5b3aaf4c91d65fc0a2df0103980c01925b54ff2dfd926e674",
+    "StationaryTernaryReferenceC.log": "8aa088f073b42445ea52163752b7922a0879841d0e8243c12f919832de3904e1",
+    "StationaryTernaryReferenceBase.lean": "519662ff931f4b8f5fb667407851086ef0f6459f56e502794b81ee4537b296f3",
+    "StationaryTernaryReferenceBase.log": "bdbb82873e065fafab03baff8bdd9cf9cad77222bc9737a27840109f1cf1210d",
+    "build_stationary_ternary_reference_base.py": "7715ae1901814a713f25fd2d441c1c6161b6531103461dc0a3e9fc4835df704b",
+    "stationary_ternary_reference_base_data.json": "0a652e2d13eb9e93c92f775a8a04f6d95601e6ed37a608ae5576e6580378f06a",
+    "audit_stationary_ternary_reference_C.py": "7dbaeddc79eb50286bcaed56e68211be37badabae657b50131268dbd910ab459",
+    "audit_stationary_ternary_reference_C.json": "6fef9fbb7bd14c01cd0f2de3e29234fc27a548f099b41c890f963fc25ac79b93",
+    "verify_stationary_ternary_reference_C.py": "4b5f98144eba077df388f5bdf08eafdd990dce6eab7dafd8b28a07ed35ed776b",
+    "ternary_forward_inverse_verification.json": "e42b6bd879c88f8162ce6176422c580ef5198cfe994ad114ab7c7a4266e03246",
+    "ternary_forward_inverse_clean_log_verification.json": "b5df2f39be0528d77cbfd3d7ade84a2ab753172c4c1e9a159366db85c702c46a",
+    "ternary_forward_inverse_and_diagonal_companion.tex": "af4c358637fd589e097ce18d03f73d94204a19a7b34e74a7cc2de560e4c8c8aa",
+    "ordinary_tail_to_complete_C_verification.json": "1c7d690723e8640a87ccea1684155ec680fc4e83f102cba11590273f74ed7b85",
+    "OrdinaryTailToCompleteC.lean": "ce6407b97ac6a0554067c5a04ba6bbacf912fd65a1187788536045dfff02a8fb",
+    "OrdinaryTailToCompleteC.log": "caf50f66758fd1c15ddfe06d8bdbd5aa1246c073df2b2bdb056b68a7c1001057",
+    "pure_ternary_complete_C_verification.json": "40e32acbadd64b8af2cdcf56fb65ec49fd69f275dcf78590a5cee845080de57e",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8",
+    "reference_ordinary_golden_prefix_verification.json": "b5c6eac22baa0a470ec1760c0caef3363131db33482d0926da87329c7dba9788",
+    "previous_boundary_C_verification.json": "e4a02f19b0885472b5842873030e836f277903ead80e0d9f1fc392664752e2e0",
+    "previous_boundary_C_proof.tex": "026cd1a5aaee8879c640ac8364f3ac4f32a2e64cf61b0e2e03317ef6d82166fd",
+    "universal_physical_boundary_C_verification.json": "51b668dbfac37b85c69bdccaf1b542fb3a11497ceb96a4aa1fed052419579fb0",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "RenewalRootPrimitiveCut.lean": "357b43c1a3db50b7a4679b552331b1e7f2683f15d1c2accfae5cd1a49ced873c",
+    "RenewalRootPrimitiveCut.log": "44aa643214fdbee9c03163c25288cdb07c5e7b698a18115f49cef719743264be",
+    "TernaryRichCompleteC.lean": "cb6a22a0a007c8989acc75cbf6388452c14e3479386abcd5e8e45868c667d36f",
+    "TernaryRichCompleteC.log": "f083599130ded5381703697b522d63da8611b557f4a8d83d9147e42c2263df5e",
+    "verify_ternary_forward_inverse.py": "f6e3c8e04b274830d3795d3f366b87d25184bd83cbcf2f9027ef71fa2cfd68a5",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63"
+  }
+}

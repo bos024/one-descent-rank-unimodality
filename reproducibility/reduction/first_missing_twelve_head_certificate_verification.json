@@ -1,0 +1,172 @@
+{
+  "status": "PASS_INDEPENDENT_COMPLETE_FIRST_MISSING_TEN_THROUGH_TWELVE_SOURCE_OR_HEAD_CERTIFICATE",
+  "counts": {
+    "complete_rank_states": 3241,
+    "rank_strict_head_paid": 859,
+    "rank_source_paid": 1983,
+    "unpaid_rank_states": 399,
+    "complete_owner_rank_inputs": 1858242,
+    "noncritical_owner_edges": 1786199,
+    "positive_curvature_owner_edges": 72043,
+    "direct_owner_source_paid": 72043,
+    "distinct_canonical_owners": 945847
+  },
+  "by_K": [
+    {
+      "K": 10,
+      "S": 18,
+      "counts": {
+        "complete_rank_states": 684,
+        "rank_strict_head_paid": 170,
+        "rank_source_paid": 451,
+        "unpaid_rank_states": 63,
+        "complete_owner_rank_inputs": 74983,
+        "noncritical_owner_edges": 70106,
+        "positive_curvature_owner_edges": 4877,
+        "direct_owner_source_paid": 4877,
+        "distinct_canonical_owners": 42688
+      }
+    },
+    {
+      "K": 11,
+      "S": 23,
+      "counts": {
+        "complete_rank_states": 1048,
+        "rank_strict_head_paid": 279,
+        "rank_source_paid": 641,
+        "unpaid_rank_states": 128,
+        "complete_owner_rank_inputs": 334045,
+        "noncritical_owner_edges": 316047,
+        "positive_curvature_owner_edges": 17998,
+        "direct_owner_source_paid": 17998,
+        "distinct_canonical_owners": 175213
+      }
+    },
+    {
+      "K": 12,
+      "S": 28,
+      "counts": {
+        "complete_rank_states": 1509,
+        "rank_strict_head_paid": 410,
+        "rank_source_paid": 891,
+        "unpaid_rank_states": 208,
+        "complete_owner_rank_inputs": 1449214,
+        "positive_curvature_owner_edges": 49168,
+        "direct_owner_source_paid": 49168,
+        "noncritical_owner_edges": 1400046,
+        "distinct_canonical_owners": 727946
+      }
+    }
+  ],
+  "kernel_obligations": 75372,
+  "chunks": 754,
+  "modules": 31,
+  "ALL_owner_state_sha256": "73d31954e668ac3c9cf682512519730739a5bc946510de27b4c0512d1b4188ab",
+  "critical_stream_sha256": "a63ee294996b653c2ea7da5f559f762c08076c47781c1ce950b17eb81bc6fc74",
+  "independent_model": "Positive binary binomial suffix boxes plus cached nonbinary suffix boxes. Degree/reverse-rank and maximum-part grammars; product-fraction source ratios. ALL noncritical and critical owner states reconstructed; EVERY critical operand and public kernel obligation matched.",
+  "formal_scope": "All critical source SUM inequalities, all rational numerator/denominator signs and strict-head rank pairs checked in Lean. Finite word grammar and noncritical classifications independently exact, NOT end-to-end Lean.",
+  "kernels": {
+    "FirstMissingTwelveHeadGuards": {
+      "FirstMissingTwelveHeadGuards.all_next_three_genuine_strict_head_budgets": [
+        "propext"
+      ],
+      "FirstMissingTwelveHeadGuards.canonical_owner_count_and_padding_reduction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FirstMissingTwelveHeadGuards.whole_proper_head_read_and_raw_owner_safety": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FirstMissingTwelveHeadGuards.every_negative_birth_exception_has_a_genuine_strict_head": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "FirstMissingTwelveCriticalCertificate": {
+      "FirstMissingTwelveCriticalCertificate.complete_all_rank_and_critical_source_payments": [
+        "propext"
+      ]
+    }
+  },
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "seconds": 71.64100000000326,
+  "sha256": {
+    "build_first_missing_twelve_head_certificate.py": "cd31d931c53e427ea12c7f5b0d4059fa0e94fa6e16efff7456dd0e26dad78ad0",
+    "first_missing_twelve_head_certificate_data.json": "aad83af6f73085e9729bf350c8e9b9c2c76dee426980428eeb0275719c565e7c",
+    "first_missing_twelve_critical_rows.jsonl.gz": "452dfab33c37bb8c303f2fed00e1d6ef7890a53bacc4dbf3b157e87cc9aa6619",
+    "FirstMissingTwelveCriticalCertificate.lean": "c2c529fc7f716a99b1c8e49a31183b03c3ccd88b0a39c886355795f33408f1f8",
+    "FirstMissingTwelveCriticalCertificate.log": "2b21137615321e3405a340760afc048c416b15520c19be209f1a84a4e2d0ae50",
+    "FirstMissingTwelveHeadGuards.lean": "48a801aba492c093ef09e541ca15cc4d7adbd19705f2d8e446539a8623829cd5",
+    "FirstMissingTwelveHeadGuards.log": "5bca35bb4a582c069588aec0750e62ba689ce9784b18f404e16e775ae77a26ab",
+    "verify_first_missing_twelve_head_certificate.py": "ec6cdce395ff674c09d93a78b66450325da9e50852e7be4ed0c9e765a294e8a8",
+    "build_first_missing_twelve_lean.ps1": "132ba4c336b16535143c51320993208f31861385fb51bad38fa7257fb0d57db1",
+    "FirstMissingTwelveCriticalPart00.lean": "b1cf26371b6ad3711dcc75fa4e269019317ab19faf1b7809199f8408a4b6a2ca",
+    "FirstMissingTwelveCriticalPart00.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart01.lean": "a06a17e2b933029ff7d21372848b402d36149b4b392c5ee3e53535ef85bb16e0",
+    "FirstMissingTwelveCriticalPart01.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart02.lean": "5142a923d24e87a1905a4a611bbd98ae44f6fae85b4c0e52509afe65b2052c61",
+    "FirstMissingTwelveCriticalPart02.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart03.lean": "778a1ba41d1e92a04f17b66eb8a39d5cbe6f27d835e6d484cb5308c7f1856c42",
+    "FirstMissingTwelveCriticalPart03.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart04.lean": "62bbf991fbabd2fb58176ef4d732dd1fe61159a706d4e3c5814e282eb2736669",
+    "FirstMissingTwelveCriticalPart04.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart05.lean": "279260f932eca5a97317aa3d5df1ade844bc2c5abd4c53e7b09e108cba11fc2b",
+    "FirstMissingTwelveCriticalPart05.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart06.lean": "237cee5ce8961b4bdd56d8d644fc66ab8d756ef14ccf2b694f5788eadf42498c",
+    "FirstMissingTwelveCriticalPart06.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart07.lean": "f46d68206251aa13e0e921a3f7a946a683a1497af03abc0e3bdc54820d770238",
+    "FirstMissingTwelveCriticalPart07.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart08.lean": "d180cd8355ae05da25aacf4847694fe5db0f8664e4804379654919b1da80906e",
+    "FirstMissingTwelveCriticalPart08.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart09.lean": "0463eeffdfe85bd2d11759cd851430c8cb3faa1cb4efd7ffe7dfe95ce91fa042",
+    "FirstMissingTwelveCriticalPart09.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart10.lean": "26a80f81af448d4e661a8bc1bf2d1b31ccd34edb29b3d87dd2a1d57ea1fcef99",
+    "FirstMissingTwelveCriticalPart10.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart11.lean": "d5266bc0df02e755ed6da40ac5949e40cb87e241e7b6542e13518d705fb2b081",
+    "FirstMissingTwelveCriticalPart11.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart12.lean": "ac11a0356b3ff3e5f3fee6e4a28032c32e0eb4e6994be8896efd8ce4a9fea640",
+    "FirstMissingTwelveCriticalPart12.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart13.lean": "f8469498a08fe8a30dba6937371416cecf8d49e065b14d47708a6b39eb5f4680",
+    "FirstMissingTwelveCriticalPart13.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart14.lean": "981d8e41d962a54be1e9e1484795bc6f766de387bfbb43a74e5ded8c6e4c51e2",
+    "FirstMissingTwelveCriticalPart14.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart15.lean": "3de2ae30f02b66e38ac684788c2d7757798cc98620402b1569691d8e19ea0557",
+    "FirstMissingTwelveCriticalPart15.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart16.lean": "4db63ad6a589ffc5150e79041a2ab796358e04d46613137b9cd4092386ee4ac1",
+    "FirstMissingTwelveCriticalPart16.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart17.lean": "af1f6904d7e0d244788222ce6ee3fb3749e32ec3e35130199e9d2e322bd0b79d",
+    "FirstMissingTwelveCriticalPart17.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart18.lean": "ac01617b7dcae1fd995fdb337b37f02f5654d5f14afb712c4443f190e7bb6e32",
+    "FirstMissingTwelveCriticalPart18.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart19.lean": "0a92e13ea2f62630d9b312ef9cf0319ac9036209e4c149688c8012460ba96037",
+    "FirstMissingTwelveCriticalPart19.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart20.lean": "927862de0a9ed9560aea39c2a55fb217735af28c24a57b5207cadaebc9283f2d",
+    "FirstMissingTwelveCriticalPart20.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart21.lean": "3badf22dd32429c84b85b80843025ec475d5edec2af4d5b160b602af1676e196",
+    "FirstMissingTwelveCriticalPart21.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart22.lean": "27692c9276197e06b766054624675e1a3133c0fae291d9f4ab6081e054feac93",
+    "FirstMissingTwelveCriticalPart22.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart23.lean": "1c1434d6e50fe90f50e784aa7ea46ef48577e5b839365fcf327079ef127642aa",
+    "FirstMissingTwelveCriticalPart23.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart24.lean": "6867f04e8fa63751cdff437034b3686ebcc9f5c0aff15833a59965e072758661",
+    "FirstMissingTwelveCriticalPart24.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart25.lean": "cb74767c1ece1c1679cf964f7cc8ced47ab0b307cf45be3d58e00f757b70ea20",
+    "FirstMissingTwelveCriticalPart25.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart26.lean": "15e6601727c0b84f9e5ecbe5f525931211d8a72bbdd224024d79aceab2b91ab1",
+    "FirstMissingTwelveCriticalPart26.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart27.lean": "b1a8fac2df67fc49265a23e159d04975360b2c42a6b742a5058e08874f069bbc",
+    "FirstMissingTwelveCriticalPart27.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart28.lean": "28246005302e996e44bec56f088e2e4e8d14038f2c5f9b01842e2ee3c9d57dc4",
+    "FirstMissingTwelveCriticalPart28.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart29.lean": "e5a03aeb164e937dba67d898807f5f37230c3117c75a25073635dd6ff02259d0",
+    "FirstMissingTwelveCriticalPart29.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FirstMissingTwelveCriticalPart30.lean": "323fd23f12f716ddd9e647d75fdcd1cea6cabe91770037ec45f07223cff516a2",
+    "FirstMissingTwelveCriticalPart30.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

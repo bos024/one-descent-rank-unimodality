@@ -1,0 +1,218 @@
+\section{A first-missing-six ORIGINAL coefficient criterion}
+The bound five in the frozen whole-RAW-source criterion is sharp.
+We do not change that theorem: at first missing weight six the
+raw positive source can have a genuine hole. The actual legal
+append uses a sufficiently long uniform window, which repairs
+the exact hole. This gives a stronger ORIGINAL coefficient theorem.
+
+\begin{theorem}[First-missing-six coefficient criterion]
+Let $\mathcal K$ be a final-deletion-closed class of normalized
+actual increasing arms, including its rectangular and empty bases.
+Assume every nonrectangular member has FULL C and first missing
+weight $\kappa\le6$. Then every pair in $\mathcal K$ has FULL A2.
+For EVERY strict central peak, the ORIGINAL UNAMPLIFIED strict
+core and BOTH relative rank polynomials are coefficient unimodal.
+These A2 and original coefficient conclusions also hold after
+ONE arbitrary legal heavier final append to either arm.
+For two nonrectangular members the positive part of $[t](2-z)q_Xq_Y$
+is unimodal with initial positive support at EVERY $t\ge3$.
+The raw source itself and its two-window positive part need NOT
+be unimodal; those stronger conclusions are explicitly excluded.
+\end{theorem}
+
+\subsection{The sole possible source-tail exception is an exact actual arm}
+Let $p=q_Xq_Y$ and $E=(2-z)p$, with first/last ordinary modes
+$\mu,\nu$. The existing FULL-C argument proves A1 independently
+of A2: a strictly negative source cannot be followed by a positive
+one. The frozen post-LAST-mode argument proves
+\[
+       n>\nu,\ E_n\ge0\ \Longrightarrow\ E_{n+1}\le E_n             \tag{Q}
+\]
+when both forward arms rise, using FULL C, and when both do not
+rise, using the actual first-half and post-LAST-mode resources.
+We must classify only the mixed case.
+
+Orient its nonincreasing forward owner as $Z=1^\alpha U$, of
+weight $a$. If it has at least two non-one parts, the OLD gap-five
+theorem applies when the rising opposite has $\kappa=6$:
+$\alpha\ge1=\kappa-5$, and $\kappa=6$ forces at least four
+opposite non-one parts. For smaller opposite $\kappa$, reuse
+the frozen pointwise first-missing-five proof; its mixed argument
+imposes no first-missing restriction on the nonincreasing owner.
+The rising opposite supplies the required entire nondecreasing
+source prefix. Thus (Q) holds in all these mixed cases.
+
+If $Z$ has ONE non-one part, its reverse positive primitive is
+the indicator of $[0,\min(\alpha+1,t)-1]$. There is no increasing
+primitive edge at a nonnegative rank. In the exact mixed identity
+\[
+ E_{n+1}-E_n=(s_{r+1}-s_r)-(Q_{j+1}-Q_j),\quad
+ r=a-j,\quad Q=E_YF_Z,
+\]
+the only possible positive curvature is at $r=-1$, where it is one.
+Its compulsory birth term is at $a+2-\kappa_Y$.
+For $a\ge3$, $3\le\kappa_Y\le6$, that index lies in $[0,a-1]$
+EXCEPT when $a=3$, $\kappa_Y=6$. This whole integer dichotomy
+is a new kernel. In the exception the owner is uniquely
+$Z=(1,2)$, also kernel checked. The reverse edge is exactly
+$n=b-1\longrightarrow b$, where $b=\operatorname{wt}Y$.
+This is a complete classification, not a list of sampled exceptions.
+
+\subsection{The entire exceptional source and its positive prefix}
+Suppose $X=(1,2)$ and $\kappa_Y=6$. Then $b\ge15$ by the OLD
+first-missing triangular bound. Actual ranks through five are full:
+\[
+ F_X=(1,1,2,1),\quad (F_Y)_0,\ldots,(F_Y)_5=(1,1,2,4,8,16).
+\]
+Put $y=(F_Y)_6$. Positivity of every actual supported rank and
+first missing six give $1\le y\le31$. For $P=F_XF_Y$,
+\[
+       (P_0,\ldots,P_6)=(1,2,5,9,17,34,y+36).
+\]
+Since $P_6>P_5$, ordinary unimodality forces
+$\nu\le b-3$ for $p=P^{\rm rev}$.
+Exact reversal gives the WHOLE exceptional tail:
+\[
+\begin{array}{c|rrrrrrr}
+ n&b-2&b-1&b&b+1&b+2&b+3&b+4\\\hline
+ E_n&32-y&0&1&1&-1&0&-1.
+\end{array}                                                     \tag{1}
+\]
+All further coefficients vanish. Its first displayed value is
+at least one. The coefficient identities and strict mode edge
+are verified in a new exact real kernel.
+
+Assume FULL OLD A2. Through $\mu$, the exact weighted-difference
+identity transfers its unimodality to the source prefix, whose
+values are positive. The entire ordinary maximum plateau joins
+as in the frozen criterion. Beyond $\nu$, (Q) holds at every edge
+EXCEPT $b-1\to b$. Since $E_{b-2}\ge1$, neither a zero nor a
+negative source could occur earlier in this tail: (Q) prevents
+zero recovery there, and A1 prevents negative recovery.
+Consequently the ENTIRE prefix
+\[
+                    c=(E_0,\ldots,E_{b-2})
+\]
+is positive, integer, unimodal, with EVERY coefficient at least one.
+The zero at $b-1$ is retained and is not declared unimodal.
+
+\subsection{A complete three-window repair theorem}
+Let $c$ be ANY finite positive unimodal real sequence on $[0,L]$,
+each coefficient at least one. Let $E$ agree with $c$ there,
+$E_{L+1}=0$, $E_{L+2}=E_{L+3}=1$, and $E_n\le0$ thereafter.
+For EVERY $t\ge3$, let $W=[t]E$ with zero extension. Then
+$W^+$ is globally unimodal with initial positive support.
+
+Up through $L$, $W$ agrees with the positive uniform convolution
+of the zero-extended unimodal prefix $c$, hence has no strict
+fall followed by a rise there. At the THREE critical incoming
+ranks $L+1,L+2,L+3$, use the COMPLETE difference identity
+\[
+                         W_n-W_{n-1}=E_n-E_{n-t}.       \tag{2}
+\]
+If $n<t$, there has been no outgoing term and every previous
+input is nonnegative; no fall has occurred yet. If $n\ge t$,
+then $0\le n-t\le L$ because $t\ge3$. Hence $E_{n-t}\ge1$
+and $E_n\le1$, so EVERY such difference is nonpositive.
+After $L+3$, whenever the window still reads the nonnegative
+prefix its incoming term is nonpositive and its outgoing term
+nonnegative. After the whole window lies in the nonpositive
+tail, its positive part is zero. Thus the positive window cannot
+fall and then rise. It has positive initial value and finite support,
+so it has one whole up/down mode and an initial positive support.
+
+The new kernels verify the ENTIRE critical-rank payment, signed
+tail with clipping, global no-revival splice, and the finite
+no-revival-to-whole-mode implication for arbitrary sequence
+functions and unbounded indices. Uniform convolution of the
+unimodal finite prefix and actual polynomial identification
+are the written assembly above, not a sampled assumption.
+
+Apply this theorem to (1), with $L=b-2$. At $t=2$ it is FALSE:
+the frozen actual pair $(1,2)$ and $(1,5,5,5,5)$ has
+\[
+              ([2]E)_{20},([2]E)_{21},([2]E)_{22}=(3,1,2).
+\]
+Thus the three-window restriction is essential for this universal
+source-repair statement. It is not an original coefficient counterexample.
+
+\subsection{Every legal heavier append has a sufficient window}
+Induct on the total number of non-one parts, as in the frozen
+FULL A2 proof, orienting the NEW heavier arm as $X=Zt$, of
+weight $a'\ge b$. Rectangles and heavier one-part arms use their
+OLD complete bases. Otherwise both old arms are nonrectangular,
+belong to $\mathcal K$, and FULL OLD A2 holds by induction.
+
+If the old pair is nonexceptional, (Q) holds everywhere and the
+OLD entire source-cone splice gives every positive signed window.
+If it is exceptional and the appended old arm is $(1,2)$,
+heaviness gives $t\ge b-3\ge12$. If the appended old arm is
+the first-missing-six arm, sorted legality gives
+$t\ge\max Z\ge\kappa_Z-1=5$. Either way $t\ge3$.
+This complete two-case guard is a new Nat kernel.
+Therefore the ACTUAL window required in every induction step
+has unimodal positive part with initial positive support.
+
+The exact new product/source are still
+\[
+ q_Xq_Y=[t]q_Zq_Y+z^{a'}q_Y,\quad
+ (2-z)q_Xq_Y=[t]E+z^{a'}(2-z)q_Y.
+\]
+The NEW first ordinary mode is strictly below $a'$ by the OLD
+actual midpoint theorem, including equal weights. Thus its
+entire rising source prefix equals the repaired window. It is
+positive there, so the weighted-difference sign identity proves
+NEW full A2, followed by the zero positive-difference tail.
+This closes the induction without a false whole-raw-source premise.
+After full A2 is established, the same classification and repair
+give EVERY three-or-longer source window for every nonrectangular pair.
+
+The same argument allows ONE arbitrary legal heavier append
+from any old pair in $\mathcal K$; the new appended arm need
+not have C or first missing weight at most six. The original
+strict-core and BOTH-relative conclusions now follow from the
+OLD full-A2/least-peak/reflection join. Final deletion and
+maximum stripping stay in $\mathcal K$ or the qualifying heavier
+append family, exactly as in the frozen first-missing-five proof.
+This is a genuine original COEFFICIENT bridge, not a cumulative-LC inference.
+
+\subsection{An explicit larger original family with two unrestricted dominant arms}
+Let $\mathcal A_{12}$ be the union of:
+\begin{enumerate}
+\item the frozen $\mathcal A_{11}$;
+\item ALL $1^\alpha2^u3^r4^sT$ with
+      $T\ge\max(5,2(3r+4s))$;
+\item ALL $1^\alpha2^uV$ where $V$ has capacities in $\{3,4,5\}$
+      and TOTAL nonbinary weight at most 32.
+\end{enumerate}
+Include rectangular/empty bases; all stated counts, padding and
+dominant capacities are unbounded where the display permits them.
+The new full capacity-four C theorem and OLD uniform dominant-append
+theorem give FULL C for item two at ALL $u,\alpha$. Empty old
+nonbinary tails use OLD one-jump C. Item three uses the OLD COMPLETE
+nonbinary-weight-32 C theorem, including arbitrary binary prefix.
+Every arm has $\kappa\le6$: a last append raises it by at most one,
+and capacities at most five also give that bound directly.
+The union is final-deletion closed. Thus the theorem applies.
+
+BOTH arms may now independently have dominant final jumps,
+with no weight-order restriction between the unappended pair.
+This extends the OLD family allowing only ONE heavier jump.
+The ORIGINAL strict core and BOTH relatives are unimodal at
+EVERY strict peak; ONE further arbitrary legal heavier append
+is permitted by the new criterion. No amplification is used.
+
+\paragraph{Formal scope and remaining research.}
+Nine new clean scoped kernels prove the exact exceptional-owner
+classification, its source/mode edge, entire three-window repair
+with all clipping and finite-mode joins, and every legal-heavier
+window guard. The actual source classification uses the OLD gap-five
+theorem and its already frozen complete finite complement, OLD
+both-rising C/actual nonrising resources, A1, and OLD full-A2 source
+identities. Actual generation, uniform convolution, whole A2 and
+original-family assembly are the written proof here, not an
+end-to-end Lean composition formalization. NO new finite proof
+premise is introduced; all finite diagnostics are QA only.
+The OLD raw-source-five sharpness remains valid. Arbitrary
+first missing weights beyond six, general higher-capacity C/A2
+and the GENERAL original conjecture remain OPEN.

@@ -1,0 +1,22 @@
+'SourcePrefixFreeFirstHeight.maximal_scope_late_layer_and_terminal_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SourcePrefixFreeFirstHeight.exact_first_birth_index' depends on axioms: [propext]
+'SourcePrefixFreeFirstHeight.later_layer_terminal_exclusion' depends on axioms: [propext, Quot.sound]
+'SourcePrefixFreeFirstHeight.source_drop_pays_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourcePrefixFreeFirstHeight.one_nonnegative_component_pays' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourcePrefixFreeFirstHeight.heavier_owner_shift_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourcePrefixFreeFirstHeight.conditional_second_birth_pays' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourcePrefixFreeFirstHeight.window_positive_curvature_le_entering' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SourcePrefixFreeFirstHeight.interval_contains_entering' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourcePrefixFreeFirstHeight.first_half_beyond_opposite_equal_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SourcePrefixFreeFirstHeight.equal_weight_first_source_is_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SourcePrefixFreeFirstHeight.unit_curvature_paid_by_second_interior_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

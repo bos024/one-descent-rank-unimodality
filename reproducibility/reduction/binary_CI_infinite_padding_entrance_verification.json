@@ -1,0 +1,79 @@
+{
+  "status": "PASS_UNBOUNDED_CI_INFINITE_PADDING_ENTRANCE_AND_HALF_PADDING_REDUCTION",
+  "new_scoped_reports": 7,
+  "kernels": {
+    "backward_geometric_LC_transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_finite_backward_integration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_geometric_deficit_LC_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "alternating_deficit_robust_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "first_robust_numerator_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "kernel_last_row_absorbs_next_numerator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "weighted_rows_and_last_LC_absorption": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "analytic": "EVERY CI L=prod[t], all t>=3, h=sum(t-1), EVERY m>=h: C=L*sum_(k=0)^m(z+z^2)^k is ordinary LC at EVERY centre n>=m, with no count/capacity/degree bound. NEW proof: Q_u=trunc_(<=u)(1+z)^u/(1+qz) is ULC(u); quantitative all-read kernel plus Cauchy-Binet prove robust LC budget for LQ_u with L0=1, L1<=(u-1)/2. CI spectral amplitude |L(-phi)|q^m<=1 pays alternating geometric deficit. Full finite BACKWARD LC integration from known far tail closes entire bridge; first centre uses old signed Cassini payment.",
+  "actual": "For ACTUAL 1alpha2^uV, h=sum(t-1), u>=h+1 and alpha>=ceil((u-1+h)/2)+1: positive slopes LC at MOVING centres u+lenV+1<=n<FIRSTDmode and ALL-shift actual C at EVERY N>=W+1. Mode bound ceil((3m+h)/2) for the signed tail keeps finite-padding subtraction AFTER infinite-padding first mode; max and first mode unchanged. No claim of LC from fixed W+2 when u>h+1.",
+  "finite_reduction": "At SINGLE entrance u=h+1, EVERY alpha>=h+1 is NOW proved analytically. Thus the all-padding LC premise in row143 reduces from alpha1..2h+2 to JUST alpha1..h. The smaller-padding entrances remain OPEN for arbitrary CI degree. Add those entrances to obtain ALL late actual C at ALL u>=h+1, ALL alpha. Early reference C N<=W and shorter binary counts remain separate inputs for complete C.",
+  "formal_scope": "SEVEN NEW clean standard-axiom scoped reports: scalar backward geometric LC payment; ENTIRE finite backward induction; its ENTIRE composition for arbitrary coefficient/deficit sequences; robust alternating perturbation; full arbitrary-parameter first robust numerator seed; last kernel-row payment; missing next LC numerator coefficient absorption. ULC generation uses only standard Liggett finite-order ULC convolution on Q_(u-1) and [2] (primary theorem Gurvits arXiv0804.1181 Theorem1.1). ULC/binomial kernel and Cauchy-Binet assembly, CI spectral identification, actual global-mode/clamp and C read joining are WRITTEN, not end-to-end actual-composition Lean proof. Exact QA uses independent binomial enumeration of the binary kernel, actual recurrences and Q(phi) comparisons; logical shift coverage is not literal shift enumeration.",
+  "remaining": "Actual entrance alpha<=h at u=h+1 remainsOPEN. Generic two-seed closure, all-s full inverse-kernel LC, arbitrary earlier reference C N<=W, general actual C/A2 and ORIGINAL general unamplified UI remainOPEN. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "independent_positive_binomial_expansions": 4092,
+    "exact_ULC_kernel_minors": 4004,
+    "exact_quantitative_all_read_kernel_budgets": 117392,
+    "exact_generic_LC_numerator_robust_budgets": 56749,
+    "generic_LC_numerators": 1600,
+    "exact_entire_CI_amplitude_budgets": 2400,
+    "independent_exact_geometric_deficit_identities": 151201,
+    "exact_LC_geometric_deficit_minors": 146401,
+    "exact_entire_infinite_padding_CI_tail_LC_minors": 312339,
+    "exact_backward_LC_transport_identities": 146401,
+    "actual_CI_infinite_padding_contexts": 2400,
+    "exact_large_padding_pre_first_mode_LC_minors": 50388,
+    "exact_large_padding_actual_all_read_prefix_minimum_C_payments": 110238,
+    "large_padding_logical_shift_coverage": 18784616,
+    "actual_large_padding_mode_and_late_C_contexts": 800
+  },
+  "state_sha256": "706195b547c513ce27289948008efaafe7cc2dab7078eed8f48e00756b79c460",
+  "sha256": {
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "BinaryCIInfiniteEntrance.lean": "565a86441495fe92115cf38f25091ef2c4e9edf3e142b44016be8431adb733e5",
+    "BinaryCIInfiniteEntrance.log": "78415f54abbc77a790f8684092cc5a5b6c50d2a2998d333fbc0da9d8f11d9138",
+    "audit_binary_CI_infinite_padding_entrance.py": "829e3db7736eac75d2921e4753e9af2d1d1f8f694015de64a1fedb0586fc2387",
+    "audit_binary_CI_infinite_padding_entrance.json": "6fa22c2b42128af7632077caf6f866d69d9da36118552606945e5a3acc89305a",
+    "verify_binary_CI_infinite_padding_entrance.py": "6ec19609369e4894b712e8f335c2a8019a3ff4032670f8ff4b01bba05101a5ea",
+    "binary_ordinary_tail_and_dominant_one_jump_C.tex": "efb874683fbc65ef1b35906007275be794676b5acd8f619c1ffae6bd06efd3fa",
+    "sharpened_multitail_single_entrance.tex": "b3373c11e2e1585ca2227097699a11dcaa710fe41704b032fce18e8b312f8718",
+    "multitail_binary_prefix_finite_principle.tex": "f62e1ebcf0f9eaff68400b6117314c881a58f5955974a917b75d258153244417",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338"
+  }
+}

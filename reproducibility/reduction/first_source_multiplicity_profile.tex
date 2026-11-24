@@ -1,0 +1,75 @@
+\section{A coefficientwise lower source profile determined by first multiplicity}
+Let $[t]=1+\cdots+z^{t-1}$, with $[0]=0$, and define
+\[
+ M_0=0,\qquad M_{d+1}=1+[d]M_d\quad(d\ge0).
+\]
+Thus $M_1=1$, $M_2=2$, $M_3=3+2z$,
+$M_4=4+5z+5z^2+2z^3$.
+
+\begin{theorem}[Normalized first-source multiplicity profile]
+Let $X$ be an actual increasing arm, $\kappa$ its first missing
+weight, $\delta=E_X(\kappa)$, and $A=z^{-\kappa}E_X$.
+Then, coefficientwise,
+\[
+                                A\succeq M_\delta.      \tag{1}
+\]
+The same theorem holds for the larger formal append grammar with
+nondecreasing first missing weights. Equality is attained, for
+every $\delta\ge2$, by the staircase host $(1,2,\ldots,\delta-1)$.
+The assertion concerns the normalized entire SOURCE polynomial,
+not coefficientwise dominance of its differences.
+\end{theorem}
+\begin{proof}
+For an initial all-ones arm, $\kappa=2$, and its first source
+coefficient is either one or two. Nonnegativity supplies $M_1$
+or $M_2$ directly. Retain the established bound $\delta\le\kappa$.
+Under a legal append $t\ge\kappa-1$, the exact source recurrence is
+$E'=z[t]E+z^{t+1}$. There are three exhaustive normalized cases.
+
+If $t>\kappa$, then $\kappa'=\kappa+1$, $\delta'=\delta$, and
+\[
+                         A'=[t]A+z^{t-\kappa}\succeq A.
+\]
+Thus (1) is preserved. If $t=\kappa$, the two first sources tie:
+$\kappa'=\kappa+1$, $\delta'=\delta+1$, and
+\[
+ A'=1+[\kappa]A\succeq1+[\delta]M_\delta=M_{\delta+1}.
+\]
+Here $\delta\le\kappa$ is exactly the needed capacity budget.
+Finally, if $t=\kappa-1$, the first missing weight stays fixed
+and the new first source is the single birth:
+\[
+                 \delta'=1,\qquad A'=1+z[t]A\succeq M_1.
+\]
+These cases prove the unbounded induction. Sorted actual arms
+satisfy $t\ge\kappa-1$, since every old first missing weight is
+at most the old maximum plus one.
+
+For the staircase, the initial $(1)$ has $\kappa=\delta=2$
+and normalized source $2=M_2$. Every next capacity equals the
+old first weight; the tied-source equality applies at every step.
+This proves sharpness for all $\delta\ge2$.
+\end{proof}
+
+In particular, for $\delta\ge2$,
+\[
+ E_X(\kappa+1)\ge\binom\delta2-1,\qquad
+ E_X(\kappa)+E_X(\kappa+1)\ge\binom{\delta+1}{2}-1.
+\]
+The first coefficient formula follows from
+$[z]M_{d+1}=[z]M_d+d$ for $d\ge2$, starting from $[z]M_2=0$.
+Also $F_X(1)=E_X(1)\ge M_\delta(1)$, where
+$M_{d+1}(1)=1+dM_d(1)$.
+These are complete coefficient/mass consequences of (1).
+
+The triangular CURVATURE bound
+$\Delta E_X(n)\ge\max\{1,\binom{\delta+1}{2}-1\}$ at
+$\kappa+3\le n\le\ell_D$ is now PROVED in
+\texttt{triangular\_source\_curvature\_complete.tex} by a separate
+actual append induction and two complete independently rebuilt finite
+jet certificates. It is not deduced by differentiating (1): coefficientwise
+positive differences do not follow from coefficientwise dominance.
+The FIRST derivative mode remains the endpoint of the proved range.
+The stronger claim $\Delta E(n)\ge E(\kappa)+E(\kappa+1)$
+is FALSE, witnessed by $X=1^{44}2^{10}$ at $n=6$, where the
+two sides are one and two. General C/S/A2/original UI remain OPEN.

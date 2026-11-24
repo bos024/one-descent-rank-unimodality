@@ -1,0 +1,79 @@
+\section{Full zero-head S from one-arm C, using a double-defect dichotomy}
+\begin{theorem}
+Let $Z,Y$ be actual normalized increasing arms, each with at least two
+non-one parts. Assume at least one arm has full property C. Then the
+correctly conditioned coupled S resource holds at EVERY zero-head
+crossing $k=0$:
+\[
+                  u_0+v_n\le2(u_1+v_{n+1}).              \tag{1}
+\]
+All original S hypotheses, including strict weighted fall and
+$2p_n\ge p_{n-1}$, are retained. No OLD A2 assumption is needed
+at this particular head, since $u_0=1$, $u_1=p_1-1$ and $p_1\ge6$.
+Consequently (1) is unconditional whenever either old arm has at most
+five non-one parts, by the completed C5 theorem; the other arm is
+unrestricted. General original coefficient unimodality is not asserted.
+\end{theorem}
+\begin{proof}
+Write $A=F_Z$, $B=F_Y$, $P=AB$, $D=\operatorname{wt}Z+
+\operatorname{wt}Y$, $p(z)=z^DP(1/z)$, and $j=D-n$.
+Strict weighted fall at $k=0$, together with the nonnegative tail,
+gives the integer bound
+\[
+                    e:=2P_j-P_{j+1}\in\{0,1\}.          \tag{2}
+\]
+If $j<\kappa_Y$, the local opposite-universality theorem applies,
+including its arbitrary first-defect boundary at $j+1$. If
+$j<\kappa_Z$, exchange the arms in the same coefficient argument.
+That argument uses only the coefficient conditions, so the physical
+orientation of the append need not be exchanged. These cases prove (1).
+
+It remains that $j\ge\max(\kappa_Z,\kappa_Y)$.
+For any actual nonempty arm $Y$, the forward deficit $E_Y$ has positive
+interval support $[\kappa_Y,\operatorname{wt}Y+1]$, with all positive
+coefficients integral and terminal coefficient two. Every coefficient
+of $A$ on $[0,\operatorname{wt}Z]$ is at least one. Therefore
+\[
+          (E_YA)_{j+1}\ge2,\qquad(E_ZB)_{j+1}\ge2.       \tag{3}
+\]
+Here $j+1$ is past each first support point and no later than the
+product's final degree. To verify the elementary convolution bound:
+if the deficit support has one point, that coefficient is two and
+every product coefficient is at least two. Otherwise every interior
+convolution rank past its first point has at least two positive
+integer summands. At the final rank its sole summand uses the terminal
+deficit coefficient two. Thus all boundary cases of (3) are included.
+
+The two exact identities
+\[
+ (2z-1)P=E_YA-(1-z)A=E_ZB-(1-z)B
+\]
+now give, using (2)--(3),
+\[
+                 A_{j+1}-A_j\ge1,\qquad B_{j+1}-B_j\ge1. \tag{4}
+\]
+Both ordinary factors are strictly rising at $j+1$; their positive
+differences at $j$ are also positive by initial interval support.
+Also $j\ge\max(\kappa_Z,\kappa_Y)\ge3$.
+Apply the C-to-S rising-window theorem, choosing whichever arm has C.
+It gives $R_{n+1}\le R_n$, where $R_i=2p_i-p_{i-1}$.
+The head budget $2u_1-u_0=2p_1-3>0$ then proves (1).
+\end{proof}
+
+This dichotomy makes the auxiliary C advance contribute to the original
+weighted-difference induction. For a possible properly conditioned S
+failure with both old arms having at least two non-one parts, zero head
+now requires BOTH old arms to lie outside the C5 range. At nonzero head,
+the C-to-S bridge still closes the two-rising-factor region whenever
+one arm has C and the OLD A2 inductive premise holds. Neither statement
+raises the original conjecture's previously proved least-counterexample
+non-one count: the remaining original obstruction may have nonzero head.
+
+The three reports in \texttt{CToCoupledSRisingWindow.lean} include
+the complete scalar double-defect implication in (3)--(4), in addition
+to the monotone-excess and S-sum lemmas. The local first-defect proof
+has four scoped reports in \texttt{UntruncatedOppositeZeroHead.lean}.
+The positive convolution bound and exact actual word assembly are
+the complete written argument above, not an end-to-end formalization.
+General S at nonzero head outside the rising region, unrestricted C
+beyond five, A2 and the original unamplified conjecture remain open.

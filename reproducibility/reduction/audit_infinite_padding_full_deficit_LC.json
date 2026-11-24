@@ -1,0 +1,15 @@
+{
+  "status": "PASS_EXACT_QA_WRITTEN_WHOLE_INFINITE_PADDING_DEFICIT_LC",
+  "counts": {
+    "exact_final_quotient_kernel_row_budgets": 7257,
+    "exact_generic_LC_last_centre_budgets": 1200,
+    "exact_entire_positive_deficit_support_reads": 362443,
+    "exact_entire_deficit_LC_tail_minors": 359943,
+    "exact_new_bridge_centre_minors": 2500,
+    "actual_CI_contexts": 2500,
+    "actual_exact_single_entrance_contexts": 1250
+  },
+  "state_sha256": "5f67016146d2a88b5773c9166e77b79115d464b13a3e80b78ed137d1612f3cf1",
+  "seconds": 2.17200000000048,
+  "scope": "Finite exact QA of the separately written unbounded full infinite-padding deficit-tail LC theorem. Finite short padding/general C/A2/original UI remain OPEN. No finite exhaustion is a universal proof."
+}

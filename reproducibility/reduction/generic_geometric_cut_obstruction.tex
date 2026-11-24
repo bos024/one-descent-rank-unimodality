@@ -1,0 +1,33 @@
+\section{An exact obstruction to a geometric-cut closure shortcut}
+This is a negative auxiliary result, not a counterexample to an actual
+CI entrance, general C, or the original one-descent conjecture.
+Put $q=(\sqrt5-1)/2$, $\phi=1+q$, and take the positive LC sequence
+\[
+b=(233,2257,13100,19891,30200,39423,50487,61489,
+    73673,86341,100000,83454,63229).
+\]
+Extend it by zero, set $E_n=b_n+qb_{n-1}$, and let
+\[
+ x_n=\sum_{j\ge1}q^j b_{n+j},\qquad A_n=(x_n-E_n)^+.
+\]
+Both $b$ and $E$ are LC, and so is $x$ by convolution with the
+reverse geometric kernel. The positive first differences of $E$,
+INCLUDING $E_0$ as the initial difference, have support $0,\ldots,10$
+and are strictly LC at every internal centre.
+Nevertheless $A$ has its UNIQUE global mode at $3$, while
+\[
+\begin{aligned}
+A_1&=-5262475+3277629\phi,\\
+A_2&=3253919-1984846\phi,\\
+A_3&=-2009271+1269073\phi,\\
+A_2^2-A_1A_3&=-205686371365+127116786985\phi<0.
+\end{aligned}
+\]
+All comparisons are exact in $\mathbb Q(\sqrt5)$, with integer-squared
+sign tests in \texttt{probe\_generic\_geometric\_cut\_LC.py}.
+The unrelated random nonfailures in that file do not prove the false
+generic statement. The example is nonsymmetric and is not a CI
+numerator. It shows why full LC of an infinite-padding deficit plus
+ordinary positive-primitive LC alone cannot justify finite-padding
+closure. The actual CI factorization and its spectral boundary
+conditions remain additional necessary research inputs.

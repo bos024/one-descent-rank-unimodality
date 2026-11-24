@@ -1,0 +1,24 @@
+{
+  "status": "EXACT_QA_PASS_BINARY_TERNARY_FULL_A2_AND_ORIGINAL_FAMILY_UNDER_PROOF_AUDIT",
+  "counts": {
+    "actual_FULL_A2_pairs": 3576,
+    "B3_ORIGINAL_cores": 288,
+    "B3_BOTH_relative_polynomials": 576,
+    "B3_coefficient_comparisons": 171348,
+    "actual_Q_guarded_tail_edges": 290101,
+    "ENTIRE_signed_source_windows": 11065,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 2213,
+    "heavier_arbitrary_jump_ORIGINAL_cores": 1500,
+    "heavier_arbitrary_jump_BOTH_relative_polynomials": 3000,
+    "heavier_arbitrary_jump_coefficient_comparisons": 2902263,
+    "expanded_A4_ORIGINAL_cores": 600,
+    "expanded_A4_BOTH_relative_polynomials": 1200,
+    "expanded_A4_coefficient_comparisons": 648642,
+    "expanded_A4_heavier_append_ORIGINAL_cores": 600,
+    "expanded_A4_heavier_append_BOTH_relative_polynomials": 1200,
+    "expanded_A4_heavier_append_coefficient_comparisons": 997725
+  },
+  "state_sha256": "0e3bb43076f1c9c8039784e0ff94ed1d13729e4409f1930305647b19481f1510",
+  "seconds": 5.436999999998079,
+  "scope": "Finite diagnostics ONLY. Full analytic proof usesALLB3C+OLDtwoNONBINARYC=>A4C/kappa<=4=>A1/Q;FULLoldA2=>ENTIREsignedsourcecone=>ANYsignedwindow=>NEWFULLA2. A4=B3 ORbinary-plus-one-arbitrary-tail ORat-most-two-arbitrary-nonones. ORIGINALcore/BOTHrelativesfollowbydeletionclosedleastpeakfamily,includingONEarbitraryheavierappendfromA4. ArbitrarycapacityGENERALoriginal/C/A2OPEN."
+}

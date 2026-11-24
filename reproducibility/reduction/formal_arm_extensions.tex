@@ -1,0 +1,212 @@
+% Auxiliary exact facts; the general product step remains unproved.
+\section{Which arm properties require increasing parts?}
+For an arbitrary finite list of positive integers $T$, define the
+formal arm polynomial by $A_\varnothing=1$ and
+$A_{Tt}=1+S_tA_T$. This agrees with the principal-ideal polynomial
+when $T$ is increasing. Without that hypothesis it need not count
+a composition ideal, and it will not be identified with one below.
+
+The ordinary unimodality assertion for this formal recurrence is
+already present, after reversing the list convention, in
+B.~E.~Sagan, \emph{Compositions inside a rectangle and unimodality},
+J.~Algebraic Combin.~29 (2009), 405--411, Theorem~3.3;
+the author's May 5, 2008 manuscript was checked at
+\url{https://users.math.msu.edu/users/sagan/papers/old/cir.pdf}.
+That theorem concerns his coordinatewise composition order, not
+generalized subword order. It is background here, not a resolution
+of the unrestricted conjecture. The additional rising-difference
+and kernel comparisons below are stated separately.
+
+\begin{lemma}[Uniform windows and rising first differences]
+Let $p$ be nonnegative and unimodal, and suppose the positive
+part of its first-difference sequence is unimodal. Then the same
+is true of $[t]p$ for each $t\ge1$.
+\end{lemma}
+\begin{proof}
+Let $m$ be the last mode of $p$ and extend all sequences by zero.
+For $n\le m$, the difference of $q=[t]p$ is a length-$t$ window
+of the nonnegative rising differences of $p$. These differences,
+extended by zero, are unimodal, so their window is unimodal.
+For $m\le n\le m+t-1$, the differences of $q$ satisfy
+\[
+ \Delta q_{n+1}-\Delta q_n
+  =(p_{n+1}-p_n)-(p_{n-t+1}-p_{n-t})\le0.
+\]
+For $n\ge m+t$, $\Delta q_n=p_n-p_{n-t}\le0$.
+Thus the positive first differences form a prefix of a unimodal
+window followed by a nonincreasing portion and then zeros.
+This proves the claim, including the joining comparison at $m$.
+\end{proof}
+
+\begin{proposition}
+For every formal arm $T$, $A_T$ is unimodal. Its reverse is
+log-concave on its rising side, and the positive part of the
+first differences of that reverse is unimodal. The same two
+rising-side properties hold for $\delta_m(Y)$ when $Y$ is
+increasing and $m\ge\max(1,\kappa(Y)-1)$.
+\end{proposition}
+\begin{proof}
+For the formal arm, its reverse satisfies
+$q_{Tt}=[t]q_T+z^{\operatorname{wt}T+t}$, for any order of the
+parts. The convolution has final coefficient one; appending one
+does not change the positive part of its first differences.
+Use the uniform-window lemma above and the earlier rising-side
+log-concavity window lemma inductively.
+
+For a strict kernel, the case $b<M$ has rising differences equal
+to a prefix of $q_Y$, which is unimodal. In the case $b\ge M$,
+the added interval in $[t]\delta_M(Z)+z^b[M-t]$ affects only
+the descending portion and does not introduce positive differences.
+The window lemma applies. At $t=m$ the kernel recurrence is a
+window without correction. At $t>m$, the subcritical-kernel proof
+shows that subtraction affects only the descending portion and
+that the ending splice is nonincreasing. The same induction
+therefore applies. Rising-side log-concavity was proved separately
+in the subcritical-kernel theorem.
+\end{proof}
+
+\begin{proposition}[Pure-arm ratio comparisons do not require sorted parts]
+Let every part of $T$ be at least two. Put
+$R_T=\prod_{t\in T}S_t$, $K_T=(1-z)A_T+zR_T$,
+$u=\operatorname{wt}T$, and $T_T=\prod_{t\in T}[t]$.
+Then $K_T$ is nonnegative, and for each $\alpha\ge0$ the sequences
+\[
+ a_i=[z^i]z^uK_T(1/z),\qquad b_i=[z^{i+\alpha+1}]T_T
+\]
+satisfy $a_jb_i-a_ib_j\ge0$ whenever $i<j$.
+\end{proposition}
+\begin{proof}
+The identity $K_{Tt}=1-z+S_tK_T$ holds formally. Starting from
+$K_\varnothing=1$, the constant coefficient stays one and the
+linear coefficient stays zero, so all coefficients remain
+nonnegative. In reverse the recurrence is
+\[
+ K_{Tt}^*=[t]K_T^*-z^{u+t-1}+z^{u+t},\qquad
+ T_{Tt}=[t]T_T.
+\]
+The proof of the pure-arm ratio theorem uses only these identities,
+nonnegativity of $K$, and the degree $u-\operatorname{len}T$ of
+$T_T$. The negative endpoint correction lies strictly to the
+right of the shifted denominator support. Uniform convolution
+preserves the ratio comparisons. Larger shifts follow from
+log-concavity of $T_T$; its positive support is an interval.
+None of these steps uses an ordering of the parts.
+\end{proof}
+
+\paragraph{An exact initial exchange.}
+For $\alpha\ge1$ and $t\ge2$,
+\[
+ A_{1^\alpha t}=1+z[t][\alpha+1]
+              =A_{1^{t-1}(\alpha+1)}.
+\]
+Any identical formal suffix preserves this identity. In particular,
+when $\alpha+1\le t$ and the remaining parts are at least $t$,
+the exchange gives an equality of genuine increasing-arm rank
+polynomials. When $\alpha=0$, the first part $t$ can instead be
+replaced by $t$ leading ones.
+
+\begin{proposition}[Forward rising differences after the initial ones]
+Let $T=1^\alpha U$, where $\alpha\ge0$ and every part of the
+formal list $U$ is at least two; the parts of $U$ need not be sorted.
+For $p=A_T$, the sequence
+\[
+ \bigl(\max(p_n-p_{n-1},0)\bigr)_{n\ge1}
+\]
+is unimodal. If $p$ is nonrectangular, it increases strictly at
+every rank from two through its first mode.
+\end{proposition}
+\begin{proof}
+An interval polynomial is immediate. Its first nonrectangular
+extension is $1+z[t][\alpha+1]$, whose positive differences after
+rank zero form an interval of ones beginning at rank two.
+Proceed by induction under appending $t\ge2$. Write $m$ for
+the first mode of the old nonrectangular polynomial $p$.
+Its positive differences have support exactly $[2,m]$: this
+follows from their unimodality, the value $p_2-p_1=1$, and
+the definition of the first mode. They are positive integers
+throughout this support.
+
+For $q=1+S_tp$ one has $\Delta q_1=0$ and
+\[
+ \Delta q_n=p_{n-1}-p_{n-t-1}\qquad(n\ge2).
+\]
+If $t>m$, the segment $2\le n\le t$ is a prefix of the
+unimodal sequence $p_{n-1}$. At $n=t+1$ the difference cannot
+increase, because $p_t\le p_{t-1}$ and the new subtracted
+coefficient is $p_0=1$. From there until $m+t+1$, the upper
+index lies on the descending side and the lower index on the
+rising side, so the differences are nonincreasing. Beyond that
+range they are nonpositive. This gives the assertion in this case.
+
+If $t\le m$, the initial segment $2\le n\le t$ is
+nondecreasing. At its junction with the next segment,
+\[
+ \Delta q_{t+1}-\Delta q_t=(p_t-p_{t-1})-1\ge0.
+\]
+For $t+1\le n\le m+1$, the differences are the length-$t$
+window of the old positive differences (zero-extended outside
+$[2,m]$). This window is unimodal. Its values through $n=t+1$
+are cumulative sums, so joining it to the preceding increasing
+segment cannot create a valley. From $n=m+1$ through $m+t+1$,
+the crossing-of-the-mode argument again makes the differences
+nonincreasing, and afterward they are nonpositive. The positive
+part is therefore unimodal in this case as well.
+
+Finally $q_2-q_1=1$. Its unimodal positive-difference sequence
+cannot have an internal zero before reaching the first mode,
+which proves the strict-increase assertion and closes induction.
+\end{proof}
+
+\paragraph{Scope of these extensions.}
+The properties of the reverse kernel still use the increasing
+condition on $Y$. A formal arm with unsorted parts does not in
+general have a unimodal relative kernel. For example, repeated
+terminal parts equal to one can create gaps in the positive
+support of its growth deficit. Neither the pure-arm extension
+nor the first-difference property is a proof of convolution
+unimodality: the same sequence $(1,3,2,1,1,1,1)$ used earlier
+also has unimodal positive first differences, but its square
+is not unimodal.
+
+\begin{proposition}[Ordinary products with no later return to one]
+If $T=1^\alpha U$ and $W=1^\beta V$, with all parts of the
+formal skeletons $U,V$ at least two, then $A_TA_W$ is unimodal.
+The skeletons may have arbitrary internal order. Its reverse
+also has unimodal positive first differences and is log-concave
+on its rising side.
+\end{proposition}
+\begin{proof}
+For every formal arm, the lowest height layer is $[0,a]$,
+and every higher layer has endpoint sum at least $a+1$.
+This follows by induction from $1+S_tA$: uniform convolution
+gives all layers of $S_tA$ endpoint sum at least $a+t+1$,
+and adding the initial constant only changes its lowest layer.
+In the stated class, every nonrectangular polynomial has second
+layer exactly $[2,a-1]$, since both coefficients at those two
+ranks are at least two and the adjacent end coefficients are one.
+
+The ordinary-product proof therefore applies verbatim within
+this deletion-closed class. For completeness, write $a\ge b$.
+Layer centers give growth through $\lceil(a+b)/2\rceil$.
+When $a=b$ and both factors are nonrectangular, the product of
+the two second layers pays for the only negative unit from the
+two lowest layers at rank $a+1$, extending growth to that rank.
+Deleting a last part $t$ of the heavier arm gives
+$A_TA_W=A_W+S_t(A_{T^-}A_W)$. By induction the window term
+is unimodal. If $a>b$, its tail joins the guaranteed increasing
+segment after the correction $A_W$ has vanished; if $a=b$,
+use the extra rank of growth just proved. Rectangular factors
+are uniform-window base cases. Thus the product is unimodal.
+
+The reverse-prefix proof in \texttt{joint\_rising\_differences.tex}
+uses only this product unimodality, the same strengthened midpoint,
+and the formal append recurrence. Those inputs all hold within
+the present deletion-closed class, proving the two additional
+reverse properties.
+\end{proof}
+
+The corresponding formal kernel need not be unimodal even when
+there are no ones at all. For $M=5$ and the unsorted formal list
+$T=(4,4,4,4,2,2)$, its kernel has coefficients $2,3,2,3$ at
+ranks $4,5,6,7$. Thus the increasing hypothesis on the kernel
+arm remains essential to the arguments being used here.

@@ -1,0 +1,151 @@
+% A signed-kernel theorem for one increasing arm; the product step remains open.
+\section{Positive parts of monotone kernels below the positivity threshold}
+All sequences are zero-extended. Say that a finite signed sequence has
+an initial positive interval if its positive support is $[0,R]$ and
+every coefficient after $R$ is nonpositive.
+
+\begin{lemma}[Uniform windows of a signed sequence]
+Suppose $p$ has an initial positive interval and $p^+$ is unimodal.
+Then $([t]p)^+$ has an initial positive interval and is unimodal.
+If $p^+$ is log-concave on its rising side, including its last mode,
+then the same is true of $([t]p)^+$.
+Moreover, if $p_n=0$ for $n>L$, the positive part of $[t]p$ is
+nonincreasing from rank $L$ onward.
+\end{lemma}
+\begin{proof}
+Let $R$ be the last positive input index and write $W=[t]p$.
+Through rank $R$, the window agrees with $[t]p^+$, which is
+unimodal and has the stated rising-side log-concavity by the
+proved uniform-window lemma. For $n>R$,
+$W_n-W_{n-1}=p_n-p_{n-t}$.
+If $n-t\le R$, the right-hand side is nonpositive; negative indices
+are interpreted as zero. If $n-t>R$, every input in the window is
+nonpositive, so $W_n\le0$. Thus the positive part is nonincreasing
+after $R$ and cannot reappear after vanishing. Joining it to the
+unchanged prefix proves unimodality. If the last mode lies at this
+joining edge, the next coefficient has only decreased, preserving
+the last log-concavity comparison; all earlier rising comparisons
+are unchanged. This proves the log-concavity statement too.
+
+For the last assertion, when $n>L$ the same difference is
+$-p_{n-t}$. It is nonpositive unless the whole current window is
+already nonpositive. Therefore $W^+$ is nonincreasing from $L$.
+\end{proof}
+
+\begin{theorem}[All auxiliary peak sizes]
+Let $Y$ be increasing, of weight $b$, and let $m\ge1$ be arbitrary.
+Set
+\[
+ D_m(Y)=1+(S_m-1)F_Y,\qquad
+ \delta_m(Y)=z^{b+m}D_m(Y)(1/z).
+\]
+The positive part $\delta_m(Y)^+$ has an initial positive interval,
+is unimodal, and is log-concave on its rising side through its last
+mode. No condition $m\ge\kappa(Y)-1$ is required for these positive-part
+statements. The full kernel is nonnegative precisely at the previously
+proved threshold $m\ge\kappa(Y)-1$.
+\end{theorem}
+\begin{proof}
+Induct on the length of $Y$. The empty arm gives $[m]$.
+If $m\ge\kappa(Y)-1$, all conclusions follow from the established
+nonnegative-kernel theorem, so consider $\kappa(Y)\ge m+2$.
+Write $Y=Zt$ and $c=\operatorname{wt}Z$.
+The exact threshold recurrence
+$\kappa(Y)=\min\{t+1,\kappa(Z)+1\}$ gives
+$t>m$ and $\kappa(Z)\ge m+1$.
+
+All ranks of $Z$ through weight $m$ are full. Thus the coefficients
+of $D_m(Z)$ at weights $0,1,\ldots,m$ vanish, and
+$\delta_m(Z)$ is zero at every index greater than $c-1$.
+The reversed append recurrence is
+\[
+ \delta_m(Y)=[t]\delta_m(Z)-z^{c+m}[t-m].
+\]
+By induction and the signed-window lemma, the positive part of
+$W=[t]\delta_m(Z)$ is unimodal, has an initial positive interval,
+is log-concave on its rising side, and is nonincreasing from
+rank $c-1$ onward.
+
+The subtracted interval starts at $c+m>c-1$, entirely on this
+nonincreasing positive part. Throughout that interval the new
+positive part is $(W_n-1)^+$, so it remains nonincreasing.
+At its start it can only decrease. The interval ends at $c+t-1$,
+whereas $W$ is supported only through $c+t-2$. Thus the upward
+jump at the far endpoint is from $-1$ to zero and cannot create a
+new positive coefficient. Everything before the subtraction is
+unchanged. The positive support, unimodality and rising-side
+log-concavity therefore survive. This closes the induction.
+\end{proof}
+
+\begin{corollary}[Every signed window of a single reversed arm]
+For every increasing arm $Y$ and every $m\ge1$, the positive part
+of $([m]-z^m)q_Y$ is unimodal, has an initial positive interval,
+and is log-concave on its rising side.
+\end{corollary}
+\begin{proof}
+It differs from $\delta_m(Y)$ only by subtracting the terminal
+monomial $z^{b+m}$. The kernel has zero coefficient there, and
+all positive coefficients occur earlier. Thus their positive parts
+are identical.
+\end{proof}
+
+This settles the signed-window assertion for one monotone arm at
+every auxiliary size. The analogous assertion for $q_Xq_Y$ is
+still unproved; it is not obtained by multiplying two unimodal
+positive parts. A finite diagnostic of $25000$ increasing-arm pairs
+found no failure for window lengths $1,\ldots,8$, including lengths
+below the arm part sizes. That diagnostic motivates the product
+question but is not a proof of it.
+
+\begin{theorem}[Additional structure of the positive part]
+For every increasing arm and every $m\ge1$, let
+$p=\delta_m(Y)^+$. Besides the preceding properties, $p$ is
+recursively rising-unimodal in the sense of
+\texttt{iterated\_rising\_differences.tex}. It also satisfies
+\[
+ p_{r+1}p_s\ge p_rp_{s+1}
+ \qquad(0\le r\le m-2,\ s\ge r).
+\]
+The first $m$ coefficients are nondecreasing.
+\end{theorem}
+\begin{proof}
+The first $m$ coefficients are the cumulative coefficients of
+$q_Y$, directly from $([m]-z^m)q_Y$; the isolated terminal
+correction does not affect them.
+
+For the recursive assertion use the same induction as above.
+If the arm weight $b$ is less than $m$, the positive first
+differences of the kernel are exactly $q_Y$, followed by zeros:
+the cumulative prefix ends at $b$, remains constant to $m-1$,
+and is followed by a nonincreasing tail. Thus the single-arm
+recursive theorem applies. In the other cases, the proofs of
+the admissible kernel theorem and of the signed extension show
+that the new positive part agrees with its uniform-window term
+until the correction begins, and is nonincreasing thereafter.
+Its positive first differences are a terminal truncation of the
+positive first differences of that window. The recursive window
+lemma and truncation preserve all the asserted orders.
+
+The coefficient comparison is already known in the admissible
+case. In the inadmissible step $Y=Zt$, $t>m$, put
+$d=\delta_m(Z)$ and let $R$ be the last index with $d_R>0$.
+Inductively $d^+$ has the displayed prefix comparison. Its
+nonnegative window $W_0=[t]d^+$ has that comparison too, by
+causal log-concave convolution. The signed window $W=[t]d$
+agrees with $W_0$ through $R$, and $W^+$ is nonincreasing
+after $R$. Since the first $m$ input coefficients are positive,
+$R\ge m-1$; thus the initial ratios are unchanged and at
+least one. Comparisons entirely before $R$ follow from $W_0$.
+For the remaining comparisons the later ratio is at most one,
+including the step from $R$ to $R+1$; zero endpoints are
+handled by cross multiplication. Finally the subtracted interval
+begins at $c+m$, after the start of the nonincreasing portion,
+and preserves that portion by the already proved splice lemma.
+This proves the comparison for the new positive part.
+\end{proof}
+
+The unbounded signed-window tail and subtraction-splice inequalities
+used here are checked by the Lean kernel in
+\texttt{SignedWindowTail.lean}. The composition interpretation,
+inductive shape statements, and the complete theorem above remain
+written proofs; they are not claimed as a full Lean formalization.

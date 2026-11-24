@@ -1,0 +1,20 @@
+'ForwardPositiveDifferenceCenters.positive_subtraction_reflection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ForwardPositiveDifferenceCenters.source_append_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForwardPositiveDifferenceCenters.component_center_bound' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.correction_center_difference' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.reflected_first_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForwardPositiveDifferenceCenters.layer_endpoint_bound' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.shifted_first_mode_bound' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.odd_uniform_first_increment' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.odd_uniform_next_increment' depends on axioms: [propext]
+'ForwardPositiveDifferenceCenters.odd_uniform_mode_sharp' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.four_cover_no_double_exclusions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ForwardPositiveDifferenceCenters.finite_ones_critical_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ForwardPositiveDifferenceCenters.critical_parameter_identity' depends on axioms: [propext, Quot.sound]
+'ForwardPositiveDifferenceCenters.finite_negative_y_cone' depends on axioms: [propext, Classical.choice, Quot.sound]

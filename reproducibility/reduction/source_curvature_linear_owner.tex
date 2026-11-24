@@ -1,0 +1,141 @@
+\section{Early source curvature makes the finite owner bound linear}
+Use the actual arms and mixed/source-prefix premises (1) of
+\texttt{arbitrary\_source\_gap\_finite\_owner.tex}.
+Retain $D=a-\alpha-h$, $d=\kappa_Y-\alpha$ and
+$T=e_{n+1}-e_n$. No fixed upper bound on these parameters is imposed.
+
+\begin{theorem}[Linear finite-owner bound at arbitrary source gap]
+If $T>0$, then
+\[
+ \boxed{d\ge6,\qquad D\le\min\{2d(d-3),\,12d-25\},
+       \qquad a\le\alpha+24d-50.}                    \tag{1}
+\]
+In particular, at each fixed opposite first missing weight $\kappa$,
+\[
+ \boxed{a\le\min\{1+4(\kappa-1)(\kappa-4),\,24\kappa-73\},
+       \qquad j\le a+1.}                             \tag{2}
+\]
+The constants are explicit sufficient bounds; no optimality is claimed.
+For every mixed S edge still outside the previous count-mass theorem,
+the same source-prefix premises therefore imply
+\[
+                 h\le12\kappa-37,\qquad g\le60\kappa-179.       \tag{3}
+\]
+Thus both counts, the owner weight and the shared forward rank are
+bounded LINEARLY in the first missing weight. The opposite weight,
+capacities and initial padding are not bounded by this statement.
+\end{theorem}
+
+\begin{proof}
+The preceding theorem supplies $d\ge6$, the quadratic bound,
+and the exact source/primitive identities. It suffices to show
+that $D\ge12d-24$ forces $T\le0$.
+The cases $r=a-j\le-2$ have no primitive curvature.
+At $r=-1$, positive recovery requires $D+h+2-d<0$, which gives
+$D\le d-5\le12d-25$ and contradicts the new degree assumption.
+
+Suppose $r\ge0$ and $T>0$. As before set
+\[
+ e=D-2r-2\ge0,\qquad C=d_{r+1}-d_r>0,\qquad
+ (r+1)C\le(e+1)d_r,
+\]
+where $d_i=(\Delta q_Z(i))^+$. If $s=d-e-2\le0$, the
+FIRST source birth already pays. Otherwise put $L=s-1=d-e-3\ge0$.
+The new degree assumption gives BOTH
+\[
+                  r\ge3e+6L+5,\qquad r\ge4e+3.       \tag{4}
+\]
+Indeed substitute $d=e+L+3$, $D=2r+2+e$; these are just
+linear inequalities with $e,L\ge0$.
+
+If $L=0$, the first birth is at least $q_Z(r)\ge d_r$, and
+$r\ge e$ pays the curvature.
+If $L=1$, the first birth is at least $q_Z(r-1)\ge d_{r-1}$.
+The skeleton-only CI ratio gives
+$r d_r\le(r+e+3)d_{r-1}$, while $r\ge2e+3$ ensures
+$(e+1)(r+e+3)\le(r+1)r$.
+Thus this case is also paid by the first birth.
+
+Let $L\ge2$. The proof now uses a LATER compulsory source increment,
+not a differentiated coefficient lower bound. The genuinely proved
+early source-curvature profile gives
+\[
+       w_{\kappa+L}:=\Delta E_Y(\kappa+L)\ge2^{L-2},     \tag{5}
+\]
+because $L\le\kappa-3$, which follows from
+$\kappa=\alpha+e+L+3$ and $\alpha\ge1$.
+The term (5) is within the assumed nondecreasing source prefix:
+its associated ordinary coefficient has index
+\[
+                 j+1-\kappa-L=r+h-2L\ge h.
+\]
+Thus (5) and the positive source convolution give
+\[
+ \Delta(E_YF_Z)_{j+1}\ge2^{L-2}F_Z(j+1-\kappa-L)
+     =2^{L-2}q_Z(r+\kappa-1+L)
+     \ge2^{L-2}q_Z(r-2L)
+     \ge2^{L-2}d_{r-2L}.                              \tag{6}
+\]
+The reflected indices in the middle have endpoint sum EXACTLY
+$\alpha+D=a-h$; both are nonnegative by (4). Notice the source
+offset INCREASES the reverse index. This sign is needed to get
+the correct reflected index $r-2L$, rather than $r$.
+
+It remains to bound the primitive's $2L$ backward ratios. Put
+\[
+       R_i=\frac{r+e+3+i}{r-i},\quad0\le i<2L.
+\]
+All denominators are positive and the skeleton CI envelope gives
+$d_r\le(\prod_{i=0}^{2L-1}R_i)d_{r-2L}$.
+Pair $i$ with $2L-1-i$. The following elementary inequality holds
+for ALL $e,L\ge0$ and $r\ge3e+6L+5$:
+\[
+       (r+e+3)(r+e+2L+2)\le2r(r-2L+1).               \tag{7}
+\]
+For example, put $r=3e+6L+5+x$, $x\ge0$; the difference
+between right and left is a polynomial with nonnegative
+coefficients and positive constant. For each pair let
+$u=i(2L-1-i)\ge0$. Its numerator is the left side of (7)
+plus $u$, and its denominator is $r(r-2L+1)+u$.
+Consequently
+\[
+             R_iR_{2L-1-i}\le2,
+             \qquad\prod_{i=0}^{2L-1}R_i\le2^L.       \tag{8}
+\]
+This pairing covers every factor exactly once. Combining (4)
+and (8) with the primitive curvature bound gives
+\[
+       C\le\frac{e+1}{r+1}\,2^L d_{r-2L}
+          \le2^{L-2}d_{r-2L}.
+\]
+Equation (6) pays the entire curvature, contradicting $T>0$.
+Thus positive recovery requires integer $D\le12d-25$.
+Since $h\le D$, $a=\alpha+D+h\le\alpha+24d-50$.
+Substituting $d=\kappa-\alpha$ and $\alpha\ge1$ proves
+$a\le24\kappa-73$. Also $h\le D\le12d-25\le12\kappa-37$.
+
+For an edge not already paid by the count-mass criterion,
+$2g<5j+4$ and $j\le a+1\le24\kappa-72$ imply
+$2g<120\kappa-356$. Both sides are even integers after the
+last bound, so $g\le60\kappa-179$.
+This proves every assertion.
+\end{proof}
+
+Nine additional standard-axiom Lean reports check the unbounded
+mirror-ratio polynomial, each ratio pair, the COMPLETE arbitrary-length
+product pairing, degree-to-rank implications, both scalar payments,
+dyadic scaling and the final linear integer bounds. Existing actual
+skeleton envelopes, reflection and source-curvature identifications
+are joined in the written proof above. Separate finite diagnostics
+use exact binomial product ratios and independent actual forward
+coefficients; none substitutes for the unbounded argument.
+
+The large-degree region now has pointwise tail nonrecovery, and
+therefore all-head S with the usual OLD A2 head input. Small owners
+inside the explicit bounds may have genuine positive recoveries;
+their head compensation still has to be proved in general.
+The opposite-source-prefix premise and the mixed-factor premise
+remain essential to this argument. Both-rising late overlap, source
+prefixes after decline, general C/S/A2 and original undilated
+coefficient unimodality remain OPEN. No original least-counterexample
+bound is raised solely from these scoped S refinements.

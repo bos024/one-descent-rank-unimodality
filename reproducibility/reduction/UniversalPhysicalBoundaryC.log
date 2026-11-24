@@ -1,0 +1,16 @@
+'UniversalPhysicalBoundaryC.maximal_margin_normalized_tilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.moving_ratio_unit_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.low_ratio_cumulative_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.margin_at_two_edge_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.two_edge_ratio_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.positive_window_cap_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.positive_support_window_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.previous_reference_CDF_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalPhysicalBoundaryC.all_large_degree_boundary_rows' depends on axioms: [propext, Quot.sound]
+'UniversalPhysicalBoundaryC.previous_unit_pays_boundary_nondecrease' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UniversalPhysicalBoundaryC.small_binary_boundary_complement_weight32' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UniversalPhysicalBoundaryC.late_owner_source_read_guard' depends on axioms: [propext, Quot.sound]

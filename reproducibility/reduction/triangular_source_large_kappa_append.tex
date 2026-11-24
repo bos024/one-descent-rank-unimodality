@@ -1,0 +1,132 @@
+\section{The entire triangular source-curvature append step above first weight eight}
+This is an unbounded CONDITIONAL propagation theorem. It does not prove
+the triangular target at its low-first-weight entrance layer, and neither
+the triangular target nor the original conjecture is declared complete.
+
+For an actual normalized nonrectangular sorted arm let $\kappa,\delta$
+be its first missing weight and leading source multiplicity. Put
+\[
+ E=1-z+(2z-1)F,\quad D_i=(F_i-F_{i-1})^+\ (i\ge2),
+ \quad D_0=D_1=0,\quad \ell=\min\operatorname{argmax}D,
+ \quad B(d)=\max\{1,\tbinom{d+1}{2}-1\}.
+\]
+Write $\mathsf{TC}(F)$ for the assertion
+\[
+          \Delta E_n\ge B(\delta)
+                     \qquad(\kappa+3\le n\le\ell).       \tag{TC}
+\]
+The source is zero below $\kappa$, $1\le\delta\le\kappa$, and
+its increments through $\ell$ are nonnegative by actual single-arm
+positive-derivative doubling. All sequences are zero extended.
+
+\begin{theorem}[Complete large-first-weight append propagation]
+Suppose $\kappa\ge8$ and $\mathsf{TC}(F)$ holds for this OLD arm.
+For EVERY legal append $t$, the NEW arm satisfies $\mathsf{TC}$.
+No bound on the number of parts, their sizes or the initial run is imposed.
+\end{theorem}
+\begin{proof}
+Use hats for the new arm, fix $\widehat\kappa+3\le n\le\widehat\ell$,
+and use the exact recurrence
+\[
+ \Delta\widehat E_n
+   =\sum_{i=n-t}^{n-1}\Delta E_i
+          +\mathbf1_{n=t+1}-\mathbf1_{n=t+2}.           \tag{1}
+\]
+If $n-1>\ell$, the peak-crossing source payment in
+\texttt{agent\_postcount\_source\_mode\_payment.tex} gives
+$\Delta\widehat E_n\ge\max D-1\ge B(\widehat\delta)$ for
+$\kappa\ge8$. Its proof contains the old derivative peak inside
+the window and pays the possible negative unit by the exponential
+first-missing mass. That branch is unconditional and uses no OLD TC.
+It remains to treat $n-1\le\ell$. All summands in (1) are then
+nonnegative. There are exactly three legal first-missing transitions.
+
+\paragraph{Stationary transition $t=\kappa-1$.}
+Here $\widehat\kappa=\kappa$ and $\widehat\delta=1$.
+The negative unit would be at $n=\kappa+1$, outside the required range.
+At $n=\kappa+3$, the sum in (1) is exactly
+$E_{\kappa+2}-E_3=E_{\kappa+2}$. The early unscaled dyadic profile
+gives $E_{\kappa+2}\ge2$, paying $B(1)=1$.
+For $n\ge\kappa+4$, the single summand at $n-1$ is at least
+$B(\delta)\ge1$ by OLD TC. The other summands and possible unit
+are nonnegative, proving this transition.
+
+\paragraph{Preserving growth $t>\kappa$.}
+Here $\widehat\kappa=\kappa+1$, $\widehat\delta=\delta$,
+and $n-1\ge\kappa+3$. The summand at $n-1$ supplies OLD TC.
+Only the negative unit at $n=t+2$ could reduce the payment.
+At that index the required range forces $t\ge\kappa+2$,
+and the window $[2,t+1]$ also contains the distinct birth rank
+$\kappa$, whose increment is exactly $\delta\ge1$.
+This additional term pays the negative unit. Thus the growth
+transition preserves (TC), including its unit dent.
+
+\paragraph{Tied growth $t=\kappa$.}
+Here $\widehat\kappa=\kappa+1$ and $\widehat\delta=\delta+1$.
+Both isolated units are before the required range. At its first rank
+$n=\kappa+4$, (1) is
+\[
+                  E_{\kappa+3}-E_3=E_{\kappa+3}.        \tag{2}
+\]
+We claim the following unconditional coefficient bound:
+\[
+             E_{\kappa+3}\ge B(\delta+1)
+                       =\frac{\delta(\delta+3)}2
+                              \qquad(\kappa\ge8).       \tag{3}
+\]
+For $1\le\delta\le5$, the multiplicity-scaled early dyadic bound
+gives $E_{\kappa+3}\ge4\delta$, because $3\le\kappa-\delta$;
+this dominates the right side of (3). For $\delta\ge6$, use
+$E_{\kappa+3}\ge[z^3]M_\delta$. The exact profile has
+$[z^3]M_6=44\ge27$. For every $d\ge6$ its recursion gives
+\[
+ [z^3]M_{d+1}-[z^3]M_d
+    =[z^2]M_d+[z]M_d+d\ge d+2,
+\]
+since $[z]M_d=\binom d2-1\ge2$. These are precisely at least
+the increments of $d(d+3)/2$, proving (3) by induction.
+
+For $n\ge\kappa+5$ and $\delta\ne2$, the two distinct window
+summands at $n-1,n-2$ both fall in OLD TC's range. They pay because
+\[
+                  2B(d)\ge B(d+1)\qquad(d=1\text{ or }d\ge3).
+                                                               \tag{4}
+\]
+The exceptional multiplicity $\delta=2$ needs three old payments:
+$3B(2)=6\ge B(3)=5$. These are present for $n\ge\kappa+6$,
+at $n-1,n-2,n-3$. At the one intervening rank $n=\kappa+5$,
+the exact sum is $E_{\kappa+4}-E_4=E_{\kappa+4}$.
+The scaled early dyadic bound gives $E_{\kappa+4}\ge16$, since
+$4\le\kappa-2$, and therefore pays $B(3)=5$.
+This covers every tied-growth rank and completes the proof.
+\end{proof}
+
+\begin{corollary}[Only the low entrance layer is needed for this target]
+If (TC) is proved for EVERY actual arm with first missing weight eight,
+then it holds for every actual arm with first missing weight at least
+eight. Equivalently a least-part counterexample to (TC) in that region
+must enter weight eight from an old arm of first missing weight seven.
+\end{corollary}
+\begin{proof}
+Induct on the number of non-one parts, using that a legal append
+preserves the first missing weight or increases it by exactly one.
+An arm above eight has predecessor at least eight. Stationary
+extensions at eight are covered by the same theorem. Its first entrance
+from seven is included in the assumed base family.
+\end{proof}
+
+This is a reduction to a BOUNDED FIRST-WEIGHT family, not an exhaustive
+finite check: initial runs, capacities, counts and comparison ranks in
+the weight-eight entrance family are still unbounded. The subsequent
+\texttt{triangular\_source\_curvature\_complete.tex} closes this entrance
+family and ALL smaller first weights by a separate rank reduction and
+two complete independently rebuilt finite jet certificates.
+The full triangular theorem alone does not pay the entire growing
+two-source convolution at later overlaps.
+
+The exact actual diagnostic
+\texttt{probe\_triangular\_source\_induction.py/.json} checks 50000
+append contexts and 2166342 target comparisons, including 1461270
+large-first-weight pre-old-peak comparisons and all three local
+boundary identities. No failure was found. This is diagnostic evidence
+only; the conditional unbounded proof is the argument above.

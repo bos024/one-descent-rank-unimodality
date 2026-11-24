@@ -1,0 +1,34 @@
+{
+  "status": "EXACT_QA_UNIVERSAL_FIRST_CROSSING_STRONG_LATE_C_UNDER_AUDIT",
+  "counts": {
+    "old_surplus_ordinary_LC_centres_INCL_u5to15": 404775,
+    "exact_prefix_minimum_all_shift_C_payments": 467127,
+    "logical_shift_coverage": 107021527,
+    "actual_crossing_hosts": 3552,
+    "old_entire_read_additive_margins": 133647,
+    "NEW_strong_G_entire_prefix_reads": 135488,
+    "NEW_entire_ordinary_LC_tail": 260159,
+    "strict_first_crossings": 1841,
+    "strict_first_crossings_u5_to15": 313,
+    "growing_first_crossings_OUTSIDE_ALL_previous_cones": 750
+  },
+  "state_sha256": "379a271a701b33dc31be9f51a91cba9551eb1e08ce19e17c7a49f53a42a94f3c",
+  "new_first_crossing_witness": {
+    "alpha": 18,
+    "u": 5,
+    "V": [
+      6,
+      6
+    ],
+    "oldh": 5,
+    "oldW": 6,
+    "newW": 12,
+    "L": 7,
+    "pair": [
+      119,
+      135
+    ]
+  },
+  "seconds": 5.25,
+  "scope": "CandidateGENERALactualLATEC,N>=W+1,bycompletefirstcrossingusingSURPLUSordinaryLCandREFERENCEGAPDOMINANCE. No densityrecordhypothesis. ORIGINALearlierC/A2/coefficientUIOPEN. FiniteQAONLY."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_EXACT_QA_ALL_BINARY_FOUR_COUNTS_FROM_FIFTY_SEVEN_THREES",
+  "counts": {
+    "all_binary_actual_full_C_minimum_ratio_checks": 699804,
+    "all_binary_actual_literal_shifts_represented": 204463072,
+    "entire_ordinary_tail_minors": 426165,
+    "all_finite_binary_seed_jet_rows": 1416,
+    "actual_all_count_hosts": 1416,
+    "exact_sharp_negative_ordinary_controls": 276,
+    "independent_actual_FULL_A2_hosts": 24,
+    "independent_Q_post_LAST_mode_edges": 8113,
+    "independent_Q_forward_phase_(False, False)": 3325,
+    "independent_Q_forward_phase_(True, True)": 2999,
+    "independent_ENTIRE_signed_windows": 120,
+    "independent_ENTIRE_source_cone_hosts": 24,
+    "TRUE_greedy_ORIGINAL_arbitrary_binary_mixed_pairs": 24,
+    "TRUE_greedy_ORIGINAL_rank_counts": 12464,
+    "independent_Q_forward_phase_(True, False)": 820,
+    "independent_Q_forward_phase_(False, True)": 969
+  },
+  "sha256": "fa173c012a30facaf6b4168f86ce992759ffbd89aa2579291b688000586755d3",
+  "seconds": 11.563000000000102,
+  "scope": "Finite QA only; NOnewfiniteproofpremise. Analytic arbitraryseed/fourheredity/movingfirstcrossing proves full stated all-count theorem. General conjecture OPEN."
+}

@@ -1,0 +1,5 @@
+'CompleteThreeFour.true_cumulative_source_startups_from_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompleteThreeFour.complete_finite_parameter_and_padding_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CompleteThreeFour.whole_two_count_from_complete_finite_boundaries' depends on axioms: [propext, Quot.sound]

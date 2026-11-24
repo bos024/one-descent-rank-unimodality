@@ -1,0 +1,3 @@
+'StationaryTernaryReferenceBase.complete_fixed_six_residual_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

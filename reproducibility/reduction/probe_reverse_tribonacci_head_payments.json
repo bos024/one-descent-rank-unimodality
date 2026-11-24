@@ -1,0 +1,1405 @@
+{
+  "status": "EXACT_REVERSE_HEAD_DIAGNOSTIC_ONLY",
+  "cases": {
+    "12": {
+      "J0_positive": {
+        "count": 2,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "5/4",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "3/4",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      },
+      "J1_positive": {
+        "count": 5,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "27/2",
+              "-5/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "13",
+              "-5/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "13",
+              "-3/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "25/2",
+              "-3/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      },
+      "J2_positive": {
+        "count": 11,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "323/4",
+              "-27/2",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "321/4",
+              "-13",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "319/4",
+              "-13",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "317/4",
+              "-25/2",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "371/4",
+              "-27/2",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "369/4",
+              "-13",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "367/4",
+              "-13",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "365/4",
+              "-25/2",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "25/2",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "27/2",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1/2",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      },
+      "first_LC_minor": {
+        "count": 28,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1301/16",
+              "-135/8",
+              "25/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "599/8",
+              "-265/16",
+              "25/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              2
+            ],
+            "coefficient": [
+              "1099/16",
+              "-65/4",
+              "25/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "763/8",
+              "-211/16",
+              "15/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "89",
+              "-207/16",
+              "15/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              2
+            ],
+            "coefficient": [
+              "663/8",
+              "-203/16",
+              "15/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              0
+            ],
+            "coefficient": [
+              "1747/16",
+              "-39/4",
+              "9/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              1
+            ],
+            "coefficient": [
+              "823/8",
+              "-153/16",
+              "9/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              2
+            ],
+            "coefficient": [
+              "1549/16",
+              "-75/8",
+              "9/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1061/16",
+              "-135/8",
+              "25/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "479/8",
+              "-265/16",
+              "25/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              2
+            ],
+            "coefficient": [
+              "859/16",
+              "-65/4",
+              "25/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "667/8",
+              "-211/16",
+              "15/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "77",
+              "-207/16",
+              "15/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              2
+            ],
+            "coefficient": [
+              "567/8",
+              "-203/16",
+              "15/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": [
+              "1603/16",
+              "-39/4",
+              "9/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              1
+            ],
+            "coefficient": [
+              "751/8",
+              "-153/16",
+              "9/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              2
+            ],
+            "coefficient": [
+              "1405/16",
+              "-75/8",
+              "9/16"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "91/8",
+              "-5/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "83/8",
+              "-5/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "133/8",
+              "-3/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "125/8",
+              "-3/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "81/8",
+              "-5/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "73/8",
+              "-5/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "127/8",
+              "-3/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "119/8",
+              "-3/4",
+              "0"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "3/8",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "5/8",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      },
+      "second_LC_minor": {
+        "count": 56,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "36181/16",
+              "-2783/4",
+              "1301/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "36905/16",
+              "-10765/16",
+              "599/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              2
+            ],
+            "coefficient": [
+              "37625/16",
+              "-5201/8",
+              "1099/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "36367/16",
+              "-11983/16",
+              "763/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "37089/16",
+              "-11617/16",
+              "89"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              2
+            ],
+            "coefficient": [
+              "37807/16",
+              "-11255/16",
+              "663/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              0
+            ],
+            "coefficient": [
+              "36553/16",
+              "-6413/8",
+              "1747/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              1
+            ],
+            "coefficient": [
+              "37273/16",
+              "-12461/16",
+              "823/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              2
+            ],
+            "coefficient": [
+              "37989/16",
+              "-3025/4",
+              "1549/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "36133/16",
+              "-2747/4",
+              "1181/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "37097/16",
+              "-10597/16",
+              "539/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              2
+            ],
+            "coefficient": [
+              "38057/16",
+              "-5105/8",
+              "979/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "36511/16",
+              "-12103/16",
+              "715/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "37473/16",
+              "-11713/16",
+              "83"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              2
+            ],
+            "coefficient": [
+              "38431/16",
+              "-11327/16",
+              "615/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": [
+              "36889/16",
+              "-6605/8",
+              "1675/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              1
+            ],
+            "coefficient": [
+              "37849/16",
+              "-12821/16",
+              "787/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              2
+            ],
+            "coefficient": [
+              "38805/16",
+              "-3109/4",
+              "1477/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": [
+              "38389/16",
+              "-2711/4",
+              "1061/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": [
+              "39593/16",
+              "-10429/16",
+              "479/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              0,
+              2
+            ],
+            "coefficient": [
+              "40793/16",
+              "-5009/8",
+              "859/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "38959/16",
+              "-12223/16",
+              "667/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": [
+              "40161/16",
+              "-11809/16",
+              "77"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              1,
+              2
+            ],
+            "coefficient": [
+              "41359/16",
+              "-11399/16",
+              "567/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              2,
+              0
+            ],
+            "coefficient": [
+              "39529/16",
+              "-6797/8",
+              "1603/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              2,
+              1
+            ],
+            "coefficient": [
+              "40729/16",
+              "-13181/16",
+              "751/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              2,
+              2
+            ],
+            "coefficient": [
+              "41925/16",
+              "-3193/4",
+              "1405/16"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1413/2",
+              "-3773/24",
+              "91/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "8783/12",
+              "-3611/24",
+              "83/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "8645/12",
+              "-1495/8",
+              "133/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "4475/6",
+              "-1441/8",
+              "125/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "2813/4",
+              "-3719/24",
+              "43/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "4405/6",
+              "-3551/24",
+              "39/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "4333/6",
+              "-1523/8",
+              "65/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "9037/12",
+              "-1467/8",
+              "61/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": [
+              "724",
+              "-3665/24",
+              "81/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": [
+              "9125/12",
+              "-3491/24",
+              "73/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "8975/12",
+              "-1551/8",
+              "127/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": [
+              "2353/3",
+              "-1493/8",
+              "119/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "493/6",
+              "-47/4",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "254/3",
+              "-23/2",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "505/6",
+              "-29/2",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "260/3",
+              "-57/4",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "983/12",
+              "-93/8",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "254/3",
+              "-91/8",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "505/6",
+              "-117/8",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1043/12",
+              "-115/8",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": [
+              "248/3",
+              "-23/2",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": [
+              "257/3",
+              "-45/4",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "511/6",
+              "-59/4",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": [
+              "529/6",
+              "-29/2",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 3,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "17/4",
+              "-7/24",
+              "0"
+            ]
+          },
+          {
+            "X_power": 3,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "13/3",
+              "-7/24",
+              "0"
+            ]
+          },
+          {
+            "X_power": 3,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "13/3",
+              "-3/8",
+              "0"
+            ]
+          },
+          {
+            "X_power": 3,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "53/12",
+              "-3/8",
+              "0"
+            ]
+          },
+          {
+            "X_power": 4,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1/12",
+              "0",
+              "0"
+            ]
+          }
+        ]
+      }
+    },
+    "18": {
+      "J0_positive": {
+        "count": 2,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true
+      },
+      "J1_positive": {
+        "count": 5,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true
+      },
+      "J2_positive": {
+        "count": 11,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true
+      },
+      "first_LC_minor": {
+        "count": 28,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true
+      },
+      "second_LC_minor": {
+        "count": 56,
+        "negative_count": 0,
+        "first_negative": [],
+        "strict_constant_positive": true
+      }
+    }
+  }
+}

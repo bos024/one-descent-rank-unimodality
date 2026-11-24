@@ -1,0 +1,9 @@
+'BinaryRelativeFibonacci.two_term_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryRelativeFibonacci.strict_two_term_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryRelativeFibonacci.Fibonacci_first_defect_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryRelativeFibonacci.integer_strict_minor_relative_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryRelativeFibonacci.support_nonnegative' depends on axioms: [propext, Quot.sound]
+'BinaryRelativeFibonacci.arbitrary_trim_tail_induction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryRelativeFibonacci.relative_LC_from_tail' depends on axioms: [propext, Classical.choice, Quot.sound]

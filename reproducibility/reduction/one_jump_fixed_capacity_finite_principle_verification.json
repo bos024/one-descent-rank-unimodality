@@ -1,0 +1,36 @@
+{
+  "status": "PASS_UNBOUNDED_FIXED_CAPACITY_FINITE_PRINCIPLE_AND_ONE_JUMP_C_THROUGH32",
+  "new_scoped_reports": 5,
+  "kernels": {
+    "OneJumpFixedCapacityClosure": 5
+  },
+  "finite_principle": "ANY fixedL>=3,H=L+2: completeC for ALL1<=h<=H,1<=alpha<=h+L plus FULLpositiveDtailLC baseh=H suffice for COMPLETEC ofALLactual1alpha2^h L atALLh/alpha/ranks/shifts. EntirepositiveDsupport<=2h+L, paddingalpha clamps toh+L throughread2h+L+1 by exactbinaryboundary. Whole-tail signed two-term/terminaltrim induction, reference Cassini amplitude paidbyrh>=CL, TWO early D-ratio seeds plusF/G seeds, finite-prefix two-integration propagation. No guessed word-count cutoff.",
+  "completed_family": "ALL actual1alpha2^h L,alpha/hUNBOUNDED,3<=L<=32 have COMPLETEC. Combined dominantL>=R theorem proves COMPLETEC forALLh<=16 atARBITRARYL>=3. EntireonejumpC residualrequires h>=17,L>=33,L<R<=2h. This restriction is AUXILIARY, NOToriginalleastcounterexampleupgrade.",
+  "complete_independent_entrance": {
+    "ALL_actual_entrance_words": 19605,
+    "ALL_current_ranks_envelope_checked": 791451,
+    "ALL_shift_comparisons_covered": 20029138,
+    "ALL_full_tail_base_minors": 36427,
+    "ALL_full_tail_base_padding_classes": 1110
+  },
+  "coupled": "Prior one-armC bridges apply: ALLdepth BOTHordinaryrising/nonnegativecurrent tailnonrecovery with usualOLDheadforS; ENTIREproperzeroheadbothcounts>=2 C/OLD-free withoutphasecondition. Remainingmixed/deeper/incoming notinferred.",
+  "formal_scope": "FiveNEW ordinary-axiom scoped reports: FULL genericreference/terminaltrim tailinduction, amplitudebudget, BOTHfirstdefectseedratios, FULL FINITE-read two-integration propagation, paddinggeometry. Actual word/reference/positive-support/finitecoverage/C assembly WRITTEN. ALL19605 actual entrancewords/20029138 literal shifts/36427baseLCminors independently rebuilt by closedbinomial/directwindow/integratedD, NOproducerimplementation import. Entrance notend-to-endLean; finiteQA separate, no arbitraryL completion.",
+  "remaining": "GeneralonejumpL>=33 withh>=17 andL<R, generalC>=6, fullA2/lighterbinaryincoming, mixedc0/deeperS and ORIGINAL unamplified coefficient UI OPEN. Full firstmissing4 family notclosed; nooriginalleastcounterexampleboundupgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "one_jump_fixed_capacity_finite_principle.tex": "eb1626b6a9d437c71738e4584672ccc564c71096ce30b475a4da27b6ae1a489e",
+    "OneJumpFixedCapacityClosure.lean": "a667870ee65903338f86681183478fd0cfd6e20159cfc08b8b9ad0fbfb2d02a0",
+    "OneJumpFixedCapacityClosure.log": "1249d8cdd71d06db7c1d6894d1cbfc1799ae13f76a1bced186fcb76e30c4f9c5",
+    "build_one_jump_fixed_capacity_C_entrance.py": "2164ff8f6efdb525ddc79b3c6646f0fa33ebf96e590fa735d30dd53c127962c4",
+    "one_jump_fixed_capacity_C_entrance.json": "3a5a1bcf2400ed2657441ac34fb80d485142332058b46c40951753099432e00c",
+    "verify_one_jump_fixed_capacity_C_entrance.py": "df994dc7bfb86d1649ba6e2136767f6bc04aa0c66e7dd53e344baf2015ecdb24",
+    "one_jump_fixed_capacity_C_entrance_verification.json": "1380388206ad9579c26bb90f4e08cf88e7c5ea0bd97dec05071222e7d34b7113",
+    "audit_one_jump_fixed_capacity_propagation.py": "216a1c4e5378a48feb09db87c742c0324398843e62922f7c9189e3c450ea0c97",
+    "audit_one_jump_fixed_capacity_propagation.json": "ca04eeae02e2271922c22cf276cc80a2498210a06dc207f348c9b4684bc2c80e",
+    "audit_minimum_staircase_scaled_dyadic.py": "2b21ac1adb19e110473d958952a2699d33d71326faaa54c5af7f90bd91c5ed45",
+    "verify_one_jump_fixed_capacity_finite_principle.py": "6ce6034e9dd9698798346cf8e09ce1cefa2800020640be51a5d2d8acbf3d16c7",
+    "binary_ordinary_tail_and_one_jump_C_verification.json": "f096cdb526006928dcbe15a8d6effadd3cfb1bb5712a6dd30f21ca9ab819c45c"
+  }
+}

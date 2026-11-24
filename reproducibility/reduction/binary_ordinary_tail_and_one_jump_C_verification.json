@@ -1,0 +1,25 @@
+{
+  "status": "PASS_UNBOUNDED_BINARY_ORDINARY_TAIL_AND_DOMINANT_ONE_JUMP_C",
+  "new_scoped_reports": 7,
+  "kernels": {
+    "BinaryOrdinaryTailAndOneJump": 7
+  },
+  "ordinary_theorem": "ALL alpha>=1,h>=0, FORWARD ordinary F of1alpha2^h: exactFib(n+1) throughn<=h+1, firstdefect>=1, componentwiseFib bound. ENTIREtail centresn>=h+1 LC, strict integer minor>=1 whenFn>Fprev. Full unbounded h-induction including afterordinarymodes/support/zeros. Consequently F_n/Fib(n+1) relativeLC throughFIRSTordinarymodeR whenh>=1; NOT afterR.",
+  "one_jump_C": "ALL actual1alpha2^h L withh>=1,L>=3,L>=R=FIRSTordinarymodeofbinaryprefix have COMPLETE C, allranks/shifts. R<=2h gives simple sufficientL>=max(3,2h). NormalizedrelativeLC transfers to referenceFib(n); throughnewFIRSTDmode slopes are shifted binaryF, except exactL=R boundarycurrentM-1 improvesC. Entire count/padding/capacity family unbounded. Includes nonbinary arbitrarily many parts.",
+  "coupled": "Existing one-armC bridge closes ALLdepth both-ordinary-rising/nonnegative-current tail nonrecovery with this family. Usual OLD head retainedforS. ENTIREproperzeroheadbothcounts>=2 with thisonejumpfamily holdsNOOLD/phasecondition via earlier Cbridge/phaseforcing.",
+  "formal_scope": "Seven NEW ordinary-axiom scoped reports, including FULL unbounded ordinary-family tail induction and rising-prefix relativeLC implication. Actual polynomial/support/prefix/base identification and normalized-C/reference/phase application WRITTEN. Prior relativeC/reference/binary kernels reused without recounting; finite actual QA separate, not proof. No end-to-end actual-composition Lean theorem.",
+  "remaining": "Smaller capacities3<=L<R, fullfirstmissing4 family, generalC>=6, lighterbinaryfullA2/incoming, remainingmixedc0/deeperS and ORIGINAL unamplified coefficient UI OPEN. No original least-counterexample bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "binary_ordinary_tail_and_dominant_one_jump_C.tex": "efb874683fbc65ef1b35906007275be794676b5acd8f619c1ffae6bd06efd3fa",
+    "BinaryOrdinaryTailAndOneJump.lean": "d72521204dd351c60d287aa5036528c1dcffd7174e9befae506eb55d05a5865e",
+    "BinaryOrdinaryTailAndOneJump.log": "2f2886eb2b4d59b47add99c1d813b8a418b6c1da45865485d765c22563d1c413",
+    "audit_binary_ordinary_tail_and_one_jump_C.py": "9779d41a14cd79c90426df1971db30e78aa16a5b04c3994a2bdb2d50d00a5588",
+    "audit_binary_ordinary_tail_and_one_jump_C.json": "260838980cb26eaf7f40086a38cbaae251027fde2fc086721721fe21187782f4",
+    "verify_binary_ordinary_tail_and_one_jump_C.py": "330050794c6e4cd5a4464263beda5ed9e02d091d2946a166775dd6574d156ac1",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76",
+    "binary_relative_fibonacci_C_verification.json": "e2f602720a2a5446979f3988b9198568dd8296e9190d6c720ff821b7b47a1469"
+  }
+}

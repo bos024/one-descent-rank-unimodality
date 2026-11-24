@@ -1,0 +1,4 @@
+'AgentHalfLCIntervalPayments.whole_layer_and_first_point_missed' depends on axioms: [propext, Quot.sound]
+'AgentHalfLCIntervalPayments.tail_interval_one_step_loss' depends on axioms: [propext, Quot.sound]
+'AgentHalfLCIntervalPayments.late_entering_source_layer_payment' depends on axioms: [propext, Quot.sound]
+'AgentHalfLCIntervalPayments.virtual_central_source_layer_payment' depends on axioms: [propext, Quot.sound]

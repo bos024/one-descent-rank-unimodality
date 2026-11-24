@@ -1,0 +1,7 @@
+'MainBoxDerivativeEnvelope.uniform_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainBoxDerivativeEnvelope.terminal_unit_preserves_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MainBoxDerivativeEnvelope.rising_curvature_has_previous_growth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MainBoxDerivativeEnvelope.curvature_resource' depends on axioms: [propext, Quot.sound]
+'MainBoxDerivativeEnvelope.subcritical_all_rank_domain' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,161 @@
+\section{Complete late C for every finite tail of the infinite binary reference}
+Put $H=1/(1-z-z^2)$. Starting from $F_\varnothing=H$, append ANY
+finite capacity word $V$ with entries at least two by
+$F_{Vt}=1+S_tF_V$, $S_t=z+\cdots+z^t$.
+Its order need not be sorted. Set
+\[
+ B_V=(1-z-z^2)F_V,\qquad W=\deg B_V,\quad
+ d=(1-z)F_V,\quad G=F_V/(1-z),\quad G_{-1}=0.
+\]
+For $B_V=1$ take $W=0$.
+
+\begin{theorem}[Every word, every late rank, every C shift]
+For every such word and every $N\ge W+6$, ALL shifts $R\ge3$ satisfy
+\[
+                 G_{N-R}d_{N-1}\ge G_{N-R-1}d_N.           \tag{1}
+\]
+Negative-index cumulative coefficients are zero. When $3\le R\le N$,
+the quantitative lower bound is
+\[
+ G_{N-R}d_{N-1}-G_{N-R-1}d_N
+    \ge\left(\frac13-2\varphi^{-4}\right)d_{N-1}>0,
+ \qquad \varphi=\frac{1+\sqrt5}{2}.                        \tag{2}
+\]
+Here $W$ equals the sum of capacities after deleting all LEADING twos
+from $V$. In particular no count, capacity or padding cutoff is imposed.
+\end{theorem}
+
+\begin{proof}
+Write $S_2=z+z^2$. The already established numerator-cascade identity,
+specialized to the fixed binary reference, is
+\[
+ B_\varnothing=1,\qquad
+ B_{Vt}=1+S_t(B_V-1)+(S_t-S_2).                            \tag{3}
+\]
+It proves by full word induction that $B_V\ge0$, $B_0=1$,
+$B_1=B_2=0$, and degree at most the word weight. A leading two
+fixes $H$, so it can be deleted. Once a capacity above two first
+appears, (3) has positive leading coefficient at that capacity;
+every subsequent append increases the degree by exactly its capacity.
+This proves the assertion about $W$.
+The cascade identity is an old input from
+\texttt{count\_prefix\_and\_stationary\_resource\_separator.tex};
+the spectral/cumulative payment below is the new argument.
+
+Let $\psi=-\varphi^{-1}=1-\varphi$ and
+$g_k=\operatorname{Fib}(k+3)-1$, $g_{-1}=0$.
+These are precisely the coefficients of $H/(1-z)$.
+At zero, $g_0-\varphi g_{-1}=1$; for $k\ge1$, Binet's
+identity gives
+\[
+ g_k-\varphi g_{k-1}=\varphi-1+\psi^{k+2}
+                                  \ge2-\varphi>\tfrac13. \tag{4}
+\]
+Indeed $|\psi|<1$ and the most negative term in this range is
+$\psi^3$ at $k=1$; $\varphi-1+\psi^3=2-\varphi$.
+The uniform $1/3$ lower bound is also kernel proved directly with
+exact rational bounds on $\varphi,\psi$, without floating arithmetic.
+
+Since $G=(H/(1-z))B$, exact finite convolution gives
+\[
+ G_k-\varphi G_{k-1}
+    =\sum_i B_i\{g_{k-i}-\varphi g_{k-i-1}\}\ge\tfrac13
+                                               \quad(k\ge0). \tag{5}
+\]
+Negative base indices contribute zero; all remaining terms are
+nonnegative and the term $i=0$ alone pays (5).
+This transports a DIFFERENCE identity, rather than differentiating
+a coefficientwise majorant.
+
+At the conjugate reciprocal root $\psi^{-1}=-\varphi$,
+the constant correction $1-S_2$ vanishes. Consequently
+\[
+                B_{Vt}(-\varphi)=S_t(-\varphi)B_V(-\varphi).
+\]
+For EVERY capacity $t\ge2$,
+\[
+ \varphi S_t(-\varphi)=(-\varphi)^t-1,\qquad
+                         |S_t(-\varphi)|\le\varphi^t.     \tag{6}
+\]
+The second inequality follows from the first, the triangle inequality,
+and $1+\varphi^t\le\varphi^{t+1}$.
+Multiplying (6) over the word after its leading twos have been removed,
+\[
+                              |B_V(-\varphi)|\le\varphi^W. \tag{7}
+\]
+
+For $N\ge W+2$, the whole reference slope is a finite convolution
+of $B$ with the binary slopes. All its read indices are at least two,
+so the exact Fibonacci identity yields
+\[
+ \epsilon_N:=d_N-\varphi d_{N-1}
+       =\sum_i B_i\psi^{N-i-2}
+       =\psi^{N-2}B_V(\psi^{-1}).                         \tag{8}
+\]
+Equivalently,
+$\varphi^{N-2}\epsilon_N=(-1)^{N-2}B_V(-\varphi)$.
+No estimate is made before the finite tail has entirely entered this
+homogeneous range. Combining (7)--(8), for $N\ge W+6$,
+\[
+                       |\epsilon_N|\le\varphi^{-4}<\tfrac16. \tag{9}
+\]
+The strict inequality uses $\varphi^4=3\varphi+2>6$.
+
+The coefficients of $F=HB$ are nondecreasing, since $H$ is
+nondecreasing and $B\ge0$. Put $c_B=B(1)\ge1$.
+For $m\ge W$, the exact binary cumulative identity gives
+\[
+                         G_m=F_{m+2}-c_B.                 \tag{10}
+\]
+Also $F$ satisfies its Fibonacci recurrence beyond degree $B$.
+At the present ranks this implies
+\[
+ G_{N-4}=F_{N-2}-c_B\le2F_{N-3}=2d_{N-1}.                \tag{11}
+\]
+All the inequalities in (11) use the entire homogeneous tail,
+not the prefix where numerator births can still occur.
+
+Fix $R\ge3$ and put $k=N-R$. If $k<0$, both terms of (1)
+vanish. Otherwise $G_{k-1}\ge0$ and
+$G_{k-1}\le G_{N-4}\le2d_{N-1}$, with $G_{-1}=0$ when $k=0$.
+Use (5), (8), and (9) in the exact minor:
+\[
+ \begin{split}
+ G_kd_{N-1}-G_{k-1}d_N
+ &=d_{N-1}(G_k-\varphi G_{k-1})-G_{k-1}\epsilon_N\\
+ &\ge \tfrac13d_{N-1}-2d_{N-1}|\epsilon_N|\\
+ &\ge(\tfrac13-2\varphi^{-4})d_{N-1}>0.
+ \end{split}
+\]
+The reference slopes are strictly positive from rank two, so this
+proves (1)--(2) for every required shift.
+\end{proof}
+
+\paragraph{Scope.}
+The uniform cumulative golden-ratio margin (5) holds at ALL ranks
+for every reference word. The C conclusion covers ALL shifts at
+EVERY current rank $N\ge\deg B+6$.
+It does not assert earlier multiple-tail reference C at
+$N\le\deg B+5$, global cumulative LC of every reference, or C for
+arbitrary finite actual binary prefixes. Normalized-relative or
+read-prefix inheritance still requires its proved density hypotheses;
+those hypotheses are not silently supplied by this reference theorem.
+General actual C/A2 and the original general unamplified conjecture
+remain open. No original least-counterexample bound is upgraded.
+
+\paragraph{Verification scope.}
+\texttt{ArbitraryFibonacciTailLateC.lean} proves seven new scoped
+standard-axiom results: the ALL-rank regularized Fibonacci margin;
+COMPLETE finite nonnegative-numerator margin transport; the ALL-capacity
+conjugate-window norm; COMPLETE word-product norm induction; FULL
+finite scaled conjugate-error identity/norm; the unbounded late
+$1/6$ error bound; and strict all-read scalar C payment.
+The old numerator identity is reused; positivity, leading-two removal,
+formal-series coefficient identification, exact homogeneous-tail reads
+and the ALL-shift reference assembly are written proofs, not an
+end-to-end Lean actual-composition formalization.
+Independent diagnostics use exact arithmetic in $\mathbb Q(\sqrt5)$,
+with integer-square sign decisions and no floating point. Every
+numerator, norm, cumulative margin, scaled error, tail identity and
+literal late C shift in the diagnostic cases is checked. Finite QA is
+not an input to the unbounded proof.

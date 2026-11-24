@@ -1,0 +1,146 @@
+{
+  "status": "PASS_UNBOUNDED_ALL_PADDING_CI_ENTRANCE_AND_COMPLETE_ACTUAL_LATE_C",
+  "new_scoped_reports": 14,
+  "kernels": {
+    "DividedCILaterPrimitive": {
+      "weighted_power_decay": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "double_quadratic_kernel_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "double_last_head_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "double_row_zero_payments": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "nonempty_junction_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "nonempty_interval_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_interval_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "GoldenPrimitiveCut": {
+      "constant_cut_preserves_LC": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "signed_primitive_cut_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "first_source_minor_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "second_source_minor_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "DividedCILaterSmallCertificate": {
+      "golden_fine_interval": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "all_scalar_margins": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "complete_actual_startup_margins": []
+    }
+  },
+  "repaired_primitive": "For EVERY CI L=prod[t], t>=3, degree h, EVERY u>=h+1, J=((1+z)^u L-(1-phi)^u L(-phi))/(1+qz) has positive first difference LC at EVERY centre n>=2 on its ENTIRE support. Primitive centre1 may fail and is NOT asserted. Proof: weakened window closure inheriting centres n>=t+1 from a primitive with rank0 deleted; DOUBLE robust LC-numerator head for u>=12; exact CI spectral norm <=2q; improved nonempty/empty junctions; two explicit long-single-interval endpoints; COMPLETE139 low-u exceptions.",
+  "generic_cut": "For ANY finite positive LC b whose positive primitive is LC after deleting rank0, ANY integer a>=0, x_n=sum(j>=1)q^j b_(n+j), E_n=b_n+q b_(n-1), the positive part of x_n-E_(n-a) is LC at EVERY a+2<=n<FIRSTbmode. Exact q^2 cut is a convolution of signed primitive with an LC bilateral geometric/constant/final-q^3 kernel. Negative future primitive contributes one geometric term, rank0 vanishes beyond a, and subtracting a nonnegative constant after geometric normalization preserves LC. This requires the primitive of b ITSELF; the older generic counter only controls primitive(E).",
+  "analytic": "For EVERY CI L of degree h, EVERY m>=h, EVERY alpha>=1, A=(L*sum(k=0..m)(z+z^2)^k-z^(m+alpha)(1+z)^(m+1)L)^+ is coefficient LC at EVERY centre m<=n<=FIRST_A_mode. Uses repaired primitive and cut closure, exact one-coefficient true-source normalization defect, source LR mode bound and uniform first/second startup minors at w=m+1+lenL>=8. COMPLETE41 remaining small-w contexts use exact analytic padding clamp, with all88 distinct integer margins kernel checked.",
+  "actual": "For EVERY ACTUAL sorted tail V>=3, degree h, length r, weight W=h+r, EVERY binary count u>=h+1 and EVERY padding alpha>=1, positive slopes are LC at ALL MOVING centres u+r+1<=N<FIRSTDmode. EVERY C shift R>=3 holds at EVERY current rank N>=W+1. SINGLE entry m=h is now PROVED FOR ALL PADDINGS, then previously proved fixed-padding count propagation and TWO ordinary-F/read joining supply all counts/ranks/shifts in this late range. No finite CI degree/count/capacity/padding cutoff.",
+  "finite_reduction": "The previously open arbitrary-padding entrance at u=h+1 is NOW CLOSED ENTIRELY; the residual alpha4..h is EMPTY. To obtain COMPLETE general C one still needs earlier reference C at N<=W and shorter binary counts u<h+1 (finite for EACH fixed V but unbounded over tails). General C/A2 and ORIGINAL unamplified UI remain OPEN.",
+  "finite_certificates": "Independent COMPLETE139 low-u CI contexts reconstructed by a separate capacity grammar AND reverse polynomial division; all1653 later primitive minors,854 distinct Q(phi) margins. Independent COMPLETE41 small-w/analytic-padding-clamp contexts reconstructed using literal ACTUAL F and D rather than the signed-source helper; all135 coefficient comparisons,88 distinct integer margins. ALL margins checked by ordinary Lean reduction at a proved rational golden-root interval, no native reduction. Finite certificates cover only explicitly bounded exceptions to written unbounded proofs.",
+  "formal_scope": "FOURTEEN NEW scoped reports: SEVEN DividedCILaterPrimitive scalar/power/double-budget/junction kernels, FOUR GoldenPrimitiveCut scalar cut/constant-LC/startup kernels, THREE DividedCILaterSmallCertificate fine golden-root/all854 scalar/complete88 integer certificates (last is AXIOM FREE). Prior global ordinary/window/ULC/Frechet/source/count/read kernels reused WITHOUT recounting. Weak-window, LC convolution and signed-tail assembly, capacity grammar, polynomial identities and actual-model identification are WRITTEN, not end-to-end Lean formalization of all compositions.",
+  "remaining": "Earlier arbitrary-tail reference C N<=W; shorter binary counts 0<=u<h+1; general C/A2; original mixed/incoming/BOTH-rising deep branches and ORIGINAL general unamplified UI remain OPEN. The still stronger FULL primitive assertion including centre1 at u=h+1 is FALSE. Finite-padding geometric-deficit LC is not used as an unproved substitute. No original least-counterexample numerical bound upgrade; first unresolved general-C count6 unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "primitive_QA": {
+    "complete_small_later_primitive_minors": 1653,
+    "exact_double_robust_row_zero_payments": 2967,
+    "exact_double_robust_kernel_rows": 81926,
+    "exact_two_exceptional_single_interval_boundary_formulas": 138,
+    "exact_generic_double_robust_head_minors": 14961,
+    "generic_LC_double_budget_contexts": 500,
+    "exact_double_perturbed_X_head_minors": 109708,
+    "exact_repaired_low_head_identity_contexts": 1600,
+    "exact_nonempty_old_tail_strong_junction_payments": 1426,
+    "exact_later_only_primitive_window_minors": 194158,
+    "exact_entire_CI_later_primitive_minors": 218461,
+    "repaired_CI_induction_contexts": 1600,
+    "exact_empty_old_tail_strong_junction_payments": 131
+  },
+  "cut_QA": {
+    "complete_small_actual_pre_mode_LC_minors": 135,
+    "exact_right_geometric_actual_Cinf_identifications": 169730,
+    "exact_signed_primitive_convolution_and_constant_cut_identities": 41813,
+    "exact_generic_cut_LC_after_deleted_initial_primitive": 39606,
+    "exact_actual_all_padding_through_first_mode_LC_minors": 80157,
+    "exact_uniform_first_source_startup_minors": 2366,
+    "exact_all_padding_all_read_prefix_minimum_C_payments": 216092,
+    "actual_all_padding_CI_contexts": 1200
+  },
+  "independent_complete_small_CI_contexts": 139,
+  "independent_complete_actual_startup_contexts": 41,
+  "kernel_checked_Qphi_margins": 854,
+  "kernel_checked_integer_startup_margins": 88,
+  "primitive_state_sha256": "e8ce8134e686e2b430a206529286ab234a88d23623bc707fd7b57e5232030cf0",
+  "cut_state_sha256": "2c50f9993f124f4cb5a92d7bcb6ea1d76ac7f6903d49f404f0baf575d99081cb",
+  "sha256": {
+    "divided_CI_later_primitive_proof.tex": "6b1c6b9d43ff5c140785cce9d3a6404621e54895817cba6ac5dc11b593ee065a",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "actual_all_padding_CI_entrance.tex": "67f90e1dec701112d2e19ee7487ade2b0502d4449cc8995caa5ac223c3cbe678",
+    "DividedCILaterPrimitive.lean": "b20dffc0a22bc5fb194e0adbb5a0cda7e89b96fb56aad6ba5891436d70347b6c",
+    "DividedCILaterPrimitive.log": "6603a4c215f9579ab11b4fd14eb393f81a411f83ca380a44950daabeaf883067",
+    "GoldenPrimitiveCut.lean": "030c58b6319f5673a9cd1dcf07dfe9baee0011ddc50441416c2b19d491835e15",
+    "GoldenPrimitiveCut.log": "fdf171721916496ceeee3d0b116ed7a78d900be29c914a7a6d3b72697b2a371a",
+    "DividedCILaterSmallCertificate.lean": "eec6d7fce430a6c2d88eb41ded7d5ef1937bc3288181d05ee32da22d4298aa36",
+    "DividedCILaterSmallCertificate.log": "2ca67a98f02f4f57edd2031f67ff838fddcfab2e6dde3e185fdbd835c2c68912",
+    "audit_divided_CI_later_primitive.py": "c2326bd5e4ecaa2b87dc24e0e55d10640759019f03815ab70d93b2fc838a0c81",
+    "audit_divided_CI_later_primitive.json": "ce95fe916ebb90f14e1816032582c512d14c8d1d0da525450161ee2e183a349f",
+    "audit_all_padding_primitive_cut.py": "6586999895b7d573b813321d0e1cae685d284293c8c06a31685ecdbe21d82b21",
+    "audit_all_padding_primitive_cut.json": "86c77543cb9557519b652d31905504f99c731a7fce8d8b8163de25dea8cb6120",
+    "emit_divided_CI_later_small_certificate.py": "23576def0ce838d9d1b936ba093d25fef6e61dbcbb48433e7b5717594c32c753",
+    "verify_all_padding_CI_entrance.py": "87291fd146d899f267861b5bfa03e7169968694cc0bc94871b26eab335132d81",
+    "padding_three_local_prefix_verification.json": "019e85adf20473529805595379cb62480d33fc3ec15b45aae9db0af29b1e5afb",
+    "padding_three_local_prefix_proof.tex": "14ad1f258078abb6df6ebe033edb9d10f14c4ef0cb5698013f8a1697763f0755",
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "infinite_padding_full_deficit_LC.tex": "062aa2d99ab192b2e40a200958dba5b06b7a0e05dbaf16601c70a3dcb0081d78",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "divided_CI_surplus_three_primitive_proof.tex": "87f47d4ded4416a1237dade2c052129e31aff8f4c25f74390678951a9384d3bc",
+    "binary_CI_two_seed_closure_workbench.tex": "74cabac11d7725f0ca758d71c3934cd4ee354da5d64b53e17beb134796ec702f",
+    "sharpened_multitail_single_entrance.tex": "b3373c11e2e1585ca2227097699a11dcaa710fe41704b032fce18e8b312f8718",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338"
+  }
+}

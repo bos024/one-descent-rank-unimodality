@@ -1,0 +1,19 @@
+'MixedThreeFourProperQuotient.three_robust_head_polynomial_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedThreeFourProperQuotient.robust_interval_minor_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourProperQuotient.exact_four_interval_quotient_correction' depends on axioms: [propext, Quot.sound]
+'MixedThreeFourProperQuotient.four_remainder_norm_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourProperQuotient.whole_two_count_remainder_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourProperQuotient.entire_increasing_norm_target_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedThreeFourProperQuotient.nonnegative_unit_mixture_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedThreeFourProperQuotient.complete_forward_quotient_three_head_minors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedThreeFourProperQuotient.entire_explicit_three_four_norm_cone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

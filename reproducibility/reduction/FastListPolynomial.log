@@ -1,0 +1,3 @@
+'FastListPolynomial.poly_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FastListPolynomial.poly_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FastListPolynomial.poly_mul' depends on axioms: [propext, Classical.choice, Quot.sound]

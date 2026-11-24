@@ -1,0 +1,14 @@
+24_GENERAL_UNIMODALITY/ClippedForwardRatio.lean:13:20: warning: Variable name `hd1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ClippedForwardRatio.raw_deficit_identity' depends on axioms: [propext, Quot.sound]
+'ClippedForwardRatio.clipped_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClippedForwardRatio.weighted_sum_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClippedForwardRatio.short_factor_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClippedForwardRatio.two_losses' depends on axioms: [propext, Quot.sound]
+'ClippedForwardRatio.weighted_ratio_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClippedForwardRatio.complement_threshold' depends on axioms: [propext, Quot.sound]
+'ClippedForwardRatio.prefix_budget_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]

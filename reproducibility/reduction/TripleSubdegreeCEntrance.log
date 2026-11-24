@@ -1,0 +1,6 @@
+'TripleSubdegreeCEntrance.all_padding_three_loss_payments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TripleSubdegreeCEntrance.first_ordinary_seed_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TripleSubdegreeCEntrance.second_ordinary_seed_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TripleSubdegreeCEntrance.first_ordinary_seed_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TripleSubdegreeCEntrance.second_ordinary_seed_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TripleSubdegreeCEntrance.strict_subgolden_actual_entrance' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,96 @@
+\section{Only the last-capacity edge can be flat before the first positive-derivative mode}
+This statement concerns SINGLE normalized formal arms. Capacities after
+the initial ones may occur in arbitrary order, provided they are at least
+two. It is independent of the original one-descent conjecture.
+
+Let $D_0=D_1=0$, $D_n=(F_n-F_{n-1})^+$ for $n\ge2$, and let
+$\ell$ be its FIRST global mode. For a nonrectangular arm write $t$
+for its final capacity and $M=D_\ell$.
+
+\begin{theorem}[A single possible flat edge]
+For every $3\le n\le\ell$,
+\[
+      D_n>D_{n-1}\quad\hbox{unless }n=t+1.
+\]
+There is at most one flat edge on this rising prefix. Consequently
+\[
+                             \boxed{\ell\le M+2.}       \tag{1}
+\]
+The height bound is sharp, for example on $1^\alpha2^3$ with
+$\alpha\ge3$, where the first derivative mode is four and its height two.
+\end{theorem}
+\begin{proof}
+Induct on the non-one count. A one-capacity arm has positive derivative
+an interval of ones starting at rank two, whose FIRST mode is two;
+the asserted rising-edge interval is empty.
+
+For a further append $t\ge2$ let $d$ be the OLD positive derivative,
+with first mode $m$, last positive rank $R$, and $d_2=1$.
+By induction there is at most ONE flat edge through $m$; all other
+edges there strictly increase. Put $W=S_td$.
+For $3\le n\le m+1$ its increment is
+\[
+                         \Delta W_n=d_{n-1}-d_{n-t-1}>0. \tag{2}
+\]
+If the leaving index is below two, the entering coefficient is positive
+and the leaving one zero. Otherwise the two indices are at least two
+apart on the old rising prefix, which contains at most one flat edge;
+at least one intervening edge is strictly positive. This proves (2).
+
+For $n>m+1$ while the leaving index is at most $m$, the entering
+coefficient is nonincreasing and the leaving coefficient nondecreasing.
+Thus the increments in (2) are nonincreasing across that crossing
+range. Once the leaving index is past $m$, each increment is nonpositive.
+A zero crossing increment can therefore never be followed by a positive
+one. Combining this with (2), $W$ strictly increases all the way to its
+FIRST mode $m_W$; there is no earlier flat edge.
+
+The exact positive-derivative splice is
+\[
+                          P=z^2[t-1]+W.
+\]
+The additional interval is nonincreasing from rank two, and $m_W\ge3$.
+Hence $P$ is nonincreasing from $m_W$, so its FIRST mode $m_P\le m_W$.
+For $3\le n\le m_P$, every increment of $P$ is the strictly positive
+increment of $W$, except at the one edge $n=t+1$, where one unit is
+subtracted. The previously established unimodality of $P$ guarantees
+that this exceptional increment cannot be negative before its first mode.
+Thus it is the only possible flat edge.
+
+Finally $P$ is nonincreasing from $R+1$: its entering old derivative
+is zero afterward and the additional interval has no positive increment
+there. The actual NEW derivative equals $P$ through at least $R+1$,
+and the known terminal splice is nonincreasing afterward. Its first
+mode therefore agrees with that of $P$, and its entire rising prefix
+has exactly the asserted strictness property. This closes induction.
+
+For (1), $D_2=1$ and the $\ell-2$ integer increments entering ranks
+three through $\ell$ are nonnegative, with at most one zero.
+If $\ell\ge3$, they sum to at least $\ell-3$, so $M\ge\ell-2$;
+the case $\ell=2$ is immediate. For the sharpness family the actual
+derivative is $z^2+z^3+2z^4+2z^5+z^6$ for $\alpha\ge3$;
+its first mode is four and height two.
+\end{proof}
+
+\paragraph{A smaller alternative finite region for the triangular-source proof.}
+In a peak-crossing TC comparison the earlier unbounded payment gives
+$\Delta\widehat E_n\ge M+n-\ell-3\ge n-5$ by (1).
+At OLD $\kappa\le7$, the new triangular budget is at most 35.
+Thus any failure has $n\le39$. The simpler peak payment
+$\Delta\widehat E_n\ge M-1$ also forces $M\le35$ in a failure.
+This gives a smaller replacement for the earlier endpoint-45/height-128
+finite region, covering ALL old modes at small first weight. The original
+independent endpoint-45 proof remains valid. The NEW endpoint-39/height-35
+grammar has 102630 states and 1623669 legal appends; all 18321840 required
+necessary-guard comparisons satisfy the exact source budget. Its independent
+rolling-window DFS reconstruction has exactly the same counts and complete
+state set, compared byte for byte with the fixed-width state certificate.
+Thus it supplies an alternative peak-crossing proof in the full TC theorem,
+without the late-old-peak case split. It is not a new original UI theorem.
+
+The written strict-window induction above is the unbounded proof.
+The separate diagnostic scans all 657394 nonrectangular coefficient
+prefix states in the earlier complete bounded-slope grammar and 15000
+wide actual arms; 1333 possible interior flat edges all occur at the
+final-capacity edge, with no failure. These finite checks are not the
+proof and do not identify arbitrary formal words with actual unsorted hosts.

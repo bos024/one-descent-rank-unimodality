@@ -1,0 +1,85 @@
+\section{A clipped central budget}\label{sec:central}
+We first establish the high-layer reflection used uniformly at peaks four through seven. The extra unit of reflection, compared with the ordinary arm bound, is essential to the central comparison.
+
+\begin{theorem}\label{thm:highlayers}
+Let $Y$ have parts at most six and at least nine non-one parts, and write $F_Y=\sum p_jz^j$, $b=\wt Y$. Every height layer above height $p_7$ has endpoint sum at least $b+5$.
+\end{theorem}
+\begin{proof}
+Let $N$ be the number of non-one parts. If $N\ge32$, Theorem~\ref{thm:generalhigh} applies with $m=6,r=5$: the nineteen inequalities $\binom{32}{k}\ge2^{k+4}$, $1\le k\le19$, all hold. It gives the stronger assertion for heights above $p_5$.
+
+For $9\le N\le31$, peel the last five parts. The append recurrence gives $F_Y=B+G$, where $B$ is the sum of the empty product and the last one, two, three and four $S_t$ factors, and $G$ is the product of the last five factors with the remaining arm polynomial. Thus $\deg B\le24$, and every interval-product summand of $G$ has center at least $(b+5)/2$. For left indices $j>24$, reflection follows because $B_j=0$ and $B\ge0$. For $j\le7$ the inequality $p_j\le p_7$ follows from first-half increase. It remains to prove
+\begin{equation}\label{eq:mirrorcertificate}
+ 8\le j\le24,\quad 2j\le b+5,\quad p_j>p_7
+ \quad\Longrightarrow\quad (F_Y\rev)_{j-5}\ge p_j.
+\end{equation}
+Cap all multiplicities at 24. Low coefficients through degree 24 remain unchanged and the reversed coefficients in this display decrease. The capped non-one count lies in $[9,31]$. If a non-one count changes, the capped weight is at least 48. If only the ones change, it is at least 42; the only lost midpoint condition is $\bar Y=1^{24}2^9$ at $j=24$. Both compared coefficients then equal $2^9=512$, directly from the append recurrence. In every other case the capped midpoint condition survives.
+
+The finite domain consists of six multiplicities in $[0,24]$, with non-one sum between 9 and 31. All 9,334,875 profiles, and all 158,635,368 applicable comparisons including the exceptional comparison, satisfy~\eqref{eq:mirrorcertificate}; see Section~\ref{sec:certificates}. Finally, a height layer $[l,r]$ above $p_7$ with $l+r<b+5$ would have $2l<b+5$ and $p_l>p_7$. Reflection would put $b+5-l>r$ in the same layer, a contradiction.
+\end{proof}
+
+\begin{theorem}\label{thm:central}
+Let $4\le M\le7$. Suppose both strict arm weights are at least 19, their difference in absolute value is at most $M-4$, and both arms have at least two non-one parts. If one arm has at least nine non-one parts, then
+\[
+ \Del H(\min(a,b)+M)>0,\qquad \Del H(\min(a,b)+M+1)>0.
+\]
+\end{theorem}
+\begin{proof}
+Orient the long arm as $Y$, put $e=a-b$, and write $D=D_A$, $\delta=D\rev$. At $n=\min(a,b)+M+h$, $h=0,1$, the pure-arm contribution $F_A$ has vanished. A layer $[l,r]$ of $F_Y$ contributes exactly
+\[
+ d_{n-l}-d_{n-r-1}
+\]
+to the difference of $F_YD$. If $l+r\ge b+5$, the two indices are ordered and their sum is at most
+\[
+ 2n-b-6\le a+2M+2h-6\le a+M+3,
+\]
+the kernel reflection sum. Every such contribution is nonnegative.
+
+Let $W$ be the suffix of the last nine non-one parts of $Y$, with forward and reversed coefficients $p_j,q_k$. A word of weight at most nine uses at most nine host positions, so the forward coefficients of $Y$ agree with those of $W$ through rank nine. Lemma~\ref{lem:prefixreverse} gives reverse domination. All 715 possible suffixes over $\{2,\ldots,6\}$ satisfy
+\[
+ 1=q_0\le q_1\le q_2\le q_3\le q_4,
+ \qquad q_3\ge p_8,\qquad q_4\ge p_9.
+\]
+These small finite assertions are included in the suffix check. In particular they hold over each smaller alphabet. Put
+\begin{equation}\label{eq:bins}
+ m_{jk}=\max\{0,\min(p_j,q_k)-\max(p_{j-1},q_{k-1})\},
+ \qquad 2\le j\le9,\quad1\le k\le4.
+\end{equation}
+The $m_{jk}$ heights start at $j$ and reach a reverse suffix coefficient for the first time at deficit $k$. Their actual right endpoints in $Y$ are at least $b-k$. These bins partition heights $2,\ldots,p_9$.
+
+For $0\le e\le M-4$, define $x_+=\max(0,x)$ and
+\begin{align}\label{eq:budgetcentral}
+ C_{e,h}={}&\delta_{e-h}-d_{M-1+h}
+ +\sum_{j=2}^{7}\sum_{k=1}^{4}m_{jk}(\delta_{j+e-h}-d_{M-1+h+k})\notag\\
+ &+\sum_{j=8}^{9}\sum_{k=1}^{4}m_{jk}
+                   (\delta_{j+e-h}-d_{M-1+h+k})_+.
+\end{align}
+Negative reversed indices mean zero. Low kernel coefficients increase through rank eleven, so the right-endpoint estimate gives the displayed coefficient bounds. Layers starting at $j=8$ or 9 are above height $p_7$; their contributions are independently known to be nonnegative. This justifies the positive part. All layers above $p_9$ contribute nonnegatively. Therefore $\Del H(b+M+h)\ge C_{e,h}$. For $e<0$, the reversed indices are those for $C_{0,h}$ and every low index is reduced by $|e|$, so low-rank monotonicity gives the same lower bound.
+
+Suppose first that $A$ has between two and thirteen non-one parts. Cap its multiplicities at thirteen. This preserves $d_0,\ldots,d_{11}$ and decreases $\delta_0,\ldots,\delta_{12}$; every occurrence of a reversed coefficient in~\eqref{eq:budgetcentral} is monotone. The enlarged capped domain has non-one sum between 2 and 13 and either weight at least 19 or a multiplicity equal to 13. Exact exhaustive checks give
+\begin{center}
+\begin{tabular}{ccrr}\toprule
+$M$ & $e$ & $\min C_{e,0}$ & $\min C_{e,1}$\\\midrule
+4&0&297&146\\
+5&0&291&133\\5&1&298&143\\
+6&0&278&112\\6&1&290&130\\6&2&298&142\\
+7&0&257&75\\7&1&277&109\\7&2&290&129\\7&3&298&142\\\bottomrule
+\end{tabular}
+\end{center}
+
+If $A$ has at least fourteen non-one parts, the reversed kernel recurrence gives $\delta_k\ge\binom{14}{k}$. Prepending a one or a two to a word of weight at most seven leaves enough positions in $W$, giving disjoint families. Hence $p_j\ge p_{j-1}+p_{j-2}$ for $2\le j\le8$. With $f_0=f_1=1$, $f_i=f_{i-1}+f_{i-2}$, it follows that $p_j-p_{j-1}\ge f_{j-2}$. Also $p_8\le125$. For $h=0$ all low kernel costs for layers through $p_8$ are at most 253, and for $h=1$ at most 507: use
+\[
+ d_9\le\sum_{j=2}^{8}2^{j-1}-1=253,\qquad
+ d_{10}\le\sum_{j=3}^{9}2^{j-1}-1=507
+\]
+and low-rank monotonicity. Retaining layers only through height $p_8$ gives the lower bound
+\[
+ \mathbf1_{e\ge h}\binom{14}{e-h}
+ +\sum_{j=2}^{8}f_{j-2}\binom{14}{j+e-h}
+ -125\begin{cases}253,&h=0,\\507,&h=1.\end{cases}
+\]
+For $(e,h)=(0,0),(0,1),\ldots,(3,1)$ these are respectively
+\[
+ 58349,\ 19111,\ 49977,\ 26599,\ 31815,\ 18227,\ 12367,\ 65.
+\]
+All are positive. This proves the theorem for every non-one count.
+\end{proof}

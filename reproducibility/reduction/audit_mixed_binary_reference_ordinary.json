@@ -1,0 +1,27 @@
+{
+  "status": "PASS_EXACT_QA_MIXED_BINARY_REFERENCE_DIRECT_ORDINARY_AND_DENSE_ORIGINAL",
+  "counts": {
+    "mixed_reference_ordinary_head_minors": 121550,
+    "reference_full_C_minimum_ratio_checks": 174525,
+    "reference_literal_shifts_represented": 31781165,
+    "mixed_reference_hosts": 520,
+    "four_phase_earlier_ordinary_minors": 21186,
+    "arbitrary_order_terminal_ordinary_minors": 1440,
+    "arbitrary_order_terminal_hosts": 360,
+    "actual_dense_full_C_minimum_ratio_checks": 156510,
+    "actual_dense_literal_shifts_represented": 47743125,
+    "actual_dense_hosts": 270,
+    "independent_actual_FULL_A2_hosts": 18,
+    "true_greedy_ORIGINAL_new_dense_family": 18,
+    "true_greedy_ORIGINAL_rank_counts": 7972,
+    "independent_Q_post_LAST_mode_edges": 5169,
+    "independent_Q_forward_phase_(False, False)": 138,
+    "independent_Q_forward_phase_(True, False)": 5008,
+    "independent_ENTIRE_signed_windows": 85,
+    "independent_ENTIRE_source_cone_hosts": 17,
+    "independent_Q_forward_phase_(True, True)": 23
+  },
+  "sha256": "7c50181b3ab3a9b4a31065f5477d9ed4edfb171a4140b1412b99b26686a3f057",
+  "seconds": 3.844000000000051,
+  "scope": "Finite QA ONLY. Universal theorem uses analytic scalar/window/damping proofs, NO finite entrance premise. General original conjecture remains OPEN."
+}

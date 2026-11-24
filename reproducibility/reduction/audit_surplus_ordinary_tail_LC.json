@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_QA_SURPLUS_ORDINARY_FULL_TAIL_LC_UNDER_AUDIT",
+  "counts": {
+    "exact_entire_quotient_source_identity_coefficients": 36970,
+    "entire_positive_cumulative_quotient_LC_reads": 36670,
+    "exact_cumulative_source_and_infinite_ordinary_deficit_coefficients": 37570,
+    "all_capacity_reference_first_boundary_budgets": 300,
+    "actual_entire_ordinary_LC_tail_centres": 240688,
+    "exact_ALL_padding_ordinary_model_reads": 189350,
+    "actual_hosts": 1500,
+    "CI_profiles": 300
+  },
+  "state_sha256": "cc37a6f26f5bc96106185f72d73e3d71a66cf6052df2f94d3da5b513d777c64e",
+  "seconds": 2.860000000000582,
+  "scope": "ALLu>=max(h,16) ENTIREordinaryFLCfromcentre u+r+1,writtenunboundedcumulativequotient/cut/startup proof. No relativeLC/CassiniA lowerbound claim; finiteQAONLY;original/generalC/A2OPEN."
+}

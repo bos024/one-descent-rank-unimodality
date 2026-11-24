@@ -1,0 +1,59 @@
+{
+  "status": "PASS_UNBOUNDED_ACTUAL_HALF_TAIL_WRITTEN_PROOF_AND_17_SCOPED_KERNELS",
+  "claim": "For every actual ordinary two-arm product p of degree D, T_p(n)<=0 at every n strictly after its LAST ordinary mode with 2n<=D; no E_n>=0 assumption.",
+  "proof": "agent_half_lc_actual_weak_curvature.tex",
+  "scoped_kernel_reports": 17,
+  "kernel_reports": {
+    "HalfTailClosureArithmetic": 9,
+    "agent_half_lc_weak_window_transport": 4,
+    "agent_half_lc_interval_payments": 4
+  },
+  "errors": 0,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "independent_full_proof_review": [
+    "root",
+    "audit_linear_clipping agent"
+  ],
+  "review_result": "Both reviewed the complete induction: rectangle base, deleted-rectangle crossing, first/last window-mode relationship, balanced new-source edges, monotone old source prefix, local-universal support, late/main/virtual interval payments, complementary mass contradiction and three integer boundaries. No gap found.",
+  "QA": {
+    "actual_source_prefix_nonnegative_coefficients": 700792,
+    "actual_upper_half_source_monotonic_edges": 120993,
+    "old_half_weak_premise_passed": 4000,
+    "assembled_post_mode_source_prefix_edges": 146651,
+    "conditional_actual_transported_tail_edges": 54868,
+    "actual_complete_new_half_tail_edges": 27455,
+    "proof_branch_crossing_concavity": 26979,
+    "actual_pairs": 4000,
+    "fully_covered_unbalanced_contexts": 1439,
+    "fully_covered_unbalanced_new_half_tail_edges": 9838,
+    "proof_branch_new_terminal_edge": 471,
+    "proof_branch_late_source_layer": 1,
+    "proof_branch_short_main_box": 4
+  },
+  "independent_QA": {
+    "exhaustive_actual_arms_including_rectangles": 1212,
+    "actual_pairs": 736678,
+    "half_tail_comparisons": 1495817,
+    "nonnegative_source_half_tail_comparisons": 1495817
+  },
+  "consequences": [
+    "All correctly conditioned coupled-S tails in the reverse first half, equivalently forward second half, are nonrecovering; OLD nonnegative-head input then pays S.",
+    "For nonrectangular arm pairs, together with the existing first-half both-forward-nonincreasing theorem, every BOTH-nonincreasing proper-S tail is nonrecovering at every rank."
+  ],
+  "scope_limits": [
+    "Generic kernels plus a written unbounded actual-arm induction, not an end-to-end Lean formalization.",
+    "Finite QA is distinct from and does not replace the unbounded proof.",
+    "No ordinary half-LC, general C, A2 or original coefficient-unimodality conclusion."
+  ],
+  "sha256": {
+    "agent_half_lc_actual_weak_curvature.tex": "0191ec32500869be5d687ece5be011db4de6df7cfe47bf6cd1186ab4bc0b7674",
+    "HalfTailClosureArithmetic.lean": "a353c9bd39cf0986d667a91f73999b4afbc89aabf1bdea65eaa15eec6de48491",
+    "agent_half_lc_weak_window_transport.lean": "0bdf3d6eb104ff047c1bbac7cb1c158a7552ad8daa05cd256ab23e7e78e6b9f5",
+    "agent_half_lc_interval_payments.lean": "0150010fa977f894a43dc0d6b694cee2e7cb8c32bca9f6c087214f1d4a70b1ac",
+    "agent_half_lc_weak_window_transport.py": "a6b7f1f45154ff7b933fa34f06d4e60541a4f30eed1e2c91f50657b668a055ef",
+    "agent_half_lc_weak_window_transport.json": "70841d02c754f9fe1c4357576d37e7ed92fc95ed002295d8e6c8f0127bdf9d47",
+    "agent_weak_T_independent_diagnostic.py": "2c65dbf17353facca30fbfea703b5168ae1aba6d5af9e4d795b0867ce2e9c3f0",
+    "agent_weak_T_independent_diagnostic.json": "399f80903879ed652b0558c8754668decfc4dd4b012d3d57e56acbb86aadb7e6"
+  }
+}

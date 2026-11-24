@@ -1,0 +1,19 @@
+'KappaSixWindowRepair.one_part_compulsory_birth_only_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSixWindowRepair.exceptional_one_part_arm_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KappaSixWindowRepair.exact_exceptional_source_and_strict_mode_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSixWindowRepair.whole_critical_three_rank_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KappaSixWindowRepair.entire_clipped_window_tail_after_sign_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSixWindowRepair.complete_three_rank_patch_no_revival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KappaSixWindowRepair.complete_positive_window_patch_with_clipping' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSixWindowRepair.finite_no_revival_has_whole_up_down_mode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSixWindowRepair.every_exceptional_heavier_legal_append_has_three_window' depends on axioms: [propext, Quot.sound]

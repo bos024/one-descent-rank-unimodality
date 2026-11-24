@@ -1,0 +1,281 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\DeclareMathSizes{10}{10}{8}{8}
+\DeclareMathSizes{10.95}{10.95}{8}{8}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\wt}[1]{\lVert #1\rVert}
+\newcommand{\len}{\ell}
+\newcommand{\coef}[2]{[z^{#1}]#2}
+\newcommand{\Del}{\Delta}
+\newcommand{\Iv}[2]{I_{[#1,#2]}}
+\newcommand{\rev}{^{\!*}}
+\newcommand{\RR}{\mathcal R}
+\DeclareMathOperator{\supp}{supp}
+\allowdisplaybreaks
+\title{Effective rank-unimodality under dilation and\\cumulative inequalities for composition ideals}
+\author{}
+\date{Research manuscript, 15 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The rank polynomial of a composition counts distinct smaller compositions in generalized subword order, by total weight. We prove that every fixed composition becomes rank-unimodal after sufficiently large integer dilation. The threshold is computable by exact rational arithmetic. For a composition of weight $W$ and length $l$ whose largest part is less than $W/2$, every sufficiently large dilation has its mode at $\lfloor(tW+l-1)/2\rfloor$, with at most a tie at the next integer; the eventual choice is determined exactly in each parity. We also prove log-concavity of tail counts for all one-descent and bitonic compositions, and for arbitrarily many valleys separated by a common maximum. A sharp growth-deficit inequality holds for every composition downset missing a word of a specified weight. For the rank coefficients themselves, arbitrary hosts are unimodal when $N\le2M+5$, where $M$ is the largest part. Finally, strict one-descent cores of weight less than $160M^3$ suffice to verify rank-unimodality at a fixed descent peak $M$, and exact finite profiles settle all peaks at most seven. Analytic proofs, reproducible certificates, and selected unbounded Lean proofs accompany the results.
+\end{abstract}
+
+\section{Statement and scope}
+A composition is a finite word of positive integers; an empty maximum is taken to be zero. Write $u\preceq w$ if the letters of $u$ can be embedded, in order, into distinct positions of $w$, with each letter no larger than its host letter. Set
+\[
+ F_w(z)=\sum_{u\preceq w}z^{\wt u},\qquad F_\varnothing=1,
+ \qquad S_t=z+z^2+\cdots+z^t.
+\]
+Every word $u$ occurs once in this sum, regardless of its number of embeddings. A polynomial is unimodal if its coefficient sequence is weakly increasing and then weakly decreasing. A word is bitonic if its parts weakly increase to a maximum and then weakly decrease. Coefficients throughout are extended by zero to all integer indices. Write $\Del P(n)=P_n-P_{n-1}$.
+
+\begin{theorem}[Effective dilation]\label{thm:dilationmain}
+For every fixed nonempty composition $w=(w_1,\ldots,w_l)$ there is a
+computable $T(w)$ such that $F_{(tw_1,\ldots,tw_l)}$ is unimodal for
+every integer $t\ge T(w)$.
+If $W=\wt w$ and $2\max_iw_i<W$, the mode is
+$\lfloor(tW+l-1)/2\rfloor$, possibly tied with
+$\lceil(tW+l-1)/2\rceil$. The eventual alternative in each parity of
+$t$ is computable from explicit rational polynomials.
+\end{theorem}
+
+The mode assertion also holds for $t\ge T(w)$, after enlarging the
+same effective threshold if necessary. Section~\ref{sec:dilation}
+constructs a threshold for both claims simultaneously. Its proof uses
+a universal right-tail bound and a central window whose width depends
+only on $l$. In particular, it establishes eventual unimodality for
+every shape, with arbitrarily many descents.
+
+\begin{theorem}[Cumulative rank regularity]\label{thm:cumulativemain}
+If $w$ has at most one adjacent descent, or is bitonic, then its tail counts
+$t_k=\sum_{j\ge k}[z^j]F_w$ satisfy $t_k^2\ge t_{k-1}t_{k+1}$ for
+every integer $k$. There is no restriction on the length or part sizes.
+The same conclusion holds when $w=Z_0MZ_1M\cdots MZ_s$, where every
+$Z_i$ weakly decreases and then weakly increases, with parts below $M$; in that
+case $1+(S_M-1)F_w$ also has log-concave tail counts.
+\end{theorem}
+
+\begin{theorem}[Sharp rank-growth deficit]\label{thm:deficitmain}
+Let $f_k$ count weight-$k$ compositions in a downset, and suppose a
+composition of weight $\kappa\ge2$ is missing. For every $k\ge\kappa-1$,
+\[
+ (2^{\kappa-1}-1)(2f_k-f_{k+1})\ge f_k.
+\]
+The constant is best possible, even among finite principal ideals.
+Moreover, for $k\ge1$, equality $f_{k+1}=2f_k>0$ forces both ranks
+to be full: $f_k=2^{k-1}$ and $f_{k+1}=2^k$.
+\end{theorem}
+
+Theorems~\ref{thm:cumulativemain} and~\ref{thm:deficitmain} are proved in
+Sections~\ref{sec:cumulativecores} and~\ref{sec:saturation}. Tail-count
+log-concavity does not imply rank-unimodality: for example, the
+non-unimodal sequence $(10,10,8,9,1)$ has log-concave tail sums
+$(38,28,18,10,1)$. The next three results concern the rank coefficients themselves.
+
+\begin{theorem}[Dominant maximum]\label{thm:dominantmain}
+An arbitrary composition of weight $N$ and maximum part $M$ has a
+unimodal rank polynomial whenever $N\le2M+5$.
+\end{theorem}
+
+This result places no restriction on the number of descents. Its
+analytic proof in Section~\ref{sec:dominant} compares the ranks at
+distance two from the top with the bottom three ranks.
+
+\begin{theorem}\label{thm:main}
+Let $w$ have at most one adjacent descent. If it has a descent $w_i>w_{i+1}$, assume $w_i\le7$. Then $F_w$ is unimodal. In particular every one-descent composition with all parts at most seven is rank-unimodal. Every bitonic composition with maximum part at most seven is also rank-unimodal.
+\end{theorem}
+
+\begin{theorem}[Finite verification principle]\label{thm:finiteprinciple}
+Fix $M\ge4$. Suppose $F_{X,M,Y}$ is unimodal for all increasing arms $X,Y$ with parts strictly below $M$ and $\wt X+M+\wt Y<160M^3$. Then every one-descent composition of descent peak $M$ has a unimodal rank polynomial.
+\end{theorem}
+
+Theorem~\ref{thm:finiteprinciple} follows from the stronger relative statement in Theorem~\ref{thm:cubicbound}. Its weight threshold is polynomial in $M$, but the number of cores to be checked need not be. The theorem does not assert that these finite checks have been completed for every peak.
+
+The bounded-peak claim concerns arbitrary lengths, not merely compositions with seven parts. The dilation theorem covers every fixed shape but does not assert that dilation is unnecessary. None of the results resolves the unrestricted composition conjecture or asserts tail log-concavity of the rank coefficients. The dilation, dominant-maximum, and deficit proofs are analytic. The bounded-peak result additionally uses the supplied finite arithmetic certificates. The cumulative theorem invokes the discrete cumulative-convolution closure theorem of Nanda and Sengupta~\cite{NandaSengupta}.
+
+Rank-unimodality of arbitrary composition ideals is the layered-permutation case of a broader pattern-poset question; see Vatter~\cite{Vatter}, especially Conjecture~2.6. Ordinary unweighted subsequence counts are log-concave by Chase's theorem; Vatter~\cite{VatterWords} gives a short proof. Weight grading behaves differently: the initial coefficients $1,1,2$ already rule out coefficient log-concavity. Monotone composition hosts are known to be unimodal. For rectangular hosts this is Sagan's composition-in-a-rectangle theorem~\cite{Sagan}; his more general ideal theorem uses row-wise Ferrers containment, whereas the order here allows host positions to be skipped.
+
+Zhang~\cite{Zhang} gives the symmetric maximum decomposition and several one-descent families. Chen's public abstract~\cite{Chen} reports unimodality for arbitrary compositions with at most six parts, tail log-concavity for bitonic hosts with parts at most five, and an $O(M2^M)$ weight bound for a least counterexample to a relative tail-log-concavity assertion. Our comparison with Chen is restricted to that abstract. A matching anonymized sixteen-page version of Zhang's manuscript was inspected; its identity with the complete public version has not been independently confirmed. These source limits are recorded in the bibliography and accompanying provenance notes; no claim about either inaccessible complete version is made.
+
+The dilation argument covers every fixed shape and determines its eventual mode. The cumulative inequalities cover the stated structural classes without a peak bound. The finite-profile argument in Sections~\ref{sec:profiles}--\ref{sec:central} closes peaks six and seven, while Section~\ref{sec:cubic} bounds the entire minimal relative-unimodality obstruction cubically. This cubic bound is not a bound for the stronger relative tail-log-concavity assertion in Chen's abstract. Maximum decompositions, interval layers, and the existing peeling lemmas are background tools, with the needed proofs included. The unrestricted undilated conjecture remains open.
+
+\section{Counting identities and interval layers}\label{sec:basic}
+\begin{lemma}[Rightmost last letter]\label{lem:last}
+For a nonempty host $w$, let $r_t$ be the last position with $w_{r_t}\ge t$. Then
+\[
+ F_w=1+\sum_{t=1}^{\max w}z^tF_{w_1\cdots w_{r_t-1}}.
+\]
+In particular, appending a global maximum $t$ gives $F_{wt}=1+S_tF_w$.
+\end{lemma}
+\begin{proof}
+Every nonempty smaller word has a unique last letter $t$. Move its last embedded letter to position $r_t$; its preceding letters still embed in the indicated prefix. This is a characterization of distinct words, not an enumeration of embeddings.
+\end{proof}
+
+\begin{lemma}[Maximum decomposition]\label{lem:core}
+For arbitrary words $X,Y$ and $M\ge\max(X,Y)$,
+\begin{equation}\label{eq:core}
+ F_{X,M,Y}=F_X+F_Y+(S_M-1)F_XF_Y.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Put $A=F_X$ and $K=1+(S_M-1)A$. We prove $F_{X,M,Y}=A+KF_Y$ by induction on the length of $Y$, simultaneously for all its prefixes. The empty case is $1+S_MA=A+K$. On appending a letter $v\le M$, use Lemma~\ref{lem:last}. The contributions involving $A$ sum to $S_MA$, while those involving $K$ sum to $K(F_{Yv}-1)$. Thus the result is $1+S_MA+K(F_{Yv}-1)=A+KF_{Yv}$.
+\end{proof}
+
+For weakly increasing arms $X,Y$, all their parts strictly below $M$, use the notation
+\begin{equation}\label{eq:notation}
+ a=\wt X,\quad b=\wt Y,\quad D_Y=1+(S_M-1)F_Y,
+ \quad Q_{X,Y}=F_XD_Y,\quad H=F_Y+Q_{X,Y}.
+\end{equation}
+Then $H$ is symmetric in the arms. If $X=Zu$, the two append recurrences are
+\begin{equation}\label{eq:qappend}
+ Q_{Zu,Y}=D_Y+S_uQ_{Z,Y},\qquad
+ Q_{X,Yv}=S_vQ_{X,Y}+(S_M-S_v)F_X.
+\end{equation}
+
+For integers $l\le r$, let $\Iv l r=z^l+\cdots+z^r$. A nonnegative integer unimodal polynomial has a height decomposition
+\[
+ P=\sum_{h=1}^{\max P_i}\Iv{l_h}{r_h},\qquad
+ \{i:P_i\ge h\}=[l_h,r_h]\cap\mathbb Z.
+\]
+The convolution of two intervals is symmetric and unimodal about the sum of their centers. The same holds for a product of any number of intervals. Consequently, if all layer endpoint sums of $P$ and $Q$ are at least $c$ and $d$, then $PQ$ is nondecreasing through $\lfloor(c+d+1)/2\rfloor$. This does not imply unimodality of the entire product.
+
+We repeatedly use the following elementary equivalence: for an already unimodal nonnegative polynomial $P$, all its layer endpoint sums are at least $c$ if and only if
+\begin{equation}\label{eq:comparison}
+ P_i\le P_j\quad\text{whenever }i\le j\text{ and }i+j\le c.
+\end{equation}
+Indeed, each layer interval containing $i$ then contains $j$. Conversely, if $l+r<c$ for a layer, its left endpoint is present while its reflection $c-l>r$ is absent.
+
+\begin{lemma}[Monotone arms]\label{lem:arms}
+For a weakly increasing arm $Z$ of weight $c$, $F_Z$ is unimodal, its lowest layer is $[0,c]$, and every other nonempty layer has endpoint sum at least $c+1$. If $F_Z$ is not a single interval, its second layer is exactly $[2,c-1]$.
+\end{lemma}
+\begin{proof}
+Use $F_{Zt}=1+S_tF_Z$. Multiplication by an interval preserves unimodality: its differences are $p_n-p_{n-t}$, and these cannot change from negative to positive when $p$ is unimodal. The product has first and last nonzero coefficient one. Adding the constant term one therefore preserves unimodality. By induction, its symmetric interval-product summands have centers at least $(c+t+1)/2$; this gives the asserted reflection for the higher layers. The lowest layer becomes $[0,c+t]$. The polynomial is not an interval exactly when the host has at least two parts and at least one part greater than one. In that case the coefficients at ranks two and $c-1$ are at least two, whereas ranks zero, one and $c$ have coefficient one. Unimodality identifies the second layer.
+\end{proof}
+
+\begin{lemma}[First-half increase]\label{lem:half}
+For an arbitrary host of weight $N$, its rank polynomial is nondecreasing through rank $\lceil N/2\rceil$.
+\end{lemma}
+\begin{proof}
+Replace the host by the layered permutation with decreasing block sizes given by its parts. Its distinct induced patterns are exactly the smaller compositions, under this correspondence. On real functions on the $k$-subsets of its $N$ positions, let $U$ sum over one-element deletions and let $D$ be its adjoint. On rank $k$ one has $DU-UD=(N-2k)I$. Hence $U$ is injective when $k<N/2$, since $\|Uf\|^2=\|Df\|^2+(N-2k)\|f\|^2$. The subspace of functions constant on subsets inducing the same pattern is carried by $U$ into the analogous next subspace: deletion counts depend only on the induced pattern. Its dimension is the number of distinct patterns of that rank. Restricting the injection proves the assertion. This is the usual first-half argument discussed in~\cite{Vatter}.
+\end{proof}
+
+\input{dilation}
+
+\section{The relative kernel}\label{sec:kernel}
+We include the kernel estimates needed later, so that no unproved shape-closure principle is being used.
+
+\begin{lemma}\label{lem:kernel}
+For a weakly increasing arm $Y$ with parts below $M$, put $b=\wt Y$ and $R=b+M$. The polynomial $D_Y$ is nonnegative and unimodal, of degree $R$. Every height layer has endpoint sum at least $R+1$. Thus
+\begin{equation}\label{eq:qgrowth}
+ Q_{X,Y}\text{ is nondecreasing through }
+ \left\lfloor\frac{a+b+M+2}{2}\right\rfloor.
+\end{equation}
+For nonempty $Y$, $d_0=d_1=0$, $d_R=1$, and the positive support of $D_Y$ is an interval.
+\end{lemma}
+\begin{proof}
+For an arm $Z$ define $E_Z=1-z+(2z-1)F_Z$. Then
+\[
+ E_\varnothing=z,\quad E_{Zt}=S_tE_Z+z^{t+1},\qquad
+ (1-z)D_Z=E_Z-z^{M+1}F_Z.
+\]
+The positive support of $E_Z$, for weight $c$, is an interval $[q_Z,c+1]$, with $q_Z\le\max Z+1$. This follows directly by induction from the displayed recurrence. In particular $D_Z$ is nondecreasing through rank $M$.
+
+Write $Y=Zt$, $c=\wt Z$, $P=D_Z$, and
+\[
+ D_Y=S_tP+J,\qquad J=S_M-S_t.
+\]
+This proves nonnegativity inductively. The only possible splice after the already increasing part is at $M+1$, with difference $P_M-P_{M-t}-1$. If $P_M-P_{M-t}\ge1$, the splice is increasing and the subsequent coefficients agree with the unimodal $S_tP$. Otherwise $P_M=P_{M-t}$, and the interval support of $E_Z$ forces $c+1\le M-t$. The polynomial $P$ is nonincreasing thereafter, so every subsequent window difference $P_{n-1}-P_{n-t-1}$ is nonpositive. This proves unimodality, including the zero-plateau case.
+
+For the reflection, induct on the length of $Y$; $D_\varnothing=S_M$ is the base. Set $d=c+M$, and assume $P_j\le P_{d+1-j}$ on the left half. Each interval-product summand of $W=S_tP$ has center at least $(d+t+2)/2$, so it already obeys reflection about $(d+t+1)/2$. Only a unit loss from $J$ remains. Such a loss can occur only when
+\[
+ t+1\le i\le M,\quad i\le c+t,\quad 2i<d+t+1.
+\]
+Write $K_j=P_{d+1-j}-P_j$. Direct summation gives
+\[
+ W_{d+t+1-i}-W_i=\sum_{j=i-t+1}^{i}K_j+P_i-P_{i-t}.
+\]
+The window endpoint sum is at most $d+1$, so its negative $K_j$ terms pair with their nonnegative reflected terms inside the window. The last difference equals a sum of coefficients of $E_Z$ over $[i-t+1,i]$. This interval meets $[q_Z,c+1]$, by the displayed conditions, so that difference is at least one. It pays for the possible unit loss. This proves the layer bound. Combining it with Lemma~\ref{lem:arms} proves~\eqref{eq:qgrowth}.
+\end{proof}
+
+\begin{lemma}[Strict tail budget]\label{lem:budget}
+If $F_Y=\sum p_jz^j$, then for $1\le t\le\min(b-1,M-1)$,
+\begin{equation}\label{eq:budget}
+ d_{R-t}-d_{t+1}=\sum_{j=0}^t(p_{b-j}-p_j)+p_{t+1}\ge p_{t+1}\ge1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The equality follows from the definition of $D_Y$. Ordinary reflection $p_j\le p_{b-j}$ holds on the left half by Lemma~\ref{lem:arms}. In the prefix sum past the midpoint, cancel reflected pairs; the remaining terms are nonnegative. All ranks between zero and $b$ occur.
+\end{proof}
+
+\begin{lemma}[Two stronger reflections]\label{lem:strongkernel}
+If $b\ge M$, every layer of $D_Y$ has endpoint sum at least $R+2$. If $b\ge2M-1$ and $Y$ has at least two non-one parts, the endpoint sums are at least $R+3$.
+\end{lemma}
+\begin{proof}
+Write $Y=Zt$, $c=b-t$, $r=c+M$, and $E=D_Z$. For the first claim $c\ge1$. The product $W=S_tE$ already has reflection sum $R+2$. Only $i\in[t+1,M]$ needs a unit payment for $J=S_M-S_t$; its reflected index is beyond $M$. Put
+\[
+ f_j=e_{r+1-j}-e_j,\quad L=i-t,\quad U=i-1.
+\]
+The reflection difference of $W$ is $\sum_{j=L}^Uf_j$. Here $1\le L\le c$ and $L+U\le r-1$. Pair all negative terms with their reflections. The term $f_L$ remains unpaired. If $L=1$, it is $e_r-e_1=1$; otherwise Lemma~\ref{lem:budget} gives $f_L\ge1$. This proves the first claim.
+
+For the second claim $t\ge2$, $c\ge M$, and $F_Z$ is not an interval. By the first claim $W$ has reflection sum $R+3$. Put $g_j=e_{r+2-j}-e_j$. Then $g_1=0$, while, for $2\le j\le M-1$,
+\[
+ g_j=\sum_{h=0}^{j-2}p_{c-h}-\sum_{h=0}^{j-1}p_h+p_j
+ \ge p_j-1\ge1.
+\]
+The first inequality is the cumulative strengthened reflection of Lemma~\ref{lem:arms}; the second uses its second layer. At a correction index $i\in[t+1,M]$, the reflection difference is $\sum_{j=i-t}^{i-1}g_j$. It contains at least two terms, all in $[1,M-1]$, so is at least one. This completes the payment and the proof.
+\end{proof}
+
+\input{saturation}
+\input{cumulative_reverse}
+\input{cumulative_cores}
+\input{dominant_maximum}
+
+\input{peeling}
+\input{profiles}
+\input{uniform}
+\input{central}
+\input{padding}
+\input{cubic}
+\input{single}
+\input{completion}
+
+The effective dilation theorem gives a different finite reduction:
+for each fixed shape, only finitely many dilations remain below its
+certified threshold. It does not provide a threshold uniform in all
+shapes. The lower eventual mode and the mean have the same center
+$(tW+l-1)/2$ up to rounding and a vanishing mean error, respectively.
+Sharper bounds for the dilation threshold, and extensions of the
+cumulative theorem to arbitrary hosts, are natural further questions.
+
+\input{certificates.tex}
+
+\clearpage
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{AlbertEtAl} M. Albert, M. Engen, J. Pantone and V. Vatter, \emph{Universal layered permutations}, Electronic Journal of Combinatorics \textbf{25} (2018), P3.23. \url{https://arxiv.org/abs/1710.04240}.
+\bibitem{NandaSengupta} A. K. Nanda and D. Sengupta, \emph{Discrete Life Distributions with Decreasing Reversed Hazard}, Sankhy\={a}: The Indian Journal of Statistics \textbf{67} (2005), 106--125. \url{https://www.jstor.org/stable/25053410}.
+\bibitem{Sagan} B. E. Sagan, \emph{Compositions inside a rectangle and unimodality}, Journal of Algebraic Combinatorics \textbf{29} (2009), 405--411. \url{https://arxiv.org/abs/0707.1052}.
+\bibitem{Vatter} V. Vatter, \emph{An assortment of problems in permutation patterns: unimodality, equivalence, derangements, and sorting}, arXiv:2602.16355v2. \url{https://arxiv.org/abs/2602.16355}.
+\bibitem{VatterWords} V. Vatter, \emph{Log-concavity of subsequence counts of words}, arXiv:2608.22147. \url{https://arxiv.org/abs/2608.22147}.
+\bibitem{MenonSingh} K. Menon and A. Singh, \emph{Pattern avoidance and dominating compositions}, arXiv:2104.07274. \url{https://arxiv.org/abs/2104.07274}.
+\bibitem{Zhang} Z. Zhang, \emph{Rank-Unimodality for One-Descent Families in Generalized Subword Order}, SSRN 7397439, posted 5 September 2026. \url{https://ssrn.com/abstract=7397439}. Public abstract and the matching anonymized manuscript in the supplied archive consulted; identity of the complete public version not independently confirmed.
+\bibitem{Chen} L. Chen, \emph{Rank-unimodality and tail log-concavity of composition ideals}, SSRN 7385218, revised 6 October 2026. \url{https://ssrn.com/abstract=7385218}. Abstract consulted; full text not independently retrieved in this work.
+\end{thebibliography}
+\end{document}
+
+
+
+
+
+
+
+

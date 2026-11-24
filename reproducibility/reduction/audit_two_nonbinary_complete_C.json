@@ -1,0 +1,18 @@
+{
+  "status": "EXACT_QA_UNBOUNDED_TWO_NONBINARY_COMPLETE_C_UNDER_AUDIT",
+  "counts": {
+    "exact_prefix_minimum_all_shift_C_payments": 1351829,
+    "logical_shift_coverage": 273605524,
+    "all_parameter_actual_twojump_hosts": 4563,
+    "same_tail_reference_entire_C_profiles": 1521,
+    "reference_TWO_jump_golden_window_gap_reads": 61552,
+    "deficit_onejump_GLOBAL_ordinary_LC_from2": 474237,
+    "surplus_strict_actual_window_payments": 9009,
+    "ALL_old_G_prefix_margin_payments": 1408893,
+    "deficit_strict_actual_window_payments": 9678,
+    "twojump_protected_reference_complete_C_payments": 1176
+  },
+  "state_sha256": "81c83c353c1347f49eed49e29fa6a6d947bd55e220cc158c4c74bda0b8759355",
+  "seconds": 8.546999999998661,
+  "scope": "WrittenunboundedcompleteCproofbyactualrankcover+conditionalwindow+center+univtail;finiteprofilesQAONLY,no finite premise. FullCwith>=3nonbinary/fullA2/originalUIOPEN."
+}

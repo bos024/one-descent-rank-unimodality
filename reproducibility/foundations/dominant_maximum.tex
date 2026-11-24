@@ -1,0 +1,143 @@
+\section{Arbitrary hosts with a dominant maximum}\label{sec:dominant}
+
+The maximum decomposition also gives a length-unrestricted family with
+no restriction on the number of descents.
+
+\begin{lemma}[Two words at each internal rank]\label{lem:twointernal}
+If a host $w$ has at least two parts and has a part greater than one,
+then $[z^k]F_w\ge2$ for $2\le k\le\wt w-1$.
+\end{lemma}
+\begin{proof}
+Put $l=\len(w)$ and $n=\wt w$. If $k\le l$, use $1^k$ and a word
+consisting of one two and $k-2$ ones, embedded using a non-one part.
+If $k>l$, choose positive integers $c_i\le w_i$ with sum $k$.
+If there are two such vectors, they give two distinct words. Otherwise,
+choose a slack coordinate $j$, so $c_j<w_j$; this exists because $k<n$.
+Every other $c_i$ equals one, since transferring a unit from $c_i>1$
+to $c_j$ would give a second vector. Delete one of these other ones and
+increase $c_j$ by one. This gives a second word of weight $k$, now of
+length $l-1$.
+\end{proof}
+
+\begin{lemma}[A comparison at distance two]\label{lem:codimtwo}
+For an arbitrary host of weight $n\ge5$, write $F_w=\sum p_i z^i$.
+Then $p_{n-2}\ge p_3\ge p_2$.
+\end{lemma}
+\begin{proof}
+The second inequality is Lemma~\ref{lem:half}. If $p_3\le2$, the first
+follows from Lemma~\ref{lem:twointernal}, or directly when the host is
+a single part or consists only of ones. Assume $p_3\ge3$. Write $e$
+for the number of non-one parts and $h$ for the number of parts at
+least three. Distinct words obtained by subtracting two units without
+deleting a part number exactly $\binom e2+h$. These have the original
+length; deleting one or two parts gives disjoint additional counts.
+
+If $e\ge3$, this count is at least three. When $p_3=4$, the word $(3)$
+occurs, so $h\ge1$, and the count is at least four.
+
+Suppose $e=2$ and $h\ge1$. If both parts are at least three, the
+same-length count is three. If a one is present, decrementing a
+non-one part and deleting a one supplies another word. If no one is
+present, $p_3\le3$, which is enough. If just one non-one part is at
+least three, the same-length count is two. With no ones, deleting the
+part two supplies a third word and $p_3\le3$. With ones present,
+decrementing either non-one part and deleting a one gives two further
+words: one retains two non-one parts and the other only one.
+
+If $e=2$ and $h=0$, then $p_3\le3$ and at least one one is present.
+The same-length count is one. If there are at least two runs of ones,
+delete a one from each of two runs, and separately delete a part two;
+these add two words of different lengths. If there is one run between
+the two twos, deleting either two gives two distinct further words.
+If the run is at an endpoint, reverse the host if needed and write it
+as $1^r22$. Deleting a two gives $1^r2$, while deleting a one and
+decrementing the final two gives $1^{r-1}21$. Thus the count is again
+at least three.
+
+It remains to consider $e=1$, with non-one part $t$.
+If $t\ge3$ and the ones are all on one side, $p_3\ge3$ requires at
+least two ones. Subtracting two from $t$, decrementing $t$ and deleting
+a one, and deleting two ones give three different lengths; here
+$p_3\le3$. If ones occur on both sides, subtracting two from $t$ and
+deleting one from each side supply two words of different lengths.
+Decrementing $t$ and deleting a one on either side supplies two more,
+distinguished by the number of ones before the surviving non-one part.
+Finally, if $t=2$ and $p_3\ge3$, ones occur on both sides. Since
+$n\ge5$, one of the two runs has length at least two. Deleting two
+ones from that run, or one from each run, gives two distinct words;
+deleting the two gives a third word of a different length. Here
+$p_3=3$. These cases exhaust the possibilities.
+\end{proof}
+
+\begin{lemma}[Central product inequality]\label{lem:centralproduct}
+Let $A=F_X$, $B=F_Y$, $a=\wt X$, $b=\wt Y$, $D=a+b\ge6$, and
+$C=AB=\sum c_i z^i$. Then
+\[
+ \Del A(D-1)+\Del B(D-1)+2c_{D-2}-c_{D-1}-c_3\ge0.
+\]
+Moreover $c_3\ge c_2$.
+\end{lemma}
+\begin{proof}
+Interchange the arms so that $a\ge b$.
+For a nonempty arm $Z$ of weight $n$, put
+$q=p_{n-1}$, $r=p_{n-2}$ and $L=2r-p_2-p_3$.
+Then $q\ge1$. Lemma~\ref{lem:codimtwo} gives $L\ge0$ for $n\ge5$.
+For $n=4$ one has $L=r-q\ge1-q$, and for $n=3$ one has
+$L=1-q$. Thus $L\ge1-q$ whenever $n\ge3$.
+
+If $b=0$, the displayed expression is $r-p_3\ge0$ for the other arm.
+If $b=1$, it is $L\ge0$, since $a\ge5$. If $b=2$, it is $L+q-1$;
+here $a\ge4$, so this is nonnegative. If $b\ge3$, write $s,t$ for
+the quantities $q,r$ of the second arm, and $L_B=2t-B_2-B_3$.
+Neither arm contributes a boundary difference at rank $D-1$, and the
+expression is
+\[
+ L+L_B+2qs-q-s
+ \ge 2(q-1)(s-1)\ge0.
+\]
+These identities follow by expanding the top two and bottom three
+coefficients of $AB$; all nonempty arm polynomials have constant and
+linear coefficient one, and leading coefficient one.
+
+For the last assertion, if one arm is empty use
+Lemma~\ref{lem:half} for the other, whose weight is at least six.
+Otherwise $c_3-c_2=A_3+B_3-1\ge0$, since at least one arm has
+weight at least three.
+\end{proof}
+
+\begin{theorem}[Dominant maximum]\label{thm:dominant}
+Let $w$ be an arbitrary nonempty composition of weight $N$ and maximum
+part $M$. If $N\le2M+5$, then $F_w$ is unimodal.
+\end{theorem}
+\begin{proof}
+The case $M=1$ is an interval polynomial. Assume $M\ge2$, split at
+any maximum as $w=XMY$, and put $D=\wt X+\wt Y=N-M$.
+The cases $D=0$ and a single empty arm cause no change to the identities
+below. With $A=F_X$, $B=F_Y$, $C=AB$, the maximum decomposition gives
+\begin{equation}\label{eq:dominantdifference}
+ \Del F_w(n)=\Del A(n)+\Del B(n)
+       +2c_{n-1}-c_n-c_{n-M-1}.
+\end{equation}
+Consequently all differences at $n\ge D+2$ are nonpositive.
+If $M<D$, the difference at $D+1$ is also nonpositive:
+when both arms are nonempty it equals $2-c_{D-M}\le0$, because
+$c_j\ge2$ for $1\le j<D$; with an empty arm it equals
+$1-c_{D-M}\le0$.
+
+If $M\ge D-1$, Lemma~\ref{lem:half} gives increase through rank $D$,
+so at most the single difference at $D+1$ remains undecided before
+the permanently decreasing part. If $M=D-2$ or $M=D-3$, it gives
+increase through rank $D-1$; the difference at $D$ is the only
+undecided one. These cases are unimodal.
+
+The two remaining cases are $M=D-4$ and $M=D-5$. Here $D\ge6$,
+and first-half increase reaches $D-2$. At $n=D-1$, the subtracted
+coefficient in~\eqref{eq:dominantdifference} is respectively $c_2$
+or $c_3$. Lemma~\ref{lem:centralproduct} makes this difference
+nonnegative in both cases. Again only the difference at $D$ remains
+undecided, followed by nonpositive differences at every larger rank.
+This proves unimodality.
+\end{proof}
+
+This theorem allows arbitrary lengths and descents. Its condition is
+a sufficient one; no optimality of the constant five is asserted.

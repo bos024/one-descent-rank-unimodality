@@ -1,0 +1,125 @@
+\section{The full positive primitive of the proper tribonacci quotient}
+Use the notation and actual polynomial division
+$E=[2]^u[3]^r=(1+az+bz^2)J+R_0+R_1z$ of the registered
+proper-quotient theorem, with $a=\lambda-1,b=1/\lambda$.
+\begin{theorem}
+For EVERY $u\ge4,r\ge2u$, the positive primitive
+\[
+       d_n=(J_n-J_{n-1})^+,\qquad J_{-1}=0,
+\]
+is globally LC, INCLUDING its rank-zero atom $d_0=J_0$.
+The same holds in the entire registered norm cone
+$r\ge18,u\ge0,b\sigma^u b^r\le1/64$.
+\end{theorem}
+Ordinary LC of J alone does not imply this assertion. The proof
+uses an additional complete primitive entrance and the following
+exact head corrections; neither is silently dropped.
+
+\paragraph{Retain the complete constant and linear quotient corrections.}
+For an old J with remainder (x,y), multiplication of E by [2]
+changes the quotient to
+\[
+                         J'=[2]J+\lambda y.              \tag{1}
+\]
+For multiplication by [3] the exact quotient is
+\[
+ J'=[3]J+\lambda(x+y-a\lambda y)+\lambda y\,z.           \tag{2}
+\]
+For clarity, the complete remainders in these identities are
+\[
+ \begin{array}{ll}
+ [2]:&(x-\lambda y)+(x+(1-\lambda a)y)z,\\
+ [3]:&(x-C_0)+(x+y-aC_0-C_1)z,
+ \end{array}
+\]
+where $C_0=\lambda(x+y-a\lambda y)$ and $C_1=\lambda y$.
+Two scoped commutative-ring Lean reports verify the FULL
+polynomial identities under $\lambda b=1$.
+
+The registered nonsymmetric uniform-window closure says that
+if a positive polynomial is LC and its entire positive primitive
+is LC, both properties are preserved by [2] or [3] convolution.
+It is used exactly with its FULL initial-atom hypothesis.
+By (1), the actual new signed differences agree with those of
+the convolution from index TWO onward. By (2), they agree from
+index THREE onward. Their positive parts therefore agree at all
+these indices as well, even across the later first-mode clipping.
+Consequently all actual new primitive LC centres from FOUR onward
+are inherited. A new head proof at centres ONE, TWO and THREE
+suffices for both extensions. The full natural-index head/tail
+assembly is also kernel checked.
+
+\paragraph{All changed primitive head values and all three head minors.}
+Use the ACTUAL target remainder, not the old remainder. Its norm
+bound gives $|R_0|,|R_1|\le1/4$ throughout the norm cone and rich
+family. Starting with
+\[
+ J_0=1-R_0,\quad J_1=w-aJ_0-R_1,\quad
+ J_n=\sum_{j\le n/2}{r\choose j}{w-j\choose n-2j}
+                       -aJ_{n-1}-bJ_{n-2}\ (2\le n\le4),
+\]
+put $d_0=J_0$ and $d_n=J_n-J_{n-1}$ for n=1..4.
+All FIVE values and all THREE adjacent minors at centres 1..3
+are strictly positive whenever w>=12, 0<=r<=w, and the whole
+target remainder box holds. Thus these are the actual positive
+primitive values; no clipping sign assumption is implicit.
+
+The complete proof is a Bernstein certificate after
+$w=12+X$, $r=\theta w$, $R_i=-1/4+\eta_i/2$.
+Its five value lists have 2,5,11,13,21 coefficients, and its
+three minor lists 28,56,99 coefficients: 235 in total.
+Every coefficient is nonnegative and all at $X^0$ are positive.
+The independent verifier proves ALL polynomial identities by
+complete tensor interpolation with degree bound (6,3,2,2):
+7*4*3*3=252 evaluations per identity, 2016 in total. This is an
+identity certificate on an unbounded real cone, not a parameter test.
+
+\paragraph{The entire norm-cone induction and the complete finite entrance.}
+For the pure r=18 seed, the entire positive primitive INCLUDING
+rank zero is directly checked. Ordinary quotient LC is already
+proved by the previous theorem. Under further ternary extension
+the old and new pure norms contract, so the old uniform-window
+closure and the new head inequalities prove the primitive assertion
+for every pure r>=18.
+
+At fixed r>=18, append binary factors until reaching a target
+$b\sigma^u b^r\le1/64$. All earlier norms are at most that target,
+since sigma>1. At every step ordinary LC of the old and actual new
+quotient is supplied by the registered norm-cone theorem. The old
+primitive hypothesis comes from induction, the convolution primitive
+is LC by the registered window closure, and (1) plus the complete
+head proof give the target primitive. The same unbounded increasing-
+norm predicate induction is reused; no new upper count bound occurs.
+
+The remaining rich r<18 cases are exactly the previous THIRTY
+explicit contexts. Their full primitives are now separately
+reconstructed and certified, together with the pure r=18 seed.
+There are 995 positive-part coefficient reads, including zeros,
+and 933 LC minors, all nonnegative. Every nonzero signed primitive
+coefficient is classified by a certified exact algebraic sign;
+zero minors are exact field identities. The new finite certificate
+contains 1693 distinct positive field triples in eighteen ordinary
+Lean chunks. It is a NEW primitive certificate; the previous ordinary
+quotient certificate is not mistaken for a primitive proof.
+
+\paragraph{Scope.}
+Four NEW reports comprise the two complete polynomial quotient
+identities, the entire head/tail primitive join, and the aggregate
+finite primitive/Bernstein certificate. Previous norm, cubic-root,
+Bernstein-sum and nonsymmetric-window kernels are reused without
+recounting. The actual quotient identifications, uniform-window
+assembly, complete polynomial-identity certificates and entire
+norm-cone induction are written proofs, not an end-to-end Lean
+composition datatype formalization.
+The theorem concerns J. The WHOLE actual infinite-ones residual
+$\lambda d_{n-1}-d_n$ is a different sequence: even its positive
+primitive fails LC before the D mode on the ACTUAL host
+$1^{160}2^{20}3^{40}$, at shifted centre77<107.
+The negative exact field minor is also covered by the aggregate
+scalar certificate, and an independent positive suffix-box
+reconstruction checks the finite host and the entire relevant reads.
+Thus this theorem cannot be transferred
+by silently identifying J with that residual. The complete actual
+source and finite-initial-padding corrections still need treatment.
+Actual u>=33 strong diagonal, general C/full A2 and ORIGINAL
+undilated coefficient unimodality remain OPEN.

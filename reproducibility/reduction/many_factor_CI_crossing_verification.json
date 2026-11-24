@@ -1,0 +1,168 @@
+{
+  "status": "PASS_UNBOUNDED_ALL_MANY_FACTOR_CROSSINGS_AND_CONSTANT_FIVE_FACTOR_ENTRANCE_REDUCTION",
+  "new_scoped_reports": 17,
+  "kernels": {
+    "UnscaledHeadFastSource": {
+      "uniform_rank_factor": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unscaled_interior_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "penultimate_lower_factor": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "penultimate_two_payments": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "penultimate_coefficient_lower": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unscaled_zero_row": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "fast_source_raw_minor": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "fast_source_positive_part_LC": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binomial_growth_pays_fast_source": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ManyFactorCICrossing": {
+      "interior_unscaled_five_fourths": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interior_numerator_zero_row": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "stronger_interval_norm_constants": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "many_factor_nonlong_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "fast_window_only_three_integer_pairs": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "many_factor_perturbed_junction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "discarded_primitive_prefix_is_absent": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ManyFactorCrossingCertificate": {
+      "all_integer_margins": [
+        "propext"
+      ]
+    }
+  },
+  "unscaled": "PROVED ALLu>=32,K(s,k)>=8/5*T_kat2<=s<=u-2,1<=k<=s. ANYinterval-supportedLCN0=1,N1<=u/2,degree<=u-3hasUNSCALEDsameLCminorbudget. NEWu>=16INTERIORconstant5/4needsNODEGREEboundwhenN1<=u/3+1. ULCdegreeisu,notu-1.",
+  "fast_source": "PROVEDANYnonnegativeLCtriple(xprev,x,xnext),x<=R*xprev,R>0,andANYnonnegativesourcewithBOTHgrowthratios>=2R:positivepart(x-source)tripleisLC. GeneralbinomialsourceE=(1+z)^uN,N>=0hasjE_j>=(u-j+1)Eprev. Thussourcecentrejwith13(j+1)<=3(u+1)payseveryprovedsubgoldenLCbackgroundtriple;backgroundpremisesretained.",
+  "many_factor": "PROVED ALLu,ALLpaddingalpha>=1,EVERYdeletion-minimalCIdegreecrossingh>uwithr>=6:ACTUALpositiveDtailfromphysicalW=sumVhasLCatEVERYpre-first-tail-modecentre, equivalentlyALLpre-global-modeN>=W+1. \u03b41/2oldtheorems;\u03b4>=3forcesALLdi>=\u03b4,allcapacities>=4. Largestt<=u-11,unscaledheads+SIXnorms<1/4payENTIREnaturalquotientandlaterprimitive. Fullsourcecutwithdiscardedprefixandfast-sourcewindowclosesALLalphaexceptTHREEcompletefiniteprofiles,nowkernelchecked.",
+  "constant_factor_reduction": "ENTIREunboundeduniversalactualLATE-D-LCentranceforallh>ureducestoMINIMALcrossingswithAT MOST FIVECI factors. Residual2<=r<=5,3<=di<=u,u+3<=h<=2u,h-min di<=u,NOcapacity3,andnosubsetdegreeu+1/u+2;fixeduandpaddingclampremainfinite. ANYseedpropagatesbyarbitraryCIinsertion. Noassertionthatthefive-factorentranceisalreadychecked.",
+  "exceptions": "EXACTLY(u,V)=(15,4^6),(16,4^5,5),(20,5^6). ALL58paddinghosts/770minors/449distinctintegerkernelmarginsindependentlyrebuiltfrompositiveactualsuffixboxes. Notfiniteextrapolationatlargeru.",
+  "formal_scope": "SEVENTEEN NEW scopedreportscountONCE:9UnscaledHeadFastSource,7ManyFactorCICrossing,1ManyFactorCrossingCertificate(propextonly). Actualquotient/ULC/CauchyBinet/window/signedcut/mode/insertionassemblyWRITTEN,notend-to-endLeancompositionformalization. WholefieldQAisexact;1600generalno-threeprofilesremainDIAGNOSTICONLY.",
+  "remaining": "ALLat-most-five-factorcrossingsoutsideprovedseedsremain. ConvertingfurtherlateDLCtoALLown-cumulativeCstillneedsordinary/cumulativeentrancebudgets;earlierCremainsseparate. MasteractualLATE-Cthresholdu>=h-2unchanged. GeneralC/A2/originalunamplifiedUIremainOPEN;nooriginalnumericalboundupgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_threshold": "u>=h-2 UNCHANGED",
+  "independent_counts": {
+    "complete_exception_minors": 770,
+    "complete_exception_hosts": 58,
+    "positive_expansion_unscaled_kernel_minors": 3580,
+    "independent_natural_quotient_minors": 15152,
+    "independent_natural_later_primitive_minors": 15062,
+    "independent_actual_padding_tail_minors": 26246,
+    "independent_many_factor_actual_hosts": 360,
+    "independent_many_factor_profiles": 90,
+    "independent_rational_fast_source_triples": 4000
+  },
+  "independent_state_sha256": "1d31f8a3636e5acde2d73bae2eb06b94e28d4a03afdbb1ee4243408c8cbd0e22",
+  "state_sha256": "15b3317f44bf21cdac64d7c670da771532c4931e3954d285196284a770cb16c3",
+  "QA": {
+    "complete_exception_minors": 770,
+    "complete_exception_hosts": 58,
+    "interior_five_fourths_unscaled_kernel_checks": 156400,
+    "unscaled_numerator_zero_row_checks": 4590,
+    "many_factor_minimal_crossing_profiles": 700,
+    "entire_natural_quotient_LC_minors": 142352,
+    "entire_natural_later_primitive_LC_minors": 141652,
+    "unbounded_interval_junction_payments": 700,
+    "actual_all_padding_late_D_LC_minors": 338508,
+    "literal_actual_signed_tail_reads": 886318,
+    "actual_hosts": 3711
+  },
+  "unscaled_QA": {
+    "unscaled_eight_fifths_kernel_minors": 546686,
+    "generic_fast_source_clipped_LC_triples": 6000,
+    "generic_fast_source_all_three_positive": 7,
+    "arbitrary_nonnegative_numerator_source_growth_edges": 389422,
+    "arbitrary_interval_supported_LC_unscaled_numerator_minors": 73132,
+    "generic_unscaled_LC_numerator_contexts": 1000,
+    "targeted_fast_source_all_three_strict_positive": 4000,
+    "no_three_minimal_crossing_profiles": 1600,
+    "natural_quotient_all_tail_minors": 339654,
+    "natural_primitive_after_first_minors": 338054
+  },
+  "sha256": {
+    "unscaled_head_and_fast_source_proof.tex": "915f23895e77db3b784a3131317d6454d42e2b50882fe0fe05705e5ed95fd923",
+    "UnscaledHeadFastSource.lean": "7c31e588d6ac09271c0c71434e328f14f2cafa7416a063ae20028befd588d175",
+    "UnscaledHeadFastSource.log": "b62e80f7ee0caabf929c672a79c6845360238afd96d837dbe4a98fc8361e1fb3",
+    "probe_unscaled_head_and_fast_source.py": "31a69c3929b4cedf26c70dd33114a237626e136d20df00b01d52d8800ba4225c",
+    "probe_unscaled_head_and_fast_source.json": "ce8db700e85371eddfb707d6bddbe677a874434fda91af777dd84818894a3f0c",
+    "many_factor_CI_crossing_proof.tex": "db80cfd449c5331346bfd1762d554fbeb4be3cb2f141130e3c579291d562c4d9",
+    "ManyFactorCICrossing.lean": "b39522e644b099ccc894ac35e534374cca127cc88096abc4786291872c36f57c",
+    "ManyFactorCICrossing.log": "68c05ffcff03b2f15f8f86196d521d585a63c648f778b8a433fcb279abd1c40d",
+    "ManyFactorCrossingCertificate.lean": "6a5f0083a7387748e2626f055d1d99e89153b6d23292c34f0c3e95a6a9e5382d",
+    "ManyFactorCrossingCertificate.log": "421ed3d6093d3fba1f1e4b6e4e5f29b01847e12a48c5c8a008e2cfca0ba050c4",
+    "audit_many_factor_CI_crossing.py": "4cd3cd7fcf7d223186b5da6a7f6dacbbbc0d8c294514958473587e9b67cf9e88",
+    "audit_many_factor_CI_crossing.json": "4d441541a4f39106e98dd7b65a499105389422e5ba9e23ce39a01e770133da95",
+    "emit_many_factor_crossing_certificate.py": "83d8f150bf624d3968e51a9ea2354282dae39445620081d6489a30e261507875",
+    "verify_many_factor_CI_crossing.py": "65630dae4708e74f6a029d1a969b910f679dc3a167c2adef7b03ba685c4ffec3",
+    "double_subdegree_support_clarification.tex": "7deea311b7b98aa9ee8214e4464c40f39faccb5423f4629d20f55f8182ddca8d",
+    "DoubleSubdegreeCI.lean": "1faa99237edb1f91b908acdd24898119ebc20e09a733a10b78d1d7e5af262797",
+    "DoubleSubdegreeCI.log": "2eac38738646a602e6e048d0d333c23d8d2a71b3bdf0529ee6ca6d774864f6d2",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "double_subdegree_CI_entrance_verification.json": "de6cdc082a0ea7a96d74beca5c43ee0b0a3d78bbf1bea9fa2c87c2cbbba46d9f",
+    "mode_only_uniform_tail_closure_verification.json": "52aaf8f1842736ab79defb1bd6a2e90033614daab555a4b1c1bd3c1da3f87a22",
+    "all_padding_CI_entrance_verification.json": "17740524c775a089847144d6c498b0bcda4a047f861e9943dfd6a2fd9d20e518"
+  }
+}

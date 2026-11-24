@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_QA_PASS_MIXED_THREE_FOUR_PROPER_QUOTIENT_NORM_CONE",
+  "counts": {
+    "whole_proper_quotient_positive_coefficients": 85581,
+    "whole_proper_quotient_GLOBAL_LC_minors": 84969,
+    "EXACTproper_forward_low_THREE_rank_correction_contexts": 306,
+    "norm_cone_hosts": 306,
+    "explicit_unbounded_cone_QA_hosts": 162,
+    "EXACTrational_FULLreal_box_THREE_head_minor_contexts": 2500
+  },
+  "state_sha256": "c25f477138f122601d796c0fd9185b20a45c0842cd0f892ffdcb9dc85f0f7fc7",
+  "seconds": 4.2189999999973224,
+  "scope": "ALLr>=32,s>=0withb^(r1)4^s<=1/64:positiveGLOBALordinaryLCproperJ;explicitALLs>=16/r>=3s-4. Pure3baseREUSED;NOnewfiniteproofpremise. HeadordinaryLCNOTprimitiveLC/actualD;actual/generalC/A2/originalUIremainOPEN."
+}

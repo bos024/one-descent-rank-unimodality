@@ -1,0 +1,12 @@
+'StationaryTernaryReferenceC.whole_unperturbed_golden_reference_controls' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryTernaryReferenceC.complete_both_left_golden_residual_entrances' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryTernaryReferenceC.whole_terminal_budget_inherited_from_forward_CI' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryTernaryReferenceC.all_two_ended_window_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

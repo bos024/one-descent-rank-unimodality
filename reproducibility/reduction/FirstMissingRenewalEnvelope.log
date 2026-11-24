@@ -1,0 +1,13 @@
+'FirstMissingRenewalEnvelope.finite_ratio_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingRenewalEnvelope.delayed_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingRenewalEnvelope.delayed_recurrence_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingRenewalEnvelope.initial_dyadic_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingRenewalEnvelope.normalized_shift_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingRenewalEnvelope.finite_nonnegative_loss_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingRenewalEnvelope.positive_derivative_tail_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingRenewalEnvelope.source_identity_rearrangement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingRenewalEnvelope.own_cumulative_source_counter' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,37 @@
+{
+  "status": "PASS_UNBOUNDED_BINARY_RELATIVE_FIBONACCI_AND_COMPLETE_C",
+  "new_scoped_reports": 20,
+  "kernels": {
+    "BinaryRelativeFibonacci": 7,
+    "FibonacciDensityC": 13
+  },
+  "binary_C": "ALL actual 1alpha2^h, alpha>=1,h>=1, ALL ranks and shifts R>=3 on the positive ordinary slope prefix. No bound on count, capacity-word length, initial padding or overlap depth.",
+  "larger_abstract_family": "Every arbitrary-last-trimmed Fibonacci convolution history from [1] has exact prefix and strict integer LC tail, hence d/Fibonacci relative LC. Every positive-support derivative sequence D2=D3=1 with Fibonacci-relative LC satisfies own-C at ALL shifts; no actual cumulative LC assumed.",
+  "proof": "Exact binary append changes ONLY the last raw positive-D coefficient. Unbounded trim induction supplies strict tail minors; Cassini and componentwise Fibonacci bounds transfer to relative LC. Current density ratio a gives LR domination over a one-parameter deformed Fibonacci model. Two cumulative sums preserve LR. Alternating model coefficients paired via jA>=(j+1)B, unbounded power-gap induction and positive Cassini endpoints pay all model C comparisons; Fibonacci recurrence propagates all shifts.",
+  "both_rising_consequence": "ENTIRE first-missing-weight3 branch at ALL opposite first weights/counts/capacities/padding/depths: BOTH ordinary factors still rising/current deficit>=0 imply NONRECOVERY. Usual OLD head/proper S hypotheses retained. Sole nonbinary one-capacity firstweight3 arm has flat positiveD and is paid directly.",
+  "zero_head_consequence": "ENTIRE properly conditioned zero-head S with both counts>=2 and EITHER first missing weight3, NO OLD A2, NO phase/depth/opposite-first-weight bounds. Existing double-defect phase forcing plus new binary C proves this, not a new universal unrestricted S assertion.",
+  "formal_scope": "20 NEW clean scoped reports. FULL arbitrary-trim LC-tail induction and relative-minor transfer are kernel checked under explicit support/prefix/append hypotheses. All unbounded power-pair/Fibonacci coefficient/endpoint/LR/scalar transfer kernels are checked. Word-to-history identification, polynomial coefficient assembly, final abstract C and actual composition assembly are complete WRITTEN proofs, NOT one end-to-end Lean theorem. Finite QA does not prove unbounded quantifiers.",
+  "remaining": "General C for nonbinary capacity words with >=6 non-one parts OPEN. Remaining mixed c0/incoming, general higher-first-weight both-rising complement, A2 and ORIGINAL unamplified coefficient unimodality OPEN. Binary ceased-rising opposite-phase branch not globally closed by this theorem. No original least-counterexample count upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "binary_relative_fibonacci_and_complete_C.tex": "394f748276206768dff79ef74e122204913dc3fb31e5e309a71643df562c64af",
+    "audit_binary_relative_fibonacci_C.py": "9b6eca3bdfeac4adc018779b85601800cdde01a99ced1809c8fbb1d8f140c596",
+    "audit_binary_relative_fibonacci_C.json": "b0ff040191233ee36de17820777f10d0bf764c5380d62293f43e24eaa1a27336",
+    "audit_binary_C_product_consequences.py": "3c066230d18e3f530a6a800e87689d545639f237137732721b56b32dd0fec7eb",
+    "audit_binary_C_product_consequences.json": "46920db3b88d9a9222d986e5ffc07dc43690c3e41d7c1ca9a3934db314fe5fc2",
+    "verify_binary_relative_fibonacci_C.py": "fa4442fbd98c74d40863d33a5558ca5abd12e3d9a092752bd5cb063f3b14f3e1",
+    "RegularizedFibonacciEnvelope.lean": "3f188bcf50eee69456bbaf9283f07fa4e659d7984dac563386d36c60e3ec0ef5",
+    "RegularizedFibonacciEnvelope.log": "65f89dc3f033066ddd9e8e5b30acf10edc602b281a9845ea79c064fb8c32e90b",
+    "C_to_coupled_S_rising_window.tex": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "CToCoupledSRisingWindow.lean": "cd3ccefb6840c8747084722fd3eb6fc4e11526e45902ef648927060a37b0620c",
+    "ClippedForwardRatio.lean": "63437c614b6bf9f8557b1d10aed44ebcfacf1bcf4a0aba206b8a0889a3227806",
+    "zero_head_C_bridge.tex": "a53f7d1458a3737a55bafeb6e436bfbd4dce7f317ffe5c5bced9aa4d1571c6a2",
+    "UntruncatedOppositeZeroHead.lean": "c9d0c794282a5d7c6d5d80187144671a51319d7707bf043abdba56f60f5e5f34",
+    "BinaryRelativeFibonacci.lean": "ed4e1d8e82ec04febfc8b9fe7a7f0dfbebaf9cf7ce2fca5c74da595ae0fe7e14",
+    "BinaryRelativeFibonacci.log": "7c77065b127c42c2e8b49a08ce496ca824311a0acbabd69490c6ad65c991841f",
+    "FibonacciDensityC.lean": "d25137ce73032f6a68cede992f18fad4961044736539fb24f4fac462865cafcf",
+    "FibonacciDensityC.log": "fc1ecc4733583fe61cd8bb6943d97a66d3c55db5cae0b92380b7d5e59712ef8b"
+  }
+}

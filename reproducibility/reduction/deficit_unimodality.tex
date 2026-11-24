@@ -1,0 +1,151 @@
+% Internal research route, not a proof of the unrestricted conjecture.
+\section{A coefficient-level route through growth deficits}
+Let $E_w=1-z+(2z-1)F_w$. Its nonzero coefficients have interval
+support $[\kappa(w),\operatorname{wt}(w)+1]$ for nonempty $w$.
+
+\begin{proposition}[A sufficient coefficient bridge]
+If $E_w$ is unimodal, then $F_w$ is unimodal.
+\end{proposition}
+\begin{proof}
+Write $N=\operatorname{wt}w$, $q=z^NF_w(1/z)$, and
+$e=z^{N+1}E_w(1/z)$. Then
+\[
+ e=(2-z)q-z^N+z^{N+1}.
+\]
+For $0\le r<N$ this gives $q_r=(e_r+q_{r-1})/2$, where
+$q_{-1}=0$. Such geometric averaging preserves unimodality:
+before a mode of $e$, the previous average is at most the new input,
+so the averages increase. After that mode, once an average decreases,
+it is still at least its current input, and the next input is no
+larger; the averages keep decreasing. Thus $(q_0,\ldots,q_{N-1})$
+is unimodal. Finally $q_{N-1}=q_N=1$, so appending $q_N$ preserves
+unimodality. The empty host is immediate.
+\end{proof}
+
+\begin{proposition}[Appending a maximum preserves deficit unimodality]
+Let $Z$ be a composition with $E_Z$ unimodal, and append
+$t\ge\max Z$. Then $E_{Zt}$ is unimodal. In particular $E_Z$ is
+unimodal for every weakly increasing $Z$.
+\end{proposition}
+\begin{proof}
+Use the exact recurrence $E_{Zt}=S_tE_Z+z^{t+1}$.
+The empty case is direct. Put $c=\operatorname{wt}Z$ and
+$\kappa=\kappa(Z)$. The polynomial $W=S_tE_Z$ is unimodal.
+If $c\ge t$, then $E_Z(t+1)\ge1$, since
+$\kappa\le\max Z+1\le t+1\le c+1$. Moreover $E_Z(1)=0$.
+Consequently $W_{t+2}-W_{t+1}=E_Z(t+1)-E_Z(1)\ge1$.
+The added unit at $t+1$ cannot create a descent, and all other
+differences keep the sign pattern of the unimodal $W$.
+If $c<t$, the convolution $W$ is constant at its maximum throughout
+$[c+2,t+\kappa]$. This interval contains $t+1$, because
+$c+2\le t+1$ and $\kappa\ge2$. Adding a unit at one position of a
+maximum plateau preserves unimodality. This proves the assertion.
+\end{proof}
+
+\paragraph{Two-arm identities.}
+For $H=F_{XMY}$ and $A=F_X$, $B=F_Y$,
+\[
+ E_H=E_XD_Y+z^{M+1}B=E_YD_X+z^{M+1}A,
+\]
+and consequently
+\[
+ (1-z)E_H=E_XE_Y-z^{M+1}(2z-1)AB.
+\]
+These identities give a sufficient route in individual cases. The
+unrestricted one-descent version of deficit unimodality is false,
+as the explicit example below shows. Products of the displayed
+factors need not be unimodal either.
+
+\paragraph{An actual limitation, not an original-conjecture counterexample.}
+Deficit unimodality is false for unrestricted hosts. The host
+\[
+ w=(1,1,1,1,1,1,3,1,2,1,2)
+\]
+has
+\[
+ E_w=(0,0,0,0,1,2,4,11,24,33,36,35,39,38,26,11,2)
+\]
+as its coefficient list, which decreases from $36$ to $35$ and
+then increases to $39$. This host has two descents. Its rank
+polynomial is still unimodal. The sufficiency proposition remains
+valid, but any attempt to prove deficit unimodality for every host
+would be false.
+
+\paragraph{A one-descent obstruction.}
+More decisively, take
+\[
+ w=(1,2,2,2,3,1,1,1,1,1,1,1).
+\]
+This host has exactly one descent and weight $17$. Its rank
+polynomial and deficit have coefficient lists
+\begin{align*}
+ F_w&=(1,1,2,4,7,12,20,31,41,46,47,46,45,41,31,17,6,1),\\
+ E_w&=(0,0,0,0,1,2,4,9,21,36,45,48,47,49,51,45,28,11,2).
+\end{align*}
+The deficit decreases from $48$ at rank $11$ to $47$ at rank
+$12$, then increases to $49$ and $51$. The original coefficients
+are unimodal, with their unique maximum $47$ at rank $10$.
+Thus deficit unimodality cannot serve as a universal intermediate
+theorem, even for peak three and an all-one second arm. The
+sufficient bridge and the monotone-arm theorem proved above are
+unaffected.
+
+\begin{theorem}[No constant linear deficit gives a universal bridge]
+For a real constant $c\ge2$, put
+\[
+ E^{(c)}_w=1-(c-1)z+(cz-1)F_w.
+\]
+For every such $c$, there is a one-descent host with unimodal rank
+polynomial for which $E^{(c)}_w$ is not unimodal.
+\end{theorem}
+\begin{proof}
+The weight-$17$ example above handles $c=2$. Suppose $c>2$.
+Choose an integer $t\ge3$ with $t+4>2c$, and set
+\[
+ X=1^{t+3}t^t,\quad M=t+1,\quad
+ a=\operatorname{wt}X=t^2+t+3,\quad
+ \beta=a+M=t^2+2t+4,\quad Y=1^\beta.
+\]
+Let $A=F_X$ and $D=1+(S_M-1)A$. We claim that $D$ vanishes
+below degree $M$ and has coefficients
+\[
+ (D_M,D_{M+1},D_{M+2})=(1,2,t+4).
+\]
+Here subscripts denote coefficient indices, with the parameter
+$M$ held fixed.
+
+To verify the claim, count the missing words of weights
+$M,M+1,M+2$ in the ideal below $X$. Their numbers are respectively
+$1,4,t+11$. At weight $M$ only the one-part word $(t+1)$ is
+missing. At weight $M+1$, three words contain a part greater than
+$t$, and the additional missing word is $(2,1^t)$.
+At weight $M+2$, eight words contain a part greater than $t$.
+Among the remaining words, a word fails to embed precisely when
+the suffix beginning at its first non-one part has more than $t$
+parts. There are two such words of length $t+2$, namely
+$(2,1^{t+1})$ and $(1,2,1^t)$; there is one word $(3,1^t)$;
+and there are $t$ words of length $t+1$ with two parts equal to
+two, the first of them in position one. These are all possibilities.
+The leading $t+3$ ones in $X$ absorb every needed initial run of
+ones at these weights. Below $M$ every word embeds.
+
+Using $(1-z)D=E^{(2)}_X-z^{M+1}A$ and the three missing counts,
+the successive coefficients of $(1-z)D$ at $M,M+1,M+2$ are
+$1,1,t+2$. This proves the claim about $D$.
+
+Write $H=F_{XMY}$ and use $F_Y=[\beta+1]$. The maximum
+decomposition gives the exact identity
+\[
+ (1-z)H=1+(S_M-z)A-z^{\beta+1}D.
+\]
+The middle term has degree $a+M=\beta$. Thus, at
+$n_0=\beta+M+1$, the successive first differences of $H$ are
+$-1,-2,-(t+4)$, while the preceding first difference is zero.
+For indices here, the first difference of $E^{(c)}_w$ is
+$c\,\Delta H_{n-1}-\Delta H_n$. At $n_0+1$ this equals
+$2-c<0$, and at $n_0+2$ it equals $t+4-2c>0$. This is a
+strict descent followed immediately by a strict ascent.
+The original rank polynomial is unimodal by the all-one-arm
+theorem. Thus the obstruction concerns the proposed auxiliary
+deficit, not the one-descent rank-unimodality conjecture.
+\end{proof}

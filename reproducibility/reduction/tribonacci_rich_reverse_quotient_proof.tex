@@ -1,0 +1,172 @@
+\section{The proper quadratic quotient in the full ternary-rich cone}
+Let $\lambda\in(1,2)$ satisfy $\lambda^3=\lambda^2+\lambda+1$,
+and set $a=\lambda-1$, $b=\lambda^{-1}=\lambda^2-\lambda-1$,
+$B(z)=1+az+bz^2$. Write $[t]=1+\cdots+z^{t-1}$.
+For $E=[2]^u[3]^r$, let
+\[
+                         E=BJ+R_0+R_1z                 \tag{1}
+\]
+be its actual polynomial division by B. Unlike the preceding forward
+inverse theorem, J is a polynomial quotient, not a truncated FPS.
+
+\begin{theorem}[All rich counts, without a binary-count bound]
+For EVERY $u\ge4$, $r\ge2u$, J is strictly positive and globally
+log-concave. Its two remainder coefficients satisfy
+$|R_0|,|R_1|\le1/4$ and the exact identity
+\[
+ bR_0^2-aR_0R_1+R_1^2
+       =b\sigma^u b^r,
+ \quad\sigma=1+2\lambda-\lambda^2=a^2/b>1.         \tag{2}
+\]
+\end{theorem}
+In fact the same positive/global-LC conclusion holds for every
+$r\ge18,u\ge0$ such that $b\sigma^u b^r\le1/64$.
+This is an unbounded norm cone, not an experimentally tested count range.
+
+\paragraph{Two exact norm recurrences, for both boundary pairs.}
+Put $\mathcal R(x,y)=bx^2+axy+y^2$. Define
+\[
+ H=\frac{E}{1+(a/b)z+(1/b)z^2},\quad D=u+2r,
+ \quad(e_0,e_1)=(H_D,H_{D-1}).
+\]
+Reversal of (1) gives
+$J^{\rm rev}=b^{-1}[H]_{0..D-2}$. Its sublist beginning at
+index two is therefore the reversal of $b^{-1}[H]_{0..D-4}$.
+This is why four coefficients, rather than the preceding forward
+kernel's two, are initially discarded in the present argument.
+
+On binary multiplication the H terminal pair changes by
+\[
+ (x,y)\mapsto((1-\lambda a)x-\lambda y,x+y),
+                        \quad\mathcal R_{\rm new}=\sigma\mathcal R.
+\]
+On ternary multiplication it changes by
+\[
+              (x,y)\mapsto(y,-bx-ay),
+                        \quad\mathcal R_{\rm new}=b\mathcal R.
+\]
+The latter simplification uses the complete cubic identities
+$1-\lambda a+(\lambda a)^2-\lambda=0$ and
+$\lambda(\lambda a-1)=1$.
+For the signed remainder pair $(R_0,-R_1)$ the corresponding maps are
+\[
+ (x,y)\mapsto(x+\lambda y,-x+(1-\lambda a)y),
+ \qquad (x,y)\mapsto(-ax-y,bx),
+\]
+with the SAME factors sigma and b. Both base pairs for E=1 are (1,0)
+and have norm b. Thus complete two-count induction proves
+\[
+ \mathcal R(e_0,e_1)=\mathcal R(R_0,-R_1)=b\sigma^u b^r. \tag{3}
+\]
+Both phase variables and both remainder coefficients are retained.
+The two norm reports verify BOTH terminal/remainder maps; a third
+report formalizes the entire two-natural-count norm induction.
+
+\paragraph{A uniform small norm throughout the rich cone.}
+Here $b\ge1/2$, $a^2\le3/4$, and
+\[
+ \mathcal R(x,y)-\tfrac14(x^2+y^2)
+       =(b-\tfrac12)x^2+(\tfrac34-a^2)y^2+(x/2+ay)^2\ge0.
+\]
+Hence norm at most 1/64 gives the full quarter box for either pair.
+The exact relations $a^2b=\lambda^2-3<2/5$, $0<b<3/5$ imply,
+for $u\ge4,r=2u+k$,
+\[
+ b\sigma^u b^r=b(a^2b)^u b^k
+              \le\tfrac35(\tfrac25)^4
+                    =48/3125<1/64.                       \tag{4}
+\]
+Strong coercivity/quarter-box and the all-u/all-k geometric payment
+are separate scoped Lean reports. The fixed algebraic root bounds
+used here are among the complete scalar certificate.
+
+\paragraph{Every uncovered reverse-prefix read is paid.}
+Let $w=u+r\ge18$, and write $x_k=H_{D-k}$. Palindromicity gives
+\[
+ x_0=e_0,\ x_1=e_1,\qquad
+ x_k=bE_{k-2}-ax_{k-1}-bx_{k-2}\quad(2\le k\le7),          \tag{5}
+\]
+where every needed coefficient is the explicit polynomial
+\[
+               E_t=\sum_{j\le t/2}{r\choose j}{w-j\choose t-2j}.
+\]
+For an old positive LC prefix through D-4, ordinary interval
+convolution covers all new centres through D-5. Binary extension
+leaves only one new value and one interior minor:
+\[
+ x_3+x_4,\qquad (x_4+x_5)^2-(x_3+x_4)(x_5+x_6).
+\]
+Ternary extension leaves two new values and two minors:
+\[
+\begin{gathered}
+ x_3+x_4+x_5,\quad x_2+x_3+x_4,\\
+ (x_4+x_5+x_6)^2-(x_3+x_4+x_5)(x_5+x_6+x_7),\\
+ (x_3+x_4+x_5)^2-(x_2+x_3+x_4)(x_4+x_5+x_6).
+\end{gathered}
+\]
+All SIX expressions are strictly positive for ALL real w>=18,
+0<=r<=w and the entire terminal quarter box. Substitute
+$w=18+X$, $r=\theta w$, $e_i=-1/4+\eta_i/2$ and expand each
+coefficient of X in the tensor Bernstein basis on the unit cube.
+The respective coefficient counts are 99,143,99 for the minors and
+11,13,11 for the values: 376 in total. Every coefficient is
+nonnegative, and all at $X^0$ are positive. The complete list and
+exact sign certificate are supplied. Independence is checked by
+complete tensor interpolation, using degree bound (8,4,2,2), not
+by a bounded parameter test.
+
+\paragraph{A single pure entrance proves the entire norm cone.}
+First fix u=0. The one explicit r=18 polynomial has positive LC
+J[2..], equivalently positive LC H[0..D-4]. Its norm b^19 is below
+1/64. Further ternary multiplication contracts the norm, so (5)
+and the six corner inequalities prove this property for every r>=18.
+
+Now fix any r>=18 and any target u with $b\sigma^u b^r\le1/64$.
+Starting from that pure polynomial, add u binary factors. Since
+sigma>1, every previous norm is at most the TARGET norm; every
+old terminal pair is consequently in the required box. Binary
+convolution and its complete endpoint payments prove LC of J[2..]
+at EVERY intermediate count. The formal increasing-norm predicate
+induction includes all natural u. No unbounded diagonal is assumed
+as a finite entrance.
+
+\paragraph{Pay BOTH missing head minors and every low coefficient.}
+The remainder box from (3) gives
+\[
+ \begin{aligned}
+ J_0&=1-R_0,& J_1&=w-aJ_0-R_1,\\
+ J_2&={w\choose2}+r-aJ_1-bJ_0,&
+ J_3&={w\choose3}+r(w-1)-aJ_2-bJ_1.
+ \end{aligned}
+\]
+All three values J0,J1,J2 and BOTH minors
+$J_1^2-J_0J_2$, $J_2^2-J_1J_3$ are positive whenever w>=12,
+0<=r<=w, |R0|,|R1|<=1/4. The complete analogous Bernstein
+certificate has 2,5,11,28,56 coefficients respectively: 102 in total.
+This explicitly pays centre TWO; LC of J[2..] alone covers only
+centres from three and cannot replace this payment.
+It proves global positivity and LC throughout the norm cone.
+
+By (4), this proves every rich case with r>=18. The remaining rich
+cases are EXACTLY thirty: u=4,r=8..17; u=5,r=10..17;
+u=6,r=12..17; u=7,r=14..17; u=8,r=16..17. All their complete
+quotients and minors, together with the one pure entrance, form
+31 explicit contexts with 993 retained coefficients and 931 minors.
+They are independently reconstructed in the different Q(a) basis.
+Their signs, all 478 Bernstein coefficients and the fixed root
+obligations use 2350 distinct field triples in 25 ordinary Lean
+integer chunks, represented by ONE aggregate report.
+
+\paragraph{Scope.}
+Seven NEW reports comprise six full norm/coercivity/rich-bound/
+increasing-cone kernels and the complete finite scalar certificate.
+The earlier cubic-root interval and finite Bernstein-sum kernels
+are reused, not recounted. Sequence/quotient identifications,
+LC convolution, the independently verified polynomial identities
+and the full norm-cone induction are the written assembly above,
+not an end-to-end Lean formalization of composition generation.
+Positive-primitive LC of J remains a SEPARATE unproved candidate;
+it is not inferred from ordinary LC. The full actual D profile
+contains additional source terms. This quotient theorem alone
+does not prove the actual strong diagonal for u>=33, general C,
+full A2 or ORIGINAL undilated coefficient unimodality.

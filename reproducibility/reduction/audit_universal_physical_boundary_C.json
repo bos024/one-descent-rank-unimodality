@@ -1,0 +1,19 @@
+{
+  "status": "EXACT_QA_UNIVERSAL_PHYSICAL_BOUNDARY_C_UNDER_AUDIT",
+  "counts": {
+    "maximal_margin_tilt_FULL_row_reads": 13110,
+    "onefactor_reference_prefix_profiles": 92,
+    "exact_prefix_minimum_all_shift_C_payments": 497672,
+    "logical_shift_coverage": 177173695,
+    "actual_hosts": 2300,
+    "full_boundary_strong_additive_prefix_reads": 46599,
+    "strict_multifactor_physical_boundaries": 447,
+    "two_edge_OR_protected_old_prefix_margins": 1615,
+    "LC_extended_old_ordinary_and_cumulative_margins": 2183,
+    "strict_hereditary_boundary_transfers": 36,
+    "protected_onefactor_exception_transfers": 19
+  },
+  "state_sha256": "5993473411b39e5fe24379d735f0aa426e084f7f3a0ae2489c85c4bc6bcdf640",
+  "seconds": 5.389999999999418,
+  "scope": "ProposedALLactualC fromN>=W,ALLu/h/alpha/V,usingTWO-edge physicalboundary+universalW+1strongG andsharpordinaryLCfromW-1. Protectedr1delta1exceptionkeptseparate;smallurowcone+OLDweight32. FiniteQAONLY;fullN<W C/A2/originalUIOPEN."
+}

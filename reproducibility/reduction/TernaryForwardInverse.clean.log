@@ -1,0 +1,8 @@
+'TernaryForwardInverse.golden_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.potential_binary_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.potential_ternary_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.mixed_unbounded_terminal_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.ternary_terminal_minor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.ternary_terminal_minor_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.positive_ternary_corrected_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.lowering_next_preserves_minor' depends on axioms: [propext, Classical.choice, Quot.sound]

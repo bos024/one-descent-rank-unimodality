@@ -1,0 +1,151 @@
+\section{All universal outgoing ranks transfer, and all untruncated cumulatives transfer}
+Assume old property C on a nonrectangular generated arm, with ordinary
+ranks $A$, cumulative $G$, positive derivative $D$, first missing
+weight $\kappa$, and a legal append $t\ge\kappa-1$.
+The class can be actual increasing arms or the larger formal class
+with nondecreasing first missing weights. Let $\ell$ be the first
+mode of $D$ and put $K=\max(4,\kappa-1)$.
+
+\begin{theorem}[Universal-prefix and cumulative-window transfer]
+Every new C comparison centered at $n\le t+K$ holds.
+Moreover every comparison with $n<t+r$ holds, even beyond this
+prefix. Consequently every legal $t\ge\ell-K$ preserves C at
+all ranks. A remaining failure must simultaneously satisfy
+\[
+ n\ge t+K+1,\quad n\le\ell,\quad
+               s=n-t\ge\kappa,\quad 3\le r\le s.             \tag{1}
+\]
+This is a conditional induction theorem, not a proof of general C.
+\end{theorem}
+
+\paragraph{An adaptive prefix budget.}
+On the old ordinary rising prefix set $E_i=2A_{i-1}-A_i$ for
+$i\ge2$. Forward derivative doubling gives
+$E_i-E_{i-1}=2D_{i-1}-D_i\ge0$, so $E$ is nondecreasing there.
+The old C prefix-sum argument works with \emph{any} slack
+$e\le E_r$, yielding
+\[
+ (A_{n-1}-e)G_{n-r}
+          \ge D_n\left(1+\sum_{j<n-r}G_j\right).              \tag{2}
+\]
+Indeed $D_r=A_{r-1}-E_r\le A_{r-1}-e$, and the old C
+comparisons can be summed exactly as before.
+
+Write $s=n-t$. For $s\ge2$ and $r>s$, the new cumulative at
+$k=n-r$ is untruncated: it equals $C_k=1+\sum_{j<k}G_j$,
+and its next increment is $G_k$. A positive increasing new
+derivative pair gives $D_n>0$ on the old ordinary rising prefix.
+Since $r>s$, take $e=E_s\le E_r$ in (2). The new derivative
+and increment are
+$N=A_{n-1}-A_{s-1}$ and $D_n-D_s$, with
+$A_{s-1}-E_s=D_s$. Thus its new C minor is at least
+$D_s(C_k-G_k)\ge0$. The edges $s\le1$ were already closed
+by the original prefix and first-unit theorem. This proves
+\emph{all} comparisons $n<t+r$, without bounding $s$ by
+the first missing weight.
+
+\paragraph{The universal outgoing range $s<\kappa$.}
+The prior mode-propagation theorem reduces work to $n\le\ell$;
+therefore $D$ is nondecreasing throughout the old prefix used here.
+The untruncated case above leaves only $3\le r\le s<\kappa$.
+Set $m=D_r=A_{r-1}=2^{r-2}$, and for $i\ge r$ define
+\[
+ b_i=G_{i-r},\quad L_i=mb_i-D_i,\quad
+ C_n=1+\sum_{i=r}^{n-1}b_i.
+\]
+Old C gives $L_i\ge0$ and increasing $L_i/b_i$.
+We prove
+\[
+ L_nC_n\ge b_n\left(m+\sum_{i=r}^{n-1}L_i\right)
+                       \quad(n\ge n_0:=\kappa+r-1).           \tag{3}
+\]
+As in the third-edge theorem, once (3) is true at $n_0$,
+increasing loss density propagates it at every subsequent rank.
+
+The sharp second source gives the delayed gap
+\[
+ E_{\kappa+j}-E_{\kappa+j-1}\ge D_j\quad(j\ge1),\qquad
+ E_\kappa\ge1
+\]
+through this nondecreasing $D$ prefix. Summing through $j=r-1$
+gives $E_{n_0}\ge A_{r-1}=m$. Every $b_i$ through $n_0$
+is still a full dyadic rank, so $C_{n_0}=b_{n_0}$.
+The exact telescoping identity at that seed is
+\[
+        L_{n_0}-\sum_{i=r}^{n_0-1}L_i=E_{n_0}.
+\]
+Thus the delayed source pays the complete seed (3), with its
+entire initial constant $m$, rather than just one leading unit.
+
+At the target rank $n=t+s$, legality and $s\ge r$ give
+$n\ge n_0$. All losses before $s$ vanish, since $s<\kappa$.
+Write $b=b_n$, $b_*=b_s$, $S=m+\sum_{i=r}^{n-1}L_i$,
+$C=C_n$, and $Q=C-b_*+1$. The actual new cumulative is $Q$,
+and its C minor is exactly
+\[
+                          L_nQ-(b-b_*)S.                     \tag{4}
+\]
+The factor-two prefix-mass bound gives $b\le C$; $Q>0$,
+$b_*>0$, and $S>0$. The algebraic payment
+\[
+ \begin{split}
+ C\{L_nQ-(b-b_*)S\}
+ &=Q(L_nC-bS)+S\{b_*(C-b)+b\}\ge0
+ \end{split}                                                 \tag{5}
+\]
+uses (3) and proves (4). This closes every shift in the entire
+universal outgoing range $s<\kappa$, not only a fixed number
+of initial source edges.
+
+\paragraph{The extra fourth edge for $\kappa=3,4$.}
+Only $s=4$ remains to obtain the stated $K$.
+For $r>4$ the adaptive untruncated result already applies.
+We can assume $\ell\ge t+4$, so all old $D$ in the following
+seeds are nondecreasing.
+
+If $\kappa=3$, then $D_3=1$ and $D_4\in\{1,2\}$.
+If $D_4=1$, the last two positive second differences vanish;
+their binary source recurrence forces all later ones to vanish.
+The first $D$ mode is then two, contradicting the only remaining
+case. Hence $D_4=2$. The source gives $D_5\le3$ and
+$D_6\le2D_5-1\le D_5+2$.
+For $r=3$, use $b_i=G_{i-3}$, initial density $m=1$, and
+losses $L_i=mb_i-D_i$ starting at $i=4$.
+At index six the cumulative reference and $b_6$ both equal seven,
+and the last inequality is exactly
+$L_6\ge1+L_4+L_5$. For $r=4$ start at the same old index
+four with $b_i=G_{i-4}$ and $m=2$; the corresponding seed
+has reference four and inequality $L_6\ge2+L_4+L_5$.
+Both prefixes propagate. At the new window they give the stronger
+bound $L_nQ\ge b_n(m+\sum L)$, which certainly pays its actual
+increment $b_n-b_4$. This proves both remaining shifts.
+
+If $\kappa=4$, write $d=D_4\in\{2,3\}$ and
+$a=D_5,b=D_6,c=D_7$. The source gives
+\[
+       a\le2d,\qquad b\le2a-1,\qquad c\le2b-2.              \tag{6}
+\]
+For $r=4$ the loss prefix starting at four has density $d$;
+its seed at seven is $c\le d+a+b$.
+This follows from (6), since $d\le3$.
+For $r=3$ start at four with density $d/2$ and reference
+$G_{i-3}$. Its seed is
+\[
+                  15c\le(12+d)(d+a+b).                      \tag{7}
+\]
+This is also forced by (6) and the integer choices $d=2,3$.
+For $d=2$ the difference in (7) is at least two;
+for $d=3$ it is nonnegative. Both assertions are linear once
+the two integer values are substituted, and are kernel checked.
+The increasing-loss prefix propagation again gives the stronger
+bound with $b_n$ in place of $b_n-b_4$, paying both new shifts.
+This completes the fourth edge for the two small first-missing cases.
+
+We have proved every comparison through $t+K$.
+The previous propagation from the first old $D$ mode completes
+all ranks whenever $t+K\ge\ell$, and gives the remaining
+conditions (1) otherwise.
+
+The unrestricted window with outgoing rank at or beyond the old
+first defect remains unsolved. The new bounds are conditional on
+old C and are not a proof of general original coefficient UI.

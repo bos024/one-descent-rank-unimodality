@@ -1,0 +1,87 @@
+\section{A multiplicity-scaled dyadic lower profile at early normalized source ranks}
+Put $c_0=1$, $c_n=2^{n-1}$ for $n\ge1$. Thus
+$\sum_{i=0}^n c_i=2^n$ and $\sum_{i<n}c_i=c_n$ for $n\ge1$.
+
+\begin{theorem}[Early normalized source lower bounds]
+For every actual increasing arm, write $\kappa\ge2$ for its first
+missing weight, $\delta=E(\kappa)$, and $A=z^{-\kappa}E$.
+Then
+\[
+ A_n\ge c_n\quad(0\le n\le\kappa-2),                 \tag{1}
+\]
+\[
+ A_n\ge\delta c_n\quad(0\le n\le\kappa-\delta).       \tag{2}
+\]
+The same conclusions hold throughout the formal append grammar
+with nondecreasing first missing weights. These are coefficient
+lower bounds in the stated rank windows, not global dominance of
+an infinite dyadic series or dominance after differentiation.
+\end{theorem}
+\begin{proof}
+For an initial all-ones arm, $\kappa=2$. If $\delta=2$, $A_0=2$
+and (2) only asks about zero. If $\delta=1$, $A_0=1$ and $A_1\ge1$,
+which are exactly its required two ranks. This also proves (1)'s base.
+Induct using the three exact normalized source recurrences.
+
+First prove (1). In a growth step from old first weight $k$ to
+$k+1$, $A'=[t]A+z^{t-k}$ with $t\ge k$. At a new required rank
+$1\le n\le k-1$, the window contains ALL old ranks $0$ through
+$n-1$, each within the old bound $k-2$. Their sum is at least $c_n$.
+At zero the old positive constant supplies one. In a stationary
+step $t=k-1$, $A'=1+z[t]A$; at every $1\le n\le k-2$ its
+coefficient is the same full prefix through $n-1$, proving (1).
+
+For (2), a growth step preserving $\delta=d$ enlarges its required
+rank range by one. At any new $n\ge1$ in that range, the old
+scaled bound applies through $n-1$, and the complete window prefix
+has sum at least $dc_n$. The unchanged constant handles zero.
+In a tied growth, $k$ and $d$ both increase by one, so the required
+range $n\le k-d$ is unchanged. At a nonzero such rank, all old
+coefficients through $n$ are covered and give at least $d2^n$.
+Since $d\ge1$, this is at least $(d+1)2^{n-1}=(d+1)c_n$.
+The new constant is exactly $d+1$.
+Finally a stationary step resets the multiplicity to one. For its
+entire new range $1\le n\le k-1$, the unscaled bound (1) covers
+all old ranks through $n-1$, whose sum is $c_n$.
+This proves the simultaneous unbounded induction.
+\end{proof}
+
+\begin{corollary}[A first-overlap source payment when the larger weight is far away]
+At the first overlap orient $3\le p\le q$, with source
+multiplicities $d\le p$, $e\le q$. Assume both forward primitives
+strictly increase there. If $q\ge p+e+1$, then
+\[
+               \Delta E_Z(p+q)+\Delta E_Y(p+q)\ge de.
+\]
+Thus this first-overlap S branch is paid, without C. The usual
+OLD A2 head input and nonnegative tail close all heads; zero head
+requires neither C nor OLD A2 as in the previous overlap proofs.
+\end{corollary}
+\begin{proof}
+If $e\ge2$, the last step cannot be stationary. In a tied growth
+its prefix has first weight $q-1$ and multiplicity $e-1$, so (2)
+covers relative rank $p$. The uncut exact difference is at least
+$(e-1)2^{p-1}$. In a preserving growth, (2) covers the same rank
+and gives $e2^{p-1}$, with a possible unit dent. This again is at
+least $(e-1)2^{p-1}$. For $p\ge4$, $2^{p-1}\ge2p$ and
+$2(e-1)\ge e$, so this pays $de\le pe$.
+If $p=3$, strict increase of $D_Z$ through rank three gives
+$2-d=D_Z(3)\ge D_Z(2)=1$, hence $d=1$.
+Now $4(e-1)\ge e$ pays $de=e$.
+If $e=1$, the last step may be stationary. A stationary step gives
+source increment equal to a prefix's normalized coefficient at
+rank $p-1$, which by (1) is at least $2^{p-2}\ge1$.
+For a preserving growth, (2) gives source increment at least
+$2^{p-1}-1\ge p\ge d$.
+In the stationary case, the delayed source on the other factor
+also contributes $D_Z(q)\ge D_Z(p)=2^{p-2}-d$.
+The sum is at least $2^{p-1}-d\ge d$ for $p\ge4$ and
+$d\le\min(p,2^{p-3})$; at $p=3$, $d=1$ and both delayed
+source increments are at least one. Thus the total source payment
+covers $de$ in every case.
+\end{proof}
+
+Combining this far-weight branch with the completed large-multiplicity
+profile payment reduces the still-unproved first-overlap cases to
+finitely many first weights and multiplicities. This reduction does
+not itself prove their required source minima or any later overlap.

@@ -1,0 +1,175 @@
+\section{One possible downward curvature edge, with immediate recovery}
+The earlier proposed monotonicity of source increments after
+$\kappa+3$ is FALSE, even arbitrarily far beyond that rank.
+The exact legal append gives a different unbounded statement, proved here.
+All assertions concern actual normalized SORTED single arms.
+
+Write $L\ge2$ for the final capacity, $F$ for the ordinary polynomial,
+$E=1-z+(2z-1)F$, $w_n=\Delta E_n$, and
+$D_0=D_1=0$, $D_n=(F_n-F_{n-1})^+$ for $n\ge2$.
+Let $\ell$ be the FIRST mode of $D$ and $R$ its last positive rank,
+which is the FIRST ordinary mode of $F$. Extend sequences by zero.
+
+\begin{theorem}[Single curvature notch and immediate recovery]
+For every actual nonrectangular sorted arm,
+\[
+ w_n\ge w_{n-1}\qquad(3\le n\le\ell,\ n\ne L+2).        \tag{1}
+\]
+If $L+3\le\ell$, then
+\[
+                         w_{L+3}\ge w_{L+1}.            \tag{2}
+\]
+Consequently every $L+3\le j\le\ell$ dominates ALL earlier
+source increments: $w_i\le w_j$ for every $i\le j$.
+For any $t\ge L$ and $i<j\le\ell$ with $j-i=t$, one also has
+$w_i\le w_j$, including windows whose head lies at the exceptional notch.
+\end{theorem}
+
+\paragraph{Established inputs.}
+The positive derivative $D$ is unimodal with positive interval
+support $[2,R]$. Its rising edges through $\ell$ are strict except
+possibly at $L+1$. The source increment is nonnegative through $R$,
+is zero at every rank below $\kappa\ge3$, and
+\[
+             w_i=2D_{i-1}-D_i\qquad(3\le i\le R).      \tag{3}
+\]
+The already established TC and the complete second-offset lemma imply
+\[
+                      w_i\ge1\qquad(\kappa+2\le i\le R). \tag{4}
+\]
+Indeed use the second-offset lemma at $\kappa+2$ and TC at later
+indices through $\ell$. At an index after $\ell$ but at most $R$,
+unimodality gives $w_i\ge D_{i-1}\ge1$. The first birth is
+$w_\kappa=\delta\ge1$. None of these facts assumes (1).
+
+\begin{proof}
+Induct on the number of non-one capacities. After one capacity
+$\ell=2$, so the assertion and recovery condition have empty ranges.
+In an append step use OLD symbols as above and let $t\ge L$ be the
+NEW largest capacity. The exact source recurrence gives
+\[
+ \widehat w_n-\widehat w_{n-1}
+     =w_{n-1}-w_{n-t-1}
+       +\mathbf1_{n=t+1}-2\mathbf1_{n=t+2}
+                                 +\mathbf1_{n=t+3}.     \tag{5}
+\]
+For $3\le n\le\widehat\ell$, the entire NEW rising prefix agrees
+with $P=z^2[t-1]+S_tD$. Its single-flat theorem therefore implies
+the STRICT comparison
+\[
+                         D_{n-1}>D_{n-t-1}.            \tag{6}
+\]
+At an ordinary strict edge this follows directly from
+$\Delta P_n=D_{n-1}-D_{n-t-1}-\mathbf1_{n=t+1}$.
+At the only possible flat edge $n=t+1$, (6) still follows because
+the subtracted unit makes the entering-minus-leaving difference one.
+In particular $j=n-1\le R$.
+
+Put $i=n-t-1$, $j=n-1$. We prove $w_i\le w_j$.
+If $i\le2$, this follows from $w_i=0$ and nonnegativity through $R$.
+Suppose $i\ge3$. If $j\le\ell$, then $j=i+t\ge L+3$.
+By OLD (1), OLD (2), and chaining before and after the sole notch,
+every such $j$ dominates every earlier $i$. This use of the induction
+hypothesis is exactly the record consequence stated in the theorem.
+If instead $j>\ell$, (6) and unimodality force $i<\ell$.
+The OLD rising side gives $w_i\le D_i$, and the OLD falling side gives
+$w_j\ge D_j$. Hence $w_j\ge D_j>D_i\ge w_i$ by (6).
+This proves the required comparison in every case. Equation (5) now
+gives NEW (1): its only negative isolated term is at $n=t+2$.
+
+For NEW recovery suppose $t+3\le\widehat\ell$. At that NEW edge
+(6) gives $D_{t+2}>D_2=1$, so $t+2\le R$.
+Adding (5) at $t+2$ and $t+3$ gives the exact identity
+\[
+             \widehat w_{t+3}-\widehat w_{t+1}
+                              =w_{t+1}+w_{t+2}-1,       \tag{7}
+\]
+because $w_1=w_2=0$. If $t=\kappa-1$, its first term
+$w_{t+1}=w_\kappa\ge1$ pays the unit. If $t\ge\kappa$,
+its second term $w_{t+2}\ge1$ by (4). The other term is
+nonnegative, since both indices are at most $R$. Thus (7) is
+nonnegative, proving NEW (2).
+
+For completeness, the record consequence uses only the newly proved
+two assertions: through $L+1$ chain (1); skip to $L+3$ using (2);
+then chain (1) again. The isolated rank $L+2$ is also bounded by
+$L+3$ by the nonexceptional adjacent edge. Below rank three use zero
+and nonnegativity. For a window of length $t\ge L$, either its leaving
+rank is at most two or its head is at least $L+3$. This proves the
+spaced comparison and closes the induction without circularity.
+\end{proof}
+
+\begin{proposition}[An unbounded actual obstruction to removing the notch]
+For all integers $T\ge6$ and $\alpha\ge T$, the actual arm
+\[
+                              X=1^\alpha(2,T,T+1)
+\]
+has $\kappa=5$, $\delta=2$, $\eta=6$, FIRST positive-derivative mode
+$\ell=T+3$ and height $2T-1$. Its source increments satisfy
+\[
+                    w_{T+2}=2T-2>2T-3=w_{T+3}.         \tag{8}
+\]
+Thus even strictly after $\kappa+3$, and at arbitrarily large offsets
+with FIXED $\kappa=5$, source curvature need not be nondecreasing.
+The fall is exactly at finalcapacity$+2$, as (1) permits.
+\end{proposition}
+\begin{proof}
+The first arm $1^\alpha2$ has positive derivative $z^2$.
+Appending $T$ gives exactly
+\[
+             D=z^2+2\sum_{i=3}^{T}z^i+z^{T+1}+z^{T+2}. \tag{9}
+\]
+The ordinary splice retains this entire polynomial for $\alpha\ge T$;
+at the boundary $\alpha=T$ the next ordinary signed derivative is
+negative, and for larger $\alpha$ it is zero. Thus its first derivative
+mode is three and its last positive rank is $T+2$.
+Appending $t=T+1$ gives $P=z^2[T]+S_{T+1}D$.
+Its edges from three through $T+1$ strictly rise; at $T+2$ the edge
+is zero, at $T+3$ it rises by one, and at $T+4$ it falls by one.
+The remaining tail cannot rise. The actual derivative agrees through
+$T+3$ and is bounded above by $P$ at every later rank, so its FIRST
+mode is $T+3$, of height $D(1)=2T-1$.
+The source phases give $(\kappa,\delta,\eta)=(5,2,6)$.
+For the two-capacity OLD arm, (9) gives
+$E_{T+1}=2T-3$, $E_{T+2}=2T-2$.
+The exact source window for its append at $T+2$ adds one and at
+$T+3$ subtracts one. It therefore gives (8).
+\end{proof}
+
+\begin{corollary}[The complete second overlap when either first weight is three]
+When BOTH ordinary factors are strictly rising at the compared edge,
+the second source-overlap branch has tail nonrecovery whenever at least
+one arm has first missing weight three. The counts, other first weight,
+initial runs and capacities are unrestricted. The usual OLD head premise
+gives all-head S; the entire zero-head branch for both counts at least two
+needs neither C nor OLD A2.
+\end{corollary}
+\begin{proof}
+If a forward ordinary derivative is nonincreasing at the compared edge,
+the already proved direct monotonicity branch applies. Suppose both
+strictly rise. An actual sorted arm with $\kappa=3$ and first derivative
+mode at least three necessarily has $(\delta,\eta)=(1,1)$.
+Indeed with one capacity its first derivative mode is two. With two
+capacities, first weight three forces both capacities to be two;
+its derivative is bounded above by $z^2+z^3+z^4$ and starts at one,
+so again its FIRST mode is two. With at least three capacities, first
+weight three forces ALL capacities to be two, and the last two stationary
+source steps give $(\delta,\eta)=(1,1)$ exactly.
+
+Name this arm $Y$ and the other first weight $p$. At the second overlap
+$N=p+4$, the source convolution is exactly
+$(E_XE_Y)_N=\delta_X+\eta_X$.
+The proved joint source theorem gives
+$\Delta E_X(N)\ge\delta_X+\eta_X$ since $N\ge p+4$ and both
+positive derivatives strictly rise. The other source increment is
+nonnegative. Thus the exact source contrast gives tail halving.
+For zero head the previously proved double-defect lower bound forces both
+ordinary signed slopes positive when the nonnegative tail is zero or one;
+the argument just given or the flat/falling derivative branch therefore
+applies without an OLD head premise. The direct zero-head budget is positive.
+\end{proof}
+
+The location and immediate recovery of the sole permitted fall are
+positive unbounded structural information. General C, second overlaps
+with both first weights at least four and higher multiplicities,
+arbitrary deeper overlaps, full A2 and the original conjecture remain open.

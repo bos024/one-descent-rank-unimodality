@@ -1,0 +1,169 @@
+% Conditional reduction and diagnostic candidates. Neither candidate is proved.
+\section{A clipped forward comparison for a weaker induction input}
+Let $A=F_X$, $B=F_Y$, with weights $a,b$, and put
+\[
+ D_n=\max(A_n-A_{n-1},0)\quad(n\ge2),\qquad H=E_B A.
+\]
+Here $D_0=D_1=0$. The following is an \emph{unproved}
+generation-dependent comparison:
+\[
+ \frac{\min(H_n,D_n)}{D_n}\le
+ \frac{\min(H_{n+1},D_{n+1})}{D_{n+1}}
+ \quad\left(2\le n<\min(a,b),\ D_nD_{n+1}>0\right).
+                                                        \tag{R}
+\]
+All ratios can be cross multiplied. Full, unclipped ratio
+monotonicity is false; subtracting a single unit does not
+repair it either. The clipping and the stated range must
+not be silently removed.
+
+\begin{proposition}[Conditional coefficient-tilt consequence]
+If (R) holds for a given pair of increasing nonrectangular
+arms, then the coefficients of $A(z/2)B(z/2)$ are unimodal.
+Equivalently $2^j(q_Xq_Y)_j$ is unimodal.
+This is coefficient tilt, not the weighted-positive-difference
+property needed to finish the original conjecture.
+\end{proposition}
+\begin{proof}
+The exact identity
+\[
+ (2z-1)AB=E_B A-(1-z)A                              \tag{1}
+\]
+shows that, while $A$ is rising, its rank-$n$ coefficient
+is $H_n-D_n$. Once $H_n\ge D_n>0$, (R) forces
+$H_{n+1}\ge D_{n+1}$ whenever the latter denominator is
+positive. If it vanishes, initial interval support of the
+ordinary positive differences shows that $A$ has finished
+rising; the coefficient in (1) is then nonnegative forever.
+
+Only ranks through $\min(a,b)$ require this argument.
+Orient $a\le b$. For $n>a$, every nonzero summand in
+$[z^n]AB=\sum_{i=0}^{a}A_iB_{n-i}$ uses $n-i\ge1$.
+The elementary actual-ideal growth bound
+$B_r\le2B_{r-1}$ therefore gives
+$[z^n]AB\le2[z^{n-1}]AB$ directly. The initial ranks
+are $1,2,5$ in $AB$, so its tilt starts with a plateau
+and a rise. Identity (1), (R) and the terminal growth bound
+exclude every later decrease followed by a strict rise.
+\end{proof}
+
+\section{A second, still open, coupled comparison}
+For a legal append $X=Zt$ orient $a=\mathrm{wt}X\ge b$,
+put $p=q_Zq_Y$, and let $m$ be its last mode and $s$ the
+first mode of the new ordinary product. Let
+$u=(\Delta p)^+$ and let $\ell$ be its first weighted
+mode, that is, a first mode of $2^j u_j$.
+In the crossing range $m<n<s$, put $k=n-t$ and
+\[
+ w_n=p_n-p_k,\qquad v_n=p_{n-1}-p_n.
+\]
+The following sufficient resource is also \emph{unproved}:
+\[
+ u_k+v_n\le2(u_{k+1}+v_{n+1})                       \tag{S}
+\]
+when $0\le k<\ell$, $w_n>0$,
+$2w_n<w_{n-1}$, and $2p_n\ge p_{n-1}$.
+Broader versions of (S), with the last condition removed,
+are false, including examples with $k=0$.
+
+The reason (S) is useful is exact and does not rely on any
+finite diagnostic. In this range
+\[
+ w_{n-1}-w_n=u_k+v_n,\qquad
+ w_n-w_{n+1}=u_{k+1}+v_{n+1}.
+\]
+Thus a strict weighted fall propagates to the next edge
+under (S). If instead the tail $2^n p_n$ has already
+strictly fallen, a proved coefficient-tilt assertion would
+control it while the outgoing head is still increasing.
+For $k\ge\ell$, the geometric tail bound of the old
+weighted positive differences handles the window directly.
+These observations motivate (R) and (S), but neither is
+asserted to hold for all actual arms.
+
+\texttt{ClippedForwardRatio.lean} checks (1), the unbounded
+clipped-threshold implication, weighted finite-sum growth,
+the short-factor index arithmetic, and strict propagation
+under the two-loss resource. This does not verify (R),
+(S), or a complete ordinary-product induction.
+
+\paragraph{A valid transport fact, and the remaining source.}
+Suppose $D$ is positive on an interval and $H$ vanishes to
+its left. If $\min(H/D,1)$ is nondecreasing there and
+$H\ge0$ everywhere, convolution of both $H,D$ by the same
+interval preserves the clipped ratio order. For each fixed
+$0<\lambda<1$, the input $H-\lambda D$ changes sign at
+most once, from nonpositive to nonnegative. A uniform window
+preserves this sign pattern: while it straddles the change,
+it loses a nonpositive term and gains a nonnegative one.
+Outside that range all its terms have one sign. A decrease
+of the output clipped ratio would contradict this fact for
+a $\lambda$ strictly between its two values.
+
+This transport fact alone does not prove (R). On deleting
+the last part of the $A$ arm, before the ordinary terminal
+splice the actual pair changes by
+\[
+ H_{\rm new}=E_B+z[t]H_{\rm old},\qquad
+ D_{\rm new}=z^2[t-1]+z[t]D_{\rm old}.
+\]
+The different source terms must be controlled together;
+discarding them or asserting that addition preserves clipped
+ratio order would be an unjustified closure step. These
+identities isolate the still missing generation argument.
+
+\section{Reduction of (R) to a single-arm shifted cumulative comparison}
+For a single increasing nonrectangular arm $A$, write
+$G_j=\sum_{i\le j}A_i$, zero when $j<0$. The following
+single-arm assertion is still \emph{unproved}:
+\[
+ G_{n+1-r}D_n\ge G_{n-r}D_{n+1}
+ \quad\left(r\ge3,\ D_nD_{n+1}>0,\ n\ge2\right).
+                                                        \tag{C}
+\]
+Unlike (R), this assertion has no clipping. Broad and targeted
+finite tests do not constitute its proof.
+
+\begin{proposition}[Conditional single-arm reduction]
+If (C) holds for every increasing arm, then (R) holds for
+every pair of such nonrectangular arms. Consequently their
+ordinary product has unimodal factor-two coefficient tilt.
+\end{proposition}
+\begin{proof}
+At a pair of ranks where $B$ is still strictly rising,
+the established single-arm deficit mode ordering gives
+$\Delta E_B(j)\ge0$ throughout the prefix in question.
+Since $E_B(j)=0$ for $j\le2$, summation of its differences
+gives the exact coefficient identity
+\[
+ H_n=(E_B A)_n
+       =\sum_{j=3}^{n}\Delta E_B(j)\,G_{n-j}.
+                                                        \tag{2}
+\]
+Apply (C) to every $j$ in this sum. The new term at $j=n+1$
+has zero old coefficient and a nonnegative new coefficient.
+Multiplying by the nonnegative $\Delta E_B(j)$ and summing
+therefore proves the \emph{unclipped} ratio comparison
+$H_{n+1}D_n\ge H_nD_{n+1}$ in this range. Clipping preserves
+this comparison at threshold one.
+
+If $B$ has already ceased strictly rising at rank $n+1$,
+its positive-difference initial support implies it never
+strictly rises again. Use the symmetric version of (1):
+\[
+ (2z-1)AB=E_A B-(1-z)B.
+\]
+Its coefficients at this and all later ranks are nonnegative,
+because $E_A B\ge0$ and $B_j-B_{j-1}\le0$ there.
+Thus $H_{n+1}\ge D_{n+1}$ whenever $D_{n+1}>0$, and
+the new clipped ratio is one. The same argument handles
+leaving the rising support of $A$ as in the earlier proof.
+These cases establish (R).
+\end{proof}
+
+\texttt{weighted\_ratio\_sum} in
+\texttt{ClippedForwardRatio.lean} checks the unbounded
+weighted-sum comparison used in (2). The ordinary deficit
+mode input and coefficient summation are the written proof.
+No assertion of (C), (R), (S), or the general original
+conjecture is made here.

@@ -1,0 +1,122 @@
+\section{Three factors: an earlier primitive cut and a signed ternary diagonal}
+This is an unbounded analytic refinement of the registered constant-three
+late-derivative entrance. All finite profiles below are independent QA,
+not a finite entrance premise. General C, A2 and original UI remain OPEN.
+
+\paragraph{The target.}
+Write $h=u+\delta$, $r=3$, $\delta\ge3$, and $d_i\ge\delta$.
+Minimality gives $\delta\le u/2$; put $m=\lfloor u/3\rfloor$.
+The plan is to prove the original positive primitive of the quotient
+globally LC after truncation below $m$. The actual source is geometrically
+convex through rank $m$. These two overlapping bands cover every padding.
+
+\paragraph{A ternary diagonal with two negative atoms.}
+For $U_j=[z^j](1+z)^u/(1-z)^3$ put
+$Q_{u,j}=U_{j+1}-2\phi U_j+\phi^2U_{j-1}$.
+At $u=3j$, the Lagrange diagonal is $[t^{j+1}]G(w)$, where
+$w=t(1+w)^3$ and
+\[
+ G(z)=\frac{(1-\phi z)^2}{(1-z)(1-z^2)^2(1-2z)}.
+\]
+For the base $H=(1-\phi z)^2/((1-z)(1-2z))$,
+$H_0=1,H_1=3-2\phi$ and
+$H_n=2^{n-1}(5-3\phi)-(2-\phi)$ for $n\ge2$.
+Only $H_1,H_2$ are negative. After multiplication by $(1-z^2)^{-2}$,
+only $G_1=3-2\phi$ and $G_3=24-15\phi$ are negative:
+$G_2=10-5\phi$, $G_4=57-33\phi$.
+Even coefficients have the positive block
+$(a+1)+a(8-5\phi)>0$; odd coefficients from rank five have
+$a(99-60\phi)-75+45\phi>0$ for $a\ge2$.
+
+Coefficientwise, $w^l-t^l\preceq3l w^{l+1}$, since the difference
+is $t^l((3lw-1)(1+w)^{3l}+1)$, a polynomial with nonnegative
+coefficients in $w$ after its constant and linear cancellations.
+Pair $G_1w$ with $G_2w^2$, and $G_3w^3$ with $G_4w^4$.
+Their remaining coefficients are
+$A=19-11\phi\ge9/8$ and $B=273-168\phi\ge0$.
+For $k\ge4$, $[t^k]w^2\ge6$, so the diagonal exceeds $6A>3$.
+For $k=3$, its lower bound is $6A+G_3=138-81\phi>3$.
+Thus $Q_{3j,j}>3$ for ALL $j\ge2$.
+Pascal recurrence $Q_{u+1,j}=Q_{u,j}+Q_{u,j-1}$ extends this to
+ALL $u\ge3j$ by induction in $j$ and then $u$; the bottom row
+$Q_{u,1}=\binom u2+3u+7-\phi(2u+5)$ is positive for $u\ge6$.
+One must NOT multiply a signed diagonal by $(1+w)^e$ and discard
+its negative terms. The Pascal induction is the valid extension.
+
+\paragraph{A natural tail for all three-factor crossings.}
+Remove the largest $[t]$; the old quotient has two CI factors,
+old degree at most $u$, and $t\le u-2$.
+The atom is bounded by $\phi^2(q+q^6)^3<5/6$.
+The registered interior UNIT kernel pays every ordinary head and
+every primitive head except possibly the last junction $t=u-2$.
+At $s=u-2$, $Q_s\ge7u/5$ for $u\ge14$; the two ULC factors
+$2/3,1/3$ and the bounds $T/Q\le u/2+2,u/5+29/15$ pay
+the UNIT kernel on both halves. Row zero with $N_1\le2$ is paid by
+$7u/5\ge u+q+2$. Thus it too has no degree premise.
+The old-count-two last-junction scalar is
+$(3u^2-30u+18)/2>0$ for $u\ge12$, giving gap $3u/2$.
+Its atom error is at most $5u/6+20/9$.
+Consequently the natural quotient from $\delta-1$ is positive LC,
+and its positive primitive after deleting rank zero is globally LC.
+
+\paragraph{Move the primitive cut left, without a host enumeration.}
+Only centres $m+1\le s\le\delta$ are new. The ULC kernel ratio is
+at least $Q_s/(3(m+2)^2)$. Here
+$Q_s\ge\binom{u-1}{m+1}$.
+For $m\ge5$,
+\[
+ \binom{3m-1}{m+1}\ge5(m+2)^2 2^{\lceil m/2\rceil}.
+\]
+At $m=5$ this is $3003\ge1960$. The left side grows by a
+factor at least four, whereas the right side grows by at most three.
+The former follows from
+$3(3m+1)(3m+2)\ge8(m+2)(2m-1)$;
+the latter from $2(m+3)^2\le3(m+2)^2$.
+The sole $m=4,u\ge14$ case is $u=14$, where
+$\binom{13}{5}=1287\ge720$.
+On this whole band the primitive atom coefficient is at most
+$H=(5/3)2^{\lceil m/2\rceil}$, so the unscaled head minor
+pays its exact rank-one perturbation.
+Row zero uses $3(m+2)^2\ge u+q+3$.
+The new read values are positive: $Q_n\ge\binom{2m}{m}\ge2^m>H$
+for $m\le n\le\delta+1$.
+Thus $J$ is positive LC from rank $m$, and the ORIGINAL positive
+primitive truncated below $m$ is globally LC. If $\delta<m$, these
+are simply truncations of the already proved natural tails.
+
+\paragraph{Coverage of the actual source.}
+The true CI source agrees with $U$ through rank $\delta$, and loses
+at most three units at rank $\delta+1$.
+At all $2\le j\le\min(m,\delta)$ the diagonal above therefore
+pays its geometrically tilted curvature, including a possible first cut.
+If $\delta<m$, the source need only be paid through $\delta$ because
+the original natural cut at $\delta$ is already available.
+Accordingly use the primitive cutoff $b=\min(m,\delta)$.
+For EVERY $j\le b$ the source has growth at least two and positive
+golden-tilted curvature. Centres $s\ge a+b+1$, $a=\alpha-1$,
+use the registered geometric primitive-cut theorem, with every
+discarded index below $b$ absent from the whole output triple.
+Earlier centres have source index at most $b$; use convex-tilt
+subtraction, with the registered zero/one startup identities.
+The actual previous unit and the spectral source at rank zero are
+retained. Existing mode order closes the band before the first actual
+tail mode. No new finite padding or CI entrance certificate is needed.
+
+This closes ALL three-factor minimal crossings,
+leaving ONLY two-factor minimal crossings in the universal late-D-LC
+entrance. It does not settle early C, A2 or original coefficient UI.
+
+\paragraph{Verification scope.}
+The standard Lagrange input is Gessel, \emph{Lagrange Inversion},
+Theorem2.1.1 equation(2.1.4),
+\texttt{https://arxiv.org/html/1609.05988},
+DOI\texttt{10.1016/j.jcta.2016.06.018}, already verified against the
+primary source in the preceding refinement. Seventeen scoped unbounded
+scalar, all-rank kernel, negative-atom, penultimate and junction
+implications are kernel checked in \texttt{ThreeFactorEarlierCut.lean}.
+The formal-series, binomial induction, Cauchy--Binet, actual alignment,
+prefix support, mode order and hereditary insertion assemblies remain
+written proofs. No end-to-end formal composition theorem is claimed.
+For $u\le13$ use the preceding registered all-small-binary theorem;
+for $u\ge14$ every step above is analytic and unbounded. There are
+NO new finite-host or bounded-parameter entrance premises.

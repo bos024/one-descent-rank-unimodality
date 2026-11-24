@@ -1,0 +1,7 @@
+'SignedWindowTail.window_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedWindowTail.positive_window_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedWindowTail.positive_window_after_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedWindowTail.subtraction_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedWindowTail.prefix_tail_unimodal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedWindowTail.positive_window_unimodal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedWindowTail.positive_support_initial' depends on axioms: [propext, Classical.choice, Quot.sound]

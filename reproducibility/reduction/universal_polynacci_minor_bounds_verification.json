@@ -1,0 +1,86 @@
+{
+  "status": "PASS_ALL_ORDER_SHARP_ORDINARY_AND_GOLDEN_RESIDUAL_MINOR_ENVELOPES_BY_PROBABILITY_QUADRATIC_TRANSPORT",
+  "new_scoped_reports": 5,
+  "kernels": {
+    "ProbabilityQuadraticMinorEnvelope.quadratic_perspective_criterion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ProbabilityQuadraticMinorEnvelope.finite_probability_quadratic_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ProbabilityQuadraticMinorEnvelope.whole_probability_quadratic_invariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ProbabilityQuadraticMinorEnvelope.exact_minor_renewal_perspective_and_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ProbabilityQuadraticMinorEnvelope.all_order_geometric_and_first_two_boundary_minors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "ordinary": "UNCONDITIONAL EVERYt>=2/n>=1:ABS(h_n2-hprev*hnext)<=hprev. CONSTANT1SHARP,attainedatn=tandn1. NOexceptionalorder/band/spectral/irreducibilitypremise.",
+  "golden_residual": "UNCONDITIONAL EVERYt>=3/n>=3:K=h_t-phi*z*h_t hasALLK_n>0forn>=2 andABS(M_K(n))<=phi2*Kprev. CONSTANTphi2SHARPuniformlyt:EXACTM_K(t1)=1-phi2*K_t,K_t=(2-phi)*2^(t-2). Ratio->-phi2ast->infty.",
+  "mechanism": "NEWprobabilityquadraticperspective:positiveprobweights,e/wEXACTrenewals,HpositiveSUPERSOLUTION=>w>=-C ande2+H*w<=C*H propagatefromCOMPLETEorder-tband. UpperinequalityequivNONNEGATIVEquadraticALLrealx,weightedCauchytransportplusHgap. Exactminor=e2+H*w. EntireNatinductionkernelchecked.",
+  "symbolic_entrance": "NOnewFINITEpremise. ALLt hband2..t1:0/P/1-2Pminors,w=-d*e/1-d*e/-1+d(1-e);UNIVERSALroundingpays. Goldenband3..t2:0/positive/1-phi2*K_t/(phi*K_t1+q2);lowerWpaidbyd*K_t<1,completeboundaryformulas. qphi<=2/3;K_t1>=3-4qphi>=qphi2. AllwrittenbandscoverEVERYtincludingemptygeometricrangeatt3.",
+  "formal_scope": "FIVENEWcleanstandardaxiomSCOPEDreports:quadraticperspectiveequivalence,arbitraryfiniteweightedprobabilitytransport,ENTIREnatural-indexprobabilityquadraticinvariant,exactminorinterpretation/fullboundimplication,andCOMPLETEsymbolicgeometric/firsttwo-boundaryminoridentities. Actualpolynacci/goldenidentificationandALLtbandassemblyWRITTEN,NOTendtoendLeancompositions. NOnewfiniteproofpremise;alltestsQAonly.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "mixed_three_four_single_arm_C": "OPEN",
+  "counts": {
+    "independent_closed_binomial_ALLorder_ordinary_minor_reads": 18714,
+    "independent_ALLorder_SHARP_golden_residual_minor_reads": 18362,
+    "independent_exact_SHARPNESS_orders": 71,
+    "independent_COMPLETE_symbolic_probability_lower_band_reads": 77,
+    "independent_full_probability_rec_and_SUPERdenominator_and_MINOR_identities": 1012
+  },
+  "primary_QA": {
+    "ALLorder_ordinary_absolute_minor_reads": 161080,
+    "ALLorder_golden_residual_SHARP_constant_minor_reads": 158916,
+    "EXACTsharp_boundary_formula_orders": 82
+  },
+  "independent_state_sha256": "59564ffb73d198b8994c939c27920f583a3f76d6e709925cff7a7f5e90e6d6bc",
+  "seconds": 1.9689999999973224,
+  "local_files": [
+    "universal_polynacci_minor_and_golden_residual_bounds_proof.tex",
+    "ProbabilityQuadraticMinorEnvelope.lean",
+    "ProbabilityQuadraticMinorEnvelope.log",
+    "audit_universal_polynacci_minor_bounds.py",
+    "audit_universal_polynacci_minor_bounds.json",
+    "verify_universal_polynacci_minor_bounds.py"
+  ],
+  "dependency_files": [
+    "universal_renewal_rounding_verification.json",
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex",
+    "UniversalRenewalRounding.lean",
+    "UniversalRenewalRounding.log",
+    "verify_universal_renewal_rounding.py",
+    "verify_renewal_root_primitive_cut.py",
+    "verify_ternary_forward_inverse.py"
+  ],
+  "sha256": {
+    "universal_polynacci_minor_and_golden_residual_bounds_proof.tex": "9bc9f56d7f1618300646d68ac61e61a963181e33c331825f86415649e8e88a7d",
+    "ProbabilityQuadraticMinorEnvelope.lean": "833253b5fc5dce535b5b80658cd96daee1a73f7dd2132da1cdd7bc60c3c16b57",
+    "ProbabilityQuadraticMinorEnvelope.log": "e9d962a7c5272fb06eda9769b7f54fc49c3ad07e52f9c1a2e6005c09ee34540b",
+    "audit_universal_polynacci_minor_bounds.py": "7c39cc9f08d6e871408f8e561cf9a7a20c6aa0541366364dda4b23282899cf11",
+    "audit_universal_polynacci_minor_bounds.json": "8024e34ee6348227767d7f68fb1c1715eae46257a507688bd8ea98e914c7b58f",
+    "verify_universal_polynacci_minor_bounds.py": "13985ef942f0ab193bd95c35a071c1460069204edf5aa1fdf8cdb15fe0ff0a52",
+    "universal_renewal_rounding_verification.json": "a5d423e6a8b856308d0e916ff3645b152def0d2aaec1322e3c8151b3a7aa8aba",
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex": "2e919bb31820e95bbcdd4bf30161d4fc2d494b0a0cb7a9c7fd83745e0e6639de",
+    "UniversalRenewalRounding.lean": "0a5109f219608db5250b09ccdb45df8f3774b7db2d0780810c6368f07e78bc90",
+    "UniversalRenewalRounding.log": "4b43b1d628eecb56b2c5135e27854be7ea4ec01e4bf1ff30e710feb282a7f28d",
+    "verify_universal_renewal_rounding.py": "deb91beecfe98ad9033fb99103c30612934202d428edbc73eb839b745d332c0e",
+    "verify_renewal_root_primitive_cut.py": "1c4c7584a55a90cd19abcb1e1f83fe10a76f31ad70f6ab5a97c62d499534c06e",
+    "verify_ternary_forward_inverse.py": "f6e3c8e04b274830d3795d3f366b87d25184bd83cbcf2f9027ef71fa2cfd68a5"
+  }
+}

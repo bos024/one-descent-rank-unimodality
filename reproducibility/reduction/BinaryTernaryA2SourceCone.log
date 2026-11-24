@@ -1,0 +1,16 @@
+'BinaryTernaryA2SourceCone.small_missing_reflection_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryTernaryA2SourceCone.exceptional_curvature_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryTernaryA2SourceCone.negative_rank_compulsory_birth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryTernaryA2SourceCone.complementary_half_tail_guards' depends on axioms: [propext, Quot.sound]
+'BinaryTernaryA2SourceCone.complete_positive_source_splice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryTernaryA2SourceCone.positive_source_no_holes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryTernaryA2SourceCone.exact_raw_source_weighted_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryTernaryA2SourceCone.weighted_difference_sign_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryTernaryA2SourceCone.entire_mode_plateau_source_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryTernaryA2SourceCone.append_source_excluded_on_entire_rising_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

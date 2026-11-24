@@ -1,0 +1,1795 @@
+{
+  "status": "EXACT_BERNSTEIN_DIAGNOSTIC_ONLY",
+  "cases": {
+    "18_1/4": {
+      "binary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-165/4",
+              "-139/8",
+              "1111/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "13/8",
+              "-45/2",
+              "537/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              2
+            ],
+            "coefficient": [
+              "177/4",
+              "-221/8",
+              "1039/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-335/8",
+              "-13",
+              "353/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1",
+              "-18",
+              "1375/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              2
+            ],
+            "coefficient": [
+              "349/8",
+              "-23",
+              "335/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              0
+            ],
+            "coefficient": [
+              "-169/4",
+              "-69/8",
+              "1715/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              1
+            ],
+            "coefficient": [
+              "5/8",
+              "-27/2",
+              "839/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              2
+            ],
+            "coefficient": [
+              "173/4",
+              "-147/8",
+              "1643/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-183/4",
+              "-139/8",
+              "931/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "13/8",
+              "-45/2",
+              "447/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              2
+            ],
+            "coefficient": [
+              "195/4",
+              "-221/8",
+              "859/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-371/8",
+              "-13",
+              "317/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1",
+              "-18",
+              "1231/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              2
+            ],
+            "coefficient": [
+              "385/8",
+              "-23",
+              "299/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": [
+              "-187/4",
+              "-69/8",
+              "1607/8"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              1
+            ],
+            "coefficient": [
+              "5/8",
+              "-27/2",
+              "785/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              2
+            ],
+            "coefficient": [
+              "191/4",
+              "-147/8",
+              "1535/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-37/8",
+              "-1",
+              "115/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "37/8",
+              "-3/2",
+              "111/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-37/8",
+              "-1/2",
+              "185/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "37/8",
+              "-1",
+              "181/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-39/8",
+              "-1",
+              "105/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "39/8",
+              "-3/2",
+              "101/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-39/8",
+              "-1/2",
+              "179/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "39/8",
+              "-1",
+              "175/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-1/8",
+              "0",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "1/8",
+              "0",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-1/8",
+              "0",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1/8",
+              "0",
+              "5/8"
+            ]
+          }
+        ]
+      },
+      "ternary_penultimate_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 54,
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "2197/16",
+              "-7255/4",
+              "139181/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "2123/16",
+              "-27719/16",
+              "17397/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              2
+            ],
+            "coefficient": [
+              "2053/16",
+              "-13209/8",
+              "139171/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "2809/16",
+              "-32293/16",
+              "34813/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "2735/16",
+              "-30993/16",
+              "8703"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              2
+            ],
+            "coefficient": [
+              "2665/16",
+              "-29693/16",
+              "34811/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              0
+            ],
+            "coefficient": [
+              "3421/16",
+              "-17781/8",
+              "139323/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              1
+            ],
+            "coefficient": [
+              "3347/16",
+              "-34263/16",
+              "17415/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              2
+            ],
+            "coefficient": [
+              "3277/16",
+              "-8241/4",
+              "139317/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "2017/16",
+              "-1789",
+              "139181/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "1943/16",
+              "-27251/16",
+              "17397/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              2
+            ],
+            "coefficient": [
+              "1873/16",
+              "-12939/8",
+              "139171/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "2665/16",
+              "-32509/16",
+              "34813/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "2591/16",
+              "-31137/16",
+              "8703"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              2
+            ],
+            "coefficient": [
+              "2521/16",
+              "-29765/16",
+              "34811/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": [
+              "3313/16",
+              "-18195/8",
+              "139323/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              1
+            ],
+            "coefficient": [
+              "3239/16",
+              "-35019/16",
+              "17415/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              2
+            ],
+            "coefficient": [
+              "3169/16",
+              "-2103",
+              "139317/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": [
+              "1837/16",
+              "-7057/4",
+              "144365/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": [
+              "1763/16",
+              "-26783/16",
+              "18045/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              0,
+              2
+            ],
+            "coefficient": [
+              "1693/16",
+              "-12669/8",
+              "144355/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "2521/16",
+              "-32725/16",
+              "36109/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": [
+              "2447/16",
+              "-31281/16",
+              "9027"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              1,
+              2
+            ],
+            "coefficient": [
+              "2377/16",
+              "-29837/16",
+              "36107/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              2,
+              0
+            ],
+            "coefficient": [
+              "3205/16",
+              "-18609/8",
+              "144507/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              2,
+              1
+            ],
+            "coefficient": [
+              "3131/16",
+              "-35775/16",
+              "18063/2"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              2,
+              2,
+              2
+            ],
+            "coefficient": [
+              "3061/16",
+              "-8583/4",
+              "144501/16"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "115/8",
+              "-3559/12",
+              "7759/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "111/8",
+              "-3343/12",
+              "7759/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "185/8",
+              "-1475/4",
+              "7761/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "181/8",
+              "-1403/4",
+              "7761/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "55/4",
+              "-7031/24",
+              "7759/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "53/4",
+              "-6587/24",
+              "7759/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "91/4",
+              "-2991/8",
+              "7761/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "89/4",
+              "-2843/8",
+              "7761/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": [
+              "105/8",
+              "-868/3",
+              "7903/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": [
+              "101/8",
+              "-811/3",
+              "7903/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "179/8",
+              "-379",
+              "7905/4"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": [
+              "175/8",
+              "-360",
+              "7905/4"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "3/8",
+              "-129/8",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "3/8",
+              "-125/8",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "5/8",
+              "-163/8",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "5/8",
+              "-159/8",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "3/8",
+              "-16",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "3/8",
+              "-31/2",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "5/8",
+              "-41/2",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "5/8",
+              "-20",
+              "1943/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": [
+              "3/8",
+              "-127/8",
+              "1955/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": [
+              "3/8",
+              "-123/8",
+              "1955/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              1,
+              0
+            ],
+            "coefficient": [
+              "5/8",
+              "-165/8",
+              "1955/12"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": [
+              "5/8",
+              "-161/8",
+              "1955/12"
+            ]
+          },
+          {
+            "X_power": 3,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "0",
+              "-7/24",
+              "6"
+            ]
+          },
+          {
+            "X_power": 3,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "0",
+              "-3/8",
+              "6"
+            ]
+          },
+          {
+            "X_power": 4,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "0",
+              "0",
+              "1/12"
+            ]
+          }
+        ]
+      },
+      "ternary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-733/16",
+              "23/2",
+              "2197/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "-23/8",
+              "253/16",
+              "2123/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              2
+            ],
+            "coefficient": [
+              "637/16",
+              "159/8",
+              "2053/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-335/8",
+              "-357/16",
+              "2809/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1",
+              "-287/16",
+              "2735/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              2
+            ],
+            "coefficient": [
+              "349/8",
+              "-221/16",
+              "2665/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              0
+            ],
+            "coefficient": [
+              "-603/16",
+              "-449/8",
+              "3421/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              1
+            ],
+            "coefficient": [
+              "41/8",
+              "-827/16",
+              "3347/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              2,
+              2
+            ],
+            "coefficient": [
+              "763/16",
+              "-95/2",
+              "3277/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-805/16",
+              "16",
+              "1837/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "-23/8",
+              "325/16",
+              "1763/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              0,
+              2
+            ],
+            "coefficient": [
+              "709/16",
+              "195/8",
+              "1693/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-371/8",
+              "-357/16",
+              "2521/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1",
+              "-287/16",
+              "2447/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              1,
+              2
+            ],
+            "coefficient": [
+              "385/8",
+              "-221/16",
+              "2377/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": [
+              "-675/16",
+              "-485/8",
+              "3205/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              1
+            ],
+            "coefficient": [
+              "41/8",
+              "-899/16",
+              "3131/16"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              1,
+              2,
+              2
+            ],
+            "coefficient": [
+              "835/16",
+              "-52",
+              "3061/16"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-39/8",
+              "23/8",
+              "115/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "35/8",
+              "27/8",
+              "111/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-35/8",
+              "-43/8",
+              "185/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "39/8",
+              "-39/8",
+              "181/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-41/8",
+              "25/8",
+              "105/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": [
+              "37/8",
+              "29/8",
+              "101/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-37/8",
+              "-45/8",
+              "179/8"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              1,
+              1,
+              1
+            ],
+            "coefficient": [
+              "41/8",
+              "-41/8",
+              "175/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-1/8",
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "1/8",
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-1/8",
+              "-1/8",
+              "5/8"
+            ]
+          },
+          {
+            "X_power": 2,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1/8",
+              "-1/8",
+              "5/8"
+            ]
+          }
+        ]
+      },
+      "binary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-1/4",
+              "1",
+              "1/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "1/4",
+              "3/2",
+              "-1/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-1/4",
+              "1/2",
+              "1/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1/4",
+              "1",
+              "-1/4"
+            ]
+          }
+        ]
+      },
+      "ternary_penultimate_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 3,
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-5/4",
+              "18",
+              "0"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "-3/4",
+              "18",
+              "0"
+            ]
+          },
+          {
+            "X_power": 1,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "0",
+              "1",
+              "0"
+            ]
+          }
+        ]
+      },
+      "ternary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true,
+        "complete_coefficient_data": [
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": [
+              "-1/2",
+              "1",
+              "1/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              "0",
+              "3/2",
+              "-1/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              "0",
+              "1/2",
+              "1/4"
+            ]
+          },
+          {
+            "X_power": 0,
+            "box_index": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": [
+              "1/2",
+              "1",
+              "-1/4"
+            ]
+          }
+        ]
+      }
+    },
+    "24_1/8": {
+      "binary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true
+      },
+      "ternary_penultimate_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 54,
+        "strict_constant_positive": true
+      },
+      "ternary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true
+      },
+      "binary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true
+      },
+      "ternary_penultimate_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 3,
+        "strict_constant_positive": true
+      },
+      "ternary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true
+      }
+    },
+    "32_1/16": {
+      "binary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true
+      },
+      "ternary_penultimate_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 54,
+        "strict_constant_positive": true
+      },
+      "ternary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true
+      },
+      "binary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true
+      },
+      "ternary_penultimate_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 3,
+        "strict_constant_positive": true
+      },
+      "ternary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true
+      }
+    },
+    "64_1/32": {
+      "binary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true
+      },
+      "ternary_penultimate_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 54,
+        "strict_constant_positive": true
+      },
+      "ternary_last_minor": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 30,
+        "strict_constant_positive": true
+      },
+      "binary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true
+      },
+      "ternary_penultimate_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 3,
+        "strict_constant_positive": true
+      },
+      "ternary_last_value": {
+        "negative_count": 0,
+        "first_negative": [],
+        "Bernstein_coefficients": 4,
+        "strict_constant_positive": true
+      }
+    }
+  },
+  "seconds": 0.125
+}

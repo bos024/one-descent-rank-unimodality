@@ -1,0 +1,17 @@
+'ConvexTiltLagrangeSource.background_right_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.source_density_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.concave_positive_part_LC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.positive_scale_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.product_LC_triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.convex_tilt_source_positive_part_LC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ConvexTiltLagrangeSource.positive_lagrange_kernel_all_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.higher_source_uniform_cut_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.interior_unit_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.unit_zero_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.small_count_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.small_count_nonlong_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.all_nonlong_junction_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.all_nonlong_junction_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexTiltLagrangeSource.small_count_perturbed_junction' depends on axioms: [propext, Classical.choice, Quot.sound]

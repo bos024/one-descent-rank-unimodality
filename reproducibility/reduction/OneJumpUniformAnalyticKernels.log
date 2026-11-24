@@ -1,0 +1,17 @@
+'OneJumpUniformAnalyticKernels.modified_first_two_defect_boundaries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpUniformAnalyticKernels.modified_LC_window_both_old_growing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpUniformAnalyticKernels.modified_LC_window_old_turn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpUniformAnalyticKernels.odd_Fibonacci_subtraction_LC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneJumpUniformAnalyticKernels.local_valley_relative_LC_removal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpUniformAnalyticKernels.whole_modified_binary_tail_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpUniformAnalyticKernels.whole_rising_reference_tail_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

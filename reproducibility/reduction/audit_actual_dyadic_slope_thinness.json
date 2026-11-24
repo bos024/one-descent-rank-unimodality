@@ -1,0 +1,17 @@
+{
+  "status": "PASS_QA_NEW_UNBOUNDED_FIRST_MISSING_TWENTY_ACTUAL_SLOPE_THINNESS",
+  "counts": {
+    "triangle_penalty_constant_QA": 133,
+    "dyadic_block_and_large_read_power_QA": 1501,
+    "WHOLE_unsorted_positive_and_zero_seed_norm_controls": 300,
+    "ALL_actual_owner_critical_indexed_raw_gaps": 432984,
+    "complete_small_owner_profiles_QA": 47937,
+    "ALL_actual_signed_slope_reads_OUTSIDE_strict_CI_head": 52900,
+    "independent_positive_suffix_box_controls": 26,
+    "actual_first_missing_twenty_plus_profiles_QA": 125,
+    "WHOLE_generic_signed_dyadic_prefix_identity_QA": 300
+  },
+  "state_sha256": "a32f77eb95b8af0098066d4ebb5fefd4af4e386c3fbc4221149b5e25f60b925a",
+  "seconds": 1.1869999999980791,
+  "scope": "QA ONLY: exact rational constants, whole fold evaluations, complete small owner critical gaps, every outside-head signed slope in listed ACTUAL unbounded-theorem profiles. Does NOT replace written unbounded proof or Lean kernels. GeneralC/A2/originalOPEN."
+}

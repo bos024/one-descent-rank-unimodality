@@ -1,0 +1,11 @@
+'KappaSevenWindowRepair.complete_small_owner_degree_and_one_part_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSevenWindowRepair.sole_binary_three_positive_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KappaSevenWindowRepair.complete_four_exception_prefix_mode_and_body_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSevenWindowRepair.all_four_exceptional_patch_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaSevenWindowRepair.every_new_exceptional_heavier_append_has_four_window' depends on axioms: [propext, Quot.sound]

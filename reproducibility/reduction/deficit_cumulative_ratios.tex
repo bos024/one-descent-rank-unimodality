@@ -1,0 +1,128 @@
+% Internal structural theorem. This does not prove general core unimodality.
+\section{Cumulative reverse deficits give individual window ratios}
+For an increasing arm $T$ of weight $c$, write
+\[
+ E_T=1-z+(2z-1)F_T,\quad R_T=z^{c+1}E_T(1/z),\quad
+ C_T(n)=\sum_{j=0}^n[z^j]R_T.
+\]
+All cumulative sequences are zero at negative indices and constant
+after their finite input ends. The empty arm has $R_\varnothing=1$.
+
+\begin{theorem}\label{thm:deficit-cumulative-lc}
+For every increasing arm, $C_T$ is log-concave on all integer indices.
+\end{theorem}
+\begin{proof}
+Induct using $R_{Tt}=[t]R_T+z^c$. The empty case is constant one
+on the nonnegative integers. For a nonempty prefix the positive
+support of $R_T$ is $[0,d]$, where $d=c+1-\kappa\le c-1$;
+the increasing condition gives $\kappa\le t+1$. Its mass $m$ equals
+$F_T(1)\ge c+1$, since every rank from zero to $c$ is nonempty.
+
+Set $w=[t]R_T$ and $v_n=\sum_{j=0}^n w_j=[t]C_T(n)$.
+By induction and log-concave convolution, $v$ is log-concave.
+The new cumulative sequence is $h_n=v_n+\mathbf1_{n\ge c}$.
+We check the joining edge and subsequent centers.
+
+If $c\ge t$, then
+\[
+ w_{c-1}-w_c=R_T(c-t)\ge1.
+\]
+Indeed $0\le c-t\le d$. The known unimodality of $R_T$
+and of a uniform window makes $w$ nonincreasing from $c-1$
+onward. Thus $v$ is concave there. Writing
+$V=v_{c-2}$, $x=w_{c-1}$ and $y=w_c$, the determinant at
+the only left joining center is
+\[
+ h_{c-1}^2-h_{c-2}h_c=V(x-y-1)+x^2\ge0.
+\]
+
+If $1\le c<t$, then $w_n=m$ on $[c-1,t-1]$ and is
+nonincreasing afterward. Again $v$ is concave from $c-1$.
+At the joining center its determinant is
+\[
+ m^2-v_{c-2}\ge m^2-(c-1)m\ge0.
+\]
+In both cases the determinant at $c$ is the old determinant
+plus $2v_c+1-v_{c-1}\ge0$. At every center $n\ge c+1$ it is
+the old determinant plus $2v_n-v_{n-1}-v_{n+1}\ge0$.
+Earlier centers are unchanged. Finally, for the empty prefix
+$c=0$, the new cumulative sequence is $2,3,\ldots,t+1$ followed
+by a constant tail, which is log-concave. This closes induction.
+\end{proof}
+
+\begin{lemma}[A cumulative premise implies actual prefix-to-tail ratios]
+Let $p$ be a finite nonnegative sequence, $p_0>0$, and suppose
+its cumulative sequence $C_n$ is log-concave. For every $t\ge2$,
+the actual coefficients $w=[t]p$ satisfy
+\[
+ w_{k+1}w_j\ge w_kw_{j+1}\qquad(0\le k\le t-2,\ j\ge k).
+\]
+\end{lemma}
+\begin{proof}
+Fix $k$ and put $r=C_{k+1}/C_k$. Since $w_k=C_k$ and
+$w_{k+1}=C_{k+1}$, it suffices to show $w_{j+1}\le rw_j$.
+For $k\le j\le k+t$, cumulative log-concavity gives
+$C_{j+1}\le rC_j$ and $C_{j+1-t}\ge rC_{j-t}$;
+zero extension covers negative lower indices. Subtraction proves
+the claim. For $i\ge k+1$, the same premise gives
+\[
+ p_{i+1}C_{i-1}\le p_iC_i,\qquad
+ p_{i+1}\le (C_i/C_{i-1})p_i\le rp_i.
+\]
+Summing these inequalities over the window proves the remaining
+case $j\ge k+t$. All denominators used are positive.
+\end{proof}
+
+\begin{corollary}\label{cor:deficit-window-ratios}
+For every increasing arm $T$ and every $t\ge2$, $[t]R_T$
+has the prefix-to-tail coefficient comparison through $t-2$.
+The window need not exceed the largest part of $T$.
+\end{corollary}
+
+\begin{proposition}[The heavier one-part terminal case at weight two]
+Let $A=F_{1^\alpha t}$ and let $B$ be any nonrectangular
+increasing-arm polynomial. Suppose $t\ge2$, $\alpha\ge1$,
+and $a=\alpha+t\ge b=\deg B$. For $q=z^{a+b}(AB)(1/z)$,
+the sequence $2^j\max(q_j-q_{j-1},0)$ is unimodal.
+\end{proposition}
+\begin{proof}
+The identity $A=1+z[t][\alpha+1]$ permits exchange of the
+two interval factors. We may therefore assume $\alpha\ge t-1$.
+The exchanged capacity is smaller if an exchange was needed.
+Put $q_B=z^bB(1/z)$ and $V=[t]q_B$. Then
+\[
+ q=[\alpha+1]V+z^a q_B.
+\]
+Its first mode $s$ is strictly less than $a$, by ordinary-product
+first-half growth and the extra midpoint rank for equal nonrectangular
+arms. Through $s$, its positive differences are
+$d_j=V_j-V_{j-\alpha-1}$. They are $V_j$ for $j\le\alpha$.
+The sequence $2^jV_j$ is nondecreasing: in forward order the
+coefficients of $[t]B$ grow by a factor at most two. For ranks
+below $t$ use $f_n\le\sum_{i<n}f_i$; afterward use
+$f_n\le2f_{n-1}$ termwise.
+
+For $\alpha+1\le j\le s$, set $k=j-\alpha-1\le t-2$.
+Also $s\le\deg V=b+t-1$, so $k<b$ by normalization.
+Writing $W=[t]R_B$, the exact identity is
+\[
+ (2-z)V=W+z^b-z^{b+t},\qquad
+ 2d_j-d_{j-1}=W_j-W_k+\mathbf1_{j=b}.
+\]
+The negative terminal monomial is outside $j\le s$ and neither
+monomial affects the head index $k<b$. By the preceding corollary,
+$W_{k+\alpha+1}/W_k$ is nonincreasing wherever its denominator
+is positive. Thus $W_j-W_k$ has no negative-to-positive change.
+If such a difference was already negative before $j=b$, it is
+at most $-1$ at $b$, by integrality and the ordered ratios; the
+extra unit still cannot make it positive. Zero endpoints are
+handled directly. The actual weighted differences have the same
+single-crossing property. Joining to their nondecreasing initial
+segment and then to terminal zeros proves the proposition.
+\end{proof}
+
+These results settle a terminal case of the proposed general
+$2^j$-difference induction. Closure under longer uniform windows
+still requires a separate argument; the unrestricted conjecture
+is not proved. Cumulative log-concavity is used here only to prove
+the displayed inequalities for individual window coefficients.

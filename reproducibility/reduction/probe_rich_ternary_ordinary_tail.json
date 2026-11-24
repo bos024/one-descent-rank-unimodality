@@ -1,0 +1,12 @@
+{
+  "status": "DIAGNOSTIC_ONLY_RICH_TERNARY_ORDINARY_LC_ROUTE",
+  "counts": {
+    "ENTIRE_ordinary_tail_LC_minors": 1035502,
+    "pre_FIRSTDmode_ordinary_LC_minors": 448746,
+    "actual_hosts": 1394
+  },
+  "counterexamples": {},
+  "state_sha256": "8d4d9398676e38d7dce565dbd52b1fa2f2f73e600d5bf2ba57af81ba1baa34ba",
+  "seconds": 42.18699999999808,
+  "scope": "NOanalyticordinaryLCproofasserted;IFordinaryFLCfromFIRSTordinarysourceA=r+3throughFIRSTDmode-1andprotectedentryF_A/Fprev<=lambdaTHENFULLCwithoutstrongDminor. No actualCDFLCassumed."
+}

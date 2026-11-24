@@ -1,0 +1,15 @@
+'ProbabilityQuadraticMinorEnvelope.quadratic_perspective_criterion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ProbabilityQuadraticMinorEnvelope.finite_probability_quadratic_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ProbabilityQuadraticMinorEnvelope.whole_probability_quadratic_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ProbabilityQuadraticMinorEnvelope.exact_minor_renewal_perspective_and_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ProbabilityQuadraticMinorEnvelope.all_order_geometric_and_first_two_boundary_minors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

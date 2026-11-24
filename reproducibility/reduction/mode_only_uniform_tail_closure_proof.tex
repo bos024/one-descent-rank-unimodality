@@ -1,0 +1,159 @@
+\section{Mode-only uniform windows, hereditary actual late derivative LC, and every small binary count}
+The written unbounded closure and its complete finite entrance have
+passed scoped Lean and independent coefficient reconstruction checks.
+This is a derivative-LC theorem. Actual late C still has its separate
+registered threshold $u\ge h-1$; general C/A2/original UI remain OPEN.
+
+\paragraph{An elementary mode-only convolution theorem.}
+Let $g$ be nonnegative, finite, unimodal with interval support, and
+first mode $M$. Assume LC only at internal centres $n<M$.
+Then $B=[t]g$, $t\ge1$, is unimodal and LC at every centre strictly
+before its FIRST mode. No LC in the descending part is needed.
+
+For centres $n<M$, truncate $g$ above $M$. This is globally LC
+(the endpoint minor is automatic), and its interval convolution
+agrees with the full triple at $n$, so ordinary LC convolution pays it.
+For $M\le n\le M+t-1$, the exact second difference is
+\[
+ B_{n+1}-2B_n+B_{n-1}
+  =(g_{n+1}-g_n)-(g_{n+1-t}-g_{n-t})\le0.
+\]
+The entering pair is in the descending prefix after $M$; the outgoing
+pair is in the nondecreasing prefix up to $M$. Zero indices are allowed.
+Thus $B$ is concave throughout the whole transition range, and
+\[
+ B_n^2-B_{n-1}B_{n+1}
+ =(B_n-B_{n-1})^2+B_{n-1}(2B_n-B_{n-1}-B_{n+1})\ge0.
+\]
+Before $M$ its increments are nonnegative; after $M+t-1$ they are
+nonpositive; in between the increments are nonincreasing. This also
+proves unimodality and puts its first mode at most $M+t-1$.
+At its first mode the ordinary minor is automatic. This is a complete
+written proof of mode-only LC preservation, not merely a numerical guess.
+
+\paragraph{The signed tail version.}
+Let $s$ be a finite signed sequence which is nonnegative on $0..L$
+and nonpositive after $L$. Suppose $g=s^+$ is unimodal and LC only
+before its first mode. Put $W=([t]s)^+$ and $B=[t]g$.
+Through rank $L$, $W=B$. From rank $L+1$ to $L+t-1$, the entering
+signed value is nonpositive and the outgoing one nonnegative, so
+the signed window is nonincreasing. Beyond this whole transition
+all its entries are nonpositive. Consequently $W$ is nonincreasing
+after rank $L$, is unimodal, and its first mode $e$ satisfies
+$e\le L$ and $e\le\operatorname{firstmode}B$.
+Every STRICT pre-$e$ triple therefore agrees with $B$ and is LC
+by the preceding theorem. A tail truncation of $W$ preserves the
+same property, with first tail mode zero if its old mode was deleted.
+If $s\le0$ everywhere, the assertion is immediate.
+
+\paragraph{Actual insertion, with all ranks and the previous unit retained.}
+Fix binary count $u$ and padding $\alpha$. For a nonempty sorted
+CI tail $V$ let $W=\sum V$ and define the ACTUAL SIGNED tail
+$s_k=F_{1^\alpha2^uV}(W+k)-F_{1^\alpha2^uV}(W+k-1)$,
+$k\ge0$. Its positive part is unimodal by the existing actual-arm
+theorem, and signed values are nonpositive after its positive support.
+
+For ANY insertion of a capacity $t\ge3$, re-sort the resulting word.
+Its signed tail from $W+t$ is EXACTLY
+\[
+             s'_k=\sum_{j=k}^{k+t-1}s_j
+                         =([t]s)_{k+t-1},\qquad k\ge0. \tag{1}
+\]
+To justify arbitrary insertion, use the formal append identity
+$F_{Zt}=1+S_tF_Z$: its signed derivative from physical $W+t$ is
+the displayed window. The actual signed tail from physical total
+nonbinary weight depends only on the CI PRODUCT, not the capacity
+order. Indeed it is $C_{h-2+k}+\mathbf1_{k=0}$ minus the exact
+initial-ones source, and the earlier proper-suffix numerator has
+coefficient one at $W$ and vanishes above it. Thus the formal append
+tail and the sorted actual tail agree at every $k\ge0$.
+This does not assert permutation invariance of early ordinary ranks
+or of cumulative C comparisons.
+
+The signed-tail theorem and tail truncation now show:
+if OLD actual positive derivative tail from $W$ is LC at every
+internal centre before its own first tail mode, the NEW tail from
+$W+t$ has the same property. Equivalently this preserves actual
+pre-global-mode LC at every centre $N\ge W+1$, with an empty
+band if the global mode precedes $W$. NO old C premise, no ordinary
+F tail LC, and no descending D LC is used.
+
+\paragraph{Known seeds and a finite entrance for EACH binary count.}
+The registered subdegree theorem supplies this tail-LC property at
+every MULTI-FACTOR $h=u+1$. One-factor tails with $L\ge u+2$ also
+supply it: in the registered general one-jump uniform entrance,
+$u\le L+1$ gives relative LC; at every $N=L+j\ge L+1$, odd $j$
+was paid by an ORDINARY actual minor, while even $j$ has nonnegative
+reference minor and relative LC therefore gives ordinary LC.
+The incoming modified-binary inequality is valid since
+$N-1\ge L\ge u+2$. The $u=1$ case has first D mode at most
+three, so its late LC band is empty. These are old proved inputs,
+not new finite one-factor tests.
+
+Therefore the hereditary tail-LC property holds for every CI multiset
+containing either a factor $L\ge u+2$ or a submultiset of degree
+$u+1$. It also follows from ANY verified seed submultiset by (1).
+
+For a universal theorem at a FIXED $u$, it suffices to verify all
+minimal CROSSING seeds: capacity degrees $2\le d_i\le u$,
+\[
+ u+1\le h=\sum_i d_i\le2u,\qquad h-\min_i d_i\le u.
+\]
+These are exactly the multisets minimal under deletion among those
+with degree above $u$, after excluding the one-factor analytic base.
+Every remaining multiset of degree $h>u$ contains such a minimal
+submultiset. Its length is at most $\lfloor u/2\rfloor+1$, because
+$2(r-1)\le(r-1)\min d_i\le h-\min d_i\le u$.
+Each seed has the independent padding clamp
+$1\le\alpha\le\lceil(u+h-1)/2\rceil$, plus an infinite-padding
+representative: each symmetric coefficient row has centre at most
+$(3u-3+h)/2$, while every larger padding begins strictly after it.
+This is a NEW finite entrance principle for actual late D LC, not
+complete C or original UI.
+
+\paragraph{Current finite evidence.}
+An exhaustive scalar scan of all unimodal integer $g$ of length at
+most seven and values in $1..5$, filtered for pre-mode LC, gave
+52041 uniform-window comparisons with no failure.
+More significantly, \texttt{probe\_actual\_tail\_pre\_mode\_LC\_below\_degree.json}
+contains the COMPLETE CI degree grammar through 26, EVERY $1\le u<h$,
+and all paddings up to the analytic clamp plus the infinite case:
+2435 CI tails, 925454 actual-tail contexts, 6294248 pre-mode minors,
+588138 nonempty bands, no failures. Exact state SHA256 is
+\texttt{8f1999a7db2d72ab0bfad1109785b2d58a45478f1f2e96f1bc374f6959eeb3c1}.
+The large degree-26 diagnostic is not a logical finite premise.
+The COMPLETE deletion-minimal entrance is separately extracted:
+exactly 515 CI seeds, 6662 padding hosts, 43960 integer comparisons,
+and 24553 distinct integer margins. Independent capacity-multiset
+generation and positive suffix-box sums reconstruct all of these,
+including every first tail mode and every padding clamp. All margins
+are checked by ordinary Lean reduction over 64 bounded chunks.
+Thus for EVERY $1\le u\le13$, EVERY nonempty CI tail with $h>u$,
+EVERY padding and arbitrary tail count/capacity/degree, actual positive
+D is LC at every pre-first-mode centre $N\ge W+1$.
+
+At $u=0$ the signed derivative tail from $W$ is just its single
+numerator unit at $W$ minus a nonnegative initial-ones source;
+above $W$ the proper numerator vanishes. Hence its positive part
+is nonincreasing there and the same late-LC conclusion is immediate.
+The asserted small-binary union is therefore $0\le u\le13,h>u$.
+No derivative-LC assertion for $h\le u$ is inferred: the earlier
+degree-boundary actual triple $(8,12,19)$ remains a counterexample.
+
+\paragraph{Verification and remaining scope.}
+The registration is
+\texttt{mode\_only\_uniform\_tail\_closure\_verification.json}.
+\texttt{ModeOnlyUniformWindow.lean} checks four scalar transition,
+concavity and minimal-crossing kernels. The single new report in
+\texttt{ModeOnlyCrossingCertificate.lean} checks all 24553 integer
+entrance margins, using only propext. The generic sequence/window
+assembly, exact actual order-independent tail identity, old analytic
+one-factor base, minimal-submultiset reduction, analytic padding
+clamp and unbounded insertion propagation are written proofs, not
+an end-to-end Lean theorem for arbitrary compositions.
+This establishes a new fixed-binary finite entrance and unbounded
+derivative-LC families. Joining it to all own-cumulative C comparisons
+still needs the relevant early ordinary/cumulative entrance budgets.
+General crossings at $u\ge14$, earlier reference C, general C/A2
+and ORIGINAL general unamplified coefficient UI remain OPEN.
+No original least-counterexample numerical bound is upgraded.

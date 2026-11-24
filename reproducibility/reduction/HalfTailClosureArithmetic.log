@@ -1,0 +1,21 @@
+'HalfTailClosureArithmetic.first_missing_mass_excludes_small_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HalfTailClosureArithmetic.simultaneous_source_budgets_cannot_fail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HalfTailClosureArithmetic.head_at_old_weight_has_only_three_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HalfTailClosureArithmetic.balanced_initial_slab_main_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HalfTailClosureArithmetic.equal_weight_second_slab_main_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HalfTailClosureArithmetic.source_affected_half_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HalfTailClosureArithmetic.source_free_head_before_old_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HalfTailClosureArithmetic.half_window_maximal_leaving_head' depends on axioms: [propext, Quot.sound]
+'HalfTailClosureArithmetic.locally_universal_terminal_crossing_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_UNIFORM_GAP_EIGHT_HSIX_COMPLETE_COMPLEMENTS",
+  "configurations": [
+    {
+      "gap": 7,
+      "alpha_min": 2,
+      "counts": {
+        "generic_CI_paid_rank_states": 98,
+        "complete_initial_clamped_owners": 20245,
+        "strict_primitive_curvature_states": 16470
+      },
+      "layers": 30,
+      "canonical_critical_sha256": "54963c84ae5f2f631d9d4c623e1c2f3f9b9b5ba830f2cf252326c0e1f0a581e9",
+      "certificate_sha256": "09ef208c6c824b8ac10e53d3423a84f969420adc23c13f5ed17b52252de7fb5b"
+    },
+    {
+      "gap": 8,
+      "alpha_min": 1,
+      "counts": {
+        "generic_CI_paid_rank_states": 146,
+        "complete_initial_clamped_owners": 187147,
+        "strict_primitive_curvature_states": 133809
+      },
+      "layers": 52,
+      "canonical_critical_sha256": "18169510425e7a490a5136c42ee2388195da8334a43f40603548f273a1e2c9f8",
+      "certificate_sha256": "f98ffb661b5dbec601a1d56c2ff538777c0560982bac06d1db1aaa30b9d74fbc"
+    }
+  ],
+  "sharp_actual_gap_nine_profiles": [
+    {
+      "alpha": 2,
+      "h": 6,
+      "V_capacity": 10,
+      "V_count": 13,
+      "kappa": 11,
+      "source_gap": 9,
+      "j": 13,
+      "tail": 17,
+      "next_tail": 20,
+      "head1_budget": 386
+    },
+    {
+      "alpha": 3,
+      "h": 6,
+      "V_capacity": 11,
+      "V_count": 14,
+      "kappa": 12,
+      "source_gap": 9,
+      "j": 14,
+      "tail": 17,
+      "next_tail": 20,
+      "head1_budget": 427
+    },
+    {
+      "alpha": 5,
+      "h": 6,
+      "V_capacity": 13,
+      "V_count": 16,
+      "kappa": 14,
+      "source_gap": 9,
+      "j": 16,
+      "tail": 17,
+      "next_tail": 20,
+      "head1_budget": 515
+    },
+    {
+      "alpha": 10,
+      "h": 6,
+      "V_capacity": 18,
+      "V_count": 21,
+      "kappa": 19,
+      "source_gap": 9,
+      "j": 21,
+      "tail": 17,
+      "next_tail": 20,
+      "head1_budget": 770
+    }
+  ],
+  "seconds": 5.890999999995984,
+  "scope": "ALLinitialruns/capacities/ranksforgap7alpha>=2andgap8alpha>=1,ownerh>=6byPROVEDdegree/CIreductionsandEXACTalpha-clamp. Gap7alpha1kappa8andALLd<=6previouslyPROVED. Producerforward/binomialvsINDEPENDENTreverse/maxpart/individualratiosALLlayers/hashesagree. WrittenjoiningneededforUNBOUNDEDgap8theorem;sharpactualgap9tail17to20headpays. GeneraloriginalUIOPEN."
+}

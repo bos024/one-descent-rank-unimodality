@@ -1,0 +1,166 @@
+% Exact combinatorial model. No general rank-LC theorem is imported.
+\section{Ordinary reversals are ideal enumerators of explicit rooted trees}
+For a finite poset $P$, let
+$I(P;z)=\sum_{J\in\mathcal J(P)}z^{|J|}$ enumerate its lower order ideals.
+Let $C_d$ be a chain on $d$ elements. Disjoint union multiplies
+these polynomials, and adjoining a new element above every element
+of a $D-1$ element poset replaces $I$ by $I+z^D$.
+
+Start with $P_0=C_\alpha$. For a formal non-one part $t\ge2$,
+define
+\[
+       P_{Zt}=(P_Z\sqcup C_{t-1})\oplus\{\text{new maximum}\}.
+\]
+It has $\operatorname{wt}Z+t$ elements. Consequently
+\[
+ I(P_0;z)=[\alpha+1],\qquad
+ I(P_{Zt};z)=[t]I(P_Z;z)+z^{\operatorname{wt}Z+t}.
+\]
+Induction proves $I(P_X;z)=q_X$ for every normalized formal arm,
+without an ordering condition on its capacities.
+The cover graph is a tree with a distinguished path through the
+successive new maxima; each new maximum has an additional nonempty
+chain attached below it. Contracting those attached chains leaves
+a binary caterpillar. The initial chain is nonempty.
+
+At the common degree $D=|P_X|$, complement identifies ideals of
+$P_X$ with filters, or equivalently ideals of its dual, so
+$F_X=I(P_X^{\mathrm{op}};z)$. Products $q_Xq_Y$ are ideal
+enumerators of the disjoint union of two explicitly constructed
+trees. This retains the precise append source and the capacity
+generation that the synthetic scalar profiles omit.
+
+This representation by itself does not supply midpoint log-concavity,
+property C, a normalized matching property or the original
+one-descent theorem. In particular no theorem for arbitrary rooted
+trees may be substituted. For example a rooted star with four
+minimal leaves and then a long unary stem above the root has
+ideal polynomial
+\[
+                 (1+z)^4+z^5+z^6+\cdots+z^{20}.
+\]
+Its LC minor at rank four is $1-4=-3$, strictly before the
+degree midpoint. Such a long unary stem is not produced by the
+allowed operation: every new maximum in the ordinary construction
+has a nonempty side chain ($t\ge2$). The special construction,
+rather than just its being a rooted tree, must be used.
+
+\section{Exact low-head capacity constraints beyond the first cover}
+Put $r=h+1$, and let $l_0=\alpha+1,l_i=t_i$ be the $r$
+interval lengths in the main product of $q_X$.
+They are all at least two, and $\sum_i l_i=D+1$.
+No proper-source term has degree below three. Therefore, if
+$N_s=\#\{i:l_i\ge s\}$,
+\[
+ q_1=r,\qquad q_2=\binom{h+1}{2}+N_3,\qquad
+ 0\le N_3\le\min(D-2h-1,h+1).
+\]
+If $D>2h+1$, then $N_3\ge1$.
+This gives the sharp weight-dependent upper bound used in
+\texttt{probe\_cover\_q2\_half\_lc\_closure.json}.
+At rank three the exact formula is
+\[
+ q_3=\binom{r+2}{3}-r(r-N_3)-(N_3-N_4)
+                +\mathbf1_{\alpha=1,\ t_1=2}.
+\]
+The indicator is omitted when $h=0$.
+These formulas follow by counting degree-two and degree-three
+monomials in $\prod_i[l_i]$ and then adding its only possible
+degree-three source. They illustrate why a scalar profile can
+pass cover count, whole-profile binary domination and Hilbert
+growth while still fail the exact capacity constraints.
+
+For instance the synthetic profile
+$(1,4,7,8,5,3,2,1,1)$ satisfies those bounds and has
+$D=8,h=3,\kappa=3$. The only increasing arms with these weight
+and cover parameters are $1^2 2^3$ and $(1,2,2,3)$.
+Their reversals are respectively
+\[
+ (1,4,7,7,5,3,2,1,1),\qquad
+ (1,4,7,8,6,4,2,1,1).
+\]
+Thus the synthetic profile is not actual. Its binary append
+has the midpoint triple $(13,8,5)$ and minor $-1$.
+The extra actual counts in the second profile come together as
+$z^3[3]$; a free singleton increment at degree three is not an
+available capacity deformation. This is an obstruction to the
+generic scalar closure, not an actual midpoint-LC counterexample.
+
+\section{The smallest remaining first-missing case has just one large jump}
+For an increasing normalized arm, the exact recurrence expands to
+\[
+ \kappa_X=\min\left\{h+2,\ \min_{1\le i\le h}
+                         (t_i+1+h-i)\right\}.              \tag{1}
+\]
+In particular $h\ge\kappa_X-2$ and
+\[
+ t_i\ge\max(2,\kappa_X-1-h+i),\qquad
+ D\ge2h+1+\frac{(\kappa_X-3)(\kappa_X-2)}2.                 \tag{2}
+\]
+For $\kappa_X\ge3$, the last bound is sharp: equality is attained at
+$1,2^{h-\kappa_X+3},3,4,\ldots,\kappa_X-1$.
+The ordinary triangular bound is
+$\kappa_X(\kappa_X-1)\le2D$; the factor is $\kappa_X-1$,
+not $\kappa_X+1$.
+
+For clarity, $\kappa=3$ has a small-count exception: an arm with
+just one non-one part has $\kappa=3$ at every capacity.
+If there are at least two non-one parts and $\kappa=3$,
+the final capacity must be two, so increasing order forces every
+non-one part to be two.
+
+Now suppose $h\ge3$, $\kappa_X=4$, and the largest part $L\ge4$.
+Deleting that last part leaves first missing weight three.
+Its non-one count is at least two, so the preceding observation
+forces the entire prefix to be binary. Thus
+\[
+                         X=1^\alpha2^{h-1}L.              \tag{3}
+\]
+All assertions are exact consequences of (1), not finite diagnoses.
+For a global least counterexample, the existing $h\ge4,L\ge7$
+constraints therefore make (3) the only possible owner shape
+with first missing weight four. Proving the relevant raw-prefix
+or coupled comparison for this unbounded one-jump family would
+eliminate the smallest remaining first-missing case. It is not
+proved here. Cases with only two non-one parts can have
+$\kappa=4$ without a binary prefix and are not included in (3).
+
+\section{A resonant actual family prevents a uniform cover-shifted mode bound}
+The sharper skeleton tail bound does not justify moving every
+ordinary mode to its main-box center. In fact the gap can be
+unbounded even on the first-missing-four one-jump family.
+
+Let $m\ge1$, $Z=(1,2^m)$, $c=2m+1$, and $Y=Z(c+1)$.
+The arm $Y$ is increasing, has weight $D=2c+1=4m+3$,
+non-one count $H=m+1$, and first missing weight four.
+Every coefficient of $q_Z$ is positive on $[0,c]$.
+Thus the length-$(c+1)$ window $[c+1]q_Z$ has its unique
+global maximum at rank $c$, where it samples the full mass.
+Every other window position omits a positive coefficient.
+The terminal unit at rank $2c+1$ has coefficient one and
+does not change this maximum. Hence
+\[
+                      \operatorname{firstmode}q_Y=c.
+\]
+The binary prefix deficit $e_Z$ has support $[0,c-2]$.
+Its length-$(c+1)$ window is at its full mass at rank $c$.
+The exact append adds one at this same rank:
+$e_Y=[c+1]e_Z+z^c$.
+All other coefficients of this window are at most its mass,
+so $e_Y$ also has a unique maximum at $c$.
+In particular
+\[
+ \operatorname{firstmode}e_Y=\lfloor D/2\rfloor,
+ \qquad
+ \operatorname{firstmode}q_Y-
+          \left\lceil\frac{D-H}{2}\right\rceil
+                              =\lfloor m/2\rfloor.         \tag{4}
+\]
+No fixed additive constant repairs the proposed main-box-center
+upper bound on the ordinary first mode. Nor can the universal
+half-weight upper bound for the deficit mode be uniformly improved
+by a term growing with the cover count.
+This does not refute midpoint LC, the sharp skeleton cutoff,
+or the original conjecture. It isolates the genuine resonant
+point-on-window-plateau mechanism already reflected by the
+quasi-center failure at the append $t=c+1$.

@@ -1,0 +1,65 @@
+{
+  "status": "EXACT_QA_UNIVERSAL_ORDINARY_GOLDEN_GROWTH_UNDER_AUDIT",
+  "counts": {
+    "interval_factor_spectral_bounds": 6534,
+    "spectral_normalization_identities": 1123,
+    "positive_kernel_prefix_mass_bounds": 192163,
+    "infinite_initial_fixed_binary_model_identities": 192163,
+    "exact_golden_gap_identities": 170041,
+    "golden_gap_reads_beyond_entire_CI_support": 4580,
+    "finite_ordinary_cumulative_density_edges": 877174,
+    "all_padding_ordinary_golden_tail_edges": 825390,
+    "actual_late_source_relative_payments": 825390,
+    "actual_hosts": 4819,
+    "both_rising_late_source_increment_relative_payments": 104552,
+    "CI_profiles": 1123
+  },
+  "regimes": {
+    "above_crossing": 2601,
+    "at_or_below_crossing": 2218
+  },
+  "sharp_prior_edge_controls": [
+    {
+      "alpha": 2,
+      "u": 3,
+      "V": [
+        3,
+        3
+      ],
+      "N": 6,
+      "pair": [
+        12,
+        20
+      ]
+    },
+    {
+      "alpha": 3,
+      "u": 2,
+      "V": [
+        3,
+        3
+      ],
+      "N": 5,
+      "pair": [
+        7,
+        12
+      ]
+    },
+    {
+      "alpha": 10,
+      "u": 5,
+      "V": [
+        3,
+        3
+      ],
+      "N": 8,
+      "pair": [
+        32,
+        52
+      ]
+    }
+  ],
+  "state_sha256": "1ff03a38f904ce7091d41021d906b777fe40c21c51f90be737ca6bc35f84e4c3",
+  "seconds": 36.28099999999904,
+  "theorem": "ALLu/h,ALLactualCIcapacities/counts/paddings: ordinaryF_N<phiFprev atN>=max(W,u+r+2) ifFprev>0, zerootherwise. Infinite-initial-padding gap EXACTLY positive E-kernel coefficient minus decaying normalized CI conjugate atom, atEVERYtailread including beyond entireCI support. Actual same-word finite-padding cumulative density used only through ordinary mode. Source E_N>=q^2Fprev; signed source increment identity only in stated nonnegative ordinary-slope branch. No finite premise. General ordinaryLC/C/A2/originalUI OPEN."
+}

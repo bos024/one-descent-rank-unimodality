@@ -1,0 +1,107 @@
+{
+  "status": "PASS_UNBOUNDED_TERNARY_FORWARD_INVERSE_AND_ACTUAL_DIAGONAL_IDENTITIES",
+  "new_scoped_reports": 12,
+  "kernels": {
+    "TernaryForwardInverse": {
+      "TernaryForwardInverse.golden_interval": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.potential_binary_contraction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.potential_ternary_contraction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.mixed_unbounded_terminal_potential": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.ternary_terminal_minor_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.ternary_terminal_minor_paid": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.positive_ternary_corrected_edges": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TernaryForwardInverse.lowering_next_preserves_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "TernaryForwardInverseBase": {
+      "TernaryForwardInverseBase.exact_pure_three_six_base": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "TernaryDiagonalCompanion": {
+      "TernaryDiagonalCompanion.exact_positive_diagonal_recurrence": [
+        "propext",
+        "Quot.sound"
+      ],
+      "TernaryDiagonalCompanion.exact_positive_defect_recurrence": [
+        "propext",
+        "Quot.sound"
+      ],
+      "TernaryDiagonalCompanion.exact_positive_derivative_defect_source": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  },
+  "theorem": "ALLu>=1,r>=0: ZERO-TRUNCATED forwardprefix of(1+z)^u[3]^r/(1+qz) throughdegreeu+2r is STRICTLYpositive/GLOBALLYLC. NOcountbound. Binaryextensionlowersonefinalcoefficient;ternaryextensionchangesTWOandhasEXACTlastminorphi\u00b2-2(phi+q*w)*tau. Completeunboundedtwo-countpotentialinductiontau=q^(2u)(2q\u00b2)^r. NOTthefullalternatingFPSquotient.",
+  "pure": "Pureu0: ALLrpositiveprefix;globalLCIFF r0orr>=6. SingleEXPLICITdegree12base13coefficients/11minors/onepotentialinONEkernel. r1..5penultimateminorsexactlynegative. Unboundedextensionfromr6,NOparameterenumerationpremise.",
+  "companion": "ALLactualalpha>=1,u/r>=0:SAMEpaddingdiagonalFnew=KFold+1+S3+S3\u00b2+z\u00b3S3\u00b2B_r;Enew=KEold+z\u00b3S3^(r+2)H3;Lnew=KLold+zS3^(r+2)+z\u00b3S3^(r+2)d3. COMPLETEpositivecommutationandsourcecompanionsretained.",
+  "formal_scope": "12NEWreports:8golden/potential/terminal/monotonekernelsINCLUDINGunboundedtwo-Natinduction;ONEexplicitdegree12aggregatebase;3diagonalCommRingidentities. Standardaxiomsonly,noSorry/native. LCconvolution,coefficient/sortedwordidentificationandwholewrittensequenceinductionareNOTendtoendLeancompositionformalization. Independentbinomial/trinomialexpansion/alternatinginverseinQ(q),differentfromprimaryiterativeproduct/forwardrecurrenceinQ(phi);positiveSUFFIXBOXactualrebuilddifferentfromprimaryappend.",
+  "remaining": "ActualstrongD-minordiagonalr2u,u>=33stillOPEN. NOenlargementofactualu4..32fullCfamilyfromauxiliarykernelalone. GeneralearlierC/fullA2/originalunamplifiedcoefficientUIOPEN. Firstunresolvedcount6unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "counts": {
+    "independent_positive_LC_hosts": 483,
+    "independent_LC_minors": 27309,
+    "independent_positive_suffix_box_diagonal_hosts": 180,
+    "independent_ALL_diagonal_identity_reads": 31820
+  },
+  "QA": {
+    "positive_LC_truncated_forward_inverse_hosts": 1055,
+    "exact_LC_minors": 90377,
+    "actual_ALL_coefficient_diagonal_companion_hosts": 300,
+    "actual_companion_defect_and_derivative_identity_reads": 133650
+  },
+  "independent_state_sha256": "e4f25908db8d8e7c5e4f065b8c98b04e05a68cc394e76950163f46df76369dc7",
+  "seconds": 0.7030000000013388,
+  "sha256": {
+    "ternary_forward_inverse_and_diagonal_companion.tex": "af4c358637fd589e097ce18d03f73d94204a19a7b34e74a7cc2de560e4c8c8aa",
+    "TernaryForwardInverse.lean": "1cf7406c9932531393f37546cd1c6abba3a837a61a504bd1003565d092f84ef2",
+    "TernaryForwardInverse.log": "4a7e22119307d1da870a59e7f7865391baf853de055eff1ab92f9e94f6b0682c",
+    "TernaryForwardInverseBase.lean": "ab45af237cbfec2c10452d0108f8e29e8cf4033a103c2f39bca968c61697cd5c",
+    "TernaryForwardInverseBase.log": "a3dfd1fefe197bc2015bad722f68494aa98fd1c88519961403dd3490862e8f9f",
+    "TernaryDiagonalCompanion.lean": "ec7050c1634babda74a2d0bf50fb6ade84ca8a3903956ce16e36be008acc73f4",
+    "TernaryDiagonalCompanion.log": "0d3829c506ac967b7c082db2542462a7cac15c1ada4824be8ae2f8370b3e226e",
+    "build_ternary_forward_inverse_base.py": "258cecba2d6bfedee85b8273e2d908508a135c8da24fc2195ad7f4f8befcb6d1",
+    "ternary_forward_inverse_base_data.json": "88de650e43a5ee4dddf9ac3af0ad07b0adc8223946e51410bffb8ddad1ebfbae",
+    "audit_ternary_forward_inverse.py": "a156b1ca1185a8f3908f87ff1672b56e2a97d11dc191117b99bd48352b8f4feb",
+    "audit_ternary_forward_inverse.json": "c78c3f9bc9cef909be3fbe002b427350d2db91fdf9460a40378577d89acdc492",
+    "verify_ternary_forward_inverse.py": "f6e3c8e04b274830d3795d3f366b87d25184bd83cbcf2f9027ef71fa2cfd68a5",
+    "probe_ternary_forward_inverse.py": "444d1dbbe9139cf1fca9426f3192bb1f9dfe4a02c9a6086df222b543ba790bc8",
+    "probe_ternary_forward_inverse.json": "0a10c5ee4cc260b7dff86fd72d605e8985d6eb9cf00e434e31c0ab2a5cbdc40c"
+  }
+}

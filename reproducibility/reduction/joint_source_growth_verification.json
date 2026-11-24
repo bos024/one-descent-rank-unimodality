@@ -1,0 +1,67 @@
+{
+  "status": "PASS_UNBOUNDED_JOINT_AND_OFFSET_LINEAR_SOURCE_CURVATURE",
+  "new_scoped_reports": 10,
+  "kernels": {
+    "JointSourceGrowth": 9,
+    "SecondOffsetSourceCertificate": 1
+  },
+  "joint_J": "ALL actual nonrectangular sorted arms: DeltaE_n>=delta+eta for kappa+4<=n<=FIRSTDmode",
+  "offset_linear_L": "ALL actual nonrectangular sorted arms: DeltaE_n>=n-kappa-2 for kappa+3<=n<=FIRSTDmode",
+  "offset_two": "ALL actual sorted arms with FIRSTDmode>=kappa+2: DeltaE_(kappa+2)>=1",
+  "second_overlap": "ALL multiplicities ONE on BOTH arms; joint budgets pay full second-overlap convolution when both D rise. Usual OLD-head premise retained for S.",
+  "complete_small_certificate": {
+    "N": 6,
+    "states": 106,
+    "edges": 179,
+    "rejected": 15,
+    "ALL_closure_kernel_checked": true
+  },
+  "complete_peak_certificate": {
+    "N": 47,
+    "M_cap": 43,
+    "states": 207049,
+    "appends": 3905898,
+    "comparisons": 53508829,
+    "exact_state_set_equality": true
+  },
+  "whole_certified_prefix_QA": {
+    "linear": 1025130,
+    "joint": 843562,
+    "offset_two": 192304
+  },
+  "proof_audit": [
+    "Strong induction on actual sorted non-one count; one-capacity base has empty range",
+    "ALL three source phases; exact second jet and both isolated units retained",
+    "Pre-peak J uses OLD J, proved TC, and complete offset-two positivity",
+    "Peak crossing uses full positive tail and sharp ell<=M+2",
+    "ALL old kappa>=8 paid by unbounded exponential-quadratic inequality",
+    "ALL old kappa<=7 failures n<=47/M<=43, complete independently rebuilt exact grammar",
+    "Monotone-D pruning is preserved on every actual ancestor; no global mode clamping claim",
+    "L has its own complete pre-peak window and unconditional peak proof"
+  ],
+  "formal_scope": "9 scoped finite-window/scalar reports plus 1 complete N6 base-and-closure-and-curvature kernel certificate. Actual-arm identifications, induction and N47 coverage written; large enumeration independently exact, NOT kernel/end-to-end Lean formalized.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "remaining": "Higher-multiplicity second overlap, arbitrary later overlap, remaining mixed c0 and short-prefix incoming reads are OPEN.",
+  "sha256": {
+    "joint_source_growth_complete.tex": "8c2716806a25311bf3bb8d530a3a28541474db5ac55622587f80ae8c319bc966",
+    "verify_joint_source_growth.py": "e6f2f20814732b15de9a98311a57f548b05db1d096c3103f7d2fd8e21f8d4534",
+    "build_second_offset_source_certificate.py": "f89b501043e76918687a3d765eb2db450bb2c259c223429f8881015ba48736ee",
+    "second_offset_source_certificate_build.json": "67eb88eaf6a70c739f625db42459e3f72f3f106ea4faf9c76db6f382de87c887",
+    "probe_low_kappa_joint_source.py": "2c18402e9335e88ac9c8a57f0d83f26f89988edfba94d0b44257cd326275f1e8",
+    "probe_low_kappa_joint_source.json": "a6d935c68287f5487ea65ff4c1009f36f4eeed02d7694c01f7b9b53073b741ca",
+    "verify_low_kappa_joint_source.py": "05d58f6cb6645e7ea7e86069c159b878b63feeca89cb874abe02951ac474ff1f",
+    "verify_low_kappa_joint_source.json": "5431293fa472d1df7968f9cfc28f5cf77bc73e1773e2aaa3cf3cd6a75a9f449b",
+    "low_kappa_joint_source_states.bin": "56c7fbc51715e0b4222977bc7446e8cfb297c0711d9b27c387d1286b4a0a3e6c",
+    "JointSourceGrowth.lean": "43da2b8ecb16e7e7b86a1c099d8530af42f053c78542133b76430a1b65d22a9e",
+    "JointSourceGrowth.log": "38eee6d6359c5a918d2deab94cf752232fb9b2d6d1ecc97889628b12f15e320f",
+    "SecondOffsetSourceCertificate.lean": "1ef0dd520da77959acc7098e9c6dfe17f3c6787575ab86ac329b7b56da0b35ac",
+    "SecondOffsetSourceCertificate.log": "baffb47e2dcb4cb6634ef13b16365758b013af441a9c93a300b7ad4d74e4a30f",
+    "triangular_source_complete_verification.json": "175b12f985ae6777d4b830f702c27fb8fc1cd04ef65aa3824e70612621a81d50",
+    "forward_D_single_plateau_verification.json": "f810b1a6eeaa370fc48272509c3844ba12941f526c13a914bf73dd817b5f3202",
+    "source_birth_gap_refinements.tex": "737f00f954eee291dde67b6327737bd7c67251ba3d78e4efa813977987251e7d",
+    "agent_bothrising_source_envelope.tex": "3f2b767e58b2e4fe8459903873e909811ad17a77e214d9158351d723a5ca2b0f",
+    "early_normalized_source_dyadic_profile.tex": "04568e304713e446cded7d8f910dfbe003c4c00dec48f30558fbe72cc15b25e2"
+  }
+}

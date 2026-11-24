@@ -1,0 +1,233 @@
+% A coefficient estimate and its band consequence; not the general conjecture.
+\section{A midpoint estimate for the penultimate unresolved difference}
+For two nonrectangular increasing arms put $P=F_XF_Y$, $D=\deg P$,
+$q_j=P_{D-j}$, and $r=r_X+r_Y$. Write the arms as
+$1^\alpha U,1^\beta V$, with positive initial strings and all remaining
+parts at least two. Let $h$ be the number of factors of length at least
+three in the main reverse box
+$[\alpha+1][\beta+1]\prod_{t\in U,V}[t]$.
+Deleted-prefix terms begin at degree at least three, so
+\[
+ q_1=r,\qquad q_2=\binom r2+h,
+ \qquad 2q_2-q_1=r(r-2)+2h\le r^2.
+\]
+
+\begin{lemma}[Central coefficients are capacity-monotone]
+Increasing any initial-string length or any non-one part cannot decrease
+$P_{\lfloor D/2\rfloor}$. The non-one lists need not be sorted here.
+\end{lemma}
+\begin{proof}
+The forward append recurrence shows that increasing any parameter
+increases the polynomial coefficientwise. It suffices to increase a
+parameter by one. If the middle index stays fixed, the claim is immediate.
+If it increases by one, the proved ordinary-product growth through
+$\lfloor D_{\rm new}/2\rfloor+1$ shows that the new middle coefficient
+is at least its preceding coefficient, which in turn is at least the old
+middle coefficient. Both factors remain nonrectangular throughout.
+\end{proof}
+
+\begin{theorem}[An exact Fibonacci lower envelope for the middle height]
+For any two nonrectangular arms in the formal no-return-to-one class,
+\[
+           P_{\lfloor D/2\rfloor}\ge \operatorname{Fib}(r+2)-2.
+\]
+Equality is attained by the pair $1,2$ and $1,2^{r-3}$, for every $r\ge4$.
+\end{theorem}
+\begin{proof}
+Reduce capacities to the minimal binary arms by the preceding lemma.
+Write $A_s=F_{1,2^s}$ and $T=z+z^2$. For $1\le s\le t$,
+the recurrence $A_j=1+TA_{j-1}$ gives
+\[
+ A_sA_t-A_{s-1}A_{t+1}=A_t-A_{s-1}\ge0
+\]
+coefficientwise. Repeatedly apply this identity until the smaller
+non-one count is one. At fixed $s+t=r-2$, the resulting product is
+$A_1A_{r-3}$ and its middle rank is $r-1$.
+The arm $A_{r-3}$ has length $r-2$: its coefficients through that
+length are $\operatorname{Fib}(n+1)$, while its next coefficient is
+$\operatorname{Fib}(r)-2$. Since $A_1=1+z+2z^2+z^3$, extraction gives
+\[
+ [z^{r-1}]A_1A_{r-3}
+ =\operatorname{Fib}(r)-2+\operatorname{Fib}(r-1)
+       +2\operatorname{Fib}(r-2)+\operatorname{Fib}(r-3)
+ =\operatorname{Fib}(r+2)-2.
+\]
+The formulas include $r=4$ directly. This also proves sharpness.
+\end{proof}
+
+\begin{corollary}[A whole interior interval]
+For every $r-1\le n\le D-r+1$,
+\[
+                  P_n\ge\operatorname{Fib}(r+2)-2.
+\]
+\end{corollary}
+\begin{proof}
+Both forward coefficients and reverse coefficients are nondecreasing
+under arm-capacity increases, by the proved capacity comparison.
+Consequently $P_{r-1}$ and $P_{D-r+1}$ are at least the middle
+coefficient of the corresponding minimal binary product, hence at
+least the displayed Fibonacci number minus two. Unimodality of the
+ordinary product gives the same bound between the two endpoints.
+\end{proof}
+
+\begin{corollary}[A direct terminal-difference certificate]
+Let $j\ge0$, put $e=D-M$, and define
+\[
+ B(r,j)=2\binom{r+j}{j+1}-\binom rj.
+\]
+Suppose
+\[
+ e\ge r+j,\qquad
+ \operatorname{Fib}(r+2)-2\ge B(r,j),\qquad
+ \binom r{j+2}\ge B(r,j).
+\]
+At any such rank $D-j>\max(a,b)+1$, one has
+$\Delta H(D-j)\le0$.
+\end{corollary}
+\begin{proof}
+The established top-coefficient bounds imply
+$2q_{j+1}-q_j\le B(r,j)$ and $q_{j+2}\ge\binom r{j+2}$.
+The preceding proof gives $P_{r-1}\ge\operatorname{Fib}(r+2)-2$.
+Also $r-1\le e-j-1\le D-j-2$, where the last inequality uses
+$M\ge1$. Unimodality therefore gives
+$P_{e-j-1}\ge B(r,j)$ from the endpoint bounds at ranks
+$r-1$ and $D-j-2$. Substitute into the exact central difference
+$\Delta H(D-j)=2q_{j+1}-q_j-P_{e-j-1}$.
+This certificate compares coefficients directly and makes no
+replacement of them by cumulative sums.
+\end{proof}
+
+\begin{lemma}[A large-cover central bound]
+If $r\ge9$, then $P_{\lfloor D/2\rfloor}\ge r^2+1$.
+\end{lemma}
+\begin{proof}
+By capacity monotonicity, reduce both arms to
+$1,2^{r_X-1}$ and $1,2^{r_Y-1}$, keeping their cover counts fixed.
+The new total degree is $2r-2$. For an individual minimal arm,
+\[
+ q_{r_X}=(1+z)^{r_X}
+       +\sum_{i=1}^{r_X-1}z^{2i+1}(1+z)^{r_X-i-1}.
+\]
+Extract degree $r-1$ from the product. Keep the main term, the first
+deleted-prefix term from each arm, their product, and the second and
+third deleted-prefix terms from one arm having at least four covers.
+Such an arm exists since $r\ge9$. All omitted terms are nonnegative.
+The resulting lower bound is
+\begin{align*}
+ r+2\binom{r-2}{2}+\binom{r-3}{3}
+       +\binom{r-4}{3}+\binom{r-4}{4}
+ &=r+(r-2)(r-3)+\binom{r-2}{4}\\
+ &\ge r^2+1.
+\end{align*}
+For the last step, $\binom{r-2}{4}\ge4r-5$ holds at $r=9$ and
+persists by Pascal's identity, since its next increment is
+$\binom{r-2}{3}\ge35>4$.
+\end{proof}
+
+\begin{lemma}[The finite small-cover inputs]
+The following exact inequalities hold.
+\begin{enumerate}
+\item For $4\le r\le7$ and $D=23$, one has
+      $P_{11}\ge r(r-2)+2h$.
+\item For $r=8$, $\alpha,\beta\in\{1,2\}$ and all parts of
+      $U,V$ in $\{2,3\}$, one has
+      $P_{\lfloor D/2\rfloor}\ge r(r-2)+2h+1$.
+\end{enumerate}
+The arms are increasing in these two statements.
+\end{lemma}
+\begin{proof}
+These are finite, explicitly specified inputs. Exchange the arms to
+assume $2\le r_X\le r_Y$. For the first assertion enumerate
+$a=3,\ldots,20$, $\alpha=1,\ldots,a$, and the nondecreasing lists
+$U$ of $r_X-1$ parts at least two summing to $a-\alpha$; enumerate
+the other arm at weight $23-a$. There are respectively
+$1140,2160,5031,3560$ profiles for $r=4,5,6,7$.
+For the second assertion there are $172$ profiles. The exact minimum
+margins are respectively $0,3,14,43$ and $3$, with the extra unit
+already subtracted in the last case.
+
+\texttt{MidpointTerminalFinite.lean} implements these enumerators and
+the forward recurrence, and states their exhaustive inequalities using
+kernel reduction. The accompanying Python audit independently enumerates
+the same finite domains. These finite inputs do not replace the
+unbounded reductions in the next proof.
+\end{proof}
+
+\begin{theorem}[Midpoint coefficient pays the top two ranks]
+If $D\ge23$, then
+\[
+                  P_{\lceil D/2\rceil+1}\ge2q_2-q_1.
+\]
+\end{theorem}
+\begin{proof}
+First compare the indicated coefficient with $P_{\lfloor D/2\rfloor}$.
+If $D$ is even, ordinary-product growth gives the comparison without loss.
+If $D$ is odd, every product of arm height layers other than the two
+lowest layers has endpoint sum at least $D+1$, so its reflection gives
+the comparison without loss. The lowest-layer rectangle loses at most
+one, and loses that unit only when $|a-b|=1$.
+
+For $r\ge9$, the large-cover bound pays this possible unit and the
+target $2q_2-q_1\le r^2$. For $r=8$, clip the initial lengths to two
+and non-one parts to three. This preserves $r,h$ and cannot increase
+the central coefficient. The second finite input again pays the unit.
+
+Suppose $4\le r\le7$. The fully clipped weight is at most
+$3r-2\le19$. Therefore, if $D\ge23$, parameters greater than their
+clipping levels can be decreased one at a time until the weight is
+exactly $23$, preserving $r,h$. The non-one parts can be kept sorted
+by decreasing the first part in a block of equal largest reducible
+parts. The first finite input and capacity monotonicity prove the target
+at $P_{\lfloor D/2\rfloor}$.
+
+It remains only to pay the possible unit when $|a-b|=1$.
+Put $a=\min(a,b)$, so $a\ge11$. Each nonrectangular arm has lowest
+layer $[0,a]$ and second layer $[2,a-1]$, with the corresponding
+intervals for the other arm. Their four products contribute
+$4a-5$ at the middle rank $a$. If $r=4$, this exceeds $r^2+1$.
+If $5\le r\le7$, one arm has at least three top covers; its third
+layer contains $[3,a-2]$ (or $[3,b-2]$). Multiplying that interval
+by the first two layers of the other arm adds at least $2a-8$.
+Thus the middle coefficient is at least $6a-13\ge53>r^2+1$.
+The possible loss of one is paid in all cases.
+\end{proof}
+
+\begin{theorem}[Three times the peak plus seven]
+Every one-descent composition with descent peak $M$ and weight
+$N\le3M+7$ has a unimodal rank polynomial. Both relative polynomials
+of strict cores in this band are unimodal as well.
+\end{theorem}
+\begin{proof}
+Use a least relative counterexample in the deletion- and exchange-closed
+strict-core family. The proved $3M+6$ band and the peak-seven theorem
+leave only $M\ge8$, balanced nonrectangular arms, and
+$D=2M+7$, $e=D-M=M+7$.
+The improved head bound gives growth through
+$n_0=D-\lfloor e/2\rfloor+1$.
+
+For $n_0+1\le n\le D-3$, write $j=D-n$. Then
+$j\ge3$, $j+1<\min(a,b)$ and
+$2j+1\le e-3=M+4=\lceil D/2\rceil$.
+The deficit-layer theorem gives $\mathcal T_j(q)\ge0$.
+Also $e-j\le M+4=\lfloor D/2\rfloor+1$, where $P$ is still
+nondecreasing. Hence
+\[
+ \Delta H(n)-\Delta H(n+1)
+ =\mathcal T_j(q)+P_{e-j}-P_{e-j-1}\ge0.
+\]
+This makes the undecided differences through rank $D-2$ antitone.
+
+Since $D\ge23$ and $e-2=\lceil D/2\rceil+1$, the midpoint theorem gives
+\[
+ \Delta H(D-1)=2q_2-q_1-P_{e-2}\le0.
+\]
+The existing terminal lemma gives $\Delta H(D)\le0$, and all differences
+from $D+1$ onward are nonpositive. The initial nonnegative segment,
+antitone middle, and nonpositive final segment preclude a rebound.
+Restore repeated maxima and the increasing final tail as before.
+\end{proof}
+
+Consequently a counterexample with $N-2M\le E$ must satisfy
+$M\le E-8$, $N\le3E-16$. All one-descent compositions with
+$N\le2M+15$, and all such compositions of total weight at most
+$31$, are unimodal. The unrestricted conjecture is still open here.

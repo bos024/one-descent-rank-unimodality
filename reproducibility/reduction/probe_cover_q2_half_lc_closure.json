@@ -1,0 +1,137 @@
+{
+  "status": "SCALAR_COUNTEREXAMPLE",
+  "witness": {
+    "D": 8,
+    "h": 3,
+    "kappa": 3,
+    "t": 2,
+    "q": [
+      1,
+      4,
+      7,
+      8,
+      5,
+      3,
+      2,
+      1,
+      1
+    ],
+    "output": [
+      1,
+      5,
+      11,
+      15,
+      13,
+      8,
+      5,
+      3,
+      2,
+      1,
+      1
+    ],
+    "rank": 5,
+    "triple": [
+      13,
+      8,
+      5
+    ],
+    "minor": -1
+  },
+  "fixed_weight_binary_envelope": true,
+  "actual_weight_cover_q2_upper": true,
+  "attempts": [
+    {
+      "D": 7,
+      "h": 2,
+      "kappa": 3,
+      "t": 2,
+      "result": "unsat"
+    },
+    {
+      "D": 7,
+      "h": 2,
+      "kappa": 3,
+      "t": 3,
+      "result": "unsat"
+    },
+    {
+      "D": 7,
+      "h": 2,
+      "kappa": 3,
+      "t": 5,
+      "result": "unsat"
+    },
+    {
+      "D": 7,
+      "h": 3,
+      "kappa": 3,
+      "t": 2,
+      "result": "unsat"
+    },
+    {
+      "D": 7,
+      "h": 3,
+      "kappa": 3,
+      "t": 3,
+      "result": "unsat"
+    },
+    {
+      "D": 7,
+      "h": 3,
+      "kappa": 3,
+      "t": 5,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 2,
+      "kappa": 3,
+      "t": 2,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 2,
+      "kappa": 3,
+      "t": 3,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 2,
+      "kappa": 3,
+      "t": 5,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 2,
+      "kappa": 4,
+      "t": 3,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 2,
+      "kappa": 4,
+      "t": 4,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 2,
+      "kappa": 4,
+      "t": 6,
+      "result": "unsat"
+    },
+    {
+      "D": 8,
+      "h": 3,
+      "kappa": 3,
+      "t": 2,
+      "result": "sat"
+    }
+  ],
+  "elapsed": 0.21900000000005093,
+  "scope": "Tests append closure of a synthetic shape cone retaining actual cover count, weight, Hilbert upper/lower growth, both reverse CDF LC bounds, first defect and layer reflections. Not actual generated arms."
+}

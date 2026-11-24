@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Independent finite checks of the proved ordinary Hilbert/SLP realization and positive-difference O-sequence theorem. No general core unimodality claim.",
+  "seed": 2026102097,
+  "ordinary_profiles_and_products": 3600,
+  "macaulay_degree_conditions": 676950,
+  "positive_difference_ratio_comparisons": 214530,
+  "explicit_monomial_algebras": 50,
+  "basis_monomials": 13327,
+  "exact_Lefschetz_power_map_rank_checks": 4071,
+  "seconds": 7.92200000000048
+}

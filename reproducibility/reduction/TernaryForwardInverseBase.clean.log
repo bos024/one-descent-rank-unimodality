@@ -1,0 +1,1 @@
+'TernaryForwardInverseBase.exact_pure_three_six_base' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,71 @@
+\section{The entire relative mixed head needs no opposite-shape condition}
+Retain actual normalized arms $Z,Y$, $p=q_Zq_Y$, weights $a,b$,
+$j=a+b-n$, $r=a-j$, $e_i=2p_i-p_{i-1}$,
+$E=e_k$, $T=e_{n+1}-e_n$, and $H=e_{k+1}-e_k$.
+Assume $F_Z(j+1)\le F_Z(j)$, $0\le e_n<E$, and that
+$E_YF_Z$ is nondecreasing at the compared forward edge.
+The latter follows from either the first-half condition or a
+nondecreasing opposite source prefix, as in the established mixed bridges.
+
+\begin{theorem}[Unrestricted relative-head positive-recovery payment]
+If $T>0$ and $r\ge k\ge0$, then $T<H$.
+There is NO assumption about opposite head monotonicity, primitive mode,
+individual long capacities, non-one count or global OLD A2.
+The edge $r=k$ is included.
+\end{theorem}
+\begin{proof}
+Put $d=(\Delta q_Z)^+$. The mixed source identity gives
+$e_n\ge d_r$ and $T\le C=d_{r+1}-d_r$. Positive recovery forces
+$d_r>0$ and $C>0$, putting the owner primitive through $r+1$ on
+its established LC rising prefix. Set $\lambda=C/d_r>0$.
+Then $d_{i+1}-d_i\ge\lambda d_i$ for every $i\le k$.
+Since $q_Z(s)=\sum_{i\le s}d_i$ through $k+1$, telescoping gives
+\[
+ \lambda q_Z(s)\le d_{s+1}-d_0,\qquad
+                  \lambda d_s\le d_{s+1}-d_s.
+\]
+Add these TWO inequalities directly. Define the RAW single-owner kernels
+\[
+ \mathcal E_s=2q_Z(s)-q_Z(s-1)=q_Z(s)+d_s,
+ \qquad\mathcal H_s=2d_{s+1}-d_s.
+\]
+The resulting inequality is
+\[
+                   \mathcal H_s\ge\lambda\mathcal E_s+d_0.
+                                                               \tag{1}
+\]
+Unlike the earlier one-cumulative-factor argument, (1) does not first
+integrate $q_Z$ and therefore needs no nonnegative derivative kernel
+from the opposite arm.
+
+Convolve (1) with the arbitrary nonnegative ordinary coefficients
+$q_Y(l)$, $0\le l\le k$. The exact current and next-edge identities are
+\[
+ E=\sum_{l=0}^k q_Y(l)\mathcal E_{k-l},\qquad
+ H=\sum_{l=0}^k q_Y(l)\mathcal H_{k-l}
+                                      +2q_Y(k+1)q_Z(0).
+\]
+The new boundary term is nonnegative. Since $d_0=q_Y(0)=1$,
+\[
+ H\ge\lambda E+\sum_{l=0}^k q_Y(l)
+                 \ge\lambda E+1>\lambda d_r=C\ge T.
+\]
+This proves the theorem with a strict positive surplus.
+\end{proof}
+
+Together with the usual OLD head bound $H\ge0$, this closes the
+ENTIRE relative mixed branch $r\ge k$, including nonpositive $T$.
+The no-OLD conclusion above concerns positive recovery. It must not
+be expanded to arbitrary nonpositive recoveries from this proof.
+The remaining positive mixed-head comparison has $r<k$, in addition to
+the previously proved long-capacity, opposite-prefix and source-gap
+restrictions. The earlier one-long-capacity/opposite-prefix relative
+criteria remain valid but are now subsumed for positive recovery.
+
+\texttt{MixedHeadRawPrimitiveLC.lean} has three clean generic reports:
+the direct two-inequality kernel, arbitrary finite nonnegative ordinary
+source transport with the boundary retained, and strict-height payment.
+The existing primitive LC and its telescoping prefix bound are reused;
+the actual mixed/source identities are the written assembly.
+Two other agents independently derived (1) and audited its exact
+convolution indices. General A2/C and original one-descent UI remain OPEN.

@@ -1,0 +1,11 @@
+{
+  "status": "FINITE_DIAGNOSTICS_ONLY_NO_DENSITY_THEOREM",
+  "counts": {
+    "strict_physical_entrances": 5714,
+    "current_record_prefix_comparisons": 699345,
+    "full_relative_density_centres": 699345,
+    "actual_hosts": 5714
+  },
+  "counterexamples": {},
+  "seconds": 4.264999999999418
+}

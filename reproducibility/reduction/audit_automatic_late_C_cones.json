@@ -1,0 +1,406 @@
+{
+  "status": "EXACT_QA_PASS_AUTOMATIC_LATE_C_CONES_AND_COMPLETE_U8_ENTRANCE",
+  "counts": {
+    "complete_u8_actual_hosts": 16,
+    "automatic_cone_nonincreasing_tail_edges": 2176733,
+    "automatic_cone_actual_contexts": 13010,
+    "sharp_degree_boundary_contexts": 159,
+    "sharp_capacity_boundary_contexts": 156
+  },
+  "complete_u8_profiles": [
+    [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  ],
+  "complete_u8_contexts": [
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 1,
+      "clamp": 16,
+      "first_D_mode": 31,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 2,
+      "clamp": 16,
+      "first_D_mode": 31,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 3,
+      "clamp": 16,
+      "first_D_mode": 32,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 4,
+      "clamp": 16,
+      "first_D_mode": 32,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 5,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 6,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 7,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 8,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 9,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 10,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 11,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 12,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 13,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 14,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 15,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    },
+    {
+      "u": 8,
+      "V": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "alpha": 16,
+      "clamp": 16,
+      "first_D_mode": 33,
+      "upper_mode_bound": 34,
+      "keys": [],
+      "margins": []
+    }
+  ],
+  "integer_margins": [
+    32490
+  ],
+  "infinite_edge": {
+    "u": 8,
+    "V": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "W": 33,
+    "alpha_infinite_representative": 16,
+    "previous": 5109250,
+    "current": 5076760,
+    "margin": 32490
+  },
+  "state_sha256": "ecfebb05389c38d9ab028165b50f8dadc39d4aeaf241ce4780b77088ed147ccf",
+  "seconds": 6.687999999994645,
+  "scope": "Finite QA and ONE infinite-tail edge for the SOLE u8 residual profile. ALL finite paddings use proved initial-ones relative-density order. Improved degree cone h>=3u-1 groups the final two binary rows. Weight32 prior theorem is a logical input. Full independent reconstruction/formal audit pending. No earlier C/A2/original UI conclusion."
+}

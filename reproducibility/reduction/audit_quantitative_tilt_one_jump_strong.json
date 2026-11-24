@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_QA_QUANTITATIVE_TILT_AND_ONEJUMP_STRONG_UNDER_AUDIT",
+  "counts": {
+    "ALL_capacity_normalized_tilt_ordinary_seed_polynomials": 1240,
+    "tilted_reference_additive_G_margin_reads": 87092,
+    "actual_onejump_and_suffix_additive_margin_reads": 48169,
+    "actual_onejump_and_suffix_ordinary_LC_tail_reads": 98094,
+    "actual_strict_entries": 611,
+    "actual_hosts": 1755,
+    "strict_entries_with_NEW_onefactor_seed": 29
+  },
+  "state_sha256": "6566ab421f7fbef2b7829577073e8f344a8795dfddddcbec7716f161c30fd4f6",
+  "new_seed_witness": {
+    "alpha": 39,
+    "u": 18,
+    "V": [
+      26,
+      26
+    ],
+    "W": 52,
+    "pair": [
+      6174479,
+      6232355
+    ],
+    "seed_delta": 7
+  },
+  "seconds": 2.5940000000009604
+}

@@ -1,0 +1,12 @@
+{
+  "status": "EXACT_QA_PASS_FULL_TRIBONACCI_QUOTIENT_POSITIVE_PRIMITIVE_UNDER_PROOF_AUDIT",
+  "counts": {
+    "FULL_positive_primitive_LC_minors_including_initial_atom": 153789,
+    "COMPLETE_binary_or_ternary_quotient_correction_hosts": 1050,
+    "ALL_quotient_correction_coefficient_reads": 311253,
+    "actual_proper_quotient_hosts": 525
+  },
+  "state_sha256": "9f7c459b67996f75fa717771880567f40651f792b1bbd0c30d78fda2d2e0fef2",
+  "seconds": 6.578000000001339,
+  "scope": "QAONLY;fullwrittenunboundednorm-cone/windowclosure+complete31base/235head-coefficientcertificateproveFULLprimitiveLCincludingrank0. NOTwholeactuallambda-residualprimitive(whichisFALSE). OriginalUIstillOPEN."
+}

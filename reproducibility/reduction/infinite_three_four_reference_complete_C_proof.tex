@@ -1,0 +1,238 @@
+\section{Complete C for an infinite-three reference followed by arbitrarily many fours}
+Put $P_j=1-z-\cdots-z^j$, $h_j=P_j^{-1}$,
+$S=z+z^2+z^3+z^4$, $B_s=\sum_{i<s}S^i$, and
+\[
+ R_s=B_s+S^s h_3,\qquad W=4s,\qquad A=s+4.
+\]
+Let $F_n=[z^n]R_s$, $G_n=\sum_{i\le n}F_i$, and
+$D_n=F_n-F_{n-1}$ for $n\ge2$, with $D_0=D_1=0$.
+Negative coefficients are zero. This is an INFINITE reference model,
+not a finite actual arm. No general original-coefficient theorem is
+claimed from this result.
+
+\begin{theorem}
+For EVERY $s\ge0$, $G$ is globally log-concave and $R_s$ has complete C:
+\[
+ G_kD_{N-1}\ge G_{k-1}D_N\qquad(N\ge4,\ 1\le k\le N-3).
+\]
+For $s\ge1$, the ordinary coefficients $F$ are LC at every centre
+$s+4\le n\le4s-2$ (an empty band is allowed).
+The number of fours, current rank and shift are all unbounded.
+The golden residual need not be LC on this physical head; it is not
+used as an induction premise.
+\end{theorem}
+
+\subsection{An exact polynomial tail and its retained last coefficients}
+The whole identities, including the factor $z$ multiplying $P_3$, are
+\[
+ S=2z-zP_3,\quad P_3R_s=C_s=1+z^4B_s,
+ \quad C_s=(2z)^s+P_3J_s,
+ \quad J_{s+1}=1+SJ_s-z(2z)^s,
+ \quad J_0=0.                                             \tag{1}
+\]
+For $s\ge1$, $\deg J_s=W-3$, with top coefficient $-1$.
+For $s\ge3$, the first four reversed coefficients of $-J_s$ are
+\[
+ a_0=1,\quad a_1=s-2,\quad
+ a_2=(s-1)(s-2)/2,\quad a_3=s(s-1)(s-2)/6+2.               \tag{2}
+\]
+Indeed the top four coefficients of $C_s$ equal those of $S^{s-1}$;
+divide them by the reversed leading polynomial $1+z+z^2-z^3$.
+Thus, with $a=2^s$,
+\[
+ F_n=a(h_3)_{n-s}\quad(n\ge W-2).                         \tag{3}
+\]
+Evaluation of (1) at one gives
+\[
+ J_s(1)=-c_s,\qquad c_s={(2^s-1)(2^s-2)\over6}\ge0,
+\]
+and therefore
+\[
+ G_n=a(G_3)_{n-s}-c_s\quad(n\ge W-3).                     \tag{4}
+\]
+The preceding cumulative coefficient is DIFFERENT:
+\[
+ G_{W-4}=a(G_3)_{3s-4}-c_s+1.                             \tag{5}
+\]
+This extra unit is essential at the C join $N=W$.
+
+\subsection{A uniform damped minor bound for the ternary tail}
+Let $\lambda=\lambda_3$, $b=1/\lambda$, $u=\lambda-1$, and
+$e_n=(h_3)_n-\lambda(h_3)_{n-1}$. Root factorization gives
+\[
+ P_3=(1-\lambda z)(1+uz+bz^2),\quad
+ e_0=1,\ e_1=-u,\ e_{n+2}=-ue_{n+1}-be_n.
+\]
+The EXACT quadratic norm is
+\[
+ e_n^2+ue_ne_{n-1}+be_{n-1}^2=b^n\quad(n\ge1).             \tag{6}
+\]
+The reciprocal root satisfies $b^3+b^2+b=1$, and monotonicity of
+this polynomial gives $27/50<b<6/11$. Hence $b\ge1/2$,
+$1<\lambda<50/27<2$, and $u^2<3/4$.
+For all real $x,y$,
+\[
+ x^2+uxy+by^2-{x^2+y^2\over4}
+ =(y/2+ux)^2+(b-1/2)y^2+(3/4-u^2)x^2\ge0.
+\]
+Equation (6), including the separately paid initial atom, yields
+\[
+                    |e_n|\le2b^{\lfloor n/2\rfloor}.
+\]
+Writing $H=(h_3)_{n-1}\ge1$, the exact minor identity is
+\[
+ M_{h_3}(n)=e_n^2+H(\lambda e_n-e_{n+1}).
+\]
+Since $b^{\lfloor n/2\rfloor}\le1$ and $\lambda\le2$,
+\[
+             |M_{h_3}(n)|\le10H b^{\lfloor n/2\rfloor}
+                         \quad(n\ge1).                   \tag{7}
+\]
+In particular, for EVERY $s\ge22$ and $n\ge3s-5$,
+\[
+                        2^s|M_{h_3}(n)|\le(h_3)_{n-1}.    \tag{8}
+\]
+To see the complete unbounded payment, put $k=\lfloor n/2\rfloor$.
+Then $2k+6\ge3s$, $b^6\ge1/64$, and $4b^3\le2/3$. Thus
+\[
+ (10\,2^s b^k)^2\le6400(4b^3)^s
+ \le6400(2/3)^{22}={26843545600\over31381059609}<1.
+\]
+The whole natural-index norm, floor/exponent inequality and scaled
+payment are kernel checked. No asymptotic or spectral approximation
+replaces any rank in (8).
+
+\subsection{Ordinary LC of the entire required finite head}
+The first four losses $h_4-h_3$, at ranks $4,5,6,7$, are
+EXACTLY $(1,2,5,12)$. Since $h_4=1+Sh_4$,
+$h_4-R_s=S^s(h_4-h_3)$. The first loss is at $A=s+4$, of size one.
+The next three losses are
+\[
+ B=s+2,\quad C=s(s+1)/2+2s+5,\quad
+ T=s(s+1)(s+2)/6+s(s+1)+5s+12.                            \tag{9}
+\]
+The existing three ordinary startup-minor kernel in
+\texttt{StationaryFourCompleteC.lean} applies without changing its
+scope: the seed losses satisfy $a\ge1$, $b\ge2a$,
+$c\ge4a-1$, $d\ge8a-3$, with $(a,b,c,d)=(1,2,5,12)$.
+For every new count at least eight, its three budgets are
+$B-4a-1\ge0$, $C-4B-1\ge0$, $T-4C-1\ge0$.
+The universal ordinary $h_4$ minor bound $|M_{h_4}(n)|\le(h_4)_{n-1}$
+and $h_4(n+1)\le2h_4(n)$ supply its other hypotheses.
+The two successor guards hold because the actual reference coefficients
+$R_s$ are positive. Thus all THREE new centres $A,A+1,A+2$ are paid.
+
+Induct now from $s=22$. Assume ordinary LC from $A$ through $W-2$.
+The next reference is $1+SR_s$. Uniform LC convolution of the old
+LC segment $[A-1,W-1]$, truncated at both ends, pays every new centre
+from $A+4$ through $W-2$. All three reads on such a centre agree with
+the untruncated convolution. In terms of NEW $W$, this middle interval
+ends at $W-6$. Together with the preceding three startup centres,
+only FOUR new centres $W-5,W-4,W-3,W-2$ remain.
+
+At such a centre let $m=n-s$ and extend (2) by $a_{-1}=a_{-2}=0$.
+The exact determinant is
+\[
+ a^2M_{h_3}(m)+a\{a_{k+1}(h_3)_{m+1}
+       +a_{k-1}(h_3)_{m-1}-2a_k(h_3)_m\}
+                    +(a_k^2-a_{k+1}a_{k-1}),             \tag{10}
+\]
+where $k=W-3-n$ runs through $2,1,0,-1$.
+For EVERY real $s\ge6$, the complete polynomial budgets are
+\[
+ a_i\ge0,\quad a_2\ge2a_1+1,\quad a_3\ge2a_2+1,
+ \quad a_1^2\ge a_2,\quad a_2^2\ge a_3a_1.
+\]
+Also $a_1\ge3$ for $s\ge5$ and $a_0=1$.
+Consequently each linear bracket in (10) is at least
+$(h_3)_{m-1}$, and each final quadratic term is nonnegative.
+Use $(h_3)_{m+1}\ge(h_3)_m\ge(h_3)_{m-1}\ge0$.
+Since $m\ge3s-5$, equation (8) pays the entire possibly negative
+first term of (10). All FOUR corners, including their signed polynomial
+corrections, are therefore nonnegative. This closes the full head
+induction at every $s\ge22$.
+
+The COMPLETE remaining finite entrance is explicitly supplied:
+$s=1,\ldots,22$, with EVERY centre $s+4\le n\le4s-2$.
+There are exactly 651 integer minors. They are reconstructed independently
+from $C_s/P_3$, and all are kernel checked in five integer chunks with
+ONE aggregate report. In particular $s=22$ is a proved fixed entrance,
+not an assumed unbounded diagonal. This proves ordinary-head LC for
+every $s\ge1$.
+
+\subsection{The cumulative and C bridges, including the missing unit}
+The renewal cumulative $G_j=h_j/(1-z)$ is globally LC, convex,
+positive and nondecreasing for $j=3,4$; see the already proved
+\texttt{first\_missing\_renewal\_envelope.tex}. Its C assertion holds
+at every shift as proved there. Also
+$(G_4)_n-\lambda_4(G_4)_{n-1}>0$ by the strict renewal theorem.
+Before $A$, $R_s=h_4$; at $A$ precisely one is lost. The strict unit
+rounding bound puts $F_A<\lambda_4F_{A-1}$.
+
+Apply the existing bounded ordinary-to-cumulative bridge to the
+NOW-PROVED ordinary LC band $A,\ldots,W-2$. All protected cumulative
+ratios exceed $\lambda_4$, and every later ordinary ratio in this
+band is below it. Thus ALL C comparisons with current $N\le W-1$
+hold. At $N=A$ lowering only the current slope improves C; if the
+current slope does not increase, C is automatic. This use of the
+bounded scalar bridge does not assume actual-arm mode structure.
+
+The SAME entry proves cumulative LC up to $W-2$. For completeness,
+if consecutive coefficients are $a,b,c$ and the preceding cumulative
+is $H$, the two hypotheses
+$ac\le b^2$, $b(H-a)\le aH$ imply
+\[
+                  (H+b)^2-H(H+b+c)\ge0.
+\]
+The entry supplies the second hypothesis at $A$, and each resulting
+minor supplies it at the next step. The first-defect cumulative minor
+at $A-1$ only improves. For very small $s$ the empty head causes no
+gap, because the protected and tail bands overlap.
+
+For every cumulative centre $n\ge W-2$, all three reads satisfy (4).
+Subtracting a nonnegative constant improves the LC minor of a convex
+sequence: exactly
+\[
+ M_{aG_3-c_s}=a^2M_{G_3}+a c_s\Delta^2G_3\ge0.
+\]
+Thus $G$ is globally LC, including its join at $W-2$.
+
+For C at current $N\ge W+1$, all slope and cumulative reads in its
+nearest-shift comparison satisfy (3)--(4). If the two slopes grow,
+subtracting $c_s$ improves the C minor by $a c_s$ times their
+nonnegative difference. If they decline, C is automatic from the
+positive nondecreasing cumulative. The untruncated ternary reference
+has C, so nearest-shift C follows in either case.
+
+At the remaining current $N=W$, the extra unit in (5) subtracts
+$a(d_3)_{3s}$ from that argument. This is paid rather than erased.
+For $s\ge3$, $c_s\ge7\ge3$. The untruncated ternary slopes obey
+$2(d_3)_n\ge3(d_3)_{n-1}$ for all $n\ge3$: the gap satisfies the
+positive three-term recurrence and its three initial values are
+$1,0,3$. Hence
+\[
+ c_s\{(d_3)_{3s}-(d_3)_{3s-1}\}\ge(d_3)_{3s}.
+\]
+The negative-constant bonus pays the missing unit in full. For
+$s=1,2$ the exact nearest-shift boundary minors are respectively
+$0,40$; both are included in the integer certificate.
+Finally global cumulative LC makes every earlier cumulative ratio
+at least the nearest-shift ratio. This gives ALL shifts $k\le N-3$
+at every remaining current $N$. The case $s=0$ is the previously
+proved untruncated ternary reference. The theorem follows.
+
+\paragraph{Verification and remaining research.}
+Fifteen new scoped Lean reports cover the entire norm induction,
+coercivity, minor estimate, unbounded scaled decay, all four corner
+budgets, negative-constant transfers, exact polynomial recurrence,
+root interval, cumulative entry, missing-unit payment and whole
+three-step nonnegativity. ONE axiom-free aggregate covers the COMPLETE
+651-minor entrance, two cumulative boundaries and three growth seeds.
+The preceding quartic startup and strict-renewal/bounded-bridge kernels
+are reused without recounting. Series identification, coefficient
+reversal, LC convolution and the full assembly are written proofs;
+this is not an end-to-end Lean formalization of composition ideals.
+All extra parameter tests are QA only.
+Finite actual $1^\alpha3^r4^s$ and $1^\alpha2^u3^r4^s$ retain their
+negative finite-count CI loss. Their general C, full A2 and the GENERAL
+original unamplified coefficient conjecture are not asserted here.

@@ -1,0 +1,120 @@
+{
+  "status": "PASS_UNIVERSAL_PHYSICAL_BOUNDARY_GOLDEN_D_AND_ONE_EARLIER_C_ENTRANCE",
+  "new_scoped_reports": 8,
+  "kernels": {
+    "PhysicalBoundaryGoldenC": {
+      "previous_CI_units": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "degree_two_gap_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "positive_head_gap_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "multiple_factor_norm_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "large_degree_row_geometry": [
+        "Quot.sound",
+        "propext"
+      ],
+      "nonincreasing_CI_row_entry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "boundary_C_read_guard": [
+        "Quot.sound",
+        "propext"
+      ],
+      "four_gap_all_shift_guard": [
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "738ba69282e3a62d9a990994cb0f39ffa04820083dc3a51eafb693e2224ddb04",
+  "QA": {
+    "exact_previous_r_units_and_current_unit_identities": 1291,
+    "zero_binary_boundary_payments": 119,
+    "finite_padding_boundary_density_transfers": 4441,
+    "all_padding_boundary_golden_payments": 3544,
+    "exact_prefix_minimum_all_shift_C_payments": 448270,
+    "logical_shift_coverage": 115549786,
+    "all_padding_earlier_full_C_halfline_hosts": 2909,
+    "actual_hosts": 4441,
+    "CI_profiles": 1291,
+    "protected_reference_boundary_gap_identities": 660,
+    "sharp_one_factor_parity_controls": 103,
+    "all_padding_protected_odd_counteredges": 156,
+    "all_shift_reference_boundary_C_products": 74370,
+    "actual_new_boundary_large_shift_C_products": 193012,
+    "exact_boundary_quotient_plus_phi_identities": 512,
+    "unbounded_monotone_CI_head_payments": 227,
+    "two_degree_gap_positive_payments": 116,
+    "multiple_factor_norm_payments": 557,
+    "large_degree_symmetric_row_payments": 169
+  },
+  "independent_counts": {
+    "independent_actual_physical_boundary_golden_edges": 988,
+    "independent_all_current_earlier_C_halfline_minima": 43779,
+    "independent_earlier_C_halfline_hosts": 846,
+    "independent_actual_hosts": 1305,
+    "independent_CI_profiles": 512,
+    "independent_protected_odd_exception_edges": 58,
+    "independent_entire_reference_boundary_C_reads": 12563,
+    "independent_actual_new_boundary_C_reads": 23457,
+    "independent_reverse_quotient_boundary_identities": 218
+  },
+  "independent_state_sha256": "a1c55ae98208240a73fa00163c0fb18af860fc324a75716ff1f3cb10b2b17e18",
+  "new_finite_entrance_certificates": 0,
+  "boundary_D": "PROVED ALL actual r>=2,ALLu/h/capacities/paddings: D_W<phiD_(W-1) ifpredecessorpositive,zerocurrentotherwise. Single factor also unlessODDt andu>=h-1; in that EXCEPTION exact protected gap=-q^(t-1) forEVERYpadding. Forr>=2 protected gap>=q^5,positive-headgap>=q^2; exact previous CI derivative has r units,notone. No finite premise.",
+  "actual_boundary_C": "PROVED ALLactualprofiles/ALLpadding atCURRENTN=W,EVERYshiftR>=max(3,h-u-1). Boundary golden payment uses protected actual G prefix; exceptional onefactor uses OLDcompleteC. Applies outside all registered whole-arm wedges.",
+  "earlier_actual_halfline": "PROVED ALLu>=h-4,ALLcapacities/counts/paddings: EVERYCshift>=3 atEVERYcurrentN>=W,ONEphysicalrankearlierthanoldW+1. Combines NEWboundaryC with OLDall-lateC. No new finite entrance premise.",
+  "earlier_reference_halfline": "PROVED infinite-BINARY reference ofEVERYnonemptyV>=3: EVERYCshift>=3 atEVERYcurrentN>=W,earlierthanoldW+1. AtW,r>=2usesuniversalreferencegoldengap>=q^5 andallGref ratios>phi; onefactorusesOLDcomplete referenceC. General earlierN<WreferenceC OPEN.",
+  "derivative_LC_control": {
+    "alpha": 3,
+    "u": 46,
+    "V": [
+      12,
+      18,
+      20
+    ],
+    "centre": 50,
+    "D": [
+      20296909601,
+      32841089600,
+      53137999199
+    ],
+    "minor": -4885249599
+  },
+  "formal_scope": "EIGHT NEW scoped standard-axiom kernels for exact CI previous-unit arithmetic,two/all-factor payments,ALL-integer complementary row geometry,and complete read-domain guards. Existing ALL-prefix divided-head and density/C/golden/norm results reused,NOTrecounted. Actual root/model/CI extraction,mode/source and halfline assemblies written,not end-to-end Lean. Every finite profile QA ONLY.",
+  "remaining": "General actual/reference C atN<W and shorter-shift boundaryC outsideu>=h-4 remain OPEN. Sharper count wedge stillstartsW+1unlesscoveredbytheNEWu>=h-4halfline. CompleteA2/original unamplified coefficientUI OPEN; full-C first unresolved nononecount6 unchanged. Actual derivative-LC atW is FALSE,so do not shift that separate theorem.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "physical_boundary_golden_D_and_C_proof.tex": "8fa51d23030f2cfc73898b19e124abcd555c138ac1ddfc89358d0998e397a5ad",
+    "PhysicalBoundaryGoldenC.lean": "e5fc70e78e642d715ad39fe78cfe90eebac509d8912c5daea89fdd001c191bac",
+    "PhysicalBoundaryGoldenC.log": "d3ecf3a487421ecd03597be9263c11ea7d85bec31a458cb519320138d5c51b51",
+    "audit_physical_boundary_golden_C.py": "6e208af3dcac6df3e3ce6fccf29a86e387562ba359c514d9c98c4903dc3c1db7",
+    "audit_physical_boundary_golden_C.json": "06ac3fd4e5d41784010ff98ee23a74983c95a0be7d85f9139e650450122c07be",
+    "verify_physical_boundary_golden_C.py": "e5ae417c6a153157a7bbff356e6c9ad6822b346c61158c00c8bfa3327785081c",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "ordinary_golden_growth_source_verification.json": "ae495815227227e1df4d497a290f7fb3819cce5ac0dbfeccdbf71ce7d6c2e59c",
+    "golden_tail_large_shift_C_verification.json": "7ef01e16055ffba17369332f1f0f6caa88833e6dd0c344a10fd878b983110fcd",
+    "four_subdegree_C_entrance_verification.json": "10fbbaf92959db642d74dfb169423162a37101f003f6c45b9565ebac99bda369",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76"
+  }
+}

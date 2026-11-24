@@ -1,0 +1,77 @@
+% Structural facts for two actual increasing arms, not the strict-core theorem.
+\section{Rising differences of the reversed ordinary two-arm product}
+\begin{proposition}
+Let $X,Y$ be increasing arms and
+$p(z)=z^{a+b}F_X(1/z)F_Y(1/z)$, with $a=\operatorname{wt}X$
+and $b=\operatorname{wt}Y$. Then $p$ is unimodal and log-concave
+on its rising side. In addition, the positive part of its
+first-difference sequence is unimodal.
+\end{proposition}
+\begin{proof}
+Ordinary two-arm product unimodality is an established input;
+the proof by interval layers and final-part deletion is reproduced
+in the supplied foundation. Its strengthened midpoint assertion
+says that, when $a=b$ and both factors are nonrectangular,
+$(F_XF_Y)_{a+1}\ge(F_XF_Y)_a$.
+
+Induct on the total number of arm parts for the two additional
+properties. If either arm polynomial is an interval, apply the
+uniform-window results to the reverse of the other arm. Otherwise
+orient $a\ge b$ and write $X=Zt$. Reversal gives
+\[
+ p=[t]q_Zq_Y+z^a q_Y.
+\]
+Let $m_0$ be the first mode of $p$. First-half increase of the
+ordinary product and its unimodality imply that its last mode
+is at least $\lceil(a+b)/2\rceil$. Thus
+$m_0\le\lfloor(a+b)/2\rfloor$. If $a>b$, this gives $m_0<a$.
+If $a=b$, the strengthened midpoint assertion implies that the
+last forward mode is at least $a+1$, and hence $m_0\le a-1$.
+This reasoning explicitly allows a maximal plateau.
+
+In both weight cases $m_0<a$. Up to and including
+$m_0$, $p$ agrees with the uniform window $[t]q_Zq_Y$; the
+added term begins at $a$. The positive first differences of
+$p$ are therefore a prefix of those of this window, followed
+by zeros. The window has unimodal positive first differences
+by induction and the uniform-window lemma. This proves that
+the positive first differences of $p$ are unimodal.
+
+For log-concavity before the first mode, the same agreement
+and the rising-side window lemma apply. A window cannot have
+passed its first mode and then strictly increase to the first
+mode of $p$; consequently its relevant prefix lies on its
+rising side. Log-concavity at a mode is automatic, since both
+neighbors are at most the mode value. Interior points of a
+maximal plateau also satisfy equality. This proves rising-side
+log-concavity of $p$, including its last mode.
+\end{proof}
+
+\paragraph{Priority and limitation.}
+The rising-side log-concavity assertion is the reversal of the
+ordinary-product tail log-concavity already reported in Chen's
+public abstract; no priority is claimed for it. The proof above
+is given to make its use independent of the inaccessible full
+text. The positive first differences themselves need not be
+log-concave: the exact counterexample recorded with the
+interval-product difference theorem still applies. Neither
+additional property alone proves the single crossing needed
+after inserting the central peak.
+
+\paragraph{Two stronger smoothing statements fail.}
+Even an increasing arm need not be log-concave at all ranks
+starting with rank two. For $Y=(1,2,2,2)$ the coefficients at
+ranks $2,3,4$ are $2,3,5$, and $3^2<2\cdot5$.
+
+Nor does a window as long as the strict peak make the positive
+rising differences of the reversed ordinary product log-concave.
+Take $X=1^{58}2^3$, $Y=1^{37}2^{13}$, and $M=3$.
+The first mode of $p$ above is $60$. For the nonnegative sequence
+$d_r=p_r-p_{r-1}$ on $0\le r\le60$, extended by zero,
+the coefficients of $[3]d$ at ranks $55,56,57$ are
+\[
+ 3194,\quad1974,\quad1220,
+ \qquad1974^2-3194\cdot1220=-4.
+\]
+Thus even this proposed limited smoothing closure cannot be
+used in the remaining coefficient bridge.

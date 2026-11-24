@@ -1,0 +1,48 @@
+{
+  "status": "PASS_UNBOUNDED_SOURCE_SINGLE_NOTCH_AND_IMMEDIATE_RECOVERY",
+  "new_scoped_reports": 7,
+  "theorem": "ALL actual nonrectangular SORTED arms: source increment w_n is nondecreasing at 3<=n<=FIRSTDmode except possibly n=lastcap+2. If lastcap+3<=FIRSTDmode, w_(lastcap+3)>=w_(lastcap+1).",
+  "corollaries": [
+    "EVERY rank >=lastcap+3 through FIRSTDmode dominates ALL earlier source increments",
+    "ALL sorted-legal capacity windows compare source increments whenever both indices are before FIRSTDmode",
+    "More generally strict entering D>leaving D implies entering source w>=leaving source w, including peak-crossing windows"
+  ],
+  "obstruction": "Unbounded ACTUAL 1^alpha(2,T,T+1), T>=6, alpha>=T: kappa5/delta2/eta6, FIRSTDmode=T+3, height2T-1, curvature at T+2/T+3 is 2T-2/2T-3. Thus strict late monotonicity is FALSE at arbitrarily large offsets with FIXED kappa5.",
+  "proof_audit": [
+    "Simultaneous induction of single-notch monotonicity and two-edge recovery",
+    "Strict old entering-vs-leaving D survives the one possible NEW flat at t+1",
+    "Before old mode, old recovery gives the required spaced source order",
+    "Across old mode, w_enter>=D_enter>D_leave>=w_leave",
+    "Only negative isolated second-source term is at NEW t+2",
+    "Recovery sum is w_old(t+1)+w_old(t+2)-1; birth or proved offset2/TC positivity pays it",
+    "No generic coefficient dominance is differentiated; no original/general C/A2 claim"
+  ],
+  "formal_scope": "7 scoped kernel reports, including unbounded finite-chain record and whole crossing-window comparison, plus kernel-decide actual member 1^6(2,6,7). Actual-arm induction and unbounded family polynomial identifications written, NOT end-to-end Lean formalized.",
+  "logical_dependencies": "TC, one-flat forward D, and the complete offset-two lemma. The larger J theorem and N47 peak enumeration are not needed for the written induction; their report supplies the independently verified offset lemma and extra finite QA.",
+  "second_overlap": "COMPLETE BOTH-ORDINARY-FORWARD-RISING branch when EITHER first weight is THREE: eligible kappa3 arm has delta=eta=1; the other J budget pays the entire second-overlap product. ALL-head S in that branch with usual OLD head; ENTIRE zero-head second overlap for counts>=2 without C/OLD A2 because its slopes are forced positive. Separate written exact-generation classification, not inferred from finite QA. No general mixed-branch conclusion.",
+  "finite_QA": {
+    "arms_or_exact_prefix_states": 225002,
+    "notch_edges": 5229289,
+    "permitted_drops": 7000,
+    "two_edge_recoveries": 19182,
+    "whole_earlier_record_comparisons": 2139784,
+    "complete_N47_nonrect_prefix_states": 207002,
+    "unbounded_obstruction_family_instances": 4500
+  },
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "source_curvature_single_notch.tex": "1b6f81c59a2ba582aceeeb82ae4b4c4b186382fbf700c978b7a941176a45b446",
+    "SourceCurvatureSingleNotch.lean": "70c8b8eac612c1cdd47fdbfe98fb9c65c0fda30dfb2d38dd39b178e279c03d1e",
+    "SourceCurvatureSingleNotch.log": "5693dd0f2ba50702de2a9ccfca29eb49919e833546b9001f30c70364ab5fff17",
+    "probe_source_single_notch.py": "37b7a95737e34c7805edfd5c6bd468ef2bd70bc3f5b192a9e0ac8d172d2b7cbc",
+    "probe_source_single_notch.json": "92f562716b9a0531f0ca91aaa2d70c548aa27d26de8e338c0ffe30bbe55cb504",
+    "verify_source_single_notch.py": "dc4f29f12afdb8ed9e3d85287f5998891e6614bd293490ce4e0259adf5c08c95",
+    "probe_second_overlap_all_multiplicities.py": "e9c73737340ff541f72d53eb681d76d34e11b2c58e9d633e232ec430a6c7e197",
+    "probe_second_overlap_all_multiplicities.json": "eedd4b27d32f3927054b3ef498175b931dd53c484e2765c44c8d3ee6fc9f44cc",
+    "triangular_source_complete_verification.json": "175b12f985ae6777d4b830f702c27fb8fc1cd04ef65aa3824e70612621a81d50",
+    "forward_D_single_plateau_verification.json": "f810b1a6eeaa370fc48272509c3844ba12941f526c13a914bf73dd817b5f3202",
+    "joint_source_growth_verification.json": "55a50354de7e39d043b8d8f3641d84a6a94ccb9557288c4847c602b6a67b16b0"
+  }
+}

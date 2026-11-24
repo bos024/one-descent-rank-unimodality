@@ -1,0 +1,223 @@
+\section{Complete actual C for every binary--ternary arm}
+All arms in this section are actual normalized sorted arms
+$X=1^\alpha2^u3^r$, with $\alpha\ge1$, $u,r\ge0$.
+Use the ordinary coefficient sequence F, its positive differences
+$D_N=(F_N-F_{N-1})^+$ for N>=2, $D_0=D_1=0$, and
+$G_k=\sum_{i=0}^kF_i$. Full C means
+\[
+             G_kD_{N-1}\ge G_{k-1}D_N
+                      \quad(N\ge4,\ 1\le k\le N-3).
+\]
+
+\begin{theorem}[All binary and ternary counts]
+EVERY such X has full C at every current rank and every shift at
+least three. Both counts, padding, current rank and shift are
+unbounded. No binary-count cutoff remains in this alphabet.
+\end{theorem}
+
+\begin{theorem}[Sharp ordinary coefficient classification]
+For EVERY r>=6,u>=1 and EVERY alpha>=1, the entire ordinary
+coefficient tail from centre r+3 is LC if and only if u<=2r.
+For every u>=2r+1 its ACTUAL minor at centre 3r+1 is exactly
+\[
+                   F_{3r+1}^2-F_{3r}F_{3r+2}=-4^r<0.
+                                                               \tag{1}
+\]
+This failure does not contradict full C or ordinary unimodality.
+The original general one-descent coefficient-unimodality conjecture,
+general C for arbitrary capacities, and full A2 remain OPEN.
+\end{theorem}
+
+\paragraph{Previously proved resources, used with their exact scopes.}
+Write $S=z+z^2+z^3$, $T=z+z^2$, $B_r=\sum_{j<r}S^j$,
+$H_2=(1-T)^{-1}$, and
+$R^{(r)}=B_r+S^rH_2$. Put W=3r and A=r+3.
+We use the new stationary-reference theorem: R has full C for
+every r, and, for r>=6, its ordinary coefficients are LC at
+every centre A<=n<=W. Ordinary reference LC is not asserted after W.
+We also use the OLD universal ordinary-tail theorem: if u>=5 and
+$h=2r>u$, actual F is LC at EVERY centre n>=W-1. This is the
+sharp one-earlier theorem, not an assumption about the present
+early band. At u=h, the OLD surplus refinement gives ordinary
+F LC at every centre n>=u+r+1, since u+r>=6.
+
+The OLD actual structure also gives ordinary F LC at every centre
+on and after its FIRST D mode L. Before the first F mode this is
+concavity from nonincreasing nonnegative slopes; afterwards it is
+the established decreasing-side ordinary LC. Thus a proof of
+ordinary LC at A<=n<L supplies the entire tail from A.
+Finally the proved ordinary-to-C bridge says that such a tail
+implies full C for every mixed arm u>=1: its first ordinary loss
+is at A, its entry ratio is below the tribonacci root, and its
+protected reference G ratios are above that root.
+
+\paragraph{Uniform ordinary-tail heredity for ANY binary count.}
+For every fixed u>=1, alpha>=1, and old r>=6, ordinary F LC
+on the entire tail n>=r+3 implies the same assertion at r+1.
+This removes the earlier restriction u>=4 from the scalar source
+argument; no new uniform head-equality assumption is inserted.
+
+Let $f=F_{1^\alpha2^u}$. Exactly
+\[
+ H_2-f=T^u\{H_2-[\alpha+1]\}\ge0.
+\]
+For u>=1 the coefficients through degree two agree with H2 and H3.
+Define the first three ordinary losses of f relative to H3 by
+a,b,c at degrees 3,4,5. They need not be fixed as alpha varies.
+Coefficientwise domination by H2 gives the uniform bounds
+\[
+                             a\ge1,\quad b\ge2,\quad c\ge5.
+                                                               \tag{2}
+\]
+After appending r threes, the first three ordinary losses relative
+to H3, at r+3,r+4,r+5, are EXACTLY
+\[
+                a,\quad B=ar+b,\quad C=ar(r+1)/2+br+c.
+                                                               \tag{3}
+\]
+Every finite-padding correction is contained in a,b,c. None is
+discarded or replaced by a large-padding model.
+
+For a new count r>=7, use the ordinary H3 minor bound
+$M_h(n)\ge-h_{n-1}$ and $h_n\le2h_{n-1}$. At its first
+new centre the minor is bounded below by
+$h_{n-1}(B-4a-1)+a^2\ge0$. At the next centre, writing
+U,V,W for the reference triple, its exact expansion is
+\[
+ (V-B)^2-(U-a)(W-C)
+   =M_h-2BV+B^2+UC+a(W-C)
+   \ge U(C-4B-1)+B^2+a(W-C)\ge0.
+\]
+Here W-C is the ACTUAL next ordinary coefficient, hence nonnegative;
+and (2) gives
+\[
+ B-4a-1=a(r-4)+b-1\ge0,\qquad
+ C-4B-1=ar(r-7)/2+b(r-4)+c-1\ge0.               \tag{4}
+\]
+One generic real Lean theorem checks both complete payments on
+the unbounded domain (2), r>=7.
+
+Every later centre inherits by ordinary LC convolution. Indeed
+$F_{r+1}=1+S F_r$; truncate old F below r+2. The truncated
+sequence is globally LC under the old tail hypothesis. Its S
+convolution agrees on the entire new three-read triple for every
+n>=r+6. The new two preceding centres r+4,r+5 were just paid
+by (3),(4), and the unit at rank zero is absent. This proves
+the whole r-heredity, including later modes and terminal zeros.
+
+\paragraph{An analytic entrance for EVERY unbounded large u.}
+Fix ANY u>=10 and set
+\[
+                             r_0=\lfloor u/2\rfloor+1.
+\]
+Then r0>=6, u>=5, and
+\[
+                     2r_0-2\le u<2r_0.
+\]
+The exact difference between actual F and the infinite-binary
+reference is
+\[
+ R^{(r_0)}-F=S^{r_0}T^u\{H_2-[\alpha+1]\}.
+\]
+Its first nonzero coefficient is at u+r0+2>=3r0=W. Therefore
+the ENTIRE ordinary triple at each A<=n<=W-2 is protected:
+its largest read is at most W-1, before the first difference.
+The new stationary reference theorem pays all these minors.
+
+Since h=2r0>u>=5, the OLD universal one-earlier actual ordinary
+theorem pays every n>=W-1. These ranges meet with no missing
+rank: protected centres through W-2, universal actual centres
+from W-1. Hence the actual ENTIRE tail from A is LC at this
+analytic entrance, for EVERY u>=10 and EVERY alpha.
+Uniform r-heredity now proves the ordinary tail for every
+r>=r0. For integers this is exactly every r>=6 with u<2r.
+There is no unbounded diagonal premise left to check.
+
+\paragraph{The complete small-u entrance is fixed at SIX threes.}
+For u=1..9 take r0=6. The first D mode is at most
+$B=\lfloor(3u+24)/2\rfloor$, independently of alpha. The finite
+initial-one perturbation starts at original rank alpha+u+7.
+At
+\[
+                          alpha_*=6+\lfloor u/2\rfloor
+\]
+this is exactly B+1. Thus every larger padding agrees with alpha*
+on all F,D reads through B, including every ordinary triple
+strictly before its first D mode.
+
+It suffices to check exactly u=1..9, alpha=1..alpha*, and every
+ordinary centre 9<=n<L. This is COMPLETE: 74 hosts, 753 integer
+minors, and 296 distinct nonnegative margins. Two ordinary Lean
+integer chunks form ONE aggregate certificate. Independent positive
+suffix-box reconstruction checks every host, first mode, read,
+margin and parameter endpoint. This is the sole new finite premise,
+not a random entrance search. Ordinary F LC after L is an OLD
+universal resource, so the certificate proves the entire ordinary
+tail for all padding at r=6. Uniform r-heredity then proves it
+for ALL r>=6 at these small binary counts as well.
+
+The complete first-crossing and small-u induction, with both
+unbounded natural parameters, is also Lean checked. Combining
+the two entrances proves the ordinary-LC theorem whenever u<2r.
+
+\paragraph{The boundary u=2r and the exact sharp complement.}
+At u=2r,r>=6, the actual sequence first differs from its reference
+at W+2. Its ordinary triples through centre W are protected and
+paid by reference LC. The OLD surplus ordinary-tail refinement
+starts at u+r+1=W+1, so it supplies every remaining centre.
+This closes the equality case u=2r.
+
+For a precise counterfamily above that boundary, let
+$C_r=1+z^3B_r$, so R=C_r/(1-z-z^2). Its recurrence is
+$C_{r+1}=S C_r+(1-z-z^2)$, $C_0=1$.
+Because $S-2z=-z(1-z-z^2)$, full commutative-ring induction gives
+\[
+             C_r=(2z)^r+(1-z-z^2)J_r,
+\quad J_0=0,\quad J_{r+1}=1+S J_r-z(2z)^r.
+\]
+For r>=1, deg J_r<=3r-2 by this recurrence. Thus, with fib0=0,
+fib1=1,
+\[
+             R_n=2^r\operatorname{fib}(n-r+1)
+                                  \quad(n\ge3r-1).       \tag{5}
+\]
+If u>=2r+1, the first actual loss is at u+r+2>=3r+3.
+The triple at centre 3r+1 therefore equals the reference triple
+\[
+ 2^r\bigl(\operatorname{fib}(2r+1),
+          \operatorname{fib}(2r+2),
+          \operatorname{fib}(2r+3)\bigr).
+\]
+Even-index Cassini gives (1). The whole polynomial recurrence
+identity and the complete unbounded even Cassini induction are
+separate Lean reports. This supplies an exact, arbitrary-padding,
+unbounded negative complement and proves the stated iff.
+
+\paragraph{Complete C for every count pair.}
+If u=0, use the newly proved all-count pure-ternary C theorem.
+If r<=5, use the OLD nonbinary-weight-at-most-32 full-C theorem
+(or the binary theorem when r=0), with arbitrary u and alpha.
+For u>=1,r>=6 and u<2r, the ordinary tail just proved and the
+ordinary-to-C bridge give full C. In the remaining region u>=2r,
+the proved binary-dense actual cone u>=max(0,2r-3) gives full C.
+These cases cover EVERY pair of natural counts; the exhaustive
+natural-parameter union is kernel checked as well.
+
+In particular, the former actual full-C restriction 4<=u<=32,
+r>=2u is removed completely. Full C now holds for ALL u,r,
+including the previously open rich diagonal u>=33,r=2u.
+Its stronger positive-D minor budget is not asserted or needed.
+
+\paragraph{Formal and logical scope.}
+Eight new generic reports cover both universal ordinary entrances,
+the unbounded first-crossing read guards, exact small-padding clamp,
+the complete two-parameter seed/append induction, exhaustive C union,
+the sharp boundary read guards, whole polynomial identity, and
+whole even Cassini induction. One aggregate checks the complete
+small-u ordinary entrance. Old universal W-1 ordinary LC, equality
+surplus LC, new reference LC/full C, old generic window convolution
+and ordinary-to-C transfer are reused and not counted again.
+The coefficient/arm generation, reference/actual joining and full-C
+assembly are written proofs, not an end-to-end Lean formalization.
+No arbitrary-capacity C or original one-descent coefficient theorem
+is claimed by this bounded-alphabet result.

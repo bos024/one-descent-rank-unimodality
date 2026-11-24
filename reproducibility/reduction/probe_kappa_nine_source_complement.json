@@ -1,0 +1,1312 @@
+{
+  "status": "PASS_KAPPA_NINE_GENERIC_AND_FINITE_OWNER_PAYMENT",
+  "counts": {
+    "all_owner_CI_paid_rank_states": 244,
+    "complete_owners_examined": 13544,
+    "strict_primitive_curvature_owners": 2464
+  },
+  "generic_unpaid_rank_states": [
+    [
+      1,
+      2,
+      0,
+      6
+    ],
+    [
+      1,
+      3,
+      0,
+      8
+    ],
+    [
+      1,
+      4,
+      0,
+      10
+    ],
+    [
+      1,
+      5,
+      0,
+      12
+    ],
+    [
+      1,
+      6,
+      0,
+      14
+    ],
+    [
+      1,
+      7,
+      0,
+      16
+    ],
+    [
+      1,
+      8,
+      0,
+      18
+    ],
+    [
+      1,
+      9,
+      0,
+      20
+    ],
+    [
+      1,
+      10,
+      0,
+      22
+    ],
+    [
+      1,
+      11,
+      0,
+      24
+    ],
+    [
+      1,
+      2,
+      1,
+      7
+    ],
+    [
+      1,
+      3,
+      1,
+      9
+    ],
+    [
+      1,
+      4,
+      1,
+      11
+    ],
+    [
+      1,
+      5,
+      1,
+      13
+    ],
+    [
+      1,
+      6,
+      1,
+      15
+    ],
+    [
+      1,
+      7,
+      1,
+      17
+    ],
+    [
+      1,
+      8,
+      1,
+      19
+    ],
+    [
+      1,
+      9,
+      1,
+      21
+    ],
+    [
+      1,
+      10,
+      1,
+      23
+    ],
+    [
+      1,
+      11,
+      1,
+      25
+    ],
+    [
+      1,
+      1,
+      2,
+      6
+    ],
+    [
+      1,
+      2,
+      2,
+      8
+    ],
+    [
+      1,
+      3,
+      2,
+      10
+    ],
+    [
+      1,
+      4,
+      2,
+      12
+    ],
+    [
+      1,
+      5,
+      2,
+      14
+    ],
+    [
+      1,
+      6,
+      2,
+      16
+    ],
+    [
+      1,
+      7,
+      2,
+      18
+    ],
+    [
+      1,
+      8,
+      2,
+      20
+    ],
+    [
+      1,
+      9,
+      2,
+      22
+    ],
+    [
+      1,
+      10,
+      2,
+      24
+    ],
+    [
+      1,
+      1,
+      3,
+      7
+    ],
+    [
+      1,
+      2,
+      3,
+      9
+    ],
+    [
+      1,
+      3,
+      3,
+      11
+    ],
+    [
+      1,
+      4,
+      3,
+      13
+    ],
+    [
+      1,
+      5,
+      3,
+      15
+    ],
+    [
+      1,
+      6,
+      3,
+      17
+    ],
+    [
+      1,
+      7,
+      3,
+      19
+    ],
+    [
+      1,
+      8,
+      3,
+      21
+    ],
+    [
+      1,
+      9,
+      3,
+      23
+    ],
+    [
+      1,
+      0,
+      4,
+      6
+    ],
+    [
+      1,
+      1,
+      4,
+      8
+    ],
+    [
+      1,
+      2,
+      4,
+      10
+    ],
+    [
+      1,
+      3,
+      4,
+      12
+    ],
+    [
+      1,
+      4,
+      4,
+      14
+    ],
+    [
+      1,
+      5,
+      4,
+      16
+    ],
+    [
+      1,
+      6,
+      4,
+      18
+    ],
+    [
+      1,
+      7,
+      4,
+      20
+    ],
+    [
+      1,
+      0,
+      5,
+      7
+    ],
+    [
+      1,
+      1,
+      5,
+      9
+    ],
+    [
+      1,
+      2,
+      5,
+      11
+    ],
+    [
+      1,
+      3,
+      5,
+      13
+    ],
+    [
+      1,
+      4,
+      5,
+      15
+    ],
+    [
+      2,
+      2,
+      0,
+      6
+    ],
+    [
+      2,
+      3,
+      0,
+      8
+    ],
+    [
+      2,
+      4,
+      0,
+      10
+    ],
+    [
+      2,
+      5,
+      0,
+      12
+    ],
+    [
+      2,
+      6,
+      0,
+      14
+    ],
+    [
+      2,
+      7,
+      0,
+      16
+    ],
+    [
+      2,
+      8,
+      0,
+      18
+    ],
+    [
+      2,
+      2,
+      1,
+      7
+    ],
+    [
+      2,
+      3,
+      1,
+      9
+    ],
+    [
+      2,
+      4,
+      1,
+      11
+    ],
+    [
+      2,
+      5,
+      1,
+      13
+    ],
+    [
+      2,
+      6,
+      1,
+      15
+    ],
+    [
+      2,
+      7,
+      1,
+      17
+    ],
+    [
+      2,
+      8,
+      1,
+      19
+    ],
+    [
+      2,
+      1,
+      2,
+      6
+    ],
+    [
+      2,
+      2,
+      2,
+      8
+    ],
+    [
+      2,
+      3,
+      2,
+      10
+    ],
+    [
+      2,
+      4,
+      2,
+      12
+    ],
+    [
+      2,
+      5,
+      2,
+      14
+    ],
+    [
+      2,
+      6,
+      2,
+      16
+    ],
+    [
+      2,
+      7,
+      2,
+      18
+    ],
+    [
+      2,
+      1,
+      3,
+      7
+    ],
+    [
+      2,
+      2,
+      3,
+      9
+    ],
+    [
+      2,
+      3,
+      3,
+      11
+    ],
+    [
+      2,
+      4,
+      3,
+      13
+    ],
+    [
+      2,
+      5,
+      3,
+      15
+    ],
+    [
+      2,
+      0,
+      4,
+      6
+    ],
+    [
+      2,
+      1,
+      4,
+      8
+    ],
+    [
+      2,
+      2,
+      4,
+      10
+    ],
+    [
+      2,
+      3,
+      4,
+      12
+    ]
+  ],
+  "layers": [
+    {
+      "alpha": 1,
+      "r": 2,
+      "e": 0,
+      "D": 6,
+      "counts": {
+        "owners": 1,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 3,
+      "e": 0,
+      "D": 8,
+      "counts": {
+        "owners": 4
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 4,
+      "e": 0,
+      "D": 10,
+      "counts": {
+        "owners": 12
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 5,
+      "e": 0,
+      "D": 12,
+      "counts": {
+        "owners": 29
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 6,
+      "e": 0,
+      "D": 14,
+      "counts": {
+        "owners": 62
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 7,
+      "e": 0,
+      "D": 16,
+      "counts": {
+        "owners": 122
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 8,
+      "e": 0,
+      "D": 18,
+      "counts": {
+        "owners": 225
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 9,
+      "e": 0,
+      "D": 20,
+      "counts": {
+        "owners": 396
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 10,
+      "e": 0,
+      "D": 22,
+      "counts": {
+        "owners": 672
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 11,
+      "e": 0,
+      "D": 24,
+      "counts": {
+        "owners": 1105
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 2,
+      "e": 1,
+      "D": 7,
+      "counts": {
+        "owners": 2,
+        "critical": 2
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 3,
+      "e": 1,
+      "D": 9,
+      "counts": {
+        "owners": 7,
+        "critical": 6
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 4,
+      "e": 1,
+      "D": 11,
+      "counts": {
+        "owners": 19,
+        "critical": 11
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 5,
+      "e": 1,
+      "D": 13,
+      "counts": {
+        "owners": 43,
+        "critical": 8
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 6,
+      "e": 1,
+      "D": 15,
+      "counts": {
+        "owners": 88,
+        "critical": 4
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 7,
+      "e": 1,
+      "D": 17,
+      "counts": {
+        "owners": 167,
+        "critical": 2
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 8,
+      "e": 1,
+      "D": 19,
+      "counts": {
+        "owners": 301
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 9,
+      "e": 1,
+      "D": 21,
+      "counts": {
+        "owners": 519
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 10,
+      "e": 1,
+      "D": 23,
+      "counts": {
+        "owners": 866
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 11,
+      "e": 1,
+      "D": 25,
+      "counts": {
+        "owners": 1406
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 1,
+      "e": 2,
+      "D": 6,
+      "counts": {
+        "owners": 1,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 2,
+      "e": 2,
+      "D": 8,
+      "counts": {
+        "owners": 4,
+        "critical": 4
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 3,
+      "e": 2,
+      "D": 10,
+      "counts": {
+        "owners": 12,
+        "critical": 11
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 4,
+      "e": 2,
+      "D": 12,
+      "counts": {
+        "owners": 29,
+        "critical": 22
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 5,
+      "e": 2,
+      "D": 14,
+      "counts": {
+        "owners": 62,
+        "critical": 38
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 6,
+      "e": 2,
+      "D": 16,
+      "counts": {
+        "owners": 122,
+        "critical": 46
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 7,
+      "e": 2,
+      "D": 18,
+      "counts": {
+        "owners": 225,
+        "critical": 48
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 8,
+      "e": 2,
+      "D": 20,
+      "counts": {
+        "owners": 396,
+        "critical": 43
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 9,
+      "e": 2,
+      "D": 22,
+      "counts": {
+        "owners": 672,
+        "critical": 33
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 10,
+      "e": 2,
+      "D": 24,
+      "counts": {
+        "owners": 1105,
+        "critical": 21
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 1,
+      "e": 3,
+      "D": 7,
+      "counts": {
+        "owners": 2,
+        "critical": 2
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 2,
+      "e": 3,
+      "D": 9,
+      "counts": {
+        "owners": 7,
+        "critical": 7
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 3,
+      "e": 3,
+      "D": 11,
+      "counts": {
+        "owners": 19,
+        "critical": 18
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 4,
+      "e": 3,
+      "D": 13,
+      "counts": {
+        "owners": 43,
+        "critical": 36
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 5,
+      "e": 3,
+      "D": 15,
+      "counts": {
+        "owners": 88,
+        "critical": 65
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 6,
+      "e": 3,
+      "D": 17,
+      "counts": {
+        "owners": 167,
+        "critical": 112
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 7,
+      "e": 3,
+      "D": 19,
+      "counts": {
+        "owners": 301,
+        "critical": 148
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 8,
+      "e": 3,
+      "D": 21,
+      "counts": {
+        "owners": 519,
+        "critical": 171
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 9,
+      "e": 3,
+      "D": 23,
+      "counts": {
+        "owners": 866,
+        "critical": 191
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 0,
+      "e": 4,
+      "D": 6,
+      "counts": {
+        "owners": 1,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 1,
+      "e": 4,
+      "D": 8,
+      "counts": {
+        "owners": 4,
+        "critical": 4
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 2,
+      "e": 4,
+      "D": 10,
+      "counts": {
+        "owners": 12,
+        "critical": 12
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 3,
+      "e": 4,
+      "D": 12,
+      "counts": {
+        "owners": 29,
+        "critical": 28
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 4,
+      "e": 4,
+      "D": 14,
+      "counts": {
+        "owners": 62,
+        "critical": 55
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 5,
+      "e": 4,
+      "D": 16,
+      "counts": {
+        "owners": 122,
+        "critical": 99
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 6,
+      "e": 4,
+      "D": 18,
+      "counts": {
+        "owners": 225,
+        "critical": 175
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 7,
+      "e": 4,
+      "D": 20,
+      "counts": {
+        "owners": 396,
+        "critical": 278
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 0,
+      "e": 5,
+      "D": 7,
+      "counts": {
+        "owners": 2,
+        "critical": 2
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 1,
+      "e": 5,
+      "D": 9,
+      "counts": {
+        "owners": 7,
+        "critical": 7
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 2,
+      "e": 5,
+      "D": 11,
+      "counts": {
+        "owners": 19,
+        "critical": 19
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 3,
+      "e": 5,
+      "D": 13,
+      "counts": {
+        "owners": 43,
+        "critical": 42
+      }
+    },
+    {
+      "alpha": 1,
+      "r": 4,
+      "e": 5,
+      "D": 15,
+      "counts": {
+        "owners": 88,
+        "critical": 81
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 2,
+      "e": 0,
+      "D": 6,
+      "counts": {
+        "owners": 1,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 3,
+      "e": 0,
+      "D": 8,
+      "counts": {
+        "owners": 4,
+        "critical": 3
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 4,
+      "e": 0,
+      "D": 10,
+      "counts": {
+        "owners": 12,
+        "critical": 3
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 5,
+      "e": 0,
+      "D": 12,
+      "counts": {
+        "owners": 30,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 6,
+      "e": 0,
+      "D": 14,
+      "counts": {
+        "owners": 65
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 7,
+      "e": 0,
+      "D": 16,
+      "counts": {
+        "owners": 130
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 8,
+      "e": 0,
+      "D": 18,
+      "counts": {
+        "owners": 243
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 2,
+      "e": 1,
+      "D": 7,
+      "counts": {
+        "owners": 2,
+        "critical": 2
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 3,
+      "e": 1,
+      "D": 9,
+      "counts": {
+        "owners": 7,
+        "critical": 7
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 4,
+      "e": 1,
+      "D": 11,
+      "counts": {
+        "owners": 19,
+        "critical": 16
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 5,
+      "e": 1,
+      "D": 13,
+      "counts": {
+        "owners": 44,
+        "critical": 28
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 6,
+      "e": 1,
+      "D": 15,
+      "counts": {
+        "owners": 92,
+        "critical": 27
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 7,
+      "e": 1,
+      "D": 17,
+      "counts": {
+        "owners": 178,
+        "critical": 23
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 8,
+      "e": 1,
+      "D": 19,
+      "counts": {
+        "owners": 325,
+        "critical": 14
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 1,
+      "e": 2,
+      "D": 6,
+      "counts": {
+        "owners": 1,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 2,
+      "e": 2,
+      "D": 8,
+      "counts": {
+        "owners": 4,
+        "critical": 4
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 3,
+      "e": 2,
+      "D": 10,
+      "counts": {
+        "owners": 12,
+        "critical": 12
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 4,
+      "e": 2,
+      "D": 12,
+      "counts": {
+        "owners": 30,
+        "critical": 27
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 5,
+      "e": 2,
+      "D": 14,
+      "counts": {
+        "owners": 65,
+        "critical": 51
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 6,
+      "e": 2,
+      "D": 16,
+      "counts": {
+        "owners": 130,
+        "critical": 87
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 7,
+      "e": 2,
+      "D": 18,
+      "counts": {
+        "owners": 243,
+        "critical": 109
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 1,
+      "e": 3,
+      "D": 7,
+      "counts": {
+        "owners": 2,
+        "critical": 2
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 2,
+      "e": 3,
+      "D": 9,
+      "counts": {
+        "owners": 7,
+        "critical": 7
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 3,
+      "e": 3,
+      "D": 11,
+      "counts": {
+        "owners": 19,
+        "critical": 19
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 4,
+      "e": 3,
+      "D": 13,
+      "counts": {
+        "owners": 44,
+        "critical": 41
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 5,
+      "e": 3,
+      "D": 15,
+      "counts": {
+        "owners": 92,
+        "critical": 78
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 0,
+      "e": 4,
+      "D": 6,
+      "counts": {
+        "owners": 1,
+        "critical": 1
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 1,
+      "e": 4,
+      "D": 8,
+      "counts": {
+        "owners": 4,
+        "critical": 4
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 2,
+      "e": 4,
+      "D": 10,
+      "counts": {
+        "owners": 12,
+        "critical": 12
+      }
+    },
+    {
+      "alpha": 2,
+      "r": 3,
+      "e": 4,
+      "D": 12,
+      "counts": {
+        "owners": 30,
+        "critical": 30
+      }
+    }
+  ],
+  "witness": null,
+  "canonical_critical_sha256": "3f3ba4731fac7114d057d01cfa124ed0b12e995c921d069e05d852f5a93cc2cc",
+  "seconds": 0.20300000000133878,
+  "scope": "CanonicalalphaStar1/2only,ownerh>=6,kappaY9;h>=4gap6theorempaysalphaStar>=3. GenericCIcurvatureandgenuineEARLYsourcew>=2^(t-2)reducefiniteownercomplement. FullpositiveTrequiresD<=min(2d(d-3),12d-25). A PASS needsINDEPENDENTexhaustivecoverage/unboundedjoiningbeforetheoremclaim;obstructionrejectsONLYthissourcepayment,notS/C/A2/originalUI."
+}

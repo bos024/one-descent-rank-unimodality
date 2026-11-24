@@ -1,0 +1,139 @@
+{
+  "status": "PASS_UNBOUNDED_SUBDEGREE_MULTITAIL_ENTRANCE_AND_ALL_LATE_C",
+  "new_scoped_reports": 14,
+  "kernels": {
+    "SubdegreeCI": {
+      "relaxed_fourfold_row_zero": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "inverse_initial_minor_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "inverse_initial_minor_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "inverse_strict_initial_budget": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "subdegree_junction_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "subdegree_interval_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "golden_seventh_power_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "subdegree_uniform_atom_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exceptional_endpoint_negative": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_boundary_unit_alignment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "subdegree_positive_Cassini_seed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "SubdegreeCIChunkCertificate": {
+      "golden_fine_interval": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "all_scalar_margins": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "complete_actual_startup_margins": []
+    }
+  },
+  "quotient": "For EVERY CI L with AT LEAST TWO factors[t],t>=3, degree h, at EXACT u=h-1: J=((1+z)^uL-psi^u L(-phi))/(1+qz) is positive UNIMODAL; deleting rank0 makes its ordinary coefficients globally LC; qJ1>J0; its positive primitive is LC at EVERY centre>=2. Ordinary LC at first centre is NOT asserted. ONE-FACTOR version is FALSE and is NOT used. Uniform u>=16 proof uses LARGEST-interval induction, registered surplus old quotient, relaxed FOURFOLD no-degree-bound head, enlarged junction range2r<=u-1, perturbed gap u/40 and ONE exact long endpoint. COMPLETE215 low-u contexts independently reverse-divided,11853 scalar margins.",
+  "inverse_and_cut": "Generic finite positive b need only be UNIMODAL, with its positive primitive LC after deleting rank0, for the signed-primitive finite-cut theorem; full ordinary LC of b is unnecessary. Separately if b after deleting rank0 is global LC and qb1>=b0, its right-geometric inverse x is GLOBAL LC including centre0, by the exact first minor x0(qb1-b0)+qb0b1 and ordinary tail convolution. Both written assemblies reuse existing constant-cut/window kernels, with two NEW exact/positive first-inverse-minor kernels.",
+  "actual_boundary": "At u=h-1,r>=2 the ACTUAL derivative from physical W is EXACTLY the geometric quotient-cut model: its extra numerator unit gives x_(-1)=C_(u-1)+1, ALL later x_s=C_(u+s). Thus actual LC holds at ALL pre-first-mode centres W+1<=N<ell for EVERY padding. First/second source startup payments at w>=8 plus COMPLETE17 actual small-w paddings/31 minors/24 integer margins cover ALL padding, with analytic alpha>=u+1 clamp. No false identification of a previous actual read with a formal coefficient lacking its extra unit.",
+  "actual": "EVERY ACTUAL sorted nonempty V>=3, h=sum(t-1),W=sumV, EVERY binary count u>=h-1 and EVERY padding alpha>=1 satisfies EVERY C shift R>=3 at EVERY N>=W+1. NEW u=h-1,r>=2 first defect is W+1; its entrance ratio is STRICTLY below phi because conjugate error c<0. Unchanged reference cumulative reads through W exceed phi. Correct ordinary seed F_(W-1)=a,F_W=a+b has margin A_V+delta*a>0. Actual LC then finite F/G integration pays every later read. ALL one-factor tails use established complete one-jump C; u>=h uses registered degree-boundary theorem.",
+  "finite_reduction": "For EACH fixed V, shorter binary-count complement is now only 0<=u<h-1, rather than u<h. Earlier reference C at N<=W is still OPEN. General C/A2/original UI OPEN; first unresolved general-C count6 and original least-counterexample numerical bounds unchanged.",
+  "correction": "degree_boundary_read_correction.tex withdraws an UNUSED aside in the immutable degree-boundary proof claiming the ordinary seed at W can fail. Exact reference identity F_j=r_(j+2)-B_(j+2) gives F_(W-1)=r_(W+1), no added unit. Previous theorem proof uses valid F_W/F_(W+1) reads and is unaffected. NEW subdegree seed uses the corrected earlier read and has independent literal coefficient reconstruction.",
+  "formal_scope": "FOURTEEN NEW reports: ELEVEN SubdegreeCI scalar/relaxed-row-zero/inverse/junction/power/endpoint/alignment/Cassini-seed kernels and THREE SubdegreeCIChunkCertificate fine-root/ALL11853-field/ALL24-integer certificates, last AXIOM FREE. Ordinary Lean reduction over31 chunks; no native axiom. Independent capacity-multiset grammar/reverse polynomial division covers all215 low-u quotients; independent positive SUFFIX-BOX sums cover all17 actual startup hosts, not the iterated append used by QA. ULC/window/LC convolution, UNIMODAL-b cut assembly, actual source identification, mode/padding/all-read integration are written proofs, not end-to-end Lean of all compositions. Old kernels reused without recounting.",
+  "remaining": "0<=u<h-1; earlier arbitrary-tail reference C N<=W; general C/A2; original deep/mixed/incoming branches; ORIGINAL general unamplified one-descent UI OPEN. NO original numerical least-counterexample improvement.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "independent_small_contexts": 215,
+  "independent_actual_startups": 17,
+  "independent_actual_startup_minors": 31,
+  "field_margins": 11853,
+  "integer_margins": 24,
+  "QA": {
+    "complete_small_positive_entries": 5539,
+    "complete_small_ordinary_after_first_minors": 4894,
+    "complete_small_later_primitive_minors": 4894,
+    "complete_small_inverse_first_centre_budget": 215,
+    "complete_small_actual_startup_minors": 31,
+    "relaxed_fourfold_row_zero": 2610,
+    "entire_subdegree_positive_entries": 171394,
+    "entire_subdegree_ordinary_after_first_minors": 168094,
+    "entire_subdegree_later_primitive_minors": 168094,
+    "strict_inverse_initial_budget": 1100,
+    "global_inverse_LC_including_initial_centre": 171394,
+    "exact_actual_extra_unit_inverse_alignment": 1100,
+    "exact_interval_primitive_identity": 1082,
+    "uniform_subdegree_junction_gap": 1077,
+    "exact_reference_negative_conjugate_and_seed_geometry": 1100,
+    "actual_subdegree_pre_mode_LC": 451109,
+    "all_actual_late_C_prefix_minimum": 1276106,
+    "exact_positive_Cassini_single_seed_payment": 6536,
+    "literal_actual_geometric_model_identification": 1022372,
+    "actual_subdegree_contexts": 6536,
+    "exceptional_long_interval_negative_endpoint": 5
+  },
+  "state_sha256": "60362ddf4a7d08dc14025a3bf2dab9cc89dd65fbee089fd3e1d6bdc9cc603186",
+  "sha256": {
+    "subdegree_CI_entrance_proof.tex": "9a628bd22389e30e5f70d8615cde47d48b7d5eb7d90cbe5e2029070959342b3f",
+    "SubdegreeCI.lean": "b374032b37d9e592af118a7bc4eee23d860e06c5b0992bcc96b23b0fe15cbb40",
+    "SubdegreeCI.log": "6326cf560c79e4ed3c616a3476221d3bdbb12bc27fde6d5f31b0800e13315bd8",
+    "SubdegreeCIChunkCertificate.lean": "879e31a12ff37afcfc688434bf96673eea222be1a35ca2d9ecbd357685c1851a",
+    "SubdegreeCIChunkCertificate.log": "755965d5d92a990955bfe6c2fc76726269946db3b78eb87e3b16cf2bcb86809a",
+    "audit_subdegree_CI_entrance.py": "4c7c7722f42d8881bde8945ffcb5dba7ff41c6b0b2648df46bb5b9915ad1057b",
+    "audit_subdegree_CI_entrance.json": "03c386787e4b9e0eac69f606d3dd2c4edf7fdee28f03656e3f5dc795ddb8d8af",
+    "emit_subdegree_CI_certificate.py": "05028773f428a4fa7d18f3599988f87261766479b3dc8c2e7cfcbf3b27e8329a",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "degree_boundary_read_correction.tex": "7d2b21306e1957060ecb7c3736691ed8c23a0e4a5e492cb60601c3f5e7b6b12d",
+    "degree_boundary_CI_entrance_verification.json": "fd6fbee14ec008ca7c0fb94b9f723f6c0a84ad36a965c7b2d1dbdf50fbf9c075",
+    "degree_boundary_CI_entrance_proof.tex": "5de8e4eef280a67cfdd2ed9dce1a24585313bf7dc27f2804af7e31f813f99e62",
+    "all_padding_CI_entrance_verification.json": "17740524c775a089847144d6c498b0bcda4a047f861e9943dfd6a2fd9d20e518",
+    "all_padding_CI_entrance_theorem.tex": "22ec8e9733ccadafdc9ba5eb08757ee485f9d9e1077d739b1792c759ed7ecba8",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "divided_CI_later_primitive_proof.tex": "6b1c6b9d43ff5c140785cce9d3a6404621e54895817cba6ac5dc11b593ee065a",
+    "infinite_padding_full_deficit_LC.tex": "062aa2d99ab192b2e40a200958dba5b06b7a0e05dbaf16601c70a3dcb0081d78",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338",
+    "general_one_jump_complete_C.tex": "9085604bc0ca4acaec6088a911ed0969cadcb7e899c1ecbe2730bc5000eedafb"
+  }
+}

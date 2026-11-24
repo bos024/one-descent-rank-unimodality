@@ -1,0 +1,148 @@
+\section{Binomial rank-ratio control for products of intervals}
+Let $K$ be a product of finite interval polynomials, of degree $m$.
+It is symmetric and unimodal and positive at every rank $0,\ldots,m$.
+
+\begin{theorem}[An upper rank-ratio comparison]
+For $1\le n$ and $2n\le m+1$,
+\[
+                      nK_n\le(m-n+1)K_{n-1}.          \tag{1}
+\]
+Thus for $0\le a\le j\le m/2$,
+\[
+          \frac{K_j}{K_a}\le
+                         \frac{\binom mj}{\binom ma}. \tag{2}
+\]
+This is not normalized binomial log-convexity; that stronger
+assertion has actual interval-product counterexamples.
+\end{theorem}
+\begin{proof}
+Define ${\cal D}_mK=(1+z)K'-mK$. It is antisymmetric about
+$(m-1)/2$, with support contained in $[0,m-1]$.
+For a single interval $[m+1]$ its rank-$i$ coefficient is
+$2i+1-m$, hence is nonpositive on the left of that center.
+
+Convolution of a left-nonpositive antisymmetric sequence $H$,
+of degree bound $h$, with a symmetric unimodal sequence $L$
+of degree $d$ preserves left nonpositivity. Indeed pair
+$i<h/2$ with $h-i$. At rank $n\le(h+d)/2$ the pair contributes
+\[
+                  H_i\{L_{n-i}-L_{n-h+i}\}\le0,
+\]
+since the first index is at least as close to $d/2$ as the second.
+All zero-extended boundary indices satisfy the same comparison.
+Use the Leibniz identity
+${\cal D}_{m+d}(KL)=L{\cal D}_mK+K{\cal D}_dL$
+to induct on the factors. The rank-$(n-1)$ coefficient is exactly
+$nK_n-(m-n+1)K_{n-1}$, proving (1). Multiplication of these
+adjacent comparisons gives (2).
+\end{proof}
+
+\begin{theorem}[A uniform shifted first-difference payment]
+Suppose $m\ge2^{30}$, $d\ge0$, $d^2\le4m$, and $j\ge1$.
+Then
+\[
+                     K_{j+d}\ge K_j-K_{j-1}.          \tag{3}
+\]
+The inequality is strict whenever the right side is positive.
+\end{theorem}
+\begin{proof}
+Only $K_j>K_{j-1}$ needs consideration, so $2j\le m$.
+If $j+d\le m-j$, symmetry and unimodality give
+$K_{j+d}\ge K_j>K_j-K_{j-1}$.
+Otherwise put $a=m-j-d$ and $L=j-a=2j+d-m>0$.
+The degree hypothesis and $d^2\le4m$ give $16384d\le m$;
+in particular $d\le m/64$ and $a\ge0$.
+
+By symmetry and (2),
+\[
+ \log\frac{K_j}{K_{j+d}}
+ \le\sum_{r=a+1}^j\log\left(1+\frac{m-2r+1}{r}\right)
+ \le\frac{64}{31m}\sum_{r=a+1}^j(m-2r+1).
+\]
+Here $r\ge m/2-d\ge31m/64$. The last sum is exactly $Ld$,
+and $L\le d$, so the last bound is at most $256/31<17/2$.
+Since $e<11/4$ and $(11/4)^{17}<2^{26}$,
+\[
+                         K_{j+d}>2^{-13}K_j.           \tag{4}
+\]
+On the other hand (1) gives
+\[
+ \frac{K_j-K_{j-1}}{K_j}
+ \le\frac{m-2j+1}{m-j+1}
+ \le\frac{2d}{m}\le2^{-13};                           \tag{5}
+\]
+the middle bound uses $2j+d>m$ and integrality.
+Combining (4) and (5) proves (3), with the stated strictness.
+The generous numerical threshold is explicit and is not asserted optimal.
+\end{proof}
+
+\section{Complete large-weight later budgets in the heavier-opposite orientation}
+Let $X,Y$ be actual normalized increasing arms with weights $c<b$,
+write $\kappa=\kappa(X)$, $B=q_Y$, $p=e_XB$, and $s=b-c$.
+
+\begin{theorem}[All later budgets for a sufficiently heavy opposite]
+Suppose
+\[
+       b\ge2^{31},\qquad j>s,\qquad
+                         2j\le b-\kappa+1.
+\]
+Then
+\[
+ p_{c+j-1}-p_{c+j}\ge B_j-2B_{j-1}+B_{j-2}.           \tag{6}
+\]
+It is strict when the right side is positive.
+No old full-mixed or deficit-quasi hypothesis is needed for this estimate.
+\end{theorem}
+\begin{proof}
+The left side is nonnegative by the general actual layer-center
+bounds, so only positive right side needs proof.
+If $B_j\le B_{j-1}$, the large-weight declining-source theorem
+already proves (6), strictly, since $b\ge4096$.
+
+Suppose $B_j>B_{j-1}$. Let $h$ be the non-one count of $Y$
+and $K_Y$ its main box, of degree $m=b-h\ge(b+1)/2\ge2^{30}$.
+The proved relative-growth theorem gives
+\[
+               B_j-2B_{j-1}+B_{j-2}\le(K_Y)_j-(K_Y)_{j-1}.
+\]
+Set $d=\kappa-2$. Actual universality and $c<b$ imply
+$d^2\le\kappa(\kappa-1)\le2c<2b\le4m$.
+The preceding interval-product theorem therefore gives
+\[
+       B_{j+\kappa-2}\ge(K_Y)_{j+d}
+                   >(K_Y)_j-(K_Y)_{j-1}.
+\]
+Finally the lowest height interval $[0,c+1-\kappa]$ of $e_X$
+contributes exactly $B_{j+\kappa-2}$ to the drop at $c+j>b$.
+Every remaining layer product is nonincreasing there by the
+same upper-center bounds. This proves (6), strictly.
+\end{proof}
+
+The new theorem closes both source signs for the stated orientation
+and range. It does NOT prove general mixed membership: weights below
+$2^{31}$, the opposite weight order and all induction/append join
+conditions still have to be handled. In particular no finite reduction
+of the unrestricted original conjecture is inferred here.
+
+\begin{theorem}[Extension across the old weight boundary]
+The same conclusion (6), with the same strictness, holds under
+the more general hypotheses
+\[
+ b\ge2^{31},\quad c\le b+\kappa(X)-1,\quad j\ge1,
+ \quad c+j>b,\quad 2j\le b-\kappa(X)+1.               \tag{7}
+\]
+\end{theorem}
+\begin{proof}
+For the rising source the main-box argument is unchanged:
+\[
+ (\kappa-2)^2\le2c-3\kappa+4
+                  \le2b-\kappa+2\le2b\le4m.
+\]
+For the declining source put $n=b-j+2$.
+Conditions (7) give
+$c\le2b$, $\max(c,b)\le2(n-2)$, and $2n\le c+b+4$.
+The more general form (9) of the density-curvature theorem applies.
+All old mixed-layer products decrease at rank $c+j>\max(c,b)$,
+so the nonpositive-curvature and lowest-layer arguments still hold.
+This proves the extension.
+\end{proof}

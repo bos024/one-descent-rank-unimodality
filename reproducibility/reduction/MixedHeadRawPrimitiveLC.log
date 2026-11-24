@@ -1,0 +1,5 @@
+'MixedHeadRawPrimitiveLC.direct_raw_source_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedHeadRawPrimitiveLC.arbitrary_ordinary_opposite_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedHeadRawPrimitiveLC.strict_height_direct_payment' depends on axioms: [propext, Classical.choice, Quot.sound]

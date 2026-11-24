@@ -1,0 +1,69 @@
+\section{Finite profiles for unbounded arms}\label{sec:profiles}
+For a polynomial $F_Z$ of degree $c$, write $F_Z\rev=z^cF_Z(1/z)$. The results in this section permit any fixed part bound. No length bound is assumed.
+
+\begin{lemma}[Deletion of an initial part]\label{lem:prefixreverse}
+If $t\le\min U$, then $F_{tU}\rev-F_U\rev$ is coefficientwise nonnegative.
+\end{lemma}
+\begin{proof}
+Let $u=\wt U$, $\RR_U=\prod_{v\in U}S_v$, $T_U=\prod_{v\in U}[v]$, and
+\[
+ K_U=(1-z)F_U+z\RR_U.
+\]
+The polynomial $K_U$ counts the empty word and the smaller words whose first letter is at least two. To verify this interpretation, both sides satisfy $K_{Ut}=1-z+S_tK_U$ with initial value one. Thus $K_U\ge0$ and its degree is at most $u$. Expanding the monotone-arm recurrence at the initial part gives $F_{tU}=F_U+S_t\RR_U$. On reversing, this yields
+\[
+ F_{tU}\rev=z^tF_U\rev+[t]T_U.
+\]
+The definition of $K_U$ also gives $zK_U\rev=T_U-(1-z)F_U\rev$. Consequently
+\begin{equation}\label{eq:prefixpositive}
+ F_{tU}\rev-F_U\rev=z[t]K_U\rev\ge0.
+\end{equation}
+The argument permits $t=1$ and empty $U$.
+\end{proof}
+
+\begin{lemma}[Capping multiplicities]\label{lem:capping}
+Replace each multiplicity in an increasing arm $Z$ by its minimum with an integer $L\ge1$, obtaining $\bar Z$.
+\begin{enumerate}
+\item The coefficients of $F_Z$ and $F_{\bar Z}$ agree through degree $L$.
+\item For $k<L$, $(F_Z\rev)_k\ge(F_{\bar Z}\rev)_k$.
+\item For a fixed legal peak $M$, put $\delta_Z=z^{\wt Z+M}D_Z(1/z)$. For $k<L$, $(\delta_Z)_k\ge(\delta_{\bar Z})_k$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+A smaller word of weight at most $L$ has at most $L$ letters. In an increasing host, any embedding of such a word can be moved to the last $L$ positions, or all positions if there are fewer. Capping retains those positions, so it changes no such word.
+
+The exact reversed recurrences are
+\begin{equation}\label{eq:reverseappend}
+ F_{Zt}\rev=[t]F_Z\rev+z^{\wt Z+t},\qquad
+ \delta_{Zt}=[t]\delta_Z+z^{\wt Z+t}[M-t].
+\end{equation}
+Reinsert removed copies after the $L$ retained copies in their equal-letter block. At the first reinsertion the prefix weight is at least $L$. Thus every new correction monomial has degree greater than $L$, including those at later append steps. Modulo $z^L$, reinsertion only multiplies the already nonnegative reversed polynomial by $[t]$, whose constant coefficient is one. Later append operations also preserve coefficientwise inequalities. Repeating this for each clipped block proves both comparisons.
+\end{proof}
+
+\begin{theorem}[A general high-layer criterion]\label{thm:generalhigh}
+Let $m,r,N$ be integers with $m,r\ge2$ and $N\ge r$. Put
+\[
+ J=(r-1)m,\qquad K=\max(0,J-r).
+\]
+Assume
+\begin{equation}\label{eq:binomialcondition}
+ \binom Nk\ge2^{r+k-1}\quad(1\le k\le K).
+\end{equation}
+If an increasing arm $Y$ has parts at most $m$, at least $N$ non-one parts, weight $b$, and coefficients $p_j$, every layer of height greater than $p_r$ has endpoint sum at least $b+r$. A convenient sufficient condition for~\eqref{eq:binomialcondition} is
+\begin{equation}\label{eq:generalcutoff}
+ N\ge\max\{r,2^r,3K-1\}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Since $b\ge2N\ge2r$, the coefficients through rank $r$ are nondecreasing. Peel the last $r$ parts. The append recurrence expresses $F_Y=B+G$, where $\deg B\le(r-1)m=J$, $B\ge0$, and $G$ is the product of the remaining arm polynomial with the $r$ corresponding $S_t$ factors. Its interval-product summands have centers at least $(b+r)/2$. Thus reflection about $(b+r)/2$ holds at every left index $j>J$.
+
+For $r<j\le J$, put $k=j-r$. Expansion of the reversed recurrence~\eqref{eq:reverseappend} contains the product of all $[t]$ factors as a nonnegative summand. Every non-one factor contains $1+z$, so
+\[
+ p_{b+r-j}=(F_Y\rev)_k\ge\binom Nk\ge2^{j-1}\ge p_j.
+\]
+The last inequality counts all compositions of weight $j$. Indices $j\le r$ cannot start a layer of height greater than $p_r$. The same left-endpoint contradiction as in~\eqref{eq:comparison} proves the layer assertion.
+
+For the sufficient condition, $\binom N1=N\ge2^r$. For $2\le k\le K$, the ratio of successive binomial coefficients is $(N-k+1)/k\ge2$, because $N\ge3K-1$. Induction gives~\eqref{eq:binomialcondition}. If $K=0$, there are no binomial inequalities to check.
+\end{proof}
+
+
+

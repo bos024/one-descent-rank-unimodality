@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXACT_QA_WRITTEN_UNBOUNDED_INFINITE_PADDING_CI_ENTRANCE",
+  "counts": {
+    "independent_positive_binomial_expansions": 4092,
+    "exact_ULC_kernel_minors": 4004,
+    "exact_quantitative_all_read_kernel_budgets": 117392,
+    "exact_generic_LC_numerator_robust_budgets": 56749,
+    "generic_LC_numerators": 1600,
+    "exact_entire_CI_amplitude_budgets": 2400,
+    "independent_exact_geometric_deficit_identities": 151201,
+    "exact_LC_geometric_deficit_minors": 146401,
+    "exact_entire_infinite_padding_CI_tail_LC_minors": 312339,
+    "exact_backward_LC_transport_identities": 146401,
+    "actual_CI_infinite_padding_contexts": 2400,
+    "exact_large_padding_pre_first_mode_LC_minors": 50388,
+    "exact_large_padding_actual_all_read_prefix_minimum_C_payments": 110238,
+    "large_padding_logical_shift_coverage": 18784616,
+    "actual_large_padding_mode_and_late_C_contexts": 800
+  },
+  "state_sha256": "706195b547c513ce27289948008efaafe7cc2dab7078eed8f48e00756b79c460",
+  "seconds": 5.719000000000051,
+  "scope": "Exact finite QA of the written unbounded proof and specified large-padding corollary. At the single entrance only alpha<=h remains unhandled here. Generic two-seed closure, general C, A2 and original UI remain OPEN."
+}

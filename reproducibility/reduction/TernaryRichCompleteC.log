@@ -1,0 +1,16 @@
+'TernaryRichCompleteC.exterior_square_tribonacci_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.signed_third_order_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.full_tribonacci_minor_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.universal_tribonacci_previous_minor_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TernaryRichCompleteC.central_integer_budget_implies_relative_LC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TernaryRichCompleteC.first_ternary_loss_minor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.second_ternary_loss_minor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.strict_integer_concavity_minor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.positive_three_window_minor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.exact_all_padding_clamp' depends on axioms: [propext, Quot.sound]
+'TernaryRichCompleteC.later_three_window_old_minor_reads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryRichCompleteC.strict_mode_transition_read_guards' depends on axioms: [propext, Classical.choice, Quot.sound]

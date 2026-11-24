@@ -1,0 +1,256 @@
+{
+  "status": "PASS_UNBOUNDED_ACTUAL_DYADIC_SLOPE_THINNESS_AND_ALL_KAPPA_TWENTY_PLUS_MIXED_CLOSED_S",
+  "new_scoped_reports": 14,
+  "kernels": {
+    "ActualDyadicSlopeNorm": {
+      "ActualDyadicSlopeNorm.whole_capacity_eval_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSlopeNorm.whole_arbitrary_capacity_fold_invariant": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSlopeNorm.whole_actual_seed_and_word_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSlopeNorm.whole_arbitrary_tail_preserves_plus_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "ActualDyadicSlopePowers": {
+      "ActualDyadicSlopePowers.whole_dyadic_power_block": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSlopePowers.whole_first_missing_twenty_triangle_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSlopePowers.whole_large_read_exponential_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSlopePowers.whole_bulk_Cauchy_to_signed_slope": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "ActualDyadicSourcePayment": {
+      "ActualDyadicSourcePayment.whole_indexed_owner_raw_gap": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSourcePayment.whole_generic_signed_dyadic_prefix_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSourcePayment.whole_doubling_all_subreads": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSourcePayment.whole_nonnegative_weighted_source_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSourcePayment.whole_indexed_gap_thin_slope_excludes_recovery": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ActualDyadicSourcePayment.whole_high_first_missing_degree_and_birth_guards": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "whole_norm": "EVERYformal1^betaV,beta>=0,allorderedORunsortedcapacities>=2: F(3/5)+125/22<=10*(35/32)^M,M=beta+sum(t-1). ENTIREarbitraryappendFOLDkernelchecked;S_t(3/5)<=b^(t-1);t>=3offsetpaysunit,binaryexactmargin97/880. WHOLEtailplus2<=c^n(Fprefix+2)<=10c^n b^Mprefix retainsnegativeoffset.",
+  "slope_thinness": "ANYACTUALY/kappa>=20,mainCIdegreeM/largestdegreeB/stricthead sY=min(floor(M/2),M-B): EVERYm>sY has m*SIGNEDDeltaFY(m)<=2^m. Forcedlastn=kappa-2capacities>=2..n+1=>triangledegree;Cauchybulkuseswholem q^m<=224,2240c^n<=b^triangle(n). Other-degreebranchstripslastlargestcapacityORuseszero-seedpositiveformalwordifinitialintervallargest;wholelarge-read10(j+1)(175/192)^j<=1fromj100. ALLcounts/capacities/padding/weightsunbounded;NOwordenumerationpremise.",
+  "indexed_source_gap": "ANYactualmixedownerh>=2/r>=0/C>0: (j+1)*(2qZ_r-qZ_(r-1))>=4qZ_(r+1). WHOLEr0/r1/r>=2proofusesactualOsequenceHilbertupper/skeletoncenter/count-weightguards. WHOLEsigneddyadicprefixidentity+WHOLEdoubling-subreads+nonnegativefiniteconvolution=>positiveT forces (j+1)DeltaFY(j+1)>2^(j+1). Includesrank-twoCORRECTIONexactly;notanassumedscalarpayment.",
+  "recovery_head": "ANYmixed/source-prefixpositiveQrecoverywithr>=0andrisingoppositekappa>=20=>j+1<=sY. ThisusesACTUALoppositemainM/largestB,retainingcapacitycoupling. ALLproperBOTHwindowheadsk+1<=j-2areinsideACTUALstrictDeltaqY>=1;RAWownersafebeforea. OneheadtermpaysABSOLUTEr<k;frozenRAWrelative+1paysr>=kincludingCLOSEDsourceEQUALITY. Negative-rbirthsusefirstbirthorunitconstanthead.",
+  "mixed_closed_S": "ENTIREproperMIXED/source-prefixCLOSEDgapSprovedforEVERYrisingoppositekappa>=20. PositiveTpaidwithoutC/OLDglobalA2;nonpositiveTusesusualOLDnonnegativeheadbudget. Bothstrictwindows,current0<=E_n<=E_k,correctsourceprefixandownerphaseRETAINED. NoFIRSTHALF/count/capacity/weightrestriction. NOwholeRAWsourcewindowUIclaim.",
+  "remaining": "GeneralMIXEDproper-sourceobstructionnowONLYrisingoppositekappa13..19,afterfrozenmax12resourcesandnewUNBOUNDEDkappa>=20theorem. ForK<=19frozenownerbounda<=24K-73<=383,D<=191;oppositecapacities/paddingstillneedcoupledproof. GENERALhighercapacityC/bothrisingresource,UNRESTRICTEDA2andORIGINALconjectureOPEN.",
+  "formal_scope": "FOURTEENnewstandardaxiomreports:4WHOLEcapacity/fold/seed/tailnorm,4WHOLE224-powerblock/triangle/large-read/bulkpayment,6WHOLEindexedowner-gap/genericsignedprefix/doubling-subreads/completeweighted-sourcebudget/completegap-thinness-recoveryexclusion/unboundeddegreeguards. Actualword-to-Cauchy/first-missing-staircase/Hilbert/CI/headrelativeassemblyWRITTENusingfrozeninputs,NOTendtoendLeancompositions. NOFINITEWORDPROOFPREMISE. IndependentexactconstantsandALLadditionalactualprofilesQAONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "exact_constant_certificate": [
+    {
+      "kind": "interval_norm",
+      "t": 2,
+      "numerator": 107,
+      "denominator": 800
+    },
+    {
+      "kind": "interval_norm",
+      "t": 3,
+      "numerator": 2597,
+      "denominator": 128000
+    },
+    {
+      "kind": "interval_norm",
+      "t": 4,
+      "numerator": 58187,
+      "denominator": 20480000
+    },
+    {
+      "kind": "interval_norm",
+      "t": 5,
+      "numerator": 156459077,
+      "denominator": 3276800000
+    },
+    {
+      "kind": "all_large_capacity_norm",
+      "numerator": 2190227,
+      "denominator": 33554432
+    },
+    {
+      "kind": "binary_step_margin",
+      "numerator": 97,
+      "denominator": 880
+    },
+    {
+      "kind": "whole_power_block_base",
+      "numerator": 130106459346307701633803290511223738674429140689546628669319358190831262103197888409206226265891753896164677682615574615923594318232149868795755418486669214588361719277581839719655520269282722575733766981580548966520640598584363168353921938216595231910712375277192601933696405760800381454580388533652136478937868505658372051537948167222880947933009106633613786068270766116618810941717413861529712535177718151395819987165641954851572238172675836279268011569510660336415112579606828740950154330749640604593210707125110221105349352608535542281474859008942859654818980253433009910022282056370099671128258283077872129388946029839862651363819754248687281245816225116438214253146576811382384830236936509167673247854774175686229073382707300844611496727913413443103380732902701025945245122027893141509394253131349188161046803825912499081019730518918865023,
+      "denominator": 410270578011558663143186424965696306026332612321976503192362890396341920785504949866086540954627695864192652312099627191790917620589843037346323931044691458028337483090451897746464169734201982147010777675204401287621770809992559864528640411000055967720546758672808275334181665690029926114356863346905794036515894379800175538309002904279644121489436774895391173057438776915208935566569253621644050799466070884576271205463215104211007981634867398591711471811435152419721692882720333089177508667361086533786265005739492180687438450134982082150115186201787159649342311819216957136579087950083113090978108235560213955429208210716927223910204280251276722835779919997586587670601541796211781716339708598505032065348585007391871861087056170109947951315439572965110025751695617655903389593547320142674548322340419789766693179600335044954396136941811763511296
+    },
+    {
+      "kind": "whole_triangle_base",
+      "numerator": 290203415085396320840342298403533690167518194348703912830273483231923420238167577303751582235266847482777020443674377085754359168801485822630850400621117488087248933641267666068898610440990662788827279581164736938739880167804620941451191268603625804880009451796955,
+      "denominator": 240240538521750407359077046256296219561976306993584113173692780504404210003815414654317126354570604187153728613910574803813846101321671784376366749012476965121271261522908882474772107196452653194239352573372884036938570849429907747816467644391667125314387968
+    },
+    {
+      "kind": "whole_large_read_base",
+      "numerator": 967636129551230732253395623851246248919821503362331058152615858796430331874178212024427275401310040170800099282274441706119980272343045475644235948093597077364880523657934729914342220329345792220393882786839310307614679626213063,
+      "denominator": 1069283523064383870414340757900689900548430782852069253072165208928820994701822084370788766627122141589143787487871922214247385390414201322151349369052568631936895230824468064162648715038649063715709240029200952727906580260978688
+    }
+  ],
+  "independent_counts": {
+    "independent_ALL_actual_signed_slope_reads": 12700,
+    "independent_bulk_Cauchy_branch_reads": 12700,
+    "independent_positive_suffix_FULL_fold_evaluations": 36,
+    "independent_EXACT_actual_mixed_source_identities": 2184,
+    "independent_actual_mixed_pairs": 144,
+    "independent_POSITIVE_actual_recovery_strict_head_bound": 144,
+    "independent_ALL_proper_CLOSED_mixed_head_payments": 350
+  },
+  "primary_QA": {
+    "triangle_penalty_constant_QA": 133,
+    "dyadic_block_and_large_read_power_QA": 1501,
+    "WHOLE_unsorted_positive_and_zero_seed_norm_controls": 300,
+    "ALL_actual_owner_critical_indexed_raw_gaps": 432984,
+    "complete_small_owner_profiles_QA": 47937,
+    "ALL_actual_signed_slope_reads_OUTSIDE_strict_CI_head": 52900,
+    "independent_positive_suffix_box_controls": 26,
+    "actual_first_missing_twenty_plus_profiles_QA": 125,
+    "WHOLE_generic_signed_dyadic_prefix_identity_QA": 300
+  },
+  "independent_state_sha256": "e9dfbbb98eb3a2e96c086152b6af507398aa78a0927af71fd1b8d8630f89e940",
+  "seconds": 0.6090000000040163,
+  "local_files": [
+    "actual_dyadic_slope_thinness_and_high_source_mixed_S_proof.tex",
+    "ActualDyadicSlopeNorm.lean",
+    "ActualDyadicSlopeNorm.log",
+    "ActualDyadicSlopePowers.lean",
+    "ActualDyadicSlopePowers.log",
+    "ActualDyadicSourcePayment.lean",
+    "ActualDyadicSourcePayment.log",
+    "audit_actual_dyadic_slope_thinness.py",
+    "audit_actual_dyadic_slope_thinness.json",
+    "verify_actual_dyadic_slope_thinness.py",
+    "actual_dyadic_slope_thinness_verification.json",
+    "verify_actual_dyadic_slope_thinness_large_factor_branches.py"
+  ],
+  "dependency_files": [
+    "ordinary_lefschetz_realization.tex",
+    "audit_ordinary_lefschetz.py",
+    "audit_ordinary_lefschetz.json",
+    "source_birth_gap_nonrecovery.tex",
+    "source_curvature_linear_owner.tex",
+    "source_birth_gap_refinements.tex",
+    "arbitrary_source_gap_finite_owner.tex",
+    "mixed_head_raw_primitive_LC.tex",
+    "MixedHeadRawPrimitiveLC.lean",
+    "MixedHeadRawPrimitiveLC.log",
+    "agent_mixed_strict_head_74.tex",
+    "agent_mixed_strict_head_74_verification.json",
+    "ordinary_rooted_caterpillar_model.tex",
+    "first_defect_mass.tex",
+    "first_missing_twelve_original_criterion_verification.json",
+    "first_missing_twelve_original_criterion_proof.tex",
+    "coupled_source_kappa_nine_verification.json",
+    "coupled_source_window_A2_and_kappa_nine_original_proof.tex",
+    "binary_ternary_A2_original_family_proof.tex",
+    "C_to_coupled_S_rising_window.tex",
+    "agent_bothdeclining_first_birth.tex",
+    "agent_half_lc_actual_weak_curvature.tex",
+    "verify_binary_ternary_A2_original_family.py",
+    "verify_subdegree_CI_entrance.py",
+    "audit_joint_structure.py",
+    "probe_binary_first_defect_ordinary_tail.py"
+  ],
+  "sha256": {
+    "actual_dyadic_slope_thinness_and_high_source_mixed_S_proof.tex": "78a55b9bd8afcea31e3e50c4c7337f1152246cadd3f8c126eec321b253f8e1f5",
+    "ActualDyadicSlopeNorm.lean": "90501cdcd6ac3d2fc59650ac4e83dd249f1ef6317307d8d5f573e3d88b9b127b",
+    "ActualDyadicSlopeNorm.log": "abd7c8bc8a56e7a5c624a746b6ff965c99ecaa20736d8018ccbd123ef858bab5",
+    "ActualDyadicSlopePowers.lean": "df001adabb0fc7d250ec380033a69ec29d47bcb7eda4b0085de4d275a1ab16ab",
+    "ActualDyadicSlopePowers.log": "fb9ffacfd34ebae97490cbcec35d9ed946519d1ea3a4922aece9af80c4a94fa5",
+    "ActualDyadicSourcePayment.lean": "349871bd9bed0fae034ad5cd27b7f34dbc7d2aa1039018d9146a6afed60aa8c2",
+    "ActualDyadicSourcePayment.log": "8a1423134789ba563ed52f67584443ad584b4ecdbd8210a0fdb309f7fb770991",
+    "audit_actual_dyadic_slope_thinness.py": "7af30f3ac6683674486174406e812bcc8daa9472982b22d35a48c8ecb3694bdb",
+    "audit_actual_dyadic_slope_thinness.json": "27291bf92efa5a026a6ad4d7180ad5cbc198834c4d35dfe53b117ee38bb884d9",
+    "verify_actual_dyadic_slope_thinness.py": "d6e8fece180bfa636acda1aa6b3dd11d4fa308e42b0a799e75d59e6280f47d60",
+    "ordinary_lefschetz_realization.tex": "aef04477ad0fbd3ee7a3dfa98903c14aa0a86273b82ba281ea909ab7039313f8",
+    "audit_ordinary_lefschetz.py": "b663e5532b3206569aa36a2c6ceebeb9dc3e8092c3c0c6dae57d4bc29f5bdca8",
+    "audit_ordinary_lefschetz.json": "0f2f7cb75d93918e23872ad46ade80aa411255914b3209d275027d7471e50b15",
+    "source_birth_gap_nonrecovery.tex": "e3b634da5a447e575a38a5075d6e805e33a6dd5af6dad157371d70e66a839d90",
+    "source_curvature_linear_owner.tex": "ed7c07029303d74ff64ff1da3181a2840cc3f60548d1257e375946438a178e45",
+    "source_birth_gap_refinements.tex": "737f00f954eee291dde67b6327737bd7c67251ba3d78e4efa813977987251e7d",
+    "arbitrary_source_gap_finite_owner.tex": "b9799892cf64b0d0e9d36799c69125eafd660a51c893227b15613a253f48ab4e",
+    "mixed_head_raw_primitive_LC.tex": "dd5a71fcfaea050cd913d9895e3cb27f462d2be1582f7178afaf1a66f9366faa",
+    "MixedHeadRawPrimitiveLC.lean": "b867d7b226ec1d4013b72a9f1c60c20559a00977533efda928335792c8bedbb5",
+    "MixedHeadRawPrimitiveLC.log": "8c232b0ddd22c733637faeade315c1df4887526a4b24d8c93641558022413e0f",
+    "agent_mixed_strict_head_74.tex": "7c3612400c419aa634dd702562e25f1432fdb65a415132611bb23f5e00b28587",
+    "agent_mixed_strict_head_74_verification.json": "6b46242b08d06dc12cceba47429a856cca4123f103f745508397011e25e8a8e3",
+    "ordinary_rooted_caterpillar_model.tex": "2325d255e2c49e48e6e2669c223cf406ca83ccd467681560f82fae4597d8bd99",
+    "first_defect_mass.tex": "10d0b55ba8e034d51df132cec6c16ff3a50ab0c458a5c11b761287313e0c19af",
+    "first_missing_twelve_original_criterion_verification.json": "8d8035f28bd23ddbb996ae65a01d69b9900f7c70a7e9d50492e9c22e1f818308",
+    "first_missing_twelve_original_criterion_proof.tex": "3eea816138a0be3cb9ed89101d25a54492c7d948aeebff0fbe33e9c8f0df7c5c",
+    "coupled_source_kappa_nine_verification.json": "afbd93599a46ceb70524d00cf5b53df69e116047ac476c2366d9b4cf128e259f",
+    "coupled_source_window_A2_and_kappa_nine_original_proof.tex": "b65c3109a0716fc83ff0f884b4e1839e42143f31fde3892aa490c139b5cadb24",
+    "binary_ternary_A2_original_family_proof.tex": "956160d8e49eaa86fbb62f8f63cacbbc411bfc2e7f2fac3bd4cf3003512ae393",
+    "C_to_coupled_S_rising_window.tex": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "agent_bothdeclining_first_birth.tex": "c646a7eddfb2486a02136832a5dc19f99021f807100ddffac346ba95e22478e9",
+    "agent_half_lc_actual_weak_curvature.tex": "0191ec32500869be5d687ece5be011db4de6df7cfe47bf6cd1186ab4bc0b7674",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "audit_joint_structure.py": "fdfbbf3f52a18c9370aea78dab7f1ffbb2f2371d4d6a1ea882fd1d17028f2f61",
+    "probe_binary_first_defect_ordinary_tail.py": "4479b6cdbd6c83394195c7a368d47eff514a0cd0cfdb9a82882d13f2c15df3bd",
+    "actual_dyadic_slope_thinness_verification.json": "bdb1e4cbd46c4f9418dae48a762d2ed22fbf66693e9e421d4b3f43256252bd59",
+    "verify_actual_dyadic_slope_thinness_large_factor_branches.py": "36bc6104f27917d8a1e325f16e1483f56460a5071c9b065cb392d6c5eb9cf050"
+  },
+  "independent_NONBULK_branch_QA": {
+    "independent_NONBULK_last_capacity_exact_difference_reads": 1524,
+    "independent_NONBULK_POSITIVE_signed_slopes": 196,
+    "independent_NONBULK_genuine_large_factor_profiles": 8,
+    "independent_NONBULK_largest_initial_zero_seed_reads": 1428
+  },
+  "independent_NONBULK_state_sha256": "ada354f33c6198030fdc2f933437c914b30a70e41cbbbc4480c73dc619c9becc",
+  "additional_branch_scope": "BOTH genuine NONBULK branches M>2m are independently checked: exact last-capacity derivative and zero-initial-run comparison for a largest initial interval. Positive signed slopes included. QA ONLY, no new theorem premise or additional kernel report.",
+  "additional_branch_seconds": 0.0930000000007567
+}

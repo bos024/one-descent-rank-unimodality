@@ -1,0 +1,21 @@
+{
+  "status": "PASS_QA_COMPLETE_MIXED_SOURCE_AND_UNRESTRICTED_FULL_C_ORIGINAL_CRITERION",
+  "counts": {
+    "seven_interval_point_bound_QA": 500,
+    "WHOLE_short_source_count_polynomial_QA": 367,
+    "WHOLE_actual_prefix_offset_norm_QA": 119,
+    "ALL_actual_constant_density_reads_OUTSIDE_strict_head": 21097,
+    "ALL_bulk_FULL_seven_source_sum_AND_kernel_reads": 19246,
+    "actual_kappa_thirteen_plus_profiles": 120,
+    "ALL_nonbulk_constant_density_reads": 1851,
+    "complete_finite_owner_geometry_QA_ONLY": 393167,
+    "TRUE_greedy_BOTH_eight_dominant_ORIGINAL_ideals": 2,
+    "TRUE_greedy_ORIGINAL_rank_counts": 472408,
+    "BOTH_relative_polynomials": 4,
+    "actual_FULL_A2_first_missing_beyond_twelve": 2,
+    "ONE_extra_arbitrary_legal_heavier_append": 1
+  },
+  "state_sha256": "f3781e2ea9dd6bcfe85091a6c0b630933799bf7f8cf01043d16f2e0e59f192e7",
+  "seconds": 24.375,
+  "scope": "QA ONLY. ALL7sourcecorrectionsretained;ACTUALconstantdensity/head/kernelidentities,lowK13..15owner-rankgeometry,andTRUEgreedyUNAMPLIFIEDoriginalswithBOTH8dominants(kappa13)inclONEextra(kappa14). DoesNOTprovegeneralC/A2/original or replace unbounded written and Lean arguments."
+}

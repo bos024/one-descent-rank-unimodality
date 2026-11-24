@@ -1,0 +1,496 @@
+% Internal research development. The general one-descent theorem is not proved here.
+\section{One-sided coefficient comparisons for the reverse kernel}
+Write $[t]=1+z+\cdots+z^{t-1}$ and let all sequences be extended by zero
+outside their support. For a nonnegative sequence $p$ supported on an
+interval beginning at zero, define $\mathcal P_K(p)$ by
+\[
+ p_{i+1}p_j\ge p_i p_{j+1}\qquad(0\le i\le K,\ j\ge i).
+\]
+This is a comparison of individual coefficients, not cumulative sums.
+
+\begin{lemma}[Causal convolution preserves a prefix comparison]
+If $\mathcal P_K(p)$ holds and $h$ is a finite nonnegative log-concave
+sequence with interval support in the nonnegative integers, then
+$\mathcal P_K(h*p)$ holds.
+\end{lemma}
+\begin{proof}
+Use upper triangular Toeplitz matrices $T(p)_{ij}=p_{j-i}$. For the
+minor of $T(h)T(p)$ in rows $0,1$ and columns $r+1,s+1$, with
+$0\le r\le K$ and $s\ge r$, Cauchy--Binet expresses its determinant as
+the sum over integers $i<j$ of
+\[
+ (h_i h_{j-1}-h_j h_{i-1})
+ \bigl(p_{r+1-i}p_{s+1-j}-p_{s+1-i}p_{r+1-j}\bigr).
+\]
+The first factor is nonnegative by log-concavity. A nonzero first
+factor requires $i\ge0$. Put $k=r+1-j$, $\ell=s+1-j$, and $d=j-i$.
+The second factor is $p_{k+d}p_\ell-p_{\ell+d}p_k$. If $k<0$, this is
+nonnegative by zero extension. Otherwise its nonnegativity follows by
+multiplying the $d$ successive ratio comparisons at indices
+$k,k+1,\ldots,k+d-1$ with the corresponding indices beginning at
+$\ell$. All the first indices are at most $r-i\le K$.
+Interval support handles zero denominators; equivalently one can
+cross-multiply on the positive support and treat endpoints separately.
+The sum is finite at the two selected columns. This proves the claim.
+\end{proof}
+
+
+\begin{theorem}[Prefix-to-tail coefficient ratios]
+Let $Y$ be weakly increasing, with all parts less than $M\ge2$, let
+$b=\operatorname{wt}Y$, and put
+\[
+ D_Y=1+(S_M-1)F_Y,\qquad \delta_Y(z)=z^{b+M}D_Y(1/z).
+\]
+Then $\mathcal P_{M-2}(\delta_Y)$ holds. Explicitly, for every integer
+$0\le r\le M-2$ and every $s\ge r$,
+\[
+ \delta_Y(r+1)\delta_Y(s)\ge
+ \delta_Y(r)\delta_Y(s+1).
+\]
+\end{theorem}
+\begin{proof}
+Induct on the number of parts. The empty arm gives $\delta=[M]$.
+For $Y=Zt$, with $c=\operatorname{wt}Z$ and $b=c+t$, use
+\[
+ \delta_Y=[t]\delta_Z+z^b[M-t].
+\]
+Call the convolution term $W$. It has $\mathcal P_{M-2}$ by the lemma.
+The existing low-rank growth inequality for $D_Y$ says that
+$\delta_Y(k+1)\le\delta_Y(k)$ for $k\ge b$.
+
+If $b<M$, then $\delta_Y(k)=A_Y(k):=\sum_{j=0}^kq_Y(j)$ for
+$0\le k<M$, where $q_Y=z^bF_Y(1/z)$. The sequence $A_Y$ is
+log-concave and is constant from $b$ onward. Thus the required ratios
+are ordered inside the prefix. Every later ratio is at most one by
+the just-stated monotonicity, whereas the prefix ratios are at least
+one. This proves the assertion in this case, including the constant
+part of the prefix.
+
+Suppose $b\ge M$. We first show that monotonicity also holds at the
+joining edge: $\delta_Y(b)\le\delta_Y(b-1)$. Indeed,
+\[
+ \delta_Y(b)-\delta_Y(b-1)=1+D_Z(M-t)-D_Z(M).
+\]
+The difference $D_Z(M)-D_Z(M-t)$ is a nonnegative integer. It is
+strictly positive when $b\ge M$: the coefficients of
+$(1-z)D_Z$ through rank $M$ equal those of
+$E_Z=1-z+(2z-1)F_Z$, whose positive support is
+$[\kappa(Z),c+1]$, and $\kappa(Z)\le t+1$. The interval
+$[M-t+1,M]$ meets this support, since $c+1=b-t+1\ge M-t+1$ and
+$\kappa(Z)\le t+1\le M$. Therefore the displayed difference is at
+most zero. This also explains precisely where integrality is used.
+
+For $r\le M-2$ and $s\le b-2$, all four coefficients coincide with
+those of $W$, so its prefix comparison applies. For $s\ge b-1$,
+the right-hand ratio is at most one, whereas the left-hand ratio is
+at least one because $\delta_Y(k)=A_Y(k)$ for $k<M$. Zero endpoints
+satisfy the cross-multiplied inequality directly. This completes
+the induction.
+\end{proof}
+
+\begin{corollary}[A universality-sensitive separation bound]
+Let $\kappa=\kappa(Y)$, with $\kappa(\varnothing)=1$. Then
+\[
+ \delta_Y(k+1)\delta_Y(k+h)\ge
+ \delta_Y(k)\delta_Y(k+h+1)
+\]
+for every integer $k$ and every integer $h\ge b-\kappa+1$.
+\end{corollary}
+\begin{proof}
+The positive support of $\delta_Y$ is $[0,b+M-\kappa]$.
+If $k<0$ or $k+h$ is at or beyond the final positive coefficient,
+the inequality follows from zero extension. Otherwise
+$k+h\le b+M-\kappa-1$, so $k\le M-2$, and the prefix-to-tail
+theorem applies. The separation bound is nonnegative because
+$\kappa\le b+1$.
+\end{proof}
+
+\begin{lemma}[A window preserves log-concavity on the rising side]
+Let $p$ be nonnegative, have interval support, be unimodal, and be
+log-concave at every index up to its last mode. Then $[t]*p$ has
+the same properties for every $t\ge1$. In fact, if $m$ is the last
+mode of $p$, the convolution is log-concave at every center
+$n\le m+t-1$.
+\end{lemma}
+\begin{proof}
+Unimodality is preserved by a uniform window. Write $q=[t]*p$ and
+let $m$ be the last mode of $p$. A comparison centered at $n<m$
+uses only the log-concave prefix of $p$, so log-concave convolution
+applies after truncating $p$ at $m$. If $n\ge m$ and $n-t<m$,
+\[
+ (q_n-q_{n-1})-(q_{n+1}-q_n)
+   =(p_n-p_{n+1})+(p_{n-t+1}-p_{n-t})\ge0.
+\]
+Thus $q$ is nonnegative and concave in this region, which implies
+log-concavity regardless of the sign of its first difference.
+Together with the first case this covers all $n\le m+t-1$.
+If $n-t\ge m$, the window
+is already nonincreasing; comparisons before its last mode can
+only lie on a constant plateau and are immediate. At a mode
+the log-concavity inequality is automatic.
+\end{proof}
+
+\begin{theorem}[Coefficient log-concavity on the rising side]
+For every increasing arm $Y$, both $q_Y=z^bF_Y(1/z)$ and
+$\delta_Y$ are unimodal and log-concave at every index up to their
+last mode. Equivalently, $F_Y$ and $D_Y$ are log-concave on their
+decreasing sides.
+\end{theorem}
+\begin{proof}
+For $q_Y$, use $q_{Zt}=[t]q_Z+z^{c+t}$. The convolution ends at
+rank $c+t-1$ with coefficient one. Appending a final coefficient
+one cannot affect the rising side, except by extending a terminal
+plateau of ones. The window lemma and induction apply.
+
+For $\delta_Y$, the case $b<M$ follows directly from the cumulative
+sequence $A_Y$ through $M-1$, followed by a nonincreasing sequence;
+its mode plateau includes $[b,M-1]$. If $b\ge M$, use
+$\delta_Y=W+z^b[M-t]$ as above. The joining inequality gives
+$W_b-W_{b-1}\le-1$, so the last mode of $W$ is at most $b-1$.
+The corrected sequence agrees with $W$ before $b$ and is
+nonincreasing from $b-1$ onward. The correction therefore cannot
+alter a rising-side log-concavity comparison, except possibly one
+at a mode itself, which is automatic. The window lemma completes
+the induction.
+\end{proof}
+
+\begin{corollary}[A coefficient window beyond the initial prefix]
+For every $t\ge1$, the coefficient sequence of $[t]\delta_Y$ is
+log-concave at every center $n\le M+t-2$.
+\end{corollary}
+\begin{proof}
+The last mode of $\delta_Y$ is at least $M-1$: its first $M$
+coefficients are the nondecreasing cumulative coefficients of
+$q_Y$. Apply the strengthened window lemma.
+\end{proof}
+
+\begin{corollary}[An unconditional terminal likelihood-ratio comparison]
+Let $U$ be an increasing arm with all parts at least two, and let
+$Y$ be an increasing strict arm for peak $M$. Write $u=\operatorname{wt}U$,
+$b=\operatorname{wt}Y$, $T_U=\prod_{t\in U}[t]$, and
+$K_U^*=z^u K_U(1/z)$, with the established pure-arm notation. For any
+$\alpha\ge0$, set
+\[
+ L_r=[z^r]K_U^*\delta_Y,\qquad
+ B_r=[z^{r+\alpha+1}]T_U\delta_Y.
+\]
+Then $L_{r+1}B_r-L_rB_{r+1}\ge0$ for every integer $r\le M-2$.
+\end{corollary}
+\begin{proof}
+Put $a_i=[z^i]K_U^*$ and $b_i=[z^{i+\alpha+1}]T_U$.
+The pure-arm likelihood-ratio theorem gives
+$a_jb_i-a_ib_j\ge0$ for $i<j$. Cauchy--Binet expands the desired
+determinant as
+\[
+ \sum_{i<j}(a_jb_i-a_ib_j)
+ \bigl(\delta_{r+1-j}\delta_{r-i}
+       -\delta_{r-j}\delta_{r+1-i}\bigr).
+\]
+A nonzero first factor requires $j\ge0$, since $a$ has nonnegative
+support. The lower index $r-j$ of the kernel minor is therefore at
+most $M-2$. If it is nonnegative, the prefix-to-tail theorem applies;
+if it is negative, zero extension makes the minor nonnegative
+directly. All summands are nonnegative.
+\end{proof}
+
+\begin{corollary}[A universality-sensitive full comparison]
+With the preceding notation, put $s=\operatorname{len}U$.
+If $\alpha\ge b+u-s-\kappa(Y)$, then the likelihood-ratio
+determinants are nonnegative for every integer $r$, and
+$F_{1^\alpha U}D_Y$ is unimodal.
+\end{corollary}
+\begin{proof}
+In a nonzero Cauchy--Binet term, $j\ge0$ and
+$i\le u-s-\alpha-1$, hence
+$j-i\ge\alpha+1-(u-s)\ge b-\kappa(Y)+1$.
+The separation corollary makes every kernel minor nonnegative.
+Interval support of the denominator then gives the global
+single-crossing property in the exact difference identity for
+$F_{1^\alpha U}D_Y$.
+\end{proof}
+
+\begin{theorem}[A light non-one skeleton]
+Let $X=1^\alpha U$ and $Y$ be increasing strict arms for peak $M\ge2$,
+where $U$ is nonempty and has parts at least two. Put
+$a=\operatorname{wt}X$, $b=\operatorname{wt}Y$, and
+$u=\operatorname{wt}U$. If
+\[
+ M+a-b\ge2u-2,
+\]
+then both $F_XD_Y$ and $F_{XMY}$ are unimodal. In particular a heavy arm with
+$u\le(M+2)/2$ is covered with no restriction on arm lengths.
+\end{theorem}
+\begin{proof}
+Put $N=a+b+M$. The existing interval-layer reflection for
+$Q=F_XD_Y$ gives $\Delta Q(n)\ge0$ for
+$n\le\lfloor(N+2)/2\rfloor$. The hypothesis and $u\ge2$ imply
+$N\ge2b+2$, so the universal first-half growth of $H=F_Y+Q$
+covers $n\le b+1$.
+For $n\ge b+2$ the term $F_Y$ contributes no difference. Thus
+$\Delta H(n)\ge0$ throughout $n\le\lfloor(N+2)/2\rfloor$.
+
+The bridge identity gives
+$\Delta H(n)=L_r-B_r$ for $r=u+b+M-n$ and $n>b+1$.
+The preceding corollary orders the ratios $L_r/B_r$ on all indices
+$r\le M-1$. The denominator has interval support; before that
+support $L=0$, and beyond it $L-B\ge0$. Consequently these
+differences cannot change from positive to negative as $r$ increases
+within that interval. Reversing the index shows that $\Delta H(n)$
+cannot change from negative to positive for $n\ge u+b+1$.
+This entire range satisfies $n>b+1$, since $u\ge2$.
+
+The parameter inequality is equivalent to $N\ge2u+2b-2$, hence
+$\lfloor(N+2)/2\rfloor\ge u+b$. The increasing portion therefore
+joins the terminal single-crossing portion without a missing
+difference. This proves unimodality.
+The same proof applies directly to $Q$, whose exact difference
+identity has no $F_Y$ correction at any rank.
+\end{proof}
+
+\begin{corollary}[Arbitrary peaks for a two or a three after leading ones]
+Every strict core with one arm of the form $1^\alpha 2$ or
+$1^\alpha 3$ has a unimodal rank polynomial, with no bound on
+$M$, $\alpha$, or the other arm. The corresponding relative
+polynomials are unimodal as well.
+\end{corollary}
+\begin{proof}
+Fix $M$ and consider the family of ordered arm pairs for which at
+least one arm has total non-one weight at most three. This family
+is closed under removing a last arm part and under exchanging
+the arms. Therefore the balanced-minimal-counterexample proof
+and the outer-three-layer proof apply within this family: every
+shorter pair required in their inductions remains in the family.
+The empty and rectangular-arm bases are unchanged. A minimal
+counterexample would satisfy $|a-b|\le M-4$ for $M\ge3$;
+the case $M=2$ is already a rectangular-arm case. Orient the pair
+so that $X$ has non-one weight $u\le3$. The rectangular case
+$u=0$ is excluded. Thus $2\le u\le3$, and
+$M+a-b\ge4\ge2u-2$. The preceding theorem excludes the
+putative counterexample, so all relative polynomials in the
+family are unimodal. For a core, orient the heavier arm on the
+left and use the established core/relative equivalence; the
+family is unchanged by this orientation. This proves the claim.
+\end{proof}
+
+\paragraph{Exact remaining limitation.}
+These results compare actual coefficients and strengthen the cumulative
+inequalities. They do not prove log-concavity of $F_XD_Y$, nor do they
+prove the restricted heavy-arm likelihood-ratio assertion through
+$r\le\operatorname{wt}(U)+M-3$. Products of unimodal sequences whose
+rising sides are log-concave need not be unimodal. For instance,
+$(1,3,2,1,1,1,1)$ has these properties, whereas its self-convolution has
+coefficients $(1,6,13,14,12,12,13,12,7,4,3,2,1)$. The composition-specific
+product step remains to be established.
+
+\paragraph{A mode-sensitive version of the terminal comparison.}
+The rising-side theorem yields a larger, data-dependent prefix.
+For any nonnegative interval-supported sequence which is unimodal
+and log-concave up to its last mode $m$, the property
+$\mathcal P_{m-1}$ holds: comparisons before $m$ follow by
+successive log-concavity, and comparisons with later indices compare
+a ratio at least one with a ratio at most one. Consequently the
+terminal likelihood-ratio proof applies to every $r\le m_Y-1$,
+where $m_Y$ is the last mode of $\delta_Y$.
+
+Let $\ell=\operatorname{len}Y$. Its positive expansion is
+\[
+ \delta_Y=[M]\prod_{j=1}^{\ell}[y_j]
+  +\sum_{j=1}^{\ell}z^{y_1+\cdots+y_j}[M-y_j]
+       \prod_{i=j+1}^{\ell}[y_i].
+\]
+Put $d=b-\ell+M-1$. The first summand is symmetric about $d/2$,
+and the $j$th additional summand has center
+$(d+y_1+\cdots+y_{j-1}+j)/2\ge d/2$.
+Hence
+\[
+ m_Y\ge \max\left(M-1,\left\lceil
+                  \frac{b-\ell+M-1}{2}\right\rceil\right).
+\]
+The exact difference identity and the mode-sensitive comparison
+show that $Q_{1^\alpha U,Y}$ is unimodal whenever
+\[
+ \left\lfloor\frac{a+b+M+2}{2}\right\rfloor+m_Y
+       \ge u+b+M-1.
+\]
+Indeed the first-half growth covers every rank before
+$u+b+M-m_Y$, and the likelihood-ratio argument rules out a
+negative-to-positive change thereafter.
+
+\begin{theorem}[One long initial block of ones]
+Suppose one of the two increasing strict arms is $X=1^\alpha U$,
+where every part of $U$ is at least two, and put
+$u=\operatorname{wt}U$, $\ell=\operatorname{len}Y$. If
+\[
+ \alpha\ge u+\ell-3,
+\]
+then the two-arm rank polynomial $F_{XMY}$ is unimodal.
+Both relative polynomials $F_XD_M(Y)$ and $F_YD_M(X)$ are also
+unimodal. No lower bound on the leading ones in the other arm,
+or on the relative arm weights, is required. An all-one arm is
+included independently of the displayed inequality.
+\end{theorem}
+\begin{proof}
+First orient the qualifying arm as $X$. If $U$ is empty, its
+relative polynomial is a uniform window of the unimodal $D_M(Y)$.
+Otherwise put
+$g=\lfloor(a+b+M+2)/2\rfloor$ and
+$k=\lceil(b-\ell+M-1)/2\rceil$. Since $a=\alpha+u$,
+\[
+ g+k\ge b+M+\left\lfloor\frac{a-\ell+1}{2}\right\rfloor
+      \ge b+M+u-1.
+\]
+The mode-sensitive criterion proves unimodality of the relative
+polynomial in this orientation.
+
+To obtain both orientations and the rank polynomial, fix $M$ and
+consider the family of pairs in which at least one arm satisfies
+the stated condition or is all ones. This family is closed under
+swapping arms and deleting a final part from either arm. Deleting
+a part from the qualifying non-one skeleton decreases $u$;
+deleting a part from the other arm decreases $\ell$. If a skeleton
+becomes empty, the all-one case applies.
+
+If a relative counterexample existed in this family, choose one
+with least total number of arm parts. The established least-relative-
+counterexample argument, which uses only these deletions, gives
+$|a-b|\le M-1$. In this band the rank polynomial and each of the
+two relative polynomials have equivalent unimodality. Orienting
+the qualifying arm as $X$ contradicts the result just proved.
+Thus both relative orientations are unimodal throughout the
+family. Finally orient a heavier arm as the first arm; the
+rank/relative equivalence applies because $b\le a+M-1$.
+It gives the asserted rank unimodality.
+\end{proof}
+
+\begin{proposition}[Grouping the initial ones improves the mode bound]
+Write $Y=1^\beta V$, where $V=(t_1,\ldots,t_s)$ has parts at least
+two, and set $v=\operatorname{wt}V$, $e=v-s$, $b=\beta+v$.
+For every strict peak $M$,
+\[
+ m_Y\ge \max\left(M-1,
+   \left\lceil\frac{e+M-1}{2}\right\rceil,
+   \left\lceil\frac{e+M-2+\min(\beta,M)}{2}\right\rceil\right).
+\]
+\end{proposition}
+\begin{proof}
+The first two bounds were proved above. The all-one kernel has the
+exact identity
+\[
+ \delta_M(1^\beta)=[M-1][\beta+1]+z^{M-1}.
+\]
+Writing $T_V=\prod_j[t_j]$ and $v_j=t_1+\cdots+t_j$, repeated
+use of the positive kernel recurrence gives
+\[
+ \delta_M(Y)=T_V[M-1][\beta+1]+z^{M-1}T_V
+ +\sum_{j=1}^s z^{\beta+v_j}[M-t_j]
+                       \prod_{i>j}[t_i].
+\]
+These are nonnegative shifted symmetric unimodal interval products.
+Twice their centers are, respectively,
+\[
+ e+M-2+\beta,\qquad e+2M-2,\qquad
+ e+M-1+2\beta+v_{j-1}+j.
+\]
+Every center is at least
+$(e+M-2+\min(\beta,M))/2$. Each summand is therefore
+nondecreasing through the ceiling of that number. Their sum has
+the same property. Since the kernel is already known to be unimodal,
+its last mode is at least this ceiling.
+\end{proof}
+
+\begin{theorem}[A stronger initial-one criterion]
+Let $X=1^\alpha U$ and $Y=1^\beta V$ be the two strict increasing
+arms, where the displayed skeletons contain only parts at least two.
+Put $u=\operatorname{wt}U$ and $s=\operatorname{len}V$. If
+\[
+ \alpha\ge u+s+\max(\beta-M,0)-2,
+\]
+then the rank polynomial and both relative polynomials are unimodal.
+The criterion can be applied in either orientation. All-one arms
+remain unconditional base cases. For $\beta=0$, the preceding
+criterion $\alpha\ge u+s-3$ is slightly stronger and still applies.
+\end{theorem}
+\begin{proof}
+Set $r=\max(\beta-M,0)$, so $\min(\beta,M)=\beta-r$.
+The new mode bound is
+\[
+ m_Y\ge\left\lceil\frac{b-s+M-2-r}{2}\right\rceil.
+\]
+For $a=\alpha+u$, it yields
+\[
+ \left\lfloor\frac{a+b+M+2}{2}\right\rfloor+m_Y
+ \ge b+M+\left\lfloor\frac{\alpha+u-s-r}{2}\right\rfloor
+ \ge u+b+M-1.
+\]
+Thus the mode-sensitive terminal bridge proves unimodality of
+$F_XD_M(Y)$ in this orientation. The family of pairs satisfying
+the stated condition in at least one orientation, together with
+the all-one-arm pairs, is closed under swapping arms and deleting
+a last part from either arm. Deleting a non-one part of $U$
+decreases $u$, and deleting a non-one part of $V$ decreases $s$;
+deletions of leading ones occur only after that arm becomes all ones.
+The same least-relative-counterexample argument used in the
+previous theorem therefore gives both orientations and the full
+rank polynomial. This proves a sufficient condition; it does not
+resolve the unrestricted two-skeleton case.
+\end{proof}
+
+\begin{corollary}[One non-one part in each arm, with arbitrary padding]
+For every $M>\max(t,v)\ge2$ and all $\alpha,\beta\ge0$, the
+core
+\[
+ (1^\alpha,t,M,1^\beta,v)
+\]
+has a unimodal rank polynomial. Both relative polynomials are
+unimodal as well. The peak and both padding lengths are unbounded.
+\end{corollary}
+\begin{proof}
+An arm with zero padding consists of one part and has the same
+rank polynomial as an all-one arm of the same weight. Such a case
+is already covered. For positive padding, the exact identity
+\[
+ F_{1^\alpha t}=1+z[t][\alpha+1]
+\]
+permits exchange of the two interval factors. Consequently each
+arm can be replaced, without changing its weight or rank polynomial,
+by $1^{\alpha'}t'$ with $2\le t'<M$ and $\alpha'\ge t'-1$.
+The replacement is needed only when $\alpha<t-1$, in which case
+$(\alpha',t')=(t-1,\alpha+1)$. Normalize both arms in this way.
+
+Choose the orientation with $\alpha'\ge\beta'$. If $\beta'\le M$,
+then $\alpha'\ge t'-1$. If $\beta'>M$, then
+$\alpha'-(\beta'-M)\ge M>t'-1$. In either case
+\[
+ \alpha'\ge t'+1+\max(\beta'-M,0)-2.
+\]
+This is the stronger initial-one criterion with a one-part opposite
+skeleton. Its conclusion transfers back to the original pair,
+because the core and both relative polynomials depend only on the
+two arm polynomials. The zero-padding cases are transferred in
+the same way from the all-one-arm base theorem.
+\end{proof}
+
+\begin{corollary}[A run tied exactly to the peak]
+For $2\le t<M$, a core with one arm $1^{M-1}t$ is unimodal
+for every increasing opposite arm. Both relative polynomials
+are unimodal as well.
+\end{corollary}
+\begin{proof}
+The initial exchange gives
+$F_{1^{M-1}t}=1+z[t][M]=F_{(t-1),M}$. Substitution into the
+maximum decomposition gives the exact identity
+\[
+ F_{1^{M-1}t,M,Y}=1+S_M F_{(t-1),M,Y}.
+\]
+The shorter core has a single-part arm, so its rank polynomial
+is unimodal by the established rectangular-arm theorem.
+Uniform convolution followed by adding the initial constant
+preserves unimodality. For both relative orientations, apply the
+least-counterexample argument within the family having such an
+arm, including the all-one-arm base cases. This family is closed
+under arm exchange and final-part deletions, and every full core
+in it has just been proved unimodal. A least relative counterexample
+would be balanced and hence would give a nonunimodal full core,
+a contradiction.
+\end{proof}
+

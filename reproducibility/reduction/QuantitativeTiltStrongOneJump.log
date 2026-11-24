@@ -1,0 +1,13 @@
+'QuantitativeTiltStrongOneJump.entire_kernel_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantitativeTiltStrongOneJump.quantitative_normalized_tilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantitativeTiltStrongOneJump.finite_weighted_reference_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantitativeTiltStrongOneJump.additive_margin_LR_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantitativeTiltStrongOneJump.weighted_negative_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantitativeTiltStrongOneJump.all_capacity_polynomial_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantitativeTiltStrongOneJump.fibonacci_middle_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantitativeTiltStrongOneJump.fibonacci_linear_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantitativeTiltStrongOneJump.capacity_three_tilt_seed' depends on axioms: [propext, Classical.choice, Quot.sound]

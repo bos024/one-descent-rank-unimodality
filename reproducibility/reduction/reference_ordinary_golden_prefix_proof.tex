@@ -1,0 +1,130 @@
+\section{Every reference has a golden ordinary prefix, and a general density-record criterion}
+For every ordered list $V$ of capacities at least three, form the
+infinite-BINARY reference by appending its factors to
+$H_2=(1-z-z^2)^{-1}$ using $R'=1+S_tR$.
+The order need not be sorted. Put $W=\sum V$.
+
+\paragraph{A complete unbounded reference theorem.}
+We prove
+\[
+                     R_n>\phi R_{n-1}\quad(2\le n\le W). \tag{1}
+\]
+This is an ordinary coefficient statement on a specified prefix;
+it is not ordinary LC of the reference or actual coefficient unimodality.
+
+Let $J_n=R_n-\phi R_{n-1}$, with $J_0=1$.
+Every nonempty reference has
+\[
+ J_1=-q,\quad J_2=q^2,\quad J_3=2q^2,\qquad q=\phi-1.
+\]
+Its exact Fibonacci numerator has degree W, so
+$J_{W+k}=(-q)^kJ_W$ for every $k\ge0$.
+Every finite alternating partial sum starting at $J_W$ lies between
+$q^2J_W$ and $J_W$, by the registered full kernel-box induction.
+
+For the first capacity t, the binary gaps are $(-q)^j$ and
+$J_n=\sum_{j=0}^{n-1}(-q)^j>0$ for $2\le n\le t$.
+For a further append $t\ge3$, at each $n\ge2$ the exact gap is
+\[
+                  J'_n=\sum_{j=\max(0,n-t)}^{n-1}J_j.     \tag{2}
+\]
+If $n\le W+t$, its lower endpoint $a=\max(0,n-t)$ is at most W.
+An interval extending beyond W is grouped into its positive head
+and the full alternating partial sum starting at $J_W$.
+
+If a=0, the first two terms sum to $1-q>0$ and all remaining head
+terms and the endpoint-tail group are nonnegative.
+If a>=2, the entire head is positive and so is any endpoint-tail group.
+If a=1, the interval has length $t\ge3$.
+When it ends in the head, $J_1+J_2+J_3=3q^2-q>0$ pays it.
+When it reaches the tail and $W\ge4$, these three terms still lie
+in the uncut head and the endpoint-tail group is positive.
+There is just ONE remaining analytic case: W=3. In that case
+\[
+ J_1+J_2+\sum_{j=3}^{n-1}J_j
+       \ge -q+q^2+q^2J_3
+       =-q+q^2+2q^4=q^6>0.                           \tag{3}
+\]
+This includes arbitrary t; there is no finite capacity exception.
+The exact equality in (3) occurs at reference V=(3,4), n=5.
+
+Equations (2)--(3) prove positivity of EVERY new prefix window.
+The initial gap values and homogeneous tail are preserved, closing
+induction on the entire arbitrary word V. This proves (1).
+The full unbounded interval-window case split, including W=3 and
+all current-index guards, is checked in ReferenceGoldenPrefix.lean.
+The source/numerator/reference identifications and word assembly
+are the written proof here.
+
+\paragraph{Every reference also has the needed ordinary tilted seed.}
+Let $r$ be the reference's positive slopes, $x=r_W$, $y=r_{W+1}$,
+and $\lambda=y/x<\phi$, as in the registered homogeneous theorem.
+The reference is normalized by $r_2=1$. For $0<a\le1$ put
+$r^a_n=a^{n-2}r_n$ and let T be its ordinary coefficients.
+Only $\mu=a\lambda>1$ needs an entrance.
+
+Set $H_i=R_i-\lambda R_{i-1}$, with $H_0=1$.
+By (1), $H_i>0$ for every $2\le i\le W$,
+whereas $H_1=1-\lambda$.
+The exact one-cumulative normalized-atom identity is
+\[
+\begin{split}
+ a^2(T_W-\mu T_{W-1})={}&a^WH_W\\
+ &+(1-a)\sum_{i=0}^{W-1}a^iH_i+(a^2-1)(1-\mu).
+\end{split}                                                   \tag{4}
+\]
+It follows by multiplying
+$a^2F_{r^a}(z)=((1-az)/(1-z))R(az)+(a^2-1)/(1-z)$
+by $1-\mu z$. Keep the first two terms in the sum together:
+$H_0+aH_1=1+a-\mu\ge1-a\ge0$, since $\lambda<2$.
+All remaining terms are positive, and the last correction in (4)
+is nonnegative. Its first term is strictly positive. Therefore
+\[
+                         T_W>\mu T_{W-1}.            \tag{5}
+\]
+This works for EVERY reference V, not just one-factor references.
+The registered one-factor polynomial lower bound four remains a
+stronger quantitative special case.
+
+\paragraph{One explicit actual record condition is sufficient for general late C.}
+Take an actual $1^\alpha2^uV$ with h>u, and consider its physical
+entrance N=W+1. Flat, falling and clipped entries are automatic.
+Suppose $D_N>D_{N-1}>0$, and write r for the same-tail reference.
+Define
+\[
+ a_N=\frac{D_Nr_{N-1}}{D_{N-1}r_N},\qquad
+ a_j=\frac{D_jr_{j-1}}{D_{j-1}r_j}.
+\]
+The following two conditions are SUFFICIENT:
+\[
+                         a_N\le1,\qquad
+                    a_j\ge a_N\quad(3\le j\le W).     \tag{6}
+\]
+No full relative-LC hypothesis is needed.
+Indeed (6) gives increasing atom likelihood ratios of actual D over
+the normalized tilt $r^{a_N}$ on every read through W, with shared
+initial atom one and normalization at rank two.
+Coordinatewise domination and cumulative LR order follow.
+The registered quantitative normalized-tilt theorem and the reference
+golden cumulative margin q² pay EVERY actual G prefix read through W
+with that SAME margin. Equations (4)--(5) and one cumulative LR
+comparison pay the ordinary seed at W.
+Universal pre-first-mode D-LC and ordinary tail LC then give the
+strong physical entrance and every actual C shift at every N>=W+1.
+
+Thus the assertion that (6) holds at EVERY actual strictly growing
+physical entrance would resolve the GENERAL LATE-C entrance.
+THAT ASSERTION IS OPEN. Finite diagnostics of5714such actual entrances
+and699345pastreads found no failure, including no fullrelativeLCfailure;
+these are evidence only. This conditional theorem does not declare
+(6) universal. General earlier C, unseeded crossings, full A2 and
+original unamplified coefficient unimodality remain OPEN.
+
+Nine new scoped Lean reports check the entire arbitrary-length
+head/alternating-tail window split, positive atom budgets, full
+read geometry and the ordinary tilted-seed payment.
+Model/root/numerator identification, finite geometric-tail summation,
+the reference word induction, normalized density/atom assembly and
+actual late-C integration are written, not an end-to-end Lean theorem
+for composition ideals. There are no new finite entrance premises.
+

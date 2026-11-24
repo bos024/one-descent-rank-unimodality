@@ -1,0 +1,164 @@
+\section{A probability-quadratic principle bounds ordinary minors at EVERY order}
+Let $t\ge2$, $H_t=(1-z-\cdots-z^t)^{-1}=\sum h_nz^n$,
+and let $\lambda_t\in(1,2)$ be its positive renewal root.
+The following inequalities hold with no finite exceptional order.
+
+\begin{theorem}[A sharp universal ordinary-minor envelope]
+For EVERY $t\ge2$ and EVERY $n\ge1$,
+\[
+                  |h_n^2-h_{n-1}h_{n+1}|\le h_{n-1}.       \tag{1}
+\]
+The constant one is best possible: at $n=t$ the minor equals
+$h_{t-1}$ for every $t$, and at $n=1$ it equals $-h_0$.
+\end{theorem}
+
+\begin{theorem}[A sharp universal golden-residual envelope]
+Let $\phi=(1+\sqrt5)/2$, $q=\phi-1$, $c=2-\phi=1-q=q^2$.
+For EVERY $t\ge3$, put $K_n=h_n-\phi h_{n-1}$.
+Then $K_n>0$ for every $n\ge2$, and for EVERY $n\ge3$,
+\[
+             |K_n^2-K_{n-1}K_{n+1}|\le\phi^2K_{n-1}.       \tag{2}
+\]
+The constant $\phi^2$ is best possible uniformly in $t$.
+No conjugate-root, spectral-gap or irreducibility hypothesis is used.
+\end{theorem}
+
+\subsection{The finite probability-quadratic transport principle}
+Fix positive probability weights $a_i$, $1\le i\le t$.
+Suppose real sequences $H,e,w$ obey, after an initial band,
+\[
+ H_n>0,\quad H_n\ge\sum_i a_iH_{n-i},\quad
+ e_n=\sum_i a_ie_{n-i},\quad w_n=\sum_i a_iw_{n-i}.       \tag{3}
+\]
+For a fixed constant $C$, the assertions
+\[
+      w_n\ge-C,\qquad e_n^2+H_nw_n\le CH_n              \tag{4}
+\]
+propagate from a complete band of $t$ indices to all later indices.
+Indeed the second assertion is equivalent, by completing a square, to
+\[
+                H_nx^2-2e_nx+C-w_n\ge0\quad\hbox{for EVERY real }x.
+\]
+At the next index take the positive weighted sum of these old
+quadratics. Their constant terms sum to $C-w_n$, their linear
+terms to $-2e_nx$, and replacing their quadratic coefficient by
+the larger $H_n$ adds a nonnegative multiple of $x^2$.
+The first assertion in (4) propagates by probability averaging.
+This proves the ENTIRE induction. It is the perspective-square
+form of Cauchy--Schwarz, with the denominator supersolution retained.
+The new Lean kernel proves the equivalence, the finite transport,
+the full natural-index induction and the minor interpretation.
+
+If $s$ is any sequence, set $H_n=s_{n-1}$,
+$e_n=s_n-\lambda s_{n-1}$ and $w_n=\lambda e_n-e_{n+1}$.
+The exact algebraic identity is
+\[
+              s_n^2-s_{n-1}s_{n+1}=e_n^2+H_nw_n.       \tag{5}
+\]
+Thus (4), $H_n>0$, and $e_n^2\ge0$ imply the absolute minor
+envelope $|M_s(n)|\le CH_n$.
+
+\subsection{Proof of the ordinary envelope}
+Use the probability normalization in
+\texttt{universal\_renewal\_rounding\_and\_ordinary\_C\_bridge\_proof.tex}.
+If $b=1/\lambda_t$, the weights are
+$a_i=b^{t-i+1}>0$, with sum one. The exact identities give
+\[
+ e_n=h_n-\lambda_t h_{n-1},\quad
+ (1-A)e=1-z,\quad A(z)=\sum_i a_i z^i,
+ \qquad -1<e_n<1\ (n\ge1).                       \tag{6}
+\]
+Write $d=2-\lambda_t=b^t\in(0,1)$.
+Both $e_n$ and $w_n=\lambda_te_n-e_{n+1}$ satisfy the probability
+recurrence at every index needed once $n\ge t+2$.
+For $H_n=h_{n-1}$, its ordinary $t$-term recurrence gives
+\[
+ H_n=\sum_i H_{n-i}\ge\sum_i a_iH_{n-i},
+\]
+since all reads are positive and $0<a_i<1$.
+It remains to check precisely the band $2\le n\le t+1$.
+
+The initial coefficients are $h_0=1$,
+$h_n=2^{n-1}$ for $1\le n\le t$,
+$h_{t+1}=2^t-1$, $h_{t+2}=2^{t+1}-3$.
+The ordinary minors on this band are zero when $2\le n<t$,
+equal $h_{t-1}$ at $n=t$, and equal $1-2^{t-1}$ at $n=t+1$.
+Thus their UPPER bounds in (4) hold with $C=1$.
+For the LOWER $w$ bound, the exact band formulas are
+\[
+\begin{array}{ll}
+w_n=-d e_n>-1 &(2\le n<t),\\
+w_t=1-d e_t>0,&\\
+w_{t+1}=-1+d(1-e_{t+1})>-1.&
+\end{array}
+\]
+They use only (6). This is a symbolic complete band for EVERY $t$,
+not a finite-order computation. The probability-quadratic principle
+proves (1) for all $n\ge2$; $n=1$ is the exact minor $-1$.
+The equality at $n=t$ proves sharpness.
+
+\subsection{Proof of the golden-residual envelope}
+Now take $t\ge3$. The initial $K$ values are
+\[
+ K_n=c2^{n-2}\ (2\le n\le t),\qquad
+ K_{t+1}=2K_t-1,\qquad K_{t+2}=2K_{t+1}+q.
+\]
+Here $K_t\ge2c$, so $K_{t+1}\ge4c-1=3-4q>0$.
+All later $K$ values are positive by the ordinary positive
+$t$-term recurrence using only indices at least two. This proves
+the required positivity on its ENTIRE range.
+
+With $\lambda=\lambda_t$, set
+$E_n=K_n-\lambda K_{n-1}$ and $W_n=\lambda E_n-E_{n+1}$.
+The complete source identity is
+\[
+                   (1-A)E=(1-\phi z)(1-z).
+\]
+Hence $E,W$ have the probability recurrence throughout the induction
+range $n\ge t+3$. The positive denominator $K_{n-1}$ again has
+the supersolution in (3), since all its old reads have index at least two.
+We check the complete band $3\le n\le t+2$ with $C=\phi^2=2+q$.
+
+On $3\le n<t$ the minor is zero, at $n=t$ it is $K_{t-1}$,
+at $t+1$ it is $1-\phi^2K_t$, and at $t+2$ its ratio to
+$K_{t+1}$ is
+\[
+                     \phi+{q^2\over K_{t+1}}\le\phi+1=\phi^2.
+\]
+The last inequality follows from $K_{t+1}\ge3-4q\ge q^2$,
+equivalent to $q\le2/3$. The minor at $t+1$ is negative, since
+it is also $-K_{t+1}-qK_t$. All upper bounds therefore hold.
+
+For the lower $W$ bounds, (6) implies
+$dK_t=c\,d2^{t-2}<1$. Before $t$, $W_n=-d^2K_{n-1}>-1$;
+at $t$, $W_t=1-d^2K_{t-1}>0$. The remaining exact values are
+\[
+ W_{t+1}=-\phi^2+2d-d^2K_t>-\phi^2,
+\qquad
+ W_{t+2}=\phi-2dq-d^2K_{t+1}.
+\]
+Since $K_{t+1}=2K_t-1$, the latter is greater than
+$\phi-2d\phi+d^2\ge1-\phi=-q>-\phi^2$.
+The middle inequality is the nonnegative product
+$(1-d)(2\phi-d-1)\ge0$. Thus the lower bounds also hold on
+the ENTIRE band, including $t=3$ when its geometric subrange is empty.
+The principle proves (2) at all later ranks.
+
+Finally at $n=t+1$ the EXACT normalized minor is
+\[
+ {M_K(t+1)\over K_t}=-\phi^2+{1\over c2^{t-2}}.
+\]
+As $t$ increases the last term tends to zero. Every smaller
+universal absolute constant therefore fails. This proves sharpness.
+
+\paragraph{Scope and use.}
+These are unconditional ALL-order/all-rank ordinary-minor bounds,
+not LC assertions: the minors still change sign. They provide
+uniform scalar entrance resources for higher-capacity C research.
+The five scoped kernel reports check the whole probability-quadratic
+transport and induction, exact minor interpretation, and symbolic
+boundary identities. Root/source identification and the complete
+symbolic bands for $h$ and $K$ are the written proofs above.
+There is NO new finite proof premise; finite exact checks are QA only.
+General C/A2/original coefficient unimodality and within-arm mixed
+threes/fours remain OPEN.

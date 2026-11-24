@@ -1,0 +1,201 @@
+% New induction reduction. The general A2 premise remains OPEN.
+\section{The signed-window premise is automatic at a least relative counterexample}
+Write $[m]=1+\cdots+z^{m-1}$, $q_T=z^{\operatorname{wt}T}F_T(1/z)$,
+and
+\[
+ \delta_M(T)=([M]-z^M)q_T+z^{\operatorname{wt}T+M}.
+\]
+This is the reversal of the nonnegative single-arm relative kernel
+$1+(S_M-1)F_T$. In particular $\delta_M(\varnothing)=[M]$.
+All sequences below have zero extension at negative indices.
+
+\begin{lemma}[A proper relative polynomial supplies the signed prefix]
+Let $X,Y$ be nonrectangular increasing arms below a strict peak $M$.
+Orient their weights as $a=\operatorname{wt}X\le b=\operatorname{wt}Y$,
+write $Y=Zt$ and $c=b-t$, and put
+\[
+ q=q_Xq_Y,\quad \sigma=\min\operatorname{argmax}q,
+ \quad d=(\Delta q)^+.
+\]
+If $q_X\delta_M(Z)$ is unimodal, then $([M]-z^M)d$
+has no negative-to-positive coefficient change through rank $\sigma$.
+\end{lemma}
+\begin{proof}
+Ordinary two-arm unimodality and its strengthened midpoint bound
+give $\sigma<b$. The strict peak gives $c+M=b+(M-t)>b$.
+The exact reverse append identity is
+\[
+ q=[t]q_Xq_Z+z^bq_X.
+\]
+Set $V=[t]q_X\delta_M(Z)$. Then
+\[
+ V=([M]-z^M)q-z^b([M]-z^M)q_X
+                      +z^{c+M}[t]q_X.
+\]
+The two corrections start strictly after $\sigma$. Therefore
+$\Delta V_j=([M]-z^M)\Delta q_j$ for every $0\le j\le\sigma$.
+On this prefix $q$ is nondecreasing, so $d_j=\Delta q_j$;
+causality of multiplication by a polynomial with nonnegative powers
+gives
+\[
+                 [z^j]([M]-z^M)d=\Delta V_j
+                       \qquad(0\le j\le\sigma).
+\]
+Uniform convolution preserves unimodality, so the premise makes
+$V=[t](q_X\delta_M(Z))$ unimodal. Its differences cannot have
+a negative coefficient followed by a positive one. This proves
+the claimed prefix property. No assertion about the later
+coefficients of $([M]-z^M)d$ is needed.
+\end{proof}
+
+\begin{corollary}[Only the A2 premise is needed in a least-counterexample proof]
+At a least relative counterexample at fixed peak $M$, the signed
+prefix premise in \texttt{general\_base\_join\_route.tex} holds
+automatically. Consequently the general unamplified one-descent
+conjecture would follow from the single assertion
+\[
+       2^j\max(\Delta(q_Xq_Y)_j,0)\quad\hbox{is unimodal}
+       \tag{A2}
+\]
+for every pair of nonrectangular increasing arms.
+\end{corollary}
+\begin{proof}
+Choose the least failing peak, then a relative counterexample with
+the fewest total arm parts. Empty or rectangular arms are already
+known. The established relative deletion reduction gives
+$|a-b|\le M-4$ and equivalence of core and both relative
+unimodality in this band. The relative polynomial with arms
+$X,Z$ has fewer parts, in the required orientation as well,
+so it is unimodal. Its reversal is $q_X\delta_M(Z)$; the lemma
+supplies the signed prefix premise.
+
+Take $t_0$ to be the largest arm part. The base polynomial
+$J_{t_0}=A+B+(S_{t_0}-1)AB$ is unimodal: remove all arm
+occurrences of $t_0$ using $J=1+S_{t_0}J^{\rm smaller}$,
+and apply the least-peak hypothesis to the remaining strict
+peak $t_0<M$ (or the elementary empty-arm case).
+The conditional general base-peak join, now using only (A2)
+as a new structural input, makes the core unimodal. Balanced
+core-relative equivalence contradicts the chosen counterexample.
+\end{proof}
+
+This does not prove (A2), and it does not establish the signed
+prefix property independently for all arm pairs. It eliminates
+the need for a separate universal proof of that property in
+this least-counterexample route.
+
+\section{A completed unbounded family with a heavier one-part skeleton}
+\begin{theorem}
+Let $X,Y$ be increasing arms below a strict peak $M$.
+Suppose either arm is rectangular, or a heavier arm has at
+most one non-one part. Then the core polynomial
+$F_X+F_Y+(S_M-1)F_XF_Y$ and both relative polynomials
+$F_X(1+(S_M-1)F_Y)$ and $F_Y(1+(S_M-1)F_X)$ are unimodal.
+No bound on $M$, arm weights, initial runs of ones, or the
+opposite arm's number and sizes of non-one parts is imposed.
+\end{theorem}
+\begin{proof}
+Include all rectangular-arm pairs, and otherwise require a
+heavier arm to be $1^\alpha s$, with $\alpha\ge1,s\ge2$.
+The family is closed under arm exchange and final-part deletion.
+Deleting from the other arm preserves the qualifying heavier arm;
+deleting the qualifying arm's only non-one part gives a rectangular
+arm. An initially unnormalized first part may be replaced by that
+many ones without changing its arm polynomial.
+
+Suppose a relative counterexample exists in this family. Choose
+its least peak $M$ and then the fewest total arm parts.
+The deletion and exchange reduction applies within the family,
+and gives two nonrectangular balanced arms. The preceding lemma
+supplies the signed-window premise by deletion from a heavier arm.
+The heavier one-part proposition in
+\texttt{deficit\_cumulative\_ratios.tex} supplies (A2).
+
+It remains to check the base-peak induction stays within the family.
+Let $t_0$ be the largest arm part. If $t_0=s$, remove the final
+$s$ of the qualifying one-part arm first. A rectangular arm results,
+so the remaining $J_{t_0}$ is unimodal by the rectangular-arm
+base, also if other $t_0$'s still need removal. If $t_0>s$, all
+occurrences of $t_0$ lie in the other arm. Remove them; its weight
+only decreases, so the qualifying one-part arm stays heavier.
+The remaining core has strict peak $t_0<M$ and belongs to the
+same family. The least-peak hypothesis applies. Each removed
+maximum is restored by $J=1+S_{t_0}J^{\rm smaller}$, which
+preserves unimodality. Empty arms give the elementary base.
+
+The general base-peak join therefore makes the core unimodal,
+contradicting balanced core-relative equivalence. This proves
+both relative statements throughout the family. For any core
+in the family, orient a heavier arm first; then
+$b\le a+M-1$ and the established core-relative equivalence
+gives core unimodality as well.
+\end{proof}
+
+The condition on which arm is heavier is essential to the scope
+of this result. An arbitrary lighter one-part arm paired with a
+heavier multi-part arm remains outside this theorem unless another
+previously proved criterion applies. General (A2) remains open.
+
+\section{An arbitrary isolated capacity against every binary arm}
+Let $\mathcal C$ consist of rectangular arms, binary arms
+$1^\alpha2^h$, and arms $1^\alpha t$ having just one non-one
+part, where $\alpha\ge1$, $h\ge1$, and $t\ge2$.
+
+\begin{proposition}[A2 for the safe two-term deletion class]
+If $X,Y\in\mathcal C$ are nonrectangular, then (A2) holds,
+without a weight order restriction.
+\end{proposition}
+\begin{proof}
+Induct on the total number of non-one parts. Orient a heavier
+arm as $X$. If it has only one non-one part, the heavier
+one-part A2 theorem applies, with the other arm unrestricted.
+Otherwise $X=1^\alpha2^h$ with $h\ge2$.
+Let $X^-=1^\alpha2^{h-1}$ and $q_0=q_{X^-}q_Y$.
+The induction hypothesis gives (A2) for $q_0$, and ordinary
+two-arm unimodality applies to $q_0$.
+
+The two-term window lemma in
+\texttt{binary\_geometric\_differences.tex}, at $\lambda=2$,
+gives (A2) for $(1+z)q_0$. The full reverse product is
+\[
+ q_Xq_Y=(1+z)q_0+z^a q_Y,\qquad a=\operatorname{wt}X.
+\]
+Its first mode $\sigma$ satisfies $\sigma<a$, including the
+equal-weight case by the strengthened ordinary midpoint bound.
+Its positive differences are therefore the prefix through
+$\sigma$ of the window's positive differences, followed by zeros.
+Terminal truncation preserves unimodality after weighting.
+This completes the induction.
+\end{proof}
+
+\begin{theorem}[Binary arm versus one isolated arbitrary capacity]
+For all $\alpha,\beta\ge1$, $h\ge0$, $t\ge2$, and
+$M>\max(2,t)$, the core with arms
+$1^\alpha2^h$ and $1^\beta t$ and both its relative
+polynomials are unimodal. The weights of the arms are arbitrary.
+More generally this holds for every pair of arms in $\mathcal C$
+below its strict peak.
+\end{theorem}
+\begin{proof}
+The family of pairs in $\mathcal C$ is closed under final-part
+deletion and arm exchange. At a least-peak, least-relative
+counterexample, rectangular arms are excluded and the proper
+relative lemma supplies the signed prefix. The proposition
+supplies (A2).
+
+For the lower-peak base take the largest arm part $t_0$.
+If $t_0=2$, the elementary binary base suffices. If $t_0>2$,
+every arm containing $t_0$ has only that one non-one part.
+Remove these occurrences: the remaining arms stay in
+$\mathcal C$, and in fact a rectangular arm results. The
+remaining strict lower-peak core is unimodal, and restoring
+each repeated maximum by $J=1+S_{t_0}J^{\rm smaller}$
+preserves unimodality. The base-peak join contradicts the
+relative counterexample. Both relative statements and then
+the full core follow by the established equivalences.
+\end{proof}
+
+In particular the one-part arm may be lighter than a binary arm
+having arbitrarily many twos. This goes beyond the preceding
+heavier-one-part theorem. It still leaves pairs with a heavier
+multi-part arm of capacity greater than two unresolved in general.

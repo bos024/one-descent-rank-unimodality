@@ -1,0 +1,6 @@
+'DividedCIPrimitive.binary_first_primitive_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCIPrimitive.binary_second_primitive_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCIPrimitive.nonempty_first_primitive_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCIPrimitive.unperturbed_interval_junction_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCIPrimitive.exact_perturbed_last_junction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCIPrimitive.entire_capacity_word_induction' depends on axioms: [propext, Quot.sound]

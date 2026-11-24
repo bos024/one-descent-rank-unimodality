@@ -1,0 +1,6 @@
+'UntruncatedOppositeZeroHead.low_unit_no_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UntruncatedOppositeZeroHead.head_pays_all_boundary_recoveries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UntruncatedOppositeZeroHead.exact_zero_head_S_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UntruncatedOppositeZeroHead.first_defect_tail_cannot_recover' depends on axioms: [propext, Quot.sound]

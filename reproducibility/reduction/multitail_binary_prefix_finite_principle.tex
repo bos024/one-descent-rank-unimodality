@@ -1,0 +1,238 @@
+\section{An all-padding finite principle for every fixed nonbinary tail}
+Fix a nonempty sorted word $V=(t_1,\ldots,t_r)$, $t_i\ge3$, and put
+\[
+ W=\sum_i t_i,\quad h=W-r,\quad H=h+4,\quad
+ F_{u,\alpha}=F_{1^\alpha2^u V},\quad
+ D_{u,\alpha}(n)=(F_{u,\alpha}(n)-F_{u,\alpha}(n-1))^+\ (n\ge2).
+\]
+As usual the separate atom at zero is one and the slope at one is zero.
+Let $F^\star$ be the reference obtained by appending $V$ to
+$1/(1-z-z^2)$, let $r_n=F^\star_n-F^\star_{n-1}$ for $n\ge2$,
+and let $G^\star=F^\star/(1-z)$. All assertions below concern actual
+coefficient comparisons, not an inference from cumulative log-concavity.
+
+\begin{theorem}[Fixed-tail finite principle]
+For THIS fixed $V$, the following two finite conditions imply complete
+property C of $1^\alpha2^uV$ for EVERY $u\ge H$ and $\alpha\ge1$:
+\begin{enumerate}
+\item The reference satisfies all C shifts at all $N\le W+5$.
+\item At $u=H$, for every $1\le\alpha\le H+h+1$, its positive slopes
+      are ordinarily log-concave at every centre
+      $H+r+1\le n<\ell_{H,\alpha}$, where $\ell$ is the FIRST
+      positive-slope mode.
+\end{enumerate}
+The second condition requires only ordinary coefficients through
+$2H+W+1$. Without condition 1, condition 2 alone still proves ALL C
+shifts at EVERY actual current rank $N\ge W+6$, for all $u\ge H$
+and all initial paddings.
+If additionally complete actual C is checked for
+\[
+ 0\le u<H,\qquad 1\le\alpha\le u+h+1,
+\]
+using coefficients through $2u+W+1$, complete C follows for ALL
+$u\ge0$ and ALL $\alpha\ge1$. The number, values and weight of the
+fixed word $V$ are unrestricted in this implication. No assertion
+that its finite entrance always passes is included.
+\end{theorem}
+
+\subsection*{A word-uniform Cassini budget}
+Write
+\[
+ C_t=\operatorname{Fib}(t-1)+\operatorname{Fib}(t+1)-1-(-1)^t,
+ \qquad A_V=\prod_{t\in V} C_t.
+\]
+The homogeneous reference slope has Cassini minor of absolute value
+$A_V$. Indeed, beyond the finite numerator, appending $t$ convolves
+the homogeneous Fibonacci sequence with $S_t=z+\cdots+z^t$.
+On its two characteristic roots the two multipliers have product
+$S_t(\varphi^{-1})S_t(-\varphi)$, whose absolute value is $C_t$.
+Equivalently this follows by the $2$ by $2$ determinant of
+$\sum_{j=0}^{t-1}\begin{pmatrix}1&1\\1&0\end{pmatrix}^j$.
+The empty reference has unit amplitude.
+
+For every $t\ge2$,
+\[
+       1\le C_t\le\operatorname{Fib}(t+2)-1.             \tag{1}
+\]
+For $t=2$ this is direct. For $t\ge3$, the difference on the right
+is $\operatorname{Fib}(t-2)+(-1)^t\ge0$.
+If $a_j$ is any nonnegative homogeneous Fibonacci tail, then
+\[
+ \sum_{j=0}^{t-1}a_{m+j}
+ =\{\operatorname{Fib}(t+2)-1\}a_m
+  +\{\operatorname{Fib}(t+1)-1\}a_{m-1}
+ \ge C_ta_m.                                             \tag{2}
+\]
+Starting from the binary reference $r_2=1$ and appending the WHOLE
+word, (2) proves by induction
+\[
+            r_{W+2}\ge A_V,\qquad
+            r_{W+4}\ge2A_V+1.                            \tag{3}
+\]
+All reads in this induction are in the old homogeneous tail: at an
+append they start at old weight plus two. The reference is positive
+from rank two. Thus the final extra unit in (3) is legitimate.
+
+\subsection*{Exact finite padding coverage}
+Actual ordinary unimodality gives first ordinary mode at most
+$2u+W$: the initial indicator has first mode zero, and appending
+capacity $t$ increases this bound by at most $t$, since beyond the
+old bound plus $t$ its signed slope reads two old coefficients in
+the nonincreasing tail. The positive-slope support, and hence its
+first mode, lies no later than $2u+W$.
+
+Changing initial padding from $\alpha$ to $\alpha'>\alpha$ changes
+the actual polynomial first at rank $u+r+\alpha+1$, because its
+whole difference is $z^{u+r}(1+z)^u\prod_i[t_i]$ times the change
+of the initial indicator. Therefore clamping padding to
+$u+h+1$ preserves EVERY ordinary coefficient through $2u+W+1$.
+This proves full coverage of the finite tests, including the zero
+successor of the positive-slope support. It does not assume mode
+preservation under arbitrary clipping.
+
+\subsection*{The infinite binary-count propagation}
+For every fixed padding the WHOLE polynomial identity is
+\[
+ F_{u+1,\alpha}=(z+z^2)F_{u,\alpha}+B_V,\qquad
+ B_V=(1-z-z^2)F^\star,\quad \deg B_V=W.                  \tag{4}
+\]
+This inserts a two BEFORE $V$, rather than appending an illegal
+two after $V$. Its signed-slope forcing $(1-z)B_V$ has degree
+$W+1$. The actual and reference coefficients agree through
+$u+r+1$, and at
+\[
+             N_0=u+r+2
+\]
+the first ordinary and slope defect is $\delta=2$ if $\alpha=1$,
+and $\delta=1$ otherwise.
+For $u\ge H$ we have $N_0\ge W+6$. At its preceding centre,
+the exact-prefix identity and (3) give
+\[
+ D_{u,\alpha}(N_0-1)^2
+ -D_{u,\alpha}(N_0-2)D_{u,\alpha}(N_0)
+ \ge -A_V+\delta r_{N_0-2}\ge A_V+1>0.                 \tag{5}
+\]
+
+Induct on $u\ge H$ to prove ordinary LC at all centres
+$u+r+1\le n\le\ell_{u,\alpha}$.
+The finite condition supplies the base; at the mode itself LC is
+automatic by maximality. For the new first centre use (5).
+At every later centre STRICTLY before the new first mode, the next
+new slope is strictly larger. Here the known unique possible pre-mode
+flat, at last capacity plus one, is earlier than $W+5$ and therefore
+outside the entire tail being considered.
+
+Above degree $W+1$ the old positive slopes form the exact two-term
+window for the new previous and current coefficients; its next is
+at most that window. Positive-support interval structure shows that
+only the last new positive coefficient could be reduced by a signed
+old outgoing value. If the old consecutive quadruple is $(a,b,c,d)$,
+strict new next growth forces $d>b$. Old slope unimodality then
+puts BOTH old LC centres at or before the old FIRST mode. They also
+lie in the inductively certified tail. Consequently
+\[
+ (b+c)^2-(a+b)(c+d)
+  =(b^2-ac)+(c^2-bd)+(bc-ad)\ge0.                       \tag{6}
+\]
+The cross term follows from the two old LC minors and $b>0$.
+Reducing the new next coefficient improves the desired minor.
+At the new mode use maximality again. This is precisely the
+previously kernel-checked whole rising-reference-tail induction,
+under the shifted indexing $d_u(j)=D_{u,\alpha}(j+r+1)$.
+No LC after the old first mode is assumed.
+
+\subsection*{Complete C from the propagated ordinary LC}
+The previously proved all-word reference theorem supplies ALL C
+shifts at every $N\ge W+6$. Exact-prefix agreement therefore pays
+all actual ranks $W+6\le N<N_0$; at $N_0$ reducing only the
+current slope improves every C minor.
+
+For later strictly increasing current slopes, put
+$\lambda=D_N/D_{N-1}$. If their first mode is earlier than $N_0$,
+there is nothing left to prove. Otherwise tail LC gives
+\[
+           \lambda\le\lambda_0=(r_{N_0}-\delta)/r_{N_0-1}.
+\]
+Write $(a,b,c,d)=(r_{N_0-3},r_{N_0-2},r_{N_0-1},r_{N_0})$.
+They are homogeneous, $c=a+b$, $d=b+c$, and (3) gives
+$A_V\le a\le b$. The two Cassini seed inequalities are
+\[
+                 a(d-\delta)\le bc,\qquad
+                 b(d-\delta)\le c^2.                  \tag{7}
+\]
+Reference C at $N_0$ pays every cumulative read $k\le N_0-3$.
+At $k_0=N_0-3$, the ordinary seed is
+$F_{k_0}=c$, $F_{k_0-1}=b$, so (7) gives
+$F_{k_0}\ge\lambda F_{k_0-1}$.
+The same two inequalities seed the earlier D ratios at
+$N_0-2,N_0-1$; tail LC supplies all subsequent D ratios needed
+through $N$. On this finite increasing prefix,
+$F_i=F_{i-1}+D_i$ and $G_i=G_{i-1}+F_i$.
+The established finite-read integration lemma now gives
+$G_k\ge\lambda G_{k-1}$ for all $k\le N-3$.
+This is every C shift. Current decreasing or flat slopes are
+automatic. This proves the asserted late-C conclusion without any
+early reference hypothesis.
+
+Condition 1 covers the earlier identical reference prefix and
+therefore proves complete C for all $u\ge H$. The additional
+finite shorter-$u$ tests, with the proved padding and mode bounds,
+cover every remaining actual arm. This finishes the finite principle.
+
+\begin{corollary}[An unbounded actual C family with nonbinary weight at most 32]
+Every actual sorted arm $1^\alpha2^uV$, with $\alpha\ge1$, $u\ge0$,
+all $V_i\ge3$, and $\sum V_i\le32$, has complete property C.
+The empty tail is covered by the previously proved binary theorem.
+No bound is imposed on total non-one count, total arm weight,
+initial padding, current rank or comparison shift.
+\end{corollary}
+\begin{proof}
+The certificate includes ALL 2,744 nonempty sorted words with
+nonbinary weight at most 32, including 659 words with at least six
+nonbinary capacities. It checks every finite domain in the theorem:
+2,813,182 shorter-count/padding representatives, 139,880 entrance
+padding representatives, all 3,226,513 required entrance LC minors,
+and every early reference shift. Exact prefix minima of consecutive
+cumulative ratios verify all shifts using 105,427,810 cross products;
+944,458 selected literal comparisons separately check that reduction.
+An independent reconstruction uses sums of suffix CI layers and
+full-product convolutions with initial indicators, rather than the
+generator's per-arm coefficient recurrence. Every coefficient list,
+positive slope list, first mode, per-word count and complete state
+hash agrees. The state digest is
+\texttt{8aa1185993d57da201dbd0f446c7f60d3c47d155d7a7508ed2907fd0957819de}.
+The unbounded conclusion now follows from the theorem; no numerical
+cutoff on binary count is extrapolated.
+\end{proof}
+
+The established one-arm C bridge consequently applies against an
+arbitrary opposite arm: it gives the factor-two coefficient tilt
+unimodality of the ordinary product, and all-depth both-ordinary-rising
+nonnegative-current tail nonrecovery. All-head S still retains its
+usual OLD head and proper guards; the existing proper zero-head
+bridge is available with both non-one counts at least two.
+These auxiliary consequences do not close the remaining original
+mixed/incoming/A2 branches.
+
+\paragraph{Formal scope.}
+\texttt{MultitailCassiniBudget.lean} proves six new standard-axiom
+results: the all-capacity factor bound; the exact all-length Fibonacci
+window identity; full unbounded word induction for the EXACT Cassini
+amplitude; full word budget induction; the nonempty strict two-step
+budget; and the first-defect strict LC payment. The old full
+rising-tail induction and finite-read integration kernels are reused
+without recounting. Actual word, degree, mode, padding and all-shift
+identification is written mathematics. Exhaustive entrance rebuilding
+uses exact integers; it is not an ordinary Lean kernel enumeration
+of the actual finite composition family.
+
+\paragraph{Precise scope.}
+This theorem replaces an UNBOUNDED binary-prefix search, at EVERY
+fixed nonbinary word, by a single LC entrance and finite early tests.
+The reference degree, all padding and mode bounds, two Cassini seeds
+and the all-shift assembly are explicit. The old rising-tail induction
+and finite-read C kernels are reused. Passing finite entrances for
+selected words does not prove that all fixed words pass.
+General actual C, general A2 and the ORIGINAL general unamplified
+coefficient-unimodality conjecture remain OPEN. No original numerical
+least-counterexample bound is upgraded by this conditional reduction.

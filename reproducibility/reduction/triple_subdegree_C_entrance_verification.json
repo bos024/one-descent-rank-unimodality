@@ -1,0 +1,81 @@
+{
+  "status": "PASS_UNBOUNDED_TRIPLE_SUBDEGREE_ALL_PADDING_ACTUAL_LATE_C",
+  "new_scoped_reports": 6,
+  "kernels": {
+    "TripleSubdegreeCEntrance": {
+      "all_padding_three_loss_payments": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "first_ordinary_seed_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "second_ordinary_seed_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "first_ordinary_seed_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "second_ordinary_seed_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "strict_subgolden_actual_entrance": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "7209b694afb3de044b3912de8618508388262681383bfb07d8d9055053c64c7a",
+  "QA": {
+    "exact_prefix_minimum_all_shift_C_payments": 1282560,
+    "logical_shift_coverage": 323545354,
+    "literal_all_shift_C_products": 2215763,
+    "actual_hosts": 7850,
+    "CI_profiles": 1122,
+    "unbounded_three_loss_and_two_seed_identity_instances": 7679,
+    "all_prefix_strong_cumulative_seed_products": 567942,
+    "strictly_growing_boundary_hosts": 7662
+  },
+  "independent_counts": {
+    "independent_all_shift_minimum_C_payments": 116659,
+    "independent_literal_C_read_products": 487262,
+    "independent_actual_hosts": 1482,
+    "independent_CI_profiles": 247,
+    "independent_all_prefix_boundary_seeds": 54626
+  },
+  "independent_state_sha256": "71a970321b561f6d751c44fd1e2cdb98c1970abdff7e54abb4f2d5497726b2bf",
+  "new_finite_entrance_certificates": 0,
+  "losses": "EXACT h=u+3 first finite-binary reference loss at W-1, derivative z^(W-1)E/(1-z-z2), PLUS distinct initial-ones loss z^(W+alpha-2)E. E0=1,E1=w,E2=choose(w,2)+r. ALL four alpha regimes retained throughW+1; losses satisfy 1<=a<=2,b>=2a,c>=3b atw>=6.",
+  "entrance": "PROVED ANY realx>=2,x<=y<=2x,A=x2+xy-y2>0,1<=a<=2,b>=2a,c>=3b: exact TWO ordinary seeds P>=2,Q>0. Reference F(W-2)=x-1 retains leading numerator unit, F(W-1)=y,F(W)=x+y. Actual tail ratio(y-c)/(x-b)<phi whenever positive. Unchanged reference G throughW-2 has ratios>phi; TWO seed integrations extend toW. UNIVERSAL late-D-LC then pays every later all-shift C read.",
+  "actual": "PROVED ALL sorted1^alpha2^uV, h=u+3,ALLcapacities/counts/paddings, everyCshift>=3 at EVERYcurrentN>=W+1. Smallw<6 uses OLD allu<=8 theorem; no new finite entrance or exception certificate.",
+  "threshold": "ALL actual late C now holds at u>=h-3. Oldu>=h-2 plus NEW h=u+3. Every nonbinary tail capacity/count, binary count, padding and shift is unbounded.",
+  "remaining": "Potential actual LATE-C failures now requireu>=9,u+4<=h<=3u-2,maxcap<=2u-1,W>32. Earlier actual/reference C N<=W, general C/A2 and original coefficient UI remain OPEN. First unresolved original full-C nonone count6 unchanged.",
+  "formal_scope": "SIX new scoped real-algebra kernel reports:complete loss-growth cone, TWO exact ordinary seed identities,TWO full unbounded seed payments and strict subgolden gap. Reference/source/model identities, mode split, prefix and TWO integrations are WRITTEN using already registered universal D-LC/reference/source inputs, not an end-to-end composition Lean theorem. All finite diagnostics QA ONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_threshold": "u>=h-3",
+  "sha256": {
+    "triple_subdegree_C_entrance_proof.tex": "dada3dbfc54bb77a82baf82283515192253ca9dca08b193dcbdb1237d39796c6",
+    "TripleSubdegreeCEntrance.lean": "47ca12a857c6e44644cba1a7a88649bf532417b91735c7d5c635a038a77e11e5",
+    "TripleSubdegreeCEntrance.log": "4f0b4c4ddf8df001de80b75aea8d4081794a29a353c1fecd765535b31da530c1",
+    "audit_triple_subdegree_C_entrance.py": "fae7ce36ebee22abde7b9673745ff78644298db7a29ad088f8f13645de07b6d2",
+    "audit_triple_subdegree_C_entrance.json": "ee45b204d2438c3c80100098860638389b1f737417577751219c438467408af3",
+    "verify_triple_subdegree_C_entrance.py": "292c5557dd007d9e75540d2b2c2bc820a0a352b8fa0522a23c8f8cc683a28671",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "double_subdegree_CI_entrance_verification.json": "de6cdc082a0ea7a96d74beca5c43ee0b0a3d78bbf1bea9fa2c87c2cbbba46d9f",
+    "automatic_late_C_cones_verification.json": "74c5749c54fe6ba4e885c40e7598ea28e0e8c4defe117d24f97021d0a0250abd",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc"
+  }
+}

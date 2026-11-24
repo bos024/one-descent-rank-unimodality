@@ -1,0 +1,123 @@
+\section{A log-concave cumulative reverse profile}
+
+For a host $Z$ of weight $c$, put
+\[
+ q_Z(z)=z^cF_Z(1/z),\qquad
+ A_Z(k)=\sum_{j=0}^k[z^j]q_Z(z),
+\]
+with $A_Z(k)=0$ for $k<0$. The cumulative sequence is constant for $k\ge c$.
+Write $[t]=1+z+\cdots+z^{t-1}$ for $t\ge1$. For a fixed
+legal peak $M\ge\max Z$, set
+\[
+ D_Z=1+(S_M-1)F_Z,\qquad
+ \delta_Z(z)=z^{c+M}D_Z(1/z).
+\]
+The kernel is nonnegative, since $D_Z=F_{ZM}-F_Z$.
+Parenthesized integer arguments of $D_Z$ and $\delta_Z$ below denote
+coefficients, not polynomial evaluations. We first prove the two
+cumulative properties when $Z$ is increasing.
+
+\begin{theorem}
+For every increasing arm $Z$, the sequence $A_Z$ is log-concave:
+\[
+ A_Z(k)^2\ge A_Z(k-1)A_Z(k+1)\qquad(k\in\mathbb Z).
+\]
+In particular, for a legal peak $M$, the reversed kernel $\delta_Z$ is
+log-concave at each index $0\le k\le M-2$.
+\end{theorem}
+
+\begin{proof}
+The empty arm gives $A_\varnothing(k)=\mathbf1_{k\ge0}$, which is
+log-concave with interval support. Suppose the result holds for an arm of
+weight $c$ and append a global maximum $t\ge1$. The reversed recurrence is
+\[
+ q_{Zt}=[t]q_Z+z^{c+t}.
+\]
+Consequently
+\[
+ A_{Zt}(k)=W(k)+\mathbf1_{k\ge c+t},\qquad
+ W(k)=\sum_{i=0}^{t-1}A_Z(k-i).
+\]
+The convolution of two nonnegative log-concave sequences with interval
+support is log-concave; it applies here to $A_Z$ and $[t]$. Although $A_Z$
+has infinite constant support to the right, this application is local:
+truncate it strictly after all indices occurring in any of the three
+coefficients being compared. Such a terminal truncation preserves
+log-concavity and interval support.
+
+Set $C=tA_Z(c)$. Since $[z^c]q_Z=[z^0]F_Z=1$, the last two values before
+the added step are
+\[
+ W(c+t-2)=C-1,\qquad W(c+t-1)=C,
+\]
+and $W(k)=C$ thereafter. These formulas also cover $c=0$ and $t=1$, with
+zero extension. All log-concavity inequalities before index $c+t-1$
+remain unchanged. The boundary values are $C-1,C,C+1,C+1,\ldots$.
+The only two remaining boundary inequalities are
+\[
+ C^2-(C-1)(C+1)=1>0,\qquad
+ (C+1)^2-C(C+1)=C+1>0.
+\]
+Afterward the sequence is constant. Induction proves the first assertion.
+
+The kernel identity is
+\[
+ \delta_Z=([M]-z^M)q_Z+z^{c+M}.
+\]
+Thus $[z^k]\delta_Z=A_Z(k)$ for $0\le k<M$. All three coefficients in a
+log-concavity comparison agree when $0\le k\le M-2$, including the zero
+coefficient at index $-1$. This proves the second assertion. No extension
+past that interval is asserted.
+\end{proof}
+
+\begin{theorem}[Cumulative reverse kernel]
+Fix $M\ge2$. For every increasing arm $Y$ with parts strictly below $M$,
+the sequence
+\[
+ B_Y(k)=\sum_{j=0}^k[z^j]\delta_Y(z),\qquad B_Y(k)=0\ (k<0),
+\]
+is log-concave on all integer indices.
+\end{theorem}
+
+\begin{proof}
+The empty arm gives $\delta_\varnothing=[M]$, so the assertion is clear.
+Suppose $Y=Zt$, put $c=\wt Z$, and let $b=c+t$. The reversed recurrence
+gives
+\[
+ B_Y(k)=W(k)+\sum_{j=0}^k[z^j]\bigl(z^b[M-t]\bigr),\qquad
+ W=[t]*B_Z.
+\]
+Induction and the log-concave convolution lemma make $W$ log-concave.
+For a comparison centered at $k\le b-2$, the correction has not started,
+and all three coefficients agree with $W$.
+
+For $k\ge b$, the kernel's known low-rank growth says
+$\delta_Y(k+1)\le\delta_Y(k)$: after reversing, these are forward ranks
+at most $M$. Consequently $B_Y$ is nonnegative, nondecreasing and
+concave at such a comparison, which implies log-concavity there.
+Indeed, if consecutive increments are $s\ge t\ge0$ and the first value
+is $A\ge0$, the log-concavity determinant is $s^2+A(s-t)\ge0$.
+
+Only $k=b-1$ remains. It is covered by the same argument if
+$\delta_Y(b)\le\delta_Y(b-1)$. Otherwise the reversed recurrence gives
+\[
+ 0<\delta_Y(b)-\delta_Y(b-1)
+   =1+D_Z(M-t)-D_Z(M).
+\]
+The two forward coefficients are integers and $D_Z$ is nondecreasing
+through $M$, so they must be equal. In the kernel proof, the identity
+\[
+ (1-z)D_Z=E_Z-z^{M+1}F_Z
+\]
+and the positive interval support $\supp E_Z=[q,c+1]$, with $q\le t+1$,
+then force $c+1\le M-t$: otherwise the interval $[M-t+1,M]$ meets the
+positive support and $D_Z(M)>D_Z(M-t)$. Hence $b<M$.
+
+For every $0\le j\le b$, therefore, $\delta_Y(j)=A_Y(j)$ by the preceding
+theorem. The three values of $B_Y$ at the remaining comparison are
+cumulative sums of the log-concave sequence $A_Y$. Cumulative summation
+preserves log-concavity, by convolution with the sequence
+$\mathbf1_{k\ge0}$ (or a sufficiently long finite window). This proves
+the final comparison and completes the induction.
+\end{proof}
+

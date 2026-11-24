@@ -1,0 +1,5 @@
+'TribonacciQuotientPrimitiveTransfer.exact_binary_quotient_correction' depends on axioms: [propext, Quot.sound]
+'TribonacciQuotientPrimitiveTransfer.exact_ternary_quotient_correction' depends on axioms: [propext, Quot.sound]
+'TribonacciQuotientPrimitiveTransfer.whole_primitive_three_head_to_tail_join' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

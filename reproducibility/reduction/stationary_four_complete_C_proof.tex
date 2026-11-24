@@ -1,0 +1,276 @@
+\section{Complete C and sharp ordinary tails for every binary/four arm}
+Write $Q_2=1-z-z^2$, $S=z+z^2+z^3+z^4$,
+$B_r=\sum_{j<r}S^j$, $W=4r$, and
+\[
+ R^{(r)}=B_r+S^r/Q_2,\qquad A=r+3.
+\]
+This is the infinite-BINARY reference. Throughout $q^2+q=1$,
+$q>0$, $\phi=1+q$, and all sequences are zero extended where appropriate.
+
+\begin{theorem}
+EVERY actual normalized arm $1^\alpha2^u4^r$, with
+$\alpha\ge1$ and arbitrary $u,r\ge0$, has COMPLETE C at every
+current rank and shift. For $r\ge8$ and $u\ge1$, its ordinary
+coefficients are LC at EVERY centre $n\ge r+3$ if and only if
+$u\le3r$. For $u\ge3r+1$ the actual minor at $4r+1$ is EXACTLY
+$-5^r$. Pure four arms have ordinary LC from $r+2$ when $r\ge8$.
+The infinite-binary reference has complete C for every $r$ and
+ordinary LC at every centre $r+3\le n\le4r$ when $r\ge8$.
+\end{theorem}
+
+\subsection{An exact seven-step majorant for quartic minors}
+Let $h=(1-S)^{-1}$ and $K_n=h_n-\phi h_{n-1}$. Both satisfy the
+positive four-term recurrence. For ANY solution $s$ of that recurrence,
+its aligned minors $M_n=s_{n+1}^2-s_ns_{n+2}$ satisfy the EXACT identity
+\[
+ M_{n+7}=-M_n+2M_{n+1}-3M_{n+2}+4M_{n+3}-M_{n+5}.       \tag{1}
+\]
+Substituting four arbitrary initial values proves (1) polynomially;
+this identity is kernel checked without a characteristic-root premise.
+The absolute seven-step budget is contractive relative to growth $9/5$:
+\[
+ \sum_{i=0}^5|c_i|(5/9)^{7-i}
+ ={4417475\over4782969}<1,\quad(c_0,\ldots,c_5)=(-1,2,-3,4,0,-1).
+\]
+More precisely $9k_i\le5k_{i+1}$ ($0\le i<7$), $k_7\ge0$ imply
+$k_0+2k_1+3k_2+4k_3+k_5\le k_7$. Together with (1) and seven
+entrance bounds this proves the ENTIRE absolute-minor induction.
+
+The complete entrance contains $|M_h(n)|\le h_{n-1}$ at centres
+$2,\ldots,8$, and $|M_K(n)|\le K_{n-1}$ at centres $7,\ldots,13$.
+The bounds propagate to all later centres because
+\[
+\begin{array}{ll}
+9h_n\le5h_{n+1}&(n\ge1),\\
+0<K_n&(n\ge2),\\
+9K_n\le5K_{n+1}&(n\ge5),\\
+K_{n+1}\le2K_n&(n\ge6).
+\end{array}                                                     \tag{2}
+Each assertion in (2) is a positive four-term recurrence applied
+to the corresponding linear combination, from FOUR explicit initial
+values. These values and all fourteen entrance minors are included
+in the complete quadratic-field certificate. Also $h_n\le2h_{n-1}$
+for $n\ge1$, either by bounded-word growth or by the four initial
+nonnegative growth gaps and their recurrence. Thus in particular
+\[
+ |M_h(n)|\le h_{n-1}\ (n\ge2),\qquad
+ |M_K(n)|\le K_{n-1}\ (n\ge7).                    \tag{3}
+\]
+No guessed spectral bound is used.
+
+\subsection{Residual LC of the entire stationary-four physical head}
+Put $H_n=R_n-\phi R_{n-1}$. The WHOLE rational identities are
+\[
+ H={C_r\over1+qz},\quad C_r=1+(z^3+z^4)B_r,\quad
+ H^{(r+1)}=SH^{(r)}+(1-\phi z).
+\]
+The established general golden-head theorem gives $H_n>0$ for
+$2\le n\le W$. Its complete tail, which must not be discarded, is
+\[
+ \tau_r=H_W=(3-4q)^r>0,\qquad H_{W+j}=(-q)^j\tau_r.       \tag{4}
+\]
+For example evaluate $C_r$ at $-\phi$, where $Q_2=0$; the amplitude
+at $W$ is $[4](-q)^r=(3-4q)^r$.
+
+We prove $H_n^2\ge H_{n-1}H_{n+1}$ for $A\le n<W$, by induction
+from $r=8$. The complete entrance is $H_{10},\ldots,H_{32}>0$
+and all 21 minors at centres $11,\ldots,31$. The four-term growth
+and majorant entrances plus this fixed reference entrance comprise
+92 exact scalars in ONE standard-axiom Lean aggregate.
+
+Let $r\ge9$ denote the NEW count. The first four differences
+$h-H_2$ are $1,3,7,16$ at ranks $3,4,5,6$. Hence the first four
+losses of $H^{(r)}$ relative to $K$ occur at $A,A+1,A+2,A+3$ and are
+\[
+ a=1,\quad B=ar+b,\quad C={ar(r+1)\over2}+br+c,\quad
+ D={ar(r+1)(r+2)\over6}+{br(r+1)\over2}+cr+d,
+\]
+where $b=3-\phi\ge1$, $c=7-3\phi\ge2$, $d=16-7\phi\ge4$.
+The three budgets $B-4a-1$, $C-4B-1$, $D-4C-1$ are nonnegative.
+For the last, the uniform lower bound is
+\[
+ 7+{(r-9)(r^2+3r+8)\over6}\ge0.
+\]
+With (2)--(3), these pay all THREE new left minors. Explicitly, for
+a reference triple $t_0,t_1,t_2$ and losses $a,B$, the first minor
+is at least $t_0(B-4a-1)+a^2$. Each next one uses the identity
+\[
+ (t_2-B)^2-(t_1-a)(t_3-C)
+ =M_t-2Bt_2+B^2+Ct_1+a(t_3-C).
+\]
+It is nonnegative by $t_2\le2t_1$, $M_t\ge-t_1$,
+$C-4B-1\ge0$, and the ACTUAL successor $t_3-C\ge0$.
+The third uses $(a,B,C)$ shifted to $(B,C,D)$.
+The generic kernel retains both actual-successor guards.
+
+Truncate the OLD positive $H$ below its $A_{\rm old}-1$.
+It is globally LC by induction. Its positive $S$ window agrees
+with every NEW triple from $A+3$ through $W_{\rm old}$.
+At $W_{\rm old}+1$ the successor alone is lowered by
+$q\tau_{r-1}$, so its minor improves. This leaves EXACTLY two
+terminal corners, at $W-2,W-1$ for the NEW $W=4r$.
+
+Here is their complete payment. Let $I$ be the zero-truncated
+inverse $[4]^r/(1+qz)$ through degree $D_0=3r$.
+No global positivity or LC of $I$ is assumed. Its last four values
+come from coefficient reversal and satisfy
+\[
+ I_{D_0}=\tau,\quad v=I_{D_0-1}=\phi(1-\tau),\quad
+ w=I_{D_0-2}=\phi(r-\phi+\phi\tau),
+\quad x=I_{D_0-3}=\phi\{r(r+1)/2-\phi r+\phi^2-\phi^2\tau\}.
+\]
+The top three coefficients of $C_r$ are
+$1,r,r(r+1)/2-1$, whereas those of $[4]^r$ are
+$1,r,r(r+1)/2$. Therefore the last four $H$ values are
+$\tau,v,w,x-\phi$, in reverse order. The two required minors are
+$v^2-w\tau$ and $w^2-(x-\phi)v$.
+Since $0<3-4q\le3/5$, the potential $(r+2)\tau_r\le1$ holds
+for all $r\ge4$: its base is $6(3/5)^4<1$ and its step is
+$(r+3)(3/5)\le r+2$. The exact identities
+\[
+ v^2-w\tau=\phi^2-\phi(r+\phi)\tau\ge0,
+\qquad
+ w^2-xv=\phi^2\left\{{r(r-2\phi-1)\over2}
+             +(r(r+1)/2+\phi r)\tau\right\}\ge0
+\]
+pay both for $r\ge5$. Also $v>0$ by the already established
+positive reference head, so replacing $x$ by $x-\phi$ improves
+the latter. The whole potential and both scalar corners are
+kernel checked. All middle, left and right reads are now covered.
+
+\subsection{Ordinary reference LC and every reference C shift}
+The first ordinary minor at $A-1$ is
+$M_h(A-1)+h_{A-2}\ge0$: the only changed coefficient is
+$R_A=h_A-1$. Positive $H$ and its LC tail propagate ordinary LC
+from there through $W-1$ using the already proved causal geometric
+minor identity, valid at the positive multiplier $\phi>1$.
+At $W$ the endpoint is paid directly:
+$M_R(W)=R_WH_W-R_{W-1}H_{W+1}>0$ by (4).
+
+The first relative loss at $A$ is one. Universal order-four renewal
+rounding gives $R_A<\lambda_4 R_{A-1}$ and protected cumulative
+ratios greater than $\lambda_4$. The full bounded ordinary-to-G
+bridge pays every reference C comparison with $A<N\le W$;
+the earlier prefix is $H_4$, and at $N=A$ only the current D is
+lowered. The existing arbitrary-tail infinite-binary reference C
+from $W-1$ pays all later comparisons. For $r\le8$, every finite
+reference read is realized by a sufficiently long actual binary
+prefix in the OLD nonbinary-weight-at-most-32 full-C theorem.
+Thus reference C holds for EVERY $r$.
+
+\subsection{Actual ordinary-tail heredity retains all finite binary seeds}
+Fix an arbitrary finite binary seed $f=F_{1^\alpha2^u}$.
+Its first difference from $H_4$ is at $a_0=2$ if $u=0$, and
+at $a_0=3$ if $u\ge1$. Write its first four nonnegative integer
+losses as $a,b,c,d$. The elementary ideal growth $f_{n+1}\le2f_n$
+and the initial $H_4$ values imply
+\[
+ a\ge1,\quad b\ge2a,\quad c\ge4a-1,\quad d\ge8a-3.       \tag{5}
+\]
+For $a_0=3$ the latter two constants are
+$h_5-4h_3=-1$, $h_6-8h_3=-3$; for $a_0=2$ they improve.
+Thus finite-padding effects have not been dropped.
+
+Suppose the ordinary actual F tail is LC from $a_0+r$ for
+some $r\ge8$. Append a four. With the NEW count again denoted $r$,
+the first four losses have the same $a,B,C,D$ formula above.
+All three startup budgets are nonnegative for EVERY $r\ge8$.
+In particular the exact last decomposition is
+\[
+\begin{split}
+ D-4C-1={}&{a(r-8)(r+2)(r+3)\over6}+(a-1)r\\
+ &+{(b-2a)r(r-7)\over2}+(c-4a+1)(r-4)+(d-8a+3)\ge0.
+\end{split}
+\]
+The same three-left-minor theorem and (3) pay the startup.
+Every later triple is the positive $S$ window of the old ordinary
+tail truncated below $a_0+r-2$, and is LC by positive interval
+convolution. This proves ENTIRE ordinary-tail heredity under four
+append, with no source or D-mode crossing omitted.
+
+\subsection{A first-degree-crossing entrance closes every binary count}
+For EVERY $u\ge21$, choose $r_0=\lfloor u/3\rfloor+1\ge8$.
+Then $3r_0-3\le u<3r_0$, and the actual F first differs from
+the stationary reference at
+$u+r_0+2\ge W-1$. All ordinary centres through $W-3$ are
+protected. At $W-2$ they are protected or only the successor is
+LOWERED, which improves the minor. The OLD universal actual
+ordinary-LC theorem from $W-1$, since $u\ge5$ and $3r_0>u$,
+pays EVERY later centre. This is an analytic seed for EVERY
+large $u$, not an unbounded diagonal assumption. Heredity pays
+all $r\ge r_0$, exactly the range $u<3r$.
+
+For $0\le u\le20$ the fixed $r=8$ entrance is COMPLETE:
+\[
+ 1\le\alpha\le\lfloor(u+24)/2\rfloor,\qquad
+ a_0+8\le n<L.
+\]
+There are 352 hosts, 8554 ordinary minors and 2815 distinct integer
+margins, certified in 15 chunks and ONE Lean aggregate. For all
+larger padding the prefix through $B=\lfloor(3u+40)/2\rfloor$
+is identical to the largest representative: the first finite-ones
+loss occurs only at $\alpha+u+8+1>B$. The established sorted
+mode bound gives $L\le B$, and ordinary F LC after $L$ is automatic.
+Thus the entrance covers ALL padding, and heredity covers all $r\ge8$.
+The independent verifier reconstructs EVERY host and EVERY minor.
+
+This proves ordinary F LC from $a_0+r$ for all $u<3r$, $r\ge8$.
+The universal first-defect ordinary-C criterion gives full actual C
+there. For $u\ge\max(0,3r-3)$ the first actual loss relative to
+the complete-C reference is at least $W-1$. Reference C pays all
+earlier currents and the current $W-1$, where only its D is lowered.
+The OLD universal actual C from $W$ pays all later currents.
+Together these ranges cover EVERY $u$ for $r\ge8$; $r\le8$ is
+the old weight-32 family. This proves full actual C without a cutoff.
+
+\subsection{The ordinary classification has an exact sharp complement}
+At $u=3r$, the reference is protected through $W+1$, and the OLD
+surplus ordinary-LC theorem starts at $u+r+1=W+1$. Reference LC
+through $W$ and this actual tail join exactly. Hence $u\le3r$
+has the asserted entire ordinary-LC tail.
+
+Modulo $Q_2$, $S=2-z$, with the COMPLETE identity
+$S-(2-z)=-(z^2+2)Q_2$. Therefore
+\[
+ C_r=(2-z)^r+Q_2J_r,\quad J_0=0,\quad
+ J_{r+1}=SJ_r+1-(z^2+2)(2-z)^r,\quad\deg J_r\le4r-2.
+\]
+The whole commutative-ring induction is kernel checked. The norm
+of $u+vz$ modulo $z^2+z-1$ is $u^2-uv-v^2$;
+multiplication by $2-z$ sends $(u,v)$ to $(2u-v,3v-u)$ and
+multiplies this norm by FIVE. For $n\ge W$, the ordinary minor
+of $C_r/Q_2$ is therefore $(-1)^n5^r$, by the two-amplitude
+Fibonacci Cassini identity. The norm and Cassini scalar identities
+are kernel checked, with induction giving the whole norm $5^r$.
+At $W+1=4r+1$ the minor is $-5^r$.
+If $u\ge3r+1$, the actual first binary loss is at least $W+3$,
+so this entire triple is protected. This proves the claimed exact
+negative actual minor and the iff classification. It does NOT
+refute C or original coefficient unimodality.
+
+\subsection{A new original coefficient family follows}
+The binary/four arm class is final-deletion-closed, has complete C
+by this theorem, and has first missing weight at most five. Adjoin
+it to the previously proved class $\mathcal A_5$ in
+\texttt{certified\_kappa\_five\_original\_family\_refinement.tex}.
+The same conditions remain true. The sharp first-missing-five
+criterion proves FULL pair A2, the entire signed source cone for
+two nonrectangular members, and ORIGINAL core/BOTH-relative
+coefficient unimodality for EVERY pair in this enlarged class,
+at every strict central peak. ONE arbitrary heavier final append
+is also allowed. In particular one arm may contain arbitrarily
+many threes and the other arbitrarily many fours; mixing both
+counts inside one arm is not asserted here.
+
+\paragraph{Formal and remaining scope.}
+The generic kernels check the exact seven-step identity and entire
+majorant induction, three startup minors and both uniform head
+budgets, all-degree-crossing/padding arithmetic, the terminal
+potential and both corners, and the whole polynomial and norm
+identities. The complete field and ordinary entrances each have
+one aggregate kernel report. Exact source/membership, old-resource
+identification, LC convolution and the full reference/actual/original
+assemblies are WRITTEN proofs; no end-to-end Lean composition
+formalization is claimed. Independent diagnostics do not substitute
+for these unbounded arguments. General arbitrary-capacity C/A2 and
+the original one-descent conjecture remain OPEN.

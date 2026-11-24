@@ -1,0 +1,29 @@
+{
+  "status": "PASS_QA_ONE_HEREDITARY_C_ARM_ARBITRARY_OTHER_ORIGINAL",
+  "formal_reports": 0,
+  "scope": "Finite QA ONLY. The unbounded proof uses the marked-pair deletion induction and frozen kernels. True leftmost-embedding original counts do not use arm recurrences or core identities.",
+  "counts": {
+    "independent_letter_DP_controls": 15,
+    "independent_suffix_box_arm_counts": 292,
+    "marked_current_FULL_C_QA": 122,
+    "FULL_A2_products": 146,
+    "TRUE_leftmost_embedding_originals": 146,
+    "BOTH_relative_polynomials": 292,
+    "original_coefficient_ranks": 50944,
+    "five_arbitrary": 36,
+    "independent_naive_original_core_identities": 30,
+    "arbitrary_marked_heavier_extra_appends": 24,
+    "capacity_four": 36,
+    "negative_current_marked_source_budgets": 1725,
+    "two_nonbinary": 36,
+    "dominant_tower": 36,
+    "ordinary_LC_obstruction": 1,
+    "arbitrary_other_violates_count_plus_two_LC": 1,
+    "both_nonbinary_mass_above_32": 1
+  },
+  "sha256": "e8fabba565ca0206bdb799ed48cef06586162e248fdd8f4325c9d83261cc1d33",
+  "seconds": 2.375,
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "general_original": "OPEN"
+}

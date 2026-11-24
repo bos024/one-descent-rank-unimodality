@@ -1,0 +1,288 @@
+% Unbounded local boundary comparison and its global layer consequence.
+\section{Length-sensitive reflection without a long run of ones}
+For an increasing arm $Y$ of weight $b$ and length $L$, put
+\[
+ F_Y=\sum f_jz^j,\quad q_Y=z^bF_Y(1/z),\quad
+ C_Y(r)=\sum_{j=0}^r(q_Y)_j,
+\]
+with $C_Y(r)=0$ for $r<0$. Use the formal power series
+\[
+ B_Y=1+\left(\frac{z}{1-z}-1\right)F_Y.
+\]
+It counts the minimal failures obtained by prefixing a positive
+letter to an embedded word. Its first nonzero coefficient is at
+the minimum missing weight $\kappa(Y)$; its coefficients are
+nonnegative. For any finite peak $M$, its coefficients through
+rank $M$ agree with those of $D_M(Y)$.
+
+\begin{theorem}[A local reverse-boundary comparison]
+For every increasing arm, including the empty arm with $\kappa=1$,
+\[
+ C_Y(r)\ge (B_Y)_{\kappa+r-1}+1
+ \qquad(0\le r\le L-\kappa+1).
+\]
+Consequently, if $0\le h\le\kappa-1$, $s\ge0$, and $h+s\le L$,
+then
+\[
+ C_Y(s)\ge(B_Y)_{h+s}+1.
+\]
+\end{theorem}
+\begin{proof}
+For the empty arm the sole comparison is $1\ge0+1$.
+For $Y=1^L$, $L\ge1$, one has $\kappa=2$,
+$C_Y(r)=r+1$ and $(B_Y)_{r+1}=r$ throughout $0\le r\le L-1$.
+These give the initial cases, after which only parts $t\ge2$
+need be appended. For a prefix of length $L$, weight $c$, and
+missing weight $k$, the exact recurrences are
+\[
+ C_{Yt}(r)=\sum_{j=0}^{t-1}C_Y(r-j)+\mathbf1_{\{r\ge c+t\}},
+ \qquad B_{Yt}=S_tB_Y+\frac{z^{t+1}}{1-z}.
+\]
+Also $k'=\min(k+1,t+1)$ and $k\le t+1$.
+
+If $k'=k+1$, the new admissible range is $r\le L-k+1$,
+exactly the old range. The difference in the desired comparison is
+\[
+ \sum_{j=0}^{t-1}
+   \bigl(C_Y(r-j)-(B_Y)_{k+r-j-1}\bigr)
+   -\mathbf1_{\{k+r\ge t+1\}}.
+\]
+The extra indicator from the cumulative recurrence vanishes here:
+$r\le L$ and $c+t\ge L+2$. Terms with negative $r-j$ vanish,
+and every other term is at least one. If the subtracted unit
+occurs, $t\ge k$ forces $r\ge1$, so $t\ge2$ supplies at
+least two such terms. The result is at least one.
+
+If $k'=k=t+1$, the new range is $r\le L-k+2$, one index
+longer than the old one. The summands now compare
+$C_Y(s)$ with $(B_Y)_{k+s-2}$, where $s=r-j$.
+For $s=0$ their difference is one. For $s\ge1$, use the old
+comparison at $s-1\le L-k+1$ and cumulative monotonicity:
+\[
+ C_Y(s)\ge C_Y(s-1)\ge(B_Y)_{k+s-2}+1.
+\]
+Negative $s$ again gives zero. The subtracted unit occurs only
+when $r\ge1$, and again at least two strict summands pay for it.
+This proves the first assertion by induction.
+
+For the consequence, if $h+s<\kappa$ the boundary coefficient
+is zero and $C_Y(s)\ge1$. Otherwise put
+$r=h+s-\kappa+1$. Then $0\le r\le s$ and
+$r\le L-\kappa+1$. Apply the first assertion and monotonicity
+of the cumulative sequence.
+\end{proof}
+
+\begin{proposition}[The next boundary rank and the low height layers]
+The non-strict inequality
+\[
+ C_Y(r)\ge(B_Y)_{\kappa+r-1}
+\]
+holds on the one-index longer range $0\le r\le L-\kappa+2$.
+Consequently $C_Y(s)\ge(B_Y)_{h+s}$ whenever
+$0\le h\le\kappa-1$, $s\ge0$, and $h+s\le L+1$.
+For a strict peak $M$, every height layer of $D_M(Y)$ whose
+left endpoint is at most
+$\min\{L+1,M+\kappa-2\}$ has endpoint sum at least
+$b+M+\kappa-1$.
+\end{proposition}
+\begin{proof}
+Only the additional index needs proof. For an all-one arm it
+is equality. Induct through non-one appends as in the local
+theorem. When the missing weight increases, the first summand
+at the new last index uses the old non-strict boundary inequality;
+all the remaining nonnegative-index summands use the strict
+inequality. The new last index is at least one, so the second
+summand exists and is strict. It pays the possible subtracted unit.
+
+When the missing weight stays $k=t+1$, shift the old comparison
+index down by one, exactly as in the strict proof. The first
+summand then uses the old non-strict boundary comparison, and
+the second uses the old strict comparison. The new last index
+is at least two, so the second term again exists and pays the
+unit. The extra cumulative recurrence term still vanishes,
+since the comparison index is at most $L+1<c+t$.
+This proves the extended inequality. The assertion with $h$
+follows by cumulative monotonicity, as before.
+
+For a layer with left endpoint $l$ in the stated range, put
+$s=l-\kappa+1$. Then $0\le s<M$, so the reverse kernel
+coefficient at $s$ is $C_Y(s)$. Also $l\le L+1$ and
+$(D_M(Y))_l\le(B_Y)_l$, with equality when $l\le M$.
+The extended comparison therefore gives
+$\delta_s\ge(D_M(Y))_l$. The layer reaches at least
+$b+M-s$, and its endpoint sum is at least $b+M+\kappa-1$.
+\end{proof}
+
+\begin{lemma}[One more layer offset after a sufficiently long prefix]
+Let the increasing strict prefix $Y$ have length $L\ge M-2$,
+weight $c$, and missing weight $k$. Suppose every layer of
+$D_M(Y)$ has endpoint sum at least $c+M+h$, where
+$1\le h\le k-1$. Appending an increasing part $2\le t<M$
+raises this bound to $c+t+M+h+1$.
+\end{lemma}
+\begin{proof}
+Write $b=c+t$, $\delta=z^{c+M}D_M(Y)(1/z)$, and $W=[t]\delta$.
+The old layer bound makes every layer of $W$ have endpoint sum
+at most $C=b+M-h-1$. The new reverse kernel is
+$W+z^b[M-t]$. The unit interval is strictly to the right of
+$C/2$, since $b\ge M$.
+
+For a corrected index $j\in[b,b+M-t-1]$, its mirror is
+$i=C-j\in[t-h,M-h-1]$. It is nonnegative because
+$h\le k-1\le t$. Direct reversal of the convolution gives
+\[
+ W_i-W_j=\sum_{v=0}^{t-1}
+    \bigl(\delta_{i-v}-(D_M(Y))_{h+i-v}\bigr).
+\]
+For $s=i-v\ge0$, one has $s<M$ and $h+s\le M-1\le L+1$.
+Thus $\delta_s=C_Y(s)$, and the local theorem makes the
+corresponding summand nonnegative, and at least one if $h+s\le L$.
+For negative $s$ both coefficients vanish, since $h+s<k$.
+If the $v=0$ term is not covered by the strict range, then
+$L=M-2$ and $h+i=M-1=L+1$. Since $h\le k-1\le L$,
+one has $i\ge1$; the $v=1$ term exists because $t\ge2$,
+and it is strict. In every case at least one term is strict.
+This pays for the corrected unit. All other reflected
+comparisons are inherited from $W$. The new kernel is already
+known to be unimodal, so these comparisons give its layer bound.
+\end{proof}
+
+\begin{corollary}[A richer short prefix improves the bound by one]
+Let $M\ge4$ and suppose the prefix of $Y$ consisting of its first
+$M-2$ parts has weight at least $M$. Then, for $L\ge M-2$,
+every layer of $D_M(Y)$ has endpoint sum at least
+\[
+ b+M+\min\{\kappa(Y)-1,L-M+4\}.
+\]
+\end{corollary}
+\begin{proof}
+The prefix has the known offset two, and its missing weight is
+at least three. Starting at length $M-2$, apply the strengthened
+append lemma and the same minimum-update induction.
+\end{proof}
+
+\begin{theorem}[A length-sensitive global layer bound]
+Let $M\ge3$, let $Y$ be an increasing strict arm of length
+$L\ge M-1$, weight $b$, and missing weight $\kappa$. Then
+every layer of $D_M(Y)$ has endpoint sum at least
+\[
+ b+M+\min\{\kappa-1,\ L-M+4\}.
+\]
+Within the stated length range, the full offset $\kappa-1$ holds
+whenever $L\ge M+\kappa-5$. The simpler sufficient condition
+$L\ge\max(M-1,2M-5)$ works for every arm.
+\end{theorem}
+\begin{proof}
+For $M=3$, a nonrectangular arm of length at least two has weight
+at least three and $\kappa=3$, so the known offset two suffices;
+all-one arms use the earlier long-one theorem. Assume $M\ge4$
+and inspect the first $M-2$ parts. If their weight is at least
+$M$, the richer-prefix corollary proves the result.
+
+If their weight is $M-2$, they are all ones. Either the complete
+arm starts with at least $M-1$ ones, or its first non-one part
+$t$ completes a two-factor seed $1^{M-2}t$ of weight at least
+$M$. The earlier seed theorems give the full offset in either case.
+
+The remaining prefix has weight $M-1$ and is exactly
+$1^{M-3}2$. Let $t$ be the next part. If $t=2$, the resulting
+prefix has weight $M+1$, missing weight three, and hence the
+known full offset two. If $t\ge3$, it has missing weight four
+and the full offset three, by the explicit seed calculation below.
+Once a prefix of length at least $M-1$ has the full offset
+$\kappa-1$, the append lemma preserves that assertion:
+it raises the offset to $\kappa$, and the new missing weight
+is at most $\kappa+1$. This handles every continuation.
+Finally $\kappa\le M$ gives the uniform length condition.
+\end{proof}
+
+\begin{lemma}[The remaining short seed]
+For $M\ge4$ and $3\le t<M$, the kernel of
+$Y=1^{M-3}2t$ has every layer endpoint sum at least $b+M+3$.
+\end{lemma}
+\begin{proof}
+Here $b=M-1+t$, $\kappa=4$, and put $C=2M+t-4$.
+The reverse kernel is
+\[
+ \delta=[2][t][M-1][M-2]
+       +z^{M-1}[t]([2]+[M-2])
+       +z^{M-1+t}[M-t].
+\]
+The first box product has degree $C-1$. After subtracting its
+reflection about $C/2$ and simplifying the other summands, one gets
+\[
+ \delta-z^C\delta(1/z)
+ =(1-z^M)[t][M-2]
+ -z^{M-3}(1-z^2)[2][t]
+ +(z^{M+t-1}-z^{t-2})[M-t].
+\]
+Let $c_i=[z^i][t][M-2]$. At every left index $2i\le C$, the
+coefficient of this difference is exactly
+\[
+ c_i-c_{i-M}
+ -\mathbf1_{\{t-2\le i\le M-3\}}
+ -\mathbf1_{\{i=M-3\}}
+ -2\mathbf1_{\{i=M-2\}}
+ -\mathbf1_{\{i=M-1\}}.
+\]
+For $i\le M-4$, any subtracted unit is paid by $c_i\ge1$.
+At $i=M-3,M-2,M-1$, the box coefficients are respectively
+at least $2,2,1$, paying all displayed costs. At $i=M+j$
+on the left half, the difference is $t-4-2j\ge0$ because
+$2j\le t-4$. This proves reflection and hence the asserted
+layer bound, using the established kernel unimodality.
+\end{proof}
+
+\paragraph{An insufficient shorter threshold.}
+Length $M-1$ by itself does not force the full offset
+$\kappa-1$. For $M=9$ and $Y=(1,1,2,3,4,5,8,8)$, one has
+$L=8$, $\kappa=8$, and the minimum layer endpoint sum minus
+$b+M$ is six. The asserted minimum in the theorem is essential;
+the local strict comparison alone does not imply global reflection.
+
+\begin{theorem}[A padding criterion using length and missing weight]
+Let $X=1^\alpha U$, $Y=1^\beta V$ be increasing strict arms,
+$u=\operatorname{wt}U$, $s=\operatorname{len}V$,
+$b=\operatorname{wt}Y$, and $L=\beta+s$.
+For $M\ge3$ define
+\[
+ h_M(Y)=
+ \begin{cases}
+  \min\{\kappa(Y)-1,L-M+4\},&L\ge M-1,\\
+  2,&L=M-2\text{ and }b\ge M,\\
+  1,&\text{otherwise},
+ \end{cases}
+\]
+If either orientation satisfies
+\[
+ \alpha\ge u+s+\max(\beta-M,0)-h_M(Y)-1,
+\]
+then both relative polynomials and the full core polynomial
+are unimodal. Arms of non-one weight at most four remain
+unconditional base cases by the earlier theorem.
+\end{theorem}
+\begin{proof}
+The layer bound gives relative growth through
+$g=\lfloor(a+b+M+h_M(Y)+1)/2\rfloor$.
+The grouped-one mode bound gives
+$m_Y\ge\lfloor(b-s+M-1-r)/2\rfloor$, where
+$r=\max(\beta-M,0)$. The displayed condition implies
+$g+m_Y\ge u+b+M-1$, so the terminal coefficient bridge applies.
+
+For the least-counterexample argument, the qualifying family is
+closed under final-part deletion and arm exchange after adjoining
+the proved small-skeleton base cases. Deleting a
+non-one part of $U$ decreases $u$. Deleting one from $V$
+decreases $s$ by one and decreases $h_M(Y)$ by at most one,
+unless the shorter arm is already an unconditional base case:
+within the longer-length branch this follows because both
+arguments of the minimum decrease by at most one. At the crossing
+to $L=M-2$, the old offset is at most three. If the shorter arm
+has weight at least $M$, its offset is two. Otherwise an increasing
+arm of length $M-2$ and weight below $M$ is all ones or
+$1^{M-3}2$, both unconditional base cases. The crossing from
+$L=M-2$ to $L=M-3$ loses at most one. Therefore the right-hand side
+of the padding condition cannot increase. The usual balanced-band
+equivalence gives both relative orientations and the full core.
+This is a sufficient family, not an unrestricted solution.
+\end{proof}

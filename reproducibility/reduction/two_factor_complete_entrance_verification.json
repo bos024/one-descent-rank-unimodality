@@ -1,0 +1,199 @@
+{
+  "status": "PASS_UNIVERSAL_ALL_PADDING_ACTUAL_LATE_D_LC_ABOVE_CI_DEGREE_CROSSING",
+  "new_scoped_reports": 26,
+  "kernels": {
+    "TwoFactorCompleteEntrance": {
+      "transported_minor_term": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "prefix_reference_loss_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "prefix_reference_C_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "first_two_window_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "first_two_window_all_padding": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "quaternary_kernel_positive": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "quaternary_odd_block": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "quaternary_negative_atom_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "quaternary_pair_polynomial": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "quaternary_bottom_source": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "two_factor_atom_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "regular_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "old_one_junction_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "old_one_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "regular_perturbed_junction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "left_half_ULC_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "left_half_zero_row": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "left_atom_constants": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "left_binomial_growth": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "left_budget_growth": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "left_binomial_base": [],
+      "right_exponential_bases": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "right_exponential_step": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "right_half_budget": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "right_half_zero_row": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "TwoFactorEntranceCertificate": {
+      "all_integer_margins": [
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "e6050638bfcc7217e7231be0945415584239f7f96a77ecf50b71ac1c76d46305",
+  "QA": {
+    "exact_quaternary_pair_coefficient_identities": 49,
+    "quaternary_signed_diagonal_identities": 46,
+    "left_half_earlier_cut_kernel_payments": 12069,
+    "finite_entrance_integer_comparisons": 76201,
+    "finite_entrance_hosts": 5860,
+    "long_boundary_actual_prefix_ratio_comparisons": 2844,
+    "long_boundary_old_one_jump_LC_minors": 18682,
+    "long_boundary_two_window_seed_minors": 180,
+    "long_boundary_transported_window_minors": 60152,
+    "long_boundary_transported_hosts": 3348,
+    "regular_cone_full_earlier_primitive_LC_minors": 221941,
+    "regular_cone_actual_late_D_LC_minors": 402289,
+    "regular_cone_actual_hosts": 7555,
+    "regular_cone_CI_profiles": 1202
+  },
+  "independent_counts": {
+    "independent_quaternary_diagonal_identities": 387,
+    "independent_finite_entrance_integer_comparisons": 76201,
+    "independent_finite_entrance_hosts": 5860,
+    "independent_long_boundary_prefix_comparisons": 2080,
+    "independent_actual_forward_window_identity_reads": 152842,
+    "independent_long_boundary_late_D_LC_minors": 26078,
+    "independent_long_boundary_hosts": 1856,
+    "independent_regular_earlier_primitive_minors": 15137,
+    "independent_actual_quaternary_source_curvatures": 1175,
+    "independent_regular_late_D_LC_minors": 17118,
+    "independent_regular_hosts": 524,
+    "independent_regular_CI_profiles": 131
+  },
+  "independent_state_sha256": "e9e60227e9ffe8868a922fcee522dea5188e925d9812e20e9dc2171217ff75f6",
+  "finite_profiles": 245,
+  "finite_hosts": 5860,
+  "finite_integer_comparisons": 76201,
+  "distinct_kernel_margins": 43336,
+  "kernel_chunks": 170,
+  "window_transport": "PROVED FOR ANY nonnegative unimodal interval-supported input STRICTLY rising to FIRSTmode: if LC from K through mode AND all earlier ratios dominate first tail ratio, pre-mode LC of forward uniform lengthK implies every lengthA>=K. Signed actual tails use exact positive growing reads. Prefix-ratio premise is ESSENTIAL; arbitrary UI length monotonicity is FALSE.",
+  "long_boundaries": "PROVED ALLu>=14,ALLpadding, maxcap B in {u-2,u-1,u,u+1}, EVERYother minimal crossing capacityA. Old one-jump pre-mode LC from physicalu+3 plus exact prefix loss/Cassini bounds pay all earlier ratios; K=u-B+3<=5. Degreeu+1 seeds pay K3/4/5; exact all-padding first two-window minor pays K2. Actual signed insertion identity, previous unit and finite source retained.",
+  "regular": "PROVED ALLu>=24, maxcap<=u-3, ALLpadding: norm<6/5 below5/4 interior, oldCount1 gap, earlier primitive cutoff min(floor(u/4),delta). Left binomial induction from m6 and RIGHT half binomial/exponential induction from k7..10 pay ENTIRE head. Quaternary signed Lagrange diagonal Q2>2 for ALLu>=4j,j>=2 pays source. Finite theorem premise ONLY245 complete regular profilesu14..23 with ALL5860padding hosts and ALL43336 kernel margins.",
+  "universal": "PROVED EVERY sorted actual word1^alpha2^uV with alpha>=1,V>=3 nonempty,h=sum(t-1)>u: positive actual D tail from physicalW=sumV is LC at EVERY internal centre strictly before its FIRSTtailmode. Equivalent ALL pre-GLOBAL-FIRST-D-mode centres N>=W+1. u0 direct; u1..13 old; EVERY minimal crossing at u>=14 now closed (single/degree-u+1/u+2 old, >=3-factor registered, TWO-factor here); arbitrary insertion propagates to ALL CI multisets. No count/capacity/padding/degree bound.",
+  "formal_scope": "TWENTY-SIX new scoped reports:25 unbounded algebraic/window/prefix/half-band/source kernels plus ONE COMPLETE integer entrance certificate in170chunks, onlypropext. Formal Lagrange is primary literature input; binomial induction, formal-series, actual-word identities, mode/window and hereditary assembly WRITTEN. Not an end-to-end Lean arbitrary-composition proof.",
+  "remaining": "Universal late-D-LC h>u is NOW CLOSED. This alone does NOT prove earlier ordinary/cumulative C entrances, general C, A2 or original unamplified coefficient UI. Actual late-C threshold u>=h-2 and first original unresolved full-C nonone count6 unchanged. h<=u derivative-LC extension is FALSE by registered actual triple8/12/19.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_threshold": "u>=h-2 UNCHANGED",
+  "sha256": {
+    "two_factor_complete_entrance_proof.tex": "06525923b07925188d4acf6ac7cb1d010b43a1ad1030d4f67b664fb7b46079ab",
+    "TwoFactorCompleteEntrance.lean": "962754234f8993cadf08880c6e82deaa3e4512a90a41e6e154c45b18725c3866",
+    "TwoFactorCompleteEntrance.log": "e6bb52c9fb6b7d3fb49b3f1bfb2de7d3be1c2d32eb3db5e7dc708c68c87c1802",
+    "TwoFactorEntranceCertificate.lean": "6b6e99ae48e539a192a77043c3157848963e0261ece8a789c793fab3d3951fc7",
+    "TwoFactorEntranceCertificate.log": "5d2e314e057289f469de437ad3f724e6ffb7ab20401d60710ca7ebf55f0411ae",
+    "audit_two_factor_complete_entrance.py": "bf45462962a4ea87df36c76ef4768ea655673c2a82870baea5e3902147fbc7d5",
+    "audit_two_factor_complete_entrance.json": "f479b1253c0386f0447a35b85f5a233b6fbf858a46304f5da1899a5a46555e0b",
+    "emit_two_factor_entrance_certificate.py": "5cb7885cf6a595aea88758f2cf0164c33b8f115ab7a8423582d8fe05df262dd7",
+    "verify_two_factor_complete_entrance.py": "f1c5fff0617fca0e27bf999ab4dac1fc8739bc741bef787608ca7d44c847ea72",
+    "double_subdegree_support_clarification.tex": "7deea311b7b98aa9ee8214e4464c40f39faccb5423f4629d20f55f8182ddca8d",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "three_factor_earlier_cut_verification.json": "f68a500ea2544f11ab9dc4a2675dc8c69a4765252b490f1404b656a698be2af8",
+    "convex_tilt_Lagrange_three_factor_verification.json": "a0685e63e7708f8c740171ea736bc896bd80e695348ae24037d9af2b2fe60564",
+    "double_subdegree_CI_entrance_verification.json": "de6cdc082a0ea7a96d74beca5c43ee0b0a3d78bbf1bea9fa2c87c2cbbba46d9f",
+    "mode_only_uniform_tail_closure_verification.json": "52aaf8f1842736ab79defb1bd6a2e90033614daab555a4b1c1bd3c1da3f87a22",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17"
+  }
+}

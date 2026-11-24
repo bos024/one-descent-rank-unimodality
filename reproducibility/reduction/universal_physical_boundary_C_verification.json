@@ -1,0 +1,125 @@
+{
+  "status": "PASS_UNIVERSAL_ACTUAL_C_FROM_PHYSICAL_W_AND_LATE_OWNER_SOURCE_BRIDGE",
+  "new_scoped_reports": 12,
+  "kernels": {
+    "maximal_margin_normalized_tilt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "moving_ratio_unit_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "low_ratio_cumulative_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "margin_at_two_edge_maximum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "two_edge_ratio_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "positive_window_cap_transfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "positive_support_window_endpoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "previous_reference_CDF_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_large_degree_boundary_rows": [
+      "Quot.sound",
+      "propext"
+    ],
+    "previous_unit_pays_boundary_nondecrease": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "small_binary_boundary_complement_weight32": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "late_owner_source_read_guard": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "QA": {
+    "maximal_margin_tilt_FULL_row_reads": 13110,
+    "onefactor_reference_prefix_profiles": 92,
+    "exact_prefix_minimum_all_shift_C_payments": 497672,
+    "logical_shift_coverage": 177173695,
+    "actual_hosts": 2300,
+    "full_boundary_strong_additive_prefix_reads": 46599,
+    "strict_multifactor_physical_boundaries": 447,
+    "two_edge_OR_protected_old_prefix_margins": 1615,
+    "LC_extended_old_ordinary_and_cumulative_margins": 2183,
+    "strict_hereditary_boundary_transfers": 36,
+    "protected_onefactor_exception_transfers": 19
+  },
+  "independent_counts": {
+    "independent_positive_reference_maximal_tilt_margin_reads": 7035,
+    "independent_ordinary_LC_entire_W_minus_one_tail": 184208,
+    "independent_C_running_minimum_reads_N_ge_W": 238386,
+    "independent_C_logical_all_shift_reads": 59539387,
+    "independent_actual_hosts": 2767,
+    "independent_FULL_strong_boundary_prefix_q2_reads": 26286,
+    "independent_TWO_edge_maximum_old_G_payments": 2365,
+    "independent_ordinary_LC_extended_G_payments": 1425,
+    "independent_strict_boundary_hereditary_transfers": 43,
+    "independent_actual_onefactor_maximal_margin_transfers": 124,
+    "independent_onefactor_to_twofactor_separate_exception_payments": 82,
+    "independent_protected_onefactor_degree_one_exceptions": 82,
+    "independent_small_u_exact_infinite_padding_boundary_nondecrease": 206,
+    "independent_small_u_complement_OLD_weight32_guards": 19
+  },
+  "independent_state_sha256": "3f4314bbf50910123c8f6461c67c179b3dfbf89d4fef76406e0742a6875c1b77",
+  "new_finite_entrance_certificates": 0,
+  "theorem": "PROVED ALLactualnormalized1alpha2uV,ALLu/h/alpha/caps/counts: ENTIREC forEVERYcurrentN>=W andEVERYshiftR>=3. UniversalW+1tailupgradedtoPHYSICALWwithoutparameterrestriction.",
+  "maximal_margin": "PROVED normalizedtiltGmargin2-lambda ->2-mu,mu=a*lambda>=1,1<=lambda<=2. EXACTFULL-rowremainder(k-1)(1-a)a^2lambda>=0. OnefactorphysicalreferenceordinaryprefixLCsuppliesmaximalmargin;normalizedrelativeDLC+twiceLRpaysactualonefactorcrossingdelta>=2at2-mu>q^2.",
+  "boundary_induction": "PROVED firstcrossingr>=2viaone-earlierordinaryseed+q^2oldGprefix;HEREDITARYusesTWOadjacentolddratioslambda0atW,lambda1atW+1,capmax(1,lambda0,lambda1),universallate-strongGANDsharpordinaryLCfromW-1. NOTDLCatW(false). LCendpointsubtractionintegratesGmarginandaffinewindowatom1payseveryread. Oldr1delta1oddgoldenexceptionkeptSEPARATE:protectedoldGatNEWmu<phi.",
+  "small_counts": "PROVED ALLu<=4: h>=3u+3allinfinite-paddingrowsnonincreasingatphysicalW;finitepaddingrelativeDdensitythroughmodeboundsactualedge;complementW<=21<32coveredbyOLDunbounded-paddingweight32COMPLETEC. No newfiniteentrance.",
+  "original_source_extension": "PROVED localC-to-ScomparisonforEVERYownerj>=W_A-1,withNOoldlargebandupperboundj<=u_A+r_A+kappa_B,whenoppositenonrectangularkappa_B>=3,bothordinaryfactorsstrictlyrisingatj+1,currentreverse-source/headguards. Tailnonrecovery;coupledSretainsOLDweightedA2HEADpremise. Earlierowner/mixed/fullA2notasserted.",
+  "formal_scope": "TWELVEcleanstandardaxiomscopedreports:maximaltiltFULLrowidentity,twolayermaximum/cap/margin,strictpositivewindowguard,ALLlarge-degreerowcentres,previousunit,smallcountOLDweight32complement,andoriginalsourcecurrentread. Naturalindex/fullrow/weighted/mode/LRproofsreused. Actualmodel/reference/word/cumulative/convolutionassembliesareWRITTEN,notend-to-endLeancompositionidealtheorem. FiniteQAONLY.",
+  "remaining": "ALLactualCfromN>=WPROVED. GeneralearlierN<W C/fullA2/originalunamplifiedcoefficientUIOPEN;firstunresolvedFULLCnononecount6unchanged. CumulativeLCNOTcoefficientUI.",
+  "actual_C_current_start": "W",
+  "late_C": "PROVED_UNIVERSAL_FROM_W",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "universal_physical_boundary_C_proof.tex": "e5628537ee79381df5d60f97849cabfd4adee203703c1677ceff5e05dd216cee",
+    "UniversalPhysicalBoundaryC.lean": "63ee60e693ca45c24534eccff6c8b9e60e2d0f82ca3e45cff9ab98f49a18c2b3",
+    "UniversalPhysicalBoundaryC.log": "b7cb5e85f7c6c7dd2575d7ce1ea0eee553f78157989d9595c7e56e15d789f358",
+    "audit_universal_physical_boundary_C.py": "99e90e134963a9a67c8da0729b78409e2d05eeb21814777fdc04774622d3e4c9",
+    "audit_universal_physical_boundary_C.json": "24c32ad625fafacef1b12890c3ee7de0762a8d640ac23d82ddf2f5bca0e42de8",
+    "verify_universal_physical_boundary_C.py": "0b8ccda918e95587cc800a4c7b0a1efb433f87461f8f9e1d936af76e93bbca66",
+    "sharp_previous_ordinary_LC_verification.json": "1efe9d02762d7bf2f0d24ec733acdb0e42241044773815b322b8d71f47d2206b",
+    "universal_late_C_first_crossing_verification.json": "296b1a464749dd0b51565af2f194fb512f4f2d85122152a3c5067f45469ad548",
+    "physical_boundary_golden_C_verification.json": "56058fd7ac38393c7f9e9365e951feb318a71516b205319e1c272f20f7b1a950",
+    "previous_boundary_C_verification.json": "e4a02f19b0885472b5842873030e836f277903ead80e0d9f1fc392664752e2e0",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17",
+    "quantitative_tilt_one_jump_strong_verification.json": "d53b5b7f717cb0555e56ae891d7b6b68662ec886b5a290d53454dae1b1dc8cf5",
+    "hereditary_strong_late_C_verification.json": "d4ac624d9905c35c4fb48fb3544ad1b9bd36a3e06a23bc5cd3dc6bda00f9a729",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "golden_tail_large_shift_C_verification.json": "7ef01e16055ffba17369332f1f0f6caa88833e6dd0c344a10fd878b983110fcd",
+    "ordinary_golden_growth_source_verification.json": "ae495815227227e1df4d497a290f7fb3819cce5ac0dbfeccdbf71ce7d6c2e59c"
+  }
+}

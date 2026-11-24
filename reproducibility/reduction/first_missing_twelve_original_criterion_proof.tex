@@ -1,0 +1,224 @@
+\section{Complete source-or-head coverage through first missing weight twelve}
+All notation and actual-model lemmas are those of the frozen
+\texttt{coupled\_source\_window\_A2\_and\_kappa\_nine\_original\_proof.tex}.
+In particular FULL C, FULL A1 and FULL A2 have their original coefficient
+meanings. No conclusion about raw-source-window unimodality is used here.
+
+\begin{theorem}
+Every final-deletion-closed class of normalized ACTUAL increasing arms
+with FULL C and first missing weight at most twelve has FULL pair A2.
+Its ORIGINAL unamplified strict core and BOTH relatives have unimodal
+coefficients at EVERY strict peak. ONE further arbitrary legal append
+to the heavier arm is also permitted without assuming C of that new arm.
+\end{theorem}
+
+\subsection{The unbounded reduction and the complete finite domain}
+Work in the count induction, assuming FULL OLD A2 for an old pair.
+Let $p=q_Zq_Y$, $a=\operatorname{wt}Z$, $b=\operatorname{wt}Y$,
+$j=a+b-n$, $r=a-j$, $E_i=2p_i-p_{i-1}$, and
+$T=E_{n+1}-E_n$. The relevant proper CLOSED-gap comparison is
+\[
+ n>\operatorname{lastmode}(p),\quad k<\operatorname{firstmode}(2^i(\Delta p_i)^+),
+ \quad p_n>p_k,\quad p_{n+1}>p_{k+1},\quad 0\le E_n\le E_k.
+\]
+Both-forward-rising C and both-forward-nonincreasing actual theorems
+cover their entire respective phases. In the mixed phase orient $Z$ as
+the nonincreasing arm. The opposite source prefix is nondecreasing at
+all used ranks by the frozen slope/source mode ordering. Write
+$K=\kappa_Y$. A nonpositive $T$ is paid by the nonnegative OLD-A2
+head increment, so consider $T>0$.
+
+The frozen nine-threshold proof handles $K\le9$ when both first
+missing weights are at most nine. If instead the owner has first missing
+weight at least ten, it has at least eight non-one parts. The absolute
+eight theorem for four-part owners and absolute nine theorem for six-part
+owners therefore exclude positive recovery for EVERY $K\le9$ in this
+new situation. It suffices to treat $10\le K\le12$ and arbitrary owners.
+
+Use the exact initial exchange to impose $t_1-1\le\alpha$ for
+$Z=1^\alpha(t_1,\ldots,t_h)$ without changing its weight, count or
+polynomial. For $r\ge0$, positive recovery requires
+\[
+ d=K-\alpha\ge6,\quad D=\sum_i(t_i-1)=2r+2+e,
+ \quad 0\le e\le d-3,
+ \quad D\le D_{\max}:=\min(2d(d-3),12d-25).
+                                                        \tag{1}
+\]
+The gap-six theorem excludes $h\ge4$ at $d\le6$.
+The UNBOUNDED gap-eight theorem for six-part owners excludes
+$h\ge6$ at $d\le8$, at every $K$, not just $K=9$. Thus
+\[
+ 1\le\alpha\le K-6,\qquad
+ 2\le h\le h_{\max}:=\min\left(D,
+ \begin{cases}3&d\le6,\\5&7\le d\le8,\\D&d\ge9.\end{cases}\right).
+                                                        \tag{2}
+\]
+All parameters discarded by (1)--(2) are covered by the frozen
+UNBOUNDED lemmas; no capacity or count cutoff is a premise.
+
+Put
+\[
+ M_K=1+(K-2)(K-1)/2,\quad O_K=1+(K-3)(K-2)/2,
+ \quad S_K=\lfloor M_K/2\rfloor.
+\]
+Their exact values are
+\[
+\begin{array}{c|rrr}K&M_K&O_K&S_K\\\hline
+10&37&29&18\\11&46&37&23\\12&56&46&28
+\end{array}.                                             \tag{3}
+\]
+For a rank state (1), let $j_{\max}=\alpha+D+h_{\max}-r$.
+If $j_{\max}-2\le S_K$, every owner in that state has its proper
+head inside the strict opposite prefix established below. Such a state
+needs no source payment.
+
+For every remaining state apply the genuine source-sum/CI-ratio test.
+Set $L=d-e-3$ and
+\[
+ b_m=\begin{cases}
+ \binom r m/\binom{r+e+m+2}m&0\le m\le r,\\0&\text{otherwise}.
+ \end{cases}
+\]
+The following sufficient condition pays the entire positive curvature
+$C=(\Delta q_Z)_{r+1}-(\Delta q_Z)_r$:
+\[
+             b_L+\sum_{v=2}^{K-3}2^{v-2}b_{L+v}
+                           \ge\frac{e+1}{r+1}.          \tag{4}
+\]
+It is the frozen arbitrary-count source-ratio argument, with ALL
+available early mode-free source increments. It does not differentiate
+a lower bound for source coefficients.
+
+The COMPLETE rank grammar (1)--(4) gives the following exact partition:
+\[
+\begin{array}{c|rrrr}
+ K&\text{all ranks}&\text{strict head}&\text{source (4)}&\text{owner complement}\\\hline
+10&684&170&451&63\\
+11&1048&279&641&128\\
+12&1509&410&891&208\\\hline
+\text{total}&3241&859&1983&399
+\end{array}.                                             \tag{5}
+\]
+For each complementary rank, any owner not already inside the strict
+head must have
+\[
+ h\ge h_{\min}:=\max(2,S_K+3-\alpha-D+r).              \tag{6}
+\]
+Enumerate ALL partitions of $D$ into $h_{\min}\le h\le h_{\max}$
+positive sorted increments, with minimum at most $\alpha$.
+The largest remaining $D$ is respectively $33,39,47$ for $K=10,11,12$.
+This is the complete complement of the proved unbounded reductions,
+including every owner rank, rather than a chosen sample of arms.
+
+Construct each actual $F_Z$ and compute the signed primitive and curvature.
+There are 1,858,242 owner/rank inputs, including 945,847 distinct owners
+when counted separately at each $K$. Exactly 1,786,199 have negative
+primitive or nonpositive curvature. ALL 72,043 positive-curvature inputs
+are paid by the actual source sum
+\[
+ C\le F_Z(v)+\sum_{i=2}^{K-3}2^{i-2}F_Z(v-i),
+                  \qquad v=j+1-K,                       \tag{7}
+\]
+using zero extension. By $K$ the positive-curvature counts are
+$4877,17998,49168$. There is NO unpaid owner outside the strict-head range.
+
+The independent verifier enumerates ranks by total degree and reverse
+rank, and partitions by MAXIMUM part, whereas the builder enumerates
+source gap and excess, and partitions by MINIMUM part. It reconstructs
+the actual polynomial as a sum of positive suffix boxes, with a closed
+binomial formula for its binary block; it does not reuse the builder's
+chronological actual-arm recurrence. Product fractions independently
+reconstruct the rational ratios in (4). It matches every noncritical
+classification, every critical coefficient operand, all 399 layer hashes,
+the complete state hash, and every line of the 72,043-row critical stream.
+
+The explicit Lean certificate contains ALL 72,043 source SUM inequalities
+(7), 3266 distinct integer numerator/positive-denominator tests for (4),
+and 63 distinct strict-head rank pairs. These are 75,372 obligations in
+754 chunks, compiled in 31 memory-bounded modules, and ONE final public
+aggregate containing EVERY module's complete conjunction. Noncritical curvature classifications
+and exhaustion of the word grammar are independently exact Python checks,
+not an end-to-end Lean implementation of words or their enumerator.
+Four further generic Lean reports check (2), (3), proper-head safety,
+and all negative-birth guards. Standard axioms only are required.
+
+At $r\le-2$ positive curvature is absent. At $r=-1$ a source-unpaid
+unit birth requires $a+2<K$, so $j=a+1\le K-2$. This includes the
+only possible one-part-owner birth exception. By (3),
+$j-2\le K-4\le S_K$. Consequently the complete conclusion is
+\[
+ T>0\quad\Longrightarrow\quad j-2\le S_K
+          \qquad(10\le K\le12).                       \tag{8}
+\]
+
+\subsection{Strict actual heads, closed-gap compensation and the full induction}
+The BOTH positive windows imply $k+n+2<a+b$, hence
+$k+1\le j-2\le S_K$. Also $j\le a+1$, so $k+1\le a-1$.
+The used raw owner source $R_Z=(2-z)q_Z$ therefore agrees with the
+nonnegative corrected source throughout the entire used prefix.
+
+The exact opposite first-missing staircase gives its main interval product
+degree $M\ge M_K$, and degree outside its largest factor at least $O_K$.
+The CI positive-primitive support formula and $2S_K\le M_K$,
+$S_K\le O_K$ give strictly positive main-box differences through $S_K$.
+EVERY proper shifted-CI source has endpoint sum at least $M$, so its
+differences are nonnegative through that head, including birth boundaries.
+Thus the ACTUAL, SIGNED opposite differences satisfy
+\[
+                       \Delta q_Y(s)\ge1\quad(0\le s\le S_K).   \tag{9}
+\]
+This uses genuine CI differences, not differentiation of a coefficient bound.
+
+For $H=E_{k+1}-E_k=[z^{k+1}]R_Z(1-z)q_Y$, all used summands
+are nonnegative. If $0\le r<k$, select the owner index $r+1$:
+\[
+ H\ge R_Z(r+1)\Delta q_Y(k-r)
+ \ge q_Z(r+1)+(\Delta q_Z)_{r+1}\ge C\ge T.
+\]
+At $r=-1$ select the constant owner term to obtain $H\ge2\ge T$.
+For $r\ge k$, the frozen raw-relative LC kernel retains its strict
+$+1$ surplus and applies to CLOSED $E_n\le E_k$, including equality.
+All positive recoveries are paid. Nonpositive recoveries use $H\ge0$
+from FULL OLD A2. This proves the entire closed-gap proper S criterion.
+
+The frozen WHOLE closed-gap S-to-window theorem now proves FULL A2 for
+EVERY $[t]p$. In the count induction the old maximum-nine case is frozen;
+the new maximum-ten-through-twelve case uses the criterion just proved.
+Orient the newly appended arm as the heavier arm. Its actual terminal
+correction starts at its new weight, strictly after the new first ordinary
+mode. Hence positive differences are a truncation of the uniform window's
+positive differences. FULL A2 follows, as does ONE arbitrary further
+legal heavier append. Frozen proper deletion, lower peak, reflection and
+relative joins give ORIGINAL coefficient unimodality at every strict peak.
+
+\subsection{An explicit unbounded family with seven independent dominant jumps}
+Let A18 contain A15, ALL max-four-prefix arms followed by FIVE, SIX or
+SEVEN successive dominant nonbinary capacities, and ALL max-eleven tails
+of nonbinary weight at most 32. Each dominant $T_i$ satisfies
+\[
+ T_1\ge\max(5,2W_0),\qquad
+ T_i\ge2\left(W_0+\sum_{v<i}T_v\right),
+\]
+where $W_0$ is the prefix's nonbinary weight. Initial padding and binary
+counts are unrestricted. All intermediate numbers of jumps are included,
+so final deletion closure is exact. Full C follows from the frozen
+capacity-four, dominant-extension and fixed-weight theorems. The exact
+first-missing recursion raises its bound by at most one at each append,
+so seven jumps give $\kappa\le12$; max-eleven tails also have that bound.
+The theorem therefore proves ORIGINAL coefficients for BOTH arms in
+A18, each with SEVEN independently chosen dominant jumps, arbitrary
+strict peak and ONE further arbitrary legal heavier append.
+
+Additional QA checks 48 actual old products, 918 proper closed source
+payments (including two equalities), and 384 ENTIRE weighted windows and
+head boundaries. A true unique-leftmost-embedding dynamic program checks
+12 original ideals with 360,222 ranks, including six extra heavier appends
+and 24 relative polynomials. Its interval-transition implementation is
+first checked against the independent original letter-by-letter program.
+These are QA only and do not replace (1)--(9) or the complete certificate.
+
+General higher-capacity C, unrestricted first-missing A2 and the GENERAL
+ORIGINAL conjecture remain OPEN. The finite certificate is a complete
+premise for this bounded-first-missing theorem only. No cumulative
+log-concavity is substituted for coefficient unimodality, and no whole
+raw-source-window unimodality is claimed.

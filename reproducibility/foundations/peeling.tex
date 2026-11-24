@@ -1,0 +1,77 @@
+\section{Minimal counterexamples and outer layers}\label{sec:peeling}
+The following reduction reconstructs the earlier peeling argument, with all hypotheses needed here included.
+
+\begin{lemma}[Balanced minimal counterexamples]\label{lem:balanced}
+If, for fixed $M$, some $Q_{X,Y}$ is not unimodal, choose one with the fewest total arm parts. It has nonempty arms and $|a-b|\le M-1$. Within this band, $Q_{X,Y}$ is unimodal if and only if $H$ is unimodal, so its arms may be exchanged. More generally, this equivalence holds whenever $b\le a+M-1$. Both arm polynomials in the minimal counterexample may be assumed nonrectangular, and we may orient it with $a\ge b$.
+\end{lemma}
+\begin{proof}
+Empty arms give either $D_Y$ or $S_MF_X$, both unimodal. Every shorter $Q$ is unimodal by minimality. If $a\ge b+M$, the guaranteed growth endpoint in~\eqref{eq:qgrowth} is at least $b+M+1$. At that index and beyond, the correction $D_Y$ in the first recurrence~\eqref{eq:qappend} has vanished; the sequence joins the unimodal $S_uQ_{Z,Y}$. This is impossible for a counterexample. If $b\ge a+M$, the second recurrence works identically, its correction having degree $a+M$.
+
+When $b\le a+M-1$, both $H$ and $Q$ increase through rank $b+1$, by Lemmas~\ref{lem:half} and~\ref{lem:kernel}; their differences agree from $b+2$ onward. They are therefore unimodal simultaneously. Both directions satisfy this condition in the balanced band. Finally, an interval $F_X$ times $D_Y$ is unimodal, and the case of interval $F_Y$ follows by exchanging the arms.
+\end{proof}
+
+\begin{lemma}[A splice criterion]\label{lem:splice}
+Write $X=Zu$, $R=b+M$, $V=Q_{Z,Y}$, and $P=S_uV$. Suppose $V$ is unimodal and $Q$ is nondecreasing through $R$. If $Q$ is not unimodal, necessarily
+\begin{equation}\label{eq:plateau}
+ V_{R-u}=V_{R-u+1}=\cdots=V_R,
+ \qquad P\text{ increases strictly at a later rank}.
+\end{equation}
+Thus either strict inequality $V_j>V_{R-u}$ for some $R-u<j\le R$, or two unequal successive differences inside this interval, rules out this obstruction.
+\end{lemma}
+\begin{proof}
+At the splice $\Del Q(R+1)=V_R-V_{R-u}-1=\Del P(R+1)-1$; later differences equal those of $P$. Since $P$ is unimodal and differences are integers, failure requires $\Del P(R+1)=0$ with later increase. The equal endpoints of a unimodal $V$ must then enclose a constant interval. If an internal value were larger, $V$ would already have passed a peak, and each subsequent sliding-window difference would be nonpositive. This proves~\eqref{eq:plateau}.
+\end{proof}
+
+\begin{lemma}[Strict reflected gap]\label{lem:gap}
+Let $\delta\ge2$, $b\ge\delta$, $\delta\le u<M$, and $\wt Z=R-\delta-u\ge0$. Then
+\[
+ (F_ZD_Y)_{R-\delta+1}>(F_ZD_Y)_{R-u}.
+\]
+\end{lemma}
+\begin{proof}
+All products of layers have centers at least $(\wt Z+R+1)/2$, the midpoint of the two indices being compared. Their contributions are nonnegative. Lemma~\ref{lem:budget} at $t=\delta-1$ gives $d_{R-\delta+1}>d_\delta$. Thus the layer of $D_Y$ at height $d_\delta+1$ has left endpoint $l\ge\delta+1$ and right endpoint $r\ge R-\delta+1$. Multiply this layer by $\Iv0{\wt Z}$. At the two indices, its coefficients are
+\[
+ \max\{0,\min(\wt Z,n-l)+1\},\qquad n=R-u,\ R-\delta+1.
+\]
+The latter is strictly larger: the earlier index is at most $\wt Z+l-1$, the later is at least $l$, and the indices differ by $u-\delta+1\ge1$.
+\end{proof}
+
+\begin{proposition}[The outer three layers]\label{prop:outer}
+Every minimal counterexample as in Lemma~\ref{lem:balanced}, for $M\ge3$, satisfies $a-b\le M-4$. For $M=2$ there are no counterexamples.
+\end{proposition}
+\begin{proof}
+For $M=2$ all arm polynomials are intervals. Otherwise retain the nonrectangular, heavier-left orientation, so $b\ge3$ and $u=\max X\ge2$.
+
+If $a=R-1$, growth is known through $R$. In $S_uF_ZD_Y$, all layer-product centers are at least $R+1/2$, so every contribution to $\Del P(R+1)$ is nonnegative. Let $[q,R]$ be the lowest layer of $D_Y$, where $q\ge2$. Its product with the lowest layer of $F_Z$ contributes
+\[
+ \coef{R-q}{[u][R-u]}\ge1,
+ \qquad [t]=1+\cdots+z^{t-1}.
+\]
+Here $0\le R-q\le R-2$, exactly the support of this product. Hence $\Del Q(R+1)\ge0$, and the unimodal tail joins.
+
+If $a=R-2$, growth again reaches $R$. Apply Lemma~\ref{lem:gap} with $\delta=2$ to rule out~\eqref{eq:plateau}.
+
+Suppose $a=R-3$. Growth initially reaches $R-1$; we first gain one further rank. Each layer-product in $P=S_uF_ZD_Y$ has center at least $R-1/2$. The $d_{R-1}-1$ layers of $D_Y$ of height at least two that reach rank $R-1$ have right endpoint $R-1$ and left endpoint between $3$ and $R-1$, since $d_2\le1$ and $d_R=1$. Each, multiplied by the lowest layer of $S_uF_Z$, contributes at least one to $\Del P(R)$. It follows that
+\[
+ \Del Q(R)=1-d_{R-1}+\Del P(R)\ge0.
+\]
+If $u\ge3$, Lemma~\ref{lem:gap} with $\delta=3$ finishes the splice.
+
+It remains that $u=2$, with $\alpha=\wt Z=b+M-5$. We show that $\Del V(R-1)>0$ when $b\ge4$. Put $A=F_Z=\sum a_jz^j$, $B=F_Y$, and $C=AB$. Since $\deg A=R-5$,
+\[
+ \Del V(R-1)=2c_{R-2}-c_{R-1}-c_{b-2}.
+\]
+Decompose $B$ into layers. For its lowest layer $[0,b]$, put $L=M-3$. Telescoping gives the contribution
+\[
+ \sum_{j=\alpha-L+1}^{\alpha}a_j-\sum_{j=0}^{L}a_j+a_{L+1}\ge0.
+\]
+Indeed $\sum_{j=1}^La_j\le\sum_{j=\alpha+1-L}^{\alpha}a_j$ by strengthened reflection, and $a_{L+1}\ge a_0=1$. For a higher layer $[l,r]$, put $U=b-l$ and $v=b-r$. Its contribution is exactly
+\[
+ d^Z_{U+M-1}-d^Z_{v+M-2},\qquad D_Z=\sum d^Z_jz^j.
+\]
+The indices are ordered and their sum is at most $b+2M-4=\alpha+M+1$, so the contribution is nonnegative. The second layer $[2,b-1]$ contributes $d^Z_{\alpha+2}-d^Z_{M-1}\ge a_{M-1}\ge1$ by Lemma~\ref{lem:budget}. This excludes a plateau.
+
+If $b=3$, then $\deg C=R-2$ and $c_1=2$. The same identity gives $\Del V(R-1)=0$, while $\Del V(R)=-c_2<0$. Again there is no plateau. All outer cases are excluded.
+\end{proof}
+
+

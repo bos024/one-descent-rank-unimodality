@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_QA_PASS_ALL_BINARY_TERNARY_ACTUAL_COMPLETE_C_AND_SHARP_ORDINARY_CLASSIFICATION_UNDER_PROOF_AUDIT",
+  "counts": {
+    "ACTUAL_ALL_binary_ternary_count_hosts": 2750,
+    "exact_prefix_minimum_all_shift_C_payments": 281851,
+    "logical_shift_coverage": 35677023,
+    "ACTUAL_ENTIRE_ordinary_LC_tail_minors_when_u_le_2r": 325194,
+    "sharp_classification_positive_hosts": 1995,
+    "ACTUAL_EXACT_negative_four_power_classification_hosts": 421,
+    "EXACT_first_degree_crossing_ENTIRE_ordinary_LC_seed_minors": 44225,
+    "unbounded_seed_grammar_QA_hosts": 225
+  },
+  "state_sha256": "e9b6468d28b9a335d556f5519c104087c9497642cc041cd9a4920df268ecb22f",
+  "seconds": 4.75,
+  "scope": "QAONLY. ALLu/rproofusesANALYTICfirstdegreecrossingentranceforalllargeu+74COMPLETEfixedr6smallubases+unboundedappend3heredity. Sharpordinaryiffu<=2rforr>=6/u>=1;complementEXACT-4r. No originalgeneralUIclaim."
+}

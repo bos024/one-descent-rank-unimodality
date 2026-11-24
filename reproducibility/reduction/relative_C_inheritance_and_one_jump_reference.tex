@@ -1,0 +1,208 @@
+\section{Normalized relative log-concavity inherits property C}
+All sequences in this section are real.  No integrality, bounded support,
+or bound on the comparison rank is required.  Write
+\[
+ Q_D(z)=1+\sum_{n\ge2}D_nz^n,\quad
+ F_D(z)=\frac{Q_D(z)}{1-z},\quad G_D(z)=\frac{Q_D(z)}{(1-z)^2},
+ \qquad D_n\ge0.
+\]
+Thus $F_D(0)=F_D(1)=1$, where these denote coefficients, and
+$G_D(k)=k+1+\sum_{2\le i\le k}(k-i+1)D_i$.
+Set $G_D(-1)=0$.  Property C means
+\[
+ G_D(N-R)D_{N-1}\ge G_D(N-R-1)D_N\qquad(R\ge3),             \tag{C}
+\]
+whenever the two current slopes are positive; zero or decreasing current
+slopes give the usual immediate comparisons.
+
+\begin{lemma}[Normalized geometric tilts preserve prefix ratio bounds]
+Let $0<a\le1$, $D^{a}_n=a^{n-2}D_n$, and $k\ge1$.
+If $G_D(i)-\lambda G_D(i-1)\ge0$ for every $0\le i\le k$, then
+\[
+                    G_{D^a}(k)-a\lambda G_{D^a}(k-1)\ge0. \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+Put $H_i=G_D(i)-\lambda G_D(i-1)$ and $\mu=a\lambda$.
+Formal power series give
+\[
+ a^2(1-\mu z)G_{D^a}(z)
+ =K_a(z)H(az)+(a^2-1)\frac{1-\mu z}{(1-z)^2},\qquad
+ K_a(z)=\left(\frac{1-az}{1-z}\right)^2.                    \tag{2}
+\]
+Indeed $a^2Q_{D^a}(z)=Q_D(az)+a^2-1$.  The coefficients of
+$K_a$ are $K_a(0)=1$ and
+$K_a(n)=2(1-a)+(n-1)(1-a)^2\ge0$ for $n\ge1$.
+Consequently the coefficient identity at rank $k$ is
+\[
+ a^2\{G_{D^a}(k)-\mu G_{D^a}(k-1)\}
+ =\sum_{i=0}^kK_a(k-i)a^iH_i
+       +(a^2-1)\{1+k(1-\mu)\}.                           \tag{3}
+\]
+If $\mu k\ge k+1$, both terms on the right are nonnegative.
+If $\mu k\le k+1$, the result instead follows from
+\[
+                kG_{D^a}(k)\ge(k+1)G_{D^a}(k-1).          \tag{4}
+\]
+For (4), $F_{D^a}$ is nondecreasing and
+$G_{D^a}(k-1)=\sum_{i<k}F_{D^a}(i)\le kF_{D^a}(k)$.
+This covers both cases, including equality.  At $k=0$ the assertion
+is immediate.  Notice that the atom of mass one at rank zero is
+preserved by the tilt; omitting its correction in (2) would be incorrect.
+\end{proof}
+
+\begin{theorem}[Downward inheritance under normalized relative LC]
+Let $r_n>0$ for $2\le n\le N$ with $r_2=1$, and suppose $r$
+satisfies (C) at the current rank $N$ for every $R\ge3$.
+Let $D_2=1$, with positive interval support starting at two, and assume
+\[
+ \rho_n=D_n/r_n\text{ is log-concave through }N,\qquad
+                         \rho_3\le\rho_2=1.               \tag{5}
+\]
+Then $D$ satisfies (C) at rank $N$ for every $R\ge3$.
+In particular a full-C reference transfers full C to every such density.
+\end{theorem}
+\begin{proof}
+Only $D_N>D_{N-1}>0$, $N\ge3$, and $k=N-R\ge1$ need proof.
+Put $a=\rho_N/\rho_{N-1}$ and $\lambda=r_N/r_{N-1}$.
+Condition (5) gives $0<a\le1$ and
+$\rho_{i+1}/\rho_i\ge a$ for $2\le i<N$.
+The reference comparisons at shifts $N-i\ge R\ge3$ imply
+$G_r(i)-\lambda G_r(i-1)\ge0$ for every $0\le i\le k$.
+The lemma therefore gives
+$G_{r^a}(k)/G_{r^a}(k-1)\ge a\lambda$.
+
+The ratio $D_i/r^a_i=\rho_i/a^{i-2}$ is nondecreasing for
+$2\le i\le N$, with value one at two.  Add the shared atom one
+at zero and shared zero at one.  The resulting atom sequences are
+ordered in likelihood ratio.  Cumulative summation preserves this order:
+for $v\ge u$, its cross-product difference is the nonnegative sum
+\[
+ \sum_{i=u+1}^{v}\sum_{j=0}^{u}(x_iy_j-y_ix_j).
+\]
+Apply this fact twice, first to the atom sequences and then to their
+positive cumulative sequences.  It yields
+\[
+ \frac{G_D(k)}{G_D(k-1)}\ge
+ \frac{G_{r^a}(k)}{G_{r^a}(k-1)}\ge a\lambda
+                         =\frac{D_N}{D_{N-1}},
+\]
+which is (C).  The reference is needed only through rank $N$;
+arbitrary nonnegative continuations past that rank have no effect.
+\end{proof}
+
+\begin{corollary}[Only the read prefix needs density order]
+Fix $k=N-R\ge1$ and a reference satisfying all its C comparisons
+at the current rank $N$.  Suppose $D_2=r_2=1$ and the slopes
+through $N$ are positive.  Put
+\[
+ a=\frac{D_Nr_{N-1}}{D_{N-1}r_N}.
+\]
+The target C comparison holds if either
+$kD_N\le(k+1)D_{N-1}$, or $0<a\le1$ and
+\[
+ \frac{D_jr_{j-1}}{D_{j-1}r_j}\ge a\qquad(3\le j\le k).   \tag{10}
+\]
+In the second case no condition on density ratios at ranks
+$k+1,\ldots,N-1$ is needed.
+\end{corollary}
+\begin{proof}
+The first alternative follows from (4).  In the second alternative,
+(10) orders the atom densities relative to $r^a$ only through $k$,
+which is exactly the prefix read by the two cumulative summations.
+The geometric-tilt lemma still uses reference comparisons through $k$;
+the current ratio is still $D_N/D_{N-1}=a r_N/r_{N-1}$.
+Thus the same proof applies.  This is a sufficient criterion; no claim
+that every actual arm satisfies (10) is made here.
+\end{proof}
+
+\section{Every one-jump Fibonacci reference has complete C}
+Let $L\ge3$ be arbitrary, write $f_n=\operatorname{Fib}(n)$ with
+$f_n=0$ for $n<0$, and put
+\[
+ H_2(z)=\frac1{1-z-z^2},\qquad
+ F^{[L]}(z)=1+(z+\cdots+z^L)H_2(z).
+\]
+This is a reference obtained by appending one capacity $L$ to an
+infinite binary prefix; it is not an actual finite arm.  Its positive
+slopes and cumulative coefficients are
+\[
+ r_n=f_n-f_{n-L}\quad(n\ge2),\qquad
+ g_k=\begin{cases}f_{k+4}-k-2,&0\le k\le L,\\
+ f_{k+4}-f_{k-L+4}-(L-1),&k\ge L-2.
+ \end{cases}                                               \tag{6}
+\]
+The two formulas agree on their overlap.  Define
+\[
+ c=L-1,\quad C_L=f_{L-1}+f_{L+1}-1-(-1)^L.
+\]
+Then $C_L\ge0$ and $cf_L\ge C_L$.  For $L=3$ equality holds;
+for $L\ge4$, use $c\ge3$ and
+$C_L\le f_{L-1}+f_{L+1}=f_L+2f_{L-1}\le3f_L$.
+
+\begin{lemma}[Complete cumulative log-concavity of this reference]
+For every $k\ge1$, $g_k^2\ge g_{k-1}g_{k+1}$.
+\end{lemma}
+\begin{proof}
+For the prefix $g_k=f_{k+4}-k-2$ the minor equals
+\[
+ (k-1)f_{k+1}-2f_k+1+(-1)^{k+3}.                           \tag{7}
+\]
+It is zero at $k=1,2$ and nonnegative for $k\ge3$.
+This covers all centres $k\le L-1$.
+For $k\ge L-1$ write $U_k=r_{k+4}$, so that all three
+coefficients are $g_i=U_i-c$.  The Fibonacci recurrence and Cassini give
+\[
+ U_k^2-U_{k-1}U_{k+1}=(-1)^{k-L}C_L,
+ \quad U_{k-1}+U_{k+1}-2U_k=r_{k+1}.
+\]
+Here $r_{k+1}\ge f_L$, including $k=L-1$.
+The cumulative minor is therefore at least $-C_L+cf_L\ge0$.
+\end{proof}
+
+\begin{theorem}[All capacities, all C shifts, all normalized tilts]
+The reference $r$ in (6) satisfies (C) for all $N,R\ge3$.
+For every $0<a\le1$, the normalized tilt $a^{n-2}r_n$ does too.
+Every normalized nonincreasing relatively log-concave density over
+this reference also satisfies complete C on its positive support.
+\end{theorem}
+\begin{proof}
+First prove the shift $R=3$.  If $k=N-3=0$ it is immediate.
+For $4\le N\le L$, Cassini and (6) give the minor
+\[
+ g_{N-3}r_{N-1}-g_{N-4}r_N
+             =k f_{k+1}-f_k-(-1)^{k+2}\ge0.               \tag{8}
+\]
+At $k=1$ its value is one; at $k\ge2$ use
+$kf_{k+1}-f_k\ge(k-1)f_k\ge1$.
+At $N=L+1$, the current slope is $f_N-1$ while all other
+quantities in (8) still have their prefix values; the extra
+$g_{N-4}$ improves the inequality.
+For $N\ge L+2$, use $g_{N-3}=r_{N+1}-c$ and
+$g_{N-4}=r_N-c$ to obtain
+\[
+ g_{N-3}r_{N-1}-g_{N-4}r_N
+       =-(-1)^{N-L}C_L+c r_{N-2}\ge -C_L+cf_L\ge0.         \tag{9}
+\]
+The Cassini identity for $r$ follows by computing its minor at
+$N=L+1$, where it is $-C_L$, and then negating the minor at
+each Fibonacci step.  All required recurrences hold starting at $L+2$.
+
+Since $g$ is positive and log-concave, $g_k/g_{k-1}$ is
+nonincreasing.  Every $k=N-R\le N-3$ has a ratio at least that
+in (8)--(9); this proves every shift.  The preceding inheritance
+theorem applies to a pure geometric density and then to every
+density described in its statement.
+\end{proof}
+
+\paragraph{Scope and unresolved bridge.}
+This proves an unbounded reference theorem, not property C for every
+finite arm with a binary prefix and a last capacity $L$.
+The missing implication is relative log-concavity of the actual
+positive slope density over (6), at least through its first slope
+mode.  Finite diagnostics support that implication but do not prove it.
+More general multi-capacity tails, general C, full A2 and the original
+unamplified coefficient-unimodality conjecture remain open.
+The Lean files formalize the displayed algebraic kernels; the
+complete sequence-level assembly above is a written proof, not an
+end-to-end Lean formalization of composition generation.

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXACT_QA_UNIFORM_ANALYTIC_GENERAL_ONE_JUMP_C",
+  "counts": {
+    "exact_first_two_binary_defect_sets": 3000,
+    "actual_modified_binary_tail_minors": 165215,
+    "actual_diagonal_improved_mode_bounds": 755,
+    "actual_UNIFORM_entrance_relative_LC_minors": 131297,
+    "actual_outgoing_exact_prefix_triples": 51211,
+    "actual_peak_parity_ordinary_LC_payments": 19809,
+    "actual_valley_parity_transfers": 31402,
+    "actual_rising_tail_LC_beyond_uniform_entrance": 120605,
+    "actual_ALL_C_current_ranks": 508454,
+    "actual_ALL_C_shifts_covered": 61830091,
+    "actual_one_jump_arms": 3000,
+    "actual_strict_window_lifts_inside_old_FIRST_mode": 10506
+  },
+  "seconds": 4.405999999988126,
+  "scope": "Finite exact actual QA only. The claimed all-capacity/all-count theorem requires the separate unbounded modified-tail/valley-parity/uniform-entrance/rising-tail/C-seed assembly and scoped Lean kernels. No original coefficient UI conclusion."
+}

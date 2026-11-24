@@ -1,0 +1,10 @@
+'TribonacciInverseTerminalNorm.exact_binary_terminal_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciInverseTerminalNorm.exact_ternary_terminal_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciInverseTerminalNorm.whole_unbounded_two_count_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TribonacciInverseTerminalNorm.terminal_form_coercive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciInverseTerminalNorm.geometric_eighteen_terminal_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TribonacciInverseTerminalNorm.complete_terminal_quarter_box' depends on axioms: [propext, Classical.choice, Quot.sound]

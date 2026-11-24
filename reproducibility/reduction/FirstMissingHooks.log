@@ -1,0 +1,3 @@
+'FirstMissingHooks.sum_one_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingHooks.nonhook_first_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingHooks.nonhook_right_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]

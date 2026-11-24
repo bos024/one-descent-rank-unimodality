@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXACT_QA_RELATIVE_C_AND_ONE_JUMP_REFERENCE",
+  "scope": "FINITE exact rational/integer QA ONLY. Unbounded theorem proofs are in the accompanying TeX; no actual-arm relative-LC implication is asserted.",
+  "counts": {
+    "reference_LC_minors": 12232,
+    "reference_all_shift_C": 844008,
+    "one_jump_tilt_C": 303072,
+    "one_jump_relative_density_C": 178112,
+    "abstract_reference_C": 105000,
+    "abstract_tilt_C": 315000,
+    "exact_tilt_kernel_identities": 30000,
+    "abstract_relative_density_C": 105000
+  },
+  "seconds": 3.3589999999967404,
+  "counter": null
+}

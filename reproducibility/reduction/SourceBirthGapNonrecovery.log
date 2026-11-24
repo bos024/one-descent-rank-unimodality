@@ -1,0 +1,8 @@
+'SourceBirthGapNonrecovery.birth_term_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapNonrecovery.skeleton_relative_curvature_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapNonrecovery.reflected_source_index_sum' depends on axioms: [propext, Quot.sound]
+'SourceBirthGapNonrecovery.one_step_central_ratio_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapNonrecovery.two_step_central_ratio_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapNonrecovery.three_step_central_ratio_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapNonrecovery.source_birth_pays_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapNonrecovery.unbounded_to_near_center_strip' depends on axioms: [propext, Classical.choice, Quot.sound]

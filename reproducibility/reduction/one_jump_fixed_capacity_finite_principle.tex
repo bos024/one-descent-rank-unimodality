@@ -1,0 +1,215 @@
+\section{A finite principle for complete one-jump C at every fixed capacity}
+Fix $L\ge3$ and put $H=L+2$.  Let
+\[
+ F_{h,L}=F_{1^\alpha2^hL},\quad
+ D_{h,L}(n)=(F_{h,L}(n)-F_{h,L}(n-1))^+\quad(n\ge2),
+ \qquad d_h(j)=D_{h,L}(j+2).
+\]
+The padding $\alpha\ge1$ remains arbitrary throughout the propagation.
+The reference is the already proved complete-C sequence
+\[
+ r_n=\operatorname{Fib}(n)-\operatorname{Fib}(n-L),\quad n\ge2,
+ \qquad a_j=r_{j+2};                                    \tag{1}
+\]
+negative Fibonacci indices mean zero.  It comes from
+$1+(z+\cdots+z^L)/(1-z-z^2)$.
+
+\begin{theorem}[Fixed-capacity whole-generation finite principle]
+For any fixed integer $L\ge3$, the following finite conditions suffice
+for complete property C of EVERY actual arm $1^\alpha2^hL$,
+with no bound on $h\ge1$ or $\alpha\ge1$:
+\begin{enumerate}
+\item Complete C holds for $1\le h\le H$ and
+      $1\le\alpha\le h+L$.
+\item At $h=H$, for $1\le\alpha\le H+L$, the ENTIRE
+      positive-slope tail is log-concave at every centre
+      $n\ge H+2$, including after its first slope mode.
+\end{enumerate}
+Both tests need only ordinary coefficients through $2h+L+1$.
+This is a sufficient finite criterion at EACH capacity, not an
+assumption that a finite capacity cutoff covers all capacities.
+\end{theorem}
+
+\subsection*{Exact coverage of the initial padding and rank domains}
+The first ordinary mode of a binary arm is at most $2h$.
+Appending $L$ gives first ordinary mode at most $2h+L$:
+past that rank the exact difference
+$F_h(n-1)-F_h(n-L-1)$ samples two old indices on the
+nonincreasing tail in their correct order.  Actual ordinary
+unimodality therefore puts the entire positive slope support in
+$[2,2h+L]$.  The extra read at $2h+L+1$ includes its zero successor.
+
+For all $h$, the exact binary polynomial is
+\[
+ F_h=\sum_{j=0}^{h-1}(z+z^2)^j+(z+z^2)^h[\alpha+1].     \tag{2}
+\]
+Increasing initial padding past $h+L$ first changes $F_h$ at
+rank at least $2h+L+1$, and first changes the appended
+$F_{h,L}$ at rank at least $2h+L+2$.
+Consequently clamping $\alpha$ to $h+L$ preserves ALL required
+coefficients through $2h+L+1$ and hence the whole positive-D sequence,
+its modes, all C reads, and the full-tail LC entrance.
+This is proved local agreement plus an independent mode bound;
+it is not a mode-preserving assertion about arbitrary clipping.
+
+\subsection*{Unbounded propagation of the FULL slope tail}
+For fixed $L$, the exact generating identities are
+\[
+ F_{h+1,L}=(z+z^2)F_{h,L}+1+z^3+\cdots+z^L,
+\]
+and, for the signed slopes shifted down by two,
+\[
+ \widetilde d_{h+1}
+        =(z+z^2)\widetilde d_h+1+z-z^{L-1}.             \tag{3}
+\]
+Both actual words remain sorted; (3) changes the number of twos
+BEFORE the fixed last capacity, and is an exact polynomial identity,
+not a legal append of a two after $L$.
+The ordinary binary exact prefix gives
+\[
+ d_h(j)=a_j\quad(j\le h),\qquad
+                          d_h(h+1)\le a_{h+1}-1.         \tag{4}
+\]
+The positive support is an integer interval $[0,J_h]$ with $J_h\ge h$.
+For $h\ge H$, the fixed forcing in (3) lies strictly before every
+tail read.  Hence $J_{h+1}\le J_h+2$, the new tail equals the
+two-term window through $J_h+1$, and only its last possible
+coefficient at $J_h+2$ may be reduced or deleted.  Signed old slopes
+past $J_h$ are nonpositive, so this covers every tail coefficient.
+
+Let
+\[
+ C_L=\operatorname{Fib}(L-1)+\operatorname{Fib}(L+1)
+                              -1-(-1)^L.
+\]
+The proved Fibonacci recurrence gives reference minors of magnitude
+$C_L$ in its homogeneous range.  Moreover
+\[
+ r_{L+2}-C_L=\operatorname{Fib}(L-2)+(-1)^L\ge0,
+                  \qquad r_n\ge C_L\quad(n\ge L+2).     \tag{5}
+\]
+The reference is increasing there.  Thus for $h\ge H$,
+\[
+       a_h^2-a_{h-1}(a_{h+1}-1)\ge-C_L+r_{h+1}\ge0.   \tag{6}
+\]
+
+Induct on $h\ge H$ to prove LC of the ENTIRE $d_h$ tail
+at centres $j\ge h$.  The base is finite condition 2.
+For $d_{h+1}$ at its first required centre $h+1$, use
+the two exact prefix values, the first defect (4), and (6).
+At every later interior centre, the two relevant old centres
+are in its already proved whole tail.  The two-term window
+minor is the sum of the two old minors and their nonnegative
+cross minor, as in the preceding ordinary-binary proof.
+Reducing a final coefficient improves its preceding minor;
+its own terminal minor is its square.  Zero extension gives
+all remaining centres.  This proves, for every $h\ge H$,
+\[
+ D_{h,L}(n)^2\ge D_{h,L}(n-1)D_{h,L}(n+1)
+                               \quad(n\ge h+2),        \tag{7}
+over the WHOLE positive-slope tail, not only its rising part.
+
+\subsection*{From the propagated tail to EVERY C shift}
+Fix $h\ge H$ and suppress the subscripts.
+Through $N\le h+2$, the actual slopes and cumulatives agree
+with the complete-C reference.  At $N_0=h+3$, the only changed
+value is the current slope $D_{N_0}=r_{N_0}-\delta$, with
+$\delta\ge1$; every read in C is earlier, so all those C minors
+improve.  If that slope is zero, no later positive slope exists.
+Otherwise put $\lambda_0=D_{N_0}/D_{N_0-1}$.
+
+For any later positive current rank $N$, (7) implies
+$\lambda=D_N/D_{N-1}\le\lambda_0$.
+For every C read $k\le h$, reference C at $N_0$ already
+gives $G_k/G_{k-1}\ge\lambda_0\ge\lambda$.
+It remains to handle $h<k\le N-3$.
+
+Set $a=r_h,b=r_{h+1},c=r_{h+2},d=r_{h+3}$.
+These satisfy $c=a+b,d=b+c$ and
+$|b^2-ac|\le C_L\le a\le b$.  Consequently
+\[
+        a(d-\delta)\le bc,\qquad
+                         b(d-\delta)\le c^2.            \tag{8}
+\]
+Both follow by adding $\delta a$ or $\delta b$ to a
+reference determinant of magnitude at most $C_L$.
+The reference ordinary coefficients satisfy
+$F_h=c,F_{h-1}=b$ in this range, so (8) gives
+\[
+ F_h\ge\lambda_0F_{h-1},\quad
+ D_{h+1}\ge\lambda_0D_h,\quad
+                         D_{h+2}\ge\lambda_0D_{h+1}.     \tag{9}
+\]
+Reference C at $N_0$ gives $G_h\ge\lambda_0G_{h-1}$.
+All later needed D ratios down to the fixed current $N$ are
+at least $\lambda$, by (7).  Thus $D_i\ge\lambda D_{i-1}$
+for every $h+1\le i\le N-3$, including the two early edges
+explicitly retained in (9).
+
+On this FINITE read prefix the actual recurrences
+$F_i=F_{i-1}+D_i$ and $G_i=G_{i-1}+F_i$ apply.
+Starting with the F and G seeds at $h$, induct on $k$ to get
+\[
+                 F_k\ge\lambda F_{k-1},\qquad
+                 G_k\ge\lambda G_{k-1}
+                         \quad(h\le k\le N-3).          \tag{10}
+Indeed the F ratio difference increases by
+$D_k-\lambda D_{k-1}\ge0$, and the G ratio difference
+increases by $F_k-\lambda F_{k-1}\ge0$.
+No integration identity is assumed past the actual positive slope
+support or outside this read prefix.  This proves every C shift.
+Flat/decreasing current slopes have immediate cumulative payment.
+Finite condition 1 supplies the remaining $h<H$ cases and
+completes the fixed-capacity finite principle.
+
+\section{A completed unbounded short-capacity family}
+\begin{theorem}
+For every $\alpha\ge1,h\ge1$ and $3\le L\le32$,
+the actual one-jump arm $1^\alpha2^hL$ has COMPLETE C at
+every rank and shift.  The count and padding are unbounded.
+Combined with the dominant-capacity theorem, complete C holds
+for every one-jump arm with $h\le16$, with NO bound on $L$.
+\end{theorem}
+\begin{proof}
+The entire finite entrance contains 19605 actual words, all padding
+classes and all $1\le h\le L+2$ for every $3\le L\le32$.
+Its strongest exact prefix-ratio checks cover 20029138 C shifts
+at 791451 current ranks.  Every one passes.
+The diagonal bases contain 1110 padding classes and ALL 36427
+full-tail minors; every one is nonnegative.
+
+The independent verifier imports no producer or arm implementation.
+It rebuilds the binary coefficients from the closed form (2),
+using exact binomial coefficients, and appends $L$ by direct
+finite sums.  It reconstructs used actual coefficients by integrating
+the positive slopes and checks EVERY literal shift minor,
+rather than the producer's ratio-envelope shortcut.
+All actual prefix hashes, counts, base minors and summary margins
+agree.  The full unbounded proof above extends these complete
+finite entrances to all counts and paddings.
+
+If $h\le16$ and $L>32$, the prior bound $R\le2h\le32<L$
+places the arm in the already proved dominant-capacity family.
+This proves the second assertion without a bound on its last capacity.
+\end{proof}
+
+\paragraph{Formal scope and remaining target.}
+\texttt{OneJumpFixedCapacityClosure.lean} proves the FULL generic
+reference/terminal-trim tail induction, the reference amplitude
+start budget, both first-defect seed-ratio payments, the complete
+finite-prefix two-integration ratio propagation, and padding/read
+arithmetic.  Actual polynomial/support/reference identification,
+whole-generation finite coverage and C assembly are the written proof.
+The 19605 entrance words and all literal minors are independently
+exact computer-checked, not end-to-end Lean evaluated.
+Earlier source/reference kernels are reused without recounting.
+
+All-depth both-ordinary-rising nonnegative-tail nonrecovery and the
+proper zero-head C/OLD-free corollaries follow with exactly their
+previous guards; all-head S retains the usual OLD head.
+An unresolved one-jump C example must have
+$h\ge17$, $L\ge33$ and $L<R\le2h$.
+This is an auxiliary C restriction, not an upgraded original
+least-counterexample theorem.  General C still first has unresolved
+non-one count six, and full A2, the remaining mixed/deeper comparisons
+and ORIGINAL unamplified coefficient unimodality remain OPEN.

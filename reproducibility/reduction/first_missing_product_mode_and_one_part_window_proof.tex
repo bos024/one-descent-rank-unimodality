@@ -1,0 +1,166 @@
+\section{Unbounded first-missing mode bounds and the entire one-part window case}
+All arms below are ACTUAL normalized increasing arms. No fixed
+upper bound on capacities, counts, padding, or first missing weight
+is imposed. The general original coefficient conjecture remains OPEN.
+
+\begin{theorem}[A universal ordinary-product mode bound]
+Let $X,Y$ be nonrectangular arms, and let $\kappa=\kappa_Y\ge6$.
+Write $H=F_XF_Y$, $D=\operatorname{wt}X+\operatorname{wt}Y$.
+Then
+\[
+ H_\kappa>H_{\kappa-1},\qquad H_{\kappa+1}>H_\kappa,
+ \qquad H_{\kappa+2}>H_{\kappa+1}.
+\]
+Consequently the FIRST ordinary mode of $H$ is at least $\kappa+2$,
+and the LAST ordinary mode of $q_Xq_Y$ is at most $D-\kappa-2$.
+No C, A2, or comparison-mode hypothesis is used.
+\end{theorem}
+\begin{proof}
+Put $A=F_X$, $B=F_Y$, with zero extension at negative indices.
+The actual normalized prefix has $A_0=A_1=1$, $A_2=2$,
+$A_3\ge1$, and all later coefficients are nonnegative.
+The first-missing prefix gives $B_0=1$, $B_j=2^{j-1}$ for
+$1\le j<\kappa$, and
+\[
+ B_\kappa=2^{\kappa-1}-\delta,\qquad1\le\delta\le\kappa.
+\]
+The last inequality is the frozen first-missing-hook theorem: ALL
+missing words at the first missing rank are hooks. Also $B_j>0$
+through rank $\kappa+2$, because the compulsory triangular weight
+is at least $\kappa(\kappa-1)/2\ge\kappa+2$.
+
+The COMPLETE ordinary-product difference identity is
+\[
+ \Delta H_N=B_N+B_{N-2}-2B_{N-3}
+                 +\sum_{i\ge3}A_i\Delta B_{N-i}.       \tag{1}
+\]
+For $N=\kappa,\kappa+1$, every read in the sum is within the
+protected nondecreasing prefix of $B$, and the two explicit powers
+cancel. Hence $\Delta H_N\ge B_N>0$.
+At $N=\kappa+2$ the explicit second pair is $-\delta$.
+All sum terms remain in the protected prefix, and its $i=3$ term
+is at least $2^{\kappa-3}$. The elementary unbounded induction
+$2^{\kappa-3}\ge\kappa$ for $\kappa\ge6$ therefore gives
+\[
+       \Delta H_{\kappa+2}\ge B_{\kappa+2}
+                              +2^{\kappa-3}-\delta>0.  \tag{2}
+\]
+Ordinary actual-product unimodality puts EVERY mode at or after
+the last strict increase. Reversal interchanges first and last
+modes, giving the claimed reverse bound.
+
+For formalization write $A=1+z+2z^2+z^3U$, with $U\ge0$ and
+$U_0\ge1$. The kernel proves the WHOLE polynomial identity (1),
+nonnegativity of the entire protected difference prefix, complete
+convolution nonnegativity there, its constant-term lower bound,
+and ALL THREE increases together. No source sum is assumed positive
+without its full used-index guard.
+\end{proof}
+
+\begin{theorem}[Every one-part-owner source window at arbitrary first missing weight]
+Let $X=1^\alpha s$, $\alpha\ge1,s\ge2$, and let $Y$ be ANY
+nonrectangular actual arm with FULL C. Assume FULL OLD A2 for
+the pair $q_Xq_Y$. Write $\kappa=\kappa_Y$ and $E=(2-z)q_Xq_Y$.
+Then for EVERY integer $t\ge\max(1,\kappa-3)$, the positive part
+of the ENTIRE signed source window $[t]E$ is unimodal and has
+initial positive support. This covers ALL first missing weights,
+not merely the previously classified values through eight.
+The FULL OLD A2 premise is explicitly retained.
+\end{theorem}
+\begin{proof}
+One-part $X$ has known FULL C and first missing weight three.
+The old both-rising C resource, both-nonrising actual resources,
+and A1 apply. In a mixed comparison with owner $Y$, the rising
+opposite has first missing weight three, and its old pointwise
+birth theorem pays all comparisons. With owner $X$, its exact
+reverse polynomial and positive primitive are
+\[
+ q_X=[\alpha+1][s]+z^a,\quad a=\alpha+s,\qquad
+ (\Delta q_X(r))^+=\mathbf1_{0\le r<m},\quad
+ m=\min(\alpha+1,s).
+\]
+Positive primitive curvature occurs ONLY at $r=-1$. Its compulsory
+birth is $A_{a+2-\kappa}$, which pays whenever $\kappa\le a+2$.
+All these cases have whole raw-source positive UI by the frozen
+FULL OLD A2/plateau/Q/A1 assembly, and EVERY window is allowed.
+This also covers $\kappa\le5$ since $a\ge3$.
+
+The ONLY remaining case is
+\[
+ a+3\le\kappa,\qquad\kappa\ge6.
+\]
+Write $b=\operatorname{wt}Y$, $D=a+b$, and set
+\[
+ L=b+a-\kappa+1,\qquad R=b+m-1.
+\]
+The ONLY possible Q exception is at $b-1\to b$. The preceding
+unbounded mode theorem puts the reverse LAST ordinary mode at
+most $D-\kappa-2=L-3$. Thus FULL OLD A2, the whole plateau join,
+and the paid Q edges prove UI of the source prefix $0,\ldots,L$.
+Its endpoint is $E_L=\delta\ge1$ and $E_0=2$; A1 and Q rule out
+an earlier negative or zero followed by this positive endpoint.
+The entire prefix is positive integer, hence at least one.
+
+The exact forward reciprocal coefficient identity is
+\[
+ E_{D-k}=A_k-A_{k+1}+(A E_Y)_{k+1}.
+\]
+It gives the COMPLETE remaining source profile
+\[
+ E_{L+1}=\cdots=E_{b-1}=0,\qquad
+ E_b=\cdots=E_R=1,\qquad E_n\le0\quad(n>R).           \tag{3}
+\]
+The gap has length $\kappa-a-2\ge1$. For $n\ge b$ the whole
+ordinary read is below the first source birth, so (3) is exactly
+the one-part primitive, including its negative terminal unit.
+
+The generic finite-height/width patch theorem applies with
+$B=L$ and $H=1$. Its complete reach condition is
+\[
+ R-L=\kappa-a+m-2\le\kappa-3\le t,
+\]
+since $m\le a-1$. Every mode and subtraction index here is valid:
+$b\ge\kappa$, $a\ge3$, and $a+3\le\kappa$ give $1\le L<R$.
+Hence the ENTIRE positive window is UI with initial support.
+No claim that raw-source UI holds across the actual zero gap is used.
+\end{proof}
+
+\paragraph{An unbounded actual shorter-window obstruction.}
+For EVERY $\kappa\ge6$, take $X=(1,2)$ and
+$Y=1,(\kappa-1)^{\kappa-2}$. Its first missing rank is $\kappa$.
+Every composition of smaller weight embeds. At weight $\kappa$
+the ONLY missing words are
+\[
+ (\kappa),\qquad(2,1^{\kappa-2}),\qquad1^\kappa.
+\]
+Indeed a word whose first part exceeds one has length at most
+$\kappa-2$ unless it is the second displayed hook; a word starting
+in one uses the initial one and fits the remaining constant
+capacities unless it is $1^\kappa$; a part above $\kappa-1$ forces
+the first displayed singleton. Thus $\delta=3$ exactly.
+Profile (3), which itself does not require C or A2, gives
+\[
+ ([\kappa-4]E)_{b-1},([\kappa-4]E)_b,
+ ([\kappa-4]E)_{b+1}=(3,1,2).
+\]
+This is an unconditional actual source-window counterexample for
+arbitrarily large first missing weight. C and FULL OLD A2 for this
+entire unbounded counterexample family are NOT asserted here.
+The abstract patch length cannot be shortened using only its
+positive-UI-prefix and critical-block hypotheses: the same pattern
+is produced by a prefix $(2,3,\ldots,3)$ followed by the displayed
+zeros, two ones, and a nonpositive finite tail.
+
+\paragraph{Scope and remaining work.}
+TEN new standard-axiom kernel reports cover the full polynomial
+mode calculation, its actual-use index/positivity implications,
+and the unbounded one-part birth dichotomy/window geometry.
+The frozen generic patch theorem is reused without recounting it.
+The actual first-missing-hook, ordinary unimodality, C/A1/Q, and
+composition model identifications are written assemblies of frozen
+inputs. This is NOT an end-to-end Lean composition formalization.
+All additional finite products and source windows are QA ONLY;
+no new finite proof premise is added. Owners with two or more
+non-one parts at unbounded first missing weight, general C, and
+the general ORIGINAL unamplified conjecture remain OPEN. The
+conditional window theorem does not remove its FULL OLD A2 premise.

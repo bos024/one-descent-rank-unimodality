@@ -1,0 +1,25 @@
+{
+  "status": "EXACT_QA_PASS_ALL_BINARY_FOUR_COMPLETE_C_SHARP_ORDINARY_TAIL_AND_ORIGINAL_FAMILY_UNDER_PROOF_AUDIT",
+  "counts": {
+    "reference_ALL_current_allshift_prefix_payments": 14742,
+    "reference_logical_shift_reads": 1703133,
+    "reference_unbounded_count_QA_hosts": 81,
+    "reference_physical_H_LC_minors": 9417,
+    "reference_ordinary_head_minors": 9490,
+    "actual_ALL_binary_four_count_hosts": 3500,
+    "actual_ALL_current_allshift_prefix_payments": 577679,
+    "actual_logical_shift_reads": 80339627,
+    "actual_ENTIRE_ordinary_LC_tail_minors": 424777,
+    "actual_EXACT_negative_five_power_controls": 305,
+    "actual_FULL_A2_pairs": 420,
+    "actual_Q_guarded_tail_edges": 84133,
+    "ENTIRE_signed_source_windows": 2095,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 419,
+    "enlarged_A5_with_B4_ORIGINAL_cores": 420,
+    "enlarged_A5_with_B4_BOTH_relative_polynomials": 840,
+    "enlarged_A5_with_B4_coefficient_comparisons": 512202
+  },
+  "state_sha256": "bc8aa62dcf2c01272cf259a7edf2176fe818b07f97209d0d97625d6a99e012b1",
+  "seconds": 3.5,
+  "scope": "FiniteQAONLY. Complete352hostordinaryentrance8554minors+92fieldscalarsareseparatecertifiedproofpremises. Analyticfullr/uheredity/crossingcoversALLparameters. GENERALC/A2/originalUIOPEN;within-armMIXED3and4notasserted."
+}

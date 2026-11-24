@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_EARLY_PEAK_FINITE_JET_CALCULATION",
+  "complete": true,
+  "N": 45,
+  "old_kappa_max": 7,
+  "slope_cap": 128,
+  "counts": {
+    "expanded_states": 657439,
+    "legal_jet_appends": 10873783,
+    "eligible_early_old_peak_appends": 484214,
+    "necessary_guard_TC_comparisons": 4961907,
+    "monotone_slope_budget_prunings": 9959284
+  },
+  "states": 657439,
+  "remaining_queue": 0,
+  "reachable_state_sha256": "25f6737af1aef9f9b7dfeaed7d4073070a7218d546c6727a52956b3078ca3101",
+  "unresolved_examples": [],
+  "seconds": 95.78099999998813,
+  "scope": "Finite stronger necessary-prefix-guard calculation. Needs separate rank-bound, coverage and mode audit before any TC theorem. General original UI remains OPEN."
+}

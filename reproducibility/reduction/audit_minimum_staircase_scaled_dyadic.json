@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_MINIMUM_STAIRCASE_AND_SCALED_DYADIC_QA",
+  "counts": {
+    "staircase_thresholds": 92,
+    "actual_peak_prefixes": 9510,
+    "actual_scaled_guarded_edges": 399938,
+    "actual_profiles": 10000,
+    "actual_scaled_sharpness_profiles": 154
+  },
+  "kappa8_peak_height_counter": 234,
+  "seconds": 2.2819999999919673,
+  "scope": "Finite exact QA only; separate unbounded containment/growth/append proofs and independent complete entrance establish the theorems."
+}

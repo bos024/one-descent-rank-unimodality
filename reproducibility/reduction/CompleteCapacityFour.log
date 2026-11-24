@@ -1,0 +1,10 @@
+'CompleteCapacityFour.complete_cubic_root_entry_damping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompleteCapacityFour.all_seven_small_cubic_root_entries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompleteCapacityFour.complete_unit_minor_parameter_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CompleteCapacityFour.complete_binary_seed_jet_padding_clamp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompleteCapacityFour.complete_actual_base_all_padding_clamp' depends on axioms: [propext, Quot.sound]
+'CompleteCapacityFour.complete_all_three_binary_four_count_base_selection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

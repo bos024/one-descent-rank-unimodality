@@ -1,0 +1,4 @@
+'AllRankHeadFlagBoundary.complete_small_boundary' depends on axioms: [propext]
+'AllRankHeadFlagBoundary.exact_profile_count' does not depend on any axioms
+'AllRankHeadFlagBoundary.complete_small_boundary_diagonal' depends on axioms: [propext]
+'AllRankHeadFlagBoundary.degree_failure_finite_domain' depends on axioms: [propext, Classical.choice, Quot.sound]

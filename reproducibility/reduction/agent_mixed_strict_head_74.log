@@ -1,0 +1,11 @@
+'AgentMixedStrictHead74.source_birth_gap_forces_reverse_rank' depends on axioms: [propext, Quot.sound]
+'AgentMixedStrictHead74.positive_recovery_forward_rank_bound' depends on axioms: [propext, Quot.sound]
+'AgentMixedStrictHead74.proper_head_bound' depends on axioms: [propext, Quot.sound]
+'AgentMixedStrictHead74.second_window_keeps_raw_source_prefix' depends on axioms: [propext, Quot.sound]
+'AgentMixedStrictHead74.unit_recovery_head_bound' depends on axioms: [propext, Quot.sound]
+'AgentMixedStrictHead74.uniform_74_main_box_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMixedStrictHead74.actual_main_box_support_covers_head' depends on axioms: [propext, Quot.sound]
+'AgentMixedStrictHead74.one_nonnegative_convolution_term_pays' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMixedStrictHead74.raw_owner_source_dominates_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]

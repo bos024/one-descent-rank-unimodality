@@ -1,0 +1,10 @@
+24_GENERAL_UNIMODALITY/OrdinaryRelativeGrowth.lean:21:5: warning: Variable name `ha0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'OrdinaryRelativeGrowth.window_ratio_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryRelativeGrowth.clipped_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryRelativeGrowth.ratio_transitivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryRelativeGrowth.curvature_resource' depends on axioms: [propext, Classical.choice, Quot.sound]

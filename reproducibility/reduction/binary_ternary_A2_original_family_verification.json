@@ -1,0 +1,171 @@
+{
+  "status": "PASS_BINARY_TERNARY_AND_KAPPA_FOUR_CERTIFIED_CLASS_FULL_A2_AND_ORIGINAL_COEFFICIENT_FAMILY",
+  "new_scoped_reports": 10,
+  "kernels": {
+    "BinaryTernaryA2SourceCone.small_missing_reflection_dichotomy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.exceptional_curvature_payment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.negative_rank_compulsory_birth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.complementary_half_tail_guards": [
+      "propext",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.complete_positive_source_splice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.positive_source_no_holes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.exact_raw_source_weighted_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.weighted_difference_sign_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.entire_mode_plateau_source_join": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryTernaryA2SourceCone.append_source_excluded_on_entire_rising_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "class_definition": "A4=B3(ALL1alpha2u3r) ORbinary-plus-ONE-arbitrary-tail1alpha2uT ORat-most-TWO-arbitrary-nonone-parts. ALLpadding/counts/capacitiesUNBOUNDED. Rectangles/emptyincluded. ALLCproved,nonrectkappa<=4,FINALdeletionclosed.",
+  "full_A2": "PROVEDFULL2^n*(Delta(qXqY))^+UIforEVERYpairX,YinA4. FullOLD_A2induction,NOTshortprefixIH. HeavieronepartandALLrectangularbasesexplicit;ANYlegalappendwindowbelowNEWfirstmode<a,includingequalweights.",
+  "source_cone": "PROVEDBOTHnonrectA4:ENTIRErawE=(2-z)qXqYpositivepartUIwithINITIALpositiveinterval,negative-terminalcoefficientKEPT. A1fromCindependentofA2. Qpost-LASTmodefromC BOTHrising+NEWtinykappa<=4mixed+OLDallranksBOTHnoninc. FULLoldA2head+entireplateau+Q+A1splicedWITHOUTzero/signhole.",
+  "new_mixed": "PROVEDANYactualnonrectowner/oppositekappa3..4/sourceprefixNONDECR:tailNONRECOVERY,INCLUDINGowner/oppositecountsONE. Skeletoncurvature+lowercenterreflection;ONLYexceptionkappa4/alpha1/H2r2paidby(r1)C<=d. NOFINITEentrance/NOhead/A2/C/signguard.",
+  "original_family": "PROVEDORIGINALUNAMPLIFIEDcoefficientUIforCOREandBOTHrelativepolynomials,EVERYA4pair,ALLstrictcentralpeaksM>maxarmpart. FullA2+proper-relativeprefix+deletion/exchange/least-peakbasejoin. Includesunboundedcentralpeak/unboundedbinaryandternarycounts/botharbitrarybinary-tailcapacities.",
+  "heavier_append": "PROVEDFULLA2andORIGINALCORE/BOTHrelativesforX=Zt,YwithZ,YinA4,ANYlegalfinalt,wtX>=wtY. NewsourceexcludedbelowNEWfirstmode;noC/kappaassertionfornewXrequired. Originalfamilydeletionclosed. Lowerpeakiflargest>tremoveoppositemaxima,preserveheaviness;iflargest=tremovequalifyingjumpfirstthenstripA4maxima.",
+  "general_principle": "SAMEproofANYfinal-deletion-closedactualarmclasswithFULLCandeveryNONRECTkappa<=4=>FULLpairA2+ORIGINALcore/BOTHrelativesALLstrictpeaks,plusONEarbitraryheavierappend.",
+  "formal_scope": "TENNEWcleanstandard-axiomSCOPEDgenericreports. Wholefunctionpositive-sourceUIsplice/NOholes,exactdyadicraw-sourceidentity/signtransfer,small-kappareflection/birth/curvature/halfguard/modearithmetic. OLDwhole-signed-windowkernelREUSED. Actualarmmembership/sourceidentitiesandinductive/least-counterexampleassemblyWRITTEN;NOTendtoendLeancompositions. Nofinitepremiseused;ALLnumericsdiagnosticsONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "all_binary_ternary_original_coefficients": "PROVED",
+  "counts": {
+    "independent_A4_first_missing_controls": 1284,
+    "independent_actual_FULL_A2_hosts": 1440,
+    "independent_Q_post_LAST_mode_edges": 63913,
+    "independent_Q_forward_phase_(False, False)": 30431,
+    "independent_Q_forward_phase_(False, True)": 7535,
+    "independent_Q_forward_phase_(True, True)": 18024,
+    "independent_ENTIRE_signed_windows": 2865,
+    "independent_ENTIRE_source_cone_hosts": 573,
+    "independent_A4_ORIGINAL_cores": 1440,
+    "independent_BOTH_relatives": 4320,
+    "independent_A4_arbitrary_heavier_append_cores": 720,
+    "independent_Q_forward_phase_(True, False)": 7923,
+    "independent_GREEDY_distinct_composition_ORIGINAL_ideals": 144,
+    "independent_GREEDY_ORIGINAL_rank_counts": 6758
+  },
+  "primary_QA": {
+    "actual_FULL_A2_pairs": 3576,
+    "B3_ORIGINAL_cores": 288,
+    "B3_BOTH_relative_polynomials": 576,
+    "B3_coefficient_comparisons": 171348,
+    "actual_Q_guarded_tail_edges": 290101,
+    "ENTIRE_signed_source_windows": 11065,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 2213,
+    "heavier_arbitrary_jump_ORIGINAL_cores": 1500,
+    "heavier_arbitrary_jump_BOTH_relative_polynomials": 3000,
+    "heavier_arbitrary_jump_coefficient_comparisons": 2902263,
+    "expanded_A4_ORIGINAL_cores": 600,
+    "expanded_A4_BOTH_relative_polynomials": 1200,
+    "expanded_A4_coefficient_comparisons": 648642,
+    "expanded_A4_heavier_append_ORIGINAL_cores": 600,
+    "expanded_A4_heavier_append_BOTH_relative_polynomials": 1200,
+    "expanded_A4_heavier_append_coefficient_comparisons": 997725
+  },
+  "independent_state_sha256": "0bfc5857baaa55cbbc75a7c5d0bbfca94fafa0259fa236c332bbf3e9469cbbe6",
+  "seconds": 7.0310000000026776,
+  "local_files": [
+    "binary_ternary_A2_original_family_proof.tex",
+    "BinaryTernaryA2SourceCone.lean",
+    "BinaryTernaryA2SourceCone.log",
+    "audit_binary_ternary_A2_original_family.py",
+    "audit_binary_ternary_A2_original_family.json",
+    "verify_binary_ternary_A2_original_family.py"
+  ],
+  "dependency_files": [
+    "all_binary_ternary_complete_C_verification.json",
+    "all_binary_ternary_complete_C_proof.tex",
+    "two_nonbinary_complete_C_verification.json",
+    "two_nonbinary_complete_C_proof.tex",
+    "clipped_forward_ratio_frontier.tex",
+    "ClippedForwardRatio.lean",
+    "ClippedForwardRatio.log",
+    "C_to_coupled_S_rising_window.tex",
+    "CToCoupledSRisingWindow.lean",
+    "CToCoupledSRisingWindow.log",
+    "source_birth_gap_nonrecovery.tex",
+    "ordinary_relative_growth.tex",
+    "agent_bothdeclining_first_birth.tex",
+    "agent_half_lc_actual_weak_curvature.tex",
+    "actual_half_tail_curvature_verification.json",
+    "signed_kernel_extension.tex",
+    "SignedWindowTail.lean",
+    "SignedWindowTail.log",
+    "deficit_cumulative_ratios.tex",
+    "inductive_signed_window.tex",
+    "short_prefix_reflection_join.tex",
+    "general_base_join_route.tex",
+    "formal_arm_extensions.tex",
+    "prefix_tp2.tex",
+    "verify_subdegree_CI_entrance.py"
+  ],
+  "sha256": {
+    "binary_ternary_A2_original_family_proof.tex": "956160d8e49eaa86fbb62f8f63cacbbc411bfc2e7f2fac3bd4cf3003512ae393",
+    "BinaryTernaryA2SourceCone.lean": "41b9e7d77dfd9f4eced96fe07c4cf66d44148dc4269566303225112c1f98f3d1",
+    "BinaryTernaryA2SourceCone.log": "e0daf7a60bfc96a4e0b71701276658af313301ffa3460d539d24dbd6746ab573",
+    "audit_binary_ternary_A2_original_family.py": "8d412daecc7d437d0ee570f86b2cc1c88c2ba7b3ca71ad01311faf6386d2f940",
+    "audit_binary_ternary_A2_original_family.json": "4b4e0753b975d6950a71d3c3f1d41c103fe4bff7458d588feefc57a20840263f",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505",
+    "all_binary_ternary_complete_C_verification.json": "5065a4f5caf489605d844b12ccd1128b6de7636d43a12fb6cafe6b2aec671a44",
+    "all_binary_ternary_complete_C_proof.tex": "f44f9d26f2e431c9e44a97c6b378b0f1f908027e6d2cb120bada838b79e14f30",
+    "two_nonbinary_complete_C_verification.json": "8b19be9311e31f914bde803217fc2a5a95ab8753a09020a3bb3f2cb582e02cf7",
+    "two_nonbinary_complete_C_proof.tex": "e3f9ec89102ccb72e5f6a3ebde8edc1538cba7349fe9c55a6987dab33d3c076b",
+    "clipped_forward_ratio_frontier.tex": "2be25e51bc51ac92b3134cb022ebce5458ac92e8ed804305b2d9de7741f7d0d8",
+    "ClippedForwardRatio.lean": "63437c614b6bf9f8557b1d10aed44ebcfacf1bcf4a0aba206b8a0889a3227806",
+    "ClippedForwardRatio.log": "f55695d4b834ca11da1ade614b4db40f9f5a1b2ea434a35ebb0944e3ecca729a",
+    "C_to_coupled_S_rising_window.tex": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "CToCoupledSRisingWindow.lean": "cd3ccefb6840c8747084722fd3eb6fc4e11526e45902ef648927060a37b0620c",
+    "CToCoupledSRisingWindow.log": "e0779dbe0f0691fdb6bef5aa58f7831a1ed5528926e478f063ec516036ea473d",
+    "source_birth_gap_nonrecovery.tex": "e3b634da5a447e575a38a5075d6e805e33a6dd5af6dad157371d70e66a839d90",
+    "ordinary_relative_growth.tex": "42af2af053deac0d6932b0cf8bb36189be3f8b018b17a0144dd80ef33bcbbe07",
+    "agent_bothdeclining_first_birth.tex": "c646a7eddfb2486a02136832a5dc19f99021f807100ddffac346ba95e22478e9",
+    "agent_half_lc_actual_weak_curvature.tex": "0191ec32500869be5d687ece5be011db4de6df7cfe47bf6cd1186ab4bc0b7674",
+    "actual_half_tail_curvature_verification.json": "0433dc08d0572613c88782ce5b4c36325d0a609bef49faf95c01f3395889662d",
+    "signed_kernel_extension.tex": "d7e58ad01448a95aad2fa2179a4ec31297dedc3828554aef9c541e0e0bfb669c",
+    "SignedWindowTail.lean": "503e184bc7826264874088af9f9e24c5ceffc6e25d7cc7d014a6d4236de4fdb6",
+    "SignedWindowTail.log": "1ae61f20a73f5573514cb291a5e62f02233cbc8b9eba0d09595e191ff73da7a0",
+    "deficit_cumulative_ratios.tex": "97a6591b82a393150d4148b00c8f8c02a024542ee15cbe44832e1e6fbe3255ca",
+    "inductive_signed_window.tex": "c1b3b891a505f5160fb78f290b743d4dbc40dc260b7b58a194bb167e4904c1ae",
+    "short_prefix_reflection_join.tex": "ac6fc6b522d4e88d2c38cad6244b25d552c995dd528958921fcd28d47a60790a",
+    "general_base_join_route.tex": "defaac23a307d9ea9cd229b96031752f84e1f807e7c2189d76c21c0504a40c81",
+    "formal_arm_extensions.tex": "d58c5585836f0315bcf8d6d1b9ce63af28663af1149f46b5db2b8228a7ab01e8",
+    "prefix_tp2.tex": "e48c4f5f63a28bab3a6b3b0e29ca59f37aa618be289356b787544840fdcf0530",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63"
+  }
+}

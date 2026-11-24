@@ -1,0 +1,89 @@
+% Complete formal-arm coefficient reflection theorem, not triangular TP2.
+\section{The exact two-step ordinary reflection defect}
+Let $Y=1^\beta(v_1,\ldots,v_m)$, with $\beta\ge1$,
+$v_i\ge2$ in arbitrary internal order, and $m\ge3$.
+Use its FORMAL ordinary recurrence; it is actual when
+the capacities are sorted. Write $Y=ZT$, $r=\operatorname{wt}Z$,
+$b=r+T$, $q=q_Y$, and $F=F_Y$.
+
+\begin{theorem}[Exact two-step defect and complete negative classification]
+For $J\ge1$ and $2J\le b-2$,
+\[
+                    q_J-F_{J+2}\ge-1.
+\]
+It is negative EXACTLY at the following indices:
+\[
+ J=r-2\quad\hbox{if }T\ge r,\qquad
+ J=r-1\quad\hbox{if }T\ge r+1.
+\]
+Each negative value is $-1$. In particular, if $T<r$,
+EVERY displayed two-step reflection comparison is nonnegative.
+The left endpoint $J=0$ is deliberately excluded: it is
+$1-F_2=-1$ for a nonrectangular arm.
+\end{theorem}
+
+\begin{proof}
+Let $H=q_Z$, of degree $r$, and remove its lowest full
+interval. The established common-left-endpoint expansion is
+\[
+ H=[r+1]+\sum_{i=1}^{m-1}B_i,
+ \qquad B_i=z[v_i-1][c_i]\prod_{j=i+1}^{m-1}[v_j],
+ \quad c_i=\beta+\sum_{j<i}v_j.
+\]
+Each $B_i$ is a positive symmetric unimodal box beginning
+at rank one, with coefficient one there. Its endpoint sum
+is $r-(m-1)+i-1\le r-1$; for $i<m-1$ it is at most
+$r-2$. No strict-unimodality theorem for CI products is needed.
+
+In $q=[T]H+z^b$, the terminal unit is absent at $J$
+and at its reflected index $b-2-J$. Every $[T]B_i$ is
+left-reflected about endpoint sum $b-2$, because its
+own symmetric center sum is at most that budget.
+Its contribution to $q_J-q_{b-2-J}$ is nonnegative.
+The remaining rectangle $[T][r+1]$ has reflection gap
+\[
+ -1\quad\hbox{if }J\le T-2\hbox{ and }J<r,
+ \qquad0\quad\hbox{otherwise}.                         \tag{1}
+\]
+This follows directly from its trapezoidal coefficient
+formula; the complete all-integer count identity is
+kernel checked. Thus the total defect is at least $-1$,
+and a negative value requires the condition in (1).
+
+In that condition $J+2\le T$ and $J<r$, so the exact
+CDF calculation is
+\[
+ q_J-F_{J+2}=C_H(J)-C_{F_Z}(J+1).
+\]
+The full interval in $H$ contributes $-1$.
+For a proper box $B_i$, the remaining contribution is
+its head CDF through $J$ minus its reflected CDF through
+$J$ about budget $r-1$. It is nonnegative by left skew.
+For $i<m-1$ and $1\le J\le r-3$, it is at least one.
+Indeed each height interval has endpoint sum at most
+$r-2$, and the lowest interval starts at one. Its head
+intersection with $[0,J]$ has at least one more point
+than its tail intersection with $[r-1-J,r-1]$; all
+other height intervals contribute nonnegatively.
+These unrestricted interval-count implications are also
+kernel checked. Therefore
+\[
+               q_J-F_{J+2}\ge(m-2)-1=m-3\ge0
+                         \quad(J\le r-3).
+\]
+Only $J=r-2,r-1$ can be negative. At either index the
+proper CDF gaps are zero, since every proper box is
+supported in $[1,r-2]$. The full gap is exactly $-1$.
+Condition (1) gives precisely the stated restrictions on
+$T$. This proves both directions of the classification.
+\end{proof}
+
+At the first negative index one also has the useful exact
+neighbor value
+\[
+             q_{r-3}-F_{r-1}=m-3.
+\]
+It follows either from the proof or from the top three
+ordinary coefficients of $Z$: $1,m,q_{Z,2}$ and the
+bottom coefficients $1,1,2$. This observation is not
+needed for the following first-edge theorem.

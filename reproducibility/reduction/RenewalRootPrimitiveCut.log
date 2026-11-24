@@ -1,0 +1,11 @@
+'RenewalRootPrimitiveCut.exact_notch_minor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalRootPrimitiveCut.whole_large_width_notch_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalRootPrimitiveCut.all_small_width_notch_minors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalRootPrimitiveCut.whole_unbounded_ramp_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalRootPrimitiveCut.all_renewal_root_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalRootPrimitiveCut.complete_interval_product_spike_factor' depends on axioms: [propext, Quot.sound]
+'RenewalRootPrimitiveCut.whole_cut_three_read_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalRootPrimitiveCut.complete_geometric_tail_minor_propagation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RenewalRootPrimitiveCut.whole_decreasing_ramp_first_minor' depends on axioms: [propext, Classical.choice, Quot.sound]

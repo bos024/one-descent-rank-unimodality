@@ -1,0 +1,24 @@
+'FixedTerminalElevenDensity.whole_short_source_polynomial_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalElevenDensity.whole_seven_interval_weighted_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalElevenDensity.whole_weighted_convolution_general_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalElevenDensity.whole_eleven_tail_density_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalElevenDensity.whole_bulk_constant_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedTerminalElevenDensity.whole_other_degree_density_powers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalElevenDensity.whole_low_first_missing_owner_rank_guard' depends on axioms: [propext, Quot.sound]
+'FixedTerminalElevenDensity.whole_fifth_raw_source_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedTerminalElevenDensity.whole_constant_density_source_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalElevenDensity.whole_eleven_template_degree_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,20 @@
+'ArbitrarySourceGapFiniteOwner.product_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.linear_range_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.backward_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.aggregate_ratio_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.rational_budget_pays' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.arbitrary_gap_backward_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitrarySourceGapFiniteOwner.integer_positive_recovery_finite_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitrarySourceGapFiniteOwner.integer_owner_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.negative_reverse_index_finite_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitrarySourceGapFiniteOwner.fixed_first_missing_owner_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitrarySourceGapFiniteOwner.universal_count_head_threshold' depends on axioms: [propext, Quot.sound]
+'ArbitrarySourceGapFiniteOwner.binary_mass_three_steps' depends on axioms: [propext, Classical.choice, Quot.sound]

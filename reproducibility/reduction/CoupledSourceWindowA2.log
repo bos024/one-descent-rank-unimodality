@@ -1,0 +1,19 @@
+'CoupledSourceWindowA2.closed_source_payment_propagates_weighted_fall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CoupledSourceWindowA2.negative_source_tail_propagates_window_fall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CoupledSourceWindowA2.complete_halving_tail_finite_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoupledSourceWindowA2.entire_finite_halving_tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoupledSourceWindowA2.late_outgoing_head_geometric_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoupledSourceWindowA2.relative_raw_kernel_surplus_pays_closed_source_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CoupledSourceWindowA2.complete_UI_head_boundary_and_closed_cross_no_revival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CoupledSourceWindowA2.complete_two_head_prefix_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoupledSourceWindowA2.first_missing_nine_complete_exception_head_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_COMPLETE_INDEPENDENT_EARLY_PEAK_TC_JET_RECONSTRUCTION",
+  "N": 45,
+  "slope_cap": 128,
+  "counts": {
+    "independent_states": 657439,
+    "independent_appends": 10873783,
+    "independent_eligible_appends": 484214,
+    "independent_necessary_guard_comparisons": 4961907,
+    "independent_slope_prunings": 9959284
+  },
+  "reachable_state_sha256": "25f6737af1aef9f9b7dfeaed7d4073070a7218d546c6727a52956b3078ca3101",
+  "exact_state_set_equality": true,
+  "scope": "Independently rebuilds ALL N45 bounded-slope jets and necessary-guard comparisons. Unbounded rank reduction, actual coverage and TC induction must still be reviewed. No original UI completion.",
+  "seconds": 71.31200000000536
+}

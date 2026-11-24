@@ -1,0 +1,73 @@
+{
+  "status": "PASS_INDEPENDENT_KAPPA_NINE_HSIX_COMPLETE_OWNER_COMPLEMENT",
+  "counts": {
+    "all_owner_CI_paid_rank_states": 244,
+    "complete_owners_examined": 13544,
+    "strict_primitive_curvature_owners": 2464
+  },
+  "canonical_critical_sha256": "3f3ba4731fac7114d057d01cfa124ed0b12e995c921d069e05d852f5a93cc2cc",
+  "certificate_sha256": "c131b1d28a9aaf9568633ecf795dff6b97f97e5f82236fdbf4a86138affbc55f",
+  "generic_unpaid_rank_states": 82,
+  "all_layer_count": 82,
+  "sharp_kappa_ten_actual_profiles": [
+    {
+      "alpha": 1,
+      "U": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "beta": 1,
+      "V_capacity": 9,
+      "V_count": 12,
+      "j": 12,
+      "kappaY": 10,
+      "tail": 17,
+      "next_tail": 19,
+      "head1_budget": 345
+    },
+    {
+      "alpha": 1,
+      "U": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "beta": 1,
+      "V_capacity": 9,
+      "V_count": 15,
+      "j": 12,
+      "kappaY": 10,
+      "tail": 17,
+      "next_tail": 19,
+      "head1_budget": 468
+    },
+    {
+      "alpha": 1,
+      "U": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "beta": 1,
+      "V_capacity": 9,
+      "V_count": 20,
+      "j": 12,
+      "kappaY": 10,
+      "tail": 17,
+      "next_tail": 19,
+      "head1_budget": 713
+    }
+  ],
+  "seconds": 0.25,
+  "scope": "ALLcanonicalalpha1/2,h>=6sourcegapstatesafterPROVEDunboundedquadratic/linearreduction;244CIpaidstatesand13544finiteowners/2464criticalexactlyreconstructedbyINDEPENDENTindividualratios/reversepolynomials/maxpartpartitions. kappa9NONRECOVERYtheoremneedswrittenjoining;threshold9SHARPforh>=6byactualkappa10tail17to19,Sheadpays. NooriginalUIclaim."
+}

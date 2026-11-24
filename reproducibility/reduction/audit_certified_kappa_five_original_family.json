@@ -1,0 +1,44 @@
+{
+  "status": "EXACT_QA_PASS_CERTIFIED_KAPPA_FIVE_ORIGINAL_FAMILY_AND_SHARP_SOURCE_BOUND",
+  "counts": {
+    "actual_FULL_A2_pairs": 1500,
+    "actual_Q_guarded_tail_edges": 333810,
+    "ENTIRE_signed_source_windows": 5940,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 1188,
+    "A5_ORIGINAL_cores": 1200,
+    "A5_BOTH_relative_polynomials": 2400,
+    "A5_coefficient_comparisons": 2381085,
+    "A5_arbitrary_heavier_append_ORIGINAL_cores": 300,
+    "A5_arbitrary_heavier_append_BOTH_relative_polynomials": 600,
+    "A5_arbitrary_heavier_append_coefficient_comparisons": 855285
+  },
+  "sharp_actual_source_counter": {
+    "X": [
+      1,
+      2
+    ],
+    "Y": [
+      1,
+      5,
+      5,
+      5,
+      5
+    ],
+    "kappaX": 3,
+    "kappaY": 6,
+    "forward_P3_to_P6": [
+      9,
+      17,
+      34,
+      65
+    ],
+    "raw_E19_to_E21": [
+      3,
+      0,
+      1
+    ]
+  },
+  "state_sha256": "6e9a4f5c71a787b28a9ec035f3aef873f6b99a58b5306094df4f38207856d1d7",
+  "seconds": 4.922000000005937,
+  "scope": "Finite QA ONLY. Universal analytic proof reusesFULLC/OLDgap5mixed+onepartflatprimitive/birthrankZERO+OLDsourcecone/window/A2/leastpeakassemblies. GENERALoriginal/C/A2OPEN. ExactsourcecounterdoesNOTrefuteA2/originalUI."
+}

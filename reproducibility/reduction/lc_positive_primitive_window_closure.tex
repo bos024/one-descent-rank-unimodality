@@ -1,0 +1,125 @@
+\section{Uniform windows preserve LC together with positive-primitive LC}
+This auxiliary closure theorem does not settle the actual finite-padding
+entrance. In particular its application below is to an UNPERTURBED
+quotient kernel, with no spectral atom silently omitted.
+
+\begin{lemma}[A decreasing lower Fr\'echet bound]
+Let $a_n,b_n$ be nonnegative nonincreasing LC sequences, both bounded
+above by the same constant $M$. Then $(a_n+b_n-M)^+$ is LC.
+\end{lemma}
+\begin{proof}
+At a positive centre put $(A,x,C)=(a_{n-1},a_n,a_{n+1})$,
+$(B,y,D)=(b_{n-1},b_n,b_{n+1})$, $g=x+y-M$, and
+$G=A+B-M$. If the next clipped value is zero the conclusion is
+immediate. Otherwise $A,B,G$ are positive, and
+\[
+\begin{aligned}
+ AB\{g^2-G(C+D-M)\}
+={}&BG(x^2-AC)+AG(y^2-BD)\\
+ &+B(A-x)\{(M-y)(A-x)+x(B-y)\}\\
+ &+A(B-y)\{(M-x)(B-y)+y(A-x)\}.
+\end{aligned}
+\]
+Every term is nonnegative. The clipped sequence is nonincreasing,
+so a zero middle value forces a zero next value as well.
+\end{proof}
+
+\begin{theorem}[A nonsymmetric window closure]
+Let $a=(a_0,\ldots,a_D)$ be nonnegative LC with interval support
+beginning at zero and $a_0>0$. Suppose the positive part of its
+first difference, with $a_{-1}=0$, is also LC. For every integer
+$t\ge1$, both $[t]a$ and its positive first difference are LC.
+The same conclusion holds for multiplication by $c_0+c_1z$ with
+$c_0,c_1>0$.
+\end{theorem}
+\begin{proof}
+Ordinary LC is preserved by either convolution. Let $m$ be the
+FIRST mode of $a$ and $M=a_m$. Its positive differences are
+$d_j=a_j-a_{j-1}$, $0\le j\le m$, and zero elsewhere. They have
+interval support: global LC rules out a flat edge followed by
+strict growth. Write
+\[
+ R_k=\sum_{j>k}d_j,
+\]
+so $R_k=M$ for $k<0$, $R_k=M-a_k$ for $0\le k\le m$, and
+$R_k=0$ for $k\ge m$. Tail summation preserves LC, hence $R$ is
+nonincreasing LC on all integer indices.
+
+The signed difference of $[t]a$ is $g_n=a_n-a_{n-t}$.
+For centres $n<m$ it agrees on its whole triple with $[t]d$.
+At $n=m$ the preceding and current values still agree; the next
+clipped value is at most the next value of $[t]d$, so its minor
+remains nonnegative. For every $n\ge m$ one has exactly
+\[
+             g_n^+=(a_n+R_{n-t}-M)^+.
+\]
+When $n-t\le m$ this is telescoping, and when $n-t>m$ both
+positive parts are zero, since $a$ is already nonincreasing.
+On $n\ge m$, the two inputs $a_n,R_{n-t}$ are nonincreasing LC
+and bounded by $M$. The lemma proves every centre $n\ge m+1$.
+The positive support begins at zero and ends at the single later
+crossing, so all zero boundaries are included. This proves the
+entire window assertion, including both joining centres.
+
+For a two-term weighted kernel, the signed differences are
+$c_0\Delta a_n+c_1\Delta a_{n-1}$. Their positive part agrees
+with $(c_0+c_1z)d$ except possibly at its LAST nonzero entry,
+where an incoming negative difference can only lower that entry
+or remove it. Lowering a terminal nonnegative coefficient preserves
+LC. This proves the weighted assertion.
+\end{proof}
+
+\begin{corollary}[Positive-primitive LC for all binomial-division kernels]
+Let $0<q<1$, and define
+\[
+ Q_u=\operatorname{trunc}_{\le u}\frac{(1+z)^u}{1+qz}.
+\]
+For every $u\ge0$ and every interval product $L=\prod_i[t_i]$,
+both $LQ_u$ and its positive first difference are LC. The same
+is true of $LQ_u(2+z)$ and $LQ_u(1+z)^2$.
+There is NO degree or number-of-intervals restriction in this
+auxiliary result.
+\end{corollary}
+\begin{proof}
+The positive coefficients of $Q_u$ follow from
+$Q_u=(1+z)^{u-1}+(1-q)zQ_{u-1}$. Ordinary LC follows, more
+strongly, from the finite-order ULC induction already used in the
+registered infinite-padding proof: multiply $Q_{u-1}$ by $1+z$
+and lower only its positive leading coefficient by
+$q(1-q)^{u-1}$.
+
+For positive-primitive LC use the SAME induction, now with the
+weighted-kernel part of the theorem. In $(1+z)Q_{u-1}$ the final
+coefficient is at most its predecessor, because these two values
+are $Q_{u-1,u-1}$ and $Q_{u-1,u-2}+Q_{u-1,u-1}$
+(for $u=1$ they are equal). Lowering that final coefficient therefore
+does not change ANY positive first difference. Starting with $Q_0=1$
+proves both properties for all $u$. Apply the window theorem once
+per interval factor. The last two products follow respectively
+from the weighted-kernel theorem and two further binary windows.
+\end{proof}
+
+\paragraph{Application and exact limitation.}
+For the finite-padding notation $B=LQ_{m+1}$, the unperturbed
+geometric deficits at $\alpha=1,2$ are exactly the positive
+primitives of $B(2+z)$ and $B(1+z)^2$. Their LC now has an
+unbounded proof. The ACTUAL deficit still contains the alternating
+term $-L(-\phi)(-q)^n$ and the terminal clipping. No preservation
+under that term has been proved here. Thus neither actual
+$\alpha=1,2$ entrance, general C/A2 nor original unimodality is
+asserted by this auxiliary corollary. For $\alpha\ge3$, the factor
+$[\alpha+1]+z^{\alpha-1}$ is not generally LC and the corollary
+cannot be applied as if it were an interval product.
+
+\paragraph{Formal and arithmetic checks.}
+\texttt{LowerFrechetLC.lean} checks the complete real scalar
+payment and its ENTIRE composition for arbitrary nonincreasing
+sequence functions, including every zero/clipping case, in two
+standard-axiom reports. Window head/tail identification, cumulative
+LC, weighted-terminal trimming and the quotient induction are the
+written assembly, not end-to-end actual-arm formalization.
+Independent exact QA covers 7000 nonsymmetric uniform windows,
+3500 weighted binary kernels, 6600 golden-field quotient products
+and 1600 further rational-$q$ quotient products. All differences
+and comparisons are exact; subtracting nearly equal floating window
+sums can produce false tail failures and is not used here.

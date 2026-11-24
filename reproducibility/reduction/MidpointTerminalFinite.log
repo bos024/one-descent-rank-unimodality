@@ -1,0 +1,5 @@
+'MidpointTerminalFinite.low_four' depends on axioms: [propext]
+'MidpointTerminalFinite.low_five' depends on axioms: [propext]
+'MidpointTerminalFinite.low_six' depends on axioms: [propext]
+'MidpointTerminalFinite.low_seven' depends on axioms: [propext]
+'MidpointTerminalFinite.eight' depends on axioms: [propext]

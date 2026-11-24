@@ -1,0 +1,21 @@
+'FixedTerminalFourteenSlope.whole_large_capacity_offset_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalFourteenSlope.whole_relative_capacity_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedTerminalFourteenSlope.whole_sixteen_power_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedTerminalFourteenSlope.whole_two_interval_weighted_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalFourteenSlope.whole_weighted_finite_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalFourteenSlope.whole_fixed_terminal_product_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalFourteenSlope.whole_fixed_template_support_and_degree_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FixedTerminalFourteenSlope.whole_large_read_from_eighty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedTerminalFourteenSlope.whole_terminal_Cauchy_chain_and_bulk_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

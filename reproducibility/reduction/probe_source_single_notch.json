@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FINITE_QA_SINGLE_NOTCH_AND_SHARP_LATE_MONOTONICITY_OBSTRUCTION",
+  "counts": {
+    "arms_or_exact_prefix_states": 225002,
+    "notch_edges": 5229289,
+    "permitted_drops": 7000,
+    "two_edge_recoveries": 19182,
+    "whole_earlier_record_comparisons": 2139784,
+    "complete_N47_nonrect_prefix_states": 207002,
+    "unbounded_obstruction_family_instances": 4500
+  },
+  "seconds": 16.327999999994063,
+  "scope": "Finite QA supports the separate unbounded written induction. Single-notch theorem is not inferred from nonfailure. Original UI/C/A2 OPEN."
+}

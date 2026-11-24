@@ -1,0 +1,108 @@
+{
+  "status": "PASS_UNBOUNDED_LOCAL_CI_PREFIX_AND_ACTUAL_PADDING_THREE_LATE_C",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "PaddingThreeLocalPrefix": {
+      "relaxed_first_row_margin": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "relaxed_interior_row_zero": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "relaxed_final_row_power": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binary_second_primitive_head": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "concave_junction_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unperturbed_interval_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_perturbed_last_junction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PaddingThreeSmallCertificate": {
+      "golden_fine_interval": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "all_scalar_margins": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "analytic": "For EVERY CI L=prod[t], t>=3, degree h, EVERY u>=h+1, P3=1+z+2z^2+z^3, c=q^2(1-phi)^u L(-phi), J=(P3(1+z)^u L-c)/(1+qz) is positive through u-1, ordinary LC at every prefix centre 1..u-2, and its positive primitive is LC at those same centres. Global ordinary LC is NOT needed. Proof uses LOCAL two-property prefix truncation/window closure, relaxed robust LC-numerator budget with first coefficient <=(v+3)/2 and ALL centres 1..v-1 for v>=7, absorption R=(1+z)P3=(1,2,3,3,1), unbounded binary base and simultaneous interval induction with last junction >=1+u/6.",
+  "actual": "For EVERY ACTUAL sorted tail V>=3, degree h, length r, weight W=h+r, EVERY binary count u>=h+1 at padding alpha=3, positive slopes are LC at ALL moving centres u+r+1<=N<FIRSTDmode and EVERY C shift R>=3 holds at EVERY N>=W+1. SINGLE entry m=h follows from exact raw deficit=primitive(J) ONLY at offsets s>=1, first-mode bound, backward integration and the existing TWO strict actual seeds with alpha3 defects; fixed-padding count/read joining gives all larger counts.",
+  "finite_reduction": "At u=h+1 the remaining short-padding entrance set is NOW ONLY 4<=alpha<=h. Alpha1,alpha2,alpha3 and alpha>=h+1 are proved at EVERY CI degree; no remaining short alpha is silently included.",
+  "finite_certificate": "Independent COMPLETE enumeration of all 30 CI contexts with 1<=u<=7,h<=u-1<=6 plus the binary u8 full-support base. A separate combinations-with-replacement capacity grammar reconstructs every context and scalar margin. ALL399 distinct Q(phi) scalar margins are verified by ordinary Lean Boolean reduction at certified rational golden-root endpoints; no native reduction. This finite certificate covers ONLY the explicitly bounded exceptions to the unbounded proof.",
+  "formal_scope": "NINE NEW scoped standard-axiom reports: seven PaddingThreeLocalPrefix kernels for relaxed first/interior/final robust row payments, complete arbitrary-real binary second head, concave junction scalar and its quotient-ratio payment, exact perturbed junction; two PaddingThreeSmallCertificate kernels for the fine golden-root interval and all399 exact scalar margins. Previous first-primitive/window/ULC/actual-seed/backward/count/read kernels reused WITHOUT recounting. Polynomial identities, local truncation/window proof, small capacity grammar, whole CI assembly and actual-arm identification are WRITTEN, not an end-to-end actual-composition Lean proof.",
+  "remaining": "Short paddings 4<=alpha<=h at the single entrance, earlier reference C N<=W, shorter binary counts, general C/A2 and ORIGINAL general unamplified UI remain OPEN. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "complete_small_positive_read_coefficients": 165,
+    "complete_small_both_prefix_minors": 106,
+    "complete_binary_eight_full_support_minors": 9,
+    "exact_padding_three_binary_second_heads": 143,
+    "exact_padding_three_binary_entire_ordinary_and_primitive_minors": 11440,
+    "exact_relaxed_generic_robust_all_prefix_minors": 32758,
+    "generic_LC_numerators_with_relaxed_budget": 1000,
+    "exact_padding_three_append_quotient_identities": 1200,
+    "exact_padding_three_robust_X_head_minors": 73053,
+    "exact_padding_three_junction_lower_bounds": 1175,
+    "exact_padding_three_both_local_prefix_minors": 73053,
+    "exact_local_prefix_truncation_window_minors": 73053,
+    "padding_three_CI_induction_contexts": 1200,
+    "exact_padding_three_actual_head_identities": 22896,
+    "exact_padding_three_actual_through_first_mode_LC_minors": 18686,
+    "exact_padding_three_all_read_prefix_minimum_C_payments": 46192,
+    "actual_padding_three_entry_contexts": 400
+  },
+  "independent_complete_small_contexts": 30,
+  "kernel_checked_scalar_margins": 399,
+  "state_sha256": "752519988de4d2480004bc4fe34aed9c8ac4e7ad83cdadb1f83da72c64a7bb25",
+  "sha256": {
+    "padding_three_local_prefix_proof.tex": "14ad1f258078abb6df6ebe033edb9d10f14c4ef0cb5698013f8a1697763f0755",
+    "actual_padding_three_CI_entrance.tex": "e12e7a6b642444df6ff07424e05e5d454e4b48273f1d5f597d3e2372d01463db",
+    "PaddingThreeLocalPrefix.lean": "84bfb4f3eac69a72f0bba7b82b4676f4d66ac300da4990c6263a23a80c7d50eb",
+    "PaddingThreeLocalPrefix.log": "2fedbc0c69c0aa06baf09d3bad86fb63091eee508f50b902cb3587d493a01317",
+    "PaddingThreeSmallCertificate.lean": "08e7a2a9dc2946d70d6de0a6501481fd57c79553b6be072e73b4582ecac8d795",
+    "PaddingThreeSmallCertificate.log": "477c8e5931bececc86e168907142deef99561735b1b4c28bcb2498ffeed5790c",
+    "audit_padding_three_local_prefix.py": "69199896d3da594af3a18fa6d234b9e6b95121f66b626fa88cd87a1cfd9c5270",
+    "audit_padding_three_local_prefix.json": "5f9a3b147d3648f6dd448351b926f30af517ce2db7373be6eaa057c1ac981cbf",
+    "emit_padding_three_small_certificate.py": "c887835fba911d9cf55d5e5aeb0fd33411757a744f09a9a3c860b90c7926ed89",
+    "verify_padding_three_local_prefix.py": "76fb00260e0af268fb94218ba1581b3bb5252e650b1f54e5588607db984c8bf7",
+    "weighted_divided_CI_padding_one_verification.json": "ddc662e3135501b316d1d12a9934761167a822e295d49891430d15a4e79b1811",
+    "weighted_divided_CI_padding_one_proof.tex": "654494cb6d13ea93a44f6d3d264c26a7c602accdf40717fda779cc1880158ba5",
+    "actual_padding_one_CI_entrance.tex": "058625d4135bfac5d7405f27e830df9249a336c6772fea009ef39c68d0952221",
+    "divided_CI_surplus_three_primitive_verification.json": "e661f70c3b263009daa2e753d63288199af039c5bab8169f717f704b6ee4d6ac",
+    "infinite_padding_full_deficit_LC.tex": "062aa2d99ab192b2e40a200958dba5b06b7a0e05dbaf16601c70a3dcb0081d78",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "binary_CI_two_seed_closure_workbench.tex": "74cabac11d7725f0ca758d71c3934cd4ee354da5d64b53e17beb134796ec702f",
+    "sharpened_multitail_single_entrance.tex": "b3373c11e2e1585ca2227097699a11dcaa710fe41704b032fce18e8b312f8718",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338"
+  }
+}

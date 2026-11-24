@@ -1,0 +1,110 @@
+{
+  "status": "PASS_QUANTITATIVE_NORMALIZED_TILT_AND_ALL_ONE_FACTOR_CROSSING_STRONG_LATE_C",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "entire_kernel_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "quantitative_normalized_tilt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "finite_weighted_reference_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "additive_margin_LR_transfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "weighted_negative_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_capacity_polynomial_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "fibonacci_middle_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "fibonacci_linear_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "capacity_three_tilt_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "state_sha256": "6566ab421f7fbef2b7829577073e8f344a8795dfddddcbec7716f161c30fd4f6",
+  "QA": {
+    "ALL_capacity_normalized_tilt_ordinary_seed_polynomials": 1240,
+    "tilted_reference_additive_G_margin_reads": 87092,
+    "actual_onejump_and_suffix_additive_margin_reads": 48169,
+    "actual_onejump_and_suffix_ordinary_LC_tail_reads": 98094,
+    "actual_strict_entries": 611,
+    "actual_hosts": 1755,
+    "strict_entries_with_NEW_onefactor_seed": 29
+  },
+  "independent_counts": {
+    "independent_full_negative_coefficient_budget_bounds": 506,
+    "independent_actual_additive_strong_prefix_reads": 16529,
+    "independent_actual_entire_ordinary_LC_tail_reads": 34730,
+    "independent_actual_strict_entries": 243,
+    "independent_entire_late_C_minima": 93166,
+    "independent_actual_hosts": 748,
+    "independent_onejump_relative_density_LC_reads": 11841,
+    "independent_exact_full_tilt_row_and_shared_atom_identities": 12247,
+    "independent_strict_actual_density_transfers": 203,
+    "independent_new_onefactor_seed_strict_suffixes": 18
+  },
+  "independent_state_sha256": "61649b94a64b5b882949a2afcdcaeea23da5c070b38e9a9b6e9df3bbd652cac8",
+  "new_finite_entrance_certificates": 0,
+  "quantitative_tilt": "PROVED ANYnormalizedreference withALLneededcumulativeadditivemargins>=c,0<=c<=1: EVERYnormalizedgeometrictilta in(0,1] preservesSAMEc whennewcurrentratio>=1. FULLrowinduction/EXACTnonnegativefactorizationkeepinitialatom1. NormalizedrelativeLC descendants inheritSAMEc byTWICEcumulativeLR+coordinatewisedomination. No two-case threshold or sampled premise.",
+  "ordinary_tilt_seed": "PROVED ALLL>=3,ALLa in[0,1]: FibL*T_L-a(Fib(L+1)-1)*T_(L-1)>=4. COMPLETEarbitrarydegreecoefficientformula;ENTIREnegativeFibonaccibudget sumsFib(L-1)-2; lastcoefficientnonnegative;ALLL>=4 lowerboundFib(L-4)+4, L3exact4. Not finite interpolation.",
+  "onefactor_strong": "PROVED ALLactual1alpha2uL withL-1>u>=1,ALLpadding: conditionalSTRONGphysicalentranceatW=L. OLDonejumpnormalizedrelativeDLC throughFIRSTDmode appliesbecauseu<=L-2; NEWquantitativetiltretainsALLGreads>=q^2 incllastTWO,NEWordinarytiltseedtransfersviaLR. UniversalDLC+ordinarytailLCgivetheENTIREordinaryLCtailfromL.",
+  "arbitrary_suffix": "PROVED ALLactual1alpha2uV withFIRSTnonbinarycapacity>=u+2,ARBITRARYsortedlatercaps/counts/padding: EVERYactualC fromcurrentN>=FINALW+1. NEWstrongseed permitshereditaryextension;ordinarycompleteCforonejumpALONEwasinsufficient. Entireone-factorfirstcrossingbranchofremaininglargeu lateC NOWELIMINATED.",
+  "residual": "Generalpossiblelargeu lateCfailure musthaveFIRSTnonbinarycapacity<=u+1,FIRSTprefixdegree>u ofatleastTWOfactors,failingseedcone,andAT MOSTSIXlaternonbinaryfactors. Thatprefix/uandearlierCremainUNBOUNDED/OPEN. FullA2/originalunamplifiedcoefficientUIOPEN;fullCfirstunresolvedcount6unchanged.",
+  "new_coverage_witness": {
+    "alpha": 39,
+    "u": 18,
+    "V": [
+      26,
+      26
+    ],
+    "W": 52,
+    "pair": [
+      6174479,
+      6232355
+    ],
+    "seed_delta": 7
+  },
+  "formal_scope": "NINEnewcleanstandardaxiomscopedreports:FULLtiltrowandFibonaccisuminductions,exacttiltfactorization,finiteweightedmargin/LRtransfer,WHOLEnegativecoefficientbudgetandL3seed. All-capacitycoefficientidentification/density/reference/actualsequenceassemblyWRITTEN;notend-to-endLeancompositiontheorem. FiniteQAONLY,no new finite entrance.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "quantitative_tilt_one_jump_strong_proof.tex": "1d3716ac1a00a0d75403460c930b01c51532c81fd502b1794da2c9da96adc31b",
+    "QuantitativeTiltStrongOneJump.lean": "550e4689f595a07f639d3ea5998ef1bd5604a264c7050bfcc84097eabb97b237",
+    "QuantitativeTiltStrongOneJump.log": "51a420868ff680beabf8d1704f53b2f4b0d7032e76e37b39aeea99435786247f",
+    "audit_quantitative_tilt_one_jump_strong.py": "e12febddbbfe0bbb81b945ed73bd564a79aa3c23ae123950d546f2274e3c6252",
+    "audit_quantitative_tilt_one_jump_strong.json": "4643c15a0ccf8a086ce33e5e7f51cc3bff4c8f6009a2c2c3cab8e347ee347f74",
+    "verify_quantitative_tilt_one_jump_strong.py": "543c3f1ff93d1c557cad2e45527f204a47f69aaf87f777add83261b99a3138a3",
+    "hereditary_strong_late_C_verification.json": "d4ac624d9905c35c4fb48fb3544ad1b9bd36a3e06a23bc5cd3dc6bda00f9a729",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40"
+  }
+}

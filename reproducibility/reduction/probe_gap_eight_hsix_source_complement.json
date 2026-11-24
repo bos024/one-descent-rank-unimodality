@@ -1,0 +1,746 @@
+{
+  "status": "PASS_GAP_8_HSIX_COMPLETE_SOURCE_PAYMENT",
+  "gap": 8,
+  "alpha_min": 1,
+  "counts": {
+    "generic_CI_paid_rank_states": 146,
+    "complete_initial_clamped_owners": 187147,
+    "strict_primitive_curvature_states": 133809
+  },
+  "generic_unpaid_rank_states": [
+    [
+      2,
+      0,
+      6
+    ],
+    [
+      3,
+      0,
+      8
+    ],
+    [
+      4,
+      0,
+      10
+    ],
+    [
+      5,
+      0,
+      12
+    ],
+    [
+      6,
+      0,
+      14
+    ],
+    [
+      7,
+      0,
+      16
+    ],
+    [
+      8,
+      0,
+      18
+    ],
+    [
+      9,
+      0,
+      20
+    ],
+    [
+      10,
+      0,
+      22
+    ],
+    [
+      11,
+      0,
+      24
+    ],
+    [
+      2,
+      1,
+      7
+    ],
+    [
+      3,
+      1,
+      9
+    ],
+    [
+      4,
+      1,
+      11
+    ],
+    [
+      5,
+      1,
+      13
+    ],
+    [
+      6,
+      1,
+      15
+    ],
+    [
+      7,
+      1,
+      17
+    ],
+    [
+      8,
+      1,
+      19
+    ],
+    [
+      9,
+      1,
+      21
+    ],
+    [
+      10,
+      1,
+      23
+    ],
+    [
+      11,
+      1,
+      25
+    ],
+    [
+      1,
+      2,
+      6
+    ],
+    [
+      2,
+      2,
+      8
+    ],
+    [
+      3,
+      2,
+      10
+    ],
+    [
+      4,
+      2,
+      12
+    ],
+    [
+      5,
+      2,
+      14
+    ],
+    [
+      6,
+      2,
+      16
+    ],
+    [
+      7,
+      2,
+      18
+    ],
+    [
+      8,
+      2,
+      20
+    ],
+    [
+      9,
+      2,
+      22
+    ],
+    [
+      10,
+      2,
+      24
+    ],
+    [
+      1,
+      3,
+      7
+    ],
+    [
+      2,
+      3,
+      9
+    ],
+    [
+      3,
+      3,
+      11
+    ],
+    [
+      4,
+      3,
+      13
+    ],
+    [
+      5,
+      3,
+      15
+    ],
+    [
+      6,
+      3,
+      17
+    ],
+    [
+      7,
+      3,
+      19
+    ],
+    [
+      8,
+      3,
+      21
+    ],
+    [
+      9,
+      3,
+      23
+    ],
+    [
+      0,
+      4,
+      6
+    ],
+    [
+      1,
+      4,
+      8
+    ],
+    [
+      2,
+      4,
+      10
+    ],
+    [
+      3,
+      4,
+      12
+    ],
+    [
+      4,
+      4,
+      14
+    ],
+    [
+      5,
+      4,
+      16
+    ],
+    [
+      6,
+      4,
+      18
+    ],
+    [
+      7,
+      4,
+      20
+    ],
+    [
+      0,
+      5,
+      7
+    ],
+    [
+      1,
+      5,
+      9
+    ],
+    [
+      2,
+      5,
+      11
+    ],
+    [
+      3,
+      5,
+      13
+    ],
+    [
+      4,
+      5,
+      15
+    ]
+  ],
+  "layers": [
+    {
+      "r": 2,
+      "e": 0,
+      "D": 6,
+      "counts": {
+        "owners": 3,
+        "critical": 3
+      }
+    },
+    {
+      "r": 3,
+      "e": 0,
+      "D": 8,
+      "counts": {
+        "owners": 19,
+        "critical": 14
+      }
+    },
+    {
+      "r": 4,
+      "e": 0,
+      "D": 10,
+      "counts": {
+        "owners": 74,
+        "critical": 49
+      }
+    },
+    {
+      "r": 5,
+      "e": 0,
+      "D": 12,
+      "counts": {
+        "owners": 225,
+        "critical": 139
+      }
+    },
+    {
+      "r": 6,
+      "e": 0,
+      "D": 14,
+      "counts": {
+        "owners": 575,
+        "critical": 337
+      }
+    },
+    {
+      "r": 7,
+      "e": 0,
+      "D": 16,
+      "counts": {
+        "owners": 1322,
+        "critical": 745
+      }
+    },
+    {
+      "r": 8,
+      "e": 0,
+      "D": 18,
+      "counts": {
+        "owners": 2803,
+        "critical": 1536
+      }
+    },
+    {
+      "r": 9,
+      "e": 0,
+      "D": 20,
+      "counts": {
+        "owners": 5574,
+        "critical": 3003
+      }
+    },
+    {
+      "r": 10,
+      "e": 0,
+      "D": 22,
+      "counts": {
+        "owners": 10560,
+        "critical": 5611
+      }
+    },
+    {
+      "r": 11,
+      "e": 0,
+      "D": 24,
+      "counts": {
+        "owners": 19205,
+        "critical": 10118
+      }
+    },
+    {
+      "r": 2,
+      "e": 1,
+      "D": 7,
+      "counts": {
+        "owners": 9,
+        "critical": 9
+      }
+    },
+    {
+      "r": 3,
+      "e": 1,
+      "D": 9,
+      "counts": {
+        "owners": 42,
+        "critical": 41
+      }
+    },
+    {
+      "r": 4,
+      "e": 1,
+      "D": 11,
+      "counts": {
+        "owners": 140,
+        "critical": 127
+      }
+    },
+    {
+      "r": 5,
+      "e": 1,
+      "D": 13,
+      "counts": {
+        "owners": 383,
+        "critical": 316
+      }
+    },
+    {
+      "r": 6,
+      "e": 1,
+      "D": 15,
+      "counts": {
+        "owners": 922,
+        "critical": 705
+      }
+    },
+    {
+      "r": 7,
+      "e": 1,
+      "D": 17,
+      "counts": {
+        "owners": 2019,
+        "critical": 1460
+      }
+    },
+    {
+      "r": 8,
+      "e": 1,
+      "D": 19,
+      "counts": {
+        "owners": 4127,
+        "critical": 2858
+      }
+    },
+    {
+      "r": 9,
+      "e": 1,
+      "D": 21,
+      "counts": {
+        "owners": 7982,
+        "critical": 5350
+      }
+    },
+    {
+      "r": 10,
+      "e": 1,
+      "D": 23,
+      "counts": {
+        "owners": 14754,
+        "critical": 9626
+      }
+    },
+    {
+      "r": 11,
+      "e": 1,
+      "D": 25,
+      "counts": {
+        "owners": 26297,
+        "critical": 16822
+      }
+    },
+    {
+      "r": 1,
+      "e": 2,
+      "D": 6,
+      "counts": {
+        "owners": 4,
+        "critical": 4
+      }
+    },
+    {
+      "r": 2,
+      "e": 2,
+      "D": 8,
+      "counts": {
+        "owners": 23,
+        "critical": 23
+      }
+    },
+    {
+      "r": 3,
+      "e": 2,
+      "D": 10,
+      "counts": {
+        "owners": 86,
+        "critical": 85
+      }
+    },
+    {
+      "r": 4,
+      "e": 2,
+      "D": 12,
+      "counts": {
+        "owners": 255,
+        "critical": 243
+      }
+    },
+    {
+      "r": 5,
+      "e": 2,
+      "D": 14,
+      "counts": {
+        "owners": 640,
+        "critical": 586
+      }
+    },
+    {
+      "r": 6,
+      "e": 2,
+      "D": 16,
+      "counts": {
+        "owners": 1452,
+        "critical": 1263
+      }
+    },
+    {
+      "r": 7,
+      "e": 2,
+      "D": 18,
+      "counts": {
+        "owners": 3047,
+        "critical": 2521
+      }
+    },
+    {
+      "r": 8,
+      "e": 2,
+      "D": 20,
+      "counts": {
+        "owners": 6009,
+        "critical": 4760
+      }
+    },
+    {
+      "r": 9,
+      "e": 2,
+      "D": 22,
+      "counts": {
+        "owners": 11307,
+        "critical": 8636
+      }
+    },
+    {
+      "r": 10,
+      "e": 2,
+      "D": 24,
+      "counts": {
+        "owners": 20447,
+        "critical": 15160
+      }
+    },
+    {
+      "r": 1,
+      "e": 3,
+      "D": 7,
+      "counts": {
+        "owners": 11,
+        "critical": 11
+      }
+    },
+    {
+      "r": 2,
+      "e": 3,
+      "D": 9,
+      "counts": {
+        "owners": 49,
+        "critical": 49
+      }
+    },
+    {
+      "r": 3,
+      "e": 3,
+      "D": 11,
+      "counts": {
+        "owners": 159,
+        "critical": 158
+      }
+    },
+    {
+      "r": 4,
+      "e": 3,
+      "D": 13,
+      "counts": {
+        "owners": 427,
+        "critical": 415
+      }
+    },
+    {
+      "r": 5,
+      "e": 3,
+      "D": 15,
+      "counts": {
+        "owners": 1014,
+        "critical": 960
+      }
+    },
+    {
+      "r": 6,
+      "e": 3,
+      "D": 17,
+      "counts": {
+        "owners": 2197,
+        "critical": 2031
+      }
+    },
+    {
+      "r": 7,
+      "e": 3,
+      "D": 19,
+      "counts": {
+        "owners": 4453,
+        "critical": 3978
+      }
+    },
+    {
+      "r": 8,
+      "e": 3,
+      "D": 21,
+      "counts": {
+        "owners": 8553,
+        "critical": 7369
+      }
+    },
+    {
+      "r": 9,
+      "e": 3,
+      "D": 23,
+      "counts": {
+        "owners": 15718,
+        "critical": 13113
+      }
+    },
+    {
+      "r": 0,
+      "e": 4,
+      "D": 6,
+      "counts": {
+        "owners": 5,
+        "critical": 5
+      }
+    },
+    {
+      "r": 1,
+      "e": 4,
+      "D": 8,
+      "counts": {
+        "owners": 27,
+        "critical": 27
+      }
+    },
+    {
+      "r": 2,
+      "e": 4,
+      "D": 10,
+      "counts": {
+        "owners": 98,
+        "critical": 98
+      }
+    },
+    {
+      "r": 3,
+      "e": 4,
+      "D": 12,
+      "counts": {
+        "owners": 285,
+        "critical": 284
+      }
+    },
+    {
+      "r": 4,
+      "e": 4,
+      "D": 14,
+      "counts": {
+        "owners": 705,
+        "critical": 693
+      }
+    },
+    {
+      "r": 5,
+      "e": 4,
+      "D": 16,
+      "counts": {
+        "owners": 1582,
+        "critical": 1527
+      }
+    },
+    {
+      "r": 6,
+      "e": 4,
+      "D": 18,
+      "counts": {
+        "owners": 3291,
+        "critical": 3127
+      }
+    },
+    {
+      "r": 7,
+      "e": 4,
+      "D": 20,
+      "counts": {
+        "owners": 6444,
+        "critical": 6003
+      }
+    },
+    {
+      "r": 0,
+      "e": 5,
+      "D": 7,
+      "counts": {
+        "owners": 13,
+        "critical": 13
+      }
+    },
+    {
+      "r": 1,
+      "e": 5,
+      "D": 9,
+      "counts": {
+        "owners": 56,
+        "critical": 56
+      }
+    },
+    {
+      "r": 2,
+      "e": 5,
+      "D": 11,
+      "counts": {
+        "owners": 178,
+        "critical": 178
+      }
+    },
+    {
+      "r": 3,
+      "e": 5,
+      "D": 13,
+      "counts": {
+        "owners": 471,
+        "critical": 470
+      }
+    },
+    {
+      "r": 4,
+      "e": 5,
+      "D": 15,
+      "counts": {
+        "owners": 1106,
+        "critical": 1094
+      }
+    }
+  ],
+  "witness": null,
+  "canonical_critical_sha256": "18169510425e7a490a5136c42ee2388195da8334a43f40603548f273a1e2c9f8",
+  "seconds": 4.375,
+  "scope": "CandidateUNIFORMgap8ownerh>=6,ALLalpha/capacitiesviaPROVEDlinear/quadraticDandinitialrunclamp. Gap7runsalpha>=2(remainingalpha1kappa8alreadyPROVED);gap8runsALLalpha>=1. Minimumkappa>=9givescommonw0/w2..6profile. PASSneedsindependentfullfinitecoverageandwrittenunboundedjoiningbeforetheoremclaim. SourcepaymentobstructionNOTS/C/A2/originalUIcounter."
+}

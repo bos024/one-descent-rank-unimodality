@@ -1,0 +1,20 @@
+{
+  "status": "PASS_EXACT_QA_KAPPA_SEVEN_LEGAL_WINDOW_COEFFICIENT_CRITERION",
+  "counts": {
+    "kappa_seven_single_arm_full_C_minimum_ratio_checks": 203383,
+    "kappa_seven_single_arm_literal_shifts_represented": 15616698,
+    "actual_class_FULL_A2_pairs": 1260,
+    "four_or_longer_source_windows": 6300,
+    "legal_heavier_append_FULL_A2_pairs": 2520,
+    "exact_source_exception_onepart3": 12,
+    "exact_source_exception_onepart4": 24,
+    "exact_source_exception_binary2": 12,
+    "exact_source_exception_binary3": 6,
+    "extra_heavier_append_ORIGINAL_ideals": 4,
+    "TRUE_greedy_BOTH_two_dominant_ORIGINAL_ideals": 24,
+    "TRUE_greedy_ORIGINAL_rank_counts": 7528
+  },
+  "state_sha256": "75ef787633bd9f5f54689e7fea5d749d37aefd0d958325fa6eafc2e3d85895f0",
+  "seconds": 1.280999999999949,
+  "scope": "Finite QA ONLY. Complete341-owner table is NEWfiniteproofpremise, separatelykernelcheckedandneedsindependentreconstruction. General original conjecture OPEN."
+}

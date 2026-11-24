@@ -1,0 +1,140 @@
+\section{A sharp source bound for the second positive forward difference}
+Let $F=\sum f_nz^n$ be an actual nonrectangular increasing arm.
+Set $D_0=D_1=0$, $D_n=(f_n-f_{n-1})^+$ for $n\ge2$, and
+\[
+ W_n=(D_n-D_{n-1})^+,\qquad S_K=z+\cdots+z^K.
+\]
+Write $\kappa\ge3$ for the first missing weight and $K=\kappa-1$.
+All sequences have zero extension. The following statement also
+holds for formal append words whose first missing weights never decrease.
+
+\begin{theorem}[Second-difference source]
+Coefficientwise on the whole polynomial,
+\[
+                  (1-S_K)W\preceq z^2-z^\kappa.       \tag{1}
+\]
+In particular the negative unit at the first missing weight is
+retained; it is not replaced by a bound on cumulative sums.
+For every fixed $K\ge2$ equality holds on every prescribed finite
+range for a sufficiently long actual rectangular host $K^L$.
+\end{theorem}
+
+\begin{proof}
+We use the proved ordinary positive-difference shape theorem:
+$D$ is unimodal, starts at rank two with value one, and has
+initial interval support. Let $m$ be its last mode. The ordinary
+positive-difference splice for a legal append $t$ says that the
+new $D'$ agrees initially with
+\[
+                   P=z^2[t-1]+z[t]D,
+\]
+through one rank after the old ordinary last mode, and is
+nonincreasing afterwards. Put
+\[
+                   R=z^2-z^{t+1}+S_tW.                \tag{2}
+\]
+This is nonnegative: its only possible subtraction is at $t+1$,
+where the $W_2=1$ term occurs in $S_tW$.
+
+First prove the full source bound for $R$. There are exactly two
+legal first-missing phases. In the stationary phase $t=K$,
+the old and new $K$ agree, and
+\[
+ (1-S_K)R\preceq(1-S_K)(z^2-z^{K+1})
+                         +S_K(z^2-z^{K+1})
+                    =z^2-z^{K+1}.                    \tag{3}
+\]
+In the growth phase write $K=\kappa_{\rm old}$, so the new
+first missing weight is $K+1$, $t\ge K$, and $K\ge3$.
+The old source bound, now with the extra summand $z^K$, is
+\[
+              (1-S_K)W\preceq z^2-z^K-z^KW.
+\]
+After substitution in (2), the difference between the new target
+$z^2-z^{K+1}$ and this upper bound for $(1-S_K)R$ is
+\[
+ \begin{split}
+ &z^{K+1}[t](W-z^2)\\
+ &\quad+z^{K+2}\bigl([t-1]-z^{t-K}\bigr)
+                 +z^{t+1}+z^{t+K+2}.                 \tag{4}
+ \end{split}
+\]
+Every term is nonnegative: $W\succeq z^2$ and
+$0\le t-K\le t-2$. This proves the raw source inequality.
+
+We now check that replacing $R$ by the actual $W'$ preserves it.
+For every $n\le m+1$, all sampled old differences of $D$ are
+nonnegative, and $W'_n=R_n$. At $n=m+2$ the new value is at
+most $R_n$, while every earlier value still agrees. The source
+inequality therefore holds through this first crossing edge.
+
+After that edge, before the final ordinary splice, the underlying
+values
+\[
+        v_n=(D_{n-1}-D_{n-t-1})^+
+\]
+are nonincreasing. Indeed the entering index is after the old
+$D$ mode while the leaving index is before it; once both are
+after the mode the difference is nonpositive. The only exception
+in $W'$ is a reduction by one at $n=t+1$. Thus every later source
+comparison is paid by its immediately preceding term, except
+possibly $n=t+2$. At this exceptional recovery,
+$W'_{t+2}\le W'_{t+1}+1$. If $W'_t=0$, monotonicity of $v$
+forces $W'_{t+2}=0$; otherwise $W'_t\ge1$ pays the extra unit.
+Since $K\ge2$, these two preceding terms are both available.
+The final ordinary splice can only remove the remaining positive
+second differences, so it introduces no new recovery.
+
+These terminal arguments prove the bound zero at ranks other
+than two and $\kappa'$. At $\kappa'$ the required negative
+unit follows directly from actual universality: below $\kappa'$
+the ordinary ranks are full. If $W'_{\kappa'}>0$, its value is
+the full value minus the first defect, at least one. If it is
+zero, its preceding window still contains $W'_2=1$.
+In either case the source is at most minus one.
+
+For a rectangular old arm, $D'$ is an interval of ones and
+$W'=z^2$, with new $\kappa'=3$, establishing the base.
+This proves induction. For sharpness a sufficiently long $K^L$
+agrees in any prescribed range with $(1-S_K)^{-1}$. Its positive
+differences and second positive differences there satisfy
+\[
+ D=\frac{z^2[K-1]}{1-S_K},\qquad
+ W=\frac{z^2-z^{K+1}}{1-S_K},
+\]
+giving the claimed equality.
+\end{proof}
+
+\begin{corollary}[A delayed local curvature payment]
+Whenever $n\ge3$ and $D_n>D_{n-1}$,
+\[
+          2D_{n-1}-D_n\ge {\bf1}_{n=\kappa}+D_{n-\kappa}.
+                                                               \tag{5}
+\]
+In particular, for every $n\ge\kappa+2$,
+\[
+       2^{\kappa-1}D_n
+          \le(2^\kappa-1)D_{n-1}.                      \tag{6}
+\]
+The strict growth factor in (6) is a consequence, not a claim
+of the sharp exponential constant for the whole family.
+\end{corollary}
+
+\begin{proof}
+Let $V=1-(1-S_K)F$. Since $D$ is unimodal, the hypothesis
+$D_n>D_{n-1}$ puts every earlier difference of $D$ on its
+nonnegative prefix. On this prefix
+$(1-z)^2F=1-z+W$.
+The identity $(1-z)(1-S_K)=1-2z+z^\kappa$ and (1) imply
+$\Delta^2V_n\ge0$ for $n\ge3$.
+As $E=(1-z)V+z^\kappa F$, taking a difference gives (5).
+For $n\ge\kappa+2$, backward iteration of the established
+single-arm doubling bound gives
+$2^{\kappa-1}D_{n-\kappa}\ge D_{n-1}$; combine with (5).
+If $D_n\le D_{n-1}$, (6) is immediate. This proves all cases.
+\end{proof}
+
+This is an additional actual-arm restriction. It does not assert
+log-concavity or unimodality of $W$, either of which would be
+stronger and is not used. General property C, the full later mixed
+budgets and the original unamplified conjecture remain OPEN.

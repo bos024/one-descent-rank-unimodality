@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_ONE_JUMP_FIXED_CAPACITY_UNBOUNDED_PROPAGATION_QA",
+  "counts": {
+    "actual_FULL_tail_minors_beyond_entrance": 118938,
+    "actual_complete_first_defect_seed_sets": 1000,
+    "actual_C_current_ranks_beyond_entrance": 226220,
+    "actual_C_shifts_covered_beyond_entrance": 31126515,
+    "actual_signed_h_recursion_tail_edges": 125858,
+    "actual_profiles_beyond_entrance": 1000
+  },
+  "seconds": 4.985000000000582,
+  "scope": "Finite actual QA beyond ALL entrance count bounds, separate from the generic unbounded Lean/written proof and complete independent entrance certificate. No arbitrary-capacity or original UI claim."
+}

@@ -1,0 +1,140 @@
+\section{Count-prefix growth and an all-depth stationary-resource separator order}
+This section proves a new count-prefix inequality and an unbounded
+order-transport reduction. It does NOT prove that the resulting
+separator is nonnegative in every required case. General C, A2 and
+ORIGINAL coefficient unimodality remain open.
+
+\begin{theorem}[A Fibonacci growth law through the non-one count]
+Let $F$ be generated from an initial $1^\alpha$, $\alpha\ge1$, by
+$h$ capacities at least two. Their order need not be sorted. Then
+\[
+ F_n\ge F_{n-1}+F_{n-2}\qquad(2\le n\le h+1),
+ \qquad 2F_n\ge3F_{n-1}\qquad(2\le n\le h+1).       \tag{1}
+\]
+The second statement uses the established actual/formal source
+growth bound $F_{n-1}\le2F_{n-2}$. It is sharp, for example at
+rank three on sufficiently long all-binary arms.
+\end{theorem}
+\begin{proof}
+Write $S_t=z+\cdots+z^t$, $B=1-z-z^2$, and
+$T_h=BF_h-1$. Initially
+\[
+ T_0=-z^{\alpha+1}-z^2[\alpha+1],
+\]
+so its coefficients below rank two vanish. For a capacity $t\ge2$,
+\[
+ T_{h+1}=(S_t-S_2)+S_tT_h.                         \tag{2}
+\]
+The first summand is nonnegative and the second raises the earliest
+possible negative rank by at least one. Strongly, induction gives
+$[z^n]T_h\ge0$ for every $0\le n\le h+1$.
+Identifying the coefficient of $BF_h$ proves the first inequality;
+the doubling bound proves the second. This is an unbounded word
+induction, not extrapolation from finite counts.
+\end{proof}
+
+Let $d_n=F_n-F_{n-1}$ use zero extension, including $d_0=1,d_1=0$.
+For the quantitative nonrecovery separator $Q=3M-e$, the SOURCE
+variation weight is
+\[
+ W_n=3d_n-F_n.
+\]
+Equation (1) gives $W_n\ge0$ at $2\le n\le h+1$.
+The two exceptional initial values are $W_0=2$, $W_1=-1$, while
+$W_2=1$. Consequently EVERY uniform window of width at least two,
+whose upper index is at most $h+1$, has nonnegative W sum.
+If the window contains index one, it contains either index zero
+(when it ends at one) or index two; those terms pay its sole negative
+unit. Every other included term is nonnegative.
+
+\begin{theorem}[Future source order for a quantitative separator]
+Compare two predecessor source prefixes with equal leading jet
+through normalized index $m$ and componentwise ordered later source
+coefficients. Apply the SAME legal append $t\ge2$. Let the current
+child first weight be $p$, opposite arm count $g$, and comparison
+rank $N$. If
+\[
+                         N-p-m-1\le g+1,           \tag{3}
+\]
+then the child's $Q=3M-e$ cost increases with the predecessor source.
+The strict positive-D prefix guard transports by native source order.
+Current Q queries must be made for every terminal append to the
+predecessor frontier; source pruning of the children themselves need
+not preserve Q, since its current source weights can have a negative
+coefficient at opposite rank one.
+\end{theorem}
+\begin{proof}
+For a current source change the first variation of Q is W on the
+opposite ordinary prefix. In the growth phase the predecessor source
+variation is convolved with $[t]$; in the stationary phase it is
+convolved with $S_t$. Thus every varied predecessor coefficient is
+weighted by a uniform W window of width $t\ge2$. The largest possible
+upper read is $N-p-m-1$ (stationary reads are one lower).
+Equation (3) puts every such window in the preceding positive range.
+The birth term agrees for the two compared states and cancels.
+Apply coefficientwise source order and the native guard theorem.
+\end{proof}
+
+\subsection{The pre-count resource allocates the fixed jets at every depth}
+At $N=p+q+s$ let the counts be $h,g$, with $N<h+g$.
+The exact numbers of stationary appends are
+\[
+ \sigma_X=h-p+2,\qquad \sigma_Y=g-q+2,
+ \qquad\sigma_X+\sigma_Y\ge s+5.                   \tag{4}
+\]
+First weight starts at two and every nonstationary legal append raises
+it by one, proving these identities. Set
+\[
+ m_X=s-\min(s,\sigma_Y),\qquad
+ m_Y=\min(s,\sigma_Y).
+\]
+Then $m_X+m_Y=s$, $m_X\ge\max(0,s-\sigma_Y)$ and
+$m_Y\ge\max(0,s-\sigma_X)$. In particular
+\[
+ q+s-m_X-1\le g+1,\qquad
+ p+s-m_Y-1\le h+1.                                \tag{5}
+\]
+Fix the source jets through $m_X,m_Y$. All unfixed cross terms in
+M, e and Q vanish: their two normalized indices sum to at least
+$m_X+m_Y+2=s+2>s$. The two residual Q costs are separable; (5)
+places BOTH in the positive-parent window theorem.
+
+Thus, at EVERY pre-count overlap depth, there is an explicit
+count-dependent choice of fixed jets for which Q costs have a valid
+native-source FUTURE simulation and preserved query guards.
+This proves an order reduction and a verification scheme, NOT that
+the Q lower table is positive. Negative-current profiles can have
+negative Q, so a uniform positive Q assertion without a sign or
+other branch condition is not supplied.
+
+For a fixed queried N, counts can be capped at N while preserving
+the pre-count resource: if a count was larger than N, replacing it
+by N still leaves total count greater than N. Together with finite
+source-prefix clipping and stationary forgetting, the scheme has
+finite closure at every fixed depth/first-weight pair. The presently
+implemented native grammar fixes TWO leading coefficients and caps
+counts at six; it does not yet implement these variable jet lengths
+or the N-count cap. This theorem is therefore an analytic next-step
+reduction, not a claim that such general finite tables have been run.
+
+\paragraph{A tempting stronger binary lower bound is false.}
+Finite small-rank minima equal Fibonacci numbers, but they cannot be
+extended as a theorem $w_n\ge\mathrm{Fib}_{n-4}$ through every binary
+FIRST D mode. The ACTUAL sorted arm $1^{120}2^{40}$ has first D mode
+59 and there
+\[
+ w_{59}=104121337030<139583862445=\mathrm{Fib}_{55}.
+\]
+Its current derivative strictly increases. This rejects only that
+stronger proposed lower bound. The completed binary fourth-overlap
+proof uses a complete grid through rank eighteen and does not use the
+false unbounded extrapolation. General UI/C/A2 are not refuted.
+
+\paragraph{Scoped formalization.}
+\texttt{CountPrefixSeparator.lean} verifies six unbounded scoped
+kernels: the complete two-variable positive-cascade induction,
+the doubling-to-three-halves implication, arbitrary finite-window
+single-negative compensation, interval geometry, explicit stationary
+budget allocation, and both count-prefix read bounds. Source/word
+coefficient identification, formal-series variation and the full
+separator-order composition are the written proofs above.

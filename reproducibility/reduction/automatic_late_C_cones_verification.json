@@ -1,0 +1,84 @@
+{
+  "status": "PASS_UNBOUNDED_AUTOMATIC_LATE_C_CONES_AND_ALL_BINARY_COUNTS_THROUGH_EIGHT",
+  "new_scoped_reports": 7,
+  "kernels": {
+    "AutomaticLateC": {
+      "improved_symmetric_row_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "large_interval_degree_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "source_body_read_before_midpoint": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_first_tail_boundary_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "small_binary_remainder_weight32": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unique_eighth_count_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "AutomaticLateCInfiniteEdge": {
+      "certified_infinite_tail_edge": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "automatic": "For EVERY ACTUAL nonempty V>=3,ANY u>=1,ALL padding: if h=sum(t-1)>=3u-1 OR maxV>=2u, the positive derivative tail from physical W=sumV is NONINCREASING, hence ALL C shifts R>=3 at EVERY N>=W+1. u0 also immediate. Improved degree cone combines the last TWO binary rows using B1=[3], lowering symmetric-row maximum centre to(3u-4+h)/2. Long-capacity cone uses degK<=h-1, leading coefficient1, exact previous numerator unit and source monotonicity through its midpoint. True source/C LR is proved for ALL m>=0; no m>=h assumption.",
+  "finite_principle": "For EACH fixed u, combining automatic cones and registered degree-boundary C leaves ONLY u+2<=h<=3u-2,maxV<=2u-1,r<=floor(h/2),alpha<=floor((u+h)/2)+1 (last padding represents all larger paddings). Thus late C has a finite entrance for EACH binary count u. This does not assert all such finite entrances pass for all u, nor settle earlier reference C.",
+  "small_binary": "PROVED EVERY 0<=u<=8,EVERY nonempty sorted CI tail V>=3,ALL tail counts/capacities/degrees/padding,ALL shifts R>=3,ALL current N>=W+1: ACTUAL late C. u<=7 remainder has W<=28 and uses established COMPLETE-C weight32 family. u8 remainder beyond weight32 is EXACTLY V=3^11,W33,h22; its INFINITE actual tail edge D33=5109250>D34=5076760 is fully recomputed in Lean by finite binomial/trinomial sums. Infinite positive-D UI makes its tail nonincreasing; proved same-word finite/infinite initial-ones density order then covers EVERY finite alpha. The16 finite-padding QA hosts are NOT substituted for that unbounded density proof.",
+  "remaining": "After these results and the weight32 family, any remaining ACTUAL late C failure has u>=9,u+2<=h<=3u-2,maxV<=2u-1,W>32 (and may use its finite padding clamp). Earlier arbitrary reference C N<=W and general C/A2/ORIGINAL unamplified coefficient UI remain OPEN. First unresolved general-C count6 and original least-counterexample numerical bounds unchanged: this is LATE C only.",
+  "formal_scope": "SEVEN NEW reports: SIX AutomaticLateC scalar degree/row/source/read/unit/weight/unique-profile kernels and ONE AutomaticLateCInfiniteEdge complete finite Nat.choose double-sum coefficient/strict-edge theorem. Standard Lean kernel reduction only, no native axiom. Independent WEIGHT partition grammar identifies the SOLE u8 residual; positive suffix-box actual F and separate trinomial/binomial calculation BOTH reconstruct D33/D34. Symmetric-row monotonicity, source LR assembly, exact actual tail formula, infinite UI, finite-initial-ones density transfer and old weight32-family application are WRITTEN, not an end-to-end Lean theorem for all compositions. Old reports reused without recounting.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "independent_u8_profiles": 1,
+  "kernel_verified_infinite_edge": {
+    "previous": 5109250,
+    "current": 5076760,
+    "margin": 32490
+  },
+  "QA": {
+    "complete_u8_actual_hosts": 16,
+    "automatic_cone_nonincreasing_tail_edges": 2176733,
+    "automatic_cone_actual_contexts": 13010,
+    "sharp_degree_boundary_contexts": 159,
+    "sharp_capacity_boundary_contexts": 156
+  },
+  "state_sha256": "ecfebb05389c38d9ab028165b50f8dadc39d4aeaf241ce4780b77088ed147ccf",
+  "sha256": {
+    "automatic_late_C_cones_proof.tex": "7dc7d91bc778f25cfaf8e2161591653ab2ef7edaca24d9412fd8bd35ee167a85",
+    "AutomaticLateC.lean": "14e31aa84afca161bade7e832df950174562eecdba6f75d9a995249aca1d61e7",
+    "AutomaticLateC.log": "b22fd3808b739f5fe1c27923e9e644f2c0663a64466944637c6bad5760886600",
+    "AutomaticLateCInfiniteEdge.lean": "1fef5a09187aeba2092b8e2c8e727b0d78a3fa070e76ce9117a0c855689e011c",
+    "AutomaticLateCInfiniteEdge.log": "a6f39d540e0f36565c3ab7a760f12d4d18f1c14c972c3aec6c35c830c6cecf0f",
+    "audit_automatic_late_C_cones.py": "b141454323f970a6c24d1227bc71ae6726f59bfb7eb69524e97339920ace51e9",
+    "audit_automatic_late_C_cones.json": "f7cbe100801ffe6caaa5c8b4c9e3814f29a8408aed409499bff81f9b8e2c8cb4",
+    "verify_automatic_late_C_cones.py": "9866bdc0bc2b1d0ca11c18dd0de641a9c16ee03988c9b2e41c20ab36e2af3765",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "subdegree_CI_entrance_verification.json": "186f8fb85f53291ec653920f7e3e1be3e32698159a9083de0e6fe681ad1ae6cb",
+    "subdegree_CI_entrance_proof.tex": "9a628bd22389e30e5f70d8615cde47d48b7d5eb7d90cbe5e2029070959342b3f",
+    "mode_only_uniform_tail_closure_verification.json": "52aaf8f1842736ab79defb1bd6a2e90033614daab555a4b1c1bd3c1da3f87a22",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "actual_all_padding_CI_entrance.tex": "67f90e1dec701112d2e19ee7487ade2b0502d4449cc8995caa5ac223c3cbe678"
+  }
+}

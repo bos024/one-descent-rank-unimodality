@@ -1,0 +1,110 @@
+{
+  "status": "PASS_UNIVERSAL_RELATIVE_GOLDEN_HEAD_AND_UNBOUNDED_DOMINANT_COMPLETE_C_CLOSURE",
+  "new_scoped_reports": 8,
+  "kernels": {
+    "sixth_power_atom_budgets": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "nonempty_head_interval_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "complete_quantitative_head_tail_window": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_dominant_reference_read_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "dominant_deficit_and_small_count_mode": [
+      "Quot.sound",
+      "propext"
+    ],
+    "dominant_surplus_actual_read_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strict_reference_tail_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_current_dominant_assembly": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "QA": {
+    "arbitrary_ORDER_reference_entire_relative_head_q6_reads": 17850,
+    "exact_terminal_spectral_tail_normalization_reads": 2472,
+    "exact_prefix_minimum_all_shift_C_payments": 139647,
+    "logical_shift_coverage": 16593624,
+    "dominant_extended_FULL_reference_C_profiles": 70,
+    "all_binary_dominant_FULL_actual_C_hosts": 834,
+    "deficit_OR_small_count_ALL_mode_payments": 414,
+    "dominant_surplus_FULL_old_G_q2_payments": 461084,
+    "dominant_surplus_strict_actual_window_payments": 4589
+  },
+  "independent_counts": {
+    "independent_ARBITRARY_order_ALL_relative_golden_head_reads": 13036,
+    "independent_unconditional_EARLIER_reference_C_all_shift_reads": 1047976,
+    "independent_unconditional_EARLIER_reference_golden_D_edges": 6516,
+    "independent_FULL_actual_C_all_current_prefix_minima": 95207,
+    "independent_FULL_actual_C_all_shift_logical_reads": 15612754,
+    "independent_dominant_uniform_actual_hosts": 476,
+    "independent_dominant_surplus_ENTIRE_old_G_prefix_margins": 383988,
+    "independent_dominant_strict_actual_window_transfers": 2798,
+    "independent_SIX_nonbinary_factor_dominant_hosts": 4
+  },
+  "independent_state_sha256": "98b6c777cc7b9da8fb4353d95e29cb67baaf7b8e9d1e1887cec026ea1eb27105",
+  "new_finite_entrance_certificates": 0,
+  "universal_head": "PROVED EVERYarbitrary-ORDERnonemptyreferenceV,ALL2<=j<=W: H_j>=q^6*H_W>0,H_j=R_j-phiRprev. TerminalH_W=rho=prod q(1-psi^t) contractsunderEVERYappendandlies(0,1). FULLquantitativehead-plus-alternating-tailwindowinduction,constantINDEPENDENTallweights/counts/caps.",
+  "unconditional_reference_resource": "PROVED forANYoldreferenceweightaandANYappendt>=3: EVERYcurrent max(t+3,a+8)<=N<=a+t+1hasSTRICTgoldenDgapandALLCshifts,NOoldCpremise. EXACTgapH_(N-t-1)-H_(N-1),head>=q6rhoandrighttail<=q7rho. GeneralreferencefullCstillOPENoutsideprovedregions.",
+  "uniform_full_C_inheritance": "PROVED iffixedsortednonbinaryVhasFULLactualCforallbinaryu/paddingalpha,EVERYlegalappendt>=2sumVpreservesthatUNIFORMfullC. OldreferencefullCbyfiniteprefix;newreferencefullCbyearliergoldengap+prefix+oldW-1tail. Deficitu<hORu+r<=5modeell<=t+4;surplususesprotectednewreferenceCbelowfirstlossandoldordinaryLCfromu+r+1aboveit. BOTHendgoldenbounds+ALLGq2prefixintegration+affineatom1payresidual. Nobinarycount/paddingdependenceindominancecondition.",
+  "arbitrary_length_family": "PROVED startwithANYuniformfullCtailseed,thenARBITRARILY MANYlegalappends t_j>=2SUMpreviousnonbinarycapacities: ALLresulting1alpha2uVhaveFULLC,ALLalpha/u/ranks/shifts. SeedsincludeTWOarbitrarynonbinaryfactorsandANYoldweight<=32tail. Nonbinarycount/capacities/binarycount/paddingALLUNBOUNDED.",
+  "coupled": "OrdinaryproductcoefficienttiltUIagainstANYoppositeandALLdepthBOTH-FrisingC-to-Snonrecoverywithcurrent/physicalguards/OLDweightedA2headretained. FullA2/originalUINOTasserted.",
+  "stronger_head_control": {
+    "V": [
+      3,
+      4
+    ],
+    "rank": 5,
+    "H": [
+      13,
+      -8
+    ],
+    "terminal": [
+      36,
+      -22
+    ],
+    "failed_stronger_constant": "q^2",
+    "actual_C_counter": false
+  },
+  "formal_scope": "EIGHTnewcleanstandardaxiomreportsincludingFULLquantitativeinterval-windowtheorem,ALL-qbudgets,ALLdominant/actualreads,ALLdeficit/smallcountmodeexclusion,strictgapandcompleteNat-indexassembly. Actualreference/CI/rho/word/Fibonacci/cumulative/convolution/coupledidentificationsandtail-wordinductionWRITTENwithregisteredinputs. FiniteQAONLY,no finite premise;notend-to-endLeancompositiondatatype.",
+  "remaining": "Generalnondominant>=3nonbinaryFULLC/fullA2/originalunamplifiedcoefficientUIOPEN. FirstunresolvedTOTALnononecount6unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "relative_golden_head_dominant_C_proof.tex": "b5c5b3c1348f6106d6ca74cda28e07df6a60a6c57dc33de10d4d49b128a43e62",
+    "RelativeGoldenHeadDominantC.lean": "419708dde5ae5310dc587733f89feba26da5f91560227e5a30bf815066b0bd47",
+    "RelativeGoldenHeadDominantC.log": "a927d4b0e31fb7b047db6cd814aa5c523b70a75317ff613977a6f5bdc3dcb243",
+    "audit_relative_golden_head_dominant_C.py": "063f95e9c407db2d869413fdb3aeaaaa5e0d10bc76dfbc5d5bb02a72595579fa",
+    "audit_relative_golden_head_dominant_C.json": "afd8bcf083d304ba64de0f2d0bd6a8cfe941338515ea54b935bf6444f40ac795",
+    "verify_relative_golden_head_dominant_C.py": "3762e6365445719b8e87d22a1176c471a5f27bba3b5a30b8f63a4fffab499480",
+    "two_nonbinary_complete_C_verification.json": "8b19be9311e31f914bde803217fc2a5a95ab8753a09020a3bb3f2cb582e02cf7",
+    "universal_physical_boundary_C_verification.json": "51b668dbfac37b85c69bdccaf1b542fb3a11497ceb96a4aa1fed052419579fb0",
+    "reference_ordinary_golden_prefix_verification.json": "b5c6eac22baa0a470ec1760c0caef3363131db33482d0926da87329c7dba9788",
+    "hereditary_strong_late_C_verification.json": "d4ac624d9905c35c4fb48fb3544ad1b9bd36a3e06a23bc5cd3dc6bda00f9a729",
+    "previous_boundary_C_verification.json": "e4a02f19b0885472b5842873030e836f277903ead80e0d9f1fc392664752e2e0",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "universal_late_C_first_crossing_verification.json": "296b1a464749dd0b51565af2f194fb512f4f2d85122152a3c5067f45469ad548"
+  }
+}

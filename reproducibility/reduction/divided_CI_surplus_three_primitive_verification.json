@@ -1,0 +1,114 @@
+{
+  "status": "PASS_UNBOUNDED_DIVIDED_CI_POSITIVE_PRIMITIVE_AND_ACTUAL_PADDING_TWO_LATE_C",
+  "new_scoped_reports": 9,
+  "brand_new_reports": 6,
+  "previously_unregistered_seed_reports_first_counted": 3,
+  "kernels": {
+    "DividedCIPrimitive": {
+      "binary_first_primitive_head": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binary_second_primitive_head": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "nonempty_first_primitive_head": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unperturbed_interval_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_perturbed_last_junction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "entire_capacity_word_induction": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "BinaryCITwoSeed": {
+      "first_Cassini_seed_strict": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "second_Cassini_seed_full_parameter_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "positive_part_preserves_strict_seed": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "analytic": "For EVERY CI L=prod[t], all t>=3, degree h, and EVERY U>=h+3, J=((1+z)^U L-((1-phi)^U L(-phi)))/(1+qz) is a positive ordinary-LC finite polynomial AND its positive first difference is LC on its ENTIRE support. No count/capacity/degree cutoff. New proof uses all-length binary head induction, exact interval-append quotient identity, generic nonsymmetric primitive-window closure, robust low-head coefficient budget and quantitative last junction >=1+U/30.",
+  "actual": "For EVERY ACTUAL sorted tail V>=3 of degree h, EVERY binary count u>=h+1, at padding alpha=2, the ACTUAL positive slopes of 1^2 2^u V are LC at MOVING centres u+lenV+1<=N<FIRSTDmode. EVERY actual C shift R>=3 holds at EVERY current N>=W+1. Proof establishes SINGLE entry m=h via exact raw deficit=primitive(J_(h+3,L)) for offsets s>=1, backward integration stopped before the exceptional s0 normalization, and the independently proved TWO strict actual entrance seeds. The prior fixed-padding count induction and TWO ordinary-F/read integration then give all larger counts. Early reference ranks N<=W are NOT included.",
+  "finite_reduction": "At u=h+1 the residual short-padding entrance set shrinks from alpha1..h to alpha=1 OR 3<=alpha<=h. Alpha2 is NOW proved at every CI degree. All alpha>=h+1 were already proved by row145. General arbitrary-padding entrance still OPEN.",
+  "formal_scope": "NINE first-counted scoped standard-axiom reports: SIX new DividedCIPrimitive kernels (both complete arbitrary-real binary primitive heads, correctly normalized nonempty first primitive head, interval junction gap, exact perturbed junction and ENTIRE arbitrary-capacity-word induction); THREE earlier UNREGISTERED BinaryCITwoSeed kernels counted HERE for the first time (both strict actual-entry scalar seeds and positive-part transport). Prior window, robust quotient, spectral, backward integration, homogeneous-reference and binary-count/read-joining kernels reused WITHOUT recounting. Polynomial/source identities, actual mode/head identification, spectral scalar inequalities, whole CI induction assembly and actual composition identification are WRITTEN, not end-to-end actual-arm Lean formalization. Exact QA checks the displayed identities and bounds independently; finite nonfailures are not substituted for the unbounded proof.",
+  "remaining": "Padding alpha1 and alpha3..h at the single entrance remain OPEN, as do arbitrary early reference C N<=W, shorter binary counts, general C/A2 and ORIGINAL general unamplified UI. Stronger divided-CI primitive assertions U>=h+2 or later-centre-only U>=h+1 remain OPEN. Full primitive U=h+1 is FALSE at its first centre. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "exact_small_binary_primitive_bases": 3,
+    "exact_entire_binary_positive_primitive_minors": 11026,
+    "exact_binary_first_head_payments": 147,
+    "exact_binary_constant_update_identities": 147,
+    "exact_binary_second_head_payments": 145,
+    "exact_entire_interval_append_quotient_identities": 1200,
+    "exact_all_low_primitive_source_identities": 17979,
+    "exact_robust_head_X_minors": 62681,
+    "exact_quantitative_last_junction_payments": 1200,
+    "exact_actual_first_primitive_seed_payments": 1200,
+    "exact_entire_divided_CI_positive_primitive_minors": 119264,
+    "independent_CI_interval_induction_contexts": 1200,
+    "exact_padding_two_divided_primitive_head_identities": 21103,
+    "exact_actual_padding_two_through_first_mode_LC_minors": 16296,
+    "exact_actual_padding_two_all_read_prefix_minimum_C_payments": 42606,
+    "actual_padding_two_contexts": 400
+  },
+  "seed_QA": {
+    "all_signed_actual_tail_coefficients_including_negative_tail": 255857,
+    "unbounded_seed_formula_instances_exact_QA": 1618,
+    "actual_tail_contexts": 2400
+  },
+  "state_sha256": "1a2f47deea5c05e9d0d8a6a9a2f94bc5ff1dd384252389dfd46b3c1baf3aa0a3",
+  "sha256": {
+    "divided_CI_surplus_three_primitive_proof.tex": "87f47d4ded4416a1237dade2c052129e31aff8f4c25f74390678951a9384d3bc",
+    "actual_padding_two_CI_entrance.tex": "5aeefc35cc7c0f7f60357b030180250fe6b12839707d47b94e6113cf467f40f6",
+    "finite_padding_divided_CI_primitive.tex": "60635d77e15cd6647e6cc64c1ae01c0237c53a41d3bcf0570a323bfb23214f0f",
+    "DividedCIPrimitive.lean": "49d1e7187785ceb60b6cdd233c94f2ef7695274245f6deb5f60520b023019969",
+    "DividedCIPrimitive.log": "737ab97d7796fa24c37e4c97d237f7b5b9a62c0f2d7c9a927190a828c289b811",
+    "BinaryCITwoSeed.lean": "3d20bfa3f8a336195db6b7e3cad968c581091f71d17aeab6f9b4667123c87eb6",
+    "BinaryCITwoSeed.log": "2944a8ff6c79c9037bc31d16512c936ef3a8e74768c877f2f4d4d03fece9600c",
+    "binary_CI_two_seed_closure_workbench.tex": "74cabac11d7725f0ca758d71c3934cd4ee354da5d64b53e17beb134796ec702f",
+    "audit_divided_CI_surplus_three_primitive.py": "fa09ecbadc1cfafcb32c852cd6defa8eed6df61769f3d83c0f807181e602e21e",
+    "audit_divided_CI_surplus_three_primitive.json": "029bced0be3d367a09846c032e48045ee095b2a7a60a0e22e637e188e115fa1c",
+    "audit_binary_CI_tail_and_two_seeds.py": "23cc3a282bbc10c897e7d770590c20925d698a0c4efb9cf833d4ddd3f7968cd7",
+    "audit_binary_CI_tail_and_two_seeds.json": "3d99679dae0d59811ea7c438e7a2ea7a6a1016740a6ed1f4cee6d0d0b250371b",
+    "verify_divided_CI_surplus_three_primitive.py": "4013a85d2d41809a7fbabe672caf8d0c2cde24d221d4bb6a66cbf96a786e3591",
+    "probe_divided_CI_positive_primitive.py": "8ea40389bc649530ce23ca290007343943d358617007c9d913f02100f70c8111",
+    "probe_finite_padding_geometric_deficit.py": "959677dd1a4f8019c7f375b45f85725b170df5f8ebe4fffacadd9e12fd03e96a",
+    "probe_ci_primitive_full_LC.py": "d25297aaa7296beafb2d33447bb8164f6e0323aec065cbd41162cb10ce3d5051",
+    "probe_binary_CI_two_seed_closure.py": "3ac6e268eef767d63fae41bace549bcd413af3f8c26724a40cbe7df6df975f56",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "infinite_padding_full_deficit_LC.tex": "062aa2d99ab192b2e40a200958dba5b06b7a0e05dbaf16601c70a3dcb0081d78",
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "sharpened_multitail_single_entrance.tex": "b3373c11e2e1585ca2227097699a11dcaa710fe41704b032fce18e8b312f8718",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338",
+    "lc_positive_primitive_window_closure_verification.json": "351fbd627c33a881470734ad74143a338d566b9500c2d3fea3c5aafb7aebeb9f",
+    "infinite_padding_full_deficit_LC_verification.json": "65f50dccc0f9c35d80a0712cde737c5f8efd08c779142820eea9d15062dd9c82"
+  }
+}

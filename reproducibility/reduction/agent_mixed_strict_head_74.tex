@@ -1,0 +1,169 @@
+\section{A strict ordinary-head prefix pays every high-source mixed recovery}
+Use actual normalized arms $Z=1^\alpha U$, $Y=1^\beta V$, weights
+$a,b$, owner count $h\ge2$, owner skeleton degree
+$D=\sum_{u\in U}(u-1)$, and $K=\kappa_Y$.  Write
+$p=q_Zq_Y$, $j=a+b-n$, $r=a-j$, $e_i=2p_i-p_{i-1}$,
+$T=e_{n+1}-e_n$, $E=e_k$, $H=e_{k+1}-e_k$.
+Retain the correctly conditioned proper S comparison, including BOTH
+strict positive windows and $0\le e_n<E$.
+
+\begin{theorem}[Absolute first-source threshold 74 for positive mixed recovery]
+Assume $F_Z(j+1)\le F_Z(j)$ and that the ENTIRE opposite SOURCE
+prefix $E_Y$ through $j+1$ is nondecreasing.  If $K\ge74$ and $T>0$,
+then $T\le H$, with no OLD A2 premise.  With the usual OLD
+nonnegative head budget, the ENTIRE mixed S comparison is therefore
+proved in this source-prefix region for $K\ge74$.
+
+The previous 383 minimum-degree and 239 full-staircase suffix proofs
+remain independently valid weaker certificates.  The present proof
+uses a strict ordinary prefix, rather than a convex opposite prefix;
+it does not need the right-heavy CI primitive conclusion beyond its
+exact support formula.
+\end{theorem}
+
+\paragraph{The positive window and the raw source.}
+The upper-center reflection of the actual old ordinary product gives
+$k<j$ from $p_n>p_k$.  The SECOND strict window gives the stronger
+\[
+ (k+1)+(n+1)<a+b,\qquad k\le j-3.                    \tag{1}
+\]
+Indeed if the displayed sum were at least $a+b$, every actual
+upper-centered interval-product layer would give
+$p_{k+1}\ge p_{n+1}$, a contradiction.
+Positive recovery has $r\ge-1$, so $j\le a+1$ and (1) gives
+$k+1\le a-1$.  Thus every used head coefficient of the RAW owner
+source
+\[
+                         R_Z=(2-z)q_Z
+\]
+is nonnegative: it agrees with the established positive corrected
+source below degree $a$.  Its first coefficient is two.
+
+\paragraph{A sharper universal head bound from the first source birth.}
+The previous mixed identities give $e_n\ge d_r$ and $T\le d_{r+1}-d_r$
+for $d=(\Delta q_Z)^+$, with the unit convention at $r=-1$.
+For $r\ge0$ and $T>0$ put
+\[
+ d_*=K-\alpha,\qquad e_*=D-2r-2\ge0.
+\]
+The first compulsory source birth already pays the whole curvature
+if $d_*\le e_*+2$.  To recall the exact argument, its ordinary
+coefficient is $q_Z(r+K-1)$; under that inequality its reflected
+pair with $q_Z(r+1)$ has endpoint sum at most $\alpha+D$.
+The actual lower-center reflection gives
+$q_Z(r+K-1)\ge q_Z(r+1)\ge d_{r+1}-d_r$.
+The birth is present because its ordinary index is then positive.
+Consequently positive recovery NECESSARILY satisfies
+\[
+                 e_*\le d_*-3,\qquad
+                         2r\ge D-d_*+1.              \tag{2}
+\]
+Combine (2), $h\le D$, $a=\alpha+D+h$, and the previously proved
+linear owner bound $D\le12d_*-25$:
+\[
+ \begin{split}
+ 2j=2a-2r
+ &\le2\alpha+3D+d_*-1\\
+ &\le2\alpha+37d_*-76
+   =37K-35\alpha-76\le37K-111.
+ \end{split}                                           \tag{3}
+\]
+For $r=-1$, the first source birth would pay its unit recovery
+whenever $a+2-K\ge0$.  Thus $T>0$ forces $a\le K-3$, which
+gives a still smaller head bound.  In both cases
+\[
+            k+1\le N:=\left\lfloor\frac{37K-111}{2}\right\rfloor.
+                                                               \tag{4}
+\]
+The arithmetic in (2)--(4) is independent of both arm counts and
+all capacities.
+
+\paragraph{The opposite arm is STRICTLY increasing throughout this head.}
+Its main box is $L_Y=[\beta+1]\prod_{v\in V}[v]$, of degree
+$M=\beta+\sum(v-1)$; let $B$ be its largest interval degree.
+The exact first-missing staircase gives
+\[
+ M\ge M_{\min}:=1+\frac{(K-2)(K-1)}2,\qquad
+ M-B\ge O_{\min}:=1+\frac{(K-3)(K-2)}2.              \tag{5}
+\]
+For the second inequality, if the largest interval is a capacity
+interval, remove it and sum the forced remaining degrees
+$1,\ldots,K-3$, together with the positive initial run.
+If the initial interval of degree $\beta$ is largest, removing it
+leaves all forced non-one degrees $1,\ldots,K-2$, an even stronger bound.
+
+For every integer $K\ge74$, the exact quadratic inequalities give
+\[
+                              2N\le M_{\min},\qquad N\le O_{\min}.
+                                                               \tag{6}
+\]
+For example the first follows from
+$K^2-77K+226=(K-74)(K-3)+4\ge0$; the second from
+$K^2-42K+119=(K-74)(K+32)+2487>0$.
+The CI support formula therefore gives
+$\Delta(L_Y)_s\ge1$ for every $0\le s\le N$.
+
+To justify passing to ACTUAL differences, use the exact positive
+shifted-CI expansion
+\[
+ q_Y=L_Y+\sum_{i=1}^{g}z^{w_i}\prod_{l>i}[V_l],
+ \qquad w_i=\beta+\sum_{l\le i}V_l.
+\]
+Every extra summand has endpoint sum at least $M$; its excess is
+$w_i+i\ge0$.  Hence every extra summand is nondecreasing through
+$\lfloor M/2\rfloor$, including support/birth boundaries.
+Together with (5)--(6), this proves the genuine coefficient statement
+\[
+                        \Delta q_Y(s)\ge1
+                               \quad(0\le s\le N).    \tag{7}
+\]
+No coefficient bound has been differentiated.
+
+\paragraph{A SINGLE nonnegative convolution term pays the absolute branch.}
+The head source increment has the exact identity
+\[
+            H=[z^{k+1}]\{R_Z\,(1-z)q_Y\}.            \tag{8}
+\]
+All summands used in (8) are nonnegative by (1), (4), and (7).
+If $0\le r<k$, select the term with owner index $r+1$:
+\[
+ \begin{split}
+ H&\ge R_Z(r+1)\,\Delta q_Y(k-r)
+      \ge R_Z(r+1)\\
+  &=q_Z(r+1)+d_{r+1}\ge d_{r+1}-d_r\ge T.
+ \end{split}                                           \tag{9}
+\]
+For $r=-1$, the owner index zero term gives
+$H\ge2\Delta q_Y(k+1)\ge2\ge T$.
+The case $r\le-2$ cannot have positive recovery.
+For $r\ge k$, the already proved DIRECT raw-kernel LC relative
+bridge pays $T$ for arbitrary opposite arms, with no head-shape
+condition.  This completes every positive-recovery case.
+
+\paragraph{Scope and verification.}
+Nine clean scoped unbounded scalar reports check the sharper birth/rank implication,
+owner-to-head bound, both-window raw-prefix safety, the unit-recovery
+boundary, every $K\ge74$ quadratic/floor budget, transfer to actual
+CI support, the arbitrary nonnegative convolution term, and the
+owner raw-source curvature comparison.  The actual source-birth
+reflection, staircase/common-box identification and direct relative
+bridge are existing/written inputs.  No end-to-end Lean composition
+formalization is asserted.
+Every report uses only \texttt{propext}, \texttt{Classical.choice},
+\texttt{Quot.sound}; there are no warnings or errors.
+
+The exact actual-prefix QA checks 20 opposite profiles at first weights
+74, 75, 96 and 239, including the minimum staircase, an arbitrarily
+long initial interval, an arbitrarily long last capacity, extra binary
+prefixes and nonuniform increased capacities.  Every one of 43675
+tested signed head differences dominates its corresponding strictly
+positive main-box difference.  A separate 1927 integer budget checks
+the displayed sufficient inequalities.  These finite checks support
+the identifications and are not the unbounded proof.  Root and a
+separate audit agent independently checked the mathematical assembly.
+
+The remaining source-prefix positive mixed recovery problem is now
+a finite stronger numerical problem with $K\le73$, using the earlier
+finite-owner/count/head and two-ended clipping reductions.  That
+finite problem has not been exhaustively checked.  No arbitrary
+mixed S, general C/A2 or original unimodality solution is claimed.

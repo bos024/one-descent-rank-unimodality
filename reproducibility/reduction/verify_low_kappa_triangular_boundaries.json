@@ -1,0 +1,14 @@
+{
+  "status": "PASS_COMPLETE_INDEPENDENT_LOW_KAPPA_BOUNDARY_RECONSTRUCTION",
+  "N": 13,
+  "counts": {
+    "independent_states": 117964,
+    "independent_appends": 472829,
+    "independent_boundary_states": 34806,
+    "independent_excluded_small_budgets": 53
+  },
+  "reachable_state_sha256": "526205da2a6368adb89f615f46cac17c978e9bfdfb2f0ed84c342ad09d648567",
+  "exact_state_set_equality": true,
+  "scope": "Independent direct convolution and DFS rebuild ALL states and 53 exclusions; source-jet coverage and conditional TC induction remain written proof obligations. No original UI completion.",
+  "seconds": 2.672000000005937
+}

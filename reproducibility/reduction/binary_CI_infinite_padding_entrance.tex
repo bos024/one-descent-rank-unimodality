@@ -1,0 +1,265 @@
+\section{An unbounded infinite-padding CI entrance by geometric deficits}
+This note proves an infinite-padding coefficient-LC statement and its
+specified large-finite-padding corollary. The remaining smaller paddings,
+the generic two-seed conjecture, general C, general A2 and the original
+one-descent conjecture are NOT concluded by this note.
+
+Write $q=\phi^{-1}=\phi-1$, so $q^2+q=1$ and
+$3/5<q<2/3$. All negative coefficient indices are zero.
+For $u\ge0$ define the degree-$u$ polynomial
+\[
+ Q_u(z)=\sum_{n=0}^u [z^n]\frac{(1+z)^u}{1+qz}\,z^n.
+\]
+Its leading coefficient is $(1-q)^u$, and
+\[
+ Q_u=(1+z)Q_{u-1}-q(1-q)^{u-1}z^u.                 \tag{1}
+\]
+Thus its coefficients are strictly positive and ULC of order $u$:
+induct using preservation of ULC orders under convolution, and observe
+that lowering ONLY the leading coefficient preserves normalized LC.
+The external input here is precisely finite-order ULC convolution
+(Liggett 1997; Gurvits, Theorem 1.1,
+\texttt{https://arxiv.org/abs/0804.1181}). It is applied only to
+$Q_{u-1}$ and $(1+z)$, not to an actual arm or an interval product.
+
+For $n\le u-1$ the positive expansion
+\[
+ (Q_u)_n=\sum_{j=0}^n {u-1-j\choose n-j}(1-q)^j       \tag{2}
+\]
+gives $(Q_u)_n\ge {u-1\choose n}$ and
+\[
+ \frac{(Q_u)_k}{(Q_u)_{k-1}}\ge\frac{u-k}{k}
+                  \quad(1\le k\le u-1).             \tag{3}
+\]
+Indeed, division of (2) by ${u-1\choose n}$ gives a sum
+of nonnegative multiples of $(n)_j/(u-1)_j$, nondecreasing in $n$.
+ULC also gives, with $r_k=(Q_u)_k/(Q_u)_{k-1}$,
+\[
+ \frac{r_{s+1}}{r_k}\le
+ \frac{k(u-s)}{(s+1)(u-k+1)}\quad(1\le k\le s<u).
+                                                               \tag{4}
+\]
+Moreover, for $u\ge3$,
+\[
+ (Q_u)_s\ge u-q\quad(1\le s\le u-2).                \tag{5}
+\]
+To check the right endpoint, the two last coefficient recurrences give
+$(Q_u)_{u-2}-(u-q)=uq-2+(1-q)^u/q^2$. At $u=3$ this is zero;
+for $u\ge4$ its first two terms are already positive.
+Ordinary LC puts every intervening coefficient above the smaller
+endpoint. No symmetry of $Q_u$ is asserted.
+
+\begin{lemma}[A quantitative binomial-division kernel]
+Put $Q=Q_u$ and $T_k=Q_{k+1}+2qQ_k+q^2Q_{k-1}$.
+For $u\ge3$, $2\le s\le u-2$, and $1\le k\le s$,
+\[
+ Q_sQ_k-Q_{s+1}Q_{k-1}\ge q^sT_k.                  \tag{6}
+\]
+Also, if $0\le a\le(u-1)/2$,
+\[
+              Q_s\ge q^s(T_0+a)\quad(2\le s\le u-2).
+                                                               \tag{7}
+\end{lemma}
+\begin{proof}
+By (4), the left side of (6) is at least
+$Q_sQ_k/(s+1)$. By (3)--(4), for $1\le k\le u-2$,
+\[
+ \frac{T_k}{Q_k}\le
+ \frac{u-q}{2}+2q+\frac{q^2(u-2)}2\le u+q.          \tag{8}
+\]
+The last inequality has doubled margin $q(u-3)+2$.
+For $s=2,u\ge6$, use $Q_s\ge(u-1)(u-2)/2$ and
+$q^2(u+q)\le(2/5)(u+1)\le(u-1)(u-2)/6$.
+For $s=3,u\ge6$, use
+$Q_s\ge {u-1\choose3}\ge(u-1)(u-2)/2$ and
+$q^3(u+q)\le(4/15)(u+1)\le(u-1)(u-2)/8$.
+These two elementary quadratic inequalities hold at six and their
+left-minus-right differences increase thereafter.
+
+For $s\ge4$, $(s+1)q^s$ is nonincreasing and is at most
+$5q^4\le4/5$. Since $u\ge6\ge9q$, (5) yields
+$Q_s\ge u-q\ge(4/5)(u+q)\ge(s+1)q^s(u+q)$.
+This proves (6), apart from the following SEVEN exact small cases.
+The table records the margin in the basis $(1,\phi)$; every entry
+is positive (already $\phi<5/3$ suffices).
+\[
+\begin{array}{c|c|c|r}
+u&s&k&Q_sQ_k-Q_{s+1}Q_{k-1}-q^sT_k\\\hline
+4&2&1&44-22\phi\\
+4&2&2&62-34\phi\\
+5&2&1&70-30\phi\\
+5&2&2&120-60\phi\\
+5&3&1&165-90\phi\\
+5&3&2&280-155\phi\\
+5&3&3&210-120\phi
+\end{array}
+\]
+Finally $T_0=u+q$. For (7), use (5), $q^s\le q^2$,
+and $a\le(u-1)/2$. Twice the remaining margin is
+$(3q-1)u+3-7q$, which at $u\ge4$ is at least $5q-1>0$.
+\end{proof}
+
+\begin{theorem}[Robust LC budget after binomial division]
+Let $L_0=1$, let $L$ have positive LC coefficients and interval
+support, and suppose $a=L_1\le(u-1)/2$, $u\ge3$.
+Put $B=LQ_u$. For every $1\le s\le u-2$,
+\[
+ B_s^2-B_{s-1}B_{s+1}\ge
+ q^s(B_{s+1}+2qB_s+q^2B_{s-1}).                    \tag{9}
+\]
+No CI factorization of $L$ is needed for this theorem.
+\end{theorem}
+\begin{proof}
+For $s=1$, use $L_2\le a^2$ and the exact first two coefficients
+$B_1=u+a-q$,
+$B_2={u\choose2}+ua+L_2-q(u+a)+q^2$.
+Twice the margin in (9) is at least
+\[
+ f(a)=q^2u(u-1)+2a(q^2u-qa-1).
+\]
+This is concave on $0\le a\le(u-1)/2$. Its endpoint values are
+$f(0)\ge0$ and
+\[
+ f((u-1)/2)=\frac{u-1}{2}\{(4-5q)u+q-2\}>0,
+\]
+where $4-5q\ge2/3$ and $u\ge3$.
+
+For $s\ge2$, apply Cauchy--Binet to the $2$ by $2$
+Toeplitz minor of $B=LQ_u$. Every term is nonnegative since both
+factors are LC. Retain just the terms with the first intermediate
+row zero. With $K(s,k)=Q_sQ_k-Q_{s+1}Q_{k-1}$, this gives
+\[
+ B_s^2-B_{s-1}B_{s+1}\ge\sum_{i=0}^s L_iK(s,s-i).
+\]
+Use (6) on $i<s$, and (7) on $i=s$.
+Since $L_{s+1}\le aL_s$ by LC (including zero extension), the
+retained terms pay the entire convolution with $T$, including its
+otherwise missing $i=s+1$ term $L_{s+1}T_{-1}=L_{s+1}$.
+This is exactly (9). All omitted terms were nonnegative.
+\end{proof}
+
+\begin{theorem}[Every CI tail, infinite padding, unbounded degree]
+Let $L=\prod_{t\in V}[t]$, all $t\ge3$, with degree
+$h=\sum(t-1)\ge2$. For EVERY $m\ge h$, put
+\[
+ C=L\sum_{j=0}^m(z+z^2)^j.
+\]
+Then the ordinary coefficients of $C$ are LC at EVERY centre
+$n\ge m$. There is no bound on tail count, capacities or degree.
+\end{theorem}
+\begin{proof}
+Set $u=m+1$ and $a_*=L(-\phi)$. Each factor satisfies
+\[
+ |[t](-\phi)|q^{t-1}
+       =|(-1)^tq-q^{t+1}|\le q+q^4=2q^2<1.
+\]
+Consequently $|a_*|q^m\le1$. Also $L_1=|V|\le h/2\le(u-1)/2$,
+so (9) applies to $B=LQ_u$.
+
+Define the signed geometric deficit $b_n=\phi C_{n-1}-C_n$.
+Factoring $1-z-z^2=(1-\phi z)(1+qz)$ gives, EXACTLY,
+\[
+ b_n=B_{n-m-1}-a_*(-q)^n
+           \quad(h\le n\le m+1+u).                 \tag{10}
+\]
+Here only the indices $n=m+1,\ldots,m+h+1$ are needed.
+The formula follows by dividing
+$(1-z-z^2)C=L-z^{m+1}(1+z)^{m+1}L$ by $1+qz$;
+the initial $L$ term equals $a_*(-q)^n$ already at $n=h$.
+The geometric-series tail of $Q_u$ starts at index $u+1$,
+so it does not affect any index used in (10).
+
+The deficits $b_n$ are positive on $m+1\le n\le m+h+1$:
+$B_0=1$, the perturbation has magnitude at most $q$, and for
+$1\le s\le h\le u-1$ one has $B_s\ge Q_s>0$;
+at $s=u-1$ use $Q_{u-1}=(1-(1-q)^u)/q>1$.
+For centres $m+2\le n\le m+h$, put $s=n-m-1$.
+Expansion gives
+\[
+ b_n^2-b_{n-1}b_{n+1}
+ =B_s^2-B_{s-1}B_{s+1}
+   +a_*(-q)^{n-1}(B_{s+1}+2qB_s+q^2B_{s-1})\ge0,   \tag{11}
+\]
+by (9) and $|a_*|q^{n-1}\le q^s$.
+
+The binary polynomial in $C$ is already LC from centre $m$
+by the proved ordinary binary-tail theorem. Truncate its coefficients
+below $m-1$ to zero, obtaining a globally LC sequence. Its convolution
+with $L$ agrees with every original triple from centre $m+h$ onward.
+Ordinary LC convolution therefore gives LC of $C$ from there onward.
+To move back across the remaining finite band, write
+$M_n=C_n^2-C_{n-1}C_{n+1}$ and use the EXACT identity
+\[
+ C_n(b_{n+1}^2-b_nb_{n+2})+b_nM_{n+1}
+                           =\phi b_{n+1}M_n.        \tag{12}
+\]
+Positive deficits and (11) allow backward induction from $m+h$
+down to $m+1$. At the last centre $m$, the previously proved
+first-defect Cassini payment applies: its physical centre is
+$m+|V|+2\ge W+2$. Even phase has a positive Cassini term;
+odd phase starts at $W+3$ and is paid by $r_{W+2}\ge A_V$.
+The first infinite-padding defect is one. This gives $M_m\ge0$.
+No infinite backward induction and no assertion about earlier
+coefficient centres is required.
+\end{proof}
+
+\paragraph{Actual scope and remaining gap.}
+By the exact signed-tail identification, this proves LC of the
+infinite-initial-run actual positive slopes from physical centre
+$m+|V|+2$ when $u=m+1\ge h+1$. At the single entrance $u=h+1$
+this starts at $W+2$, precisely the required ordinary LC band.
+It supplies the large-padding representatives whose positive slopes
+agree with the infinite-padding arm through the first mode.
+The finite-padding term $-z^{m+\alpha}(1+z)^{m+1}L$ remains to
+be handled for the other representatives. In particular this does
+NOT discharge the all-padding premise of the finite principle.
+
+\begin{corollary}[Only the first half of the padding representatives remain]
+At the entrance $u=h+1$, the required ordinary positive-slope LC
+band holds for EVERY $\alpha\ge h+1$, without any finite check.
+Consequently, the all-padding entrance premise in the proved finite
+principle reduces from $\alpha=1,\ldots,2h+2$ to JUST
+$\alpha=1,\ldots,h$.
+More generally, for $m=u-1\ge h$, LC at the MOVING centres
+$u+|V|+1\le n<\ell$ holds whenever
+\[
+               \alpha\ge\left\lceil\frac{m+h}{2}\right\rceil+1.
+                                                               \tag{13}
+\]
+Together with the previously proved first-defect and integration
+payments, this gives actual late property C at every $N\ge W+1$
+for all these parameters. Early reference C and smaller paddings
+are not asserted here.
+\end{corollary}
+\begin{proof}
+Each term $z^k(1+z)^k L$ in $C$ is symmetric and unimodal about
+$(3k+h)/2$. Therefore the first mode of their sum is at most
+$\lceil(3m+h)/2\rceil$. The same upper bound, shifted by $r+2$,
+holds for the infinite-padding positive-slope first mode: its
+entire tail from $n\ge h-1$ is exactly $C$, so an earlier larger
+value can only move the first global mode further left.
+Under (13), the subtracted coefficient term begins at
+$m+\alpha>\lceil(3m+h)/2\rceil$. Thus the actual positive
+slopes agree with their infinite-padding values through that
+global first mode, and everywhere else are bounded above by them.
+Their global maximum and its first location are unchanged.
+Every triple with centre STRICTLY before that mode agrees with
+the already proved LC infinite-padding triple.
+The reference-prefix C band and the subsequent finite integration
+proof in the sharpened finite principle now apply to this particular
+actual arm directly; no induction over the unhandled paddings is used.
+At $m=h$ condition (13) is just $\alpha\ge h+1$.
+\end{proof}
+
+\paragraph{Formal verification boundary.}
+\texttt{BinaryCIInfiniteEntrance.lean} verifies the backward geometric
+LC payment, the ENTIRE arbitrary-length backward integration and its
+composition for actual coefficient/deficit sequences, the robust
+alternating-perturbation payment, the full arbitrary-parameter first
+numerator seed, the last kernel-row budget, and its absorption of the
+next LC numerator coefficient. These seven reports have standard
+axioms only. ULC generation/convolution, the Cauchy--Binet expansion,
+binomial kernel bounds, spectral identification and the final actual
+mode assembly are WRITTEN proofs, not an end-to-end formalization of
+the actual-composition theorem. The exact QA is separate finite
+verification of these identities and of actual large-padding reads.

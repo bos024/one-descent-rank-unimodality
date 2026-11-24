@@ -1,0 +1,8 @@
+'SharpenedForwardDerivativeCenters.two_source_positive_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpenedForwardDerivativeCenters.base_component_centers' depends on axioms: [propext, Quot.sound]
+'SharpenedForwardDerivativeCenters.arbitrary_tail_center_induction' depends on axioms: [propext, Quot.sound]
+'SharpenedForwardDerivativeCenters.later_finite_correction_center' depends on axioms: [propext, Quot.sound]
+'SharpenedForwardDerivativeCenters.sharpened_shifted_mode_bound' depends on axioms: [propext, Quot.sound]
+'SharpenedForwardDerivativeCenters.equal_first_pair_boundary_last_gap' depends on axioms: [propext, Quot.sound]

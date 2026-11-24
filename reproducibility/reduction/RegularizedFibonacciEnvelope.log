@@ -1,0 +1,14 @@
+'RegularizedFibonacciEnvelope.fi_rec' depends on axioms: [propext, Quot.sound]
+'RegularizedFibonacciEnvelope.cassini' depends on axioms: [propext, Quot.sound]
+'RegularizedFibonacciEnvelope.sign_power_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegularizedFibonacciEnvelope.positive_fibonacci' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegularizedFibonacciEnvelope.regularized_ratio_identity' depends on axioms: [propext, Quot.sound]
+'RegularizedFibonacciEnvelope.fibonacci_regularization_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RegularizedFibonacciEnvelope.regularized_lc_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegularizedFibonacciEnvelope.doubled_fib_difference' depends on axioms: [propext, Quot.sound]
+'RegularizedFibonacciEnvelope.regularized_fibonacci_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegularizedFibonacciEnvelope.regularized_fibonacci_doubling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegularizedFibonacciEnvelope.one_regularization_counter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegularizedFibonacciEnvelope.zero_regularization_counter' depends on axioms: [propext, Classical.choice, Quot.sound]

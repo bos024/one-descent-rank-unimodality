@@ -1,0 +1,6 @@
+'AutomaticLateC.improved_symmetric_row_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AutomaticLateC.large_interval_degree_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AutomaticLateC.source_body_read_before_midpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AutomaticLateC.actual_first_tail_boundary_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AutomaticLateC.small_binary_remainder_weight32' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AutomaticLateC.unique_eighth_count_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]

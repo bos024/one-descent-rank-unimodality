@@ -1,0 +1,16 @@
+24_GENERAL_UNIMODALITY/LongRectangleRepair.lean:73:5: warning: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'LongRectangleRepair.first_defect_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.linear_main_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.reflected_mass_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.convolution_dominates_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.mass_dominates_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.cdf_slope_concavity' depends on axioms: [propext, Quot.sound]
+'LongRectangleRepair.correction_support_splice' depends on axioms: [propext, Quot.sound]
+'LongRectangleRepair.long_ones_window_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.long_last_window_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LongRectangleRepair.padding_kernel_append_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]

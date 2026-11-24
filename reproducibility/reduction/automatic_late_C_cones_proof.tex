@@ -1,0 +1,151 @@
+\section{Automatic late C cones and every binary count through eight}
+This theorem proves two automatic-C cones and EVERY late C comparison
+at binary counts $0\le u\le8$, without bounds on tail counts,
+capacities, degree or padding. General C/A2/original UI remain OPEN.
+
+\paragraph{Two unbounded automatic cones.}
+For EVERY actual $1^\alpha2^uV$, $u\ge1$, $V\ge3$ nonempty,
+$h=\sum(t-1)$, $W=h+r$, either condition
+\[
+                h\ge3u-1\quad\hbox{or}\quad\max V\ge2u     \tag{1}
+\]
+makes its entire positive derivative tail from physical
+$W$ NONINCREASING. Hence every C shift at every $N\ge W+1$
+is automatic. All padding and CI counts/capacities/degrees are unbounded.
+
+Set $m=u-1$, $C=L\sum_{k=0}^m(z+z^2)^k$ and
+$E=(1+z)^uL$. The exact ACTUAL signed tail is
+\[
+ \widetilde D_{W+j}=C_{h-2+j}+\mathbf1_{j=0}
+                         -E_{h-2+j-(u-1+\alpha)}.      \tag{2}
+\]
+The source likelihood-ratio proof works for EVERY $m\ge0$, without
+$m\ge h$: the later shifted $(1+z)^{m+1}$ source dominates EACH
+row $z^k(1+z)^k$, $k\le m$; sum and convolve with LC $L$.
+Thus the finite positive part $A=(C-z^{m+\alpha}E)^+$ has
+nonincreasing density $A/C$ on the support of $C$.
+
+At $u=1$, $C=L$ and its tail from $h-1$ is already nonincreasing.
+For $u\ge2$, improve the old row decomposition by combining its
+last TWO binary rows: $B_1=1+z+z^2=[3]$ gives
+\[
+ C=L[3](z+z^2)^{u-2}
+                      +L\sum_{k=0}^{u-3}(z+z^2)^k.
+\]
+The final top row has centre $(3u-4+h)/2$, and every other row
+has smaller centre. If $h\ge3u-1$, this is at most $h-3/2$.
+Every row, and hence $C$, is therefore nonincreasing from coefficient
+rank $h-1$ (the half-integer boundary gives equality, not a missed
+integer step). Source LR keeps $A$ nonincreasing there. The extra
+previous actual unit in (2) only strengthens the first comparison.
+
+For a largest capacity $t\ge2u$, assume $h<3u-1$, since the other
+case was just proved. Write $C=[t]K$ with
+\[
+ \deg K=2u-2+h-(t-1)\le h-1.
+\]
+Its leading coefficient is exactly one. The interval identity gives
+$C_{h-1}-C_{h-2}=K_{h-1}-K_{h-t-1}\le1$,
+and $C$ is nonincreasing at every coefficient rank at least $h$.
+At the first source read $j=h-u-\alpha$, symmetry and LC of $E$
+give $E_j\ge E_{j-1}$: indeed
+$j\le h-u-1\le(h+u)/2$ when $h<3u-1$.
+Thus the actual first difference in (2) is at most
+$1-1-(E_j-E_{j-1})\le0$. Every subsequent positive-part difference
+is nonpositive by C monotonicity and source LR. This proves (1),
+with exact boundary and formal checks recorded below. The $u=0$ tail has only
+its possible numerator unit at $W$ and is immediate.
+
+\paragraph{Every fixed binary count has a finite late-C entrance.}
+Combining (1) with the registered $u\ge h-1$ theorem leaves only
+\[
+ u+2\le h\le3u-2,\qquad\max V\le2u-1.               \tag{3}
+\]
+Every remaining word also has $r\le\lfloor h/2\rfloor$.
+For each it suffices to test
+$1\le\alpha\le\lfloor(u+h)/2\rfloor+1$.
+The last padding represents every larger one for late C: each
+positive symmetric C row has centre at most $(3u-4+h)/2$;
+the proper signed numerator is supported through physical $W$;
+in (3) that row bound is at least $W+1$ after shifting. At
+$\alpha=\lfloor(u+h)/2\rfloor+1$ the initial-ones source first
+appears strictly AFTER this entire possible first-D-mode range.
+All ordinary/cumulative reads of a late comparison before that
+mode are identical for every larger padding. After it, D is
+nonincreasing and C is immediate.
+This is a finite entrance for LATE C at EACH fixed $u$, not a
+claim that all its finite entrances have been checked for all $u$.
+
+\paragraph{The established weight32 theorem closes every $u\le7$.}
+In (3), $u\le7$ gives $h\le19$ and
+$W=h+r\le h+\lfloor h/2\rfloor\le28<32$.
+The registered COMPLETE C theorem for EVERY nonbinary tail of weight
+at most 32 already handles all these words, with unbounded binary
+counts and padding. Thus (1), the degree-boundary theorem and that
+old finite-weight theorem proves ALL actual late C for EVERY
+$0\le u\le7$, with no new finite host tests.
+
+At $u=8$, (3) has $h\le22$ and $W\le33$.
+The ONLY tail not already covered by weight32 is $V=3^{11}$,
+$h=22,W=33$. In its INFINITE-initial-ones actual derivative,
+the first two actual tail coefficients are EXACTLY
+\[
+                 D_W=5109250>5076760=D_{W+1}.
+\]
+Actual positive-D unimodality implies that this entire infinite
+tail is nonincreasing. The registered same-word initial-ones density
+order $D^\alpha/D^\infty$ is nonincreasing, so EVERY finite padding
+has a nonincreasing tail too. Thus ONE independently reconstructed
+integer edge, with positive margin 32490, closes all $u=8$.
+No finite-padding search substitutes for that unbounded density proof.
+The old five-profile/eighty-host diagnostic of the weaker $h\ge3u$
+cone had no current C comparisons at all: all modes preceded $W+1$.
+The sharper row decomposition proves four of those profiles directly.
+
+For historical scale, the WEAKER $h\ge3u$ cone plus weight32 left 225 tails/4025 clamped hosts
+at $u=9$; 1818/35751 at $u=10$; 5481/116439 at $u=11$;
+11903/271865 at $u=12$; 22915/561505 at $u=13$.
+These larger finite entrances have NOT been claimed checked.
+The short-count late-D LC theorem can reduce their verification
+to an ordinary/cumulative boundary seed if that stronger seed is
+proved. A random finite scan of 20000 below-degree profiles had
+4170 increasing boundary pairs and no failure of
+\[
+ F_W D_W\ge F_{W-1}D_{W+1},\qquad
+ G_kD_W\ge G_{k-1}D_{W+1}\quad(1\le k\le W).
+\]
+These strong boundary seeds remain a proposed unbounded analytic
+target, not a theorem or a substitute for literal C tests.
+
+Earlier actual AND reference C at $N\le W$, general C/A2 and ORIGINAL
+unamplified coefficient UI remain OPEN. No original numerical
+least-counterexample bound is upgraded by these late-C reductions.
+
+\paragraph{Verification and actual scope.}
+The registration is \texttt{automatic\_late\_C\_cones\_verification.json}.
+Six \texttt{AutomaticLateC.lean} reports certify the scalar row,
+degree, source, previous-unit and weight/profile geometry.
+\texttt{AutomaticLateCInfiniteEdge.lean} recomputes BOTH exact
+coefficient values by finite Nat.choose double sums for $[3]^{11}$
+and the eight binary rows, and certifies their strict comparison
+by ordinary kernel reduction. A separate WEIGHT grammar identifies
+the sole exceptional profile, and independent literal positive
+suffix-box sums agree with a third trinomial/binomial reconstruction.
+Padding sixteen first changes the signed derivative at rank 36,
+so both reads 33 and 34 are precisely the infinite-padding values.
+EVERY finite padding is handled by the registered unbounded same-word
+relative-density theorem, not by the sixteen QA hosts.
+
+Every increasing arm with at most NINE non-one parts has binary
+count at most eight unless its nonbinary tail is empty (already
+covered by complete binary C). Thus all its late C comparisons
+at $N\ge W+1$ hold too. This does not change the first unresolved
+general-C count six: earlier actual/reference ranks remain open.
+Any remaining ACTUAL late C failure must have $u\ge9$,
+$u+2\le h\le3u-2$, $\max V\le2u-1$ and $W>32$,
+and admits the stated finite padding clamp.
+The source LR/centre/convolution, actual tail, infinite UI/density
+and old weight32-family assemblies are written proofs, not an
+end-to-end Lean theorem of arbitrary compositions. Earlier actual
+and reference C, general C/A2 and ORIGINAL general unamplified
+coefficient UI remain OPEN. No original numerical bound is upgraded.

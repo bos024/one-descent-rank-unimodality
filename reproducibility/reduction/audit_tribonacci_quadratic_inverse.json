@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_QA_PASS_FULL_COUNT_TRIBONACCI_QUADRATIC_INVERSE_UNDER_PROOF_AUDIT",
+  "counts": {
+    "positive_LC_prefix_hosts": 882,
+    "retained_coefficient_reads": 109505,
+    "LC_minor_reads": 107745,
+    "exact_full_two_count_terminal_norm_identities": 883,
+    "exact_single_exception_controls": 1,
+    "uniform_terminal_quarter_box_hosts": 710
+  },
+  "state_sha256": "ce97efd3f961ff4898028bace840f2d82861acd64e617a45fa9a03aad5b9cfb4",
+  "seconds": 3.3910000000032596,
+  "scope": "QAONLY:writtenunboundedtwo-countnorm+complete188entrance/125Bernsteincoefficientproof. PositiveGLOBALordinaryLCtruncatedthroughD-2exceptu0r2. LastTWOactualquotientcoefficientsNOTassertedpositive. ActualcompositionC/A2/originalUIstillOPEN."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "EXACT_QA_PASS_INFINITE_THREE_FOUR_REFERENCE_COMPLETE_C_AND_GLOBAL_CDF_LC",
+  "counts": {
+    "GLOBALordinary_CDF_LC_minors": 34299,
+    "FULLC_ALLcurrent_ALLshift_QA_reads": 6159538,
+    "EXACTwhole_homogeneous_tail_reads": 10230,
+    "EXACTconstant_CDF_tail_reads": 10340,
+    "RETAINEDone_unit_CDF_boundary_reads": 110,
+    "ordinary_entire_physical_head_minors": 17767,
+    "EXACTfour_corner_signed_polynomial_identities": 432,
+    "scaled_ternary_ALLtail_unit_minor_QA": 14240,
+    "EXACTwhole_ternary_residual_norm_reads": 450
+  },
+  "state_sha256": "65c47ca916fc4000b861e718072a4fe73655d9a57eebf3cc49a7b18205f42fa1",
+  "seconds": 1.5469999999913853,
+  "scope": "ReferenceALLs theoremusesWHOLEordinaryheadheredity,COMPLETE651minorfixedentrance,ALLfourcorners,WHOLEscaleddecayandCDF/CjoinsincludingEXTRAUNITatN=W. QAisnotanunboundedpremise. Actualfinite3countandgeneraloriginal/C/A2remainOPEN."
+}

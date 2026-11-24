@@ -1,0 +1,10 @@
+'TriangularSourceLargeAppend.small_multiplicity_profile_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TriangularSourceLargeAppend.large_profile_induction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TriangularSourceLargeAppend.two_triangular_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TriangularSourceLargeAppend.exceptional_multiplicity_budgets' does not depend on any axioms
+'TriangularSourceLargeAppend.finite_two_terms_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TriangularSourceLargeAppend.finite_three_terms_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TriangularSourceLargeAppend.preserving_dent_distinct_birth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TriangularSourceLargeAppend.tied_two_and_three_indices' depends on axioms: [propext, Classical.choice, Quot.sound]

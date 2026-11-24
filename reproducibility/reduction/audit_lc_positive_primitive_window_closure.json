@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXACT_QA_WRITTEN_NONSYMMETRIC_WINDOW_AND_UNPERTURBED_QUOTIENT_PRIMITIVE_LC",
+  "counts": {
+    "exact_nonsymmetric_uniform_window_primitive_minors": 148508,
+    "nonsymmetric_window_contexts": 7000,
+    "exact_weighted_binary_primitive_minors": 60104,
+    "weighted_binary_contexts": 3500,
+    "exact_ordinary_LC_quotient_product_minors": 466837,
+    "exact_quotient_product_positive_primitive_minors": 227042,
+    "CI_quotient_product_contexts": 6600,
+    "exact_non_golden_rational_quotient_primitive_minors": 47264,
+    "arbitrary_rational_q_CI_quotient_contexts": 1600
+  },
+  "state_sha256": "fa079a69da7f88013f85d625bbc0ae97c4ea46cd0836c55f5a86353f176e68be",
+  "seconds": 3.2340000000003783,
+  "scope": "Finite exact QA of the written unbounded generic window theorem and unperturbed Q_u CI products. No actual spectral perturbation removed, no actual alpha1/2 entrance, no general C/A2/original UI conclusion."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_COMPLETE_INDEPENDENT_STRICT_PEAK_TC_JET_RECONSTRUCTION",
+  "N": 39,
+  "slope_cap": 35,
+  "counts": {
+    "independent_states": 102630,
+    "independent_appends": 1623669,
+    "independent_eligible_appends": 1622187,
+    "independent_necessary_guard_comparisons": 18321840,
+    "independent_slope_prunings": 1509343
+  },
+  "reachable_state_sha256": "b268f16da285ed70ee0a0b7b40729a9eebe41e90429cc2523febfc9aa8a3afec",
+  "exact_state_set_equality": true,
+  "scope": "Independently rebuilds ALL N39/height35 source jets and all peak-crossing necessary guards. Unbounded strictness/rank reduction and actual coverage are the written proof; original UI remains OPEN.",
+  "seconds": 12.311999999990803
+}

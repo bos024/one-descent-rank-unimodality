@@ -1,0 +1,203 @@
+{
+  "status": "PASS_ALL_BINARY_FOUR_ACTUAL_COMPLETE_C_SHARP_ORDINARY_CLASSIFICATION_AND_ORIGINAL_FAMILY",
+  "new_scoped_reports": 13,
+  "kernels": {
+    "StationaryFourCompleteC": {
+      "StationaryFourCompleteC.exact_quartic_seven_step_minor_recurrence": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.seven_step_growth_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.whole_seven_step_absolute_majorant": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.three_actual_left_ordinary_minors": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.all_binary_seed_three_startup_budgets": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.reference_three_startup_budgets": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.analytic_first_degree_crossing_and_padding_clamp": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.quartic_Fibonacci_tail_norm_and_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.entire_terminal_power_potential": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.both_terminal_ordinary_inverse_corners": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StationaryFourCompleteC.whole_quartic_reference_tail_polynomial_identity": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    "StationaryFourFieldBase": {
+      "StationaryFourFieldBase.complete_quartic_majorant_and_fixed_eight_reference_entrance": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "StationaryFourOrdinaryBase": {
+      "StationaryFourOrdinaryBase.complete_fixed_eight_small_binary_ordinary_entrance": [
+        "propext"
+      ]
+    }
+  },
+  "actual_C": "PROVED EVERYactual1alpha2u4r,ALLalpha>=1/u,r>=0 FULLC EVERYcurrent/EVERYshift. BOTHcounts/padding/ranksUNBOUNDED. NOunboundeddiagonalpremise.",
+  "reference": "PROVED R_r=B4r+S4rH2 FULLC ALLr;forALLr>=8 HphiLCcentresr3..W-1,ordinaryRLCr3..W,firstlateordinaryminorW1=-5^r. ALLpositiveH2..W/WHOLEalternatingtailKEPT.",
+  "seven_step": "EXACTquarticminorM_n7=-M_n+2M_n1-3M_n2+4M_n3-M_n5;absoluteweightedblocknorm4417475/4782969<1atgrowth9/5. WHOLEmajorantinductionfromSEVENentrances,forhcentres2..8/Kcentres7..13;growthALLranksfromFOURpositive4recurrenceseeds. NOspectral/conjugateassumption.",
+  "startup_corners": "THREEleftminorspaidbyB-4a-1/C-4B-1/D-4C-1withACTUALsuccessorsnonnegative. Referenceheadseed1,b>=1,c>=2,d>=4,newr>=9. ActualbinaryseedALLpaddinga>=1,b>=2a,c>=4a-1,d>=8a-3,newr>=8. TerminalTWOcornersuseONLYlast4inverseCIvalues,NOTglobalquotientLC;(r2)*(3-4q)^r<=1ALLr>=4pluscompleteexactcorneridentities.",
+  "analytic_seed": "ALLu>=21,r0=floor(u/3)+1>=8. FIRSTactual/referencebinarylossu+r0+2>=W-1;ordinaryA..W-3protectedandcentreW-2protectedORsuccessorLOWEREDimproves. OLDuniversalactualordinaryLCfromW-1(u>=5,h3r0>u)joinswithNOgap. Append4ordinaryheredityALLr>=r0. Denseu>=3r-3referenceCthroughW-1+OLDactualCfromW.",
+  "complete_entrance": "COMPLETE352hosts:u0..20/r8/alpha1..floor((u+24)/2),8554ordinaryPRE_FIRSTDmode minors/2815uniqueintegers/15chunksONEaggregate. ALLlargerpaddingexactprefixthroughB=floor((3u+40)/2),Dmode<=B;automaticordinaryLCafterDmode. PLUSONEfieldaggregate92EXACTscalarscoversallh/Kmajorant/growthseeds+H8positive10..32/all21LCminors11..31. ALLindependentlyreconstructed.",
+  "sharp_classification": "PROVEDALLr>=8/u>=1/alpha:ENTIREordinaryFLCfromr3 IFFu<=3r;u0LCfromr2. Boundaryu3rreferenceprotectedthroughW1andOLDsurplusordinaryentryW1. ALLu>=3r+1actualminorW1=-5^r. WHOLEC_r=(2-z)^r+Q2J_r,degreeJ<=W-2,quadraticnorm5andFibonacciCassini. NegativeordinaryminorNOTaC/UIcounter.",
+  "original_family": "PROVEDORIGINALunamplifiedCORE/BOTHrelativesALLstrictpeaks,FULLpairA2andENTIREpositive-sourceconeforclassA5 UNIONALLbinary/fourarms,withONEarbitraryheavierappendalsoallowed. UsesPROVEDkappa5Ccriterion;NOextraformalreport. Onearmmayhavemanythrees/oppositemanyfours. WITHINonearmMIXED3and4NOTasserted.",
+  "formal_scope": "ELEVENNEWcleanstandard-axiomGENERICreports+TWOcompleteentranceaggregates=13countedONCE. Actualreference/CI/finitehost/source/LCconvolution/old-resourceandallu/r/originalassemblyWRITTEN,NOTendtoendLeancompositions. ONLYcomplete352host/92scalarentrancesarefiniteproofpremises;parameterQAdiagnosticsonly.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "mixed_three_four_single_arm_C": "OPEN",
+  "counts": {
+    "COMPLETE_independent_fixed_eight_actual_hosts": 352,
+    "COMPLETE_independent_actual_ordinary_PRE_Dmode_minors": 8554,
+    "COMPLETE_independent_field_majorant_and_reference_scalars": 92,
+    "independent_exact_large_padding_prefix_clamps": 21,
+    "independent_ENTIRE_first_degree_crossing_ordinary_seed_minors": 45942,
+    "independent_all_large_binary_analytic_seed_QA_hosts": 219,
+    "independent_actual_ALL_current_shift_payments": 275767,
+    "independent_actual_logical_shifts": 26261956,
+    "independent_all_binary_four_count_suffix_box_hosts": 2190,
+    "independent_ENTIRE_actual_ordinary_LC_minors": 195916,
+    "independent_EXACT_negative_five_power_controls": 172,
+    "independent_TRUE_GREEDY_enlarged_ORIGINAL_ideals": 72,
+    "independent_TRUE_GREEDY_ORIGINAL_rank_counts": 3526
+  },
+  "primary_QA": {
+    "reference_ALL_current_allshift_prefix_payments": 14742,
+    "reference_logical_shift_reads": 1703133,
+    "reference_unbounded_count_QA_hosts": 81,
+    "reference_physical_H_LC_minors": 9417,
+    "reference_ordinary_head_minors": 9490,
+    "actual_ALL_binary_four_count_hosts": 3500,
+    "actual_ALL_current_allshift_prefix_payments": 577679,
+    "actual_logical_shift_reads": 80339627,
+    "actual_ENTIRE_ordinary_LC_tail_minors": 424777,
+    "actual_EXACT_negative_five_power_controls": 305,
+    "actual_FULL_A2_pairs": 420,
+    "actual_Q_guarded_tail_edges": 84133,
+    "ENTIRE_signed_source_windows": 2095,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 419,
+    "enlarged_A5_with_B4_ORIGINAL_cores": 420,
+    "enlarged_A5_with_B4_BOTH_relative_polynomials": 840,
+    "enlarged_A5_with_B4_coefficient_comparisons": 512202
+  },
+  "independent_state_sha256": "74785593486109516593ce340164e02666ead4386aa6e8ec23dda234fcf265be",
+  "seconds": 2.5780000000013388,
+  "local_files": [
+    "stationary_four_complete_C_proof.tex",
+    "StationaryFourCompleteC.lean",
+    "StationaryFourCompleteC.log",
+    "StationaryFourFieldBase.lean",
+    "StationaryFourFieldBase.log",
+    "StationaryFourOrdinaryBase.lean",
+    "StationaryFourOrdinaryBase.log",
+    "build_stationary_four_complete_C_bases.py",
+    "stationary_four_complete_C_base_data.json",
+    "audit_stationary_four_complete_C.py",
+    "audit_stationary_four_complete_C.json",
+    "verify_stationary_four_complete_C.py"
+  ],
+  "dependency_files": [
+    "universal_renewal_rounding_verification.json",
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex",
+    "verify_universal_renewal_rounding.py",
+    "universal_physical_boundary_C_verification.json",
+    "sharp_previous_ordinary_LC_verification.json",
+    "sharp_previous_ordinary_LC_proof.tex",
+    "universal_late_C_first_crossing_verification.json",
+    "surplus_ordinary_tail_LC_guard_refinement.tex",
+    "relative_golden_head_dominant_C_verification.json",
+    "relative_golden_head_dominant_C_proof.tex",
+    "arbitrary_Fibonacci_tail_late_C_verification.json",
+    "multitail_binary_prefix_finite_principle_verification.json",
+    "ordinary_tail_to_complete_C_proof.tex",
+    "ordinary_tail_to_complete_C_verification.json",
+    "sharpened_forward_derivative_centers.tex",
+    "prefix_tp2.tex",
+    "formal_arm_extensions.tex",
+    "renewal_root_primitive_cut_verification.json",
+    "renewal_root_positive_primitive_cut_proof.tex",
+    "certified_kappa_five_original_family_verification.json",
+    "certified_kappa_five_original_family_refinement.tex",
+    "verify_subdegree_CI_entrance.py",
+    "verify_ternary_forward_inverse.py",
+    "verify_binary_ternary_A2_original_family.py",
+    "audit_binary_ternary_A2_original_family.py"
+  ],
+  "sha256": {
+    "stationary_four_complete_C_proof.tex": "fac902f5aa6dd33ae376246f197008a1d35003e94aa30e47017e14e9f999ca57",
+    "StationaryFourCompleteC.lean": "89a9810edde2ed22730945724f3fed4c433112e5a351defea009893b78e67467",
+    "StationaryFourCompleteC.log": "59da14bd969edb00ccaae0fc8ecb9a3979e0295d268af8acda34f435ac1633e7",
+    "StationaryFourFieldBase.lean": "52bb3b983cbeb1a23b55f53267961c62e8307b3eaadf4424486ffef66edaa11a",
+    "StationaryFourFieldBase.log": "5aaf257e1426cdb437673f0a2091086351e211ceb403e13e0ec891c024b2433d",
+    "StationaryFourOrdinaryBase.lean": "a5ed81086a17501edc9a5ae6bbf0d542a72e3ab90052986f338acc5dc1fd8cc0",
+    "StationaryFourOrdinaryBase.log": "fbdad77e1f091a2914653a2b15639e10f46e978ecda345a024f470a4419e40b7",
+    "build_stationary_four_complete_C_bases.py": "c52ee1cdf3d4d134ee89ccbc0673f8e3e345f4a004fb761e80e2f7b868952748",
+    "stationary_four_complete_C_base_data.json": "4de1cabe1c867d431a6c71db72ab456a05b438598ce49271eadaa09da1a147b6",
+    "audit_stationary_four_complete_C.py": "021ca5451f9a586c3f84225a1137b6dce2dedbd1349cdc91b8d1e086fbb81b03",
+    "audit_stationary_four_complete_C.json": "ddd808eb312538e6024a0a16be51e74240a430c8ec0a6a01c2d78063f1131944",
+    "verify_stationary_four_complete_C.py": "0bc04a523edcd180b704a895c2214b62429edca5f6a65caedb300c817caa7582",
+    "universal_renewal_rounding_verification.json": "a5d423e6a8b856308d0e916ff3645b152def0d2aaec1322e3c8151b3a7aa8aba",
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex": "2e919bb31820e95bbcdd4bf30161d4fc2d494b0a0cb7a9c7fd83745e0e6639de",
+    "verify_universal_renewal_rounding.py": "deb91beecfe98ad9033fb99103c30612934202d428edbc73eb839b745d332c0e",
+    "universal_physical_boundary_C_verification.json": "51b668dbfac37b85c69bdccaf1b542fb3a11497ceb96a4aa1fed052419579fb0",
+    "sharp_previous_ordinary_LC_verification.json": "1efe9d02762d7bf2f0d24ec733acdb0e42241044773815b322b8d71f47d2206b",
+    "sharp_previous_ordinary_LC_proof.tex": "ed24504c0c2c3110178d277d2dec27c899b9327f94b5b58de4e3e43ec52adc30",
+    "universal_late_C_first_crossing_verification.json": "296b1a464749dd0b51565af2f194fb512f4f2d85122152a3c5067f45469ad548",
+    "surplus_ordinary_tail_LC_guard_refinement.tex": "caffb8a8ac6e99a705d79a5b124586dd50dffd0cd05fcfb7ce0e5340620b9020",
+    "relative_golden_head_dominant_C_verification.json": "d46f4ac30d9e4169e1d7355ccf8b24c001e110994f600bce48391ed880cdd4e8",
+    "relative_golden_head_dominant_C_proof.tex": "b5c5b3c1348f6106d6ca74cda28e07df6a60a6c57dc33de10d4d49b128a43e62",
+    "arbitrary_Fibonacci_tail_late_C_verification.json": "e65ed88ed8b85b33473f5b086156a6cc9be24c119cd5ee99acecd377d6fa729d",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "ordinary_tail_to_complete_C_proof.tex": "a39333b1e5da9abddb76ed3832a4d074eb047d4bf8a5b51983dfb8d5e347ee2a",
+    "ordinary_tail_to_complete_C_verification.json": "1c7d690723e8640a87ccea1684155ec680fc4e83f102cba11590273f74ed7b85",
+    "sharpened_forward_derivative_centers.tex": "4b3866335d12280de1bceb86a0e97b6c18eb1463dbc2da56b6a1adbecb589f87",
+    "prefix_tp2.tex": "e48c4f5f63a28bab3a6b3b0e29ca59f37aa618be289356b787544840fdcf0530",
+    "formal_arm_extensions.tex": "d58c5585836f0315bcf8d6d1b9ce63af28663af1149f46b5db2b8228a7ab01e8",
+    "renewal_root_primitive_cut_verification.json": "ae37e6cf269b093ce66f8a1b263992f8b95515cf546b4a2c44d12fb4a859ee9c",
+    "renewal_root_positive_primitive_cut_proof.tex": "c6a076dcce959b3e3c621c4f9c1c4d6dd9c74eb289df7673027bde1ca2b7cda1",
+    "certified_kappa_five_original_family_verification.json": "b3eb7f4f61f77e799e953671871082e264f5180c1a52222b4f5341cfa209e810",
+    "certified_kappa_five_original_family_refinement.tex": "3ad5802c90276c749b28a95b37636274343f36933115acda497a39f94321b3b2",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "verify_ternary_forward_inverse.py": "f6e3c8e04b274830d3795d3f366b87d25184bd83cbcf2f9027ef71fa2cfd68a5",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505",
+    "audit_binary_ternary_A2_original_family.py": "8d412daecc7d437d0ee570f86b2cc1c88c2ba7b3ca71ad01311faf6386d2f940"
+  }
+}

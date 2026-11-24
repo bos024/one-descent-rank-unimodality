@@ -1,0 +1,101 @@
+{
+  "status": "PASS_UNBOUNDED_FOUR_SUBDEGREE_ALL_PADDING_ACTUAL_LATE_C",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "FourSubdegreeCEntrance": {
+      "differential_product_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "interval_differential_coefficients": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "loss_growth_seed_cone": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "homogeneous_reference_ratio": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "earliest_ordinary_seed_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "earliest_ordinary_seed_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "middle_ordinary_seed_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "middle_ordinary_seed_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "last_ordinary_seed_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "7312e25aa4bddafb1bc54362c4095041740b94aa8f04a08fe7d2731e1e9c1b43",
+  "QA": {
+    "actual_CI_factor_count_growth_margins": 118716,
+    "exact_prefix_minimum_all_shift_C_payments": 964659,
+    "logical_shift_coverage": 227862033,
+    "literal_all_shift_C_products": 1379705,
+    "actual_hosts": 6547,
+    "CI_profiles": 936,
+    "all_prefix_strong_C_seed_comparisons": 459044,
+    "strictly_growing_boundary_hosts": 6273,
+    "unbounded_loss_and_three_seed_instances": 5922
+  },
+  "independent_counts": {
+    "independent_CI_count_source_growth_margins": 12528,
+    "independent_all_shift_C_minimum_payments": 93216,
+    "independent_literal_C_products": 455111,
+    "independent_actual_hosts": 1380,
+    "independent_CI_profiles": 230,
+    "independent_all_prefix_boundary_seeds": 44558,
+    "independent_three_ordinary_seed_instances": 1020
+  },
+  "independent_state_sha256": "752f8eac915693fc0c841a2ac926646001174a5f7a3e26010089bb506fcd7e2c",
+  "new_finite_entrance_certificates": 0,
+  "CI_count_growth": "PROVED EVERY actual CI-binomial E=(1+z)^u prod[t], t>=3, factorcountw=u+r: (1+z)Eprime-wE is coefficientwiseNONNEGATIVE. ANY nonnegative multiplicative formal power series N preserves this cone. Thus ENTIRE finite-binary+initial-ones loss L=E*(H2+z^(alpha-1)) satisfies jLj>=(w-j+1)Lprev. Replacing u by w REQUIRES actual interval factors; not asserted for arbitrary LC numerators.",
+  "reference_ratio": "PROVED EVERY reference with W+r>=8 has Dref(W+1)>=3Dref(W)/2. Old whole-word norm gives t<=q^(W+r-2)<=q6=5-8q, y/x=(phi-qt)/(1+t). Complete scalar ratio implication kernel checked; unbounded spectral assembly written. Also x>=Fib(W-1)>=2w+3 at W=w+4,w>=11.",
+  "entrance": "PROVED ALL w>=11: first four losses yield e=1+l0,S=l0+l1,b=l2,c=l3 with S>=e,b>=2S,b>=2e+3,c>=3b,x>=max(S,2e). Three EXACT ordinary seeds pay successive F reads W-2/W-1/W, INCLUDING reference F(W-2)=x-1. Earliest reference F(W-3)<=y-x+1 uses NONNEGATIVE numerator B(W-1), not false homogeneous extrapolation. Growing-pair ratio<phi, unchanged G throughW-3, universal late-D-LC and integration pay every later C read.",
+  "actual": "PROVED EVERY sorted1^alpha2^uV, h=u+4, ALLcapacities/counts/paddings,EVERYshift>=3 at EVERYN>=W+1. w<11 hasW<=14 and uses OLD weight32 complete-C theorem. NO NEW FINITE ENTRANCE OR EXCEPTION CERTIFICATE.",
+  "threshold": "ALL actual late C NOW u>=h-4, allparametersunbounded; oldu>=h-3 plusNEW h=u+4.",
+  "formal_scope": "NINE new scoped standard-axiom kernel reports:interval/product differential identities,complete loss seed cone,reference ratio,and all three seed identities/payments. Coefficientwise product/series, Fibonacci bound, old whole-word norm, actual source/reference and integration assemblies WRITTEN, not end-to-end Lean composition theorem. ALL finite profiles are QA ONLY.",
+  "remaining": "Potential actual LATE-C failures now requireu>=9,u+5<=h<=3u-2,maxcap<=2u-1,W>32. Earlier actual/reference C, general C/A2/original UI remain OPEN; first original unresolved full-C nonone count6 unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_threshold": "u>=h-4",
+  "sha256": {
+    "four_subdegree_C_entrance_proof.tex": "e441b6a625b8f1b150ffd7ee093da6ed023863fc685317340276b6dc847add74",
+    "FourSubdegreeCEntrance.lean": "8e493dc51f28f4e9601d4e83bab57ac2ff925308331bb561280ba30e23dbc54f",
+    "FourSubdegreeCEntrance.log": "9ef85ab2b36b90515f712117f1b14a506e67b345681d34114bdc271f7b81a710",
+    "audit_four_subdegree_C_entrance.py": "97d8ec98e34615fe994b7b36839f46afb9584176fa1e29dcada97a97b67dcf4b",
+    "audit_four_subdegree_C_entrance.json": "a61cfb905f3b9e88399085abdfa58d52a986fa9266c7a03bd7ea900b8670cf73",
+    "verify_four_subdegree_C_entrance.py": "05c8f5ae252438e4aad1d535982458903169daa858c95a399d65d706ac82abb9",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338",
+    "triple_subdegree_C_entrance_verification.json": "9bead3ca6b964c931e5a0bb6a1ece20f8b965a3e690e30dc154c27326d10f392",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "automatic_late_C_cones_verification.json": "74c5749c54fe6ba4e885c40e7598ea28e0e8c4defe117d24f97021d0a0250abd",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7"
+  }
+}

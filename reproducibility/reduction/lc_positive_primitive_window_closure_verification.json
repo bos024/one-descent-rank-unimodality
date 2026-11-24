@@ -1,0 +1,45 @@
+{
+  "status": "PASS_UNBOUNDED_NONSYMMETRIC_WINDOW_AND_UNPERTURBED_QUOTIENT_POSITIVE_PRIMITIVE_LC",
+  "new_scoped_reports": 2,
+  "kernels": {
+    "decreasing_lower_frechet_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_lower_frechet_LC_clipping": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "generic": "For EVERY finite nonnegative globally LC sequence a with interval support starting at zero and a0>0, if its positive first difference is LC, then BOTH properties persist under EVERY uniform window [t], t>=1, and EVERY positive two-term weighted kernel c0+c1*z. NO symmetry assumption. Proof uses lower Frechet positive-part LC for two bounded nonincreasing LC inputs, the LC tail sum of old positive differences, exact mixed-window identity and BOTH joining centres.",
+  "quotient": "For EVERY real 0<q<1, EVERY u>=0 and EVERY interval product L (no degree/count/capacity restriction), BOTH LQ_u and its positive first difference are LC, where Q_u=trunc_(<=u)(1+z)^u/(1+qz). The same holds for LQ_u(2+z) and LQ_u(1+z)^2. Q_u ULC follows the prior finite-order convolution/leading-lowering induction; lowering its final already-nonincreasing coefficient leaves all positive differences unchanged. Then apply the new generic closure per interval.",
+  "application": "This proves the UNPERTURBED primitive LC needed for finite-padding alpha1/2 kernels. The ACTUAL alternating spectral atom is retained in the open workbench, so no actual alpha1/2 entrance follows automatically. For alpha>=3, P_alpha=[alpha+1]+z^(alpha-1) is generally not LC and is not silently treated as CI.",
+  "formal_scope": "TWO NEW clean standard-axiom reports: complete real scalar Frechet payment; ENTIRE arbitrary-sequence clipped-LC composition including all zero cases. Written generic-window head/tail/terminal identification and Q_u ULC/primitive induction, not end-to-end actual-arm Lean formalization. Finite QA corroborates the unbounded proof and is not its substitute.",
+  "remaining": "Actual finite-padding alpha1..h single entrance, general actual C/A2 and ORIGINAL general unamplified UI remain OPEN. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "exact_nonsymmetric_uniform_window_primitive_minors": 148508,
+    "nonsymmetric_window_contexts": 7000,
+    "exact_weighted_binary_primitive_minors": 60104,
+    "weighted_binary_contexts": 3500,
+    "exact_ordinary_LC_quotient_product_minors": 466837,
+    "exact_quotient_product_positive_primitive_minors": 227042,
+    "CI_quotient_product_contexts": 6600,
+    "exact_non_golden_rational_quotient_primitive_minors": 47264,
+    "arbitrary_rational_q_CI_quotient_contexts": 1600
+  },
+  "state_sha256": "fa079a69da7f88013f85d625bbc0ae97c4ea46cd0836c55f5a86353f176e68be",
+  "sha256": {
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "LowerFrechetLC.lean": "2e3700a5d83dc3b3525e0e6f986b71444f769874d9dbdb23e3458dc010d76683",
+    "LowerFrechetLC.log": "ec5be5b82a49f78640df3baa529acca03ff41468940bfcbba89176246ade0c53",
+    "audit_lc_positive_primitive_window_closure.py": "8b74b167bd7f5c66948d22bb81f9ce0ca77f8c74c0ec55b810c23f241c96b083",
+    "audit_lc_positive_primitive_window_closure.json": "084dcf6bfef366659354673a89d8c4f5c2585fd850d990f4ef87b94dd2a9362f",
+    "verify_lc_positive_primitive_window_closure.py": "fb572b5ea61af94bacbc1235c2ee9e8ffe0e4f32b8a5a9cca8afd302394e5da9",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3"
+  }
+}

@@ -1,0 +1,16 @@
+'AllBinaryTernaryCompleteC.universal_binary_seed_two_ordinary_entrances' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AllBinaryTernaryCompleteC.unbounded_first_degree_crossing_seed_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AllBinaryTernaryCompleteC.exact_small_binary_fixed_six_padding_clamp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AllBinaryTernaryCompleteC.deficit_stationary_three_induction' depends on axioms: [propext, Quot.sound]
+'AllBinaryTernaryCompleteC.exhaustive_all_count_C_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllBinaryTernaryCompleteC.sharp_surplus_boundary_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AllBinaryTernaryCompleteC.whole_reference_binary_tail_polynomial_identity' depends on axioms: [propext, Quot.sound]
+'AllBinaryTernaryCompleteC.whole_even_fibonacci_Cassini' depends on axioms: [propext, Classical.choice, Quot.sound]

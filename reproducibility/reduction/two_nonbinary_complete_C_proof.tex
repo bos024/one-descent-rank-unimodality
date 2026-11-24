@@ -1,0 +1,139 @@
+\section{Complete C with arbitrary binary count and two arbitrary jumps}
+Let alpha>=1, u>=0, and 3<=L<=t. The actual sorted arm
+\[
+                            X=1^\alpha2^u(L,t)
+\]
+has COMPLETE C at EVERY current rank and EVERY shift>=3.
+All parameters are unbounded. Together with the older binary and
+one-jump theorems, this closes every arm with AT MOST TWO nonbinary
+factors, regardless of its TOTAL nonone count. It is a full-C result,
+not merely the universal tail from W=L+t.
+
+\paragraph{First prove the complete two-jump infinite-binary reference.}
+Let R^L=1+S_L H_2, H_2=(1-z-z^2)^(-1), and put
+H_j=R^L_j-phi R^L_(j-1), q=phi-1, psi=-q. Direct Fibonacci extraction gives
+\[
+ H_j=q+\psi^{j+1}\quad(2<=j<=L),\qquad
+ H_{L+m}=\psi^mH_L\quad(m>=0).
+\]
+Consequently H_j>=q² for 2<=j<=L and 0<H_L<1.
+Append the SORTED capacity t>=L. At a current n with
+t+3<=n<=t+L+1, its reference slopes satisfy the EXACT identity
+\[
+           \phi D'_{n-1}-D'_n=H_{n-t-1}-H_{n-1}>0.       \tag{1}
+\]
+The first index is in2..L; the second is at least L+2, so
+H_(n-1)<=q²H_L<q²<=H_(n-t-1). The reference cumulative golden
+margin, already proved for arbitrary nonbinary words, pays ALL C
+reads at these current ranks.
+The old one-jump complete C theorem and universal-prefix transfer
+pay n<=t+4 by finite-prefix realization. The old arbitrary-reference
+theorem pays n>=W-1=L+t-1. These three ranges overlap and cover
+ALL n. Thus every SORTED two-jump infinite-binary reference has
+complete C. No actual density comparison is used here.
+
+\paragraph{The actual unpaid region and the correct first defect.}
+Write Z=1^alpha2^uL, with ordinary F, cumulative G and first D mode ell.
+Z has complete C by the older one-jump theorem (u>=1), or the
+older at-most-five-nonone theorem (u=0). If u>=1 its binary prefix
+has first missing weight THREE, hence kappa(Z)=min(L+1,4)=4.
+For u=0 the value is three. In BOTH cases the registered conditional
+prefix/mode transfer pays n<=t+4 and every possible failure has n<=ell.
+Do NOT replace kappa by a binary-count-dependent first loss relative
+to H_2: these are different defects.
+
+The old general center theorem gives 2ell<=3u+L+2, including u=0.
+The new universal actual tail theorem pays n>=W=L+t.
+If L<=4 the prefix already reaches W. If L>=5 and u<=4,
+the center inequality gives ell<=t+4; no unpaid rank remains.
+Thus only u>=5 and
+\[
+                     t+4<n<W,\qquad n<=\ell              \tag{2}
+\]
+require work. Only a strictly increasing positive new D pair matters.
+Writing s=n-t, its exact pair and ratio are
+\[
+ A=F_{n-2}-F_{s-2}>0,\qquad
+ B=F_{n-1}-F_{s-1}>A,\qquad \mu=B/A>1.                  \tag{3}
+\]
+Ordinary UI/strict positive-slope support place all intervening
+reads inside the old positive ordinary prefix.
+
+\paragraph{Surplus first jump: u>=L-1.}
+The recent surplus ordinary theorem gives F LC from center u+2,
+since its CI degree is L-1 and u+1>=6. Its whole prefix through
+u+2 agrees with R^L. If n<=u+3, the NEW actual prefix through n
+agrees with its two-jump infinite-binary reference and the preceding
+complete reference theorem applies directly.
+
+Otherwise n>=u+4. By (2), 4<=s-1<=L-2<=u+2. Thus
+\[
+ F_{s-1}>\phi F_{s-2},\qquad
+ F_{n-1}<\phi F_{n-2}.
+\]
+The first is a protected reference ordinary-golden read; the second
+is the actual ordinary golden ceiling, as n-1>=max(L,u+3).
+Endpoint subtraction in (3) gives
+\[
+                         \mu<F_{n-1}/F_{n-2}<\phi.       \tag{4}
+\]
+Every old G gap through u+2 has its protected reference margin q².
+Old ordinary LC from u+2 makes every later ordinary ratio up to
+n-1 at least the right ratio in (4). Integrating these nonnegative
+ordinary residuals extends G_k-mu G_(k-1)>=q² through n-2.
+
+\paragraph{Deficit first jump: u<L-1.}
+Here the recent sharp deficit ordinary theorem gives F LC from L-1.
+For every1<=j<=L one has F_j=G_binary(j-1), and the FORWARD
+binary cumulative is globally LC by its exact Fibonacci seed and
+ordinary-tail integration. Thus F is LC at EVERY center j>=2:
+the cumulative-prefix and ordinary-tail ranges overlap at L-1.
+This global ordinary LC assertion is limited to the present one-jump
+deficit class; it is false for general surplus one-jump arms.
+
+The left ordinary ratio in (3) is now at least the right ratio by
+global F LC from2. Endpoint subtraction gives
+\[
+                      \mu<=F_{n-1}/F_{n-2}<\phi,          \tag{5}
+\]
+where the ceiling applies because n-1>=t+4>=max(L,u+3).
+All earlier F ratios from index2 are at least mu. Start with
+G_1-mu G_0=2-mu>q² and integrate these nonnegative ordinary
+residuals. This proves EVERY needed old G gap is at least q².
+
+\paragraph{The affine atom closes every remaining actual C read.}
+In either branch all old gaps needed through n-2 are >=q² and
+1<mu<phi. The exact new cumulative is
+G'_k=1+sum_(i=1..t)G_(k-i), with zero extension.
+A head window contains the rank-zero atom one, paying the negative
+1-mu. A tail window contains t>=3 positive gaps, and
+tq²-(mu-1)>=q² because2q²>=q. Thus every new G gap through
+n-1 is >=q². In particular ALL C reads k=n-R, R>=3, are paid.
+This excludes every residual comparison (2), proving complete C.
+There are NO new finite entrance cases.
+
+\paragraph{Consequences inside the original problem.}
+The registered C-to-clipped-R theorem gives unimodality of the
+ordinary PRODUCT coefficient tilt (([z^n]F_XF_Y)/2^n)_n against
+ANY opposite actual arm Y. The opposite's capacities/count/padding
+are unrestricted. The registered C-to-coupled-S theorem applies at
+ALL overlap depths when this is the qualifying owner, both ordinary
+factors strictly forward rise, and the current reverse source is
+nonnegative, retaining the usual physical guards and OLD weighted-A2
+HEAD premise for S. The proper-zero-head theorem retains its own
+count and physical hypotheses. No unrestricted weighted-positive-
+difference A2 or original coefficient UI follows merely from C.
+
+Nine scoped Lean reports check all-head and decaying-tail golden
+bounds, the exact subtraction payment, the CORRECT first-missing
+kernel, ALL-small-u mode elimination, both actual residual read
+guards, the full ordinary prefix/tail join and the COMPLETE
+natural-index C assembly. Actual word/reference/Fibonacci/ordinary/
+cumulative/window/mode identifications are written with registered
+inputs, not an end-to-end Lean composition-ideal theorem.
+All finite checks are independent QA ONLY.
+
+General full C with three or more nonbinary factors, full A2 and
+original unamplified one-descent coefficient UI remain OPEN.
+The first unresolved TOTAL nonone count stays six; its u=4,
+two-nonbinary subfamily is now closed together with every larger u.

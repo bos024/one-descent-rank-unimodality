@@ -1,0 +1,321 @@
+\section{Complete property C for every binary prefix with one arbitrary jump}
+Let $\alpha,h\ge1$, $L\ge3$, and let $Y=1^\alpha2^hL$ be
+an actual normalized sorted arm.  For an actual arm $Z$, write
+\[
+ F_Z(n)=[z^n]F_Z(z),\quad
+ D_Z(n)=(F_Z(n)-F_Z(n-1))^+\ (n\ge2),\quad D_Z(0)=D_Z(1)=0,
+ \quad G_Z(k)=\sum_{i=0}^kF_Z(i).
+\]
+Negative indices are zero-extended.  The theorem concerns the actual
+finite arm, with all its global modes and signed boundary slopes retained.
+
+\begin{theorem}[General one-jump C, all parameters unbounded]
+For EVERY $\alpha,h\ge1$, $L\ge3$, every positive-slope current
+rank $N$, and every shift $s\ge3$,
+\[
+           G_Y(N-s)D_Y(N-1)\ge G_Y(N-s-1)D_Y(N).        \tag{1}
+\]
+There is no bound on padding, binary count, capacity, rank or shift.
+In particular the earlier capacity32 cutoff is entirely removed.
+\end{theorem}
+
+We use the proved actual ordinary and positive-slope unimodality,
+strict ordinary positive-slope prefix starting at two, the only possible
+pre-FIRST-D-mode flat at final capacity plus one, and the prior complete-C
+one-jump Fibonacci reference.  Their full generation proofs are existing
+inputs.  Every new induction below is unbounded.
+
+\subsection*{A modified LC inequality for the ordinary binary tail}
+Put $F_h=F_{1^\alpha2^h}$ and
+$f_n=\operatorname{Fib}(n+1)$.
+Recall the proved entire ordinary binary tail LC at centres $n\ge h+1$,
+exact prefix $F_h(n)=f_n$ through $h+1$, and first defect at least one.
+
+\begin{lemma}[Modified binary tail]
+If $h\ge2$, $n\ge h+2$ and $F_h(n)>F_h(n-1)$, then
+\[
+                (F_h(n)-1)^2\ge F_h(n-1)(F_h(n+1)-1).  \tag{2}
+\]
+Consequently its ordinary minor at such a centre is at least
+$2F_h(n)-F_h(n-1)-1\ge F_h(n-1)+1$.
+\end{lemma}
+\begin{proof}
+The exact identity
+\[
+ H_2-F_h=(z+z^2)^h(H_2-[\alpha+1]),\qquad
+                            H_2=(1-z-z^2)^{-1},
+\]
+gives the first two defects at ranks $h+2,h+3$ as
+$(1,h+2)$ for $\alpha\ge3$, $(1,h+3)$ for $\alpha=2$,
+and $(2,2h+3)$ for $\alpha=1$.
+Put $y=\operatorname{Fib}(h+2)$, $x=\operatorname{Fib}(h+3)$,
+$\varepsilon=(-1)^{h+2}$.  The modified minor (2) at $h+2$
+therefore equals respectively
+\[
+ \varepsilon-4x+4+(h+3)y,\quad
+ \varepsilon-4x+4+(h+4)y,\quad
+ \varepsilon-6x+9+(2h+4)y.                              \tag{3}
+\]
+These are nonnegative for every $h\ge2$: at $h=2,3,4$ use
+the exact Fibonacci values, and at $h\ge5$ use
+$x\le2y$, $y\ge0$, $\varepsilon\ge-1$.
+These small scalar boundary calculations are kernel checked.
+
+Induct on $h\ge2$.  At $h=2$, its first ordinary mode is at
+most four, so only the growing tail centre four can arise; (3) pays it.
+For the next count, its first required centre is again paid by (3).
+At every later centre write $A,B,C,D$ for four old consecutive values.
+The new triple is $(A+B,B+C,C+D)$ and new growth means $C>A$.
+If $C>B$, old ordinary LC forces $B>A$; both old modified
+inequalities apply.  The new modified minor equals
+\[
+ \{(B-1)^2-A(C-1)\}+\{(C-1)^2-B(D-1)\}+(BC-AD)-1.     \tag{4}
+\]
+The integer cross minor is at least one.  Indeed $A\ge1$ by
+actual interval support, both old growing ordinary minors are positive,
+and $B(BC-AD)=C(B^2-AC)+A(C^2-BD)>0$.
+Thus (4) is nonnegative.
+If instead $C\le B$, actual ordinary strict-prefix shape puts
+$D\le C$.  Integer growth gives $C\ge A+1$, so $B+C-1$
+is at least both $A+B$ and $C+D-1$.  Its square dominates
+their product, proving (2) in this branch as well.
+The complete unbounded family induction is kernel checked,
+with the actual support/recurrence/strict-prefix inputs identified here.
+\end{proof}
+
+\subsection*{A generic local-valley removal theorem}
+\begin{lemma}[Relative-LC transfer at a local valley]
+Suppose an incoming actual/reference density triple has values
+$(x,xu,z)$ with $0\le u\le1$, $z\le xu^2$, and $x\le1$.
+Suppose the outgoing/reference density triple is $(p,q,w)$ with
+$0\le q\le p<1$, $0\le w<1$, $q\le w$, and $p\le x$.
+Then subtracting the outgoing triple from both sequences preserves
+the local relative-LC comparison:
+\[
+ (xu-q)^2(1-p)(1-w)\ge(x-p)(z-w)(1-q)^2.              \tag{5}
+\]
+\end{lemma}
+\begin{proof}
+It suffices to replace $z$ by $xu^2$.  Let the resulting difference
+between the two sides be $P(x)$.  Its quadratic coefficient is
+$K=u^2\{(1-p)(1-w)-(1-q)^2\}\le0$.
+Thus $P$ is concave on $[p,1]$.  At $p$ its negative product
+vanishes, so $P(p)\ge0$.  At one, direct factorization gives
+\[
+ P(1)=(1-p)(1-u)\{(1-u)c_0+uc_1\},
+ \quad c_0=q^2(1-w)+w(1-q)^2,\quad c_1=2(1-q)(w-q).
+\]
+Both $c_0,c_1$ are nonnegative.  Hence $P(1)\ge0$ and
+concavity proves (5).  The kernel proof checks the exact chord identity
+and every sign, over arbitrary real parameters.
+\end{proof}
+
+\subsection*{Uniform analytic entrance for every capacity}
+Fix $L\ge3$ and set $H=L+2$.
+The reference slopes are
+\[
+ r_n=\operatorname{Fib}(n)-\operatorname{Fib}(n-L),\quad n\ge2,
+ \qquad C_L=\operatorname{Fib}(L-1)+\operatorname{Fib}(L+1)
+                                      -1-(-1)^L.        \tag{6}
+\]
+The prior theorem proves their complete C, with normalized $r_2=1$.
+Let $\ell$ be the FIRST positive-D mode of $Y$ and let $R$ be
+the first ordinary mode of $F_h$.
+
+\begin{lemma}[Uniform entrance density]
+For every $1\le h\le L+2$ and every padding $\alpha$, the
+TRUNCATED actual density sequence $(D_Y(n)/r_n)_{2\le n\le\ell}$
+is log-concave.  In particular complete C holds for every such arm.
+No assertion about relative-LC centres beyond this truncated prefix
+is needed or made.
+\end{lemma}
+\begin{proof}
+The exact signed append slope is
+\[
+             \Delta F_Y(n)=F_h(n-1)-F_h(n-L-1)\quad(n\ge2). \tag{7}
+\]
+The established actual mode bounds give $\ell\le R+1\le2h+1$.
+For completeness, if $L<R$, the new signed slopes strictly fall
+on the edge into $R+2$: its old entering slope is nonpositive
+and its old outgoing slope at $R-L+1$ is positive.
+Actual positive-D unimodality gives $\ell\le R+1$.
+If $L\ge R$, the proved dominant-capacity argument gives the same bound.
+
+If $h\le L+1$, every relative-LC centre $n<\ell$ has
+$n-L\le2h-L\le h+1$, so the ENTIRE outgoing triple in (7)
+is in the exact binary Fibonacci prefix.
+At the diagonal $h=L+2\ge5$, improve the bound to $\ell\le2h$.
+Indeed the old signed binary slope at $2h$ is
+$1-\binom h{h-\alpha-1}\le1$ (out-of-range binomials are zero),
+while the slope at $h+2$ is $\operatorname{Fib}(h+1)-\delta_1>1$,
+where $\delta_1=1$ or $2$ is its first defect.
+Thus new signed slopes strictly fall on the edge into $2h+1$.
+Positive-slope interval support and unimodality force $\ell\le2h$.
+Now $n-L\le2h-1-L=h+1$, again covering the WHOLE outgoing triple.
+
+Through $n\le h+2$ the earlier/current actual slopes equal
+the reference and the next is no greater.  Their relative minors
+are therefore nonnegative.  At every later centre $n<\ell$,
+the incoming F index $i=n-1\ge h+2$ is strictly before $R$.
+The proved ordinary binary density $F_h(i)/\operatorname{Fib}(i+1)$
+is nonincreasing and relatively LC on this whole read prefix.
+Also the modified inequality (2) applies.
+
+Put $j=n-L$.  Before the first outgoing value its normalized density
+triple is zero, possibly with only a positive next value; it is a local
+valley and (5) applies.  For positive even $j$, the outgoing/incoming
+Fibonacci density is also a local valley, by the determinant identity
+\[
+ \operatorname{Fib}(j-1)\operatorname{Fib}(n)
+  -\operatorname{Fib}(n-1)\operatorname{Fib}(j)
+                       =(-1)^j\operatorname{Fib}(L)>0.
+\]
+Its next/current comparison has the same sign.  In (5), $x$ is
+the previous incoming density, $u$ its next ratio, and $z$ the next
+density; all required bounds follow from that normalized relative LC
+and from the positive previous actual slope in (7).
+
+For odd $j\ge3$, write $(a,A,C)$ for the incoming actual triple
+and $(b,B,d)$ for the outgoing Fibonacci triple.
+Then $b\ge1$, $a>b$, $A>a$, $B^2-bd=1$, and (2) gives
+$m_A=A^2-aC\ge a+1$.  The exact identity
+\[
+ ab\{(A-B)^2-(a-b)(C-d)\}
+              =(a-b)(b m_A-a)+(bA-aB)^2\ge0            \tag{8}
+\]
+proves ordinary LC of the actual difference.
+At the first outgoing offset $j=1$, the outgoing triple is
+$(0,1,1)$, and that ordinary-LC assertion is EXACTLY (2).
+For every odd $j\ge1$, the reference difference minor at $n=L+j$
+is $-C_L\le0$.  Hence ordinary LC of the positive actual difference
+implies relative LC to that reference: in the relative minor, the
+actual ordinary minor has a positive reference factor and the
+reference ordinary minor is subtracted with a nonnegative actual factor.
+This exhausts every centre of the truncated prefix.
+
+Its first two normalized values are one.  The already proved
+normalized-relative-C inheritance therefore proves every C comparison
+through $\ell$.  Later flat/decreasing positive slopes are immediate
+from cumulative monotonicity.  This proves complete C of the uniform
+entrance, for ALL capacities and padding lengths.
+\end{proof}
+
+\subsection*{Propagation needs only LC through the FIRST D mode}
+For fixed $L$, put $d_h(j)=D_{1^\alpha2^hL}(j+2)$ and
+$a_j=r_{j+2}$, and let $e_h=\ell_{h,L}-2$ be its first D mode
+in these shifted indices.  The exact signed recurrence is
+\[
+       \widetilde d_{h+1}=(z+z^2)\widetilde d_h+1+z-z^{L-1}. \tag{9}
+\]
+For $h\ge H=L+2$, its fixed forcing is strictly below all tail
+reads.  Positive-D interval support implies the exact two-term window
+through the penultimate possible support point, with only a possible
+reduction/deletion at its final point.  Every next tail coefficient is
+therefore at most the corresponding old two-term window.
+Also $d_h(j)=a_j$ through $j\le h$ and
+$d_h(h+1)\le a_{h+1}-1$.
+
+\begin{lemma}[Whole rising-tail induction]
+For every $h\ge H$ and every centre $h\le j\le e_h$, $d_h$
+is ordinarily log-concave at $j$.
+\end{lemma}
+\begin{proof}
+At the analytic base $h=H$, the preceding relative-LC proof gives
+ordinary LC at every required centre past $h$: even parity has a
+nonnegative reference minor and odd parity was paid ordinarily.
+At centre $j=h$, the exact first-defect budget gives it directly:
+the reference minor has magnitude $C_L$ and its previous value
+$r_{h+1}$ is at least $C_L$.
+Indeed $r_{L+2}-C_L=\operatorname{Fib}(L-2)+(-1)^L\ge0$,
+and the reference increases thereafter.
+At the first D mode itself ordinary LC is automatic by maximality.
+
+Induct on $h\ge H$.  At the new first required centre use the
+same exact-prefix/first-defect budget.  Consider any later centre
+strictly before the new FIRST D mode.  Its next coefficient is
+STRICTLY larger: the only possible actual pre-mode flat is at
+physical rank $L+1$, whereas these reads have rank at least $H+2$.
+The previous/current coefficients equal the old two-term window;
+the next is no larger than that window.  Strict next growth forces
+$d_h(j)>d_h(j-2)$.  Old positive-D unimodality then puts BOTH
+old centres $j-2,j-1$ at or before its FIRST D mode, and they
+are in its already proved tail domain.
+The sum of their nonnegative LC minors and nonnegative cross minor
+proves the window minor.  Reducing the next coefficient can only
+improve it.  At the new mode use maximality again.
+The full induction is kernel checked; no LC after the old D mode
+is assumed.  This is the key strengthening of the earlier
+fixed-capacity finite principle.
+\end{proof}
+
+\begin{proof}[Proof of the general one-jump theorem]
+All $h\le H$ are covered by the uniform analytic entrance.
+For $h>H$, use the preceding rising-tail LC and the existing
+fixed-capacity C assembly.  That assembly reads LC ratios only
+through a currently increasing slope, hence only through the FIRST
+D mode; its stronger earlier whole-tail premise is unnecessary.
+Here are its retained seeds explicitly.
+
+Through $N\le h+2$ the reference and actual slopes/cumulatives agree.
+At $N_0=h+3$, only the current slope is reduced by an integer
+$\delta\ge1$, so every C minor improves.  If a later current
+positive slope increases, let $\lambda=D_N/D_{N-1}$ and
+$\lambda_0=D_{N_0}/D_{N_0-1}$.  Rising-tail LC gives
+$\lambda\le\lambda_0$.
+Put $a=r_h,b=r_{h+1},c=r_{h+2},d=r_{h+3}$.
+Since $c=a+b,d=b+c$, $|b^2-ac|\le C_L\le a\le b$,
+\[
+       a(d-\delta)\le bc,\qquad b(d-\delta)\le c^2.     \tag{10}
+\]
+These are the TWO early D-ratio seeds; the second also gives the
+ordinary F seed at rank $h$, because $F(h)=c,F(h-1)=b$.
+Reference C gives the G seed at $h$ and pays every earlier read.
+For $h<k\le N-3$, all D ratios read are at least $\lambda$,
+including the two explicitly retained in (10).
+The exact actual recurrences on this FINITE positive-slope read prefix
+propagate $F(k)\ge\lambda F(k-1)$ and then
+$G(k)\ge\lambda G(k-1)$.  Thus every C shift is paid.
+This finite-read propagation and both scalar seed inequalities are
+already kernel checked.  Current flat/decreasing slopes have immediate
+payment.  This proves (1) for all parameters, with no finite host
+enumeration, capacity cutoff or asymptotic extrapolation.
+\end{proof}
+
+\begin{corollary}[All actual first-weight-four arms with a capacity at least four]
+Every actual sorted arm with first missing weight four and maximum
+capacity at least four has complete C.
+\end{corollary}
+\begin{proof}
+With at most two non-one capacities use the established general C
+theorem through five.  With at least three, deleting its last capacity
+leaves first weight three and at least two non-one capacities, hence
+an entirely binary prefix.  It is exactly a one-jump arm and (1) applies.
+\end{proof}
+
+\paragraph{Consequences and exact remaining scope.}
+The prior one-arm-C bridge now gives ALL-depth both-ordinary-rising
+nonnegative-current tail nonrecovery for ANY one-jump arm against
+an arbitrary opposite arm.  The usual OLD head is retained for
+all-head S.  When both counts are at least two, the ENTIRE proper
+zero-head S comparison is C/OLD-free without a phase condition,
+by the established zero-head phase forcing.
+
+\texttt{OneJumpUniformAnalyticKernels.lean} adds seven clean scoped
+standard-axiom reports: the complete first-two-defect scalar boundary,
+both modified-window branches, odd-parity subtraction, the arbitrary-real
+local-valley theorem, the FULL modified-binary-family induction and the
+FULL rising-reference-tail induction.  Existing ordinary-binary LC,
+relative-C/reference/parity and finite-read C-seed kernels are reused
+without recounting.  Actual word/polynomial/support/mode identification
+and the complete unbounded C assembly are the written proof above.
+This is not an end-to-end Lean formalization of composition generation.
+Exact actual-word QA is corroboration only.
+
+All one-jump C residuals and the capacity32 restriction are now removed.
+General first-weight-four arms with SEVERAL threes remain outside
+the corollary, as do general nonbinary C at count six, full A2/incoming,
+remaining mixed nonzero-head comparisons and deeper higher-first-weight
+cases.  The ORIGINAL general unamplified coefficient-unimodality
+conjecture remains OPEN.  These C and S resources do not upgrade
+the original least-counterexample bounds without closing those
+additional branches.

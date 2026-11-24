@@ -1,0 +1,49 @@
+{
+  "status": "EXACT_QA_TERNARY_FORWARD_INVERSE_AND_POSITIVE_DIAGONAL_IDENTITIES",
+  "counts": {
+    "positive_LC_truncated_forward_inverse_hosts": 1055,
+    "exact_LC_minors": 90377,
+    "actual_ALL_coefficient_diagonal_companion_hosts": 300,
+    "actual_companion_defect_and_derivative_identity_reads": 133650
+  },
+  "pure_small_controls": [
+    {
+      "r": 1,
+      "penultimate_minor": [
+        1,
+        -1
+      ]
+    },
+    {
+      "r": 2,
+      "penultimate_minor": [
+        17,
+        -11
+      ]
+    },
+    {
+      "r": 3,
+      "penultimate_minor": [
+        153,
+        -95
+      ]
+    },
+    {
+      "r": 4,
+      "penultimate_minor": [
+        1137,
+        -703
+      ]
+    },
+    {
+      "r": 5,
+      "penultimate_minor": [
+        7713,
+        -4767
+      ]
+    }
+  ],
+  "state_sha256": "fbad97743a38597678c535a147d4c312dac15e0cd7fbe23ee64f47a74605a488",
+  "seconds": 2.313000000001921,
+  "scope": "QA ONLY. Written analytic induction proves ALLu>=1/r>=0 and pure r>=6 truncated forward inverse LC. No actual full-C diagonal u>=33 or originalUI claim."
+}

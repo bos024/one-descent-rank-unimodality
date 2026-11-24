@@ -1,0 +1,72 @@
+{
+  "status": "EXACT_QA_HEREDITARY_STRONG_LATE_C_UNDER_AUDIT",
+  "counts": {
+    "reference_additive_golden_square_margins": 1232635,
+    "strong_prefix_additive_golden_square_margins": 387863,
+    "ordinary_LC_entire_tail_minors": 509589,
+    "strict_entries": 3350,
+    "exact_prefix_minimum_all_shift_C_payments": 948376,
+    "logical_shift_coverage": 277521927,
+    "base_seed_hosts": 1640,
+    "old_read_additive_margin_at_NEW_window_ratio": 240907,
+    "strict_entry_hereditary_transfers": 1710,
+    "strict_transfers_outside_final_count_cone": 1263,
+    "strict_transfers_outside_all_OLD_late_C_families": 1263,
+    "actual_append_transfers": 4920
+  },
+  "state_sha256": "7737fe514e60d90364bdddd9d8a0acf12d78e386e4d2fc727aff864bd77523c9",
+  "actual_new_coverage_witness": {
+    "alpha": 1,
+    "u": 20,
+    "seed": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "appended": [
+      4,
+      9
+    ],
+    "full_V": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      9
+    ],
+    "oldW": 43,
+    "newW": 52,
+    "old_pair": [
+      5800311088,
+      9330207110
+    ],
+    "new_pair": [
+      494211001911,
+      682190901149
+    ],
+    "h": 37,
+    "final_count_cone_deficit": 51
+  },
+  "seconds": 12.81199999999808,
+  "scope": "Conditional strong-entry invariant and arbitrary sorted suffix extension; no sampled logical premises; finite QA ONLY until formal/proof audit. ALLactual C fromfinalW+1; not allfromfinalW; original/generalC/A2 OPEN."
+}

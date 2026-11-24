@@ -1,0 +1,13 @@
+'MixedThreeFourActualCut.whole_small_norm_surplus_cone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourActualCut.whole_all_count_damped_minor_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedThreeFourActualCut.complete_gamma_quarter_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourActualCut.entire_degree_one_cumulative_source_identity' depends on axioms: [propext, Quot.sound]
+'MixedThreeFourActualCut.cumulative_quotient_first_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourActualCut.complete_true_source_three_startup_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedThreeFourActualCut.generic_signed_source_startup_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourActualCut.complete_first_actual_defect_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MixedThreeFourActualCut.entire_surplus_deletion_closure' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'DegreeBoundaryCIChunkCertificate.golden_fine_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DegreeBoundaryCIChunkCertificate.all_scalar_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DegreeBoundaryCIChunkCertificate.complete_actual_startup_margins' does not depend on any axioms

@@ -1,0 +1,119 @@
+\section{Sharp uniform source gap eight when the owner has at least six parts}
+\begin{theorem}[Gap eight, with unrestricted first missing weight]
+Let $Z=1^\alpha U$ have $h=|U|\ge6$ non-one parts, and let $Y$
+have at least two. Assume $F_Z(j+1)\le F_Z(j)$ and that $E_Y$
+has nondecreasing prefix through $j+1$. If
+\[
+                         \alpha\ge\kappa_Y-8,         \tag{1}
+\]
+then $e_{n+1}\le e_n$. Thus all-head S holds with the usual
+OLD A2 head input, without C or a first-half premise.
+The source gap eight is optimal uniformly over $h\ge6$.
+The exact initial exchange permits replacing $\alpha$ in (1)
+by $\alpha_* =\max(\alpha,t_1-1)$.
+\end{theorem}
+\begin{proof}
+Put $d=\kappa_Y-\alpha$. For $d\le6$ the previous gap-six
+theorem applies. If $d=7$ and $\alpha=1$, then $\kappa_Y=8$
+and the absolute threshold-eight theorem applies.
+It remains to prove
+\[
+              d=7,\ \alpha\ge2;\qquad d=8,\ \alpha\ge1.         \tag{2}
+\]
+In both ranges $\kappa_Y\ge9$. Therefore the SAME compulsory
+source increments $w_0\ge1$, $w_t\ge2^{t-2}$ for $2\le t\le6$
+are available, independently of the initial run and capacities.
+
+If $r=a-j\le-2$, the tail cannot recover. If $r=-1$, the first
+birth has index $D+h+2-d\ge6$, so pays the unit curvature.
+For positive recovery at $r\ge0$, use the preceding complete
+degree/primitive reductions:
+\[
+ e=D-2r-2\ge0,\quad C=d_{r+1}-d_r>0,\quad
+ (r+1)C\le(e+1)d_r,\quad
+ D\le\min\{2d(d-3),12d-25\}.
+\]
+As before $s=d-e-2\le0$ is directly paid by the first birth.
+For $L=s-1=d-e-3\ge0$, use the EXACT rational CI/source-sum
+test (2) of \texttt{kappa\_nine\_source\_nonrecovery.tex}.
+This test depends only on $d,r,e$, not on $\alpha$ or the host.
+Its complete finite rank domain has $D\ge h\ge6$.
+
+For gap seven the rational test pays 98 rank states and leaves
+30 states, with maximum $D=19$. For gap eight it pays 146
+rank states and leaves 52 states, with maximum $D=25$.
+These are ALL rank states permitted by the unbounded bounds,
+not a chosen numerical window.
+
+For every remaining state enumerate ALL partitions of $D$ into
+$h\ge6$ positive increments $t_i-1$. No first-capacity restriction
+is imposed. Let
+\[
+ b_0=D-r+h+1-d,\qquad
+ N=\max\{\alpha_{\min},b_0,r+1\},
+ \quad\alpha_{\min}=2\ (d=7),\quad1\ (d=8).
+\]
+Only $q_Z$ through $r+1$ and $F_Z$ through $b_0$ are used.
+The exact initial-run clipping lemma implies that all $\alpha\ge N$
+agree on both prefixes. Indeed their initial interval agrees at all
+these ranks, and every terminal reverse source changed by clipping
+is still above $r+1$. Therefore
+$\alpha_{\min}\le\alpha\le N$ covers EVERY initial run exactly.
+
+At ALL resulting critical states the direct source bound satisfies
+\[
+                    F_Z(b_0)+\sum_{t=2}^{6}2^{t-2}F_Z(b_0-t)\ge C.       \tag{3}
+\]
+For gap seven this is 20245 complete initial-clamped owners,
+including 16470 strict-curvature states. For gap eight it is
+187147 complete owners, including 133809 strict-curvature states.
+An independent maximum-part enumeration, reverse polynomial
+construction and individual-ratio calculation reconstructs ALL
+82 layers, every count and every critical coefficient.
+The canonical critical hashes are respectively
+\[
+\begin{split}
+&\texttt{54963c84ae5f2f631d9d4c623e1c2f3f9b9b5ba830f2cf252326c0e1f0a581e9},\\
+&\texttt{18169510425e7a490a5136c42ee2388195da8334a43f40603548f273a1e2c9f8}.
+\end{split}
+\]
+Equation (3) lower-bounds the actual source difference through
+the genuine compulsory increments, with zero extension outside
+the ordinary support. It pays every remaining curvature and
+contradicts recovery. Together with the earlier branches, this
+proves (1) for ALL initial runs, source weights, counts and capacities.
+\end{proof}
+
+For sharpness, for every $\alpha\ge2$ put
+\[
+ Z=1^\alpha2^6,\quad Y=1(\alpha+8)^g,
+ \quad g\ge\alpha+11,\qquad j=\alpha+11.
+\]
+The opposite terminal block agrees locally with its renewal
+reference, $\kappa_Y=\alpha+9$, and its source prefix is
+nondecreasing at all used indices. Direct low-coefficient calculation gives
+\[
+ d_1=6,\quad d_2=15,\quad
+ (E_YF_Z)_{j+1}=11,\quad(E_YF_Z)_j=5,
+ \qquad e_n=17,\quad e_{n+1}=20.
+\]
+Thus gap nine cannot replace eight. Head one has exact budget
+$g^2+14g+35>3$, so this family does not refute S or original UI.
+The restriction $\alpha\ge2$ matters for the quoted tail values:
+at $\alpha=1$ the degree-two reverse primitive is fourteen,
+and the earlier absolute-threshold sharpness family recovers
+from seventeen to nineteen instead.
+
+The generic unbounded source-sum/CI payment, clipping and degree
+steps reuse the existing scoped Lean proofs; no new distinct
+kernel report is counted for this theorem. Its finite complement
+is independently exact-verified by the two separate programs,
+not end-to-end Lean verified. The preceding absolute threshold-nine
+theorem is also an immediate corollary, since $\alpha\ge1$.
+
+After canonical exchange, any positive mixed recovery with $h\ge6$
+and nondecreasing opposite source prefix must now satisfy
+$\kappa_Y\ge\alpha_*+9\ge10$. Smaller owners retain their
+previous sharp constants. The general mixed head comparison outside
+these ranges, source-prefix decline, both-rising late overlap,
+general C/A2 and original unamplified coefficient UI remain OPEN.

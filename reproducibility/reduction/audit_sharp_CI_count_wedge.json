@@ -1,0 +1,22 @@
+{
+  "status": "EXACT_QA_SHARP_ACTUAL_CI_COUNT_WEDGE_UNDER_AUDIT",
+  "counts": {
+    "all_capacity_amplification_exact_QA": 178,
+    "exact_reference_numerator_mass_and_CDF_resources": 1337,
+    "reference_CDF_dyadic_growth_comparisons": 127745,
+    "actual_loss_nine_quarters_growth_comparisons": 112122,
+    "exact_integer_sharp_dyadic_prefix_payments": 112122,
+    "actual_ordinary_boundary_seed_payments": 8022,
+    "all_prefix_strong_C_seed_products": 750426,
+    "strictly_growing_actual_boundary_hosts": 8022,
+    "exact_prefix_minimum_all_shift_C_payments": 1438925,
+    "logical_shift_coverage": 373674035,
+    "literal_all_shift_C_products": 1816861,
+    "actual_hosts": 8022,
+    "CI_profiles": 1337,
+    "profiles_beyond_previous_wedge": 511
+  },
+  "state_sha256": "bd0cfcd4bf120342f7cd90f107c11c94a201d44e933c08e72aa2d31f78deefdd",
+  "seconds": 13.061999999999898,
+  "scope": "WHOLE unbounded sharper cone 4(u+r)+17>=13(h-u),delta>=5 proposed actual late C. Every finite profile and bound here is QA ONLY, NO finite entrance premise. Reference numerator MASS and stronger homogeneous ratio reduce the required source growth to9/4; complete source cumulatives and ordinary seed margin retained. General earlier C/A2/original UI OPEN."
+}

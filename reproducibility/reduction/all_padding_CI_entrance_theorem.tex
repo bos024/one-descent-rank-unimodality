@@ -1,0 +1,104 @@
+\section{Every CI entrance at every padding, and complete late C}
+Throughout this section the CI tail is NONEMPTY. Let
+$V=(t_1,\ldots,t_r)$, $3\le t_1\le\cdots\le t_r$, and put
+\[
+ L=\prod_{i=1}^r(1+z+\cdots+z^{t_i-1}),\quad
+ h=\sum_{i=1}^r(t_i-1),\quad W=h+r.
+\]
+
+\begin{theorem}[All-padding coefficient entrance]
+For EVERY $m\ge h$ and EVERY integer $\alpha\ge1$, the positive-part
+coefficients
+\[
+ A_n=\left([z^n]\left\{
+ L\sum_{k=0}^m(z+z^2)^k-z^{m+\alpha}(1+z)^{m+1}L
+ \right\}\right)^+
+\]
+are log-concave at EVERY centre $m\le n\le e$, where $e$ is their
+FIRST global mode. There is no bound on the number or sizes of the
+CI factors, on their degree, on the padding or on $m$.
+\end{theorem}
+
+\begin{theorem}[All actual late C with arbitrary binary prefix]
+For EVERY $u\ge h+1$ and EVERY $\alpha\ge1$, the actual positive
+slopes of $1^\alpha2^uV$ are LC at every centre
+$u+r+1\le N<\ell$, with $\ell$ their FIRST global mode.
+EVERY actual C comparison, at EVERY shift $R\ge3$, holds at EVERY
+current rank $N\ge W+1$.
+\end{theorem}
+
+\begin{proof}
+The decisive repaired quotient theorem is that
+\[
+ J_{u,L}=\frac{(1+z)^uL-\psi^uL(-\phi)}{1+qz},
+             \qquad u\ge h+1,
+\]
+has positive primitive LC at EVERY centre from two onward. Its
+ordinary positivity and global LC were previously proved. Deleting
+rank zero removes its one genuinely exceptional primitive centre.
+The new proof uses a weakened window lemma, a doubled robust
+binomial-division head, the exact CI spectral norm, two improved last
+junction payments and explicit long-interval endpoints. Its unbounded
+induction applies at $u\ge12$. Every smaller case is covered by the
+complete 139-context certificate, independently rebuilt by reverse
+polynomial division; all 854 distinct scalar margins are kernel checked.
+
+For a positive LC $b$ with this later-primitive property, put
+$x_n=\sum_{j\ge1}q^jb_{n+j}$ and $E^*_n=b_n+qb_{n-1}$.
+At every lag $a\ge0$ the EXACT transformation is
+\[
+ q^2(x_n-E^*_{n-a})=(K_a*\Delta b)_n,
+\]
+where the LC bilateral kernel has coefficients $q^{-j}$ for $j<0$,
+$q$ for $0\le j<a$, $q^3$ at $j=a$, and zero thereafter.
+Beyond rank $a$ the exceptional initial primitive disappears. Before
+the first $b$ mode, all negative primitive entries contribute just
+one geometric term $T\phi^n$. Ordinary LC convolution followed by
+the constant-cut identity therefore makes $(x_n-E^*_{n-a})^+$ LC at
+every centre $a+2\le n<\operatorname{mode}b$.
+
+Apply this with $u=m+1$, $b=J_{u,L}$ and $a=\alpha-1$.
+The geometric inverse is exactly the infinite coefficient tail,
+and the true source is $(1+qz)b+\psi^uL(-\phi)$. Thus it differs
+from $E^*$ at ONE coefficient only. The first two source coefficients
+and their second-rank value pay the three exceptional startup centres
+uniformly when $w=u+r\ge8$. A negative next raw coefficient gives
+a zero next positive part, whose minor is a square. The remaining
+small-$w$ cases have an analytic padding clamp and exactly 41 contexts;
+all 88 distinct integer margins are independently reconstructed from
+literal actual-arm coefficients and checked by ordinary Lean reduction.
+The source likelihood-ratio order places the first finite mode no
+later than the infinite mode, which in turn lies before the first
+$b$ mode by its geometric inverse. This proves the first theorem.
+
+At the single entrance $m=h$, the exact signed actual tail and its
+strict entering edge identify the actual first slope mode. The first
+theorem supplies every moving LC entrance at this ONE count for
+EVERY padding. Apply the proved fixed-padding count induction, then
+the homogeneous reference C theorem from $W+1$, TWO ordinary-F seeds
+and the finite D/F/G integration. This gives the second theorem.
+\end{proof}
+
+\paragraph{Proof records and verification scope.}
+The full derivations are preserved in
+\texttt{divided\_CI\_later\_primitive\_proof.tex},
+\texttt{golden\_signed\_primitive\_cut\_closure.tex} and
+\texttt{actual\_all\_padding\_CI\_entrance.tex}. Their original
+under-audit headers are retained in the immutable proof record;
+the successful registration is
+\texttt{all\_padding\_CI\_entrance\_verification.json} and the
+present section states their current status.
+There are fourteen new scoped kernel reports: seven doubled-budget
+and junction kernels, four cut/startup kernels, and three finite
+certificate kernels. The final integer certificate is axiom free;
+the others use only standard Lean axioms. Polynomial identities,
+window/convolution assembly, capacity-grammar coverage, source order
+and actual-arm identification are written proofs, not an end-to-end
+Lean formalization of arbitrary compositions.
+
+\paragraph{Remaining general problem.}
+The arbitrary-padding entrance premise is now COMPLETELY discharged.
+Earlier arbitrary-tail reference C at $N\le W$ and shorter binary
+counts $u<h+1$ remain open. General C/A2 and the ORIGINAL general
+unamplified one-descent conjecture are not concluded. No numerical
+least-counterexample bound for that original conjecture is upgraded.

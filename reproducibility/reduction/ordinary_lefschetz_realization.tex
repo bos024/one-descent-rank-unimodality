@@ -1,0 +1,199 @@
+% A complete algebraic structure theorem for ordinary arms/products.
+% This is not a Lefschetz realization of a general one-descent core.
+\section{Lefschetz realizations and Hilbert growth of ordinary positive differences}
+An $O$-sequence means the Hilbert function of a finite standard
+graded quotient of a polynomial ring. Its standard monomials
+give a finite monomial order ideal with the same degree counts.
+Write $\mathcal D h=(\Delta h)^+$, with $h_{-1}=0$.
+All algebras in the proof may be taken over $\mathbb Q$.
+
+\begin{lemma}[Lifting a differentiable Hilbert function]
+If $h_0=1$, $h$ is finite and unimodal, and $\mathcal D h$
+is an $O$-sequence, then there exists a monomial Artinian
+algebra with Hilbert function $h$ and a strong Lefschetz element.
+\end{lemma}
+\begin{proof}
+Let $m$ be the first mode of $h$, and choose a finite monomial
+order ideal $\mathcal M$ with degree counts $\mathcal D h$.
+It has $h_m$ monomials, all of degree at most $m$.
+List them in nondecreasing degree. Form a list of endpoints
+with $h_j-h_{j+1}$ occurrences of $j$ for each $j\ge m$,
+and list these in nonincreasing order. Pair the two lists,
+assigning an endpoint $e(u)$ to each $u\in\mathcal M$.
+Define the monomial basis
+\[
+ \mathcal B=\{u z^k:u\in\mathcal M,\ 0\le k\le e(u)-\deg u\}.
+\]
+This is an order ideal. Indeed, if $v\mid u$, then
+$\deg v\le\deg u$ and $e(v)\ge e(u)$; every divisor
+$v z^i$ of $u z^k$ therefore has total degree at most $e(v)$.
+Division by $z$ also stays inside the displayed set.
+
+The $z$ strings occupy intervals $[\deg u,e(u)]$. These
+intervals are nested by construction. Their degree counts are
+$h$: through $m$ the starts have counts $\mathcal D h$,
+and after $m$ the prescribed endpoints remove precisely
+$h_j-h_{j+1}$ strings at a time. At any two degrees the sets
+of active nested strings are comparable by inclusion. Thus
+multiplication by every power of $z$ has rank equal to the
+smaller of the two graded dimensions. This proves the SLP.
+\end{proof}
+
+The general Hilbert-function equivalence behind this lemma is
+classical; compare Harima--Wachi,
+\emph{Generic initial ideals, graded Betti numbers and
+$k$-Lefschetz properties}, Proposition~3 and the $k=1$ case
+of Proposition~33 in the arXiv version
+\url{https://arxiv.org/abs/0707.2247}.
+The explicit nested-string construction above is included to
+make the use of this background transparent. No priority is
+claimed for this general realization criterion.
+
+\begin{lemma}[A uniform window preserves existence of an SLP realization]
+If $h$ is the Hilbert function of an SLP algebra, then
+$[t]h$ has such a realization for every $t\ge1$.
+In particular $\mathcal D([t]h)$ is an $O$-sequence.
+\end{lemma}
+\begin{proof}
+Let $A$ realize $h$, with strong Lefschetz element $\ell$, and
+put $B=A[y]/(y^t)$. Its Hilbert function is $b=[t]h$.
+The quotient by $y+\ell$ is $A/(\ell^t)$ and has Hilbert
+function
+\[
+                    \max(h_j-h_{j-t},0)
+                         =\max(b_j-b_{j-1},0).
+\]
+Hence multiplication by $y+\ell$ has maximal rank between
+consecutive degrees of $B$: it has the WLP. This implies
+unimodality, since once a graded component of $B/(y+\ell)$
+vanishes all later components vanish. Its Hilbert function
+is $\mathcal D b$, so the lifting lemma gives an SLP
+realization of $b$. We do not assert that the particular
+tensor product $B$ always has the SLP.
+\end{proof}
+
+\begin{theorem}[Ordinary arms and two-arm products]
+Let $q_X,q_Y$ be reversed formal arm polynomials with initial
+runs of at least one one and no later parts equal to one.
+The non-one parts may occur in arbitrary internal order.
+Each of $q_X$ and $q_Xq_Y$, and its convolution with any
+finite product of interval polynomials, has an SLP algebra
+realization. In particular its positive differences form an
+$O$-sequence.
+\end{theorem}
+\begin{proof}
+For one arm the initial interval is a one-variable complete
+intersection. The formal recurrence is
+\[
+                   q_{Zt}=[t]q_Z+z^{a},\qquad a=\operatorname{wt}Z+t.
+\]
+The window has degree $a-1$ and final coefficient one.
+Appending one at rank $a$ preserves unimodality and does not
+change its positive differences. The two lemmas therefore
+give a full induction for single arms.
+
+For two arms use induction on their combined skeleton length.
+A rectangular factor is the window lemma. Otherwise orient
+$a\ge b$. The established ordinary-product midpoint argument,
+including its extra rank for equal nonrectangular factors,
+says that the first mode $s$ of $q_Xq_Y$ satisfies $s<a$.
+Deleting the last part $t$ of $X$ gives
+\[
+                        q_Xq_Y=[t]q_Zq_Y+z^a q_Y.
+\]
+Up to rank $s$, the positive differences are those of the
+window term, whose $O$-sequence property follows by induction
+and the window lemma. After $s$ they are zero by the already
+proved ordinary-product unimodality. Thus $\mathcal D(q_Xq_Y)$
+is the degree truncation of an $O$-sequence, again an
+$O$-sequence. Apply the lifting lemma. Finally use the
+window lemma repeatedly for additional interval factors.
+\end{proof}
+
+\begin{theorem}[Strict relative kernels]
+Let $Y$ be increasing, every part smaller than $M\ge2$,
+and $b=\operatorname{wt}Y$. For
+$D_M(Y)=1+(S_M-1)F_Y$, the reversed kernel
+\[
+                 \delta_M(Y)=z^{b+M}D_M(Y)(1/z)
+\]
+has the equivalent expression
+$\delta_M(Y)=[M]q_Y-z^Mq_Y+z^{b+M}$.
+It has an SLP algebra realization, and
+$\mathcal D\delta_M(Y)$ is an $O$-sequence.
+\end{theorem}
+\begin{proof}
+Use the established unimodality and the append identity
+$\delta_M(Zt)=[t]\delta_M(Z)+z^b[M-t]$, where $b=\operatorname{wt}(Zt)$.
+If $b<M$, the kernel agrees with the cumulative coefficients
+of $q_Y$ below $M$ and is nonincreasing from rank $b$ onward.
+Its positive differences are exactly $q_Y$, already an
+$O$-sequence by the ordinary-arm theorem.
+
+If $b\ge M$, the previously proved joining inequality is
+$\delta_M(Y)_b\le\delta_M(Y)_{b-1}$, and it is nonincreasing
+afterward. The interval correction starts at $b$, so the
+positive differences are the degree truncation of the
+positive differences of $[t]\delta_M(Z)$. Induction and the
+window lemma give the $O$-sequence property. The lifting
+lemma completes both branches. The empty arm is the
+initial interval $[M]$.
+\end{proof}
+
+\begin{corollary}[An adjacent negative-binomial envelope for positive differences]
+For any polynomial $q$ in these theorems put $r=q_1$ and
+$d=\mathcal Dq$. Then $d_0=1$, $d_1=r-1$, and
+\[
+                   (j+1)d_{j+1}\le(r-1+j)d_j\qquad(j\ge0).
+\]
+The complete Macaulay growth inequalities hold as well.
+\end{corollary}
+\begin{proof}
+The $O$-sequence $d$ has embedding dimension $r-1$.
+For its standard monomials, count downward edges with
+coordinate multiplicity. Every selected degree-$j+1$
+monomial has $j+1$ such edges, all to selected degree-$j$
+monomials. Each degree-$j$ monomial has at most $r-1+j$
+potential upward edge weight. Double counting gives the
+inequality. The Macaulay inequalities are the classical
+Hilbert-function growth conditions for an $O$-sequence.
+\end{proof}
+
+\begin{corollary}[A complete Lefschetz flag]
+For every Hilbert function $h$ in the preceding theorems,
+put $r=h_1$. There is a monomial realization with $r$
+successive strong Lefschetz elements: the first is strong
+Lefschetz on the algebra, the next on its quotient by the
+first, and so on. Every iterated positive difference
+$\mathcal D^k h$ is an $O$-sequence, and its embedding
+dimension is $\max(r-k,0)$.
+\end{corollary}
+\begin{proof}
+Use the previously proved recursive rising-unimodality of
+ordinary arms, two-arm products, their interval windows and
+positive signed single-arm kernels. Only the unimodality of
+all the iterates is needed here. More generally any finite
+integer sequence $h$ with $h_0=1$ whose iterates are unimodal
+has such a realization. Induct on $r=h_1$. For $r=0$,
+unimodality forces $h=(1)$. For $r>0$, the sequence
+$g=\mathcal D h$ has $g_1=r-1$ and the same recursive
+property. Realize $g$ by induction and use its standard
+monomials for $\mathcal M$ in the lifting construction.
+The new variable $z$ is strong Lefschetz, and the quotient
+by $z$ is exactly the chosen algebra for $g$. The remaining
+flag is therefore inherited from that quotient.
+\end{proof}
+
+This is an algebraic consequence of the earlier recursive
+shape theorem and the classical realization criterion, not
+an independent resolution of a new coefficient conjecture.
+It gives Macaulay growth at every order, including
+$(j+1)(\mathcal D^k h)_{j+1}\le(r-k+j)(\mathcal D^k h)_j$
+for $0\le k\le r$.
+
+This gives algebraic constraints on actual coefficients and
+their positive differences, independently of a cumulative
+log-concavity assertion. It does not construct a Lefschetz
+algebra for a general strict one-descent core. In particular,
+the SLP is not being transferred to arbitrary tensor products
+or to the signed peak operation without a separate proof.

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXACT_QA_CLOSED_SOURCE_WINDOW_A2_AND_KAPPA_NINE_ORIGINAL",
+  "counts": {
+    "generic_closed_S_FULL_window_A2_implications": 8627,
+    "tested_closed_proper_source_comparisons": 795,
+    "generic_source_hypothesis_failures": 373,
+    "closed_EQUAL_source_comparisons": 129,
+    "actual_K9_opposite_full_C_minimum_ratio_checks": 4378,
+    "actual_K9_opposite_literal_shifts_represented": 151294,
+    "actual_all_positive_Q_recoveries_j_at_most_ten": 55,
+    "actual_K9_ALL_short_and_long_weighted_windows": 924,
+    "actual_K9_exception_owner_pairs": 66,
+    "A15_actual_arm_full_C_minimum_ratio_checks": 176294,
+    "A15_actual_arm_literal_shifts_represented": 71675478,
+    "actual_A15_FULL_weighted_window_A2": 1920,
+    "arbitrary_legal_heavier_append_FULL_A2_pairs": 640,
+    "actual_A15_FULL_A2_pairs": 320,
+    "extra_heavier_append_ORIGINAL_ideals": 3,
+    "TRUE_greedy_BOTH_four_dominant_ORIGINAL_ideals": 12,
+    "TRUE_greedy_ORIGINAL_rank_counts": 24108,
+    "BOTH_relative_polynomials": 24
+  },
+  "state_sha256": "e66405f2a575be82a14c26e5853de1b1e1519809d5cedaaeabc7f246b63864bd",
+  "seconds": 5.217999999997119,
+  "scope": "FiniteQAONLY;COMPLETE406rank/2143owner/4377inputcertificateisexplicitNEWfinitepremise. WHOLEweightedwindowA2doesNOTassertwholeRAWsourcewindowUI;GENERALoriginalOPEN."
+}

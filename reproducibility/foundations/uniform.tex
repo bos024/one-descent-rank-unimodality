@@ -1,0 +1,65 @@
+\section{A quadratic obstruction bound for arbitrary peaks}\label{sec:uniform}
+The profile method has an analytic consequence independent of the finite certificates. The key is to move the height threshold farther to the right, then pay for every potentially negative low layer with one selected positive contribution.
+
+\begin{lemma}[High layers beyond the recurrence error]\label{lem:errorhigh}
+Let $m,r\ge1$ be integers. Let $Y$ be an increasing arm of weight $b$, with parts at most $m$, and suppose it has at least $r$ parts. Take an integer $J\ge(r-1)m$ and assume $2J\le b$. Every height layer of $F_Y$ above height $(F_Y)_J$ has endpoint sum at least $b+r$.
+\end{lemma}
+\begin{proof}
+Peeling the last $r$ parts gives $F_Y=B+G$, where $B\ge0$ has degree at most $(r-1)m\le J$, and $G$ is the remaining arm polynomial multiplied by the last $r$ factors $S_t$. The interval-product summands of $G$ have centers at least $(b+r)/2$. Thus $p_j\le p_{b+r-j}$ at every left index $j>J$. First-half increase gives $p_j\le p_J$ for $j\le J$. A layer above $p_J$ with endpoint sum less than $b+r$ would start at $l>J$ and omit its reflected index $b+r-l$, contrary to this comparison.
+\end{proof}
+
+\begin{theorem}[Quadratic obstruction bound]\label{thm:uniformcentral}
+For $M\ge4$, set
+\[
+ J_M=\max\{M+1,(M-3)(M-1)\},\qquad
+ N_M=8(J_M+M-3)=\max\{48,8M(M-3)\}.
+\]
+Let $X,Y$ be increasing strict arms of weights $a=b+d$, where $0\le d\le M-4$. If each arm has at least $N_M$ non-one parts, then
+\[
+ \Del H(n)>0\qquad
+ \left(\left\lceil\frac{a+b+M}{2}\right\rceil<n\le b+M+1\right).
+\]
+Consequently, for any fixed peak $M$, a minimal counterexample to unimodality of $Q$ has an arm with fewer than $\max\{48,8M(M-3)\}$ non-one parts.
+\end{theorem}
+\begin{proof}
+Write $J=J_M$, $K=J+M-3$, $N=N_M=8K$, and $n=b+M+h$ in the stated interval. Then
+\[
+ h\le1,\quad 2h\ge d-M+2,\quad n-1>a.
+\]
+Hence the difference of $H$ equals that of $F_YD_X$ here. By Lemma~\ref{lem:strongkernel}, every layer of $D_X$ has endpoint sum at least $a+M+3$. Write $D_X=\sum d_i z^i$ and $\delta=D_X\rev$.
+
+Apply Lemma~\ref{lem:errorhigh} with $r=M-2$ and $m=M-1$; its assumptions hold because $b\ge2N\ge2J$. Every layer $[l,r']$ above height $p_J=(F_Y)_J$ has endpoint sum at least $b+M-2$. Its contribution is $d_{n-l}-d_{n-r'-1}$, whose ordered indices have sum at most
+\[
+ 2n-(b+M-2)-1=b+M+2h+1\le a+M+3.
+\]
+These high-layer contributions are all nonnegative.
+
+There are exactly $p_J$ remaining layers. Ordinary strengthened reflection gives $l+r'\ge b+1$ for each nonlowest layer, so its negative-term index satisfies
+\[
+ n-r'-1\le M+h+l-2\le M+J-1.
+\]
+For the lowest layer $[0,b]$, that index is $M+h-1\le M$, also within the bound. For every integer $i\le M+J-1$, nonnegativity and the universal composition count give
+\[
+ 0\le d_i\le 2^{M+J-2}.
+\]
+Indeed $d_i\le\sum_{t=1}^M (F_X)_{i-t}\le2^{i-1}$ for $i\ge1$, and $d_i=0$ for $i\le0$.
+
+There is a layer beginning at $J$. To see this, every smaller word of weight $J-1$ embeds in the last $J-1$ positions of $Y$; prefixing a one gives an injection into words of weight $J$. The additional word $2\,1^{J-2}$ embeds because $Y$ has at least $J$ non-one parts and is not in that image. Thus $p_J>p_{J-1}$. The positive term of a selected layer beginning at $J$ is
+\[
+ d_{n-J}=\delta_k,\qquad k=J+d-h.
+\]
+The inequalities on $h,d$ give
+\[
+ J-1\le k\le J+M-3=K.
+\]
+The reversed kernel recurrence contains the product of the $[t]$ factors as a nonnegative summand. Therefore $\delta_k\ge\binom Nk$. Since $N\ge8k$, selecting one element from each of $k$ disjoint eight-element blocks proves $\binom Nk\ge8^k$. Retain this one positive contribution and bound all the negative contributions of the low layers. As $p_J\le2^{J-1}$, this yields
+\[
+ \Del H(n)\ge8^{J-1}-2^{J-1}2^{M+J-2}
+       =2^{3J-3}-2^{M+2J-3}>0,
+\]
+where strictness follows from $J\ge M+1$.
+
+For the last assertion, Proposition~\ref{prop:outer} puts a minimal counterexample in the stated weight band. The initial kernel reflection makes $Q$ nondecreasing through $\lceil(a+b+M)/2\rceil$. If both non-one counts were at least $N_M$, the strict interval just proved would extend this through $b+M+1$. The shorter-arm unimodal tail would then join, a contradiction.
+\end{proof}
+
+The bound concerns one arm of a minimal obstruction, not its total weight or the size of the other arm. It does not prove the unrestricted conjecture. Unlike the general binomial criterion applied at height $p_{M-2}$, the present argument needs only quadratically many non-one parts: moving the threshold to $p_{J_M}$ makes all higher layers automatically nonnegative, and one low layer pays the entire remaining cost.

@@ -1,0 +1,37 @@
+{
+  "status": "PASS_UNBOUNDED_ALL_WORD_FIBONACCI_REFERENCE_MARGIN_AND_COMPLETE_LATE_C",
+  "new_scoped_reports": 7,
+  "kernels": {
+    "ArbitraryFibonacciTailLateC": 7
+  },
+  "numerator": "EVERYfinitecapacitywordV t_i>=2,ANYORDER, infinitebinaryH2base: Fnew=1+S_tF, B=(1-z-z2)F=1+nonnegativepolynomial, B1/B2=0, oldCASCADEidentityreused. W=degB=sumcapacitiesAFTERALLleadingtwosremoved; leading2fixesH2. Fullwordinduction/leadingcoefficientidentificationWRITTEN, no finitegenerationentrance.",
+  "global_margin": "ALLranks k>=0, EVERYreferenceword: G_k-phi*G_(k-1)>=1/3, G=F/(1-z),negativeindiceszero. ExactfiniteconvolutionofNONNEGATIVEB withregularizedFibonacciCDF; B0alonepaysuniformmargin. ThisisREFERENCEgeometriccumulativegrowth, notactualfinitecumulativeLCorcoefficientUI.",
+  "late_C": "EVERYword, ALLN>=W+6, ALLshiftsR>=3: G_(N-R)*d_(N-1)>=G_(N-R-1)*d_N,d=(1-z)F. For3<=R<=N strictQUANTITATIVEmargin >=(1/3-2phi^-4)*d_(N-1)>0. ExactB(-phi)=productS_t(-phi), |S_t(-phi)|<=phi^t gives|d_N-phi*d_prev|<=phi^-4<1/6 afterWHOLEhomogeneouscut. Allcumulativereadsboundedby2*d_prevviaFibonacciTAILidentity. Ncounts/capacities/unorderedtailsUNBOUNDED.",
+  "formal_scope": "SevenNEWstandardaxiomscopedreports: ALLrankregularizedFibonacciuniformmargin; COMPLETEfinitepositivenumeratormargintransport; ALLcapacitywindowconjugatenorm; FULLwordproductnorminduction; COMPLETEfiniteerrorpowerreversal/norm; ALLlateone-sixtherrorbound; strictall-readCscalarpayment. OldCASCADErecurrenceREUSEDnotrecounted. ActualreferencepositiveB/leadingtworeduction/series/slope/cumulativehomogeneoustailidentification andALLshiftassemblyWRITTEN, notendtoendLeancompositionproof. ExactQ(sqrt5)QA usesINTEGERsquaredsigncomparisons, nofloat:1200words/11864appends/3432923literalshifts. FiniteQA notinputtoproof.",
+  "remaining": "EarlyMULTITAILreferencecomparisons N<=degB+5 remainOPENinGENERAL (onejumpalreadyclosedearlier). No automatictransfer to arbitraryFINITEactualbinaryprefix: existingrelativeC/read-prefixinheritancerequiresactualdensityhypotheses, unprovedglobally. GeneralactualC>=6nonones/generalA2/ORIGINALGENERALunamplifiedUI OPEN. No originalleastcounterexampleboundupgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "leading_binary_fixed_point_weight_reductions": 310,
+    "ALL_exact_effective_numerator_degrees": 1200,
+    "ALL_exact_positive_Fibonacci_numerator_reads": 272471,
+    "ALL_exact_uniform_golden_cumulative_margin_reads": 272471,
+    "ALL_exact_scaled_conjugate_error_and_tail_identities": 15600,
+    "ALL_literal_late_reference_C_shifts": 3432923,
+    "arbitrary_capacity_tail_reference_contexts": 1200,
+    "unordered_tail_contexts": 424,
+    "ALL_exact_capacity_window_norm_and_numerator_steps": 11864
+  },
+  "sha256": {
+    "arbitrary_Fibonacci_tail_late_C.tex": "b41f1fe8965e1f4fc8f57217a26bd5ba340314d969ca259d5314e628981bcbfa",
+    "ArbitraryFibonacciTailLateC.lean": "d9d5d6e9af6ccf319f2733219880e2630ab24f381be1f8b26d8a951d9183dd77",
+    "ArbitraryFibonacciTailLateC.log": "2ca862453850852d53fbc1f6589fe9ad60317abb0212db91bf14e3bca56f110b",
+    "audit_arbitrary_Fibonacci_tail_late_C.py": "d9e5556795d0768c9250d23af733ef9770ba0f293c4a82b0b6e8e987e239c821",
+    "audit_arbitrary_Fibonacci_tail_late_C.json": "06a9ae039e679296beacaee01ed4a67eafbbcd6cfaf80f5244cdeb4ca2c22950",
+    "verify_arbitrary_Fibonacci_tail_late_C.py": "a229ee2bead80ab81308eded23a399424011f68e38507a48b2b72bdd0c46c7ae",
+    "count_prefix_and_stationary_resource_separator.tex": "bdcb29ad09f35a8bb27eaf4c39519dd90b75d1016885f46989dbd18bdd882791",
+    "CountPrefixSeparator.lean": "716bcb626aa0c8b7386012547d399dcad353a168b60d80590a2547fbe47980f9",
+    "CountPrefixSeparator.log": "2ff4864df7d42e55e83cf38d07e747c3e63a99a29a6cfa3ab0b3333af1ba382a"
+  }
+}

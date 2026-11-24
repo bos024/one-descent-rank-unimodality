@@ -1,0 +1,12 @@
+{
+  "status": "EXACT_QA_PASS_UNIVERSAL_RENEWAL_ROUNDING_AND_CONDITIONAL_ORDINARY_C_BRIDGE",
+  "counts": {
+    "EXACT_all_order_positive_unit_margins_and_strict_rounding": 1980,
+    "EXACT_distinct_orders": 18,
+    "actual_conditional_C_all_shift_prefix_payments": 51998,
+    "actual_TRUE_ordinary_firstdefect_premise_hosts": 792
+  },
+  "root_state_sha256": "6772616680d0539de32f6b0c495146410f30c265c7b9b2186507d7f0e213881a",
+  "seconds": 1.5930000000007567,
+  "scope": "Universalall-t/all-nprobabilityrenewalproof,threegenericLeanreports. ActualCbridgeCONDITIONALordinaryLCfromFIRSTH_tdefecttoFIRSTDmode;notunconditionalgeneralC/A2/originalUI. Exactroot/actualtestsQAonly."
+}

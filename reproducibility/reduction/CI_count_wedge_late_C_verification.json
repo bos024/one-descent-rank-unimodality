@@ -1,0 +1,110 @@
+{
+  "status": "PASS_UNBOUNDED_ACTUAL_CI_COUNT_WEDGE_LATE_C",
+  "new_scoped_reports": 11,
+  "kernels": {
+    "CICountWedgeLateC": {
+      "source_wedge_gives_growth": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "growth_sum_step": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "finite_loss_prefix_sum": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dyadic_ternary_all_distances": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "reference_CDF_growth_step": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "strict_entry_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "double_cumulative_source_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dyadic_reference_resource": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dyadic_source_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "prefix_read_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "last_prefix_read_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "904b97cc26e22d82ebdff255e64cbec27aa515c7c336a29b979446bacd5b65d2",
+  "QA": {
+    "reference_CDF_dyadic_growth_comparisons": 108703,
+    "actual_loss_triple_growth_comparisons": 75768,
+    "exact_integer_dyadic_ternary_prefix_payments": 75768,
+    "actual_ordinary_boundary_seed_payments": 5946,
+    "all_prefix_strong_C_seed_products": 640326,
+    "strictly_growing_actual_boundary_hosts": 5946,
+    "exact_prefix_minimum_all_shift_C_payments": 1263606,
+    "logical_shift_coverage": 361688200,
+    "actual_hosts": 5946,
+    "CI_profiles": 991,
+    "literal_all_shift_C_products": 1913455
+  },
+  "independent_counts": {
+    "independent_reference_dyadic_CDF_comparisons": 13464,
+    "independent_literal_loss_triple_growth_comparisons": 10720,
+    "independent_all_prefix_C_seed_products": 66185,
+    "independent_literal_dyadic_ternary_prefix_payments": 10720,
+    "independent_strictly_growing_boundary_hosts": 1135,
+    "independent_all_shift_C_minimum_payments": 131570,
+    "independent_literal_C_read_products": 313959,
+    "independent_actual_hosts": 1135,
+    "independent_CI_profiles": 227
+  },
+  "independent_state_sha256": "c8c7bcdc3179897315a62d1067584a02f8fd28bfd21fe0fad2fa549fc71587fc",
+  "new_finite_entrance_certificates": 0,
+  "wedge": "PROVED ALL actual sorted1^alpha2^uV,ALLcapacities/counts/paddings,EVERYCshift>=3 at EVERYN>=W+1 IF w=u+r>=4(h-u)-5, equivalently5u+r+5>=4h. delta<=4 uses old all-padding theorem; ENTIRE delta>=5 cone is a NEW UNBOUNDED analytic argument. No finite entrance premise.",
+  "cumulative_payment": "ENTIRE ordinary-source cumulative and double-cumulative losses retained: lj triple growth throughp+1 pays EVERY initial G prefix directly. Reference G has ratios>phi and dyadic UPPER bound; at distance d>=1, 3*2^d<=2*3^d compares source and background. Last read uses y>=3x/2. This does NOT assume reference or actual cumulative LC, nor any earlier reference C.",
+  "ordinary_seed": "ONE actual ordinary seed at W follows from total earlier loss a<=b/2, next loss c>=3b, x>b and positive reference Cassini amplitude. Previously registered UNIVERSAL late-D-LC integrates all later F/G reads. Both loss sources and leading numerator unit retained.",
+  "formal_scope": "ELEVEN scoped kernel reports include a genuine FINITE-SUM induction for loss prefixes and an ALL-natural-distance dyadic/ternary induction, plus complete real entry/prefix payments. CI source/model/reference/mode identities and read integration are WRITTEN assemblies of already registered inputs, not an end-to-end Lean composition theorem. Every finite profile here is QA ONLY.",
+  "remaining": "Potential actual LATE-C failures now ALSO require5u+r+5<4h, in addition to oldu>=9,u+5<=h<=3u-2,maxcap<=2u-1,W>32. Earlier actual/reference C, general C/A2/original coefficient UI remain OPEN. First original unresolved full-C nonone count6 unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_union": "u>=h-4 OR 5u+r+5>=4h",
+  "sha256": {
+    "CI_count_wedge_late_C_proof.tex": "a3b6077550bb8b3767154c68fd4e90cc8ec5541a711e2999839ed7592cc8ea3e",
+    "CICountWedgeLateC.lean": "18f12223787ab44ab2ccb4bfd98932a38a3331a7dbaee53ad14b4954ee41f5b2",
+    "CICountWedgeLateC.log": "ee5103ed0b2036cefed88fd24903f7b42ea8fc965f152767b725e821dc460bb7",
+    "audit_CI_count_wedge_late_C.py": "3c2b041868a63c66f9cefc00b571358f6af4c694793b8164daf19c6c93a1803d",
+    "audit_CI_count_wedge_late_C.json": "d2e4c2f52e6f4afeea320b8a467b9c8dd0e890b010276ce5d235142ab62fea3f",
+    "verify_CI_count_wedge_late_C.py": "b84ac267ff68539b025dc7676bb2b4e913fcfb57b4564f0b336f19c23a338791",
+    "four_subdegree_C_entrance_verification.json": "10fbbaf92959db642d74dfb169423162a37101f003f6c45b9565ebac99bda369",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc"
+  }
+}

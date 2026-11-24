@@ -1,0 +1,102 @@
+{
+  "status": "PASS_UNBOUNDED_SURPLUS_ORDINARY_COEFFICIENT_FULL_TAIL_LC",
+  "new_scoped_reports": 10,
+  "kernels": {
+    "cumulative_head_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cumulative_quotient_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cumulative_ratio_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "whole_cumulative_prefix_LC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cumulative_source_startup_budgets": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "first_startup_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "second_startup_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "reference_amplitude_boundary_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "first_missing_ordinary_boundary_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "constant_reference_density_excludes_strict_growth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "state_sha256": "cc37a6f26f5bc96106185f72d73e3d71a66cf6052df2f94d3da5b513d777c64e",
+  "QA": {
+    "exact_entire_quotient_source_identity_coefficients": 36970,
+    "entire_positive_cumulative_quotient_LC_reads": 36670,
+    "exact_cumulative_source_and_infinite_ordinary_deficit_coefficients": 37570,
+    "all_capacity_reference_first_boundary_budgets": 300,
+    "actual_entire_ordinary_LC_tail_centres": 240688,
+    "exact_ALL_padding_ordinary_model_reads": 189350,
+    "actual_hosts": 1500,
+    "CI_profiles": 300
+  },
+  "independent_counts": {
+    "independent_reverse_quotient_cumulative_source_and_LC_reads": 21820,
+    "independent_exact_bounded_geometric_inverse_including_constant_tail": 1446,
+    "independent_reference_amplitude_boundary_budgets": 241,
+    "independent_positive_box_ENTIRE_ordinary_LC_tail_minors": 139500,
+    "independent_positive_box_exact_ALL_padding_ordinary_models": 110305,
+    "independent_positive_box_hosts": 1205,
+    "independent_CI_profiles": 241
+  },
+  "independent_state_sha256": "b51aaeac7e0a67f348b7ceded238d6f4374be0cb351120ae05144950e9bdfbe4",
+  "new_finite_entrance_certificates": 0,
+  "theorem": "PROVED ALLactualnormalized1alpha2uV,ANYnonemptyV>=3,ALLpadding/counts/caps: u>=max(h,16) impliesordinaryF_N^2>=Fprev*Fnext atEVERYcentreN>=u+r+1,ENTIREtailthroughandbeyondallordinarymodes/support. No new finite entrance. This isordinarycoefficientLC onitsstatedtail,NOTcumulativeLC/relativeLC/originalcoreUI.",
+  "cumulative_quotient": "PROVED actualordinarygoldendeficit B_s=q*c+cumJ_s ispositive/nondecreasing/eventuallyconstant andGLOBALordinaryLC. FullquotientJ ordinaryLC,notitspositiveprimitiveLC,isrequired. ExactB0=1-q\u00b2c retained;firstBminorpaidbyCIhead,andFULLcumulativeLCinduction propagatesALLcentres. Positiveprimitiveafterrank0isJ_(s>=1).",
+  "bounded_cut": "PROVED boundedconstant-tail futureinverse andfinitecutlimit: truncateB afteritsfirstmaximalplateau,keepSAMEfirstmode/positiveprimitive;applyOLDfinitegeometriccutthenpassLCtoordinarycoefficientlimit. TRUEcumulativeE source differsfromB+qzB ONLYat0,q\u00b2c retained;startupusesM1=w+1,M2=E2+w+1. InitialphysicalcentreN=w+1paidSEPARATELY,notwrongzeroextendednegativeindex.",
+  "first_boundary": "PROVED ALLcapacityreferenceR_W>=fixedCassiniA; r>=2 viaA<=117/50x<5/2x<=R_W, r1viaFib(L-2)-(-1)^(L+1)>=0. ThusfirstordinarydefectpaysANYsurplusboundaryw+1. Constantinfinite-initialreferenceafteritsfirstmode andREGISTEREDfinitepaddingordinarydensity excludealateractualfirstmode.",
+  "formal_scope": "TENnewcleanstandardaxiomscopedreports,includingFULLarbitrary-prefixcumulativeLCinduction,entirehead/startup/reference/unit/modebudgets. Actualquotient/root/sourceidentities,geometricconvolutionandcutlimits,modeidentificationandfullactualassemblyWRITTEN,notend-to-endLeanactualcompositiontheorem. FiniteQAONLY,no new finite premise.",
+  "remaining": "SurplusrelativeordinaryLC andordinaryminor>=referenceCassiniAremainOPENdespitefiniteQA. Generalactualdensityrecord,unseededcrossing,earlierC/fullA2/originalunamplifiedcoefficientUIOPEN. GeneralCfirstunresolvednononecount6unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "surplus_ordinary_tail_LC_proof.tex": "d1ea13c6c1b42590efd4a887cb5e5d15693535c8354d505dc4094d116980f19e",
+    "SurplusOrdinaryTail.lean": "20d916c1106696b1f774c8960196ffd4b9a3a7832325fa28ca644e3544b611d8",
+    "SurplusOrdinaryTail.log": "4d7f126dd79b0756c4389244347d81323a6c44835bdf51fd75a4c3bcfb2b3545",
+    "audit_surplus_ordinary_tail_LC.py": "d8e54c040788fb4177d6b673d3238434645d252d0406e9c9e807847ccb706f26",
+    "audit_surplus_ordinary_tail_LC.json": "56a1762aef40d4d01ab716e16bcbb9665f908cfcde4034789da2e932be8a2965",
+    "verify_surplus_ordinary_tail_LC.py": "c72869f674002288fc3cd98eb4f512a9743005b81f978751cd78376befef992e",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "degree_boundary_CI_entrance_verification.json": "fd6fbee14ec008ca7c0fb94b9f723f6c0a84ad36a965c7b2d1dbdf50fbf9c075",
+    "all_padding_CI_entrance_verification.json": "17740524c775a089847144d6c498b0bcda4a047f861e9943dfd6a2fd9d20e518",
+    "ordinary_golden_growth_source_verification.json": "ae495815227227e1df4d497a290f7fb3819cce5ac0dbfeccdbf71ce7d6c2e59c",
+    "physical_boundary_golden_C_verification.json": "56058fd7ac38393c7f9e9365e951feb318a71516b205319e1c272f20f7b1a950",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc",
+    "hereditary_strong_late_C_verification.json": "d4ac624d9905c35c4fb48fb3544ad1b9bd36a3e06a23bc5cd3dc6bda00f9a729"
+  }
+}

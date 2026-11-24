@@ -1,0 +1,13 @@
+{
+  "status": "EXACT_QA_REFERENCE_ORDINARY_GOLDEN_PREFIX_AND_GENERAL_RECORD_CRITERION_UNDER_AUDIT",
+  "counts": {
+    "arbitrary_order_full_ordinary_golden_prefix_reads": 230718,
+    "exact_full_append_gap_window_identities": 230104,
+    "generic_reference_exact_ordinary_tilt_seed_identities": 2147,
+    "reference_profiles": 1816,
+    "analytic_W3_exception_equality_q6": 1
+  },
+  "state_sha256": "53931a5dcefe107ca3bf82e78c304e089d36ab0490fd1f18d0b4e46330063561",
+  "seconds": 1.139999999999418,
+  "scope": "Unbounded ordinaryreferenceprefix theorem and genericnormalizedtiltordinaryseed,allorders/counts/caps. ActualdensityrecordcriterionSUFFICIENTonly;universalrecordassertionOPEN. No finite entrance premise;finiteQAonly;original/generalC/A2OPEN."
+}

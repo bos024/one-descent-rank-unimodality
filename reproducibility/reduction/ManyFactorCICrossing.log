@@ -1,0 +1,7 @@
+'ManyFactorCICrossing.interior_unscaled_five_fourths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ManyFactorCICrossing.interior_numerator_zero_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ManyFactorCICrossing.stronger_interval_norm_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ManyFactorCICrossing.many_factor_nonlong_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ManyFactorCICrossing.fast_window_only_three_integer_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ManyFactorCICrossing.many_factor_perturbed_junction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ManyFactorCICrossing.discarded_primitive_prefix_is_absent' depends on axioms: [propext, Classical.choice, Quot.sound]

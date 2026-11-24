@@ -1,0 +1,63 @@
+{
+  "status": "PASS_QA_UNBOUNDED_FIXED_TERMINAL_FOURTEEN_SLOPE_THINNESS",
+  "counts": {
+    "whole_relative_capacity_scalar_QA": 498,
+    "whole_block_kernel_large_read_power_QA": 1001,
+    "WHOLE_actual_middle_tail_offset_norm_QA": 156,
+    "ALL_actual_signed_slopes_OUTSIDE_strict_head": 35775,
+    "ALL_bulk_ACTUAL_source_unit_vanish_and_two_interval_read_QA": 31752,
+    "actual_first_missing_sixteen_plus_profiles": 160,
+    "ALL_NONBULK_actual_signed_slope_QA": 4023
+  },
+  "exact_template_margin": {
+    "numerator": 4439206634383191027163848812916160780732663109163678304698173633657399772585681076214453402176826757928207692667189665390178532905193685829979281612417755498673122842769085381918788624218894602686267877261307959,
+    "denominator": 5719817656807584498755197500321834878957341424935040603713165066240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  },
+  "genuine_kappa_eleven_thinness_counter": {
+    "alpha": 1,
+    "U": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "m": 66,
+    "strict_head": 65,
+    "slope": 1150738045674555652
+  },
+  "state_sha256": "6b4fd16da75190fe6881c4af64bb440459c5d136a8718505ef1813162a01f0fe",
+  "seconds": 0.35899999999674037,
+  "scope": "QA ONLY. Exact scalar constants and whole fixed fourteen model/read checks. No finite word proof premise, no claim belowkappa16, no generalC/A2/original conclusion."
+}

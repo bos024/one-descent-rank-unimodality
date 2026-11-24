@@ -1,0 +1,10 @@
+{
+  "status": "GENERATED_COMPLETE_SECOND_OFFSET_SIX_JET_CERTIFICATE",
+  "N": 6,
+  "states": 106,
+  "retained_edges": 179,
+  "excluded_small_curvature_states": 15,
+  "exact_projection_from_independent_13_jet_state_set": true,
+  "lean_sha256": "1ef0dd520da77959acc7098e9c6dfe17f3c6787575ab86ac329b7b56da0b35ac",
+  "scope": "Finite complete closure graph. After clean Lean verification, with written actual coverage this proves DeltaE_(kappa+2)>=1 for kappa3/4 whenever FIRSTDmode>=kappa+2. Original UI OPEN."
+}

@@ -1,0 +1,224 @@
+\section{The degree boundary $u=h$: every padding and every late C shift}
+This is a new refinement of the registered all-padding theorem. Its
+unbounded written assembly, scalar Lean kernels and complete small-case
+certificates have passed the independent checks recorded below. General
+C/A2 and original one-descent unimodality remain open. Write $q=\phi-1$, $\psi=-q$.
+
+\paragraph{Theorem.}
+Let $L=\prod_{i=1}^r[t_i]$, $t_i\ge3$, $h=\deg L\ge2$,
+$W=h+r$. At EVERY padding $\alpha\ge1$, the actual arm
+$1^\alpha2^hV$ satisfies EVERY C comparison at EVERY $N\ge W+1$.
+Together with the registered all-padding theorem this lowers
+the uniform late-C threshold from $u\ge h+1$ to $u\ge h$.
+The original conjecture and shorter counts remain separate.
+
+\paragraph{A genuine exceptional quotient, not an actual counterexample.}
+For $L=[4]$, $u=h=3$, the positive primitive of
+$J=((1+z)^uL-c)/(1+qz)$, $c=\psi^uL(-\phi)$, has its centre-two
+minor $3-2\phi<0$. Thus the previous entire-later-primitive theorem
+CANNOT be extended verbatim. The auxiliary theorem
+omits exactly this quotient. Its actual coefficient entrance is
+covered by a complete small startup certificate instead.
+
+\paragraph{Fourfold robust head, including the last row and arbitrary degree.}
+For $u\ge16$, ANY nonnegative LC numerator $N$ with $N_0=1$,
+$N_1\le u/2$, put $B=NQ_u$. Then
+\[
+ M_B(s)\ge4q^s(B_{s+1}+2qB_s+q^2B_{s-1})
+                         \quad(2\le s\le u-1).       \tag{1}
+\]
+NO degree bound is imposed on $N$. To prove it retain the first
+intermediate row of the same Toeplitz Cauchy--Binet expansion as
+in the registered robust head. Set $T_k=Q_{k+1}+2qQ_k+q^2Q_{k-1}$.
+For $1\le k\le s\le u-1$ ULC gives
+$K(s,k)\ge Q_sQ_k/(s+1)$. The earlier bound $T_k/Q_k\le u+q$
+also holds at $k=u-1$: $Q_u/Q_{u-1}<1$ and
+$Q_{u-2}/Q_{u-1}\le u-1$ give
+$T_{u-1}/Q_{u-1}\le1+2q+q^2(u-1)\le u+q$.
+
+For $2\le s\le u-3$, use
+$Q_s\ge(u-1)(u-2)/2\ge(24/5)(u+q)$ and
+$4(s+1)q^s\le12q^2\le24/5$.
+At $s=u-2\ge14$, monotonicity from rank ten gives
+$4(s+1)q^s\le44q^{10}\le11/25$; here
+$q^{10}\le q^6q^4\le(1/16)(4/25)=1/100$.
+The estimate $Q_s\ge u-q\ge(11/25)(u+q)$ pays this row.
+At the LAST row $s=u-1$, use $Q_s\ge3/2$ and
+\[
+ u(u+1)q^{u-1}\le1/3\quad(u\ge16).                 \tag{2}
+\]
+Indeed the ratio on incrementing $u$ is $q(u+2)/u\le3/4$;
+at sixteen, $q^{15}\le(q^6)^2q^3\le1/1024$ and
+$16\cdot17/1024=17/64<1/3$.
+Thus $4u q^{u-1}(u+q)\le4/3<3/2$.
+
+The omitted $N_{s+1}$ is paid by $N_{s+1}\le N_1N_s$.
+It suffices for the zeroth row that
+$Q_s\ge q^s(6u+4q)$.
+For $s\le u-3$, use the same binomial bound and $q^s\le2/5$.
+At $u-2$, use $q^s\le1/16$ and
+$u-q\ge(6u+4q)/16$.
+At $u-1$, $6u+4q\le u(u+1)$ and (2) pay the row.
+This proves (1), including the previously missing arbitrary-degree
+last coefficient. Every endpoint is part of the independent new audit.
+
+\paragraph{Ordinary quotient at $u=h$.}
+Here $c>0$ and the exact CI norm gives
+$c\le(2q^2)^r<1$. All coefficients of $L$ through degree $u$
+are at least one. Thus, through rank $u$,
+$J_n=(LQ_u)_n-c\psi^n>0$.
+Its FIRST ordinary minor, writing $w=u+r$ and
+$E_2=(w^2-u+r)/2$, is exactly
+\[
+                    w^2-(1-c)(E_2+qw)>0.             \tag{3}
+\]
+Since $E_2\le w^2/2$, the lower bound is $w^2/2-qw>0$.
+The fourfold budget pays every ordinary centre $2\le n\le u-1$.
+Append one interval $[t]$ to $L_0$. Since
+$u=\deg L_0+t-1\ge\deg L_0+2$, its OLD quotient is already
+positive global LC by the registered theorem. The new quotient
+differs from $[t]J_{u,L_0}$ only through degree $t-2$.
+Hence all ordinary centres at least $t$ are inherited. If $L_0$
+is nonempty then $t\le u-1$, so the paid head and inherited tail
+overlap completely. The single-interval case $t=u+1$ has ONE extra
+ordinary centre $u$, paid by the explicit endpoints below.
+
+\paragraph{Later primitive, and its one small exception.}
+The OLD quotient has later-primitive LC by its surplus at least two.
+The registered weakened window lemma therefore pays all new primitive
+centres at least $t+1$. Put $B=L_0Q_u$, $a=\phi^2c$,
+$X_n=B_n-a\psi^n$. For $1\le n<t$ its primitive is $X_n$;
+at $t$ it is $X_t-1$ and at $t+1$ it is $X_{t+1}-b$,
+where $b=B_1=u+r_0-q$. Here $|a|/q\le2\phi<4$, so (1)
+pays every needed head centre. When $L_0$ is nonempty,
+$B_n\ge Q_{n-1}>3/2$ at rank $u$ and all the other needed
+read entries are also positive; the perturbation has magnitude less
+than one on ranks $1,\ldots,u$. Ordinary LC of $J$ ensures that
+its positive primitive has initial interval support.
+
+For the last junction, let $r_0\ge1$, $2r_0\le u-2$,
+$D=b^2-2B_2=u-r_0-q^2$. The concave scalar
+\[
+ F(r)=(u-r-1)(r+1)(u-1)-u(u+r)
+\]
+is nonnegative on $1\le r\le(u-2)/2$: its endpoints are
+$u^2-7u+4$ and $u(u^2-7u+4)/4$.
+Together with ordinary LC of $B$ and
+$B_{t-1}\ge(r_0+1)(u-q)$ this yields
+$bB_{t-1}-2B_t\ge u$.
+Now $a\le4q^2$ for a tail with at least two factors, whence
+the perturbation error is at most
+\[
+ 4q^4(b+2q)\le(16/25)(3u/2)=24u/25.
+\]
+Consequently $bX_{t-1}-2X_t\ge u/25$ and the actual junction
+minor $M_X(t)+1+bX_{t-1}-2X_t$ is positive.
+
+For a SINGLE interval $t=u+1$, exact polynomial division gives
+\[
+ d_{u-2}=\phi u-\phi^2-\phi^3\psi^u,\quad
+ d_{u-1}=\phi+\phi^2\psi^u,\quad
+ d_u=-\phi\psi^u,\quad d_{u+1}=\psi^u-1.             \tag{4}
+\]
+For even $u$, $d_u<0$ and the last positive primitive is an endpoint.
+For odd $u$, its last internal minor is
+\[
+                 \phi^2\{1-(u+\phi)q^u\}>0
+                                      \quad(u\ge5). \tag{5}
+Use $(u+2)q^u\le7q^5<7/10$ by monotonicity from five.
+At $u=3$ this is precisely the negative $[4]$ example above.
+The remaining ordinary centre $u$ is positive too: if $u$ is even,
+both $d_u,d_{u+1}$ are negative and $d_u-d_{u+1}>0$;
+if odd, $J_u\ge1$ and
+$J_u(d_u-d_{u+1})+d_ud_{u+1}\ge1-\phi q^u(1+q^u)>0$.
+The finite range $2\le u\le15$ has exactly 175 degree partitions;
+it has been completely reconstructed and kernel certified, with
+ONLY $([4],u=3)$ omitted from the later-primitive list.
+
+\paragraph{The first coefficient centre is helped, not harmed.}
+Set $m=h-1=u-1$, $C=L\sum_{k=0}^m(z+z^2)^k$.
+For $s\ge0$, its actual tail deficit is EXACTLY $J_s$ and
+$x_s=\sum_{j\ge1}q^jJ_{s+j}=C_{u+s}$.
+Also $x_{-1}=C_{u-1}$. At the preceding rank,
+\[
+ \phi C_{u-2}-C_{u-1}=-\phi(1-c)<0.                 \tag{6}
+\]
+Extend $J$ by zero at negative ranks. Then $x_{-2}=qC_{u-1}$,
+so $C_{u-2}<x_{-2}$. The globally LC geometric inverse has a
+nonnegative minor at centre $-1$; lowering ONLY its previous value
+proves the actual $C$ minor at $m$. Its tail from $u$ is already LC.
+Thus $C$ is LC from $m=h-1$, without importing the old Cassini
+boundary argument whose hypothesis was $m\ge h$.
+
+\paragraph{All-padding coefficient entrance.}
+The registered signed-primitive cut theorem now applies exactly as
+before. Its source identity $E=(1+qz)J+c$ differs at rank zero only.
+The source likelihood-ratio order and the geometric inverse place
+every pre-mode centre inside the valid cut range. The existing
+uniform startup payment applies when $w=u+r\ge8$.
+The cases $w<8$ have exactly SEVEN $(u,V)$ contexts and TWENTY-NINE
+finite paddings $1\le\alpha\le h$. These include the exceptional
+quotient $[4]$. The padding clamp follows independently of $m\ge h$:
+each positive symmetric term $z^k(1+z)^kL$ has centre
+$(3k+h)/2\le(3m+h)/2$, so the first $C$ mode is at most its
+ceiling. Source likelihood-ratio order puts the first positive-part
+mode no later. Every $\alpha\ge h+1$ starts after that mode.
+The result is therefore positive-part coefficient LC at
+every $m\le n\le\operatorname{firstmode}A$, for every padding.
+
+\paragraph{Actual identification and a new simpler C join.}
+The signed actual derivative equals the formal tail at physical ranks
+$r+2+n$ for every $n\ge h-1$. At rank $W$ its extra numerator
+coefficient is EXACTLY one. For $h\ge3$, (6), $C_{h-2}\ge2$ and
+integrality give $D_{W+1}=C_{h-1}>C_{h-2}+1=D_W$.
+Actual positive-slope unimodality thus identifies its first mode with
+the formal first mode. The $h=2$ single-tail case already has complete
+C by the registered one-jump theorem.
+The formal coefficient minor at $m$ is NOT silently identified with
+the actual minor at $W+1$: its previous actual slope has the extra
+unit just described. In fact $V=(3,3)$, $u=h=4$, $\alpha=2$ has
+$(D_6,D_7,D_8)=(8,12,19)$ and minor $-8$ at $W+1=7$.
+Only actual LC from centre $W+2$ onward is used in the following
+join, and every such triple lies entirely in the exact formal tail.
+
+Let $c_*=r_{W+1}$, $d_*=r_{W+2}$ be the reference slopes and
+$\delta\in\{1,2\}$ the first actual defect at $N_0=W+2$.
+The exact conjugate error is
+\[
+                 d_*-\phi c_*=c\in(0,1).            \tag{7}
+\]
+Hence its entrance ratio $\lambda_0=(d_*-\delta)/c_*<\phi$.
+LC gives every later increasing current ratio $\lambda\le\lambda_0$.
+The reference cumulative ratios exceed $\phi$ at EVERY read, by
+the already registered positive Fibonacci numerator. Actual cumulative
+reads through $W+1$ agree with this reference.
+The ONE needed ordinary seed is at $W+1$, where
+$F_W=d_*$ and $F_{W+1}=c_*+d_*$. Its payment is
+\[
+ c_*(c_*+d_*)-d_*(d_*-\delta)=-A_V+\delta d_*\ge0,
+\]
+using $d_*=r_{W+2}\ge A_V$. From this seed the ordinary and
+cumulative integrations propagate every later required read.
+There is no need for an ordinary seed at $W$, which can fail here.
+Reference homogeneous C pays $N=W+1$, and the first actual defect
+improves $N=W+2$. This proves ALL actual late C at $u=h$.
+
+\paragraph{Verification and scope.}
+The registration is \texttt{degree\_boundary\_CI\_entrance\_verification.json}.
+Eleven new scalar/power/junction/boundary/seed kernels are checked in
+\texttt{DegreeBoundaryCI.lean}; three finite-certificate reports are
+checked in \texttt{DegreeBoundaryCIChunkCertificate.lean}. The latter
+uses ordinary kernel reduction over 25 bounded chunks for all 9266
+distinct field margins, and an axiom-free reduction for all 35 distinct
+integer startup margins. A separate capacity-multiset grammar and
+reverse polynomial division rebuild every one of the 175 small quotient
+contexts. Literal actual F/D coefficients, correctly removing the extra
+previous unit, rebuild all 29 startup contexts and all 70 comparisons.
+The arbitrary-sequence ULC/window/convolution assembly, actual source
+identities and model/read integration are written proofs; this is not
+an end-to-end Lean theorem of all composition hosts.
+The explicit failure of the stronger quotient theorem is retained.
+The explicit failure of the earlier actual LC centre is retained too;
+neither is a counterexample to the proposed late-C refinement.
+Nothing in this refinement settles $u<h$, earlier reference C,
+general A2, or the original general coefficient-unimodality conjecture.

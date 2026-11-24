@@ -1,0 +1,383 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,lmodern}
+\usepackage[T1]{fontenc}
+\DeclareMathSizes{10}{10}{8}{8}
+\DeclareMathSizes{10.95}{10.95}{8}{8}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\emergencystretch}{1.8em}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}[proposition]{Lemma}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\pos}[1]{(#1)_+}
+\title{The hereditary strict-peak reduction}
+\hypersetup{unicode=true,
+  pdftitle={The hereditary strict-peak reduction},
+  pdfauthor={Zhang Yibo and Zhang Zhanhe}}
+% The byline uses the title-page space otherwise reserved for an empty date.
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \begingroup\centering
+  \vspace*{0.6em}%
+  {\LARGE\@title\par}\vspace{0.85em}%
+  \@author\par
+  \endgroup
+  \vspace{0.85em}}
+\makeatother
+\author{\begin{tabular}{@{}c@{\hspace{2em}}c@{}}
+  \normalsize Zhang Yibo &
+  \normalsize Zhang Zhanhe\\[-1pt]
+  \footnotesize\href{https://orcid.org/0009-0002-2005-5781}{ORCID 0009-0002-2005-5781} &
+  \footnotesize\href{https://orcid.org/0009-0007-2883-9640}{ORCID 0009-0007-2883-9640}
+\end{tabular}\endgraf\vspace{3pt}%
+{\footnotesize Both authors contributed equally as joint first authors. Zhang Zhanhe is the corresponding author.\endgraf}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+This companion to \emph{Rank-unimodality of one-descent composition ideals}
+gives the passage from a single increasing arm to the two interacting arms
+at a peak. We specify the three coefficient comparisons, the finite
+certificate in the mixed case, and the two inductions that produce the
+ordinary rank sequence. The accompanying sources contain the proofs of
+the coefficient estimates used in this reduction. The new transport
+theorem in the article supplies its one unrestricted hypothesis.
+\end{abstract}
+
+\section{Notation and the two inductions}
+Write \(S_t=z+\cdots+z^t\), \([t]=1+\cdots+z^{t-1}\),
+\(\Delta v_n=v_n-v_{n-1}\), with zero extension. For an increasing arm
+\(X\) let \(A=F_X\) be its ordinary rank polynomial, \(a=\wt X\) and
+\(q_X=z^aA(1/z)\). The second arm \(Y\) has \(B,b,q_Y\) defined
+in the same way. A legal append has capacity at least the previous maximum.
+The identities \(F_{Zt}=1+S_tF_Z\) and \(q_{Zt}=[t]q_Z+z^{\wt(Zt)}\)
+hold for such an append. An arm whose rank polynomial is an interval
+is an elementary base. Every remaining arm can be normalized to
+\(1^\alpha(t_1,\ldots,t_h)\) with \(1\le\alpha\) and
+\(2\le t_1\le\cdots\le t_h\), preserving its weight and polynomial.
+
+For \(P=AB\), let \(p=q_Xq_Y\) and \(u_n=\pos{\Delta p_n}\).
+The count induction establishes unimodality of \(2^nu_n\). It deletes
+one final non-one part in a heavier arm. The peak induction uses this
+whole-sequence conclusion, with a proper relative of the same peak and
+with cores at smaller peaks. The input to the count induction is the
+following hypothesis at every final-part prefix of both arms. With
+\(G_i=\sum_{v=0}^i A_v\), \(D_i=\pos{\Delta A_i}\) for \(i\ge2\),
+it reads
+\begin{equation}
+ G_{k+1}D_n\ge G_kD_{n+1}
+ \quad (0\le k\le n-3,\ D_nD_{n+1}>0).                    \label{C}
+\end{equation}
+Section 3 of the article proves \eqref{C} for each arm, with one
+additional admissible read. For the following reductions, one can
+equally well assume \eqref{C} on any final-deletion-closed class.
+
+We use three established shape facts about the ordinary product. It is
+unimodal; the positive differences of \(p\) have initial interval
+support; and if both arms are noninterval arms then its first mode
+\(\sigma\) is strictly less than \(\max(a,b)\), including \(a=b\).
+These are statements about the ordinary product before inserting a peak.
+The underlying interval-layer, midpoint and positive-difference proofs
+are collected in the evidence index in Section~\ref{index}.
+
+Here is the midpoint argument. The lowest height layer of \(A\) is
+\([0,a]\), and every higher interval has endpoint sum at least \(a+1\).
+Appending \(t\) sends \(A\) to \(1+S_tA\); interval convolution gives
+the new higher-layer bound, and the constant changes the lowest layer.
+For a noninterval arm its second height layer is exactly \([2,a-1]\).
+Thus the layer products of \(A,B\) give growth through
+\(\lceil(a+b)/2\rceil\). For \(a=b\), the two lowest layers contribute
+\(-1\) on the edge from \(a\) to \(a+1\). The two second layers together
+contribute \(+1\), and all other pairings contribute nonnegatively.
+Orient \(a\ge b\). In \(AB=B+S_tF_ZB\) the second term is unimodal by
+deletion induction and interval convolution. When \(a>b\) the known
+growth extends past \(b\), and when \(a=b\) the extra edge gives the
+same conclusion. Thereafter only the unimodal window remains.
+This proves ordinary unimodality and the strict reverse mode bound.
+The positive-difference interval support is proved, also by window
+and deletion, in \path{joint_rising_differences.tex}.
+
+\section{When a sliding interval preserves weighted differences}
+Let \(m\) be the last ordinary mode of \(p\) and \(\ell\) the first mode
+of \(2^nu_n\). Define \(E_i=2p_i-p_{i-1}\).
+We need ordinary unimodality of the tilted coefficients \(2^np_n\) and
+the following local implication for \(t\ge1,\ n>m,\ k=n-t\ge0,\ k<\ell\):
+\begin{equation}
+ \left.
+ \begin{gathered}
+ p_n>p_k,\quad p_{n+1}>p_{k+1},\quad 0\le E_n\le E_k
+ \end{gathered}\right\}
+ \quad\Longrightarrow\quad
+ E_{n+1}-E_n\le E_{k+1}-E_k.                               \label{gap}
+\end{equation}
+Equality at \(E_n=E_k\) is included.
+
+\begin{lemma}\label{win}
+If \(2^np_n\) and \(2^nu_n\) are unimodal and \eqref{gap} holds,
+then the weighted positive differences of every \([t]p\) are unimodal.
+\end{lemma}
+\begin{proof}
+Put \(w_n=\Delta([t]p)_n=p_n-p_{n-t}\), \(f_n=2^n(w_n)_+\).
+The support of the positive differences is initial: while the outgoing
+index precedes the first mode and the entering index passes the last
+mode, their difference decreases; once the outgoing index passes the
+mode it is nonpositive. Before that crossing it is positive up to a
+possible terminal plateau, by the initial positive support for \(p\).
+For \(n\le m\), \(f_n=2^n([t]u)_n\), which agrees with convolution of
+the unimodal \(2^nu_n\) against \((1,2,\ldots,2^{t-1})\).
+Such a log-concave interval kernel preserves unimodality: the signed
+first differences of the input have one change of sign, and the
+nonnegative order-two minors of the kernel preserve this sign order.
+At \(m+1\), clipping the signed sum gives at most that comparison
+sequence. Alternatively, for \(n<t\) use the unimodal comparison
+\(2^np_n=f_n\) with \(f_t\le2^tp_t\). Choose the appropriate comparison
+through \(c=\max(m,t-1)\). Any earlier strict fall forces
+\(f_{c+1}\le f_c\). This checks the first crossing boundary.
+
+Consider now a nonstrict fall at \(n\ge c+1\) while
+\(w_n,w_{n+1}>0\). If \(k=n-t\ge\ell\), then
+\(w_n\le\sum_{i>k}u_i\le2u_{k+1}\), by the successive halvings of
+the finite tail. Positivity of \(w_n\) puts \(k\) before the first
+ordinary mode. Consequently
+\(
+ w_{n+1}=w_n-u_{k+1}-(p_n-p_{n+1})\le w_n/2.
+\)
+If \(k<\ell\), the fall gives \(E_n-E_k=2w_n-w_{n-1}\le0\).
+Here \(E_{k+1}>0\) and \(E_{k+1}-E_k=2u_{k+1}-u_k\ge0\).
+For \(E_n<0\), tilted unimodality implies \(E_{n+1}\le0\).
+For \(E_n\ge0\), \eqref{gap} gives \(E_{n+1}-E_{k+1}\le E_n-E_k\).
+In both cases \(2w_{n+1}-w_n\le0\). A nonstrict fall propagates
+at every remaining positive edge, and all terms after the support are
+zero. This excludes a strict fall followed by a rise.
+\end{proof}
+
+\section{The coefficient comparisons for genuine increasing arms}
+On the forward side put \(E_Y^*=1-z+(2z-1)B\),
+\(L=E_Y^*A\), and \(e_i=2P_{i-1}-P_i\).
+When both factors are strictly rising through \(n+1\),
+the source increments \(w_j=\Delta E_Y^*(j)\) are nonnegative through
+that rank and vanish for \(j<3\). The single-arm proof obtains this from
+the ordering of the ordinary and source modes. Summation by parts gives
+\(L_i=\sum_{j=3}^iw_jG_{i-j}\) at the two ranks used. Hypothesis
+\eqref{C} gives \(L_{n+1}D_n\ge L_nD_{n+1}\), and \(L_{n+1}\ge L_n\).
+Since \(e_i=L_i-D_i\) here, \(e_{n+1}<0\) implies \(e_n\le0\);
+if \(e_{n+1}\ge0\), then
+\[
+ L_{n+1}(e_{n+1}-e_n)
+ = L_{n+1}D_n-L_nD_{n+1}+(L_{n+1}-L_n)e_{n+1}\ge0.
+\]
+Outside the common rising prefix, the first nonincreasing factor can
+be oriented as \(A\). The identity \(e_i=L_i-\Delta A_i\) and
+nonnegativity of the whole \(E_Y^*\) give \(e_i\ge0\) at those ranks.
+These comparisons supply unimodality of \(2^np_n\) after reversal and
+the common-rising part of \eqref{gap}; the initial ranks are included
+in the source proof. A negative current reverse tilt has no positive
+successor.
+
+For the remaining branches write \(d=a+b,\ j=d-n\), and
+\(T=E_{n+1}-E_n=P_{j+1}-3P_j+2P_{j-1}\).
+If both forward factors have stopped rising, the first-half
+both-nonincreasing theorem gives \(T\le0\) on its forward half.
+The forward condition is \(2j\le d+2\). On the remaining ranks the ordinary reverse half-tail estimate gives
+\(T\le0\) for \(n>m,\ 2n\le d\), without a sign condition on \(E_n\).
+Together they cover the comparison in \eqref{gap}, since the earlier
+increment there is nonnegative. The proofs keep the other half and the
+source correction in distinct rank ranges.
+
+It remains to compare the mixed phase. Orient \(X=1^\alpha(t_1,\ldots,t_h)\)
+as the forward nonincreasing owner, with rising opposite \(Y\).
+Put \(r=a-j\), \(s_r=\Delta q_X(r)\), and \(C_0=s_{r+1}-s_r\).
+The exact signed identity is
+\begin{equation}
+ T=C_0-\sum_i \Delta E_Y^*(i)A_{j+1-i}.                         \label{mixed}
+\end{equation}
+Let \(K\) be the first weight at which some composition fails to fit
+\(Y\); it is the first index of the positive source \(E_Y^*\).
+For \(Y=1^\beta(v_1,\ldots,v_g)\) noninterval this equals
+\(\min(\{g+2\}\cup\{v_i+g-i+1:1\le i\le g\})\).
+A missing one-part word or a shortest failure at the end of a suffix
+gives the formula; equivalently it follows recursively under a legal
+append. The witnesses concern distinct words in generalized subword order.
+
+Here are the four pieces establishing \eqref{gap} in the mixed phase.
+When both first missing weights are at most twelve the finite
+reduction below and the through-nine base already give the count step.
+Otherwise an opposite with \(K\le9\) has an owner of first missing
+weight at least thirteen and hence at least eleven non-one parts.
+The through-eight and through-nine source estimates exclude \(T>0\)
+for those owners. A one-non-one-part opposite has \(K=3\); the
+first-source reflection proof includes it. At \(r\le-2\) there is
+no positive curvature; an unpaid \(r=-1\) birth has size one and
+\(j\le K-2\). It falls in the strict opposite prefix in each branch.
+
+For \(10\le K\le12\), the exact initial exchange permits
+\(t_1-1\le\alpha\). At any remaining positive-curvature rank with
+\(r\ge0\), put \(d_0=K-\alpha\) and \(L=\sum(t_i-1)=2r+2+e\).
+Unbounded estimates give
+\[
+ d_0\ge6,\qquad 0\le e\le d_0-3,\qquad
+ L\le\min(2d_0(d_0-3),12d_0-25).
+\]
+For \(d_0=6\) only \(h\le3\) remains and for \(7\le d_0\le8\)
+only \(h\le5\) remains. With \(S_K=\lfloor(1+(K-2)(K-1)/2)/2\rfloor\),
+the possible ranks partition as follows. The final column requires
+enumerating every sorted partition of \(L\) allowed by the height
+bounds in the archived certificate.
+\[
+\begin{array}{c|r|rrr}
+ K&\text{rank states}&\text{strict prefix}&\text{source ratio}&
+     \text{remaining}\\ \hline
+ 10&684&170&451&63\\ 11&1048&279&641&128\\ 12&1509&410&891&208
+\end{array}
+\]
+Of the resulting \(1{,}858{,}242\) owner/rank inputs,
+\(72{,}043\) require the final positive-curvature payment. Each
+satisfies the exact integer inequality
+\[
+ C_0\le A_{j+1-K}+\sum_{i=2}^{K-3}2^{i-2}A_{j+1-K-i}.
+\]
+This is a finite part of the proof, with an exhaustive domain derived
+from the preceding inequalities. Thus \(T>0\) implies \(j-2\le S_K\).
+The two positive windows imply \(k+1\le j-2\). The strict prefix
+has \(\Delta q_Y(s)\ge1\) for \(0\le s\le S_K\), by the interval
+products and their centers. When \(0\le r<k\), the \(r+1\) term in
+\([z^{k+1}](2-z)q_X(1-z)q_Y\) alone pays \(C_0\). The constant
+term pays \(r=-1\). When \(r\ge k\) the relative source comparison
+gives \(E_{k+1}-E_k\ge\lambda E_k+1\), where
+\(E_n\ge d_r>0,\ \lambda=C_0/d_r\). This proves \eqref{gap} also at equality.
+
+For \(K=13,14,15\), let \(M_Y=\beta+\sum(v_i-1)\),
+\(B_Y=\max(\beta,\max(v_i-1))\), and
+\(s_Y=\min(\lfloor M_Y/2\rfloor,M_Y-B_Y)\).
+The last eleven non-one parts dominate \(2,\ldots,12\).
+Expanding the last intervals gives the uniform bound
+\(20\,\Delta B_i\le2^i\) for every \(i>s_Y\).
+The expansion retains all seven proper suffix terms. In the bulk
+their combined coefficient is at most \(i^5\); the long kernel gives
+the remaining density at most \(1/25\) and the suffixes at most
+\(1/100\). Outside the bulk the largest interval gives a decreasing
+geometric bound.
+For a positive curvature with \(j-2>s_Y\), the three integer
+guards imply \(e\le2r+2\) and \(h+r+1\le5(r+1)\).
+If \(Q=q_X(r+1)\), \(R=2q_X(r)-q_X(r-1)\), then \(Q\le5R\);
+here \(C_0=Q-R\).
+The source sum in \eqref{mixed} is at least
+\(Q(1-4\,2^{-(j+1)}\Delta B_{j+1})\ge4Q/5\ge C_0\).
+All remaining recoveries therefore lie in the strict prefix, where
+the same earlier increment pays them. For \(K\ge16\) the corresponding
+fourteen-terminal-part estimate \(i\,\Delta B_i\le2^i\) for \(i>s_Y\)
+combines with the indexed owner bound. It puts every positive
+recovery in the strict prefix. The details and exact constants for
+both estimates are in the indexed source proofs.
+This exhausts the mixed case, with the old weighted difference shape
+used only to make the earlier increment nonnegative or to invoke
+Lemma~\ref{win}.
+
+\section{Count induction and the peak join}
+If an arm is an interval, the rectangular base applies with arbitrary
+opposite. The heavier-one-non-one-part base also allows an arbitrary
+opposite. Otherwise remove \(t\) from the heavier new arm \(X=Zt\).
+By induction \(q_Zq_Y\) has unimodal weighted positive differences.
+The three preceding comparisons and Lemma~\ref{win} give the same for
+\([t]q_Zq_Y\). At this stage both old arms are noninterval, since the heavier
+one-non-one-part case was already handled. Now
+\(
+ q_Xq_Y=[t]q_Zq_Y+z^a q_Y.
+\)
+Its first mode is strictly below \(a\). Through that mode the positive
+differences are the window differences, and thereafter the ordinary
+product is nonincreasing. Truncating the unimodal weighted positive
+differences at that index completes the count induction.
+
+For a strict peak \(M>\max(X,Y)\), put
+\[
+ H_M=A+B+(S_M-1)P,\qquad
+ Q_{X,Y}=A+(S_M-1)P,\qquad Q_{Y,X}=B+(S_M-1)P .
+\]
+Set \(\delta_M(Y)=([M]-z^M)q_Y+z^{b+M}\).
+The reversal of \(Q_{X,Y}\) about \(a+b+M\) is \(q_X\delta_M(Y)\).
+Choose a least failing peak and then a failing relative with the
+fewest total arm parts at that peak. The balanced-deletion and outer
+layer lemmas eliminate interval arms and allow the orientation
+\(a\le b\), \(b-a\le M-4\). Within this band either relative is
+unimodal exactly when the core is. The balance and equivalence follow
+from the deletion and outer-layer lemmas in the integrated foundation.
+
+Put \(N=a+b+M\), \(R_0=\lfloor N/2\rfloor\),
+\(W=([M]-z^M)p\). Through \(R_0\) the reverse core agrees with \(W\):
+its two corrections start at \(a+M,b+M>R_0\). Write \(Y=Zt\).
+The unimodal proper relative \(q_X\delta_M(Z)\), after convolution
+with \([t]\), agrees with \(W\) through \(b-1\). Indeed the corrections
+in this identity have factors \(z^b\) and \(z^{b-t+M}\).
+Consequently \(\Delta W\) cannot go from negative to positive on that
+prefix. For \(0\le n<M\) the identity
+\((1-z)W=(1-2z^M+z^{M+1})p\) gives \(\Delta W_n=p_n\ge0\).
+The two initial ranges therefore cover all \(n<\max(b,M)\), including
+the boundary \(b=M\).
+
+At \(\max(b,M)\le n=M+k\le\min(R_0,M+\sigma)\),
+\[
+ \Delta W_{M+k}=p_{M+k}-p_k-u_k .
+\]
+If \(k<\ell\), then \(2u_{k+1}\ge u_k\), hence \(p_k+u_k\)
+is nondecreasing and \(p_{M+k}\) is nonincreasing since \(b>\sigma\).
+When \(b>M\) this comparison includes the joining edge from \(b-1\),
+since \(b-1\ge\sigma\). When \(b\le M\) all earlier differences through
+\(M-1\) are nonnegative. If \(\ell\le k\),
+then \(p_{M+k}-p_k\le\sum_{i>k}u_i\le u_k\) by the weighted
+halvings. This includes \(k=\sigma\). Thus the signs have the required
+order through \(M+\sigma\) or the end of the relevant half.
+
+For \(M+\sigma<n\le R_0\), write \(s=a+b-\sigma\). The range is
+nonempty only if \(s>\max(a,b)\). For the largest arm part \(t_0\),
+the base \(H_{t_0}\) is unimodal: strip all end copies of \(t_0\),
+apply the strictly smaller peak case (or the interval base), and
+restore each copy by \(F\mapsto1+S_{t_0}F\).
+The last forward mode of \(P\) is \(s\), so
+\[
+ \Delta H_{t_0}(s+1)=2P_s-P_{s+1}-P_{s-t_0}>0.
+\]
+Its unimodality gives forward growth through \(s+1\). As
+\(H_M=H_{t_0}+z^{t_0+1}[M-t_0]P\), at each corresponding \(j=N-n<s\)
+we have \(\Delta H_M(j+1)=\Delta H_{t_0}(j+1)+P_{j-t_0}-P_{j-M}\ge0\).
+Forward first-half growth covers the rest. This contradicts balanced
+core-relative equivalence. In particular both relatives and the core
+are unimodal for every strict peak. The factorization in the article
+restores repeated maximum letters and the final increasing suffix.
+
+\section{Evidence index}\label{index}
+The supplement contains the following source families. The numbered
+proofs in \emph{Detailed coefficient lemmas} typeset the decisive
+reduction fragments. Their original files and the data used by the finite
+certificates are under \path{reduction/}. The foundation, including the
+full proof of the balanced reduction, is under \path{foundations/}.
+Historic source comments about the remaining hypothesis refer to the
+stage before the transport theorem of the article.
+\begingroup\small\raggedright\def\UrlBreaks{\do\_\do\.\do\/}\begin{description}
+\item[Ordinary shape and deletion.] The integrated foundation's
+sections on structure and minimal counterexamples, plus
+\path{formal_arm_extensions.tex} and \path{joint_rising_differences.tex}.
+\item[Source signs.] \path{clipped_forward_ratio_frontier.tex},
+\path{C_to_coupled_S_rising_window.tex},
+\path{agent_bothdeclining_first_birth.tex}, and
+\path{agent_half_lc_actual_weak_curvature.tex}.
+\item[Closed interval comparison and certificates.]
+\path{coupled_source_window_A2_and_kappa_nine_original_proof.tex},
+\path{first_missing_twelve_original_criterion_proof.tex},
+\path{fixed_terminal_fourteen_slope_thinness_proof.tex}, and
+\path{complete_mixed_source_unrestricted_C_original_criterion_proof.tex}.
+The exact finite domain through twelve is stated in equations
+(1)--(7) of the corresponding source and checked by its certificate.
+\item[Two inductions.] \path{one_hereditary_C_arm_arbitrary_other_original_proof.tex},
+\path{inductive_signed_window.tex}, \path{short_prefix_reflection_join.tex}
+and \path{general_base_join_route.tex}. The rectangular and heavier-one-part
+bases are in \path{binary_ternary_A2_original_family_proof.tex} and
+\path{deficit_cumulative_ratios.tex}.
+\item[New formal and enumerative checks.] \path{DepthSlackTransport.lean}
+contains the finite mass transport, the induction over all budgets and
+the delayed ratio transfers. \path{DepthSlackArmIdentities.lean} checks
+the exact polynomial identities for every finite list of capacities. The two independent enumerations in
+\path{checks/} verify actual ideals and selected hypotheses directly.
+\end{description}\endgroup
+\end{document}

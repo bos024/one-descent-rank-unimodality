@@ -1,0 +1,180 @@
+\section{A full ordinary coefficient LC tail in the binary-surplus family}
+For every actual normalized sorted arm $1^\alpha2^uV$ with nonempty
+nonbinary V, put $r=|V|$, $h=\sum(t-1)$, $W=h+r$, $w=u+r$.
+We prove, at ALL capacities/counts/paddings,
+\[
+ u\ge\max(h,16)\quad\Longrightarrow\quad
+ F_N^2\ge F_{N-1}F_{N+1}\quad(N\ge w+1).             \tag{1}
+\]
+This is ordinary coefficient LC on a specified tail. It does not
+assert global coefficient LC, relative LC or original one-descent UI.
+
+We use the registered entire ordinary quotient theorem
+$J=((1+z)^uL-c)/(1+qz)>0$, globally LC, at $u\ge h$ and $u\ge16$,
+where $L=\prod[t]$, $q=\phi-1$, $c=\psi^uL(-\phi)$.
+The degree-boundary theorem includes its single-interval case;
+its primitive's one small exception is immaterial here.
+For $u>h$ use the earlier surplus theorem. Only ordinary LC of J,
+rather than LC of its positive primitive, is needed below.
+We also use ordinary actual tail LC after its first ordinary mode
+and the registered nonincreasing finite-initial-padding ordinary
+density through that mode.
+
+\paragraph{A cumulative quotient with a paid initial atom.}
+Let $E=(1+z)^uL$, $P=\prod t$, $a=\alpha-1$, and
+$C=L\sum_{k=0}^{u-1}(z+z^2)^k$.
+Let I denote infinite INITIAL padding at fixed u.
+At every physical rank used below ($N\ge W$),
+\[
+ I_N=P+\sum_{i\le N-r-2}C_i,\qquad
+ F_{w+2+s}=I_{w+2+s}-\sum_{i\le s-a}E_i.              \tag{2}
+\]
+The first identity is needed at $s\ge-1$, and holds there since u>=h.
+Set $x_s=I_{w+2+s}$ and
+\[
+ B_s=\phi x_{s-1}-x_s\quad(s\ge0),\qquad B_s=0\quad(s<0).
+\]
+Exact division and the physical numerator units give
+\[
+ B_s=qc+\sum_{j=0}^sJ_j,\quad B_0=1-q^2c,\quad
+ B_s-B_{s-1}=J_s\ (s\ge1),                          \tag{3}
+\]
+\[
+ \sum_{i\le s}E_i=B_s+qB_{s-1}+q^2c\,\mathbf1_{s=0}.
+                                                                  \tag{4}
+\]
+The special rank-zero term in (4) is retained.
+
+The CI norm gives $|c|\le1$. Write $E_2=\binom w2+r\le w^2/2$.
+Direct coefficient identities are
+\[
+ J_1=w-q(1-c),\quad J_2=E_2-qJ_1,\quad B_1=B_0+J_1.
+\]
+They imply
+\[
+ 0<B_0\le7/5,\quad w\le B_1\le w+1,\quad
+ J_1\ge w-5/4,\quad J_2\le w^2/2.
+\]
+Thus
+\[
+ B_1^2-B_0B_2=B_1J_1-B_0J_2
+ \ge (3/10)w^2-(5/4)w>0\quad(w\ge6).                \tag{5}
+\]
+All parameters here are unbounded.
+
+This SINGLE cumulative seed propagates through the entire LC J tail.
+For positive consecutive primitive values p,q,r and cumulative values
+A,B=A+p,C=B+q, the exact identity is
+\[
+ p(Cq-Br)=q(Bp-Aq)+B(q^2-pr).
+\]
+Both right terms are nonnegative whenever the preceding cumulative
+seed and primitive LC hold. Full induction proves all subsequent
+cumulative LC minors. At the primitive's terminal endpoint and the
+constant B tail the conclusion is immediate.
+Consequently B is globally LC on nonnegative indices, positive,
+nondecreasing, and eventually constant. Its positive primitive after
+deleting rank zero is exactly the globally LC rank-one truncation of J.
+
+\paragraph{A bounded future inverse and a legitimate infinite cut.}
+The bounded recurrence $x_{s-1}=q(x_s+B_s)$ gives
+\[
+                    x_s=\sum_{j\ge1}q^jB_{s+j}\quad(s\ge-1).       \tag{6}
+\]
+The terminal constant in I fixes the bounded solution uniquely.
+For earlier negative indices the zero-extended B inverse need not
+equal actual I; those indices are not silently substituted.
+The LC future-geometric convolution of B is LC.
+One may prove this using finite truncations and pass to the limit:
+B is bounded, so geometric domination gives convergence at each
+of the three read coefficients. Finite truncation at the right endpoint
+preserves LC, as does truncation of the geometric kernel.
+Thus x is LC at every centre $s\ge0$ used in (2).
+
+Apply the registered signed-primitive geometric-cut theorem to B.
+Although B has an infinite constant tail, truncate it at R beyond the
+beginning M of its first maximal plateau and beyond the finite read band.
+The finite truncation is positive UI/LC, has the SAME first mode M,
+and has the SAME positive primitive after deleting rank zero.
+Its final drop is negative and hence does not enter that primitive.
+For any fixed read the finite cut theorem is therefore valid at
+$a+2\le s<M$. Letting R tend to infinity preserves each LC minor
+and positive part, yielding the same conclusion for (6).
+By (4), the true cumulative-E source differs from $B+qzB$ ONLY at
+index zero; the triples agree at every centre $s\ge a+2$.
+No constant spectral atom is erased.
+
+The infinite-initial-padding ordinary sequence x is constant from
+its first mode onward. Its exact ordinary density for actual finite
+padding is nonincreasing THROUGH the actual first ordinary mode.
+A strict actual increase beyond the first constant x rank would
+contradict that density order. Hence the actual first ordinary mode
+has offset at most M. At a global ordinary mode LC is automatic.
+The cut theorem covers all remaining pre-mode centres after startup;
+the established ordinary tail-LC theorem covers all post-mode centres.
+
+\paragraph{All startup and first-defect boundaries.}
+Put $M_0=1$, $M_1=w+1$, $M_2=E_2+w+1$, the first THREE coefficients
+of the TRUE cumulative E source. CI coefficients give, at w>=6,
+\[
+ M_2\ge(w^2+w+4)/2>2\phi(w+1),\qquad M_2\le(w+1)^2.   \tag{7}
+\]
+Before s=a the source is absent. At a-1 only the next unit is removed,
+improving the unperturbed minor whenever that centre is at least zero.
+At a the new signed minor is
+\[
+ M_x-2x_a+1+x_{a-1}M_1
+ \ge M_x+x_{a-1}(w+1-2\phi)+1>0.
+\]
+At a+1 it is
+\[
+ M_x+x_{a-1}M_2-2M_1x_a+x_{a+1}+M_1^2-M_2>0
+\]
+by (7) and $x_a<\phi x_{a-1}$.
+The latter ordinary golden ceiling is registered at EVERY
+physical $N\ge\max(W,w+2)=w+2$, precisely s>=0.
+If a startup centre is already past the actual mode, ordinary tail LC
+applies instead. At centres before the actual mode the actual support
+and positivity guards are automatic. These payments retain every
+finite initial-padding term.
+
+There remains the FIRST centre N=w+1 (s=-1), whose earlier neighbor
+is not read from the zero-extended B inverse.
+Let R be the infinite-BINARY reference. Actual coefficients through
+w+1 agree with R, and only the NEXT coefficient loses a positive
+integer delta=1 or2. Let A>0 be the reference's fixed homogeneous
+Cassini amplitude. Its current ordinary minor is at least -A,
+so the actual first-boundary minor is at least
+\[
+                          -A+\delta R_w\ge0.          \tag{8}
+\]
+Here $w\ge W$ and R increases; it suffices that $R_W\ge A$.
+For two or more factors, write x=Dref_W,y=Dref_(W+1).
+The exact reference norm gives
+\[
+ A=x^2+xy-y^2=\phi\sqrt5\,\rho x-\phi^2\rho^2,\quad
+ \rho\le(2q^2)^r\le16/25.
+\]
+Using $\phi\le13/8$, $\sqrt5\le9/4$ and the registered
+$y\ge3x/2$ gives $A\le117x/50<5x/2\le x+y=R_W$.
+For one factor L, the exact Fibonacci identities instead give
+\[
+ R_W-A=f_{L-2}-(-1)^{L+1}\ge0\quad(L\ge3).
+\]
+This includes L=3 with equality. Thus (8) covers every capacity list.
+When a=0 it also pays the startup centre a-1; its extra source unit
+only improves the boundary. This completes (1).
+
+Ten scoped Lean reports check the complete head budgets, FULL
+arbitrary-prefix cumulative-LC induction, both true-source startup
+payments, reference amplitude and first-defect payment, and constant
+reference-density mode guard. Actual quotient/source/root identities,
+infinite cut/convolution limits, first-mode identification and complete
+ordinary coefficient assembly are the written proof above, not an
+end-to-end Lean composition-ideal theorem.
+No new finite entrance premise is introduced.
+Relative ordinary LC and its proposed Cassini-amplitude lower bound
+remain OPEN; finite diagnostics are not substituted for them.
+General earlier C, the universal actual density-record assertion,
+full A2 and original unamplified coefficient UI remain OPEN.
+

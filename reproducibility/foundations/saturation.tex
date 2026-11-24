@@ -1,0 +1,181 @@
+\section{Exact saturation and sharp growth deficits}\label{sec:saturation}
+
+The following statement applies to any finite downset of compositions,
+not only to a principal ideal or a monotone host. Let $f_k$ count its
+members of weight $k$.
+
+\begin{theorem}[Saturation rigidity at every rank]
+Let $k\ge1$ and assume $f_k>0$. If $f_{k+1}=2f_k$, then the downset
+contains every composition of weights $k$ and $k+1$. In particular,
+$f_k=2^{k-1}$ and $f_{k+1}=2^k$.
+\end{theorem}
+
+\begin{proof}
+Decrement the last part of a word of weight $k+1$, deleting it if it is
+one. Every word $v$ of weight $k$ has at most two preimages: append a
+one, or increase its last part. Equality of the total counts forces
+both preimages of every feasible $v$ to be feasible.
+
+Now remove one unit from the first part of either preimage, deleting
+that part if necessary. Downward closure keeps the resulting word
+feasible. Encode a composition of weight $k$ by its $k-1$ cut bits.
+These two operations delete the first cut bit and append, respectively,
+a one or a zero. Starting from any feasible cut string, $k-1$ successive
+operations, with the appended bits prescribed, produce any desired cut
+string of length $k-1$. Thus every composition of weight $k$ is feasible.
+For $k=1$ the cut string is empty and the same conclusion is immediate.
+The two already forced extensions then give every composition of
+weight $k+1$.
+\end{proof}
+
+\begin{corollary}[The exact support of the growth deficit]
+For a nonempty host $w$ of weight $N$, let $\kappa(w)$ be the smallest
+weight of a composition not below $w$. Put
+\[
+ E_w=1-z+(2z-1)F_w.
+\]
+Then the positive coefficient support of $E_w$ is precisely
+$[\kappa(w),N+1]\cap\mathbb Z$. Consequently
+\[
+ (F_w)_{n+1}\le2(F_w)_n-1
+ \quad\text{for }\kappa(w)-1\le n\le N.
+\]
+Moreover $2\le\kappa(w)\le\min\{\len w+1,\max w+1\}$.
+\end{corollary}
+
+\begin{proof}
+All ranks through $N$ are nonempty, and the two-preimage map gives
+$f_{j}\le2f_{j-1}$ for $j\ge2$. Saturation rigidity identifies equality
+exactly with the presence of every composition of rank $j$. Fullness
+of a rank implies fullness of every smaller rank, by downward closure.
+The coefficients at degrees zero and one cancel; beyond $N+1$ they
+vanish. The words $1^{\len w+1}$ and $(\max w+1)$ give the upper bounds
+on $\kappa$, and every nonempty host contains $(1)$.
+\end{proof}
+
+\begin{lemma}[Threshold decomposition at a maximum]
+Set $\kappa(\varnothing)=1$. For an arbitrary composition
+$w=(X,M,Y)$ with $M\ge\max(X,Y)$,
+\[
+ \kappa(w)=\min\{M+1,\kappa(X)+\kappa(Y)\}.
+\]
+\end{lemma}
+\begin{proof}
+The singleton $(M+1)$ is absent. If $u$ and $v$ are missing compositions
+of minimum weights for $X$ and $Y$, respectively, then $uv$ is absent
+from $XMY$: an embedding of $u$ cannot finish inside $X$, leaving
+an embedding of $v$ entirely inside $Y$, a contradiction.
+
+Conversely, take any composition of weight
+$k<\min\{M+1,\kappa(X)+\kappa(Y)\}$. If $k<\kappa(X)$ it embeds
+in $X$. Otherwise choose its first part for which the cumulative weight
+reaches $\kappa(X)$. Its preceding parts have weight below $\kappa(X)$
+and embed in $X$; its following parts have weight at most
+$k-\kappa(X)<\kappa(Y)$ and embed in $Y$. The chosen part is at most
+$k\le M$ and embeds in the central maximum.
+\end{proof}
+
+This decomposition uses the same maximum-layer universality mechanism
+as Albert, Engen, Pantone and Vatter~\cite{AlbertEtAl}, proof of Theorem~1.
+We use it to identify the parameter in the growth
+bound; the universality construction is not claimed as new here.
+It also gives a linear-time procedure on a maximum Cartesian tree of
+the host, and a minimum-weight missing composition as a witness.
+
+\begin{proposition}[Universality threshold for a monotone arm]
+If $Y=(t_1\le\cdots\le t_l)$ is nonempty, the largest weight at which
+all compositions occur is
+\[
+ \kappa(Y)-1=\min\left\{l,\ \min_{1\le i\le l}(i-1+t_{l-i+1})\right\}.
+\]
+\end{proposition}
+
+\begin{proof}
+Fix a weight $k$. Necessity of $l\ge k$ follows from $1^k$. For every
+$1\le i\le k$, the word $(k-i+1,1^{i-1})$ requires
+$t_{l-i+1}\ge k-i+1$. These inequalities are also sufficient: a word
+of weight $k$ and length $i$ has every part at most $k-i+1$, and hence
+embeds in the last $i$ positions. The inequalities for $i>k$ are
+automatic, so the displayed minimum is equivalent to all the necessary
+and sufficient conditions.
+\end{proof}
+
+The exact support statement identifies the first strict-growth rank
+without a monotonicity hypothesis on the host. We next quantify the
+deficit at every subsequent rank.
+Enumeration and equivalence of single-pattern avoidance classes in
+this order are studied by Menon and Singh~\cite{MenonSingh}. The
+bounds below apply to every downset inside such an avoidance class,
+not only to the full avoidance class.
+
+\begin{proposition}[A quantitative saturation bound]
+For every finite composition downset and every $k\ge2$, set
+$s=f_k$ and $N=2^{k-1}$. Then
+\[
+ (k-1)N(2f_k-f_{k+1})\ \ge\ 2s(N-s).
+\]
+In particular, if $s>0$, then
+\[
+ \frac{f_{k+1}}{f_k}
+ \le 2-\frac{2}{k-1}\left(1-\frac{f_k}{2^{k-1}}\right).
+\]
+\end{proposition}
+
+\begin{proof}
+Put $n=k-1$. Encode feasible words of weight $k$ as a set $S$ of binary
+strings of length $n$. A feasible word of weight $k+1$ determines an
+edge $x\longrightarrow x_2\cdots x_n b$ between two members of $S$:
+the endpoints are obtained by removing the last and the first unit of
+the word. The edge determines the word uniquely. Consequently
+$2s-f_{k+1}$ is at least the number $e$ of directed edges from $S$ to
+its complement in the binary shift graph.
+
+There is a unique directed path of length $n$ from any initial string
+$x$ to any terminal string $y$, obtained by appending the bits of $y$.
+The $s(N-s)$ paths with $x\in S$ and $y\notin S$ each traverse an edge
+from $S$ to its complement. Fix an edge and a position $i\in\{1,\ldots,n\}$
+at which that edge is traversed. Without restrictions on the initial
+and terminal strings, the number of such length-$n$ paths is
+$2^{i-1}2^{n-i}=N/2$. A union bound over the $e$ boundary edges and
+the $n$ possible positions gives $s(N-s)\le neN/2$.
+Combine this with $e\le2s-f_{k+1}$.
+\end{proof}
+
+\begin{theorem}[Sharp uniform deficit from a missing composition]
+Suppose a composition of weight $\kappa\ge2$ is absent from a
+composition downset. Then, for every $k\ge\kappa-1$,
+\[
+ 2f_k-f_{k+1}\ \ge\ \frac{f_k}{2^{\kappa-1}-1}.
+\]
+The assertion applies to infinite downsets as well, since each weight
+contains only finitely many compositions. The constant is best possible
+for every $\kappa$.
+\end{theorem}
+
+\begin{proof}
+At $k=\kappa-1$, saturation rigidity and the missing word imply
+$2f_k-f_{k+1}\ge1$ whenever $f_k>0$, while
+$f_k\le2^{\kappa-2}\le2^{\kappa-1}-1$. The zero case is immediate.
+It remains to consider $k\ge\kappa$.
+Use the preceding binary shift graph on strings of length $n=k-1$,
+and put $h=\kappa-1\le n$. Append the $h$ cut bits of a fixed missing
+composition $v$. The resulting composition contains $v$: its last
+$\kappa$ units have the prescribed internal cuts, and the first part
+of $v$ may only be enlarged by preceding units. Hence the terminal
+string is outside $S$. Starting from each of the $s=f_k$ members of
+$S$ gives $s$ paths of length $h$, each meeting an outgoing boundary
+edge. At a fixed position $i$, a fixed edge can be traversed by at
+most $2^{i-1}$ of these paths, because the appended block
+is fixed. Summing over the $h$ positions and the
+$e$ outgoing edges gives $s\le e\sum_{i=1}^h2^{i-1}=e(2^h-1)$. Now use
+$e\le2f_k-f_{k+1}$.
+
+For sharpness, take the downset of all compositions with parts at most
+$\kappa-1$, and compare weights $k=\kappa$ and $k+1$.
+Exactly one composition is excluded at weight $\kappa$, whereas
+exactly three are excluded at weight $\kappa+1$, namely
+$(\kappa+1)$, $(\kappa,1)$ and $(1,\kappa)$. Thus
+$f_\kappa=2^{\kappa-1}-1$ and
+$2f_\kappa-f_{\kappa+1}=1$. A finite principal ideal gives the same
+example: use the rectangular host $(\kappa-1)^{\kappa+1}$.
+\end{proof}

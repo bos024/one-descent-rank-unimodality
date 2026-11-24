@@ -1,0 +1,3 @@
+'BinaryCITwoSeed.first_Cassini_seed_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCITwoSeed.second_Cassini_seed_full_parameter_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCITwoSeed.positive_part_preserves_strict_seed' depends on axioms: [propext, Classical.choice, Quot.sound]

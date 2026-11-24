@@ -1,0 +1,78 @@
+\section{Even a small gap relative to first missing does not rescue post-input-mode budgets}
+\paragraph{Current scope.}
+This counterfamily remains valid. Its long initial interval
+now belongs to the direct cumulative repair in
+\texttt{mixed\_subcritical\_gap\_closure.tex}, which proves
+actual joining concavity while retaining the budget failures
+below. Thus it no longer obstructs the below-twice-first-missing
+mixed closure; it still rules out the post-input-mode shortcut.
+For every $L\ge4$ and $\kappa\ge L+16$, take
+\[
+ X=(1,2,\ldots,\kappa-1),\quad c=\kappa(\kappa-1)/2,
+ \quad g=L+14,\quad t=\kappa+L+14,\quad
+ Y=1^{c+2}(2,3,3,4,L).
+\]
+The old arm has first missing weight $\kappa$, a quasi-centered
+deficit $e$ of degree $D=c+1-\kappa$, and full mixed
+unimodality. The append is legal and $t\le c$, while
+$g\le\kappa-2$. The opposite weight is $b=c+L+14$.
+
+Put $\beta=c+2$ and
+\[
+ B=[2][3]^2[4]=(1,4,9,14,16,14,9,4,1),\qquad R_L=[L]B.
+\]
+Thus $R_L$ has degree $L+7$, mass $P=72L$, positive
+interval support, constant coefficient one and first
+four coefficients $(1,5,14,28)$.
+The exact ordinary expansion begins
+\[
+ q_Y=[\beta+1]R_L+z^{\beta+2}[3]^2[4][L]
+ +z^{\beta+5}[3][4][L]+z^{\beta+8}[4][L]
+ +z^{\beta+12}[L]+z^{\beta+12+L}.
+\]
+Hence $(q_0,q_1,q_2,q_3)=(1,6,20,48)$.
+Its maximum is $P$ exactly on $[L+7,\beta]$:
+before $\beta+2$ the displayed tail corrections vanish,
+the main window has plateau $P$, and at $\beta+1$
+it has value $P-1$. Ordinary unimodality excludes any
+later return to $P$.
+
+Since $e$ is positive throughout $[0,D]$, the mixed
+product $p=e q_Y$ has exact global maximum interval
+\[
+                   [D+L+7,\beta]=[c+L+8-\kappa,c+2].
+\]
+At $c+3$, only the constant deficit coefficient samples
+the first smaller ordinary coefficient $P-1$; every other
+sample is still in $[L+7,\beta]$, since
+$c+3-D=\kappa+2\ge L+18$. As $e_0=2$,
+\[
+               p_c=p_{c+2}=Pe(1),\qquad
+               p_{c+3}=Pe(1)-2.
+\]
+The step at $c+3$ is strictly after the LAST old mixed
+mode, but its tail drop is two, whereas the proposed
+step budget is
+\[
+              q_3-2q_2+q_1=14.
+\]
+The cumulative budget fails as well: $p_c-p_{c+3}=2$
+is smaller than the positive correction $q_3-q_2=28$.
+This is an infinite actual-arm obstruction with BOTH
+the gap and first missing weight unbounded inside
+$g\le\kappa-2$, not merely a finite probe. Taking
+$L\ge7$ also makes both eventual arms have a capacity
+above six. No assertion is made that every additional
+least-counterexample exclusion is satisfied.
+
+The $L=4$ coefficient product, its unbounded window
+plateau and first endpoint loss, the two-parameter domain,
+and the generic
+weighted single-coefficient loss are kernel checked in
+\texttt{SubcriticalPostModeObstruction.lean}.
+The product formulas for general $L$, the identification
+with actual arms and the exact mixed plateau are the
+analytic arguments above.
+These failures do not themselves imply a joining valley:
+they show why the input mode cannot replace the actual
+window turn in a general proof.

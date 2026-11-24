@@ -1,0 +1,201 @@
+\section{One hereditary FULL-C arm suffices against an arbitrary other arm}
+This is an unbounded enlargement of the ORIGINAL coefficient theorem.
+It does not assert general C or solve the case where neither arm has
+a hereditary C certificate. There are ZERO new Lean reports: the
+weighted-sum, monotone-excess, closed-window and source/payment kernels
+are the already verified inputs. The class induction and composition
+assembly below are written proofs, not an end-to-end formalization.
+
+\paragraph{Marked classes and exact statements.}
+Let $\mathcal C$ be ANY final-part-deletion-closed class of normalized
+actual increasing arms, with FULL C for every nonrectangular member.
+Include the empty arm and all rectangular prefixes that occur on deletion.
+The normalization is $X=1^\alpha U$, $\alpha\ge1$, with $U$ sorted and
+all its parts at least two. For $A=F_X$ put $G_k=\sum_{i=0}^k A_i$,
+$D_n=(A_n-A_{n-1})^+$, $D_0=D_1=0$. FULL C is
+\[
+ G_{k+1}D_n\ge G_kD_{n+1}
+ \qquad(0\le k\le n-3,\ D_nD_{n+1}>0).                 \tag{C}
+\]
+Write $\mathcal U$ for ALL actual increasing arms. A marked pair is
+an unordered pair in
+\[
+          \mathcal P=(\mathcal C\times\mathcal U)
+                         \cup(\mathcal U\times\mathcal C).
+\]
+The unmarked member has no capacity, count, initial-run, first-missing,
+nonbinary-weight, or C restriction. Marking persists under deletion
+of EITHER arm. The proof does not replace the hereditary hypothesis
+by C of the single current marked arm.
+
+\begin{theorem}
+For every marked pair $(X,Y)$, with $q_T=z^{\operatorname{wt}T}F_T(1/z)$,
+the product $p=q_Xq_Y$ has FULL A2:
+\[
+                  \bigl(2^n(p_n-p_{n-1})^+\bigr)_{n\ge0}
+                    \text{ is unimodal.}                         \tag{1}
+\]
+For every strict peak $M>\max(X,Y)$, EACH of the ORIGINAL polynomials
+\[
+\begin{split}
+ F_X+F_Y+(S_M-1)F_XF_Y,\qquad
+ F_X+(S_M-1)F_XF_Y,\qquad F_Y+(S_M-1)F_XF_Y
+\end{split}                                                       \tag{2}
+\]
+is coefficient unimodal. No amplification is performed.
+Unlimited legal appends on the unmarked arm are already allowed.
+In addition, ONE arbitrary legal append $X=Zt$ on a marked arm
+$Z\in\mathcal C$ is permitted, provided
+$\operatorname{wt}(Zt)\ge\operatorname{wt}Y$. Its new C is not required.
+\end{theorem}
+
+\subsection{The two uses of C each need only the marked arm}
+First suppose both arms are nonrectangular. At every rank where both
+forward arm polynomials still rise, orient the marked arm as $A$ and
+write $B$ for the other arm. With $E_B=1-z+(2z-1)B$, the actual source
+increments $w_j=\Delta E_B(j)$ are nonnegative throughout this prefix,
+and $w_j=0$ for $j<3$. Consequently
+\[
+ (E_BA)_n=\sum_{j=3}^n w_jG_{n-j}.
+\]
+Summing (C) with these nonnegative weights gives the source/slope
+ratio comparison. This is exactly the proof in
+\texttt{clipped\_forward\_ratio\_frontier.tex}; it uses C only for $A$.
+After either forward factor stops rising, the symmetric actual source
+identity makes $2(F_XF_Y)_{n-1}-(F_XF_Y)_n$ nonnegative forever.
+Thus coefficient tilt A1 holds for every nonrectangular marked pair.
+
+The same one-owner weighted comparison, together with monotonicity of
+the source convolution, gives the nonnegative-current nonrecovery
+in \texttt{C\_to\_coupled\_S\_rising\_window.tex}. Its statement already
+explicitly requires C of EITHER arm, rather than both arms. This supplies
+the two-forward-rising part of the proper CLOSED source comparison.
+Neither step differentiates the unmarked arm's slope or invokes its C.
+
+\subsection{The other phases and the closed-window bridge}
+For the two-forward-nonrising phase use the unconditional actual
+first-half and reverse half-tail resources, as in
+\texttt{complete\_mixed\_source\_unrestricted\_C\_original\_criterion\_proof.tex}.
+For the mixed phase use the COMPLETE proper CLOSED mixed-source
+comparison of that proof. Its small-first-missing source/head payments,
+the complete 10--12 certificate and the unbounded 13--15 and 16-plus
+payments concern arbitrary actual owners and opposites. The owner
+need not be the marked arm. FULL OLD A2 supplies its head budget;
+no C of the mixed owner or opposite is used in those payments.
+The one-non-one-part opposite and the negative-rank unit birth are
+included in that complete theorem.
+
+Together these inputs prove EVERY proper CLOSED source comparison,
+including equality $E_n=E_k$. The complete bridge in
+\texttt{coupled\_source\_window\_A2\_and\_kappa\_nine\_original\_proof.tex}
+therefore gives FULL A2 for EVERY uniform window $[t]p$, assuming
+FULL OLD A2 and A1. The bridge explicitly retains its first head
+boundary, zero positive-difference support and equality case. No
+whole raw-source-window unimodality is substituted for this bridge.
+
+\subsection{Count induction for all marked pairs}
+Induct on the total number of non-one parts and orient the heavier
+arm as $X$. If either arm is rectangular, the unconditional rectangular
+base in \texttt{binary\_ternary\_A2\_original\_family\_proof.tex} applies
+with an arbitrary actual other arm. If the heavier arm has exactly
+one non-one part, the heavier-one-part theorem in
+\texttt{deficit\_cumulative\_ratios.tex} also allows an arbitrary
+nonrectangular other arm. Neither base requires its C.
+
+Otherwise write the heavier arm as $X=Zt$. The pair $(Z,Y)$ is again
+marked: deleting an unmarked final part leaves the marked member
+untouched; deleting a marked final part leaves its prefix in
+$\mathcal C$. Its smaller total count supplies FULL OLD A2. If both
+old arms are nonrectangular, the preceding two subsections give FULL
+A2 for every $[t](q_Zq_Y)$. Rectangular old arms are the same bases.
+The exact new product is
+\[
+ q_Xq_Y=[t](q_Zq_Y)+z^a q_Y,\qquad a=\operatorname{wt}X.
+\]
+The strengthened actual ordinary midpoint theorem gives its first
+mode $\sigma<a$, including equal nonrectangular weights. The terminal
+summand starts at $a$, above $\sigma$, so positive differences through
+$\sigma$ are exactly those of the window. Their weighted prefix is
+unimodal. All later actual positive differences vanish. This proves
+(1), with FULL old A2, not a truncated inductive substitute.
+
+For the extra append on a marked arm, its old pair $(Z,Y)$ has the
+just-proved FULL A2, A1 and every closed comparison. The same argument
+works for the arbitrary legal $t$ under $a\ge\operatorname{wt}Y$.
+No additional step of that argument asks for C of $Zt$.
+
+\subsection{Original core and both relatives, with all closure checks}
+Adjoin to $\mathcal P$ the exceptional pairs $(Zt,Y)$ specified in the
+theorem, and permit arm exchange. This enlarged family is closed
+under final deletion. In an exceptional pair, deleting its exceptional
+jump returns to $\mathcal P$; deleting from $Y$ preserves the heavier
+weight inequality. In an ordinary marked pair either deletion preserves
+the mark or its marked prefix. Removing leading ones stays within the
+rectangular bases when the non-one word is empty.
+
+This family is also closed under the lower-peak stripping used in
+\texttt{short\_prefix\_reflection\_join.tex} and
+\texttt{inductive\_signed\_window.tex}. For an ordinary marked pair,
+stripping all occurrences of a current largest arm capacity is a
+sequence of final deletions. In an exceptional pair, if that largest
+capacity is $t$, strip the exceptional jump first and return to a
+marked pair. If the largest capacity exceeds $t$, its occurrences
+are all in $Y$; stripping them preserves the exceptional heavier arm.
+Repeat until the lower strict-peak or rectangular base is reached.
+
+Thus the least-peak/least-relative argument applies literally: FULL
+A2 supplies its weighted positive-difference input, proper deletion
+supplies its already-unimodal relative input, and all reflection and
+lower-peak joins stay inside the enlarged family. Both relatives in
+(2) follow, and heavier-first core-relative equivalence gives the core.
+This proves the theorem at EVERY strict peak, not just one chosen peak.
+
+\paragraph{Explicit newly covered unbounded original families.}
+The marked arm may have at most FIVE arbitrary non-one parts; or any
+number of parts at most FOUR; or at most TWO arbitrary nonbinary parts
+after an arbitrary binary prefix; or any fixed nonbinary word of total
+weight at most 32. These are hereditary FULL-C seeds from the frozen
+certificates. One may further append ANY FINITE NUMBER of successive
+dominant capacities $T_i\ge2(W_0+\sum_{v<i}T_v)$, with the established
+empty-seed and first-jump conditions. The other arm is COMPLETELY
+ARBITRARY, including long 6/7 arms that violate every fixed-count-offset
+ordinary log-concavity claim. These examples use the appropriate
+hereditary closure of each seed, rather than only its current C.
+
+\subsection{A stronger negative-current source budget from the same mark}
+Let $P=AB$, $e_N=2P_{N-1}-P_N$, $w_A=\Delta E_A$, $w_B=\Delta E_B$.
+If $A$ has FULL C and $e_N<0$, then
+\[
+ (E_AE_B)_N\le w_A(N),\qquad
+ e_N-2e_{N-1}\ge w_B(N)\ge0.                            \tag{3}
+\]
+Here $A$ need not have hereditary C: only this local conclusion uses
+current C. To prove it, negative $e_N$ forces both factors still to
+rise, and the one-owner A1 argument above gives $e_{N-1}\le0$.
+Put $d=D_{N-1}>0$, $S=(E_BA)_{N-1}$, so $S-d=e_{N-1}\le0$.
+For $3\le j\le N-1$, set $k=N-1-j$. The corresponding C inequality is
+\[
+ w_A(N)G_k=(2d-D_N)G_k
+                 \ge d(2G_k-G_{k+1})
+                 =d\sum_{i=0}^{k+1}E_A(i).
+\]
+Sum against the nonnegative $w_B(j)$; the new boundary terms have
+zero cumulative source. This proves
+\[
+ d(E_AE_B)_N\le w_A(N)S\le w_A(N)d.
+\]
+Cancellation proves the first bound in (3). Finally the exact identity
+\[
+ w_A+w_B-E_AE_B=(1-z)^2+(1-2z)e
+\]
+at rank $N\ge3$ proves the second. The initial negative rank $N=2$
+has $e_2=-1$, $e_1=0$, so it MUST be excluded from (3); its source
+identity has the nonzero $(1-z)^2$ correction. For $N=3$ the sum
+is empty, and the same displayed argument is valid. If BOTH arms have
+C, the first bound holds with $\min(w_A(N),w_B(N))$.
+
+\paragraph{Remaining general problem.}
+The two-unknown-arm situation is still OPEN. The theorem proves an
+original coefficient statement whenever ONE arm has hereditary C;
+it does not prove that every actual arm has such a certificate.
+Finite actual-model checks in the accompanying audit are QA only.

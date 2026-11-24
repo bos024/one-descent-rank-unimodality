@@ -1,0 +1,46 @@
+\section{Completion of the bounded-peak theorem}
+\begin{proposition}\label{prop:finitecomplement}
+Let $4\le M\le7$. If both strict arms have at most eight non-one parts and their weights differ by at most $M-4$, their complete core polynomial is unimodal.
+\end{proposition}
+\begin{proof}
+Orient the weights with difference $d\in\{0,\ldots,M-4\}$ and write $X=1^\alpha U$, $Y=1^\beta V$, with $u=\wt U$, $v=\wt V$, $s=\len U+\len V$. Then
+\[
+ \beta=\alpha+u-v-d,\quad \alpha_0=\max(0,v+d-u),\quad B=M+u+v-s.
+\]
+The minimum of the two one-run lengths is $\alpha-\alpha_0$. Lemma~\ref{lem:longones} covers all $\alpha\ge\alpha_0+B$. The remaining finite domain is exactly
+\begin{equation}\label{eq:paddingdomain}
+ \begin{gathered}
+ U,V\text{ increasing over }\{2,\ldots,M-1\},\quad \len U,\len V\le8,\\
+ 0\le d\le M-4,\quad \alpha_0\le\alpha<\alpha_0+B,\quad
+ \beta=\alpha+u-v-d.
+ \end{gathered}
+\end{equation}
+Complete exact computations establish unimodality of all these polynomials. The counts for $M=4,5,6,7$ are respectively $40,500$, $1,579,050$, $27,932,850$, and $311,397,372$. Two independently organized implementations, described in Section~\ref{sec:certificates}, agree throughout. The long-run lemma covers every omitted run length.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+First prove unimodality of every strict $Q$ for each $M\le7$. Peaks one and two are immediate, and Proposition~\ref{prop:outer} excludes a minimal counterexample at peak three. For $4\le M\le7$, orient a minimal counterexample as $a=b+d$. Proposition~\ref{prop:outer} gives $0\le d\le M-4$. The complete small bases exclude $b\le18$, so $b\ge19$. Rectangular arms are excluded by Lemma~\ref{lem:balanced}. Proposition~\ref{prop:finitecomplement} handles the case when both non-one counts are at most eight. Otherwise one arm has at least nine non-one parts. Lemma~\ref{lem:single} excludes a single non-one part in the other arm. Theorem~\ref{thm:central} gives positive differences at $R=b+M$ and $R+1$.
+
+If $M\le6$, or $M=7$ and $d\ge1$, the stronger kernel reflection gives growth through
+\[
+ \left\lfloor\frac{a+b+M+4}{2}\right\rfloor\ge R-1.
+\]
+If $M=7,d=0$, choose $Y$ to have at least nine non-one parts. Each higher layer of $F_X$ has endpoint sum at least $b+1$; multiplying it by $D_Y$ gives growth through $R-1$. The lowest layer contributes $d_{R-1}-d_5\ge10-8>0$. The first bound uses the nine non-one parts in the reversed coefficient; the second uses $p_0+\cdots+p_4\le16$ and $p_5\ge8$, since every composition of five with parts one or two embeds in $Y$. Thus $Q$ grows through $R-1$ in this case too.
+
+The two strict central differences extend growth through $R+1$. Delete the last part $u$ of the heavier arm. The shorter $Q_{X^-,Y}$ is unimodal by minimality. At every rank at least $R+1$, the recurrence $Q=D_Y+S_uQ_{X^-,Y}$ agrees with the unimodal second summand. The increasing segment therefore joins a unimodal tail, a contradiction. By Lemma~\ref{lem:balanced}, orienting any strict core with the heavier arm first now gives unimodality of $H$.
+
+For a general one-descent host whose descending upper part is $M\le7$, write
+\[
+ w=(U,M^{r+1},Y,E),
+\]
+where $U,Y$ are increasing with parts strictly below $M$, and $E$ is increasing with parts at least $M$. Start with the strict core $(U,M,Y)$ and restore each extra central maximum using
+\[
+ F_{U,M^{r+2},Y}=1+S_MF_{U,M^{r+1},Y}.
+\]
+This follows directly from the maximum decomposition. Then append each part of $E$, a current global maximum. Every operation is $P\mapsto1+S_tP$ and preserves unimodality for these polynomials with constant term one. Monotone hosts are already covered by Lemma~\ref{lem:arms}.
+
+Finally, reversal of smaller words preserves weight, so $F_Y=F_{Y^{\mathrm{rev}}}$. The maximum decomposition makes $(X,M,Y)$ equiranked with $(X,M,Y^{\mathrm{rev}})$. This covers every bitonic host of maximum at most seven, including repeated maxima.
+\end{proof}
+
+\section{Scope and further questions}
+The proof covers arbitrary length at peaks through seven. It does not prove the unrestricted composition conjecture or tail log-concavity. At arbitrary peaks, Theorem~\ref{thm:finiteprinciple} reduces the problem to a specified finite domain with a cubic weight cutoff. The number of candidates may still be very large. The profile certificates through peak seven use substantially smaller specialized domains; no complete peak-eight computation is claimed. A failed lower bound need not be a failed rank inequality: the positive-part refinement uses structural information discarded by the unrefined estimate. Further progress could come from sharper finite reductions or uniform positivity within the remaining bounded domains. No conclusion at further peaks is inferred from the present computations.

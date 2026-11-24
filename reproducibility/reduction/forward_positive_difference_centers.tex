@@ -1,0 +1,75 @@
+\section{Forward positive-derivative centers do not depend on initial ones}
+Let $X=1^\alpha U$ be a normalized formal arm, $\alpha\ge1$,
+$h=|U|\ge1$, every capacity at least two, and $W=\sum U_i$.
+No ordering of the capacities is needed in this section.
+
+\begin{theorem}[Forward derivative layer bound]
+Every height layer of $D_n=(F_n-F_{n-1})^+$, $D_0=D_1=0$,
+has endpoint sum at most $W+h+1$. In particular its first mode
+satisfies
+\[
+                         \ell_D\le\left\lfloor\frac{W+h+1}{2}\right\rfloor.
+\]
+The bound is independent of $\alpha$. The first-mode bound is
+attained on an unbounded actual family.
+\end{theorem}
+\begin{proof}
+Define the infinite-initial-ones shifted derivative $d^\infty$
+by starting at zero and replacing $d$ on append $t$ by
+$[t-1]+S_td$. Direct induction on the exact arm recurrence gives
+\[
+ (1-z)F=1+z^2d^\infty-z^{\alpha+h+1}\prod_i[U_i],
+ \qquad
+ D_{n+2}=\left(d^\infty_n-[z^n]z^{\alpha+h-1}\prod_i[U_i]\right)^+.
+                                                               \tag{1}
+\]
+The positive expansion is
+\[
+        d^\infty=\sum_{i=1}^h [U_i-1]\prod_{j>i}S_{U_j}.
+\]
+Each summand is symmetric unimodal, with endpoint sum
+$\sum_{j\ge i}U_j+h-i-2\le K:=W+h-3$.
+Thus for $2n\ge K$ it has coefficient at $K-n$ at least
+the coefficient at $n$. Summing gives the same reflection
+for $d^\infty$.
+
+The subtracted interval product in (1) has endpoint sum
+$2\alpha+W+h-2=K+2\alpha+1>K$.
+Its reflection comparison goes in the opposite direction:
+its coefficient at $K-n$ is at most the one at $n$.
+Subtracting therefore preserves the upper-center reflection,
+as does taking positive parts.
+All these comparisons use zero-extended coefficients, so
+support boundaries cause no exception.
+
+The already proved forward positive-derivative unimodality
+holds for every formal capacity order. For any height layer,
+reflect its right endpoint $R$ about $K/2$; the reflected rank
+$K-R$ belongs to the same layer, and its left endpoint is no
+larger. Thus shifted endpoints sum to at most $K$.
+Undoing the shift by two gives the bound $K+4=W+h+1$.
+The first maximum cannot start to the right of the integer
+midpoint, proving the mode estimate.
+
+For sharpness take $U=(t,t,t)$, $t=2m+1\ge3$, and
+$\alpha\ge3t$. The correction in (1) starts after the support
+of $d^\infty$. Here
+\[
+ d^\infty=[t-1]+S_t[t-1]+S_t^2[t-1].
+\]
+At shifted $j=3m+1$ the last summand has increment two,
+the middle one increment minus one, and the first one is zero;
+the total increment is one. At $j+1$ the corresponding
+increments are zero, minus one, and zero, giving minus one.
+The interval-product increments follow directly from
+$\Delta([t]^2[t-1])_k=(k+1)-2(k-t+1)^+-(k-t+2)^+$
+at $k=3m-1,3m$. Unimodality then makes $j$ the first mode.
+Its unshifted value is $3m+3=\lfloor(3t+4)/2\rfloor$,
+exactly the stated bound.
+\end{proof}
+
+Combining this estimate with the complete conditional C window
+theorem gives an explicit sufficient append condition independent
+of initial ones:
+$t+\max(4,\kappa-1)\ge\lfloor(W+h+1)/2\rfloor$.
+This remains a conditional C transfer, not a general original UI proof.

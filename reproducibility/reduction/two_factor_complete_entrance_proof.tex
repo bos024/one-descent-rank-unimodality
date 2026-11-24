@@ -1,0 +1,188 @@
+\section{Two-factor completion route: regular heads and transport of four long boundaries}
+This analytic argument and the COMPLETE finite entrance below establish
+all remaining two-factor minimal crossings. All parameters outside that
+explicit finite entrance are covered by unbounded written proofs.
+General C, A2 and original coefficient UI remain OPEN.
+
+\paragraph{A valid window-length transport with a prefix-ratio premise.}
+Let f be nonnegative UI, positive through L, strictly increasing to
+its first mode M. Suppose it is LC at all centres K..M, K>=2,
+and EVERY earlier positive ratio is at least f_(K+1)/f_K.
+For A>=K set W_A(k)=sum(f_(k)..f_(k+A-1)). If W_K is pre-mode LC,
+then every W_A is pre-mode LC. The same applies to actual signed
+tails after positive clipping: any strictly growing positive window
+triple has positive entering endpoint, so all its reads agree with f.
+
+Proof: put m=k+A and D(r,s)=f_r*f_(s-1)-f_(r-1)*f_s. The exact minor is
+\[
+ H_A(k)=\sum_{s=k+2}^{m+1}D(k+1,s)
+             +\sum_{r=k+2}^{m}D(r,m+1).
+\]
+If m<M, all terms D(r,m+1) are nonnegative by prefix compatibility
+and tail LC. Also
+\[
+ D(r,m+2)\ge(f_{m+1}/f_m)D(r,m+1)\ge D(r,m+1).
+\]
+The newly added first and last terms are nonnegative. Thus H_A(k)
+is nondecreasing in A while its right endpoint stays before M.
+If m>=M, the window is concave because its entering increment is
+nonpositive and outgoing increment nonnegative; its minor is automatic.
+First modes of these forward windows do not increase with A: a strict
+new next growth f_(k+A+1)>f_(k+1) implies the same old growth for
+every smaller A, by strict input rise or the descending input tail.
+Hence every required old minor lies in the seed's pre-mode band.
+This proves the transport, with every premise retained.
+
+\paragraph{All four long-capacity boundaries, analytically.}
+For binary count u>=14 and single capacity B=u-c, c=-1,0,1,2,
+put K=c+3. Its actual signed tail f starts at physical B.
+The registered one-jump analytic theorem supplies LC at all centres
+k>=K before its first mode (physical centres >=u+3).
+The actual strict-rise theorem applies; its only possible early flat
+would be at B+1, but f1>f0 here.
+
+Put x=Fib(B), y=Fib(B+1), f0=x, f1=y-1. Until rank K-1, f is the
+Fibonacci recurrence on these initial values. Its first two losses
+from that same recurrence are a,b at K,K+1:
+(a,b)=(2,2u+3) if alpha1, (1,u+3) if alpha2, (1,u+2) otherwise.
+The reference first minor C=(y-1)^2-x*(x+y-1) is negative and
+|C|<=7x/3, using y<=5x/3 and Cassini.
+For i<K the exact prefix comparison is
+\[
+ f_i f_K-f_{i-1}f_{K+1}
+   =(-1)^{i-1}Fib(K+1-i)C+b f_{i-1}-a f_i.
+\]
+Since reference ratios are <=2, b-2a>=u, f_(i-1)>=x, and
+Fib(K)<=5, this is >=(u-35/3)x>0. At i=K use already proved tail LC.
+All prefix ratios therefore dominate the first tail ratio.
+
+For c=0,1,2, the seed window length K gives CI degree exactly u+1,
+already registered for EVERY padding. Window transport closes ALL
+larger capacities A>=K, including every remaining minimal crossing.
+For c=-1, K2, the seed first minor instead has an explicit payment.
+Writing eps=(-1)^(u+1), its first four values are
+(x,y-1,x+y-a-1,x+2y-b-2), where x=Fib(u+1),y=Fib(u+2).
+The first length-two window minor equals
+\[
+ eps+(b-a+1)x+(b-3a-2)y+a^2+3a+1-b\ge0.
+\]
+For alpha>=3, alpha2, alpha1 this becomes respectively
+eps+(u+2)x+(u-3)y+3-u,
+eps+(u+3)x+(u-2)y+2-u,
+eps+(2u+2)x+(2u-5)y+8-2u, all positive at u>=14.
+Every later window minor agrees with the window of the truncated
+input f[1:], which is pre-mode LC; the signed-uniform theorem pays it.
+Thus ALL maxcap>=u-2 minimal two-factor crossings are closed.
+
+\paragraph{The regular-capacity cone u>=24, maxcap<=u-3.}
+Write V=(A,B), A<=B<=u-3, h=u+delta, 3<=delta<=A-1.
+Then delta<=u-8. The primitive spectral norm is <6/5, below the
+registered 5/4 interior budget at ALL u>=16. Since B<=u-3, EVERY
+natural head and last-junction centre is in that interior band.
+For oldCount1, the last-junction scalar is (u^2-15u+8)/2>0,
+giving gap3u/2, while its atom error is <=6u/5+2.
+Thus the natural quotient and later positive primitive are LC.
+
+Set m=floor(u/4)>=6 and truncate the original primitive below
+b=min(m,delta). New head centres m+1..delta are paid as follows.
+For s<=u/2, the ULC kernel ratio is >=Q_s/(4(m+2)^2), and
+Q_s>=binom(u-1,m+1). Its atom coefficient is at most
+(6/5)phi^(delta-m) <=(6/5)phi^(3m-5)
+ <=(1/8)(17/4)^m.
+For ALLm>=6,
+\[
+ binom(4m-1,m+1)>(1/2)(m+2)^2(17/4)^m.
+\]
+Base m6 is 245157>188575. This left binomial grows by >=8,
+whereas the right side grows by <6. Thus every left-half rank-one
+minor and row-zero read is paid.
+
+For s>=u/2 put k=u-1-s>=7. Then its atom coefficient is at most
+(6/5)phi^(k-6). The elementary bound
+(2q)^k>=k(k-1)/11 for all k>=7 follows from exact bases7..10
+and the ratio (2q)(k-1)>=k+1 at k>=10.
+Consequently
+\[
+ Q_s/phi^k >= binom(u-1,k)/phi^k >=(u-1)(u-2)/44.
+\]
+Use binom(n,k)=n(n-1)binom(n-2,k-2)/(k(k-1)) and
+binom(n-2,k-2)>=2^(k-2) in this half.
+At ALLu>=24 this pays the ULC rank-one budget because
+\[
+ (u-1)(u-2)/44 >= (6/(5phi^6))
+       (u+2)^2(u+q)/(4(u+1)).
+\]
+Row zero follows from the same bound; Q reads are strictly positive.
+At the left read n=m, the adjacent binomial ratio loses at most a
+factor three, still leaving (4/3)(m+2)^2 times the atom bound.
+On the right read band put k=u-1-n>=6; binom(u-1,k)>=2^k while
+its read atom is at most (6/5)phi^(k-7), so positivity is strict.
+Thus the original positive primitive from b is globally LC.
+
+\paragraph{A quaternary source cone.}
+For U2=[z^j](1+z)^u/(1-z)^2, define its golden curvature Q2.
+At u=4j, formal Lagrange with w=t(1+w)^4 gives diagonal
+\[
+ G(w),\quad G(z)=(1-phi*z)^2/((1-z^2)^2(1+z)(1-3z)).
+\]
+G1=2-2phi<0, G2=10-3phi>0; ALL Gn,n>=2 are nonnegative.
+For the base h, hn=[5(2-phi)3^(n-1)+(2+3phi)(-1)^n]/4,n>=2.
+Even terms are positive; each odd last block
+(r+1)h1+r*h3=r(24-14phi)+2-2phi>=0 at r>=1.
+The sharper coefficientwise estimate
+w-t-4t^2 <=(11/4)(w^2-t^2)
+follows from the nonnegative polynomial
+(11w-4)(1+w)^8+4(1+w)^4+5w (its first nonzero degree is three).
+Indeed four times the difference of the desired two sides is t^2 P(w)/w;
+P(w)/w is a polynomial with nonnegative coefficients, so this is
+a valid coefficientwise argument despite the rational substitution.
+It pairs the only negative atom against G2; the residual coefficient
+is (31-17phi)/2>=27/16. Since [t^k]w^2>=8 for k>=3,
+Q2(4j,j)>2 for ALLj>=2. Extend by Pascal induction to ALLu>=4j;
+do not discard negative coefficients after multiplication by (1+w)^e.
+This pays the actual first capacity cuts and startup through b<=u/4.
+The primitive cut covers every later source centre, retaining rank0
+and the previous actual unit. Thus the regular cone is closed.
+
+\paragraph{Exact remaining finite entrance.}
+Old u<=13 is registered. Four long boundaries are analytic.
+The regular argument above covers ALLu>=24. Hence only the complete
+two-factor minimal profiles at u14..23 with maxcap<=u-3 are covered by
+the following complete certificate, with EVERY padding through the analytic
+clamp plus the infinite representative. There are exactly 245 profiles,
+5860 complete padding hosts, 76201 integer comparisons and 43336
+distinct integer margins. Independent positive suffix-box sums rebuild
+all profiles, hosts, modes and minors. Ordinary Lean reduction checks
+all 43336 margins in 170 chunks, with only propext. Finite QA elsewhere
+is not a theorem premise.
+
+\paragraph{Universal late-derivative conclusion and its limits.}
+For EVERY sorted word $1^\alpha2^uV$ with $\alpha\ge1$,
+nonempty CI capacities $V\ge3$, and $h=\sum(t-1)>u$, let
+$W=\sum t$. Its ACTUAL positive derivative tail from physical $W$
+is LC at every internal centre strictly before its FIRST tail mode.
+Equivalently the actual derivative is LC at every pre-global-mode
+centre $N\ge W+1$. Counts $u\le13$ use the old theorem. Every
+other CI contains a deletion-minimal degree crossing; one-factor
+long seeds and degree-$u+1,u+2$ seeds are old, all >=3-factor
+crossings are registered, and the two-factor proof above closes
+the last entrance. The exact arbitrary-insertion signed-tail identity
+propagates through all remaining CI factors. At $u=0$ the earlier
+registered signed-tail argument is immediate.
+
+This theorem does not assert derivative LC at $h\le u$, where
+an actual counterexample is already registered. It also does NOT
+by itself prove the required earlier ordinary/cumulative C entrance,
+A2 or original unamplified coefficient unimodality. Those remain OPEN.
+
+\paragraph{Formal and primary-source scope.}
+The standard formal Lagrange formula is Gessel, Theorem2.1.1
+Eq.(2.1.4), \texttt{https://arxiv.org/html/1609.05988},
+DOI\texttt{10.1016/j.jcta.2016.06.018}, already primary-verified.
+Twenty-five new scoped unbounded algebraic, prefix/window, source,
+norm, binomial-growth and half-band implications are kernel checked
+in \texttt{TwoFactorCompleteEntrance.lean}. One further report
+checks the full integer entrance in \texttt{TwoFactorEntranceCertificate.lean}.
+Power-series substitution, binomial induction, window sum/mode
+assembly, actual-word identities and insertion remain written proofs;
+no end-to-end Lean composition theorem is claimed.

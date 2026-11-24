@@ -1,0 +1,121 @@
+\section{A probability renewal identity gives a strict rounding bound at EVERY order}
+Let $t\ge2$, let $q\in(0,1)$ be the unique root
+$q+q^2+\cdots+q^t=1$, and put $\lambda=1/q\in(1,2)$.
+Write
+\[
+ H_t=(1-z-\cdots-z^t)^{-1}=\sum_{n\ge0}h_nz^n,\qquad
+ G_t=H_t/(1-z)=\sum_{n\ge0}g_nz^n.
+\]
+Negative coefficients are zero. Define positive probability weights
+\[
+ a_i=q^{t-i+1}\ (1\le i\le t),\qquad
+ A(z)=\sum_{i=1}^t a_i z^i,\qquad
+ B(z)=\sum_{i=0}^{t-1}\left(\sum_{k=1}^{t-i}q^k\right)z^i.
+\]
+The weights sum to one. The COMPLETE polynomial identities are
+\[
+ 1-z-\cdots-z^t=(1-\lambda z)B(z),\qquad
+ (1-z)B(z)=1-A(z).                              \tag{1}
+\]
+For the first, $b_0=1$, $b_i-\lambda b_{i-1}=-1$ and
+$\lambda b_{t-1}=1$. The second follows from
+$b_{i-1}-b_i=q^{t-i+1}$, including the last coefficient $-q$.
+Equivalently $B=\sum_i a_i[i]$; the generic whole polynomial
+mixture identity is one of the new kernel reports.
+
+Let $U=(1-A)^{-1}$. It obeys the positive finite renewal recurrence
+$U_0=1$, $U_n=\sum_i a_iU_{n-i}$. For EVERY $n\ge1$,
+\[
+                         0<U_n<1.              \tag{2}
+\]
+Indeed $U_n>0$ follows from the $i=1$ term and induction.
+All old reads lie in $[0,1]$, giving $U_n\le1$.
+For $n=1$, the positive $i=2$ weight reads a negative index and
+is lost, so the inequality is strict; for $n\ge2$ the positive
+$i=1$ term reads the strictly smaller old value $U_{n-1}<1$.
+This is an all-rank convex-combination induction, not a root
+approximation or an asymptotic estimate.
+
+From (1), EXACTLY as formal power series,
+\[
+ (1-\lambda z)G_t=U,\qquad (1-\lambda z)H_t=(1-z)U.
+\]
+Thus at every $n\ge0$, and respectively every $n\ge1$,
+\[
+ g_n-\lambda g_{n-1}=U_n\in(0,1],\qquad
+             -1<h_n-\lambda h_{n-1}<1.          \tag{3}
+\]
+There is no finite exceptional band, no bound on $t$, and no
+unproved irreducibility, conjugate-root or spectral-decay premise.
+The normalization at rank zero is retained: $U_0=1$ and the
+second difference at rank zero is one, so its strict bound starts
+at rank ONE. The unbounded renewal bounds and signed increments
+are kernel checked in \texttt{UniversalRenewalRounding.lean}.
+
+\section{A universal first-defect ordinary-coefficient criterion for actual C}
+\begin{theorem}
+Let $X$ be ANY normalized nonrectangular increasing arm of maximum
+capacity $t\ge2$, with actual forward coefficients $F$, positive
+differences $D_n=(F_n-F_{n-1})^+$, $D_0=D_1=0$, and cumulatives
+$G$. Let $L$ be the FIRST mode of $D$, and let $a$ be the first
+rank at which $F$ differs from $H_t$. If
+\[
+ F_n^2\ge F_{n-1}F_{n+1}\qquad(a\le n<L),       \tag{4}
+\]
+then $X$ has COMPLETE C at every current rank and every shift.
+All capacities, counts, padding and ranks are arbitrary. The
+premise is ordinary coefficient LC, not cumulative LC or D LC.
+For actual arms it is equivalent to ordinary F LC at every centre
+$n\ge a$, because the tail from $L$ is already automatically LC.
+\end{theorem}
+\begin{proof}
+Every composition under $X$ uses parts at most $t$, so $F_n\le h_n$.
+The first difference occurs at a finite rank $a\ge3$, and by
+integrality $F_a\le h_a-1$. The entire earlier prefix is equal.
+The universal strict bound (3) gives the ACTUAL first ratio entry
+\[
+                  F_a<\lambda F_{a-1}.         \tag{5}
+\]
+All protected earlier cumulative ratios are greater than $\lambda$
+by (3). Every C comparison at current $N<a$ is the already proved
+alphabet-reference C of \texttt{first\_missing\_renewal\_envelope.tex}.
+At $N=a$, only the current positive derivative is lowered, so
+those comparisons remain true, even if that derivative vanishes.
+
+For $a<N\le L$ discard the automatic case $D_N\le D_{N-1}$.
+Otherwise put $\mu=D_N/D_{N-1}>1$. Hypothesis (4) pays precisely
+the whole bounded ordinary-to-cumulative bridge from
+\texttt{ordinary\_tail\_to\_complete\_C\_proof.tex}, with
+$K=N-a-1$, $f_j=F_{a-1+j}$, $g_j=G_{a-2+j}$.
+The ordinary LC minors propagate the last derivative ratio
+backwards; (5) gives $\mu<\lambda$.
+The protected cumulative entry is greater than $\lambda$ and
+each later cumulative gap propagates by
+\[
+ (G_{j+1}-\mu G_j)-(G_j-\mu G_{j-1})
+                              =F_{j+1}-\mu F_j\ge0.
+\]
+Consequently every required $G_kD_{N-1}\ge G_{k-1}D_N$
+($1\le k\le N-3$) holds. Earlier protected $k$ use (3) directly.
+After $L$, the actual positive derivative is nonincreasing and
+C is automatic. This includes $L\le a$, when the ordinary
+hypothesis is empty. The automatic ordinary-LC tail after the
+first D mode is the existing actual reverse-rising LC and
+nonincreasing-forward-slopes argument, valid for ANY arm.
+\end{proof}
+
+\paragraph{What this proves and what remains.}
+The strict polynacci rounding bound and positive cumulative gap
+are unconditional at EVERY order and rank. The actual C theorem
+is CONDITIONAL on the explicitly displayed ordinary-LC premise.
+It generalizes the previously proved ternary ordinary-to-C bridge;
+it does not assert this ordinary-LC premise for arbitrary arms.
+The premise is known to fail on some actual arms that still have C.
+Thus no general C/A2/original unimodality resolution is claimed.
+Three new scoped kernel reports cover the entire probability
+renewal induction, the entire strict signed increment bound, and
+the whole arbitrary-commutative-ring polynomial mixture identity.
+The prior bounded ordinary-to-cumulative kernel is reused without
+recounting. Actual ideal membership, formal series division and
+the first-defect/coefficient criterion assembly are written proofs.
+Exact finite algebraic calculations are independent QA only.

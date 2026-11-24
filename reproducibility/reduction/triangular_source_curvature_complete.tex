@@ -1,0 +1,220 @@
+\section{A triangular lower bound for source curvature through the first derivative mode}
+\paragraph{Verification status.}
+The unbounded written induction below is complete, using two independently
+rebuilt exact finite coefficient certificates. Twenty-one scoped Lean reports
+check the generic payments and every one of the 53 exceptional finite rows.
+The actual-arm identifications and complete finite-grammar closure remain
+the written assembly and independently checked programs; no end-to-end
+Lean formalization is asserted. This is a SINGLE-arm theorem and does not
+solve the original conjecture.
+
+For an actual normalized nonrectangular sorted arm put
+\[
+ E=1-z+(2z-1)F,\quad \kappa=\min\{i:E_i>0\},
+ \quad\delta=E_\kappa,\quad B(d)=\max\{1,\tbinom{d+1}{2}-1\}.
+\]
+Set $D_0=D_1=0$, $D_i=(F_i-F_{i-1})^+$ for $i\ge2$, and
+$\ell=\min\operatorname{argmax}D$. All extensions are zero outside
+the coefficient support.
+
+\begin{theorem}[Triangular source-curvature target]
+For every such arm,
+\[
+                      \Delta E_n\ge B(\delta)
+                             \qquad(\kappa+3\le n\le\ell). \tag{TC}
+\]
+\end{theorem}
+
+\paragraph{Established actual inputs.}
+The ordinary $F$ and the positive derivative $D$ are unimodal;
+$D$ has positive interval support $[2,R]$, where $R$ is the first
+ordinary mode of $F$. In particular $D_2=1$.
+Actual derivative doubling gives $D_i\le2D_{i-1}$ for $i\ge3$.
+Consequently $\Delta E_i\ge0$ through rank $R$; for $3\le i\le R$
+the exact formula is $\Delta E_i=2D_{i-1}-D_i$.
+Legal sorted appends increase every positive derivative coefficient.
+We also use the proved first-missing source profile and early scaled
+dyadic bounds, and the exact append splice
+\[
+ \widehat D=P\ \hbox{through the last old ordinary mode plus one},
+ \quad P=z^2[t-1]+S_tD,
+\]
+after which $\widehat D$ is nonincreasing. These are prior actual-arm
+theorems, not scalar assumptions inferred from numerical tests.
+
+\begin{lemma}[The two mode bounds and an early-peak rank budget]
+For every legal append,
+\[
+                  \widehat\ell\le\min(R+1,\ell+t).       \tag{1}
+\]
+If $n\le\widehat\ell$ and $n-1>\ell$, writing $M=D_\ell$ gives
+\[
+                 \Delta\widehat E_n\ge M+n-\ell-3.       \tag{2}
+\]
+If additionally $\kappa\le7$ and $\ell\le\kappa+2$, every failure
+of (TC) after this append has $n\le45$ and $M\le128$.
+\end{lemma}
+\begin{proof}
+After rank $R+1$, the entering derivative in $S_tD$ is zero, so
+the window and the additional interval are nonincreasing there.
+After rank $\ell+t$, both entering and leaving indices are on the
+nonincreasing tail of $D$, and the additional interval has finished.
+Thus $P$ has first mode at most both displayed bounds; the exact
+splice and its nonincreasing tail give the same result for $\widehat D$.
+
+Use the exact source identity
+\[
+ \Delta\widehat E_n=\sum_{i=n-t}^{n-1}\Delta E_i
+              +\mathbf1_{n=t+1}-\mathbf1_{n=t+2}.       \tag{3}
+\]
+The window contains $\ell+1$, since $n-t\le\ell$ and
+$n-1>\ell$. Its summand is at least $M$.
+Each of the $n-\ell-2$ subsequent summands through $n-1$ is
+at least one: by (1) these indices are at most $R$, and
+$2D_{i-1}-D_i\ge D_{i-1}\ge1$ on this descending positive tail.
+Every remaining summand is nonnegative. Pay the possible negative
+unit in (3), proving (2).
+
+For the last assertion, $\widehat\kappa\le\kappa+1\le8$ and
+$\widehat\delta\le8$, so $B(\widehat\delta)\le35$.
+The first old mode is at most nine. Since $M\ge1$, a failure
+and (2) give $n\le35+9+2-1=45$.
+Doubling from $D_2=1$ gives $M\le2^{\ell-2}\le128$.
+\end{proof}
+
+\begin{lemma}[Every late old peak is paid using OLD TC]
+Assume OLD TC, and suppose $\ell\ge\kappa+3$.
+Then every NEW comparison with $n\le\widehat\ell$ and $n-1>\ell$
+satisfies (TC), at every first missing weight.
+\end{lemma}
+\begin{proof}
+Both $\ell$ and $\ell+1$ are in the window (3). The first term
+is at least $B(\delta)$ by OLD TC, and the second at least $M$.
+All remaining terms are nonnegative. Thus the payment is at least
+$B(\delta)+M-1$, or $B(\delta)+M$ when the negative unit is absent.
+Stationary appends reset the new multiplicity to one, and preserving
+growth keeps it equal to $\delta$; these are paid because $M\ge1$.
+
+For tied growth $t=\kappa$, the new multiplicity is $\delta+1$.
+The negative unit occurs at $n=\kappa+2$, before the required
+new range $n\ge\kappa+4$. We show $M\ge\delta+1$.
+The universal old prefix gives
+\[
+       D_{\kappa-1}=2^{\kappa-3}=:p,
+              \qquad D_\kappa=2p-\delta.
+\]
+Both indices are strictly before the FIRST mode $\ell$, so
+$D_\kappa\ge D_{\kappa-1}$ and $M>D_{\kappa-1}$.
+Therefore $\delta\le p<M$, hence $M\ge\delta+1$ by integrality.
+This pays $B(\delta+1)-B(\delta)$, which is at most $\delta+1$.
+No low-first-weight classification is needed.
+\end{proof}
+
+\paragraph{A complete finite jet grammar.}
+Fix a prefix endpoint $N$. The initial all-ones prefixes are represented
+exactly by $1\le\alpha\le N$: larger initial runs agree with $\alpha=N$.
+Clamping every capacity and its legal append at $N$ preserves all forward
+coefficients through rank $N$, preserves sorted order, and preserves each
+first missing weight at most $N$. A state consists of this exact coefficient
+tuple, its clamped last capacity, and its first missing weight. Its leading
+multiplicity is determined by the coefficient tuple, so no extra hidden
+state is needed. The transition is exactly
+\[
+            F'_0=1,\qquad F'_n=\sum_{j=1}^{\min(t,n)}F_{n-j}.
+                                                               \tag{4}
+\]
+Equal states have equal transitions under every future legal append.
+Starting from all the initial states and closing (4) under all legal
+clamped capacities therefore contains EVERY actual prefix in the stated
+first-weight range, by induction on the word length. First missing weights
+never decrease, so states above a retained first-weight cap may be discarded.
+The complete queue must be exhausted; a time or state-limited run is not
+a certificate. No global mode is claimed to survive clipping. The finite
+calculations below use only coefficient identities and conditions that
+are NECESSARY for the unbounded actual modes in each proved case.
+
+\paragraph{Low-first-weight pre-old-peak boundaries.}
+Suppose $\kappa\le7$ and $n-1\le\ell$.
+The generic pre-old-peak proof in
+\texttt{triangular\_source\_large\_kappa\_append.tex} applies unchanged
+except its two coefficient-boundary arguments: stationary
+$n=\kappa+3$, tied $n=\kappa+4$, and tied $\delta=2,n=\kappa+5$.
+All these ranks are at most twelve. The preserving-growth unit dent
+is paid by the distinct birth term at EVERY $\kappa\ge3$.
+
+The endpoint-$13$ grammar, retaining OLD $\kappa\le7$, has exactly
+117964 reachable states, 472829 legal append transitions and 34806
+boundary comparisons. Exactly 53 boundary comparisons have curvature
+below the new budget. In EACH, the old derivative has a strict fall
+before or at rank $n-1$, or the new derivative has a strict fall before
+or at rank $n$. Derivative unimodality then contradicts respectively
+$n-1\le\ell$ or $n\le\widehat\ell$.
+The independent direct-convolution DFS rebuilds the complete state set,
+all boundary comparisons and ALL 53 rejected profiles exactly. The
+entire sorted state set is compared byte for byte with the fixed-width
+producer certificate; no hash-equality assumption is used. There is no
+unresolved prefix guard; in particular no infinite-mode inference from
+a finite plateau is made.
+
+\paragraph{Low-first-weight early-old-peak comparisons.}
+Suppose $\kappa\le7$, $\ell\le\kappa+2$, and $n-1>\ell$.
+The rank lemma reduces every potential failure to $n\le45$,
+$M\le128$. Run the endpoint-$45$ grammar with OLD $\kappa\le7$,
+discarding intermediate states having any positive derivative above
+128 in this prefix. This pruning is valid: every intermediate actual
+arm's positive derivative is coefficientwise no larger than that of
+the final old arm, by legal-append monotonicity.
+
+The grammar exhausts 657439 reachable bounded-slope states and
+10873783 legal append transitions. To test the relevant superset,
+let $m$ be the first maximum of the OLD derivative prefix and require
+$m\le\kappa+2$. Test every
+\[
+ \widehat\kappa+3\le n\le45,\quad m+2\le n\le m+t,
+ \quad D_{n-1}>0,
+\]
+whose NEW derivative prefix is nondecreasing through rank $n$.
+Each actual eligible comparison satisfies ALL these guards: its old
+first global mode is already attained inside this prefix, (1) supplies
+both the window and positivity guards, and NEW derivative unimodality
+supplies the prefix guard. The finite test may include extra plateau
+cases; that only strengthens its conclusion.
+ALL 4961907 such comparisons meet the exact new curvature budget.
+The independent rolling-window DFS reconstruction has exactly the same
+complete state set, transitions, pruning counts and necessary-guard
+comparisons. Every independently rebuilt sorted state is compared
+byte for byte with \texttt{low\_kappa\_small\_peak\_states.bin}, and
+the certificate is checked to have no extra records. Their common state digest is
+\texttt{25f6737af1aef9f9b7dfeaed7d4073070a7218d546c6727a52956b3078ca3101}.
+All calculations use exact integers. The digest is an additional file
+identifier. Exact equality of the entire state sets is checked without
+relying on collision resistance; neither comparison is substituted for
+the coverage argument or for the induction.
+
+\paragraph{Completion by induction.}
+Induct on the number of non-one parts. All-ones arms and one-non-one
+arms have no required TC comparison: the latter have first positive
+derivative mode two. Otherwise delete the final legal capacity and use
+OLD TC by induction. The case $n-1\le\ell$ is closed by the generic
+pre-old-peak proof and the complete endpoint-$13$ boundary calculation.
+For $n-1>\ell$, old $\kappa\ge8$ is covered by the prior unconditional
+peak-crossing mass theorem. At old $\kappa\le7$, late old peaks are
+covered by the OLD-TC lemma above, and early old peaks by the rank
+reduction and endpoint-$45$ calculation. These cases exhaust the
+induction. No parameter outside the verified finite jets is silently
+bounded.
+
+Even after final verification of this assembly, the theorem supplies
+a one-arm source-curvature resource. The entire later two-source
+overlap convolution, the residual c0 mixed head, general A2 and the
+original coefficient-unimodality conjecture remain separate problems.
+As an immediate corollary $2\Delta E_n\ge\delta^2$ on the same range:
+for $\delta\ge2$, $2B(\delta)=\delta^2+\delta-2\ge\delta^2$,
+and $\delta=1$ is immediate. Thus the FIRST two-source overlap has
+the short payment $B(d)+B(e)\ge de$, by the nonnegative square
+$(d-e)^2$. This supplies a second proof of the already completed
+first-overlap halving branch. It does not pay the growing convolution
+at arbitrary later overlaps.
+The prior statement that the triangular bound was unproved is superseded
+by this theorem; the stronger pointwise bound by the two actual leading
+source coefficients remains false, as its earlier counterexample shows.

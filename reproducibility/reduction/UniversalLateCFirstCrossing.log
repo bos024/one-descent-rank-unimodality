@@ -1,0 +1,11 @@
+'UniversalLateCFirstCrossing.crossing_read_guards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.golden_endpoint_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.strict_subtracted_window_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.full_alternating_partial_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.reference_residual_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.full_cumulative_residual_propagation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UniversalLateCFirstCrossing.exact_ordinary_window_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.ordinary_seed_gives_LC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniversalLateCFirstCrossing.first_strict_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]

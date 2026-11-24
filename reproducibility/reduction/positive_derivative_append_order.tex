@@ -1,0 +1,63 @@
+\section{Legal increasing appends preserve every existing first positive slope}
+For a zero-extended ordinary rank sequence write
+$\delta F_n=F_n-F_{n-1}$ and $D(F)_n=(\delta F_n)^+$.
+The harmless initial coefficient $D(F)_0=1$ may be included;
+the usual convention $D_0=D_1=0$ gives the same theorem.
+
+\begin{theorem}[Coefficientwise first-derivative order]
+For every increasing normalized arm $X=1^\alpha U$ and every
+legal append $t\ge\max U$, $t\ge2$,
+\[
+                         D(F_{Xt})_n\ge D(F_X)_n
+                         \qquad\hbox{for every }n.       \tag{1}
+\]
+Moreover, the added-word polynomial $F_{Xt}-F_X$ has
+nonnegative first differences throughout the old rising prefix.
+The statement is unbounded in the number and sizes of all parts.
+\end{theorem}
+\begin{proof}
+The all-ones base has no positive slope after rank zero, so the
+first non-one append satisfies (1). For the induction step write
+$X=ZL$ and assume the theorem for the preceding append.
+The exact TWO-stage identity is
+\[
+ F_{Xt}-F_X=S_L(F_X-F_Z)+(S_t-S_L)F_X.                  \tag{2}
+\]
+Both kernels are nonnegative and supported in positive degrees:
+$S_t-S_L=z^{L+1}[t-L]$. First let $n$ belong to the old
+nondecreasing prefix, including its plateaus. Then
+$\delta F_X(j)\ge0$ for every
+$j\le n$. At every such $j$, the induction hypothesis gives
+$\delta F_X(j)-\delta F_Z(j)\ge0$: if the latter old slope
+is positive use (1), and otherwise use $\delta F_X(j)\ge0$.
+Apply $1-z$ to (2). Every coefficient sampled on its right side
+at rank $n$ is one of these nonnegative earlier coefficients.
+Thus $\delta F_{Xt}(n)-\delta F_X(n)\ge0$. Outside that
+prefix the old slope is nonpositive by unimodality, so (1)
+is immediate from positive clipping. This
+proves the induction, including the initial and terminal ranks.
+\end{proof}
+
+\paragraph{The second positive derivative is not ordered.}
+The analogous assertion for $W=D(D(F))$ is false, even within
+the already solved small-peak original families. For every
+$\alpha,h\ge1$ put
+\[
+ X=1^\alpha 2^h\,4\,5^4,\qquad X'=X\,6.
+\]
+The coefficients through rank seven are, for ALL these parameters,
+\[
+ F_X=(1,1,2,4,8,16,31,61,\ldots),\qquad
+ F_{X'}=(1,1,2,4,8,16,32,62,\ldots).
+\]
+Hence $D_X(6,7)=(15,30)$ and $D_{X'}(6,7)=(16,30)$,
+so $W_X(7)=15>14=W_{X'}(7)$.
+More generally one may replace $1^\alpha2^h$ by ANY nonrectangular
+arm $Z$ with maximum at most four. Only its initial coefficients
+$(1,1,2)$ can affect these displayed ranks: the five suffix
+appends shift every dependence on $F_Z$ by at least five.
+
+The first-order theorem does not imply likelihood-ratio order,
+second-order order, C, S, or original-core unimodality. In particular
+the exact positive TWO-stage source in (2) must be retained when
+attempting any stronger propagation argument.

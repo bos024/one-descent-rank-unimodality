@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FORWARD_POSITIVE_DIFFERENCE_CENTERS",
+  "counts": {
+    "actual_arms": 7000,
+    "formal_arms": 7000,
+    "signed_identity_coefficients": 9249453,
+    "reflected_coefficients": 4096251,
+    "first_modes": 14000,
+    "sharp_odd_uniform_seeds": 34
+  },
+  "seconds": 42.03100000000268,
+  "scope": "Written full formal-arm theorem: every positive forward-D height layer has endpoint sum<=W+h+1 and first mode <=floor((W+h+1)/2), independent of initial ones. The infinite-ones source expansion minus a later-centered CI correction proves reflection. Bound attained for odd uniform triples with sufficiently many initial ones. This is NOT the prior reverse-q positive-difference bound W-h, and is not original one-descent UI."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXACT_QA_COMPLETE_CAPACITY_FOUR_C_AND_ORIGINAL_FAMILY",
+  "counts": {
+    "all_alphabet_actual_QA_hosts": 2907,
+    "complete_capacity_four_actual_full_C_minimum_ratio_checks": 343507,
+    "complete_capacity_four_actual_literal_shifts_represented": 41238348,
+    "independent_actual_FULL_A2_hosts": 120,
+    "independent_Q_post_LAST_mode_edges": 8436,
+    "independent_Q_forward_phase_(False, False)": 4124,
+    "independent_Q_forward_phase_(False, True)": 1091,
+    "independent_Q_forward_phase_(True, True)": 2298,
+    "independent_ENTIRE_signed_windows": 600,
+    "independent_ENTIRE_source_cone_hosts": 120,
+    "TRUE_greedy_ORIGINAL_all_capacity_four_pairs": 120,
+    "TRUE_greedy_ORIGINAL_rank_counts": 16385,
+    "independent_Q_forward_phase_(True, False)": 923,
+    "negative_ordinary_control_full_C_minimum_ratio_checks": 26,
+    "negative_ordinary_control_literal_shifts_represented": 351
+  },
+  "sha256": "3e467a32406daf11e93678c01aee7e488aa52f29895d44a8a37a893bef213619",
+  "seconds": 1.8589999999999236,
+  "scope": "Separate finite QA only. The 3059 kernelchecked deterministic margins are the EXPLICIT complete finite proof inputs; these extra hosts are not proof premises. General original conjecture OPEN."
+}

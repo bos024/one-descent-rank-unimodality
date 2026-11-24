@@ -1,0 +1,435 @@
+{
+  "status": "COMPLETE_FIXED_CAPACITY_ONE_JUMP_C_ENTRANCE",
+  "max_capacity": 32,
+  "counts": {
+    "ALL_actual_entrance_words": 19605,
+    "ALL_current_ranks_envelope_checked": 791451,
+    "ALL_shift_comparisons_covered": 20029138,
+    "ALL_full_tail_base_minors": 36427,
+    "ALL_full_tail_base_padding_classes": 1110
+  },
+  "rows": [
+    {
+      "L": 3,
+      "H": 5,
+      "counts": {
+        "ALL_actual_entrance_words": 30,
+        "ALL_current_ranks_envelope_checked": 166,
+        "ALL_shift_comparisons_covered": 647,
+        "ALL_full_tail_base_minors": 44,
+        "ALL_full_tail_base_padding_classes": 8
+      },
+      "all_actual_prefix_sha256": "34d4ba075fb9e85a5f12343a652d603be2bbd18293b6ebdbbd49af2350e81ca7",
+      "minimum_C_envelope_slack": 0,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 4,
+      "H": 6,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 324,
+        "ALL_shift_comparisons_covered": 1561,
+        "ALL_actual_entrance_words": 45,
+        "ALL_full_tail_base_minors": 69,
+        "ALL_full_tail_base_padding_classes": 10
+      },
+      "all_actual_prefix_sha256": "dce91cd40202f83b39c7d98a27b7dd952faa8005a6978f19d363a3b221a70835",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 5,
+      "H": 7,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 560,
+        "ALL_shift_comparisons_covered": 3229,
+        "ALL_actual_entrance_words": 63,
+        "ALL_full_tail_base_minors": 101,
+        "ALL_full_tail_base_padding_classes": 12
+      },
+      "all_actual_prefix_sha256": "9cde5a792e33fe8e5baf4143ae7753abda76e7ce635e9d5e8e2709133b2b8e4b",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 6,
+      "H": 8,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 888,
+        "ALL_shift_comparisons_covered": 5956,
+        "ALL_actual_entrance_words": 84,
+        "ALL_full_tail_base_minors": 139,
+        "ALL_full_tail_base_padding_classes": 14
+      },
+      "all_actual_prefix_sha256": "fa1eeac671fc2722429bd1958f9960a81bf2d6c00ff23ea64b98f59d6b7b6910",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 7,
+      "H": 9,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 1321,
+        "ALL_shift_comparisons_covered": 10101,
+        "ALL_actual_entrance_words": 108,
+        "ALL_full_tail_base_minors": 182,
+        "ALL_full_tail_base_padding_classes": 16
+      },
+      "all_actual_prefix_sha256": "fed1046fedda304db8924a8258cfa61f0b60089fdb9778ede3abd966983221c0",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 8,
+      "H": 10,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 1876,
+        "ALL_shift_comparisons_covered": 16109,
+        "ALL_actual_entrance_words": 135,
+        "ALL_full_tail_base_minors": 232,
+        "ALL_full_tail_base_padding_classes": 18
+      },
+      "all_actual_prefix_sha256": "2c29f85db898cb7aa64e1d0532dcdb0e549e025cd6f6de280805022f53569c02",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 9,
+      "H": 11,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 2565,
+        "ALL_shift_comparisons_covered": 24428,
+        "ALL_actual_entrance_words": 165,
+        "ALL_full_tail_base_minors": 286,
+        "ALL_full_tail_base_padding_classes": 20
+      },
+      "all_actual_prefix_sha256": "83db8c792469ca37f20e5e6df53e923ca08d577b29d88bfbf9b507d687165665",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 10,
+      "H": 12,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 3406,
+        "ALL_shift_comparisons_covered": 35640,
+        "ALL_actual_entrance_words": 198,
+        "ALL_full_tail_base_minors": 348,
+        "ALL_full_tail_base_padding_classes": 22
+      },
+      "all_actual_prefix_sha256": "34f6954ed1fc284658192793c9b14fd49067408c68cf71d2fe24964716b12c4b",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 11,
+      "H": 13,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 4413,
+        "ALL_shift_comparisons_covered": 50329,
+        "ALL_actual_entrance_words": 234,
+        "ALL_full_tail_base_minors": 414,
+        "ALL_full_tail_base_padding_classes": 24
+      },
+      "all_actual_prefix_sha256": "5fa70d6633a31164ed611561b7ac6243a299b271d9be6754e425696736875ca5",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 12,
+      "H": 14,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 5600,
+        "ALL_shift_comparisons_covered": 69132,
+        "ALL_actual_entrance_words": 273,
+        "ALL_full_tail_base_minors": 487,
+        "ALL_full_tail_base_padding_classes": 26
+      },
+      "all_actual_prefix_sha256": "9aa6ecaa98dc224c965bc3ef5dfe75f7c5ce7eed0e95fa9fbde7c3147b0d09d0",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 13,
+      "H": 15,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 6983,
+        "ALL_shift_comparisons_covered": 92786,
+        "ALL_actual_entrance_words": 315,
+        "ALL_full_tail_base_minors": 566,
+        "ALL_full_tail_base_padding_classes": 28
+      },
+      "all_actual_prefix_sha256": "edad4ef608a5241eefabde65eb97755aa802e8b9fb903e36e855a53d275a8300",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 14,
+      "H": 16,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 8575,
+        "ALL_shift_comparisons_covered": 122005,
+        "ALL_actual_entrance_words": 360,
+        "ALL_full_tail_base_minors": 651,
+        "ALL_full_tail_base_padding_classes": 30
+      },
+      "all_actual_prefix_sha256": "5a1b7c1f5a366e718d023e0965152df71acbabd422d791184a6677cc76163be9",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 15,
+      "H": 17,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 10392,
+        "ALL_shift_comparisons_covered": 157631,
+        "ALL_actual_entrance_words": 408,
+        "ALL_full_tail_base_minors": 741,
+        "ALL_full_tail_base_padding_classes": 32
+      },
+      "all_actual_prefix_sha256": "e7278270dd64d0ba7ac75a4ec0266accc3f1927259416432221ca0b8e429336d",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 16,
+      "H": 18,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 12449,
+        "ALL_shift_comparisons_covered": 200554,
+        "ALL_actual_entrance_words": 459,
+        "ALL_full_tail_base_minors": 838,
+        "ALL_full_tail_base_padding_classes": 34
+      },
+      "all_actual_prefix_sha256": "60a4c4919a28ab2e7a2f113c0191311359c1413babb4d6195f3db0bdb336bae6",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 17,
+      "H": 19,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 14759,
+        "ALL_shift_comparisons_covered": 251633,
+        "ALL_actual_entrance_words": 513,
+        "ALL_full_tail_base_minors": 939,
+        "ALL_full_tail_base_padding_classes": 36
+      },
+      "all_actual_prefix_sha256": "5546719fd9a7769bb4c9b6b5eeb605f6e7f75106221c8375b822c1f3c45c69ab",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 18,
+      "H": 20,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 17339,
+        "ALL_shift_comparisons_covered": 311937,
+        "ALL_actual_entrance_words": 570,
+        "ALL_full_tail_base_minors": 1048,
+        "ALL_full_tail_base_padding_classes": 38
+      },
+      "all_actual_prefix_sha256": "e61650b4f61ec6fa12c8dace59e6db628350087f0640b2df2517a325545ffc55",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 19,
+      "H": 21,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 20203,
+        "ALL_shift_comparisons_covered": 382472,
+        "ALL_actual_entrance_words": 630,
+        "ALL_full_tail_base_minors": 1162,
+        "ALL_full_tail_base_padding_classes": 40
+      },
+      "all_actual_prefix_sha256": "b29cbca95c737d96f5998ad8ed7fbdf4b0b62fb7842d5f7b03468253e14672af",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 20,
+      "H": 22,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 23367,
+        "ALL_shift_comparisons_covered": 464365,
+        "ALL_actual_entrance_words": 693,
+        "ALL_full_tail_base_minors": 1282,
+        "ALL_full_tail_base_padding_classes": 42
+      },
+      "all_actual_prefix_sha256": "5aa412046e94f671f46e1042c83f5e5b8a4b9b8ee795b7e04e2e028eca29ab24",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 21,
+      "H": 23,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 26845,
+        "ALL_shift_comparisons_covered": 558760,
+        "ALL_actual_entrance_words": 759,
+        "ALL_full_tail_base_minors": 1408,
+        "ALL_full_tail_base_padding_classes": 44
+      },
+      "all_actual_prefix_sha256": "8d3d16728b06e3f8ae9cba7a785cd68624b439a24c9aeaac017b66294f50f0c1",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 22,
+      "H": 24,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 30652,
+        "ALL_shift_comparisons_covered": 666856,
+        "ALL_actual_entrance_words": 828,
+        "ALL_full_tail_base_minors": 1540,
+        "ALL_full_tail_base_padding_classes": 46
+      },
+      "all_actual_prefix_sha256": "a8e2ab9b16f71d24a965fcb303eb6ef0935401d9dba18579b37452565dc31f62",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 23,
+      "H": 25,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 34800,
+        "ALL_shift_comparisons_covered": 789828,
+        "ALL_actual_entrance_words": 900,
+        "ALL_full_tail_base_minors": 1677,
+        "ALL_full_tail_base_padding_classes": 48
+      },
+      "all_actual_prefix_sha256": "1132c846af40a3a74621cac573f5e17b29c573cea15136c10f2a0bf4dbd96259",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 24,
+      "H": 26,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 39309,
+        "ALL_shift_comparisons_covered": 929192,
+        "ALL_actual_entrance_words": 975,
+        "ALL_full_tail_base_minors": 1822,
+        "ALL_full_tail_base_padding_classes": 50
+      },
+      "all_actual_prefix_sha256": "162ca611b8c4107ee950a405332938c4ea37189e724a61d907b177d3a37bef4e",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 25,
+      "H": 27,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 44188,
+        "ALL_shift_comparisons_covered": 1086074,
+        "ALL_actual_entrance_words": 1053,
+        "ALL_full_tail_base_minors": 1969,
+        "ALL_full_tail_base_padding_classes": 52
+      },
+      "all_actual_prefix_sha256": "8cde37edddd951a5fbce0c160a07141e7a8a7b46544716477e9cf2974b479656",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 26,
+      "H": 28,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 49458,
+        "ALL_shift_comparisons_covered": 1262179,
+        "ALL_actual_entrance_words": 1134,
+        "ALL_full_tail_base_minors": 2126,
+        "ALL_full_tail_base_padding_classes": 54
+      },
+      "all_actual_prefix_sha256": "0280ff3ec3a90a0218b64b0fa0e4b9650c154ae91efe5d144c3057eaab2e2df5",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 27,
+      "H": 29,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 55130,
+        "ALL_shift_comparisons_covered": 1458871,
+        "ALL_actual_entrance_words": 1218,
+        "ALL_full_tail_base_minors": 2289,
+        "ALL_full_tail_base_padding_classes": 56
+      },
+      "all_actual_prefix_sha256": "a68fcc254c5197254dcf4a2088f56fcf3be12eb02da63afab3905bb1bf9b6c64",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 28,
+      "H": 30,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 61220,
+        "ALL_shift_comparisons_covered": 1677659,
+        "ALL_actual_entrance_words": 1305,
+        "ALL_full_tail_base_minors": 2454,
+        "ALL_full_tail_base_padding_classes": 58
+      },
+      "all_actual_prefix_sha256": "c36f2815bc956936819d1c30d038e4d1a55196fedd5607aff55ee57acaa4efec",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 29,
+      "H": 31,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 67744,
+        "ALL_shift_comparisons_covered": 1920313,
+        "ALL_actual_entrance_words": 1395,
+        "ALL_full_tail_base_minors": 2630,
+        "ALL_full_tail_base_padding_classes": 60
+      },
+      "all_actual_prefix_sha256": "c3a1b022f40eb7d564f2db0aea50b54070bfa0ad6e82f8fc6042099144d32d3b",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 30,
+      "H": 32,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 74715,
+        "ALL_shift_comparisons_covered": 2188297,
+        "ALL_actual_entrance_words": 1488,
+        "ALL_full_tail_base_minors": 2808,
+        "ALL_full_tail_base_padding_classes": 62
+      },
+      "all_actual_prefix_sha256": "e84ef31f929302c0bea7d7de00f6c7508e9fbbc634d1d796c7c1ceeb48c4ed3f",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 31,
+      "H": 33,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 82147,
+        "ALL_shift_comparisons_covered": 2483328,
+        "ALL_actual_entrance_words": 1584,
+        "ALL_full_tail_base_minors": 2992,
+        "ALL_full_tail_base_padding_classes": 64
+      },
+      "all_actual_prefix_sha256": "c303683bb1c089e3e20c7e201a91f88c406ef2bf105e4a34b2b0eaa9bbcc00dc",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    },
+    {
+      "L": 32,
+      "H": 34,
+      "counts": {
+        "ALL_current_ranks_envelope_checked": 90057,
+        "ALL_shift_comparisons_covered": 2807266,
+        "ALL_actual_entrance_words": 1683,
+        "ALL_full_tail_base_minors": 3183,
+        "ALL_full_tail_base_padding_classes": 66
+      },
+      "all_actual_prefix_sha256": "a966e89b1e2ce70f7cb9c1f1510db04aa3e9260e7db5b2e07c81f8624efd0416",
+      "minimum_C_envelope_slack": 1,
+      "minimum_LC_base_minor": 1
+    }
+  ],
+  "seconds": 1.3910000000032596,
+  "scope": "Complete h<=L+2,alpha<=h+L entrance and full positive-D-tail LC baseh=L+2. Needs independent actual closed-form rebuild and unbounded tail/C/alpha-clamp assembly. Not arbitrary L or original UI."
+}

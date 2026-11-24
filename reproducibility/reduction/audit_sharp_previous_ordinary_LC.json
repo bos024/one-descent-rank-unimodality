@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_QA_SHARP_W_MINUS_ONE_ORDINARY_LC_UNDER_AUDIT",
+  "counts": {
+    "W_minus_one_ordinary_tail_centres": 614829,
+    "hosts": 4152,
+    "unbounded_family_sharpness_QA": 258
+  },
+  "counterexamples": {},
+  "sharpness_witness": [
+    {
+      "alpha": 1,
+      "u": 5,
+      "V": [
+        3,
+        5
+      ],
+      "W": 8,
+      "centre": 6,
+      "triple": [
+        14,
+        23,
+        38
+      ],
+      "minor": -3
+    }
+  ],
+  "seconds": 3.811999999998079
+}

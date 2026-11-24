@@ -1,0 +1,11 @@
+'ReferenceGoldenPrefix.interval_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.positive_golden_atom_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.head_interval_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.head_interval_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.zero_head_interval_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.one_head_interval_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.complete_head_plus_alternating_tail_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ReferenceGoldenPrefix.all_current_window_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReferenceGoldenPrefix.generic_ordinary_tilt_seed' depends on axioms: [propext, Classical.choice, Quot.sound]

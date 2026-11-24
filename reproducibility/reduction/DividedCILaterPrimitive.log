@@ -1,0 +1,7 @@
+'DividedCILaterPrimitive.weighted_power_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterPrimitive.double_quadratic_kernel_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterPrimitive.double_last_head_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterPrimitive.double_row_zero_payments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterPrimitive.nonempty_junction_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterPrimitive.nonempty_interval_junction_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterPrimitive.empty_interval_junction_gap' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXACT_ARBITRARY_FIBONACCI_TAIL_LATE_C_QA",
+  "counts": {
+    "leading_binary_fixed_point_weight_reductions": 310,
+    "ALL_exact_effective_numerator_degrees": 1200,
+    "ALL_exact_positive_Fibonacci_numerator_reads": 272471,
+    "ALL_exact_uniform_golden_cumulative_margin_reads": 272471,
+    "ALL_exact_scaled_conjugate_error_and_tail_identities": 15600,
+    "ALL_literal_late_reference_C_shifts": 3432923,
+    "arbitrary_capacity_tail_reference_contexts": 1200,
+    "unordered_tail_contexts": 424,
+    "ALL_exact_capacity_window_norm_and_numerator_steps": 11864
+  },
+  "seconds": 2.110000000000582,
+  "scope": "Unregistered finite exact QA ONLY. All irrational comparisons performed in Q(sqrt5) with integer-squared sign tests, NO floatingpoint. W=EXACTnumeratordegree=sumcapacitiesAFTERleadingtwosremoved, usingbinaryfixedpoint. Analytic ALL-word late-C proof under formal validation; early N<=W+5/general referenceC/finite-actual transfer/general original C/A2/UI remain OPEN."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "DIAGNOSTIC_ONLY_UNSCALED_HEAD_FAST_SOURCE_AND_NO_THREE_CROSSINGS",
+  "counts": {
+    "unscaled_eight_fifths_kernel_minors": 546686,
+    "generic_fast_source_clipped_LC_triples": 6000,
+    "generic_fast_source_all_three_positive": 7,
+    "arbitrary_nonnegative_numerator_source_growth_edges": 389422,
+    "arbitrary_interval_supported_LC_unscaled_numerator_minors": 73132,
+    "generic_unscaled_LC_numerator_contexts": 1000,
+    "targeted_fast_source_all_three_strict_positive": 4000,
+    "no_three_minimal_crossing_profiles": 1600,
+    "natural_quotient_all_tail_minors": 339654,
+    "natural_primitive_after_first_minors": 338054
+  },
+  "counters": {},
+  "state_sha256": "4c41aef8be58b03c38be67d25a70142d3fcea8c989a72159e3a5d8e52f41dd98",
+  "seconds": 4.0,
+  "scope": "Written unbounded unscaled-head/fast-source arguments under audit; actual no-three quotient profiles are finite diagnostics. Natural source lag remains alpha-1. No general crossing theorem, C/A2 or original UI claim."
+}

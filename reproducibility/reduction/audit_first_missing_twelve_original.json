@@ -1,0 +1,17 @@
+{
+  "status": "PASS_QA_FIRST_MISSING_TWELVE_CLOSED_SOURCE_WINDOWS_AND_A18_ORIGINAL",
+  "scope": "QA ONLY. Actual recurrence and true greedy embeddings. Does not replace the independently reconstructed complete finite certificate or unbounded written assembly.",
+  "counts": {
+    "fast_greedy_vs_original_independent_letter_DP_controls": 50,
+    "actual_OLD_FULL_A2_pairs": 48,
+    "ALL_proper_CLOSED_source_head_payments": 918,
+    "ENTIRE_window_A2_and_head_boundary_checks": 384,
+    "EQUAL_proper_source_head_payments": 2,
+    "TRUE_greedy_original_BOTH_five_to_seven_dominant_arms": 12,
+    "TRUE_greedy_original_rank_counts": 360222,
+    "BOTH_relative_polynomials": 24,
+    "arbitrary_extra_heavier_append_originals": 6
+  },
+  "state_sha256": "83a8b9365a7894c7512efc701bb6a48b4bb1219a4f75a37ea885e24ef728c40e",
+  "seconds": 3.875
+}

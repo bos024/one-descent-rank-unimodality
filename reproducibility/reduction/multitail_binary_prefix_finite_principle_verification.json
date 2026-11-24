@@ -1,0 +1,91 @@
+{
+  "status": "PASS_UNBOUNDED_FIXED_MULTITAIL_FINITE_PRINCIPLE_AND_NONBINARY_WEIGHT32_COMPLETE_C",
+  "new_scoped_reports": 6,
+  "kernels": {
+    "all_capacity_Cassini_factor_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "full_Fibonacci_window_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_word_exact_Cassini_amplitude": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_word_reference_Cassini_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "nonempty_word_two_step_strict_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "first_defect_strict_LC_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finite_principle": "ANY fixed sorted V>=3, r=count,W=sum,h=W-r,H=h+4: ordinary positiveD LC only throughFIRSTDmode at SINGLEu=H andfinitealpha<=H+h+1 implies ALLlateC atEVERYN>=W+6 forallu>=H/ALLalpha. AddreferenceC N<=W+5 forcompleteC allu>=H; finiteactualshorter u<H,alpha<=u+h+1 closesALLu>=0. Exactordinaryreads<=2u+W+1, NEVER assumes LCafteroldFIRSTmode.",
+  "analytic_budget": "ALLword Cassini amplitudeA=product C_t, Ct=Fib(t-1)+Fib(t+1)-1-(-1)^t. Exacthomogeneouswindowidentity and Ct<=Fib(t+2)-1 imply r_(W+2)>=A, r_(W+4)>=2A+1. FirstactualdefectpaysSTRICTLCminor>=A+1, ALLwordcounts/capsUNBOUNDED. Generalreference lateC atN0>=W+6 +TWOearlyDseeds +F/Gfinite-readintegration closesALLshiftsafterentrance.",
+  "proved_actual_family": "COMPLETE C for EVERY sorted actual 1^alpha 2^u V, alpha>=1,u>=0,nonemptyVentries>=3,sumV<=32. ALLbinarycounts/padding/currentranks/shiftsUNBOUNDED. EmptyV alreadyclosedbinarytheorem. 2744fixedtails, including tails with>=6nonbinarycapacities. Exhaustivefiniteentrances independentlyreconstructed by suffixCI-layerpolynomials, completeSTATEbytes/counts/hashMATCH. No endtoend Lean finiteactualcomposition claim.",
+  "formal_scope": "SIXnewstandardaxiomkernelreports: ALLcapacityfactorbound, exactALLlengthFibonacciwindowidentity, FULLwordEXACTCassiniamplitudeidentity, FULLunboundedwordCassini-statebudgetinduction, nonemptywordstrict2stepbudget, firstdefectstrictLCpayment. ExistingFULLrising-taildiagonalinduction and TWOseed/finite-readintegration kernelsREUSED withoutrecounting. Actual word/polynomial/mode/padding/reference/completeC assemblyWRITTEN; independentfinitewordreconstruction is exactPython, NOT ordinaryLeanfinitecertificate.",
+  "remaining": "ArbitraryV entranceLC remainsOPEN; finitewordweight32family is not arbitrarytailword. GeneralactualC/A2 andORIGINALgeneralunamplifiedUI OPEN. Nooriginalnumericalleastcounterexampleboundupgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "ALL_C_shifts_covered_at_increasing_current_ranks": 2203012754,
+    "exact_prefix_minimum_ALL_shift_C_payments": 105427810,
+    "independent_literal_ALL_shift_C_checks": 944458,
+    "complete_early_reference_profiles": 2744,
+    "whole_word_Cassini_amplitude_and_seed_budgets": 2744,
+    "exhaustive_shorter_binary_count_alpha_representatives": 2813182,
+    "independent_padding_clamp_prefix_checks": 76800,
+    "exhaustive_entrance_rising_tail_LC_minors": 3226513,
+    "exhaustive_entrance_alpha_representatives": 139880,
+    "ALL_sorted_nonbinary_tail_words": 2744,
+    "tail_words_with_at_least_six_nonbinary_capacities": 659
+  },
+  "complete_state_sha256": "8aa1185993d57da201dbd0f446c7f60d3c47d155d7a7508ed2907fd0957819de",
+  "independent_rebuild_seconds": 146.36000000000013,
+  "sha256": {
+    "ArbitraryFibonacciTailLateC.lean": "d9d5d6e9af6ccf319f2733219880e2630ab24f381be1f8b26d8a951d9183dd77",
+    "ArbitraryFibonacciTailLateC.log": "2ca862453850852d53fbc1f6589fe9ad60317abb0212db91bf14e3bca56f110b",
+    "CountPrefixSeparator.lean": "716bcb626aa0c8b7386012547d399dcad353a168b60d80590a2547fbe47980f9",
+    "CountPrefixSeparator.log": "2ff4864df7d42e55e83cf38d07e747c3e63a99a29a6cfa3ab0b3333af1ba382a",
+    "MultitailCassiniBudget.lean": "7a9ee352f0e9d5a3d73a0eefc7f5dcf46e218cd94e7669e8fc5e35de9e9ac149",
+    "MultitailCassiniBudget.log": "9ad86f58c9404185c53d8d70d8d152cb144598ed68a8df7c93615aee00061e66",
+    "OneJumpUniformAnalyticKernels.lean": "7ec0c7fd64b51e8ac11e49c8476aa2c43a55d64083f092eef0c4bd09a13805e1",
+    "OneJumpUniformAnalyticKernels.log": "ca49ae72d611a09f368d57489d9fe6698d6efc7016a0a0f90b83f0ea86cf6889",
+    "arbitrary_Fibonacci_tail_late_C.tex": "b41f1fe8965e1f4fc8f57217a26bd5ba340314d969ca259d5314e628981bcbfa",
+    "arbitrary_Fibonacci_tail_late_C_verification.json": "e65ed88ed8b85b33473f5b086156a6cc9be24c119cd5ee99acecd377d6fa729d",
+    "audit_arbitrary_Fibonacci_tail_late_C.json": "06a9ae039e679296beacaee01ed4a67eafbbcd6cfaf80f5244cdeb4ca2c22950",
+    "audit_arbitrary_Fibonacci_tail_late_C.py": "d9e5556795d0768c9250d23af733ef9770ba0f293c4a82b0b6e8e987e239c821",
+    "audit_general_one_jump_analytic_C.json": "38c52dff7ed557a992ccb89661233dfb753f237da50f8badcb77972e48f5031a",
+    "audit_general_one_jump_analytic_C.py": "1485bfc405884257e8fd9ea9f4f55ab3c9dfb008e1aa065d880e3c93bcdbb9b2",
+    "audit_joint_structure.py": "fdfbbf3f52a18c9370aea78dab7f1ffbb2f2371d4d6a1ea882fd1d17028f2f61",
+    "audit_minimum_staircase_scaled_dyadic.py": "2b21ac1adb19e110473d958952a2699d33d71326faaa54c5af7f90bd91c5ed45",
+    "binary_ordinary_tail_and_one_jump_C_verification.json": "f096cdb526006928dcbe15a8d6effadd3cfb1bb5712a6dd30f21ca9ab819c45c",
+    "certify_multitail_binary_prefix_finite_principle.py": "9e0008b0d249dc6a75dd94ae72af4e7911437a1f6193a18b238db7471ba9dd96",
+    "count_prefix_and_stationary_resource_separator.tex": "bdcb29ad09f35a8bb27eaf4c39519dd90b75d1016885f46989dbd18bdd882791",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17",
+    "general_one_jump_complete_C.tex": "9085604bc0ca4acaec6088a911ed0969cadcb7e899c1ecbe2730bc5000eedafb",
+    "multitail_binary_prefix_finite_entrance_weight32.json": "32a8207492789f74bb135ca52305424aaa97548c37eafe7d222e3ee28d3996da",
+    "multitail_binary_prefix_finite_principle.tex": "f62e1ebcf0f9eaff68400b6117314c881a58f5955974a917b75d258153244417",
+    "one_jump_fixed_capacity_finite_principle_verification.json": "c4f9de9e18b82004c47d49638ff0074bf1d1af73c84ad1d124621d3a8c694b4e",
+    "ordinary_rooted_caterpillar_model.tex": "2325d255e2c49e48e6e2669c223cf406ca83ccd467681560f82fae4597d8bd99",
+    "property_C_five_nonone_arms.tex": "c1a264c81e0a98177425a0bcb995292232a960830427127b9a90908a3dfb1f50",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76",
+    "verify_arbitrary_Fibonacci_tail_late_C.py": "a229ee2bead80ab81308eded23a399424011f68e38507a48b2b72bdd0c46c7ae",
+    "verify_general_one_jump_analytic_C.py": "d713089fc7943b286ddb8ae860f7597153b2b3bb8a4a9ef2084c17b1e600e2e5",
+    "verify_multitail_binary_prefix_finite_principle.py": "cfe6b7606666a87c6d413e70cf1fb0533cca30c21be36e9f7e56710f72757bd9"
+  }
+}

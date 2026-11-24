@@ -1,0 +1,10 @@
+'AgentHalfLCWeakWindowTransport.crossing_window_curvature_nonpositive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentHalfLCWeakWindowTransport.adjacent_monotone_prefix_chains' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentHalfLCWeakWindowTransport.nonnegative_prefix_removes_old_weak_guard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentHalfLCWeakWindowTransport.unbalanced_gap_covers_all_new_half' depends on axioms: [propext, Quot.sound]

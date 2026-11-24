@@ -1,0 +1,17 @@
+'CountWedgeBoundaryPositive.reference_amplification_all_large' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CountWedgeBoundaryPositive.reference_mass_two_fifths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.interval_product_sum_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.reference_previous_read_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.finite_padding_positive_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CountWedgeBoundaryPositive.uniform_actual_golden_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.renewal_response_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.loss_cumulative_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.geometric_interval_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.all_distance_boundary_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.increasing_pair_source_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.complete_C_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountWedgeBoundaryPositive.wedge_head_and_weight_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]

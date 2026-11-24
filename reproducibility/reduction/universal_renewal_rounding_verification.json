@@ -1,0 +1,83 @@
+{
+  "status": "PASS_ALL_ORDER_STRICT_RENEWAL_ROUNDING_AND_UNIVERSAL_CONDITIONAL_ORDINARY_C_BRIDGE",
+  "new_scoped_reports": 3,
+  "kernels": {
+    "UniversalRenewalRounding.entire_probability_renewal_unit_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UniversalRenewalRounding.entire_renewal_signed_increment_strict_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UniversalRenewalRounding.whole_mixture_normalizer_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all_order_rounding": "UNCONDITIONAL ALLt>=2/n>=1: -1<h_t(n)-lambda_t*h_t(n-1)<1. qsumq^i=1,lambda1/q. Noexceptionalband,NOrootconjugates/spectralnorm/irreducibilitypremise.",
+  "exact_probability_identity": "WHOLEP_t=(1-lambda*z)B_t and(1-z)B_t=1-A_t, a_i=q^(t-i+1)>0,sum1. U=(1-A)^-1;U0=1,ALLn>=1 0<Un<1 byfinitepositiveprobabilityrenewal. EXACT(1-lambda*z)G_t=U and(1-lambda*z)H_t=(1-z)U. PositivecumulativegapALLn>=0 isUn<=1.",
+  "universal_actual_bridge": "CONDITIONALANYactualnormalizedincreasingnonrectarm,maxpartt>=2,FIRSTdifferenceafromH_t,FIRSTDmodeL: ordinaryFLCatEVERYcentre a<=n<L=>FULLC EVERYcurrent/EVERYshift. Firstintegerloss+NEWstrictallorderrounding=>F_a<lambdaFprev,protectedGgapspositive;OLDfullboundedordinary-to-GbridgepaysALLlaterreads,afterLautomatic. NoDLC/strongminor/actualCDFLCpremise.",
+  "formal_scope": "THREENEWcleanstandard-axiomSCOPEDgenericreports:ENTIREunboundedfiniteprobabilityrenewal0<U<=1andstrictn>=1;ENTIREstrictsignedincrementbound;WHOLEarbitraryCommRingpolynomialmixturenormalizeridentity. OLDfirstloss/boundedordinary-CkernelREUSED/NOTrecounted. RootBidentification/formalseries/actualfirstdefectassemblyWRITTEN,NOTendtoendLeanactualcompositions. NewfiniteexacttestsQAONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "ordinary_LC_premise": "NOTASSERTEDforarbitraryarms;actualcounter1alpha2^20 3^6 atcentre19 negative-4^6 yetFULLCknown.",
+  "counts": {
+    "independent_closed_binomial_all_order_strict_bounds": 1980,
+    "independent_WHOLE_polynomial_root_normalizer_coefficients": 212,
+    "independent_ALL_explicit_shift_C_payments": 897647,
+    "independent_actual_TRUE_firstdefect_ordinary_premise_hosts": 520
+  },
+  "primary_QA": {
+    "EXACT_all_order_positive_unit_margins_and_strict_rounding": 1980,
+    "EXACT_distinct_orders": 18,
+    "actual_conditional_C_all_shift_prefix_payments": 51998,
+    "actual_TRUE_ordinary_firstdefect_premise_hosts": 792
+  },
+  "independent_state_sha256": "330aa0dee156a248bcbcf3caa8c592a864a1bbff3c6924fb771e5668d7528e02",
+  "seconds": 12.031000000002678,
+  "local_files": [
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex",
+    "UniversalRenewalRounding.lean",
+    "UniversalRenewalRounding.log",
+    "audit_universal_renewal_rounding.py",
+    "audit_universal_renewal_rounding.json",
+    "universal_renewal_rounding_root_data.json",
+    "verify_universal_renewal_rounding.py"
+  ],
+  "dependency_files": [
+    "first_missing_renewal_envelope.tex",
+    "ordinary_tail_to_complete_C_proof.tex",
+    "ordinary_tail_to_complete_C_verification.json",
+    "OrdinaryTailToCompleteC.lean",
+    "OrdinaryTailToCompleteC.log",
+    "prefix_tp2.tex",
+    "formal_arm_extensions.tex",
+    "audit_renewal_root_primitive_cut.py",
+    "verify_renewal_root_primitive_cut.py",
+    "verify_subdegree_CI_entrance.py"
+  ],
+  "sha256": {
+    "universal_renewal_rounding_and_ordinary_C_bridge_proof.tex": "2e919bb31820e95bbcdd4bf30161d4fc2d494b0a0cb7a9c7fd83745e0e6639de",
+    "UniversalRenewalRounding.lean": "0a5109f219608db5250b09ccdb45df8f3774b7db2d0780810c6368f07e78bc90",
+    "UniversalRenewalRounding.log": "4b43b1d628eecb56b2c5135e27854be7ea4ec01e4bf1ff30e710feb282a7f28d",
+    "audit_universal_renewal_rounding.py": "230e93fe7328670dcc17b30bb2315e8cb4c2dd9f894d5443d60e9340a66ba653",
+    "audit_universal_renewal_rounding.json": "04986ec703467ea2b4a6e4dead7d402619155c3216cecd80e96a16a68f50a4d3",
+    "universal_renewal_rounding_root_data.json": "9554b1731bc7ac9255ba9bac9a287619fdaffbbf5fb3fece24c446857ef9b5a0",
+    "verify_universal_renewal_rounding.py": "deb91beecfe98ad9033fb99103c30612934202d428edbc73eb839b745d332c0e",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8",
+    "ordinary_tail_to_complete_C_proof.tex": "a39333b1e5da9abddb76ed3832a4d074eb047d4bf8a5b51983dfb8d5e347ee2a",
+    "ordinary_tail_to_complete_C_verification.json": "1c7d690723e8640a87ccea1684155ec680fc4e83f102cba11590273f74ed7b85",
+    "OrdinaryTailToCompleteC.lean": "ce6407b97ac6a0554067c5a04ba6bbacf912fd65a1187788536045dfff02a8fb",
+    "OrdinaryTailToCompleteC.log": "caf50f66758fd1c15ddfe06d8bdbd5aa1246c073df2b2bdb056b68a7c1001057",
+    "prefix_tp2.tex": "e48c4f5f63a28bab3a6b3b0e29ca59f37aa618be289356b787544840fdcf0530",
+    "formal_arm_extensions.tex": "d58c5585836f0315bcf8d6d1b9ce63af28663af1149f46b5db2b8228a7ab01e8",
+    "audit_renewal_root_primitive_cut.py": "2769727e06c6940506efca0c3c84aa1b1c7511e489c74242616150215b1070a1",
+    "verify_renewal_root_primitive_cut.py": "1c4c7584a55a90cd19abcb1e1f83fe10a76f31ad70f6ab5a97c62d499534c06e",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63"
+  }
+}

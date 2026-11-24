@@ -1,0 +1,84 @@
+\section{Full property C through five non-one parts}
+\begin{theorem}
+Every actual normalized increasing arm with at most five non-one parts
+has full property C at every rank and shift. The capacities and initial-one
+length are unbounded. Its ordinary product with any opposite increasing
+arm has unimodal factor-two coefficient tilt.
+\end{theorem}
+
+Let $X=1^\alpha U$ be an actual increasing normalized arm, $\alpha\ge1$,
+$U_i\ge2$. Write $F_X$ for its forward rank polynomial, $G_X$ for
+its cumulative coefficients, and $D_0=D_1=0$,
+$D_n=(F_X(n)-F_X(n-1))^+$ for $n\ge2$.
+Then
+\[
+ G_X(n+1-r)D_n\ge G_X(n-r)D_{n+1}
+       \qquad\text{for every rank $n$ and every $r\ge3$},
+                                                               \tag{1}
+\]
+whenever $|U|\le5$. Every capacity, initial-one length and shift is
+unrestricted. Negative-index coefficients are zero.
+
+The proof through four non-one parts is complete. For five parts,
+write $U=(a,b,c,d,e)$. The exact initial exchange gives an equivalent
+actual representation with $a\le\alpha+1$; it preserves the entire
+actual polynomial, old derivative mode and all later capacities.
+Its infinite reference changes, so apply all source masks to this
+canonical representation itself. Conditional old-C transfer from the
+proved four-part theorem leaves only
+\[
+        n=e+s\le\ell_D(1^\alpha abcd),\qquad
+        s\ge5,\qquad3\le r\le s.                         \tag{2}
+\]
+The sharp center gives $2n\le a+b+c+d+4$.
+The complete source geometry, including shorter suffix terms, has
+nine masks. Its $bccd$ mask is impossible by actual old-mode geometry;
+its $cd$ mask is positive for all finite initial-one lengths by the
+completed uniform-boundary theorem. The remaining seven are covered by
+the following complete finite-alpha chapters:
+\[
+\begin{array}{c|c|c}
+\text{mask}&\text{exact positive regions/cones}&\text{nonzero positive coefficients}\\\hline
+\varnothing&96&572771\\
+bc&22&16918\\
+abbc&51&123900\\
+ab&109&1301782\\
+abac&209&2526231\\
+abacbc&528&10664220\\
+abacad&609&14094751.
+\end{array}
+\]
+The earlier reference theorem handles $x=n-\alpha-4\le0$;
+the chapters cover all remaining $x\ge1$. The last two use the
+new prefix-window/source coupling to eliminate all finite capacity
+cuts in the triangle mask and all but the first cut in the star mask.
+Their exact closed-cone covers retain boundary faces and prove strict
+minor positivity. Both final certificates have passed full independent
+coefficient and closed-cover verification. Thus every possible failure
+in (2) is excluded. All other
+ranks and shifts were already transferred from the four-part theorem,
+which completes (1).
+
+The existing single-arm C-to-clipped-R reduction then gives, for ANY
+opposite actual increasing arm $Y$, unimodality of the ordinary product's
+factor-two coefficient tilt
+\[
+                         \frac{[z^n]F_XF_Y}{2^n}.
+\]
+The opposite arm has no restriction on non-one count, capacities or
+initial ones. Rectangular cases follow by the existing geometric
+uniform-convolution argument.
+
+This is an auxiliary cumulative/ordinary-product theorem. It does NOT
+establish the required weighted positive-difference statement A2, the
+coupled S induction, or coefficient unimodality of the original
+one-descent kernel. The original least-counterexample constraints are
+not strengthened merely by moving this auxiliary C frontier from four
+to five. General C beyond five, and the original unamplified conjecture,
+remain open after this auxiliary theorem.
+
+The full certificates are independently verified exact algebra,
+with the previously recorded formal identity proofs for C4 and
+finite $bc$, and scoped Lean proofs for generic geometry, mode and
+cone-sign arguments. Most new C5 identities are not Lean ring proofs.
+No end-to-end composition datatype formalization is claimed.

@@ -1,0 +1,44 @@
+\section{A finite complement from long leading runs}\label{sec:completion}
+To cover the complement of Theorem~\ref{thm:central}, a bound on the non-one parts must be accompanied by a valid bound on the leading ones. We give that argument explicitly; no general high-rank single-crossing assertion is assumed.
+
+\begin{lemma}[Two long leading runs]\label{lem:longones}
+Let $U,V$ be increasing words with parts in $\{2,\ldots,M-1\}$, allowing empty words. Put $u=\wt U$, $v=\wt V$, $s=\len(U)+\len(V)$ and
+\[
+ B=M+u+v-s.
+\]
+If $\alpha,\beta\ge B$, then $F_{1^\alpha U,M,1^\beta V}$ is unimodal.
+\end{lemma}
+\begin{proof}
+Use the polynomials $\RR_U,K_U$ from Lemma~\ref{lem:prefixreverse}, and define
+\[
+ J_U=(1-z)+(S_M-1)K_U.
+\]
+Both $K_U$ and $J_U$ are nonnegative: $J_U=K_{U,M}-K_U$ counts the new words beginning with a letter at least two on appending $M$. Their values at one are $K_U(1)=\RR_U(1)$ and $J_U(1)=(M-1)\RR_U(1)$.
+
+The exact padding identity is $(1-z)F_{1^\alpha U}=K_U-z^{\alpha+1}\RR_U$. Substitute it into~\eqref{eq:core}. With $D=M+u+v$, this gives
+\begin{equation}\label{eq:padding}
+ (1-z)^2H=N_0-z^{\alpha+1}E_1-z^{\beta+1}E_2
+                 +z^{\alpha+\beta+2}W,
+\end{equation}
+where
+\begin{align*}
+ N_0&=(1-z)(K_U+K_V)+(S_M-1)K_UK_V,\\
+ E_1&=\RR_UJ_V,\qquad E_2=\RR_VJ_U,\qquad
+ W=(S_M-1)\RR_U\RR_V.
+\end{align*}
+All four degrees are at most $D$, all four values at one equal $\kappa=(M-1)\RR_U(1)\RR_V(1)$, and $E_1,E_2\ge0$. Since $W$ has no terms below degree $s$,
+\[
+ D<n<\alpha+\beta+2+s\quad\Longrightarrow\quad\Del^2H(n)\le0.
+\]
+Although $W$ need not be nonnegative, all its right-tail sums are: for $R=\RR_U\RR_V$ and any integer $k$,
+\[
+ \sum_{j>k}W_j
+ =\sum_{i=1}^M\sum_{h>k-i}R_h-\sum_{h>k}R_h
+ \ge(M-1)\sum_{h>k}R_h\ge0.
+\]
+For $n\ge n_*:=D+\max(\alpha,\beta)+1$, the first three prefix sums in~\eqref{eq:padding} have all finished. Hence $\Del H(n)=-\sum_{j>n-\alpha-\beta-2}W_j\le0$.
+
+The hypotheses imply $\alpha+\beta\ge D$, because $u+v\ge2s$. Lemma~\ref{lem:half} therefore gives nonnegative differences through rank $D$. They also imply $n_*<\alpha+\beta+2+s$. Between $D$ and $n_*$ the differences are nonincreasing; afterward they are nonpositive. There can be no negative difference followed by a positive one.
+\end{proof}
+
+

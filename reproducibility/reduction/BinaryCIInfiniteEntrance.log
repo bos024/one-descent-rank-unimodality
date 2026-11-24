@@ -1,0 +1,11 @@
+'BinaryCIInfiniteEntrance.backward_geometric_LC_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCIInfiniteEntrance.entire_finite_backward_integration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCIInfiniteEntrance.entire_geometric_deficit_LC_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCIInfiniteEntrance.alternating_deficit_robust_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCIInfiniteEntrance.first_robust_numerator_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryCIInfiniteEntrance.kernel_last_row_absorbs_next_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryCIInfiniteEntrance.weighted_rows_and_last_LC_absorption' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

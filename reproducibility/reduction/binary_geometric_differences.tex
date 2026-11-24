@@ -1,0 +1,136 @@
+% Complete analytic statement about ordinary products, not the full core.
+\section{Geometrically weighted differences for all nonrectangular binary pairs}
+For $\alpha\ge1$ and $h\ge0$, let $A_{\alpha,h}=F_{1^\alpha2^h}$.
+
+\begin{lemma}[A binary growth bound after one two-term window]
+If $f_n$ counts any nonempty finite downset of compositions with
+parts in $\{1,2\}$, and $g_n=f_n+f_{n-1}$, then
+\[
+                 3g_n\le5g_{n-1}\qquad(n\ge2).
+\]
+Consequently, for every $\lambda\ge5/3$ and every binary arm $B$,
+the coefficients of $\lambda^j[z^j](1+z)q_B$ form a unimodal
+sequence, where $q_B$ is the reverse arm polynomial.
+\end{lemma}
+\begin{proof}
+Deleting the first part gives $f_n\le f_{n-1}+f_{n-2}$.
+The usual two extensions of a composition give
+$f_{n-1}\le2f_{n-2}$ for $n\ge2$; the rank-one case is immediate.
+Writing $x=f_{n-1}$ and $y=f_{n-2}$, we obtain
+\[
+ 3g_n\le3(2x+y)\le5(x+y)=5g_{n-1}.
+\]
+Thus $g_n/\lambda^n$ is nonincreasing from rank one onward.
+Its initial values are $g_0=1,g_1=2$, so it is unimodal whether
+$\lambda$ is below or above two. Reversal gives the last assertion.
+\end{proof}
+
+\begin{lemma}[Two-term windows preserve the weighted difference property]
+Let $p$ be nonnegative and unimodal. If
+$\lambda^j d^+(p)_j$ is unimodal for some $\lambda>0$, then
+$\lambda^j d^+((1+z)p)_j$ is unimodal as well.
+\end{lemma}
+\begin{proof}
+Through the first mode $m$ of $p$, the new positive differences
+agree with $(1+z)d^+(p)$. At rank $m+1$ the actual positive
+difference is between zero and $d^+(p)_m$, and every later
+positive difference vanishes. After weighting, the full window
+is convolution by $(1,\lambda)$, a log-concave kernel. Such
+convolution preserves unimodality. Terminal truncation and
+decreasing the final remaining coefficient also preserve it.
+\end{proof}
+
+\begin{theorem}\label{thm:binary-geometric-differences}
+Let $\alpha,\beta\ge1$ and $h,k\ge1$. Write
+\[
+ q(z)=z^{\alpha+\beta+2h+2k}
+          A_{\alpha,h}(1/z)A_{\beta,k}(1/z).
+\]
+For every real $\lambda\ge5/3$, the sequence
+$\lambda^j\max(q_j-q_{j-1},0)$ is unimodal.
+The constant $5/3$ is sharp for a uniform upper-ray assertion
+of this form.
+\end{theorem}
+\begin{proof}
+Induct on $h+k$. Orient the weights as $a=\alpha+2h\ge b=\beta+2k$.
+The first reverse mode $s$ of the ordinary product satisfies $s<a$:
+use first-half growth if $a>b$, and the extra midpoint rank for
+two nonrectangular factors if $a=b$.
+
+If $h\ge2$, deleting the heavier arm's final two leaves both
+arms nonrectangular and gives
+\[
+ q=(1+z)q_0+z^a q_B.
+\]
+Through $s<a$ this agrees with the two-term window. Its positive
+differences are a prefix of those of that window, followed by
+zeros. The induction hypothesis and the window lemma apply.
+
+If $h=1$, do not delete the last two. Instead write
+\[
+ q=[\alpha+1]R+z^a q_B,\qquad R=(1+z)q_B,
+ \qquad a=\alpha+2.
+\]
+For $j\le\alpha$, the first differences of $q$ equal $R_j$.
+The only further possible positive difference before $s<a$
+is at $j=\alpha+1$, where it equals $R_j-R_0=R_j-1$.
+Thus the positive differences are a terminal truncation of $R$,
+possibly with their final coefficient decreased. The preceding
+binary growth bound proves their weighted unimodality. This
+supplies every terminal case of the induction.
+
+For sharpness, take $A=A_{\alpha,1}$ with $\alpha\ge6$ and
+$B=A_{1,2}$. The positive reverse differences of $AB$ are exactly
+\[
+                         (1,4,6,5,3,2,1).
+\]
+For every $3/2<\lambda<5/3$, the three entries
+$5\lambda^3,3\lambda^4,2\lambda^5$ have a strict valley.
+Hence no smaller constant can replace $5/3$ in the uniform
+assertion for all larger $\lambda$.
+\end{proof}
+
+\begin{corollary}[A coefficient criterion for every binary pair]
+Let both binary skeletons be nonempty and let $M\ge3$. In the
+balanced strict-core band $|a-b|\le M-4$, put
+$R=\lfloor(a+b+M)/2\rfloor$. If the ordinary reverse product
+$q$ is log-concave through rank $R$, the core and both relative
+polynomials are unimodal.
+\end{corollary}
+\begin{proof}
+At $x=5/3$ the sum of the first three inverse powers is
+$3/5+9/25+27/125=147/125>1$. Therefore $\lambda_M>5/3$
+for $M\ge3$. Apply the geometric signed-window theorem locally.
+The reverse core is $h_Mq+z^{a+M}q_B+z^{b+M}q_A$; balance puts
+the two corrections after $R$. Forward first-half growth joins
+the resulting prefix to a nonincreasing remaining reverse tail.
+The usual balanced-band equivalence gives the relative statements.
+\end{proof}
+
+The prefix log-concavity hypothesis in this corollary remains a
+separate requirement. The theorem removes the false global
+log-concavity requirement on positive differences, but does not
+by itself prove every binary core or the general one-descent
+conjecture.
+
+\begin{proposition}[Adjacent initial capacities]
+If $|\alpha-\beta|\le1$, the positive reverse differences of
+$A_{\alpha,h}A_{\beta,k}$ are log-concave for every $h,k\ge0$.
+The bound one is sharp for a statement uniform over $h,k$.
+\end{proposition}
+\begin{proof}
+Induct by deleting a two from a heavier nonrectangular arm.
+Such an arm always exists unless both are intervals: any
+nonrectangular arm outweighs a rectangular one under the stated
+capacity restriction. The first reverse mode is strictly below
+the deleted arm's old weight. Apply the two-term-window
+log-concave-difference lemma and terminal truncation. The base
+is a product of two intervals.
+
+For the sharpness assertion take $\alpha=\beta+2$, $h=0$, $k=1$,
+with $\beta\ge1$. Both arm weights equal $a=\beta+2$. The first
+reverse mode of $[a+1]q_{\beta,1}$ is $a$, and its positive
+differences through that rank are exactly $q_{\beta,1}$.
+Its last three coefficients are $(2,1,1)$, whose central
+log-concavity determinant equals $-1$.
+\end{proof}

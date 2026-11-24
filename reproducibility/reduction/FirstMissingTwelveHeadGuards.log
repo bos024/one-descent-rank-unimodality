@@ -1,0 +1,10 @@
+'FirstMissingTwelveHeadGuards.all_next_three_genuine_strict_head_budgets' depends on axioms: [propext]
+'FirstMissingTwelveHeadGuards.canonical_owner_count_and_padding_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingTwelveHeadGuards.whole_proper_head_read_and_raw_owner_safety' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingTwelveHeadGuards.every_negative_birth_exception_has_a_genuine_strict_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

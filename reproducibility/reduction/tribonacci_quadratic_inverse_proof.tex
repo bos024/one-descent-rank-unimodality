@@ -1,0 +1,166 @@
+\section{A complete positive LC prefix for the quadratic tribonacci inverse}
+Let $\lambda\in(1,2)$ be the positive root of
+$\lambda^3-\lambda^2-\lambda-1=0$, and put
+\[
+ a=\lambda-1,\quad b=\lambda^{-1}=a^2+a-1,\qquad
+ 1-z-z^2-z^3=(1-\lambda z)(1+az+bz^2).
+\]
+Thus $a^3+2a^2=2$, $83/100<a<84/100$, and $b>0$.
+For $u,r\ge0$, $w=u+r\ge1$, set
+\[
+ E=(1+z)^u(1+z+z^2)^r,\quad D=u+2r,\qquad
+ f_n=[z^n]\frac{E}{1+az+bz^2}.
+\]
+\begin{theorem}[All binary--ternary counts, one exact exception]
+When $D\ge2$, the finite sequence $f_0,\ldots,f_{D-2}$ is
+strictly positive and globally LC, except at $(u,r)=(0,2)$.
+That exception has a strictly negative centre-one minor.
+At $D=1$ the indicated prefix is empty.
+\end{theorem}
+The sequence is ZERO-EXTENDED after $D-2$. The last TWO ordinary
+quotient coefficients are discarded; they can be negative, even
+for the packet $[2][3]^2$. No positivity of the whole FPS is claimed.
+
+\paragraph{Keep both terminal errors and their exact positive norm.}
+Put $\epsilon_0=f_D$, $\epsilon_1=f_{D-1}$ and
+\[
+ Q_a(x,y)=x^2+axy+(a^2+a-1)y^2.
+\]
+For $E=1$ the terminal pair is $(1,0)$, using $f_{-1}=0$.
+On multiplication by $[2]$ the pair changes to
+\[
+       ((1-a)x-by,\ x+y),\qquad Q_{\rm new}=a^2Q_a(x,y).
+\]
+On multiplication by $[3]$ it changes to
+\[
+ (2(1-a)x-b(1-a)y,\ (1-a)x+(1-b)y),
+                  \qquad Q_{\rm new}=(1-a)Q_a(x,y).
+\]
+Both identities are exact real polynomial identities under
+$a^3+2a^2=2$; the ordinary forward coefficient recurrence identifies
+the displayed terminal pairs. Complete two-count induction gives
+\[
+             Q_a(\epsilon_0,\epsilon_1)
+                              =(a^2)^u(1-a)^r.            \tag{1}
+\]
+This retains the phase of both nonreal roots; neither error is set
+to zero or replaced by a one-dimensional sign assumption.
+
+Since $a^2<3/4$ and $0<1-a<3/4$, (1) is at most $(3/4)^w$.
+For all real x,y the bounds on a imply
+\[
+ Q_a(x,y)\ge(1-a/2)x^2+(a^2+a/2-1)y^2
+                                      \ge(x^2+y^2)/10.
+\]
+Here the first inequality is $a(x+y)^2/2\ge0$; the second uses
+$1-a/2\ge.58$ and $a^2+a/2-1\ge.1039$.
+The exact rational inequality $(3/4)^{18}<1/160$ then proves
+\[
+        w\ge18\quad\Longrightarrow\quad
+                       |\epsilon_0|,|\epsilon_1|\le1/4. \tag{2}
+\]
+Six Lean reports verify both full norm transformations, the entire
+two-natural-count norm induction, coercivity and the uniform power/box
+payment. The sequence-to-terminal identification is the written
+coefficient calculation above.
+
+\paragraph{Every new uncovered read is an explicit polynomial corner.}
+Suppose the old prefix through D-2 is positive and LC and w>=18.
+Write $x_k=f_{D-k}$. Palindromicity of E gives the COMPLETE backward
+reads needed by either extension:
+\[
+\begin{aligned}
+ x_0&=\epsilon_0,&x_1&=\epsilon_1,\\
+ x_2&=\lambda(1-ax_1-x_0),&
+ x_3&=\lambda(w-ax_2-x_1),\\
+ x_4&=\lambda\{\tbinom w2+r-ax_3-x_2\},&
+ x_5&=\lambda\{\tbinom w3+r(w-1)-ax_4-x_3\}.
+\end{aligned}                                                   \tag{3}
+\]
+All indices exist since D>=w>=18. On binary extension the true new
+prefix agrees with the positive LC convolution of the old truncated
+prefix at every read through D-2. Its only additional kept coefficient
+is $x_1+x_2$, and its only uncovered interior minor is
+\[
+                 (x_2+x_3)^2-(x_1+x_2)(x_3+x_4).             \tag{4}
+\]
+On ternary extension the two additional kept coefficients are
+$x_1+x_2+x_3$ and $x_0+x_1+x_2$; the only uncovered minors are
+\[
+\begin{split}
+ &(x_2+x_3+x_4)^2-(x_1+x_2+x_3)(x_3+x_4+x_5),\\
+ &(x_1+x_2+x_3)^2-(x_0+x_1+x_2)(x_2+x_3+x_4).              \tag{5}
+\end{split}
+\]
+Thus three value inequalities and THREE minor inequalities suffice;
+no unspecified middle rank is passed to an absent old LC premise.
+
+All six expressions are strictly positive throughout
+$w\ge18$, $0\le r\le w$, and the entire terminal box (2).
+Here is the complete exact certificate, with its unbounded meaning:
+substitute
+\[
+ w=18+X,\quad r=\theta w,\quad
+ \epsilon_i=-\tfrac14+\tfrac12\eta_i,
+ \qquad X\ge0,\quad0\le\theta,\eta_0,\eta_1\le1.
+\]
+Expand in powers of X and, for each coefficient, in the tensor
+Bernstein basis on the unit cube. There are respectively
+30,54,30 coefficients for (4)--(5), and 4,3,4 for the three values:
+125 coefficients in total. Every one is nonnegative in
+$\mathbb Q(\lambda)$, and every coefficient at $X^0$ is strictly
+positive. The complete triples are recorded in
+tribonacci_inverse_complete_certificate_data.json.
+Finite Bernstein basis functions are nonnegative and sum to one,
+so these coefficient facts prove strict positivity at ALL real
+points of the stated unbounded domain, including the box boundary.
+
+The independent verifier checks the WHOLE polynomial identities:
+each side has degree at most (4,2,2,2) in (X,theta,eta0,eta1),
+and exact equality is checked at ALL points of the 5-by-3-by-3-by-3
+tensor interpolation grid. These 135 values per identity determine
+it uniquely, by repeated univariate interpolation. This is a complete
+polynomial-identity check, not a bounded parameter experiment.
+The scalar algebraic signs use a certified rational interval of
+width $10^{-50}$ for lambda; a complete Lean integer certificate
+proves all required lower bounds and the two exact cubic endpoint
+signs. A generic interval-evaluation kernel lifts those lower bounds
+to the actual root. A finite positive-basis kernel proves the
+nonnegative-sum/strict-constant-coefficient inference.
+
+\paragraph{Complete entrance and unbounded induction.}
+The 188 pairs $1\le u+r\le18$, excluding ONLY (0,2), are a
+complete small entrance. Their 3228 retained coefficients and
+2856 adjacent minors are explicitly positive; the D=1 empty prefix
+is included as a vacuous context. The independent checker rebuilds
+EVERY polynomial by closed binomial/trinomial sums and computes its
+inverse in the different basis $\mathbb Q(a)$, with no iterated
+product or borrowed primary inverse. The same complete scalar
+certificate verifies all these signs.
+
+For every next w>=19 choose a predecessor of weight w-1 by removing
+a ternary factor when r>0, and otherwise a binary factor. Its count
+is at least eighteen, so it is not the single excluded pair.
+Positive CI convolution covers all inherited ranks, and
+(2)--(5) cover all new values and minors. Induction proves the theorem
+for EVERY count. A complete natural-index predicate induction is
+included among the five generic closure reports.
+
+At (u,r)=(0,2), the retained prefix is
+$(1,2-a,4-3a)$; its centre-one minor is
+$a^2-a=(\lambda-1)(\lambda-2)<0$. The exact exception is therefore
+necessary, not removed by silently strengthening the entrance.
+
+\paragraph{Scope.}
+The thirteen new scoped reports comprise six terminal-norm kernels,
+five root/interval/positive-basis/all-count/exception kernels, and
+two aggregate finite scalar/root-sign certificates. Ordinary LC
+convolution, coefficient identifications, the independently certified
+polynomial identities and the full sequence theorem are the written
+assembly above. There is no end-to-end Lean composition datatype
+formalization. The finite entrance and all polynomial certificates
+are explicit mathematical premises verified in full.
+This is a new finite-kernel theorem for the TRUE tribonacci root
+factor; its transfer to full actual difference profiles has not yet
+been proved. Earlier actual C, full A2, the u>=33 actual diagonal and
+ORIGINAL undilated coefficient unimodality remain OPEN.

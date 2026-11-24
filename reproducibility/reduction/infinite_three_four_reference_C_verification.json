@@ -1,0 +1,174 @@
+{
+  "status": "PASS_ALL_COUNT_INFINITE_THREE_FOUR_REFERENCE_COMPLETE_C_GLOBAL_CDF_LC_AND_ORDINARY_PHYSICAL_HEAD",
+  "new_scoped_reports": 16,
+  "kernels": {
+    "InfiniteThreeFourReference": {
+      "InfiniteThreeFourReference.exact_quadratic_norm_contraction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.entire_residual_quadratic_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.whole_norm_coercivity_and_absolute_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.ordinary_minor_from_absolute_residuals": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.whole_scaled_minor_decay_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.complete_four_corner_polynomial_budgets": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.generic_corrected_tail_corner": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.cumulative_negative_constant_improves_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.coupled_negative_constant_preserves_comparison": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.whole_reference_tail_polynomial_identity": [
+        "propext",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.source_constant_and_tail_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.cubic_reciprocal_root_rational_interval": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.cumulative_log_concavity_entry_step": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.exact_one_unit_cumulative_boundary_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "InfiniteThreeFourReference.whole_nonnegative_three_step_recurrence": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "InfiniteThreeFourReferenceBase": {
+      "InfiniteThreeFourReferenceBase.complete_651_ordinary_head_base_minors": []
+    }
+  },
+  "full_C": "EVERYs>=0,R_s=sum_i<s S4^i+S4^s/P3 hasFULLC ALLcurrentN>=4/ALL1<=k<=N-3. No count/rank/shiftbound. INFINITEreference,NOTallfiniteactual3/4arms.",
+  "global_CDF": "EVERYs>=0,ordinaryforwardCDF G_s GLOBALLYLC. HeadusesprovedORDINARYFLCandstrictroot4entry;tailG=aG3-c_s withG3LC/convex,c_s>=0. ThisCDFtheoremNOTanoriginalcoefficientUIconclusion.",
+  "ordinary_head": "EVERYs>=1,ordinaryR_s LC EVERYcentre s+4<=n<=4s-2. FIRSTh4lossONEats4. Whole4convolutionheredity:THREEstartupbudgetsREUSED,ALLmiddletruncationreadsandFOURsignedtailcornersPAID. GoldenresidualHphiheadLCisFALSEandNOTused.",
+  "damped_norm": "EXACTternaryresidual e_n^2+(lambda3-1)e_neprev+q3*eprev^2=q3^n. Coercivity=>ABS(e_n)<=2q3^floor(n/2);ABS(M_h3(n))<=10*hprev*q3^floor(n/2). ALLs>=22/n>=3s-5:2^sABS(M_h3(n))<=hprev via6400(2/3)^s<1. ENTIREnatural-index/floor/powerproof.",
+  "exact_joins": "WHOLES4=2z-zP3;R_s=2^sz^s*h3+J_s,degJ=4s-3,top-1. FOURlastnegativeJcoeffs1,s-2,C(s-1,2),C(s,3)+2RETAINED. Gtail=aG3-c_s,c_s=(2^s-1)(2^s-2)/6. AtN=W CpreviousCDFhasEXTRA+1;newc_s>=3and3/2D_h3growthpaysitALLs>=3. s1,2boundaryminors0,40KERNELchecked.",
+  "finite_entrance": "COMPLETEs1..22physicalordinaryheads:651EXACTinteger minors,5chunksONEaggregateAXIOMFREE. Plusboundaryminors0,40andthreegrowthseeds1,0,3. s22fixedbaseforWHOLEsinduction;notunboundeddiagonalassumption.",
+  "formal_scope": "FIFTEENnewcleanstandardaxiomSCOPEDgeneric/root/CommRing/Naturalinductionreports+ONEaxiomfreeCOMPLETEfinitebaseaggregate. Priorordinary4startup/strictunitrounding/wholeboundedordinary-CandreferenceCDF/CkernelsREUSEDwithoutrecount. Model/tailcoefficientidentification/LCconvolution/wholeCassemblyWRITTEN,notendtoendLeancompositionformalization. AdditionalparameterQAONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "mixed_three_four_single_arm_C": "OPEN",
+  "next": "Retainnegativefinite3countCIcorrection. Candidateactualordinarytailcone:r<=3s-2froms4;oppositefromr+s2;UNPROVED. Root3properquadraticquotientLCnormcone4^s*q3^r shouldsupplylateordinaryactualbridge. DoNOTdiscardOTHERsourcecomponents.",
+  "counts": {
+    "independent_COMPLETEfinite_base_contexts": 22,
+    "independent_COMPLETEfinite_base_ordinary_minors": 651,
+    "independent_GLOBAL_CDF_LC_reads": 9096,
+    "independent_ALLcurrent_ALLshift_reference_C_reads": 949062,
+    "independent_closed_CDF_tail_reads": 3127,
+    "independent_EXTRA_UNIT_cumulative_joins": 53,
+    "independent_whole_ordinary_reference_heads": 4372,
+    "independent_scaled_closed_count_minor_cone_reads": 3202,
+    "independent_qbasis_ENTIREnorm_QA_reads": 200,
+    "independent_qbasis_absolute_residual_envelope_reads": 200
+  },
+  "primary_QA": {
+    "GLOBALordinary_CDF_LC_minors": 34299,
+    "FULLC_ALLcurrent_ALLshift_QA_reads": 6159538,
+    "EXACTwhole_homogeneous_tail_reads": 10230,
+    "EXACTconstant_CDF_tail_reads": 10340,
+    "RETAINEDone_unit_CDF_boundary_reads": 110,
+    "ordinary_entire_physical_head_minors": 17767,
+    "EXACTfour_corner_signed_polynomial_identities": 432,
+    "scaled_ternary_ALLtail_unit_minor_QA": 14240,
+    "EXACTwhole_ternary_residual_norm_reads": 450
+  },
+  "independent_state_sha256": "ca6509afaf1d628e86d485287f55690516929d2d4d3e143bcca7354d2650f2d6",
+  "seconds": 3.5,
+  "local_files": [
+    "infinite_three_four_reference_complete_C_proof.tex",
+    "InfiniteThreeFourReference.lean",
+    "InfiniteThreeFourReference.log",
+    "InfiniteThreeFourReferenceBase.lean",
+    "InfiniteThreeFourReferenceBase.log",
+    "build_infinite_three_four_reference_base.py",
+    "infinite_three_four_reference_base_data.json",
+    "audit_infinite_three_four_reference_C.py",
+    "audit_infinite_three_four_reference_C.json",
+    "verify_infinite_three_four_reference_C.py"
+  ],
+  "dependency_files": [
+    "stationary_four_complete_C_verification.json",
+    "StationaryFourCompleteC.lean",
+    "StationaryFourCompleteC.log",
+    "universal_polynacci_minor_bounds_verification.json",
+    "parameterized_renewal_residual_verification.json",
+    "universal_renewal_rounding_verification.json",
+    "ordinary_tail_to_complete_C_proof.tex",
+    "first_missing_renewal_envelope.tex",
+    "FirstMissingRenewalEnvelope.lean",
+    "FirstMissingRenewalEnvelope.log",
+    "verify_universal_renewal_rounding.py",
+    "audit_renewal_root_primitive_cut.py",
+    "verify_renewal_root_primitive_cut.py"
+  ],
+  "sha256": {
+    "infinite_three_four_reference_complete_C_proof.tex": "7a4c758ddd8a2f62d6d59ec9c36c1c0be4cbf5a4444db339c275c3474a3fbff8",
+    "InfiniteThreeFourReference.lean": "e88cb4908f4b2d7df4767fe847234c6a87b70ff4b3fd88e76d2f049079cf0353",
+    "InfiniteThreeFourReference.log": "234604caff0aaa8ad4aca3a160ba774b9e603a32357ad6f690c17c12e2afa934",
+    "InfiniteThreeFourReferenceBase.lean": "7095dfad2f3a31cb402cab4a5b255797dbec69f40b043e67b2841d1d6900b49d",
+    "InfiniteThreeFourReferenceBase.log": "d6fa63cab75ea92d1a040a3c548edd2b086b2d260743fa294e4084296cd6c454",
+    "build_infinite_three_four_reference_base.py": "80c1d18ad14980567d5bee448472946b639bc87b5ef9524e844dda2795ca6e7c",
+    "infinite_three_four_reference_base_data.json": "c0fea01b8a4e5a7a871c0590fc820371d61bb0b5cfec31a61f2d98c4cf67a20e",
+    "audit_infinite_three_four_reference_C.py": "96f97142c984ca25ca940ee3b4cfa361ec289b96e0701d443578246d153dbbac",
+    "audit_infinite_three_four_reference_C.json": "ae93bca5dc00b34f62c85c65331ff0b3191f5668a24ca4b4c27ca3c8d3a198a2",
+    "verify_infinite_three_four_reference_C.py": "f0af7f5b425b0dce8123c6084ce14759951cf640aa8c8b0ae36f3bff32057a14",
+    "stationary_four_complete_C_verification.json": "2ac9c60150010d5200cb788df760992b7be3abe7afa9ad6d98b604639be14193",
+    "StationaryFourCompleteC.lean": "89a9810edde2ed22730945724f3fed4c433112e5a351defea009893b78e67467",
+    "StationaryFourCompleteC.log": "59da14bd969edb00ccaae0fc8ecb9a3979e0295d268af8acda34f435ac1633e7",
+    "universal_polynacci_minor_bounds_verification.json": "61f80879d82fa85db154b8c94921002df513bfbf832476d86b2080fcef1daa80",
+    "parameterized_renewal_residual_verification.json": "f8f68fd6d7262794810132a8e023357a059678c56f110027a65f10f0528e42c3",
+    "universal_renewal_rounding_verification.json": "a5d423e6a8b856308d0e916ff3645b152def0d2aaec1322e3c8151b3a7aa8aba",
+    "ordinary_tail_to_complete_C_proof.tex": "a39333b1e5da9abddb76ed3832a4d074eb047d4bf8a5b51983dfb8d5e347ee2a",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8",
+    "FirstMissingRenewalEnvelope.lean": "a68782702f1c562f951cb577e8e846b7372b2a494a50270c5e3d772bf0ee3ba6",
+    "FirstMissingRenewalEnvelope.log": "3dcecb80638fb300c07a73080d4aa059331d4d40fcaa62cae3ee745dc5f8e74f",
+    "verify_universal_renewal_rounding.py": "deb91beecfe98ad9033fb99103c30612934202d428edbc73eb839b745d332c0e",
+    "audit_renewal_root_primitive_cut.py": "2769727e06c6940506efca0c3c84aa1b1c7511e489c74242616150215b1070a1",
+    "verify_renewal_root_primitive_cut.py": "1c4c7584a55a90cd19abcb1e1f83fe10a76f31ad70f6ab5a97c62d499534c06e"
+  }
+}

@@ -1,0 +1,91 @@
+% Complete sharp description of the first missing level for increasing hosts.
+\section{Every first missing word is a hook}
+Call $(j,1^{n-j})$ a hook of weight $n$; this includes $1^n$
+when $j=1$. Fix an increasing host $X$, and either allow all
+parts or restrict them to $1,\ldots,t$, where $t=\max X$.
+Let $\rho$ be the first weight of a missing allowed word.
+
+\begin{theorem}[Sharp first-defect support]
+Every missing allowed word of weight $\rho$ is a hook.
+For the bounded alphabet, the number of missing words at this
+rank is at most $\min(\rho-1,t)$. Without the restriction it is
+at most $\rho$. The exact number equals the number of failing
+hook tests at that rank.
+\end{theorem}
+\begin{proof}
+Put $n=\rho$. The host contains every allowed word of weight
+$n-1$, and therefore its last $n-1$ capacities dominate
+$\min(1,t),\ldots,\min(n-1,t)$ in the bounded case. Omit
+the minima in the unrestricted case.
+
+Let $u$ have weight $n$, length $k$, and fail to be a hook.
+Then $k\le n-1$. Every letter is at most $n-k+1$.
+If a letter equals this upper bound, all other letters are
+ones. In particular the first letter is at most $n-k$:
+otherwise $u$ would be a hook. Right-align $u$ with the
+last $k$ host positions. In the staircase for weight $n-1$,
+the first of these positions has coordinate $n-k$, and all
+later ones have coordinates at least $n-k+1$. Thus every
+letter fits; in the bounded case also use $u_i\le t$.
+This proves that no nonhook can be missing.
+
+There is exactly one hook for each possible first letter.
+A hook $(j,1^{n-j})$ embeds precisely when the host has at
+least $n-j+1$ positions and the capacity at position
+$\ell-n+j$ is at least $j$. These tests give both the
+exact count. In the bounded case a one-letter word of an
+allowed weight is always present, so a missing hook cannot
+have $j=n$. This gives the slightly sharper bounded count.
+\end{proof}
+
+\begin{corollary}[The next boundary coefficient]
+In the bounded case $t\ge2$, let $a>0$ be the missing-hook
+count and let $\varepsilon$ indicate whether $1^\rho$ is
+missing. For the boundary kernel $R=1-(1-S_t)F_X$,
+\[
+                          R_{\rho+1}\ge2a-\varepsilon.
+\]
+\end{corollary}
+\begin{proof}
+Every missing hook has a trailing one. The following three
+disjoint families are missing words of weight $\rho+1$:
+append one to each missing hook; change its last one to two;
+and prepend one to every missing hook whose first part is
+at least two. The families have sizes $a,a,a-\varepsilon$.
+They stay inside the bounded alphabet and remain missing by
+downset closure. The first family consists of hooks, the
+second ends in two, and the third starts in one and ends in
+one; their disjointness and the within-family injections
+are immediate. Thus the next missing count is at least
+$3a-\varepsilon$. Multiplication by $1-S_t$ subtracts just
+the first missing count at this next rank, giving the result.
+\end{proof}
+
+Both bounds are sharp. The host $(1,2,\ldots,n-1)$ is
+universal through weight $n-1$ and misses all $n$ hooks at
+weight $n$. With the alphabet bounded by $n-1$, it misses
+exactly the $n-1$ allowed hooks at that rank.
+
+\begin{corollary}[The exact leading finite-boundary coefficient]
+Use the maximum-capacity reduction, with first restricted
+missing weights $\rho_X,\rho_Y$ and missing-hook counts
+$a\le t$, $b\le s$. If
+$\mu=\min(\rho_X+s+1,\rho_Y+t+1,\rho_X+\rho_Y)$, then
+\[
+ \mathcal L_\mu
+ =a\mathbf1_{\mu=\rho_X+s+1}
+  +b\mathbf1_{\mu=\rho_Y+t+1}
+  +ab\mathbf1_{\mu=\rho_X+\rho_Y}
+ \le t+s+ts.
+\]
+The bound is attained with $t=s$, both arms $(1,2,\ldots,t)$,
+and any strict peak $M>t$.
+\end{corollary}
+\begin{proof}
+The leading coefficients of the two boundary kernels are
+the first missing counts, because the unrestricted comparison
+series have constant coefficient one. Apply the exact loss
+identity; its negative term begins one rank later. For the
+displayed staircase arms, $\rho_X=\rho_Y=t+1$ and $a=b=t$,
+so all three leading ranks coincide and give $t^2+2t$.
+\end{proof}

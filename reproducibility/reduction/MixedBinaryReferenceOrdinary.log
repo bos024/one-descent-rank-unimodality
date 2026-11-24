@@ -1,0 +1,21 @@
+'MixedBinaryReferenceOrdinary.universal_four_terminal_ordinary_minors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryReferenceOrdinary.exact_backward_cassini_three_corners' depends on axioms: [propext, Quot.sound]
+'MixedBinaryReferenceOrdinary.complete_binary_defect_three_left_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryReferenceOrdinary.complete_far_or_near_damping_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryReferenceOrdinary.full_ordinary_window_head_read_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryReferenceOrdinary.complete_four_phase_protected_extension_cover' depends on axioms: [propext, Quot.sound]
+'MixedBinaryReferenceOrdinary.first_binary_defect_root_head_or_pure_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MixedBinaryReferenceOrdinary.all_dense_actual_reference_and_late_C_join' depends on axioms: [propext, Quot.sound]
+'MixedBinaryReferenceOrdinary.one_edge_after_first_binary_defect_all_C' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

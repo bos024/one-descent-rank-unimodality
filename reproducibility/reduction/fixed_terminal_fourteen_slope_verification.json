@@ -1,0 +1,146 @@
+{
+  "status": "PASS_UNBOUNDED_FIXED_TERMINAL_FOURTEEN_ACTUAL_SLOPE_AND_KAPPA_SIXTEEN_PLUS_MIXED_CLOSED_S",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "FixedTerminalFourteenSlope.whole_large_capacity_offset_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_relative_capacity_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_sixteen_power_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_two_interval_weighted_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_weighted_finite_convolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_fixed_terminal_product_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_fixed_template_support_and_degree_guards": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_large_read_from_eighty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTerminalFourteenSlope.whole_terminal_Cauchy_chain_and_bulk_payment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_template": "ANYACTUALkappa>=16hasLAST14capacities>=2..15. AbsorbFIRSTterminalpartintounrestrictedprefix;TENmiddlecapacities>=3..12transportENTIREnegative-offsetnormmultiplicatively. LastTHREEcapacities>=13/14/15removeatleast39skeletondegrees. GlobalnormandTENCAPACITYproductenvelopeareUNBOUNDED,NOwordenumerationpremise.",
+  "sharp_resources": "WHOLErelativeS_t(3/5)/b^(t-1)decreasesfrom4,andr3<=r4;TENarbitrarycapacitiesproduct<=P*=r4^2prod(r5..r12). WHOLE16-blockq^16<=20/21and(a+1)(20/21)^a<=8=>m q^m<=128. Everytwo-intervalweightedkernelcoeff<=(i+1)rho^i<=6/5;WHOLEnonnegativeweightedconvolution<=6/5timesfullprefixevaluation. Exact41472/125*P*<=b^39.",
+  "slope_thinness": "ANYactualY/kappa>=16/mainCIdegreeM/largestB/sY=min(floor(M/2),M-B): EVERYm>sY hasm*SIGNEDDeltaFY(m)<=2^m. BULK M<=2m:prefixbeforelastTWOhasdegree>=79=>m-1>secondlastcapacity,soBOTHsourceunitsvanish;DeltaFY_m<=[z^(m-3)][u][w]G. Fullweightedkernel+offsetnorm+39-degreebudget+128blockpay. NONBULKuseslastcapacitystripORlargestinitialzero-seedcomparisonandWHOLElarge-readbase80;O>=92.",
+  "mixed_closed_S": "ENTIREproperMIXED/source-prefixCLOSEDgapSforEVERYrisingoppositekappa>=16. Frozenindexedrawgap+WHOLEdyadicsourceidentity/payment=>positiveTforces(j+1)DeltaFY(j+1)>2^(j+1),hencej+1<=sY. Genuineoppositestricthead/RAWownerprefix/ONEabsolutetermorrelative+1surpluspayALLclosedheads,includingequality;negativebirthunitpaid. NonpositiveTretainsusualOLDnonnegativeheadbudget. NOcapacity/count/weight/paddingcutoff,NOwholeRAWwindowUIclaim.",
+  "remaining": "GeneralMIXEDproper-sourcegapnowONLYrisingoppositekappa13,14,15. Frozenownerbounds=>ownerweight<=287,skeletonD<=143;oppositecouplingstillneeded. GENERALhighercapacityC/bothrisingresource/A2/ORIGINALconjectureOPEN. LatestORIGINALcriterionremainskappa<=12/A18;thismixed-onlytheoremdoesnotaloneextendit.",
+  "formal_scope": "NINEnewstandardaxiomreports:WHOLEoffset-tailcontraction/ALLcapacityrelativeenvelope/WHOLE16powerblock/ALLtwointervalweightedcoeffbounds/WHOLEnonnegativefiniteconvolution/TENarbitrarycapacitytemplateproductincludingexactconstant/ALLsupportanddegreeguards/WHOLElarge-read80/WHOLECauchy-to-bulkpayment. ImportsFROZENActualDyadicSlopeNorm,whoseFOURreportsareNOTrecounted. Actualmodel/staircase/coefficientmatching/CIandproper-headassemblyWRITTENandfrozeninputsreused,NOTendtoendLeanwords. NOFINITEWORDPROOFPREMISE;allactualprofilesQAONLY.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "exact_template_certificate": {
+    "numerator": 4439206634383191027163848812916160780732663109163678304698173633657399772585681076214453402176826757928207692667189665390178532905193685829979281612417755498673122842769085381918788624218894602686267877261307959,
+    "denominator": 5719817656807584498755197500321834878957341424935040603713165066240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  },
+  "independent_counts": {
+    "independent_COMPLETE_two_interval_kernels": 400,
+    "independent_WHOLE_positive_weighted_convolutions": 800,
+    "independent_ALL_actual_signed_slope_reads": 6114,
+    "independent_ALL_BULK_vanishing_units_and_kernel_reads": 4474,
+    "independent_actual_mixed_pairs": 32,
+    "independent_ALL_NONBULK_last_capacity_reads": 850,
+    "independent_ALL_NONBULK_largest_initial_reads": 790,
+    "independent_POSITIVE_actual_recoveries_inside_strict_head": 7,
+    "independent_ALL_proper_CLOSED_mixed_head_payments": 21
+  },
+  "primary_QA": {
+    "whole_relative_capacity_scalar_QA": 498,
+    "whole_block_kernel_large_read_power_QA": 1001,
+    "WHOLE_actual_middle_tail_offset_norm_QA": 156,
+    "ALL_actual_signed_slopes_OUTSIDE_strict_head": 35775,
+    "ALL_bulk_ACTUAL_source_unit_vanish_and_two_interval_read_QA": 31752,
+    "actual_first_missing_sixteen_plus_profiles": 160,
+    "ALL_NONBULK_actual_signed_slope_QA": 4023
+  },
+  "independent_state_sha256": "a9e657b633d2b3b35e18764784bdeda5b29d5ce2141a67d0b8485810efff132f",
+  "seconds": 0.17199999999866122,
+  "local_files": [
+    "fixed_terminal_fourteen_slope_thinness_proof.tex",
+    "FixedTerminalFourteenSlope.lean",
+    "FixedTerminalFourteenSlope.log",
+    "audit_fixed_terminal_fourteen_slope.py",
+    "audit_fixed_terminal_fourteen_slope.json",
+    "verify_fixed_terminal_fourteen_slope.py",
+    "build_fixed_terminal_fourteen_lean.ps1",
+    "ActualDyadicSlopeNorm_module_build.log"
+  ],
+  "dependency_files": [
+    "actual_dyadic_slope_thinness_full_branch_verification.json",
+    "actual_dyadic_slope_thinness_and_high_source_mixed_S_proof.tex",
+    "ActualDyadicSlopeNorm.lean",
+    "ActualDyadicSlopeNorm.log",
+    "ActualDyadicSourcePayment.lean",
+    "ActualDyadicSourcePayment.log",
+    "ordinary_lefschetz_realization.tex",
+    "source_birth_gap_nonrecovery.tex",
+    "source_curvature_linear_owner.tex",
+    "mixed_head_raw_primitive_LC.tex",
+    "agent_mixed_strict_head_74.tex",
+    "first_defect_mass.tex",
+    "first_missing_twelve_original_criterion_verification.json",
+    "first_missing_twelve_original_criterion_proof.tex",
+    "coupled_source_window_A2_and_kappa_nine_original_proof.tex",
+    "verify_binary_ternary_A2_original_family.py",
+    "verify_subdegree_CI_entrance.py",
+    "audit_joint_structure.py",
+    "probe_binary_first_defect_ordinary_tail.py"
+  ],
+  "sha256": {
+    "fixed_terminal_fourteen_slope_thinness_proof.tex": "00d637c553bd2b494284e2e652398d4156b9bad1c77ab77e30c4841f3a70bdf8",
+    "FixedTerminalFourteenSlope.lean": "035c1ce5755818d2ba3e3907e8611cd08656f23d167cad80c5076b6e14b3cd5a",
+    "FixedTerminalFourteenSlope.log": "d23a64cd547fd9471d76ee850a994c9dd782663629c4309e6447a2a32a63b47e",
+    "audit_fixed_terminal_fourteen_slope.py": "2fa542170039d778849e14698e435c49b5ecbf745328702625ff5f215073ab7e",
+    "audit_fixed_terminal_fourteen_slope.json": "2d3943f699b22214fb5deb22e89b74afc782380f108ebd7914eedf7c983561dc",
+    "verify_fixed_terminal_fourteen_slope.py": "f44f6500be6b47521fdd74ed326487ad0c691ce7575f7052fef3b654f7d4a6d0",
+    "build_fixed_terminal_fourteen_lean.ps1": "07aaaf841400040d96021f3060ac610b5d0955aff3046ebf9d943b4c6f486f9e",
+    "ActualDyadicSlopeNorm_module_build.log": "abd7c8bc8a56e7a5c624a746b6ff965c99ecaa20736d8018ccbd123ef858bab5",
+    "actual_dyadic_slope_thinness_full_branch_verification.json": "2291493dceaf30378658a5e08d6f222178cd24cffa09c8a1e25e3080f3029fd3",
+    "actual_dyadic_slope_thinness_and_high_source_mixed_S_proof.tex": "78a55b9bd8afcea31e3e50c4c7337f1152246cadd3f8c126eec321b253f8e1f5",
+    "ActualDyadicSlopeNorm.lean": "90501cdcd6ac3d2fc59650ac4e83dd249f1ef6317307d8d5f573e3d88b9b127b",
+    "ActualDyadicSlopeNorm.log": "abd7c8bc8a56e7a5c624a746b6ff965c99ecaa20736d8018ccbd123ef858bab5",
+    "ActualDyadicSourcePayment.lean": "349871bd9bed0fae034ad5cd27b7f34dbc7d2aa1039018d9146a6afed60aa8c2",
+    "ActualDyadicSourcePayment.log": "8a1423134789ba563ed52f67584443ad584b4ecdbd8210a0fdb309f7fb770991",
+    "ordinary_lefschetz_realization.tex": "aef04477ad0fbd3ee7a3dfa98903c14aa0a86273b82ba281ea909ab7039313f8",
+    "source_birth_gap_nonrecovery.tex": "e3b634da5a447e575a38a5075d6e805e33a6dd5af6dad157371d70e66a839d90",
+    "source_curvature_linear_owner.tex": "ed7c07029303d74ff64ff1da3181a2840cc3f60548d1257e375946438a178e45",
+    "mixed_head_raw_primitive_LC.tex": "dd5a71fcfaea050cd913d9895e3cb27f462d2be1582f7178afaf1a66f9366faa",
+    "agent_mixed_strict_head_74.tex": "7c3612400c419aa634dd702562e25f1432fdb65a415132611bb23f5e00b28587",
+    "first_defect_mass.tex": "10d0b55ba8e034d51df132cec6c16ff3a50ab0c458a5c11b761287313e0c19af",
+    "first_missing_twelve_original_criterion_verification.json": "8d8035f28bd23ddbb996ae65a01d69b9900f7c70a7e9d50492e9c22e1f818308",
+    "first_missing_twelve_original_criterion_proof.tex": "3eea816138a0be3cb9ed89101d25a54492c7d948aeebff0fbe33e9c8f0df7c5c",
+    "coupled_source_window_A2_and_kappa_nine_original_proof.tex": "b65c3109a0716fc83ff0f884b4e1839e42143f31fde3892aa490c139b5cadb24",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "audit_joint_structure.py": "fdfbbf3f52a18c9370aea78dab7f1ffbb2f2371d4d6a1ea882fd1d17028f2f61",
+    "probe_binary_first_defect_ordinary_tail.py": "4479b6cdbd6c83394195c7a368d47eff514a0cd0cfdb9a82882d13f2c15df3bd"
+  }
+}

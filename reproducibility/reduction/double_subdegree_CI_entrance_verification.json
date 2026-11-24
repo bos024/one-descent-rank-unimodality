@@ -1,0 +1,131 @@
+{
+  "status": "PASS_UNBOUNDED_DOUBLE_SUBDEGREE_ALL_PADDING_DERIVATIVE_ENTRANCE_AND_LATE_C",
+  "new_scoped_reports": 14,
+  "kernels": {
+    "DoubleSubdegreeCI": {
+      "golden_sharp_fifteenth_power": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "octuple_rank_two_first": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "octuple_rank_two_second": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "octuple_interior_and_rows": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "octuple_quadratic_geometric_decay": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "double_subdegree_junction_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "double_subdegree_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "perturbed_junction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "negative_initial_atom_is_absent": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "long_three_endpoint_minor": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "long_four_endpoint_minor": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "first_primitive_minor": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_ordinary_seed_losses": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "DoubleSubdegreeCertificate": {
+      "all_integer_margins": [
+        "propext"
+      ]
+    }
+  },
+  "theorem": "ALL sorted nonempty CI tails V>=3, degreeh=sum(t-1), EVERYbinaryu>=h-2, EVERYpaddingalpha>=1: ALLactualCshiftsR>=3 atEVERYcurrentN>=W+1,W=sumV. Newmultifactorboundaryu=h-2;oldthresholdu>=h-1andonefactortheoremreused. GeneralearlierC/A2/originalUIOPEN.",
+  "auxiliary": "Foru>=16,h=u+2,r>=2,thedividedquotientJmayhaveNEGATIVEconstant. Itsrank-onepositiveTAILisglobalLC,andENTIREpositiveprimitiveisglobalLC. EightfoldrobustheadforANYnonnegativeLCN0=1,N1<=u/2+1hasNODEGREEbound. Long[3][u+1]and[4][u]endpointsareexplicit. Negativeprimitiveat0vanishesinALLcuttriplesfroma+2;truecsourceatomretained. ActualsignedtailfromWincludesextraunit.",
+  "actual_C_entrance": "BOTHlossesretained:firstfinitebinaryDlossatz^W E/(1-z-z2),separatefiniteonesatz^(W+alpha-1)E. Firsttwolosses(2,2w+1)/(1,w+2)/(1,w+1);ordinaryFseedstrictlypositiveandDentryratio<phi. ALLcumulativeprefixesbeforeWareunchangedreference>phi. DerivativeLCandtwointegrationsproveALLlateCreads.",
+  "small_cases": "u<=13usesregisteredALLsmallbinarylateDLC;ONLYu14/15needNEW119COMPLETEdegreeprofiles/1969paddinghosts/21127minorcomparisons/11087distinctintegerkernelmargins. Noenumerationofgeneraluasserted.",
+  "hereditary": "Actual late pre-mode D-LC now propagates from ANY submultiset of degree u+2, as well as old u+1/long-factor seeds. Hence ALL u>=0,ALL r with2r>u,ALLalpha have lateDLCfor1alpha2^u3^r atALLcentresN>=3r+1. Any remaining deletion-minimal crossing seed has EVERYdegree3<=di<=u (NOcapacity3),u+3<=h<=2u,h-min di<=u,and may have NOsubsetofdegreeu+1/u+2. DerivativeLCONLY;C/earlyF/GareNOTinsertioninvariant.",
+  "formal_scope": "THIRTEENnewscopedunboundedscalar/kernelreportsplusONEcompleteintegercertificate(propextonly). Wholequotient/ULCconvolution/window/sign/source/CintegrationassemblyisWRITTEN,notend-to-endLeanactualcompositions. Sharpenedq15baseisBOTHdirectlykernelprovedandindependentlyexactfieldchecked.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_threshold": "u>=h-2",
+  "independent_profiles": 119,
+  "independent_hosts": 1969,
+  "independent_comparisons": 21127,
+  "distinct_integer_margins": 11087,
+  "independent_bridge_profiles": 280,
+  "independent_bridge_hosts": 1120,
+  "independent_state_sha256": "9af151ce068ce512a8aaeacd8dd1ffd4be5b69f9c091a219975ec845f90a01b6",
+  "state_sha256": "f94e0f5c116985184632bd8587659f08f52b05ade8b54a15aec6f742d8da0d66",
+  "QA": {
+    "eightfold_all_kernel_reads": 120850,
+    "eightfold_relaxed_row_zero": 3825,
+    "exact_long_endpoint_identities_and_bounds": 290,
+    "complete_small_actual_tail_minors": 21127,
+    "complete_small_hosts": 1969,
+    "quotient_rank_one_tail_LC_minors": 208331,
+    "entire_positive_primitive_LC_minors": 211484,
+    "nonpositive_quotient_constant_contexts": 96,
+    "actual_infinite_tail_LC_minors": 211484,
+    "exact_source_junction_identities": 3153,
+    "uniform_junction_payments": 3125,
+    "exact_actual_ordinary_F_entrance_seeds": 15381,
+    "actual_finite_tail_pre_mode_LC_minors": 401385,
+    "actual_all_shift_late_C_minimum_reads": 1286564,
+    "literal_actual_tail_identifications": 1271183,
+    "actual_hosts": 15381,
+    "quotient_contexts": 3153
+  },
+  "sha256": {
+    "double_subdegree_CI_entrance_proof.tex": "c7719de66cba601e18a6be0ed6db820db08b624f835d0407f368fae09e28df20",
+    "DoubleSubdegreeCI.lean": "1faa99237edb1f91b908acdd24898119ebc20e09a733a10b78d1d7e5af262797",
+    "DoubleSubdegreeCI.log": "2eac38738646a602e6e048d0d333c23d8d2a71b3bdf0529ee6ca6d774864f6d2",
+    "DoubleSubdegreeCertificate.lean": "ea0a96e145fb965fbe9c80d7c3dfd46b3e07865f0b78a5b109d5b8a61d758e52",
+    "DoubleSubdegreeCertificate.log": "1568c2813b5ca33ff1b2199d08a5d692408f1c1bfabb394137180567aae54514",
+    "audit_double_subdegree_CI_entrance.py": "6f4f5b3cdbe47f99eead9da842da57dfac1f07692d3dce781e4780765c1100aa",
+    "audit_double_subdegree_CI_entrance.json": "17f156ecee40a164dfc3ee2d8452f874fd2c6ade3a34745579cabc3fb2bf94e6",
+    "emit_double_subdegree_certificate.py": "a23fdcfbc64c7e41db19468ad1bdad5fa92a02356cf95f45773c352e85eccffd",
+    "verify_double_subdegree_CI_entrance.py": "3bb09da0ba9628d6bbe14dc745d03e96f19a92a4c833de65601d799eef7e9f4b",
+    "mode_only_uniform_tail_closure_verification.json": "52aaf8f1842736ab79defb1bd6a2e90033614daab555a4b1c1bd3c1da3f87a22",
+    "degree_boundary_CI_entrance_verification.json": "fd6fbee14ec008ca7c0fb94b9f723f6c0a84ad36a965c7b2d1dbdf50fbf9c075",
+    "all_padding_CI_entrance_verification.json": "17740524c775a089847144d6c498b0bcda4a047f861e9943dfd6a2fd9d20e518",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338"
+  }
+}

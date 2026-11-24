@@ -1,0 +1,36 @@
+{
+  "status": "PASS_UNBOUNDED_ONE_HEREDITARY_C_ARM_ARBITRARY_OTHER_ORIGINAL",
+  "formal_reports": 0,
+  "formal_scope": "ZERO new Lean reports. Previously verified weighted-sum, excess and complete mixed/window kernels; marked count induction and original relative assembly are WRITTEN.",
+  "theorem": "For ANY final-deletion-closed actual FULL-C class C, ANY pair with at least ONE arm in C and the other COMPLETELY ARBITRARY has FULL A2 and ORIGINAL strict-core/BOTH-relative coefficient unimodality at EVERY strict peak. Unlimited legal appends to the unmarked arm; ONE extra arbitrary legal append to marked arm if its new weight is at least the other weight. No amplification or kappa bound.",
+  "additional": "At N>=3, if current A has FULL C and eN<0, (EA EB)N<=wA(N) and eN-2eprev>=wB(N)>=0. If both have C use min(wA,wB). N=2 explicitly excluded due the low-degree correction.",
+  "remaining": "General TWO-UNKNOWN-arm C/A2/ORIGINAL OPEN. Hereditary C cannot be replaced by uncertified current C in the induction. Finite checks are QA only.",
+  "independent_counts": {
+    "independent_literal_letter_ORIGINAL_and_FULL_A2": 96,
+    "independent_extra_marked_heavier_appends": 48
+  },
+  "independent_sha256": "cebfb291fdb847a68b6873011f0d9beb66678252298a6c12051ee6eebdb3ab12",
+  "primary_sha256": "e8fabba565ca0206bdb799ed48cef06586162e248fdd8f4325c9d83261cc1d33",
+  "sha256": {
+    "one_hereditary_C_arm_arbitrary_other_original_proof.tex": "b31b7abd518509cce624d981ff2c4fac541fca4264fef363616f4b011298d0c9",
+    "audit_one_hereditary_C_arm_arbitrary_other.py": "7d536c8b98c56ce95aa07c198f7bc655d61feea3c9cb9d92abf38b9078995b18",
+    "audit_one_hereditary_C_arm_arbitrary_other.json": "da96064c3e863b29e7f9b5b61585e4691a5d728ceacc50e95edabd26c87d0eab",
+    "verify_one_hereditary_C_arm_arbitrary_other.py": "d259c5be364e1d16fc592b26111c7d52887e2850ad1e4ac4aadfe9682bec2eac",
+    "complete_mixed_source_unrestricted_C_original_criterion_proof.tex": "088f62296f947795b516ae39c9895b82f98d2c7a87dd34a10f87e477afde4056",
+    "clipped_forward_ratio_frontier.tex": "2be25e51bc51ac92b3134cb022ebce5458ac92e8ed804305b2d9de7741f7d0d8",
+    "C_to_coupled_S_rising_window.tex": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "coupled_source_window_A2_and_kappa_nine_original_proof.tex": "b65c3109a0716fc83ff0f884b4e1839e42143f31fde3892aa490c139b5cadb24",
+    "binary_ternary_A2_original_family_proof.tex": "956160d8e49eaa86fbb62f8f63cacbbc411bfc2e7f2fac3bd4cf3003512ae393",
+    "deficit_cumulative_ratios.tex": "97a6591b82a393150d4148b00c8f8c02a024542ee15cbe44832e1e6fbe3255ca",
+    "short_prefix_reflection_join.tex": "ac6fc6b522d4e88d2c38cad6244b25d552c995dd528958921fcd28d47a60790a",
+    "inductive_signed_window.tex": "c1b3b891a505f5160fb78f290b743d4dbc40dc260b7b58a194bb167e4904c1ae",
+    "audit_first_missing_twelve_original.py": "afe4871b3ff1492062494f148d1bc2615af18e68d5f87c52cac6d8187f39a349",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "audit_joint_structure.py": "fdfbbf3f52a18c9370aea78dab7f1ffbb2f2371d4d6a1ea882fd1d17028f2f61",
+    "probe_binary_first_defect_ordinary_tail.py": "4479b6cdbd6c83394195c7a368d47eff514a0cd0cfdb9a82882d13f2c15df3bd"
+  },
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "general_original": "OPEN"
+}

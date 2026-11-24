@@ -1,0 +1,13 @@
+{
+  "status": "EXACT_QA_PASS_PROPER_TRIBONACCI_RICH_QUOTIENT_UNDER_PROOF_AUDIT",
+  "counts": {
+    "whole_proper_quotient_LC_minors": 135758,
+    "ALL_polynomial_division_identity_reads": 137914,
+    "EXACT_norm_and_complete_remainder_box_hosts": 539,
+    "rich_hosts": 322,
+    "general_norm_cone_hosts": 217
+  },
+  "state_sha256": "ace16ac87494d3a7f66ad29aea0ce2d135861b8fcd3b5f759fb14407652959d2",
+  "seconds": 5.23399999999674,
+  "scope": "QAONLY. WrittenONEpureentrance+30smallrcontexts+unboundedterminalnormcone/completeBernsteincornersproveALLrichu>=4,r>=2uGLOBALordinaryLCpositivePOLYNOMIALquotient. PrimitiveLCandactualDtransferNOTasserted."
+}

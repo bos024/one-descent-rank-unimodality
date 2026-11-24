@@ -1,0 +1,16 @@
+{
+  "status": "PASS_COMPLETE_INDEPENDENT_JOINT_SOURCE_PEAK_JET_RECONSTRUCTION",
+  "N": 47,
+  "slope_cap": 43,
+  "counts": {
+    "independent_states": 207049,
+    "independent_appends": 3905898,
+    "independent_eligible_appends": 3903736,
+    "independent_necessary_guard_comparisons": 53508829,
+    "independent_slope_prunings": 3678542
+  },
+  "reachable_state_sha256": "56c7fbc51715e0b4222977bc7446e8cfb297c0711d9b27c387d1286b4a0a3e6c",
+  "exact_state_set_equality": true,
+  "scope": "Independently rebuilds ALL N47/height43 source jets and all peak-crossing necessary guards. Unbounded strictness/rank reduction and actual coverage are the written proof; original UI remains OPEN.",
+  "seconds": 39.03100000000268
+}

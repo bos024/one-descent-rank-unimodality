@@ -1,0 +1,160 @@
+\section{A weighted divided-CI primitive prefix for padding one}
+The following all-degree theorem has an unbounded written induction,
+independent exact QA of its heads and junctions, and six scoped Lean
+scalar certificates. Its actual consequence is stated separately.
+General C, A2 and original UI are not asserted here.
+
+For $L=\prod[t_i]$, $t_i\ge3$, degree $h$, and $u\ge h+1$, put
+\[
+ E=(2+z)(1+z)^uL,\quad c=q^2\psi^uL(-\phi),\quad
+ J=(E-c)/(1+qz),\quad K=u-2.
+\]
+The theorem states that $J$ is positive ordinary LC and
+its positive primitive is LC at EVERY centre $1\le n\le K$.
+No assertion of full primitive LC beyond this prefix is needed.
+
+\paragraph{The finite-prefix window extension.}
+The proved nonsymmetric window theorem has the following immediate
+prefix version. If $a$ is globally LC and its positive primitive
+is LC through centre $K$, then $[t]a$ has the same two properties
+through centre $K$, for EVERY $t\ge1$.
+Let $m$ be the first mode of $a$. If $m\le K$, its ENTIRE positive
+primitive is LC, since it is zero past $m$, so the existing theorem
+applies. If $m\ge K+1$, all differences read at ranks at most
+$K+1$ are still nonnegative; causal convolution of the LC primitive
+prefix proves all required minors through $K$. These two cases
+include $m=K$ and $m=K+1$ without a missing joining centre.
+
+\paragraph{Global ordinary LC of the weighted quotient.}
+Let $J_0=((1+z)^uL-\psi^uL(-\phi))/(1+qz)$.
+It is positive global LC by the registered whole-deficit theorem
+($m'=u-1\ge h$). The exact identity
+\[
+ J=(2+z)J_0+\phi\psi^uL(-\phi)
+\]
+changes ONLY the constant coefficient of a global-LC convolution.
+All ordinary minors from centre two onward are unchanged.
+For nonempty $L$ put $r=\operatorname{len}L$, $v=u+r\ge4$.
+Then $3r\le v-1$, $E_0=2$, $E_1=2v+1$, $E_2=v^2+2r$, and
+$|c|\le(4/5)q^3<1/5$.
+At the first centre, with $w=2v+1$, the exact ordinary minor is
+\[
+                   w^2-(2-c)(E_2+qw).
+\]
+Using $q\le2/3$, $-1/5\le c\le1/5$, and $3r\le v-1$, this
+is at least $(9v^2-2v+5)/5>0$. Its constant coefficient
+$2-c$ is positive, and every later coefficient is an unchanged
+positive convolution value. For empty $L$ the same calculation
+works for $u\ge2$ with $r=0$, while $u=1$ is explicit below.
+
+\paragraph{The weighted binary base, all $u$.}
+For $L=1$ the divided quotient is denoted $T_u$. It satisfies
+\[
+ T_{u+1}=(1+z)T_u+\phi c_u,\qquad c_u=q^2\psi^u.
+\]
+Only primitive ranks zero/one change. The weighted-kernel closure
+therefore proves all primitive centres at least three by induction.
+At $u=1$ the quotient is $(2\phi-1)+\phi z$, whose positive
+primitive has a single entry. At $u=2,3$ the rank-two primitive
+is nonpositive; at $u=4,5$ the rank-three primitive is nonpositive.
+These base signs follow by exact division in $\mathbb Q(\phi)$.
+For $u=2,3$, the rank-two differences are $1-2\phi,3-2\phi$.
+For $u=4,5$, the rank-three differences are $4-5\phi,9-6\phi$.
+
+For $u\ge2$, $|c_u|\le q^4<1/6$. The exact first primitive
+minor is
+\[
+ 2u^2+4u+1-4\phi u+2\phi
+       +c_u\{u^2+\phi(2u-3)\}+\phi c_u^2
+ \ge(11u^2-28u+36)/6\ge4.
+\]
+At centre two write its minor as $M_{20}+c_u A_u$, where
+\[
+\begin{aligned}
+ M_{20}&=u^4/3+(2-4\phi)u^3/3+13u^2/6
+                         +(-25/6+13\phi/3)u+\phi-2,\\
+ A_u&=1+2u-u^2+\phi(-u/6+3u^2/2-u^3/3).
+\end{aligned}
+\]
+For $u\ge6$, $-2u^3/3\le A_u\le0$ and the coefficient of
+$\phi$ in $M_{20}$ is negative. Thus $\phi\le2$ and $c_u\le1/6$
+give
+\[
+ M_2\ge\frac{u(6u^3-38u^2+39u+81)}{18}>0.
+\]
+At $u=6+w$ the cubic is $6w^3+70w^2+231w+243$.
+This proves the entire base primitive LC, not just a finite check.
+
+\paragraph{Adding an arbitrary interval, keeping the same prefix.}
+Induct on the number of tail factors with fixed $u$.
+For $L'=L_0[t]$ one has $u\ge\deg L_0+t$, and the divided
+quotient correction to $[t]J_{L_0}$ again has degree $t-2$.
+The prefix window lemma inherits every centre $t+1\le n\le K$.
+For lower centres set
+\[
+ B=(2+z)L_0Q_u,\quad a=\phi^2c,\quad X_n=B_n-a\psi^n.
+\]
+Here $|a|\le(4/5)q<1/2$. Normalizing the numerator by two,
+its first coefficient is $r+1/2\le(u-1)/2$, where
+$r=\operatorname{len}L_0$ and $2r\le\deg L_0\le u-t$.
+The registered robust coefficient budget scales to
+$M_B(n)\ge2q^nT_B(n)$, so $X$ is positive and LC throughout
+the read head $0\le n\le u-1$, with LC centres $1,\ldots,u-2$.
+For $1\le n<t$, the actual primitive equals $X_n$; at $t,t+1$
+it equals $X_t-2$ and $X_{t+1}-B_1$. These identities are used
+only inside the head. If $t>K$ the corresponding later boundary
+is not read. Centre one is treated separately below.
+
+Centres $2\le n\le\min(t-2,K)$ are paid by $X$ LC. At centre
+$t-1\le K$, lowering the next value by two improves the minor.
+At the remaining centre $t\le K$, its exact raw minor is
+\[
+                 M_X(t)-4X_t+4+B_1X_{t-1}.
+\]
+The normalized coefficient identity gives
+\[
+ B_0=2,\quad B_1=2(u+r-q)+1,\quad
+ B_1^2-4B_2=4(u-r-q^2)+1=:D.
+\]
+Since $2r\le u-t\le u-3$,
+$D\ge2u+5$, $B_{t-1}\ge2(u-q)\ge2(u-1)$, and $B_1\le3u$.
+Global LC of $B$ gives $B_1B_t\le B_2B_{t-1}$, whence
+$B_1B_{t-1}-4B_t\ge4u/3$.
+The alternating correction is at most
+\[
+ |a|q^{t-1}(B_1+4q)\le(1/5)(B_1+4q)\le3u/5.
+\]
+Therefore $B_1X_{t-1}-4X_t\ge11u/15$, and the junction
+minor is at least $4+11u/15$.
+
+\paragraph{Correctly normalized first primitive minor.}
+For nonempty $L'$ put $r'=\operatorname{len}L'$, $v=u+r'\ge4$,
+$w=2v+1$, $E_2=v^2+2r'$. With $|c|<1/5$ its actual minor is
+\[
+ w^2-2E_2-2\phi(w-2)
+       +c\{E_2+\phi(w-4)\}+\phi c^2.
+\]
+It is at least $(9v^2-24v+31-22r')/5$, hence at least $57/5$
+by $3r'\le v-1$, $v\ge4$.
+Global ordinary LC of the actual $J$ makes its positive-primitive
+support an initial interval, so every clipped/zero case is covered.
+This completes the prefix induction at every CI degree and every
+$u\ge h+1$. The independent QA checks all displayed identities
+without floating-point comparisons. \texttt{WeightedDividedCI.lean}
+certifies the first ordinary head, both arbitrary-real binary heads,
+the nonempty first primitive head, and both last-junction payments.
+The prefix-window and polynomial induction assembly are written;
+this is not an end-to-end Lean formalization of actual arms.
+
+\paragraph{Actual padding-one consequence.}
+At the single entrance $m=h$, $u=m+1$, the actual raw geometric
+deficit equals $[z^s](1-z)J$ for $1\le s\le u$.
+Only primitive centres $2\le s\le u-2$ are used in backward
+coefficient integration; the two old actual strict coefficient
+seeds pay the exceptional initial centres. The same first-mode
+and fixed-padding count/read join as padding two prove
+all late actual C at padding one and binary counts at least $h+1$.
+The complete actual argument is in
+\texttt{actual\_padding\_one\_CI\_entrance.tex}. This removes padding
+one from the single-entrance residual, leaving $3\le\alpha\le h$;
+it does not remove the other unresolved general-C/A2 branches.

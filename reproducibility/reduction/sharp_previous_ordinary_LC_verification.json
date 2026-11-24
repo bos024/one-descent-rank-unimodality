@@ -1,0 +1,111 @@
+{
+  "status": "PASS_SHARP_UNIVERSAL_DEFICIT_ORDINARY_COEFFICIENT_LC_FROM_W_MINUS_ONE",
+  "new_scoped_reports": 10,
+  "kernels": {
+    "one_earlier_crossing_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "head_plus_tail_dominance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "reference_previous_ordinary_minor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "nonincreasing_positive_slopes_LC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "binary_cumulative_first_defect_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "local_window_LC_read_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sharp_triple_minor_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sharp_minor_negative_all_capacities": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sharp_triple_strict_growth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "binary_reference_CDF_minor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "QA": {
+    "W_minus_one_ordinary_tail_centres": 614829,
+    "hosts": 4152,
+    "unbounded_family_sharpness_QA": 258
+  },
+  "independent_counts": {
+    "independent_BINARY_GLOBAL_forward_CDF_LC_minors": 9471,
+    "independent_one_earlier_first_crossing_exact_seed_payments": 344,
+    "independent_first_crossing_ENTIRE_W_minus_one_tail": 54227,
+    "independent_arbitrary_suffix_ENTIRE_W_minus_one_tail": 108454,
+    "independent_positive_box_SHARP_family_exact_triples": 288
+  },
+  "independent_state_sha256": "23c0dbdf469362db14e4ac62a8f0b1dfc0b3dcdb3f2fb1501f1bea88c7b987f5",
+  "new_finite_entrance_certificates": 0,
+  "theorem": "PROVED ALLactualnormalized1alpha2uV withu>=5,h>u,ALLpadding/caps/counts: ENTIREordinaryFcoefficientLCatEVERYcentreN>=W-1. UniversalstartW-1isSHARP. Ordinarycoefficienttheorem,notCDFLC/originalcoreUI.",
+  "first_crossing": "PROVED firstcrossingdelta>=2byshiftingtwoENDPOINTgoldenboundsONErank:oldlefta-1>=2protectedreference,oldrightb-1>=u+r0+2actualceiling. AddpositiveH_(a-1)toFULLalternatingtaildominance,payexactordinarywindowseedatb-1. delta1protectedminorEXACTR_W-referenceA>=0. Nongrowingentriesbyconcavity/tailLC,notDLCatW.",
+  "onefactor_and_suffix": "PROVED binaryFORWARDCDFGLOBALordinaryLC bycumFibCassini/firstdefectseed+ENTIREordinarybinarytailLC/cumulativeintegration. OnefactorprefixF_n=Gbinary_(n-1)throughcapacityL payscentreL-1. EverylaterlegalappendinheritsordinaryLCfromFINALW-1byfulluniformwindowconvolutionwitholdFtruncatedbelowoldW-2.",
+  "sharpness": "PROVED UNBOUNDEDACTUALfamily1alpha2^T(3,T),ALLT>=4/alpha>=1,atcentreW-2=T+1: triple(2Fib(T+1)-2,2Fib(T+2)-3,2Fib(T+3)-4),minor1-4Fib(T-2)+4(-1)^(T+1)<0. ALLT>=5meettheoremclassu>=5,h>u. Strictlyrisingtriple,beforeFIRSTordinarymode. DoesNOTrefuteUI/C.",
+  "sharpness_witnesses": [
+    {
+      "alpha": 1,
+      "u": 5,
+      "V": [
+        3,
+        5
+      ],
+      "W": 8,
+      "centre": 6,
+      "triple": [
+        14,
+        23,
+        38
+      ],
+      "minor": -3
+    }
+  ],
+  "formal_scope": "TENnewcleanstandardaxiomreports;allread/convolutionguards,head-plus-taildominance,protectedpreviousreferenceordinaryminor,concavity/cumulativefirstdefect,EXACTsharpminoridentityandNat.fib-basedALLTnegativity. Actualreference/binaryCDF/word/modeassembliesWRITTEN,notend-to-endLeanactualcompositiontheorem. FiniteQAONLY,no finite premise.",
+  "remaining": "UniversalLATECremainsPROVED.GeneralphysicalWboundaryC/earlierC/fullA2/originalunamplifiedcoefficientUIOPEN;firstunresolvedFULLCcount6unchanged.",
+  "late_C": "PROVED_UNIVERSAL",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "sharp_previous_ordinary_LC_proof.tex": "ed24504c0c2c3110178d277d2dec27c899b9327f94b5b58de4e3e43ec52adc30",
+    "SharpPreviousOrdinary.lean": "12146422bad9baa2a4d4453b3b318cad51d4ec8d80ba228e29bb5892a5a6b97a",
+    "SharpPreviousOrdinary.log": "46e4cb321078858018709c4b8b5c74cd09d220308b73af0ff131c1d85e3dd761",
+    "audit_sharp_previous_ordinary_LC.py": "ab366d2248d8e8fe47526a9ba6c3206911fac8265a587fcc3030dc0fd516a55e",
+    "audit_sharp_previous_ordinary_LC.json": "a5accad782d34fd4cbab91079d4dfe5fc8662b81f2e7d81e57ceb12eceffbbe9",
+    "verify_sharp_previous_ordinary_LC.py": "43c39809cddab9a5f6cc0c0bdcb487e53b9a2580ee9fb4d209b2bbfbb5ba0975",
+    "universal_late_C_first_crossing_verification.json": "296b1a464749dd0b51565af2f194fb512f4f2d85122152a3c5067f45469ad548",
+    "binary_ordinary_tail_and_one_jump_C_verification.json": "f096cdb526006928dcbe15a8d6effadd3cfb1bb5712a6dd30f21ca9ab819c45c",
+    "reference_ordinary_golden_prefix_verification.json": "b5c6eac22baa0a470ec1760c0caef3363131db33482d0926da87329c7dba9788",
+    "surplus_ordinary_tail_LC_verification.json": "3df5dc94a457ae0fc5c31a84e674547c9bf1fc96f927c1b6e22cd3afedfbc60e",
+    "quantitative_tilt_one_jump_strong_verification.json": "d53b5b7f717cb0555e56ae891d7b6b68662ec886b5a290d53454dae1b1dc8cf5"
+  }
+}

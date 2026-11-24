@@ -1,0 +1,142 @@
+{
+  "status": "PASS_UNBOUNDED_ALL_THREE_FACTOR_CROSSINGS_AND_CONSTANT_TWO_FACTOR_ENTRANCE",
+  "new_scoped_reports": 17,
+  "kernels": {
+    "ThreeFactorEarlierCut": {
+      "ternary_base_positive": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "even_kernel_block": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "odd_kernel_block": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ternary_negative_atoms_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ternary_first_pair_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ternary_third_pair_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "bottom_source_row": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "penultimate_read_lower": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "penultimate_unit_payments": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "three_factor_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "old_two_junction_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "old_two_junction_gap": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "three_factor_perturbed_junction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "earlier_kernel_scalar": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "earlier_zero_row": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binomial_growth_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "earlier_read_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "ba5ed6f13cf52ece56ce4fbbf6f20116c3f624b7b97620ab1f2878e84b41157e",
+  "QA": {
+    "signed_ternary_diagonal_composition_identities": 46,
+    "source_cone_unit_cut_margins": 9322,
+    "unscaled_penultimate_unit_kernels": 4785,
+    "earlier_cut_quantitative_ULC_kernels": 23789,
+    "earlier_positive_quotient_LC_minors": 140191,
+    "earlier_complete_positive_primitive_LC_minors": 138983,
+    "literal_true_source_curvatures": 8269,
+    "actual_all_padding_late_D_LC_minors": 299852,
+    "actual_hosts": 7729,
+    "three_factor_profiles": 1320,
+    "complete_small_profiles": 670,
+    "actual_earlier_head_rank_one_payments": 213
+  },
+  "independent_counts": {
+    "independent_signed_diagonal_identities": 352,
+    "independent_full_earlier_primitive_minors": 45528,
+    "independent_actual_source_curvatures": 3518,
+    "independent_actual_late_D_LC_minors": 251267,
+    "independent_actual_hosts": 15956,
+    "independent_complete_small_hosts": 15396,
+    "independent_CI_profiles": 810
+  },
+  "independent_state_sha256": "03a345882e96f4f0674851b7b8dd22504cba1014b97c37212b441415cfe342f1",
+  "new_finite_entrance_certificates": 0,
+  "source": "PROVED ALLj>=2,u>=3j: Q3(u,j)>3. Signed ternary Lagrange kernel has precisely two negative atoms, at1/3. Coefficientwise w^l-t^l<=3l*w^(l+1) pairs them against degrees2/4; every other coefficient positive. Extension to u>3j is by Pascal induction, NOT unjustified positivity after multiplication of a signed kernel. True capacity cuts through min(floor(u/3),delta) are paid.",
+  "earlier_primitive": "PROVED ALL three-factor minimal crossings,u>=14,delta>=3: the ORIGINAL positive J-primitive truncated below min(floor(u/3),delta) is global LC. Natural tail and penultimate unit kernels use norm<5/6 and oldCount2 gap. Earlier prefix uses an exponentially growing BINOMIAL bound, verified by a written unbounded induction from m5; u14 is one generic scalar base, NOT a finite host entrance.",
+  "three_factor": "PROVED EVERY deletion-minimal THREE-factor CI crossing, ALL binary counts/capacities/paddings: actual positive D tail from physical W has LC at every pre-first-tail-mode internal centre. u<=13 old theorem; u>=14 wholly analytic. Full finite source at rank0 and actual previous unit retained. Independent full small profiles/paddings are QA ONLY.",
+  "constant_two_reduction": "Universal actual late-D-LC for ALL h>u now needs ONLY TWO CI FACTORS in a minimal crossing, after old long-factor/degree-u+1/degree-u+2 seeds and arbitrary insertion. Remainingu>=14, r2, 3<=d1<=d2<=u, u+3<=h=d1+d2<=2u; delta=h-u<=d1. This two-factor entrance remains OPEN and no finite numerical cutoff resolves it.",
+  "formal_scope": "SEVENTEEN new scoped kernel reports: unbounded signed-diagonal base positivity, parity blocks, negative-atom payments, explicit polynomial identities, source bottom row, penultimate bounds, norm, junction and earlier head scalars. Power series, binomial coefficient induction, Toeplitz and actual composition assembly are written, not an end-to-end Lean theorem. No new finite theorem certificate.",
+  "remaining": "Remaining late-D-LC entrance now ONLY TWO factors. Earlier C and C entrance, A2 and original general unamplified coefficient UI remain OPEN. Actual late-C threshold u>=h-2 unchanged; first original unresolved full-C count6 unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_late_C_threshold": "u>=h-2 UNCHANGED",
+  "sha256": {
+    "three_factor_earlier_cut_proof.tex": "788a19ec5bf918b96d27c0f8f74c2c9d198db2c8264847f09811394223b449ea",
+    "ThreeFactorEarlierCut.lean": "fe1e8428658ac32141a88261fe2b1f45e67391feb1750c3d334261f1848d4a0b",
+    "ThreeFactorEarlierCut.log": "cd521889145deef87cd56e83124525c0b8ff8dc4d6ec0d890102c67037541907",
+    "audit_three_factor_earlier_cut.py": "79405aed701f222834b78c2f7a1e06d6c5f2148c2dc318352c49c27a22e8552f",
+    "audit_three_factor_earlier_cut.json": "baa0bfcc65a711f0a1b45cecfc49c190782b1a3ec477d3df3275272180c73a61",
+    "verify_three_factor_earlier_cut.py": "ea6fe80fa53c895057bde00513c006326a819a405f1e06900f606ecd622a79da",
+    "double_subdegree_support_clarification.tex": "7deea311b7b98aa9ee8214e4464c40f39faccb5423f4629d20f55f8182ddca8d",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "convex_tilt_Lagrange_three_factor_verification.json": "a0685e63e7708f8c740171ea736bc896bd80e695348ae24037d9af2b2fe60564",
+    "double_subdegree_CI_entrance_verification.json": "de6cdc082a0ea7a96d74beca5c43ee0b0a3d78bbf1bea9fa2c87c2cbbba46d9f",
+    "mode_only_uniform_tail_closure_verification.json": "52aaf8f1842736ab79defb1bd6a2e90033614daab555a4b1c1bd3c1da3f87a22"
+  }
+}

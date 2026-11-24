@@ -1,0 +1,8 @@
+'TribonacciRichReverseQuotient.complete_reverse_binary_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciRichReverseQuotient.complete_reverse_ternary_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciRichReverseQuotient.whole_reverse_two_count_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciRichReverseQuotient.strong_reverse_quarter_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciRichReverseQuotient.rich_norm_uniform_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TribonacciRichReverseQuotient.binary_increasing_norm_cone_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

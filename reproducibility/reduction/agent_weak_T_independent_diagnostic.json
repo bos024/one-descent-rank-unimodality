@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FINITE_DIRECT_ACTUAL_HALF_TAIL_CURVATURE_DIAGNOSTIC",
+  "failure": null,
+  "counts": {
+    "exhaustive_actual_arms_including_rectangles": 1212,
+    "actual_pairs": 736678,
+    "half_tail_comparisons": 1495817,
+    "nonnegative_source_half_tail_comparisons": 1495817
+  },
+  "seconds": 28.843000000000757,
+  "scope": "Independent finite exact check only. Checks ALL T, without an E>=0 guard, after the actual LAST ordinary mode through degree midpoint; guarded weak-T is a subset. No unbounded conclusion inferred from these tests."
+}

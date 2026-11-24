@@ -1,0 +1,6 @@
+'ActualDyadicSlopePowers.whole_dyadic_power_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActualDyadicSlopePowers.whole_first_missing_twenty_triangle_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ActualDyadicSlopePowers.whole_large_read_exponential_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActualDyadicSlopePowers.whole_bulk_Cauchy_to_signed_slope' depends on axioms: [propext, Classical.choice, Quot.sound]

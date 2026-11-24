@@ -1,0 +1,182 @@
+% New shorter structural reduction and a complete unrestricted one-part-arm family.
+% The general shorter-prefix premise remains OPEN.
+\section{Reflection shortens the required weighted-difference prefix}
+Let $a\le b$ be the weights of two nonrectangular increasing arms,
+$D=a+b$, $N=D+M$, $R=\lfloor N/2\rfloor$, and
+\[
+ q=q_Xq_Y,\quad \sigma=\min\operatorname{argmax}q,
+ \quad d_j=\max(q_j-q_{j-1},0).
+\]
+Established ordinary-product results give unimodality of $q$,
+unimodality of $d$, $d_0=1$, $\sigma<b$, and reverse reflection
+\[
+                         q_{D-n}\ge q_n\qquad(n\ge D/2).
+\]
+The last inequality follows by reversing the ordinary height-layer
+endpoint sums, each at least $D$.
+
+\begin{lemma}[A finite halving tail with one spare endpoint]
+Suppose $d\ge0$ is unimodal and $d_0>0$.
+If $k\le a-2$ and $2d_{i+1}\le d_i$ for $k\le i\le a-2$,
+then
+\[
+                   \sum_{i=k+1}^{h}d_i\le d_k
+                              \qquad(k\le h\le a).
+\]
+\end{lemma}
+\begin{proof}
+For $h\le a-1$, sum $d_{i+1}\le d_i-d_{i+1}$ to get
+the stronger bound $\sum_{i=k+1}^h d_i\le d_k-d_h$.
+The first halving edge forces the global unweighted mode to
+be at most $k$: otherwise unimodality and $d_0>0$ would give
+$0<d_k\le d_{k+1}\le d_k/2$, a contradiction.
+Thus $d_a\le d_{a-1}$. This pays the one additional endpoint
+when $h=a$.
+\end{proof}
+
+\begin{proposition}[A shorter-prefix base-peak join]
+Assume $b>M$ and $b-a\le M-4$. Suppose
+\begin{enumerate}
+\item the finite sequence $(2^jd_j)_{0\le j<a}$ is unimodal;
+\item the proper relative polynomial $q_X\delta_M(Y^-)$ is unimodal;
+\item for some $2\le t<M$, the base
+$J_t=A+B+(S_t-1)AB$ is unimodal.
+\end{enumerate}
+Then the strict core $H_M$ is unimodal.
+\end{proposition}
+\begin{proof}
+Put $w=([M]-z^M)q$. Before rank $R+1$ the reverse core
+equals $w$, because the arm corrections start at $a+M,b+M>R$.
+The exact proper-relative identity proved in
+\texttt{inductive\_signed\_window.tex} shows that $w$ agrees,
+through rank $b-1$, with the unimodal polynomial
+$V=[\max Y]q_X\delta_M(Y^-)$.
+Thus $\Delta w$ has no negative-to-positive change there.
+
+Choose a mode $\ell$ of the truncated weighted sequence in
+the first premise. It may be chosen with
+$\ell\le\min(\sigma,a-1)$. For
+\[
+              b\le n=M+k\le\min(R,M+\sigma)
+\]
+one has $0\le k\le a-2$ and the exact difference is
+\[
+                   J_k:=\Delta w_{M+k}=q_{M+k}-q_k-d_k.
+\]
+If $k<\ell$, weighted increase gives
+$2d_{k+1}\ge d_k$. Hence $q_k+d_k$ is nondecreasing,
+while $q_{M+k}$ is nonincreasing since $M+k\ge b>\sigma$.
+The $J_k$ are therefore nonincreasing in this range. The same
+comparison includes the joining edge from $n=b-1$ whenever
+the new range begins before $M+\ell$; here $b-1\ge\sigma$.
+
+If $k\ge\ell$, set $h=D-M-k=D-n$. The bounds on $n$
+give $k\le h\le a$, and reflection gives $q_n\le q_h$.
+Weighted decrease gives every halving edge through $a-1$.
+The preceding lemma yields
+\[
+ q_n-q_k\le q_h-q_k
+       \le\sum_{i=k+1}^{h}d_i\le d_k.
+\]
+Thus $J_k\le0$. These comparisons extend the no-revival
+prefix through $\min(R,M+\sigma)$.
+
+For the remaining ranks $M+\sigma<n\le R$, use the established
+base-peak join exactly as in \texttt{general\_base\_join\_route.tex}:
+the last forward product mode $p=D-\sigma$ exceeds both arm weights,
+$\Delta J_t(p+1)>0$, and
+$H_M=J_t+z^{t+1}[M-t]AB$ supplies forward increase at each
+corresponding rank. Thus all these remaining reverse differences
+are nonpositive. Forward first-half growth joins the final reverse
+tail, proving core unimodality.
+\end{proof}
+
+The base-peak step remains necessary in this argument: past
+$M+\sigma$, $\Delta q_k$ is negative and cannot be replaced by
+its positive part in the displayed formula for $J_k$.
+
+\begin{corollary}[A still weaker universal target]
+The general conjecture follows if, for every nonrectangular
+arm pair, $(2^jd_j)_{0\le j<\min(a,b)}$ is unimodal.
+It is enough instead to prove coefficient unimodality of
+$(2-z)q_Xq_Y$ restricted to this prefix. The full A2 theorem
+or full mixed-deficit theorem is not required by this route.
+\end{corollary}
+\begin{proof}
+Use a least-peak, least-relative counterexample. Known small
+peaks and $N\le3M+8$ are excluded, so $b>M$; balance gives
+the other size hypothesis. Proper-relative deletion gives the
+second premise, and least-peak induction supplies $J_t$ after
+stripping repeated arm maxima.
+For the alternative premise, through the first reverse mode,
+\[
+ \Delta((2-z)q)_j=2d_j-d_{j-1}.
+\]
+These are, up to a positive factor, the successive differences
+of $2^jd_j$. Truncate at the earlier of the prefix endpoint
+and $\sigma$; subsequent positive differences of $q$ are zero.
+Hence prefix unimodality of $(2-z)q$ supplies the required
+truncated weighted-difference property.
+\end{proof}
+
+\section{Every one-part skeleton against an arbitrary opposite arm}
+\begin{theorem}\label{thm:all-onepart-arms}
+For every $\alpha\ge1$, $s\ge2$, arbitrary increasing arm
+$Y$, and strict peak $M>\max(s,\max Y)$, the core with arms
+$X=1^\alpha s,Y$ and both relative polynomials are unimodal.
+There is no weight-order restriction and no bound on the
+opposite arm's length, padding or part sizes.
+\end{theorem}
+\begin{proof}
+Adjoin all rectangular-arm pairs. This family is closed under
+final-part deletion and arm exchange. At a least-peak,
+least-relative counterexample, both arms are nonrectangular,
+$|a-b|\le M-4$, and $N>3M+8$.
+
+Let $X=1^\alpha s$ be a qualifying one-part arm, with weight
+$a_X$, and let $b_Y$ be the other weight. Its reverse polynomial
+is $q_X=[\alpha+1][s]+z^{a_X}$. The other reverse deficit
+satisfies $(2-z)q_Y=e_Y+z^{b_Y}(1-z)$. Consequently
+\[
+ (2-z)q_Xq_Y=[\alpha+1][s]e_Y
+       \quad\text{at every rank }j<\min(a_X,b_Y).
+\]
+The single-arm deficit $e_Y$ is unimodal, and uniform convolution
+preserves unimodality. Thus the required raw prefix is unimodal
+in both weight orders, and the truncated weighted-difference
+premise follows. This short argument uses neither the full mixed
+one-part theorem nor the heavier one-part A2 theorem.
+
+Proper-relative deletion supplies the second premise of the
+proposition. The lower-peak base also stays in this family.
+Let $t$ be the largest arm part. If it occurs in the one-part
+arm, remove that occurrence first and obtain a rectangular
+arm. If it occurs only in the other arm, stripping its
+occurrences retains the one-part arm. The remaining strict
+lower-peak core is covered by least-peak induction or the
+rectangular-arm base, and each maximum is restored by
+$J=1+S_tJ^{\rm smaller}$.
+
+The proposition makes the balanced core unimodal, contradicting
+core-relative equivalence. Both relative assertions follow
+throughout the family, and the usual heavier-first equivalence
+gives the core assertion everywhere.
+\end{proof}
+
+This subsumes the heavier-one-part and binary-versus-one-part
+core families in \texttt{inductive\_signed\_window.tex}.
+The A2 statement for the binary-versus-one-part pair remains
+an additional proved ordinary-product property, rather than
+a claim of full A2 for all pairs in this new larger family.
+The earlier full mixed one-part theorem likewise remains an
+additional independent shape result; it is no longer needed
+as a dependency of the present core/relative family theorem.
+The general conjecture and the general shorter-prefix target
+remain open.
+
+In particular, a genuine increasing arm with at most two host
+parts is covered against an arbitrary opposite arm: replacing
+its first part $r$ by $r$ ones preserves its arm polynomial,
+and leaves at most one non-one part. This is a corollary of
+the normalized theorem, not a restriction on the number of
+initial ones allowed in its main statement.

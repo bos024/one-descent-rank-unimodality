@@ -1,0 +1,145 @@
+{
+  "status": "PASS_UNBOUNDED_FIRST_MISSING_PRODUCT_MODE_AND_CONDITIONAL_ONE_PART_SOURCE_WINDOWS",
+  "new_scoped_reports": 10,
+  "kernels": {
+    "FirstMissingProductMode.partial_coefficient_product_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.constant_term_pays_product_head": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.exact_complete_product_slope_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.first_missing_dyadic_tail_dominates_its_index": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.all_three_first_missing_product_slope_budgets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.complete_protected_first_missing_difference_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.whole_first_missing_product_three_strict_increases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.strict_forward_growth_places_every_ordinary_mode_after": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.arbitrary_one_part_exception_and_complete_window_geometry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FirstMissingProductMode.arbitrary_first_missing_birth_dichotomy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "product_mode": "ANYACTUALnonrectX/Y,kappaY>=6:ordinaryH=FXFYstrictlyincreasesatrankskappa,kappa+1,kappa+2. FIRSTordinarymode>=kappa+2/LASTreverseproductmode<=a+b-kappa-2. NO_C/NO_A2/NOmodehypothesis,ALLparametersunbounded.",
+  "whole_polynomial": "A=1+z+2z2+z3U,U>=0/U0>=1;QfullDYADICprefixbelowkappa/firstdefectdelta<=kappa/positiveatnextTHREEranks. WHOLEprotectedD-Qprefix/finiteconvolutionpositive/constantpayment/exactslopeidentity=>ALLTHREEincreases. SubsequentQcoefficientsneedNOTbenonnegative. NOsampledsourcepositivitypremise.",
+  "one_part_windows": "ANYactualX=1alpha_s_ONEpart/YnonrectFULLC,assumingFULL_OLD_PAIR_A2:ENTIRE([t](2-z)qXqY)^+UI/initialsupportforallt>=max(1,kappaY-3),UNBOUNDEDkappaY. FULL_OLD_A2premiseRETAINED. Generalh>=2ownerwindowcriterionOPEN.",
+  "complete_profile": "OnlyonepartQbirthfailurea+3<=kappa. ExactWHOLEsource:positiveINTEGERUIprefix0..L,L=b+a-kappa+1,endpointdelta;ZEROSL+1..b-1;ONESb..R=b+min(alpha+1,s)-1;NONPOSafterR. NEWmodeboundnu<=L-3;body>=1;R-L<=kappa-3 givesFROZENgenericpatch. ALLindices/birthdichotomyunboundedkernelchecked.",
+  "obstruction": "EVERYkappa>=6 ACTUALX1/2,Y1/(kappa-1)^(kappa-2)hasEXACTdelta3(ONLYTHREEmissinghooks)andwindowt=kappa-4triple3,1,2. C/FULL_A2forENTIREunboundedcounterfamilyNOTasserted. AbstractUIprefix(2,3,..3)+samecriticalprofileALSOviolatesshorterwindow,sohypothesesofgenericpatchcannotimprovelength.",
+  "formal_scope": "TENnewstandardaxiomreportsincludeWHOLEpolynomialthree-increaseproof/exactcompleteidentity/protectedderivativeprefix/completeconvolutionandconstantpayment/powbudget/modeimplication/unboundedonepartgeometryandbirthdichotomy. Actualhookbound/model/unimodality/C-A1-Q andFROZENgenericwindowassemblyWRITTEN,NOTendtoendLeancompositions. NOfiniteproofpremise. OnepartsourcewindowresultCONDITIONALonFULL_OLD_A2;NOgeneralsolutioninferred.",
+  "new_finite_proof_premises": 0,
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "independent_counts": {
+    "independent_generic_complete_polynomial_slope_identities": 1050,
+    "independent_actual_product_mode_bounds": 125,
+    "independent_actual_FULL_C_currents": 75840,
+    "independent_unbounded_entire_one_part_profiles": 450,
+    "independent_entire_one_part_window_repairs": 1440,
+    "independent_actual_unbounded_shorter_window_obstructions": 65,
+    "independent_abstract_patch_threshold_obstructions": 65
+  },
+  "primary_QA": {
+    "generic_whole_polynomial_three_increase_margins": 2400,
+    "actual_three_first_missing_product_increases": 1260,
+    "actual_unbounded_product_mode_bounds": 420,
+    "entire_unbounded_one_part_exceptional_profiles": 213,
+    "entire_unbounded_one_part_source_windows": 1320,
+    "actual_all_kappa_shorter_window_counterexamples": 55
+  },
+  "independent_state_sha256": "f0bbb36c14bc0f35a91cfe20103b980e295661b9f772139c58a6e1a3f0cbfe22",
+  "seconds": 46.89099999999962,
+  "local_files": [
+    "first_missing_product_mode_and_one_part_window_proof.tex",
+    "FirstMissingProductMode.lean",
+    "FirstMissingProductMode.log",
+    "audit_first_missing_product_mode.py",
+    "audit_first_missing_product_mode.json",
+    "verify_first_missing_product_mode.py"
+  ],
+  "dependency_files": [
+    "first_missing_hooks.tex",
+    "FirstMissingHooks.lean",
+    "FirstMissingHooks.log",
+    "audit_first_missing_hooks.py",
+    "audit_first_missing_hooks.json",
+    "ordinary_rooted_caterpillar_model.tex",
+    "kappa_eight_original_window_criterion_verification.json",
+    "kappa_eight_legal_window_original_criterion_proof.tex",
+    "kappa_seven_original_window_criterion_verification.json",
+    "GeneralFiniteSourcePatch.lean",
+    "GeneralFiniteSourcePatch.log",
+    "KappaSixWindowRepair.lean",
+    "KappaSixWindowRepair.log",
+    "binary_ternary_A2_original_family_verification.json",
+    "binary_ternary_A2_original_family_proof.tex",
+    "C_to_coupled_S_rising_window.tex",
+    "agent_bothdeclining_first_birth.tex",
+    "agent_half_lc_actual_weak_curvature.tex",
+    "source_birth_gap_nonrecovery.tex",
+    "signed_kernel_extension.tex",
+    "verify_binary_ternary_A2_original_family.py"
+  ],
+  "sha256": {
+    "first_missing_product_mode_and_one_part_window_proof.tex": "1204fb1f2df565e4fe295b7379dcaa81c2e72f34469d15ab3fcafa63eb16dd20",
+    "FirstMissingProductMode.lean": "94866c55c92e51fe15d1eeb3a29657bae4942f6d9f4b6ed3da9690fe47db10e7",
+    "FirstMissingProductMode.log": "70e5c926cddcdc76f031c80a4f1b9dbc408310de87f65d26136624e12e65317c",
+    "audit_first_missing_product_mode.py": "e94169efaf8a77be626ea00f197e9650046c705cde4b853fd81efeac5acb163f",
+    "audit_first_missing_product_mode.json": "5512f5a8ca3b2d88bf265d41d6bafc7dc870e0529e078df18f64dc5fcc338035",
+    "verify_first_missing_product_mode.py": "1962894ad76de15f5490fb3c67bbcd95918a8473541d6060b63528c24ab7419d",
+    "first_missing_hooks.tex": "fb27335890f83f61bdb1ff8036b73e5b3405aa0d4b75342aaace0a148fa6129e",
+    "FirstMissingHooks.lean": "9c95d325f648362ca5346f141c34eaadf16be4984b537b920496aa2adbd73ea8",
+    "FirstMissingHooks.log": "d8bbb351062fdd15d6e4ce5b4e136f5927bebc65fa2c9597eb20adaa8c61d306",
+    "audit_first_missing_hooks.py": "30b704aee3505c71d460611194a1c7aafda8e9efa8c4273a599e8c5819e644f7",
+    "audit_first_missing_hooks.json": "b0ee0ea5a8a6445b70b0acadd0af4be9b328f8f8de6ae44f95cc84bd6710ffcb",
+    "ordinary_rooted_caterpillar_model.tex": "2325d255e2c49e48e6e2669c223cf406ca83ccd467681560f82fae4597d8bd99",
+    "kappa_eight_original_window_criterion_verification.json": "e718cf12514723a82107b44df4c65edac25d3e5a4edaedb4c848ff6cc86d998f",
+    "kappa_eight_legal_window_original_criterion_proof.tex": "d898b74615ce8684a8d05c3f16868d96dcc5ed863fbf7ff4d409140b906ef9bb",
+    "kappa_seven_original_window_criterion_verification.json": "284c39fb6fc30f638afc3fdf6c75a6142974eb041e9826501650c765230e270c",
+    "GeneralFiniteSourcePatch.lean": "797ef5181c6dc7438e0581ead447b48d7addff5214e40f74004768fb17bb15e0",
+    "GeneralFiniteSourcePatch.log": "ff37707a79636080af3ce990387f69c333b63902d19d4a3037e45e19c3cf49a2",
+    "KappaSixWindowRepair.lean": "b1c45a857f467e4539a68fed833f1e47c23c67bc55471620c26b52c22f419e06",
+    "KappaSixWindowRepair.log": "e3a0291c47101fda74f15a40d8ee54b6cdca0813120e60b5ba2e9325a149141a",
+    "binary_ternary_A2_original_family_verification.json": "5c3d0a808f9b392876e4e771f38bf555c05a6272aaf8a13a287b77986e3dc47d",
+    "binary_ternary_A2_original_family_proof.tex": "956160d8e49eaa86fbb62f8f63cacbbc411bfc2e7f2fac3bd4cf3003512ae393",
+    "C_to_coupled_S_rising_window.tex": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "agent_bothdeclining_first_birth.tex": "c646a7eddfb2486a02136832a5dc19f99021f807100ddffac346ba95e22478e9",
+    "agent_half_lc_actual_weak_curvature.tex": "0191ec32500869be5d687ece5be011db4de6df7cfe47bf6cd1186ab4bc0b7674",
+    "source_birth_gap_nonrecovery.tex": "e3b634da5a447e575a38a5075d6e805e33a6dd5af6dad157371d70e66a839d90",
+    "signed_kernel_extension.tex": "d7e58ad01448a95aad2fa2179a4ec31297dedc3828554aef9c541e0e0bfb669c",
+    "verify_binary_ternary_A2_original_family.py": "a1b69410ec093a04a5559b53eb13a9f6efc20bbc56e2d32865cd074deb1cb505"
+  }
+}

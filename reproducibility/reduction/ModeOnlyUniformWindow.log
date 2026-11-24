@@ -1,0 +1,4 @@
+'ModeOnlyUniformWindow.concave_triple_is_LC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModeOnlyUniformWindow.uniform_transition_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModeOnlyUniformWindow.signed_transition_is_nonincreasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModeOnlyUniformWindow.minimal_crossing_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]

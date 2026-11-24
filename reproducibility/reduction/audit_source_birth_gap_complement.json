@@ -1,0 +1,72 @@
+{
+  "status": "PASS_SOURCE_BIRTH_GAP_FIVE_COMPLETE_FINITE_COMPLEMENT",
+  "counts": {
+    "finite_owner_representatives": 154048,
+    "positive_primitive_curvature_cases": 96070,
+    "sharp_equality_cases": 6
+  },
+  "layers": [
+    {
+      "r": 0,
+      "critical_states": 23,
+      "minimum_margin": 0,
+      "sha256": "078da4e9a6b6f5ebaec37248170d7c0bb0610b614a4c7431159b3d13c389c75f"
+    },
+    {
+      "r": 1,
+      "critical_states": 95,
+      "minimum_margin": 0,
+      "sha256": "f3b2f23967b03a557022f979b74bd431a999c38051dad3fc0a3b820b0cede0a9"
+    },
+    {
+      "r": 2,
+      "critical_states": 289,
+      "minimum_margin": 1,
+      "sha256": "bb59ae02abe372c2812c908cd2e77a528b3cc8008370eb8dfa3c8ef53602ae2a"
+    },
+    {
+      "r": 3,
+      "critical_states": 741,
+      "minimum_margin": 3,
+      "sha256": "603a8f7f60305dc66aee544953653646dfb23ba29facdef124aa1b6ff6c75a86"
+    },
+    {
+      "r": 4,
+      "critical_states": 1691,
+      "minimum_margin": 6,
+      "sha256": "a8a63abfaa58515905bfa906bbc631a58e2d113001f0ab08abb30edd0f8f98d6"
+    },
+    {
+      "r": 5,
+      "critical_states": 3578,
+      "minimum_margin": 10,
+      "sha256": "52144f50a3e0fb0de19d51343a066e4ecd8ddf295f727c6f9f4585527ddc40c6"
+    },
+    {
+      "r": 6,
+      "critical_states": 7113,
+      "minimum_margin": 15,
+      "sha256": "1d2390a895e468000bf22fbf639d7a13e7a66e2224272d289e79ce096b1ffe7a"
+    },
+    {
+      "r": 7,
+      "critical_states": 13555,
+      "minimum_margin": 21,
+      "sha256": "9a5a5715b40d7abb8b62f41179f7c664db4ff7150d957fcc7dcc553d10058e67"
+    },
+    {
+      "r": 8,
+      "critical_states": 24831,
+      "minimum_margin": 28,
+      "sha256": "947921ef3ff0adddcb5ce7f4225774aefc8a83dd36dbe218e4a60dee8e46f10f"
+    },
+    {
+      "r": 9,
+      "critical_states": 44154,
+      "minimum_margin": 36,
+      "sha256": "a264525cf1520a18044441ead20b123bd93616e70bbb9c1f574411a7b1858188"
+    }
+  ],
+  "seconds": 2.063000000000102,
+  "scope": "COMPLETE finite complement after proved r>=10 source-payment reductions: r0..9,excess0..2,gapexcess+3..5,allpartitionsofdu,ALLinitialrunsrepresentedbyexactalpha-clampmax(sourceindex,r+1). No sampled hosts. Written theorem is SHARPalpha>=kappaOpposite-5 with opposite forward factor still nondecreasing. GeneralotherS/A2/C/originalUIremainOPEN; independent reconstruction required."
+}

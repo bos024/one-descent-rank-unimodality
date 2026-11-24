@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "Finite independent embedding diagnostics of the written staircase theorem; no general core theorem inferred.",
+  "hosts": 1800,
+  "host_weight_tests": 14400,
+  "composition_embedding_tests": 459000,
+  "universality_mode_checks": 6191,
+  "seed": 2026102100,
+  "seconds": 0.4530000000013388
+}

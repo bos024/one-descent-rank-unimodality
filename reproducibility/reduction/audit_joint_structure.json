@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "diagnostics for analytic difference-shape propositions and two exact failed LC strengthenings",
+  "arm_pairs": 8000,
+  "formal_forward_arms": 8000,
+  "formal_products": 8000,
+  "rising_lc_comparisons": 1443304,
+  "nonrectangular_prefix_splices": 7271,
+  "smoothing_counterexample": {
+    "M": 3,
+    "alpha": 58,
+    "U": [
+      2,
+      2,
+      2
+    ],
+    "beta": 37,
+    "V": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "index": 56,
+    "values": [
+      3194,
+      1974,
+      1220
+    ],
+    "determinant": -4
+  },
+  "seed": 2026101696,
+  "seconds": 11.984000000004016
+}

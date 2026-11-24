@@ -1,0 +1,26 @@
+TernaryForwardInverse.lean:19:33: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+TernaryForwardInverse.lean:63:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+TernaryForwardInverse.lean:63:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+TernaryForwardInverse.lean:72:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+TernaryForwardInverse.lean:72:76: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'TernaryForwardInverse.golden_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.potential_binary_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.potential_ternary_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.mixed_unbounded_terminal_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.ternary_terminal_minor_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.ternary_terminal_minor_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.positive_ternary_corrected_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryForwardInverse.lowering_next_preserves_minor' depends on axioms: [propext, Classical.choice, Quot.sound]

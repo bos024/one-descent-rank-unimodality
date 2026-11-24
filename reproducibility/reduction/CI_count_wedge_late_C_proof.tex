@@ -1,0 +1,97 @@
+\section{An unbounded actual late-C wedge from factor-count loss growth}
+UNDER AUDIT. Registered MASTER1159 has universal h>u late-D-LC
+and ALL actual late C u>=h-4. This proof would add the WHOLE wedge
+\[
+ u+r\ge4(h-u)-5,\qquad\hbox{equivalently }5u+r+5\ge4h.
+\]
+All tail capacities, tail counts, binary counts and initial paddings
+are unbounded. General earlier C, A2 and original UI remain OPEN.
+
+Write delta=h-u. Only delta>=5 is new; delta<=4 is already registered.
+Set w=u+r, W=h+r=w+delta, p=delta-2, N0=W-p=w+2.
+Let R be the infinite-binary same-tail reference, g its cumulative,
+and x=Delta R_W,y=Delta R_(W+1). The established reference facts are
+\[
+ x\ge2,\quad x\le y<phi x,\quad y\ge3x/2,
+ \quad A=x^2+xy-y^2>0,
+\]
+\[
+ R_(W-2)=x-1,\quad R_(W-1)=y,\quad R_W=x+y,
+ \quad g_k>phi g_(k-1)\ (k>=1).
+\]
+The lower y bound applies since w>=4delta-5 implies W+r>=8.
+The x-1 numerator unit is retained.
+
+\paragraph{A dyadic upper bound for the REFERENCE cumulative.}
+The actual rank-growth bound R_n<=2R_(n-1) holds in the reference
+by finite-prefix realization with sufficiently long binary/ones blocks.
+Here R0=R1=1. Inductively R_n<=g_(n-1): the difference
+R_n-g_(n-1) equals its predecessor minus (2R_(n-1)-R_n)>=0.
+Thus g_n<=2g_(n-1) for every n>=1. This is an UPPER growth bound,
+not an assertion of reference cumulative log-concavity.
+
+\paragraph{The entire actual loss, with both sources.}
+Let E=(1+z)^u prod[t] and H2=1/(1-z-z^2). The exact derivative loss
+at physical N0+j is l_j=[z^j]E(H2+z^(alpha-1)). This includes BOTH
+finite-binary and finite-initial-ones losses. The registered CI-count
+growth theorem gives j*l_j>=(w-j+1)*l_(j-1).
+Because w>=4delta-5, every 1<=j<=p+1 satisfies l_j>=3l_(j-1).
+Put b=l_p,c=l_(p+1), a=sum_(i=0..p-1)l_i. Then
+\[
+ c>=3b>0,\quad 0<=a<=b/2.
+\]
+Actual D_W=x-b,D_(W+1)=y-c. If their positive pair does not grow,
+universal tail UI+pre-mode LC makes all late C automatic. Otherwise
+let lambda=(y-c)/(x-b)>1. Its exact relation and y<phi*x give
+\[
+ lambda<phi<2,\quad (phi-lambda)x>b.                 \tag{1}
+\]
+Indeed (phi-lambda)(x-b)=phi*x-y+c-phi*b>0; then
+(phi-lambda)x=phi*x-y+c-lambda*b>b.
+
+\paragraph{Pay ALL cumulative prefix reads directly.}
+For j>=0 put S_j=sum_(i<=j)l_i and T_j=sum_(i<=j)(j-i+1)l_i.
+The ACTUAL ordinary loss is S_j and cumulative loss T_j.
+For k=N0+j<=W let d=W-k=p-j. The source comparison satisfies
+\[
+ T_j-lambda*T_(j-1)=S_j-(lambda-1)T_(j-1)
+       <=S_j<=3l_j/2<=3b/(2*3^d).                 \tag{2}
+\]
+Before N0 the entire actual G prefix equals g, and its ratios exceed phi.
+For d>=1, the dyadic bound and the previous numerator unit give
+\[
+ g_(k-1)>=g_(W-2)/2^(d-1)>=(x-1)/2^(d-1)>=x/2^d.
+\]
+Using (1), the reference residual is strictly greater than b/2^d.
+But for EVERY integer d>=1, 3*2^d<=2*3^d, so (2) is at most b/2^d.
+Hence the actual G_k-lambda*G_(k-1) is positive at EVERY such read.
+At the final read d0, use g_(W-1)>=R_(W-1)=y>=3x/2;
+(1) gives a residual >3b/2, still paying (2). Thus
+\[
+ G_k D_W>=G_(k-1)D_(W+1)\quad(1<=k<=W).             \tag{3}
+\]
+No ordinary reference comparison at its earlier nonhomogeneous ranks
+is assumed. This is why the argument covers an unbounded wedge,
+rather than just a fixed number of lost reference coefficients.
+
+\paragraph{One ordinary seed suffices after the direct prefix payment.}
+Actual F_(W-1)=y-a and F_W=x+y-a-b. Since x>b>=2a and c>=3b,
+the registered generic last-seed identity and payment give
+\[
+ F_W D_W-F_(W-1)D_(W+1)
+ =A-x(a+2b)+y(a-b+c)+b^2+ab-ac>0.                \tag{4}
+\]
+For a later growing current N set mu=D_N/D_(N-1). Universal late-D-LC
+gives mu<=lambda and every preceding tail D ratio through N >=mu.
+The seed (4) gives F_W>=mu F_(W-1), and (3) supplies every initial
+G comparison through W. Ordinary then cumulative integration pays
+every remaining read up to N-3, hence EVERY C shift>=3 at EVERY N>=W+1.
+Modes themselves are automatic; a flat initial tail is handled using
+UI AND pre-mode LC, never UI alone.
+
+This completes the written unbounded wedge argument, subject to
+scoped Lean and independent actual reconstruction checks. There are
+NO new finite entrance premises. Together with u>=h-4, potential
+late-C failures must ALSO satisfy 5u+r+5<4h, beyond the previous
+u>=9,u+5<=h<=3u-2,maxcap<=2u-1,W>32 constraints.
+Earlier actual/reference C and ORIGINAL coefficient UI remain OPEN.

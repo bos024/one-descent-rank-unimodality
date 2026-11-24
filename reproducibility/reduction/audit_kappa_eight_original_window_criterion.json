@@ -1,0 +1,31 @@
+{
+  "status": "PASS_EXACT_QA_KAPPA_EIGHT_LEGAL_WINDOW_COEFFICIENT_CRITERION",
+  "counts": {
+    "actual_kappa_eight_opposite_full_C_minimum_ratio_checks": 11050,
+    "actual_kappa_eight_opposite_literal_shifts_represented": 330260,
+    "entire_exceptional_five_window_repairs": 1239,
+    "entire_source_profile_types_(1, [2])": 21,
+    "entire_source_profile_types_(1, [3])": 21,
+    "entire_source_profile_types_(1, [4])": 21,
+    "entire_source_profile_types_(2, [3])": 21,
+    "entire_source_profile_types_(1, [2, 2])": 21,
+    "entire_source_profile_types_(1, [2, 3])": 21,
+    "entire_source_profile_types_(2, [2, 2])": 21,
+    "three_part_no_exception_delta_paid": 9,
+    "entire_source_profile_types_(1, [2, 2, 2])": 12,
+    "three_part_no_exception_eta_paid": 24,
+    "entire_source_profile_types_(1, [2, 2, 3])": 9,
+    "entire_source_profile_types_(2, [2, 2, 2])": 9,
+    "A14_actual_arm_full_C_minimum_ratio_checks": 105000,
+    "A14_actual_arm_literal_shifts_represented": 14568337,
+    "general_A14_five_or_longer_windows": 1996,
+    "legal_heavier_append_FULL_A2_pairs": 1000,
+    "actual_A14_FULL_A2_pairs": 500,
+    "extra_heavier_append_ORIGINAL_ideals": 3,
+    "TRUE_greedy_BOTH_three_dominant_ORIGINAL_ideals": 18,
+    "TRUE_greedy_ORIGINAL_rank_counts": 14825
+  },
+  "state_sha256": "33df4cc7c47d0d3ab11cd86ef188a653428a2c148d9dd890864d56c736be3407",
+  "seconds": 1.4220000000004802,
+  "scope": "AllfinitehostsQAONLY;COMPLETE1441owner/4457edge/694integercomplementisNEWexplicitfiniteproofpremise,nottheseopposites/originals. GeneraloriginalOPEN."
+}

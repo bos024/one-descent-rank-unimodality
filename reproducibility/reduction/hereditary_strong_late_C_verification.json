@@ -1,0 +1,229 @@
+{
+  "status": "PASS_HEREDITARY_STRONG_LATE_C_UNRESTRICTED_SORTED_SUFFIX_AND_SIX_FACTOR_REDUCTION",
+  "new_scoped_reports": 24,
+  "kernels": {
+    "golden_margin_constants": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "binary_cumulative_gap_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_length_tail_window_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "head_window_atom_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "finite_window_residual_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "adjacent_ratio_antitone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "positive_LC_adjacent_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "subtracted_window_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_prefix_ratio_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "full_mode_ratio_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "weighted_window_ratio_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "rising_window_forces_rising_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cumulative_margin_prefix_extension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "smaller_ratio_preserves_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "first_crossing_prefix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "prefix_sum_length_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "bounded_crossing_has_two_factors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "crossing_prefix_in_new_cone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unresolved_crossing_at_most_six_suffix_factors": [
+      "Quot.sound",
+      "propext"
+    ],
+    "single_crossing_at_most_one_suffix_factor": [
+      "Quot.sound",
+      "propext"
+    ],
+    "one_gap_ordinary_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "two_gap_ordinary_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "two_gap_all_padding_losses": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "low_gap_golden_ceiling": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "state_sha256": "7737fe514e60d90364bdddd9d8a0acf12d78e386e4d2fc727aff864bd77523c9",
+  "QA": {
+    "reference_additive_golden_square_margins": 1232635,
+    "strong_prefix_additive_golden_square_margins": 387863,
+    "ordinary_LC_entire_tail_minors": 509589,
+    "strict_entries": 3350,
+    "exact_prefix_minimum_all_shift_C_payments": 948376,
+    "logical_shift_coverage": 277521927,
+    "base_seed_hosts": 1640,
+    "old_read_additive_margin_at_NEW_window_ratio": 240907,
+    "strict_entry_hereditary_transfers": 1710,
+    "strict_transfers_outside_final_count_cone": 1263,
+    "strict_transfers_outside_all_OLD_late_C_families": 1263,
+    "actual_append_transfers": 4920
+  },
+  "independent_counts": {
+    "independent_arbitrary_order_reference_additive_margins": 2770,
+    "independent_positive_box_strong_additive_margins": 124525,
+    "independent_positive_box_entire_ordinary_LC_tail": 171043,
+    "independent_positive_box_late_C_minima": 245748,
+    "independent_positive_box_hosts": 1843,
+    "independent_old_G_margins_at_new_entry_ratio": 76677,
+    "independent_actual_affine_cumulative_identities": 77951,
+    "independent_strict_transfers_outside_old_countcone": 481,
+    "independent_strict_window_transfers": 637,
+    "independent_uniform_family_crossing_guards": 651,
+    "independent_six_suffix_reduction_guards": 15872
+  },
+  "independent_state_sha256": "6784939cabee954338ca0252ee00a1a3b2625e60cef755987a684b0eae02b86d",
+  "new_finite_entrance_certificates": 0,
+  "reference_margin": "PROVED ALL infinite-BINARY references,arbitrary nonbinaryorder/caps/counts: G_k-phiGprev>=q^2 forALLk>=1. Fullbinarygapintervalinduction plus all-length affine-window atom payment; referenceorder unrestricted.",
+  "hereditary": "PROVED conditional STRONG physical late-C entrance is preserved underEVERYlegal nonbinaryappendt>=lastcapacity,arbitrarylengthsuffix. Newstrictentryforcesoldstrictentry; oldD mode cap givesnewmu<=oldlambda; ordinaryLC and exact subtraction give newmu<=lastordinaryFratio; BOTH inequalities retainALLoldG additive margins needed bynewwindow. Rankzeroatom andt>=3 payconstant1. WholeordinaryLCtail inheritsbyLCconvolution. All clipped/flat/mode-crossing guards retained.",
+  "seeded_family": "PROVED ANY actual1alpha2uV whoseANYnonbinaryprefix hasr>=2,delta>=5,W>=33 and17u+4r+30>=13h hasEVERYactualC atEVERYcurrentN>=FINALnonbinaryW+1,withARBITRARYlater sorted suffix. ALSO allu>=33,1<=delta<=4 seeds strengthened byexact lowgap1/2seeds andOLDgap3/4ordinaryseeds. FINALword needNOTsatisfyANYcountcone; demonstrated by independently reconstructed actual growing-entry witness.",
+  "uniform_family": "PROVED ALLu>=33 and13(maxV-1)<=4u+38: EVERYactualC fromN>=FINALW+1. OnlytheFIRSTprefixdegree>u needobeythiscapbound; arbitrarylarger sorted suffix then allowed. Ifh<=u OLDlateCapplies. Full first-crossing existence/overshoot and2-factor guard kernelchecked.",
+  "six_suffix_reduction": "PROVED forANY possible late-Cfailure withu>=33 andOLDautomaticcomplementh<=3u-2: FIRSTnonbinaryprefixdegree>u mustfailseedcone ifr>=2; AT MOSTSIXnonbinaryfactorsfollowit. Ifcrossingprefixr1,AT MOSTONEfactorfollows. Fullcrossingprefix/binarycountremainUNBOUNDED; thisisNOTafinitecompletedverification. u9..32 remainsseparatefinitebinarycountcomplement; notclaimedclosed.",
+  "new_coverage_witness": {
+    "alpha": 1,
+    "u": 20,
+    "seed": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "appended": [
+      4,
+      9
+    ],
+    "full_V": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      9
+    ],
+    "oldW": 43,
+    "newW": 52,
+    "old_pair": [
+      5800311088,
+      9330207110
+    ],
+    "new_pair": [
+      494211001911,
+      682190901149
+    ],
+    "h": 37,
+    "final_count_cone_deficit": 51
+  },
+  "formal_scope": "TWENTY-FOUR NEW cleanstandardaxiomreports: whole ratio/mode/cumulativeprefix/first-crossing inductions,full finite-sum algebra,all-lengthhead/tailwindowmargin,lowgapordinaryseeds,uniformfamilyandSIXsuffixintegerguards. Actualrecurrence/support/mode/LCconvolution andwholewordassemblyWRITTEN,notend-to-end Lean actualcompositiontheorem. No sampled logical premise; finiteQAonly.",
+  "remaining": "Unseeded first-crossing entrance remains OPEN,asdoearlierC belowphysicaltail/fullA2/originalunamplifiedcoefficientUI. Inheritedhalfline startsFINALW+1; doesNOTclaimFINALWboundary. GeneralfullCfirstunresolvednononecount6unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "hereditary_strong_late_C_proof.tex": "88d7901139919938a40267da4b83fa0e08695b9adac62ac3854e4fd8ee92834f",
+    "HereditaryStrongLateC.lean": "3151706593379b0bb1b6c8e44cb5d8a9d175215b484495d51e325e52af2072f1",
+    "HereditaryStrongLateC.log": "4a576a8ded6274d392d40da94dbedc2ac6e17ace55a5d4d73b6337e43c0d5485",
+    "audit_hereditary_strong_late_C.py": "68902c3e87ddeab6c5536d1f18f5bf787bf4cb6ff52bba1bb0209923f13a825d",
+    "audit_hereditary_strong_late_C.json": "5eec42599b82bd18fee14bc22680c4d3129d9aa9ddd8fb225d52ca21203867bc",
+    "verify_hereditary_strong_late_C.py": "24cb162bb494cb894edb362e71ee23cd80afe0f6407e1601d0daa1a980df9953",
+    "joint_rising_differences.tex": "9d50ca67c3dcbd3f0080a061b8ec98fe6609eaf5e8e70e7b067a8cbaedcfb974",
+    "weaker_count_wedge_C_entrance_verification.json": "b58fbde9a382978065302bd2ea8d51f62ece82fa74e16ae32368f88e5d4f2c6d",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "triple_subdegree_C_entrance_verification.json": "9bead3ca6b964c931e5a0bb6a1ece20f8b965a3e690e30dc154c27326d10f392",
+    "four_subdegree_C_entrance_verification.json": "10fbbaf92959db642d74dfb169423162a37101f003f6c45b9565ebac99bda369",
+    "forward_D_single_plateau_verification.json": "f810b1a6eeaa370fc48272509c3844ba12941f526c13a914bf73dd817b5f3202"
+  }
+}

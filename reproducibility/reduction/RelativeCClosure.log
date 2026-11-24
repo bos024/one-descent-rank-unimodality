@@ -1,0 +1,7 @@
+'RelativeCClosure.positive_tilt_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeCClosure.rational_tilt_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeCClosure.twice_cumulative_universal_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeCClosure.low_threshold_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeCClosure.high_threshold_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeCClosure.complete_positive_kernel_tilt_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeCClosure.normalized_tilt_density_order' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,17 @@
+{
+  "status": "EXACT_QA_UNIVERSAL_RELATIVE_GOLDEN_HEAD_AND_DOMINANT_C_UNDER_AUDIT",
+  "counts": {
+    "arbitrary_ORDER_reference_entire_relative_head_q6_reads": 17850,
+    "exact_terminal_spectral_tail_normalization_reads": 2472,
+    "exact_prefix_minimum_all_shift_C_payments": 139647,
+    "logical_shift_coverage": 16593624,
+    "dominant_extended_FULL_reference_C_profiles": 70,
+    "all_binary_dominant_FULL_actual_C_hosts": 834,
+    "deficit_OR_small_count_ALL_mode_payments": 414,
+    "dominant_surplus_FULL_old_G_q2_payments": 461084,
+    "dominant_surplus_strict_actual_window_payments": 4589
+  },
+  "state_sha256": "5010f97ff6cab14ca25e0ec8da89ed4cceaeb171d3c7f50fb71f1321c044f520",
+  "seconds": 1.3430000000007567,
+  "scope": "UniversalALL-orderHprefix>=q6rho anduniformFULLCdominantappendt>=2oldNONBINARYweight. Arbitrarynumberofappendsbywritteninduction,no finite premise. GeneralnondominantC/A2/originalUIOPEN."
+}

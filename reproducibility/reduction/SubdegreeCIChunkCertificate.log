@@ -1,0 +1,3 @@
+'SubdegreeCIChunkCertificate.golden_fine_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubdegreeCIChunkCertificate.all_scalar_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SubdegreeCIChunkCertificate.complete_actual_startup_margins' does not depend on any axioms

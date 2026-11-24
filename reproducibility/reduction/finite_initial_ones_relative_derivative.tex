@@ -1,0 +1,109 @@
+\section{Finite initial ones give a decreasing relative derivative loss}
+Fix any formal capacity word $U=(t_1,\ldots,t_h)$, $t_i\ge2$,
+in arbitrary order. Put $[t]=1+\cdots+z^{t-1}$ and
+$S_t=z[t]$. Initial ones always have positive length $\alpha$.
+Let $a=d^\infty_U$ be the infinite-initial-ones shifted derivative
+from the center theorem, and let $d^\alpha_n=D_{n+2}(1^\alpha U)$.
+
+\begin{theorem}
+For every fixed $U$ with $h\ge1$,
+\[
+             d^\alpha_j a_i\le d^\alpha_i a_j\qquad(i<j).
+                                                               \tag{1}
+\]
+Thus $d^\alpha/a$ is nonincreasing on the support of $a$.
+In particular its first maximum is no later than the first
+maximum of $a$, and every adjacent growth ratio of the actual
+positive derivative is bounded by the corresponding ratio of $a$.
+Neither ordering of $U$ nor monotonicity of first missing weight
+is required.
+\end{theorem}
+\begin{proof}
+The exact signed source identity already proved gives
+\[
+ a=\sum_{i=1}^h A_i,\quad
+ A_i=[t_i-1]\prod_{j>i}S_{t_j},\qquad
+ K=z^{\alpha+h-1}\prod_{j=1}^h[t_j],\qquad
+ d^\alpha=(a-K)^+ .                                           \tag{2}
+\]
+For each $i$ cancel only the common interval convolution kernel:
+\[
+ A_i=C_i*[t_i-1],\quad
+ K=C_i*B_i,\quad
+ C_i=\prod_{j>i}S_{t_j},\quad
+ B_i=z^{\alpha+i-1}\prod_{j\le i}[t_j].                        \tag{3}
+\]
+On the entire support $[0,t_i-2]$ of $[t_i-1]$, the
+coefficients of $B_i$ are nondecreasing. Indeed its shift is
+nonnegative, and its factor $[t_i]$ cannot have an outgoing
+window term in this range. Convolving that factor with the
+other nonnegative interval factors therefore gives a cumulative
+sum there. Beyond that support the denominator vanishes.
+Consequently $B_i/[t_i-1]$ is increasing in the zero-extended,
+cross-multiplied likelihood-ratio sense.
+
+Every $C_i$ is a shifted product of interval kernels, hence
+has nonnegative order-two Toeplitz minors. Such convolution
+preserves the likelihood-ratio order. Applying it to (3)
+gives, for all $n<m$,
+\[
+                         K_n(A_i)_m\le K_m(A_i)_n .            \tag{4}
+\]
+Sum (4) over $i$ to obtain $K_n a_m\le K_m a_n$.
+Subtracting from the common product $a_na_m$ and taking
+positive parts proves (1). Zero coefficients cause no hole:
+$0\le d^\alpha\le a$, so outside the support all compared
+positive derivative coefficients vanish.
+
+The reference $a$ itself is unimodal: taking $\alpha$ larger
+than its finite support in (2) realizes it as the entire
+positive derivative of a finite formal arm. On and after
+the first maximum of this unimodal $a$, the
+product of its nonincreasing coefficients with the
+nonincreasing density in (1) is nonincreasing. If the maximum
+of $d^\alpha$ is positive, it was already attained by that
+reference mode; the zero case is immediate. This gives the
+mode assertion. The adjacent ratio assertion is just (1).
+\end{proof}
+
+This is a comparison to a reference derivative for the SAME
+fixed capacity word, stronger than the capacity-independent
+center bound. It does not compare the normalized own-cumulative
+C margins at different initial-one lengths. Such a monotone
+margin assertion is false on actual arms, as recorded previously.
+In particular this theorem does not reduce all finite-initial-ones
+C comparisons to their infinite-initial-ones limits, and it does
+not settle general C or original coefficient unimodality.
+
+\paragraph{A valid positive stage increment, and two invalid stronger readings.}
+For sorted capacities the infinite reference does increase
+coefficientwise under every legal append. Write
+$A_i=d^\infty_{(t_1,\ldots,t_i)}$ and
+$B_i=A_i-A_{i-1}$, $A_0=0$.
+If the old last capacity is $L$ and the next is $t\ge L$, then
+\[
+ B_{\rm new}=S_LB_{\rm old}
+       +z^{L-1}[t-L](1+z^2A_{\rm old}).
+\]
+This follows by subtracting
+$A_{\rm old}=[L-1]+S_LA_{\rm prev}$ from
+$A_{\rm new}=[t-1]+S_tA_{\rm old}$ and using
+$S_t-S_L=z^2([t-1]-[L-1])$.
+All terms are nonnegative by induction, starting with the
+first interval $[t_1-1]$. This also proves nondecreasing
+coefficients of the infinite-initial-ones newly added-word
+enumerator $1+(S_t-1)F^\infty_U$.
+
+This coefficient order is NOT a likelihood-ratio order in
+the append parameter. For $U=2^h$, $h\ge3$, and append three,
+the reference pairs at ranks one and two are
+$A=(1,2)$ and $A_{\rm new}=(2,2)$; the proposed decreasing
+old/new density would require $2\cdot2\le1\cdot2$, which is false.
+Nor is the cumulative of the infinite reference always LC:
+after this append its cumulative triple is $(3,5,9)$, with
+minor $-2$. Equivalently, the previously recorded ordinary
+$F-1$ witness $(4,6,10)$ already occurs on a finite prefix
+unaffected by initial-one truncation. It therefore also
+refutes an infinite-initial-ones LC shortcut. These are not
+counterexamples to C or original UI, and no new priority is
+claimed for that previously recorded scalar witness.

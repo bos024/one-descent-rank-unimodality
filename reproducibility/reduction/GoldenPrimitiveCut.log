@@ -1,0 +1,4 @@
+'GoldenPrimitiveCut.constant_cut_preserves_LC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenPrimitiveCut.signed_primitive_cut_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenPrimitiveCut.first_source_minor_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GoldenPrimitiveCut.second_source_minor_payment' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,226 @@
+\section{A weaker unbounded count cone with an earlier all-padding C entrance}
+For an actual normalized arm $1^\alpha2^uV$, let $V$ have $r\ge1$
+capacities at least three, $h=\sum(t-1)$, $W=h+r$, $w=u+r$, and
+$\delta=h-u$. We prove every C shift at least three at every current
+$N\ge W$ under
+\[
+               4w+30\ge13\delta,
+       \quad\hbox{equivalently }17u+4r+30\ge13h.       \tag{1}
+\]
+This enlarges the registered cone with constant seventeen and moves
+its entrance from $W+1$ to $W$. General earlier C, full A2 and the
+original unamplified coefficient-unimodality conjecture remain open.
+
+The one-factor family has registered complete C. The case
+$\delta\le4$ uses the registered all-padding halfline from $W-1$;
+$W\le32$ uses the registered complete nonbinary-weight32 theorem.
+Hence assume $r\ge2$, $\delta\ge5$, $W\ge33$, and put $n=\delta-2$.
+All parameters in this remaining case are unbounded.
+
+\subsection*{The two CI head growth rates}
+Put $q=\phi-1$, so $q^2+q=1$, and set
+\[
+ L=\prod[t],\quad E=(1+z)^uL,\quad
+ f_j=[z^j]E/(1+qz),\quad \rho=q^h|L(-\phi)|.
+\]
+There are exactly $w$ interval factors in $E$. The registered
+coefficientwise differential inequality gives
+$jE_j\ge(w-j+1)E_{j-1}$.
+Cone (1) gives $4w+4\ge13n$, so every ratio through $n$ is at
+least $\gamma=9/4$. It also gives
+\[
+                 8(w-n)\ge15(n+1).                 \tag{2}
+\]
+For $n\ge8$ use $4w\ge13n-4$; for $n\le7$ use $w+n+2=W\ge33$.
+Consequently $E_{n+1}\ge(15/8)E_n$. These are exhaustive integer
+alternatives. In particular the entire head through $n+1$ is
+nondecreasing. The registered divided-head induction therefore gives
+$0<f_j\le E_j$, $f_j=E_j-qf_{j-1}$ at all needed indices.
+The equivalent symmetric-middle guard $h\le3u+2$ also follows from
+(1), $2r\le h$ and $\delta\ge5$; it is kernel checked.
+
+\subsection*{A stronger resource from the existing reference amplification}
+Let $R$ be the same-tail infinite-BINARY reference, $g$ its cumulative,
+$x=D^{\rm ref}_W$, $y=D^{\rm ref}_{W+1}$, $P=\prod t$, and let $M$
+be its numerator mass. Registered exact identities give $0<M<P$,
+$y<\phi x$, $y\ge8x/5$, and
+\[
+ g_{W-4}=x-M+b_1,\quad g_{W-3}=y-M+1,
+ \quad D^{\rm ref}_{W-1}=y-x+1,
+\]
+where $b_1=r-\mathbf1_{t_1=3}\ge1$.
+The registered all-capacity $8/7$ amplification and positive-conjugate
+Binet formula imply
+$x\ge P(8/7)^W/(\phi\sqrt5)$.
+For every $W\ge17$, $(8/7)^W\ge585/64$, whereas
+$\phi\sqrt5\le117/32$. Hence $x\ge(5/2)P$ and
+\[
+                            M\le2x/5.              \tag{3}
+\]
+The inequality $P\ge W+3$ for two or more intervals of length at least
+three follows by a full finite-product induction. Thus $x\ge2P\ge40$.
+Using $q\le5/8$ gives
+\[
+ D^{\rm ref}_{W-1}\le(13/20)x,\quad
+ g_{W-4}\ge3x/5,\quad g_{W-3}\ge6x/5.               \tag{4}
+\]
+The reference cumulative has the registered dyadic UPPER growth
+$g_j\le2g_{j-1}$ and golden LOWER ratios $g_j>\phi g_{j-1}$.
+No cumulative LC of the actual arm is assumed.
+
+\subsection*{Exact finite padding increases the head golden gap}
+Write $\widetilde D_N=F_N-F_{N-1}$ for signed ordinary differences and
+$D_N=\max(\widetilde D_N,0)$. Infinite INITIAL padding here keeps $u$
+fixed. The exact physical inverse, including its previous numerator
+unit, gives
+\[
+ \phi D^\infty_{W-1}-D^\infty_W=C_0+f_n,
+ \quad \phi D^\infty_W-D^\infty_{W+1}=\phi\rho+f_{n+1},
+ \quad C_0=\phi-\phi^2\rho\ge q^5>0.                \tag{5}
+\]
+Finite padding subtracts its shifted $E$ coefficient from each signed
+derivative. Therefore its golden correction at any read is
+\[
+                         E_j-\phi E_{j-1},          \tag{6}
+\]
+with negative coefficient indices zero. This sign is essential.
+All head ratios read in (6) exceed $\phi$, including the last
+$15/8$ ratio, so every correction is nonnegative.
+From $f_n\ge E_n-qE_{n-1}$ and $q\le5/8$ one obtains the uniform
+physical-$W$ bound
+\[
+ \phi\widetilde D_{W-1}-\widetilde D_W
+                         \ge(13/8)E_{n-1}.         \tag{7}
+\]
+At current $W+1$, put $a=D_W$, $b=D_{W+1}$, $\Gamma=\phi a-b$ on
+the positive current pair. With $E_p=E_{n-1}$, $E_c=E_n$, the exact
+next-head bound and (6) give
+\[
+ \Gamma\ge(5/4)E_c\quad\hbox{for every padding}.     \tag{8}
+\]
+At $\alpha=1$ its extra term is $E_{n+1}-\phi E_n\ge E_n/4$;
+at $\alpha=2$ it is $E_n-\phi E_{n-1}\ge5E_{n-1}/8$. Hence
+\[
+ \alpha=1:\ \Gamma\ge(3/2)E_c,\qquad
+ \alpha=2:\ \Gamma\ge(5/4)E_c+(5/8)E_p.             \tag{9}
+\]
+No relative-LC hypothesis for finite/infinite padding is used.
+
+\subsection*{Two complete prefix inductions bound the full loss}
+The exact derivative loss relative to $R$ is
+$\ell=E(H_2+z^{\alpha-1})$, with $H_2=(1-z-z^2)^{-1}$.
+Let $S$ be its cumulative and $T$ the cumulative of $S$.
+The response $H=EH_2$ satisfies
+$H_j=E_j+H_{j-1}+H_{j-2}$.
+Induction over every needed prefix, using $E_{j-1}\le4E_j/9$ and
+$E_{j-2}\le16E_j/81$, proves $H_j\le81E_j/29$.
+The shifted $E$ term is at most $E_j$, so $\ell_j\le110E_j/29$.
+A second full prefix induction in $S_j=S_{j-1}+\ell_j$ proves
+\[
+                            S_j\le198E_j/29.        \tag{10}
+\]
+Both inductions are kernel checked for arbitrary prefix length. If a
+current positive derivative pair is increasing, $\lambda=b/a>1$,
+then $T_j-\lambda T_{j-1}\le S_j$.
+
+\subsection*{Pay every read at current $W$ and the C reads at $W+1$}
+At current $W$, every unprotected C read is $k=W-d$ with $d\ge3$,
+$j=k-(w+2)=n-d\ge0$. Its previous actual derivative is no larger
+than $D^{\rm ref}_{W-1}$. From (4), dyadic upper growth, and (7),
+\[
+ { (\phi D_{W-1}-D_W)g_{k-1}\over D_{W-1}}
+ \ge {13\over8}{12\over13}
+       {\gamma^{d-1}\over2^{d-3}}E_j
+ \ge {243\over32}E_j>{198\over29}E_j.                \tag{11}
+\]
+Here $E_{n-1}\ge\gamma^{d-1}E_j$ by an all-interval growth induction;
+the distance multiplier increases by $9/8$. The exact last difference
+in (11) is $711/928>0$. Equation (10) pays the full double cumulative
+loss, while the reference golden ratio adds another nonnegative term.
+Protected reads are immediate. Decreasing/clipped current pairs are
+also immediate by nonnegative cumulatives and actual slope support.
+This proves every C shift at current $W$.
+
+For current $W+1$, write $k=W+1-d$, $d\ge3$, so $j=n+1-d$.
+Now $a\le x$ and $g_{W-3}\ge6x/5$. Replacing the two first factors
+in (11) by $(5/4)(6/5)$, and using (8), gives the SAME $243/32$
+payment. Thus every actual $G_k\ge\lambda G_{k-1}$ through $k\le W-2$
+is established. The last two strong-prefix reads require the next step.
+
+\subsection*{Two source-paid ordinary seeds complete the entrance}
+Put $e_0=\phi F_{W-1}-F_W$ and $e_p=\phi F_{W-2}-F_{W-1}$.
+The exact infinite-padding formulas are
+\[
+ e_0^\infty=U_n-\rho,\qquad
+ e_p^\infty=U_{n-1}-\phi(1-\rho),\quad
+ U_j=q\sum_{i\le j}E_i+q^2f_j.
+\]
+CI geometric growth gives $\sum_{i\le j}E_i\le9E_j/5$, hence
+$U_j\le3E_j/2$. This prefix induction and kernel bound are formalized.
+The ordinary finite-padding correction is $E_j-q\sum_{i<j}E_i$,
+with indices $j=n+1-\alpha$ and $n-\alpha$ at the two reads.
+For $\alpha=1$ the cumulative terms cancel exactly; for the other
+paddings use the appropriate one- or two-step CI ratio. This gives
+\[
+\begin{array}{c|cc}
+ &e_0&e_p\\\hline
+\alpha=1&2E_c&2E_p\\
+\alpha=2&(35/18)E_c&(35/18)E_p\\
+\alpha\ge3&(35/18)E_c&(275/162)E_p
+\end{array}                                                     \tag{12}
+\]
+as upper bounds.
+
+Only $b>a>0$ requires an entrance. The registered actual ordinary
+golden ceiling at $W$ gives $F_{W-1}\ge\phi a$. Actual positive-D
+unimodality gives $D_{W-1}\le a$ in this strictly growing-entry case,
+so $F_{W-2}\ge q a$. Use $\phi\ge8/5$, $q\ge8/13$ and
+$E_c\ge9E_p/4$ in (8)--(12). In all three padding cases,
+\[
+                         \phi\Gamma>e_0,
+                           \qquad q\Gamma>e_p.       \tag{13}
+\]
+For example the smallest previous-seed margin, in the third case,
+is $(45/26-275/162)E_p=(35/1053)E_p>0$.
+Thus both actual ordinary determinants are positive:
+\[
+ aF_W-bF_{W-1}=F_{W-1}\Gamma-ae_0>0,
+\]
+\[
+ aF_{W-1}-bF_{W-2}=F_{W-2}\Gamma-ae_p>0.             \tag{14}
+\]
+The paid $G$ comparison at $W-2$ and the second inequality in (14)
+give $G_{W-1}\ge\lambda G_{W-2}$; the first then gives
+$G_W\ge\lambda G_{W-1}$. Every strong-prefix read through $W$,
+and the ordinary seed at $W$, are now paid.
+
+The registered universal pre-first-mode D-LC integrates these seeds
+to every later C comparison. At a later strictly growing current use
+its OWN ratio $\lambda_N\le\lambda$, with every earlier positive
+tail ratio at least $\lambda_N$. The difference
+$F_j-\lambda_NF_{j-1}$ is then nondecreasing from its positive seed;
+the same holds after one further summation for $G$. Earlier prefix
+reads were already paid with the larger entrance ratio. On and after
+the first D mode C is immediate. If the entrance pair is flat,
+pre-mode D-LC excludes a later increase; ordinary D-UI alone is not
+used to exclude a pre-mode flat. This completes the entire halfline.
+
+\subsection*{Uniform consequences and exact scope}
+If $\delta\le9$ and (1) fails, then $W\le30$. The old weight32
+theorem therefore gives, with (1), EVERY actual C comparison at every
+$N\ge W$ for ALL $u\ge h-9$. No new finite entrance is introduced.
+The registered all-shift boundary at $W-1$ when $u\ge h-5$ now gives
+the continuous C halfline $N\ge W-1$ at ALL $u\ge h-5$. This closes
+the previously retained $u=h-5$, current-$W$ gap.
+
+Two standalone Lean files check twenty-eight scoped reports, including
+complete arbitrary-prefix renewal, cumulative-loss, CI-prefix and
+geometric-growth inductions, a finite-product induction, all three
+padding budgets, full read-payment algebra and all-integer cone guards.
+The exact actual/reference/root/CI source identifications and complete
+sequence/mode assemblies are the written proof above; there is no
+end-to-end Lean theorem for actual arms. Every new finite profile is
+QA only; the old reference exception certificates and weight32 theorem
+are reused with their previous scope and are not recounted.
+General earlier C, the complementary count region, full A2 and original
+unamplified coefficient unimodality remain OPEN.

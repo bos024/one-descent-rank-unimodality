@@ -1,0 +1,152 @@
+{
+  "status": "PASS_ALL_BINARY_TERNARY_ACTUAL_COMPLETE_C_AND_SHARP_ORDINARY_LC_CLASSIFICATION",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "AllBinaryTernaryCompleteC": {
+      "AllBinaryTernaryCompleteC.universal_binary_seed_two_ordinary_entrances": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.unbounded_first_degree_crossing_seed_guards": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.exact_small_binary_fixed_six_padding_clamp": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.deficit_stationary_three_induction": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.exhaustive_all_count_C_union": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.sharp_surplus_boundary_read_guards": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.whole_reference_binary_tail_polynomial_identity": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AllBinaryTernaryCompleteC.whole_even_fibonacci_Cassini": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "AllBinaryTernaryOrdinaryBase": {
+      "AllBinaryTernaryOrdinaryBase.complete_fixed_six_small_binary_ordinary_entrance": [
+        "propext"
+      ]
+    }
+  },
+  "theorem": "EVERYACTUALnormalized1alpha2u3r,ALLalpha>=1/u>=0/r>=0:FULLC EVERYcurrent/EVERYshift>=3. BOTHcounts/padding/ranks/shiftsUNBOUNDED. Formeru<=32richrestrictionREMOVED;ALLr2u/u>=33ordinarydiagonalCLOSEDbyWEAKERroute. No strongD-minorclaim.",
+  "ordinary_classification": "EXACTIFFforALLr>=6/u>=1/alpha>=1:ENTIREordinaryFLCfromcentreA=r+3 IFFu<=2r. ALLdeficitu<2rbyfirstdegreecrossing+heredity;u2rbyOLDsurplusentryatW+1andNEWreferenceprefixthroughW.",
+  "sharp_complement": "EVERYACTUAL1alpha2u3r,ALLr>=6/u>=2r+1/alpha>=1:atcentreW+1=3r+1ordinaryminorEXACT-4^r<0. Protectedtriple2^r*(Fib(2r+1),Fib(2r+2),Fib(2r+3)). WholeCommRingC_r=(2z)^r+Q2J_r andwholeevenCassiniinductionkernelchecked. ThisdoesNOTrefuteC/UI.",
+  "analytic_entrance": "EVERYu>=10,chooseFIRSTdegreecrossingr0=floor(u/2)+1>=6,u\u2208{2r0-2,2r0-1}. ActualFfirstdiffersfrominfinitebinaryreferenceatu+r0+2>=W,soALLordinarycentresA..W-2protected. NEWreferenceLCpays;OLDuniversalACTUALordinaryLCfromW-1(u>=5,h2r0>u)paysALLlatercentres. EXACTjoinwithNOgapandALLalpha;NOunboundeddiagonalpremise.",
+  "hereditary": "UNIFORMALLu>=1/r>=6/alpha:ordinaryFLCtailfromr+3HEREDITARYappend3. Binaryseedheadlossesa>=1,b>=2,c>=5 KEPTWITHfinitepadding. Newfirst3lossesa,ar+b,ar(r+1)/2+br+c. BOTHleftminorspaidfornewr>=7byB-4a-1>=0/C-4B-1>=0 andactualnextF>=0. RemainingALLcentresbyLCpositive3windowofoldtail. No modecrossing/infinitephaseomission.",
+  "entrance": "COMPLETE74hosts:u1..9,r6,ALLalpha1..6+floor(u/2),ALLordinarycentres9<=n<FIRSTDmode. 753INTEGERminors/296uniquemargins/2LeanchunksONEaggregate. ALLlargerpaddingEXACTprefixrepresentedthroughB=floor((3u+24)/2);ordinaryLCafterFIRSTDmodeOLDautomatic. SoleNEWfinitepremise;NOTparameterQA.",
+  "formal_scope": "EIGHTnewcleanstandardaxiomgenericreports+ONEaggregateCOMPLETEfiniteordinaryentrance. IncludesFULLtwo-parameterfirstdegreecrossingseed+unboundedrinduction,WHOLEpolynomialidentityandWHOLEevenCassiniinduction. Actualcoefficient/source/old-newtailjoin/CassemblyWRITTEN,notendtoendLeancompositions. OLDuniversalsharpW-1/surplus/automaticpostDmode/newreferenceC/ordinary-to-CresourcesREUSED/NOTrecounted.",
+  "remaining": "ORIGINALgeneralone-descentUI/generalCwitharbitrarycapacities/fullA2remainOPEN. ALLactualbinary/ternaryarmsC NOWPROVED. TheoldstrongD-minordiagonalu>=33notneeded/notasserted. Highercapacitymixedtailsandrelevantoriginalincoming/mixedsourcebranchesremain.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "all_binary_ternary_C": "PROVED",
+  "counts": {
+    "COMPLETE_independent_fixed_six_smallu_hosts": 74,
+    "COMPLETE_independent_ordinary_PRE_Dmode_minors": 753,
+    "independent_exact_SMALLu_largepadding_prefix_controls": 9,
+    "independent_PROTECTED_early_ordinary_seed_minors": 6690,
+    "independent_UNIVERSAL_Wminus1_ordinary_seed_minors": 18935,
+    "independent_first_degree_crossing_JOIN_hosts": 165,
+    "independent_ALL_count_actual_suffix_box_hosts": 1711,
+    "independent_ALL_actual_all_shift_prefix_payments": 144535,
+    "independent_ALL_actual_logical_shift_reads": 14389781,
+    "independent_ENTIRE_ordinary_LC_classification_minors": 171454,
+    "independent_EXACT_negative_four_power_actual_controls": 269
+  },
+  "QA": {
+    "ACTUAL_ALL_binary_ternary_count_hosts": 2750,
+    "exact_prefix_minimum_all_shift_C_payments": 281851,
+    "logical_shift_coverage": 35677023,
+    "ACTUAL_ENTIRE_ordinary_LC_tail_minors_when_u_le_2r": 325194,
+    "sharp_classification_positive_hosts": 1995,
+    "ACTUAL_EXACT_negative_four_power_classification_hosts": 421,
+    "EXACT_first_degree_crossing_ENTIRE_ordinary_LC_seed_minors": 44225,
+    "unbounded_seed_grammar_QA_hosts": 225
+  },
+  "independent_state_sha256": "b8cf80c8bc9f3bf982b24375ddc16833abbd9dd8fcbfa7c680c4e7c07c064138",
+  "seconds": 4.171999999998661,
+  "local_files": [
+    "all_binary_ternary_complete_C_proof.tex",
+    "AllBinaryTernaryCompleteC.lean",
+    "AllBinaryTernaryCompleteC.log",
+    "AllBinaryTernaryOrdinaryBase.lean",
+    "AllBinaryTernaryOrdinaryBase.log",
+    "build_all_binary_ternary_ordinary_base.py",
+    "all_binary_ternary_ordinary_base_data.json",
+    "audit_all_binary_ternary_complete_C.py",
+    "audit_all_binary_ternary_complete_C.json",
+    "verify_all_binary_ternary_complete_C.py"
+  ],
+  "dependency_files": [
+    "stationary_ternary_reference_C_verification.json",
+    "stationary_ternary_reference_and_binary_dense_C_proof.tex",
+    "sharp_previous_ordinary_LC_verification.json",
+    "sharp_previous_ordinary_LC_proof.tex",
+    "universal_late_C_first_crossing_verification.json",
+    "surplus_ordinary_tail_LC_guard_refinement.tex",
+    "ordinary_tail_to_complete_C_verification.json",
+    "ordinary_tail_to_complete_C_proof.tex",
+    "OrdinaryTailToCompleteC.lean",
+    "OrdinaryTailToCompleteC.log",
+    "pure_ternary_complete_C_verification.json",
+    "multitail_binary_prefix_finite_principle_verification.json",
+    "sharpened_forward_derivative_centers.tex",
+    "prefix_tp2.tex",
+    "formal_arm_extensions.tex",
+    "TernaryRichCompleteC.lean",
+    "TernaryRichCompleteC.log",
+    "verify_subdegree_CI_entrance.py",
+    "verify_stationary_ternary_reference_C.py"
+  ],
+  "sha256": {
+    "all_binary_ternary_complete_C_proof.tex": "f44f9d26f2e431c9e44a97c6b378b0f1f908027e6d2cb120bada838b79e14f30",
+    "AllBinaryTernaryCompleteC.lean": "b02c9796d078c974f09a2498191d969f850a4da2e534d0beb2fa47b259a82d83",
+    "AllBinaryTernaryCompleteC.log": "5e758bf7efd3a2104583be71a14a0ca53ce1617ce969f401ca8adf7c3b55ccc4",
+    "AllBinaryTernaryOrdinaryBase.lean": "e23ef37f725a94bb97ae1b2d6a520fee500ea2f0c932d428abef766304059842",
+    "AllBinaryTernaryOrdinaryBase.log": "131d288240d1232855d487930b0361a6e4125c6fcfebc478cae2b30d7bca9df6",
+    "build_all_binary_ternary_ordinary_base.py": "6bc9ef4514beca534c16e7fae72c91f4f6427533515ffa451d2ed21877540a2f",
+    "all_binary_ternary_ordinary_base_data.json": "eca6bd5b16a405bcdb2d8dfd69ec67d7fa5de05b319dcc9c35628b0580e557d4",
+    "audit_all_binary_ternary_complete_C.py": "f93e2ae6df4d5a7755c645ac10fca87345224a1a41b47bf14714edbac0e09b89",
+    "audit_all_binary_ternary_complete_C.json": "bdccf7b7be8770d8ece91d27f2a803aad098a23da11042ffff65c2b9ad00a166",
+    "verify_all_binary_ternary_complete_C.py": "7a72f0665db0c83e16de63c99a3d99f9a9344a8f6b98eaa9b5cfff9a18838601",
+    "stationary_ternary_reference_C_verification.json": "2103e3b7236d455af1773bbb081ceda423679fbdc49d481ea01ea2bf9f75070f",
+    "stationary_ternary_reference_and_binary_dense_C_proof.tex": "4a16936d3517b631109c091162ad477a8cc4dc54d746f7abfc99241bbb586f47",
+    "sharp_previous_ordinary_LC_verification.json": "1efe9d02762d7bf2f0d24ec733acdb0e42241044773815b322b8d71f47d2206b",
+    "sharp_previous_ordinary_LC_proof.tex": "ed24504c0c2c3110178d277d2dec27c899b9327f94b5b58de4e3e43ec52adc30",
+    "universal_late_C_first_crossing_verification.json": "296b1a464749dd0b51565af2f194fb512f4f2d85122152a3c5067f45469ad548",
+    "surplus_ordinary_tail_LC_guard_refinement.tex": "caffb8a8ac6e99a705d79a5b124586dd50dffd0cd05fcfb7ce0e5340620b9020",
+    "ordinary_tail_to_complete_C_verification.json": "1c7d690723e8640a87ccea1684155ec680fc4e83f102cba11590273f74ed7b85",
+    "ordinary_tail_to_complete_C_proof.tex": "a39333b1e5da9abddb76ed3832a4d074eb047d4bf8a5b51983dfb8d5e347ee2a",
+    "OrdinaryTailToCompleteC.lean": "ce6407b97ac6a0554067c5a04ba6bbacf912fd65a1187788536045dfff02a8fb",
+    "OrdinaryTailToCompleteC.log": "caf50f66758fd1c15ddfe06d8bdbd5aa1246c073df2b2bdb056b68a7c1001057",
+    "pure_ternary_complete_C_verification.json": "40e32acbadd64b8af2cdcf56fb65ec49fd69f275dcf78590a5cee845080de57e",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "sharpened_forward_derivative_centers.tex": "4b3866335d12280de1bceb86a0e97b6c18eb1463dbc2da56b6a1adbecb589f87",
+    "prefix_tp2.tex": "e48c4f5f63a28bab3a6b3b0e29ca59f37aa618be289356b787544840fdcf0530",
+    "formal_arm_extensions.tex": "d58c5585836f0315bcf8d6d1b9ce63af28663af1149f46b5db2b8228a7ab01e8",
+    "TernaryRichCompleteC.lean": "cb6a22a0a007c8989acc75cbf6388452c14e3479386abcd5e8e45868c667d36f",
+    "TernaryRichCompleteC.log": "f083599130ded5381703697b522d63da8611b557f4a8d83d9147e42c2263df5e",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "verify_stationary_ternary_reference_C.py": "4b5f98144eba077df388f5bdf08eafdd990dce6eab7dafd8b28a07ed35ed776b"
+  }
+}

@@ -1,0 +1,80 @@
+% Conditional general route; A2 remains open. The other premise is automatic
+% at a least relative counterexample, by inductive_signed_window.tex.
+\section{Two weaker premises for the general base-peak join}
+The complete binary theorem suggests a route to the unrestricted
+problem, but its original geometric premise is false for general arms.
+For example take
+\[
+ X=1^{128},7,\qquad Y=1^{40},4,5,5,9,12,15,16,\qquad M=33.
+\]
+The arm weights are $135,106$, so this lies in the balanced band,
+and $N=274>3M+8$. The first reverse mode of $P=F_XF_Y$ is
+$s=112$. Its positive reverse differences at ranks $104,105,106$
+are exactly $254,127,64$. For every $127/64<\lambda<2$, their
+geometrically weighted values have a strict valley. In particular
+this holds at $\lambda_{33}$: the first seven inverse powers of
+$127/64$ already sum to more than one. Thus the binary weighted
+lemma cannot simply be asserted for arbitrary arms.
+
+There is a weaker conditional replacement. Write $q$ for the
+reverse ordinary product, $s$ for its first mode, and
+$d_j=\max(q_j-q_{j-1},0)$. Consider:
+\begin{enumerate}
+\item the sequence $2^jd_j$ is unimodal;
+\item $([M]-z^M)d$ has no negative-to-positive coefficient change
+through rank $s$.
+\end{enumerate}
+Both statements remain unproved independently for arbitrary increasing arms.
+However, the second is now automatic at a least relative counterexample,
+by the proper-relative prefix lemma in
+\texttt{inductive\_signed\_window.tex}. Thus only the first requires
+a new universal structural proof in this induction route.
+The finite diagnostics recorded here satisfy even the stronger
+version of the second statement over its entire support.
+
+\begin{proposition}[Conditional general propagation]
+Assume these two properties for the given increasing arms and
+strict peak $M$. If $2\le t<M$ and
+$J_t=A+B+(S_t-1)AB$ is unimodal, then the balanced core
+$H_M=A+B+(S_M-1)AB$ is unimodal whenever $|\deg A-\deg B|<M$.
+\end{proposition}
+\begin{proof}
+Put $w=([M]-z^M)q$ and choose a mode $\ell$ of $2^jd_j$.
+Through rank $s$, its difference sequence agrees with
+$([M]-z^M)d$, so the second premise gives single crossing.
+For $n=M+k$ in the crossing range $k+M\ge s$, $k<\ell$,
+the first premise gives $d_{k+1}\ge d_k/2$. Therefore
+$q_k+d_k$ is nondecreasing and $q_{k+M}$ is nonincreasing,
+making $\Delta w_{M+k}=q_{k+M}-q_k-d_k$ nonincreasing.
+For $\ell\le k<s$, the same premise instead gives
+\[
+ \Delta w_{M+k}\le d_k\left(\sum_{i=1}^M2^{-i}-1\right)
+                    =-2^{-M}d_k\le0.
+\]
+At $k=s$ this difference is again nonpositive. Thus the reverse
+core has the needed single crossing through rank $M+s$.
+
+The rest is the same base-peak join as in the binary theorem.
+If a remaining reverse rank $M+s<n\le\lfloor N/2\rfloor$
+exists, then $p=D-s>\max(\deg A,\deg B)$. Hence
+\[
+ \Delta J_t(p+1)=2P_p-P_{p+1}-P_{p-t}>0.
+\]
+Its unimodality gives growth through $p+1$. The identity
+\[
+                      H_M=J_t+z^{t+1}[M-t]P
+\]
+then gives $\Delta H_M(j+1)=\Delta J_t(j+1)+P_{j-t}-P_{j-M}
+\ge0$ at every corresponding $j=N-n<p$.
+Forward first-half growth completes the proof.
+\end{proof}
+
+If the first structural premise can be proved for every increasing-arm
+pair, choose a least-peak, least-relative counterexample. Its proper
+relative deletion supplies the second premise. This would finish the
+general conjecture. Indeed take $t$ to be the largest
+arm part. Removing occurrences of $t$ from the ends of the two arms
+repeatedly gives $J_t=1+S_tJ_t^{\rm smaller}$; the remaining core
+has strict peak $t<M$, so the induction hypothesis supplies its
+unimodality. This conditional reduction is not a proof that either
+structural premise holds.

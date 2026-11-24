@@ -1,0 +1,127 @@
+\section{An exact renewal envelope from the first missing weight}
+Let $q\ge2$, $S_q=z+\cdots+z^q$, and define
+\[
+ H_q(z)=\frac1{1-S_q(z)},\qquad
+ G_q(z)=\frac1{(1-z)(1-S_q(z))},\qquad
+ b_q(z)=(1-z^{q-1})G_q(z)=\frac{[q-1]}{1-S_q(z)}.
+\]
+Thus $H_q$ counts all words with parts at most $q$, and $G_q$
+is its forward cumulative sequence. All coefficients of $G_q$ are
+positive integers and nondecreasing.
+
+\begin{lemma}[Log-concavity of the renewal cumulative]
+The sequence $G=G_q$ is log-concave at every rank.
+\end{lemma}
+\begin{proof}
+Its initial values are $G_n=2^n$ for $0\le n\le q$, followed by
+$G_{q+1}=2^{q+1}-1$. The generating function gives
+\[
+                 G_{n+1}=2G_n-G_{n-q}\qquad(n\ge q).
+\]
+The first $q-1$ log-concavity minors vanish and the rank-$q$ minor
+is $2^{q-1}$. At every $n\ge q+1$ the minor equals
+\[
+ G_n^2-G_{n-1}G_{n+1}
+       =G_{n-1}G_{n-q}-G_nG_{n-q-1}.
+\]
+By induction the earlier adjacent ratios are nonincreasing, so
+$G_{n-q}/G_{n-q-1}\ge G_n/G_{n-1}$. This pays the displayed
+minor and proves the unbounded induction. No log-concavity of
+the actual arm's forward cumulative sequence is assumed.
+\end{proof}
+
+\begin{corollary}[Own-cumulative C for the untruncated alphabet reference]
+For every $q\ge2$, the infinite word enumerator $H_q$ itself
+satisfies property C at every shift $r\ge3$.
+This is a statement about the infinite alphabet-restricted
+reference, not every finite composition host.
+\end{corollary}
+\begin{proof}
+Its shifted positive derivative is
+$d_j=[z^j][q-1]H_q=G_q(j)-G_q(j-q+1)$.
+Put $k=q-1\ge1$ and abbreviate $G=G_q$, with zero extension.
+For $j\ge1$, its shift-three C minor has the exact decomposition
+\[
+\begin{split}
+ G_jd_j-G_{j-1}d_{j+1}
+ &=\{G_j^2-G_{j-1}G_{j+1}\}\\
+ &\quad+\{G_{j-1}G_{j+1-k}-G_jG_{j-k}\}\ge0.
+\end{split}
+\]
+The first bracket is the already proved cumulative-LC minor.
+The second is nonnegative by the same decreasing adjacent
+ratios, with earlier zero indices handled directly.
+When $k=1$ it vanishes identically.
+The initial rank $j=0$ is immediate. Finally cumulative
+log-concavity makes the earlier denominator ratio for every
+$r>3$ at least the shift-three ratio, proving all shifts.
+The generic ratio-chain argument is already kernel checked
+in \texttt{FirstMissingRenewalEnvelope.lean}; no new separate
+end-to-end renewal/composition formalization is claimed here.
+\end{proof}
+
+\begin{theorem}[First-missing relative envelope]
+Let $X$ be an actual nonrectangular increasing arm, let
+$\kappa\ge3$ be its first missing composition weight, and put
+$q=\kappa-1$. Then, with
+$d_n=((F_X)_{n+2}-(F_X)_{n+1})^+$,
+\[
+                         \frac{d_n}{G_q(n)}
+                    \quad\text{is nonincreasing in }n.       \tag{1}
+\]
+The same conclusion holds on any larger formal arm class on which
+the already proved second-positive-difference source bound and
+the ordinary positive-difference unimodality hold.
+In particular, $d_n\le G_q(n)$ and its positive adjacent ratios
+are bounded by the explicit decreasing ratios $G_q(n)/G_q(n-1)$.
+These tend to the unique positive root $\rho_q$ of
+$\rho_q^{-1}+\cdots+\rho_q^{-q}=1$.
+For $\kappa=3$, $G_2(n)=F_{n+3}-1$, giving an envelope that does
+not depend on any capacity count or upper bound.
+\end{theorem}
+\begin{proof}
+Set $w_n=(d_n-d_{n-1})^+$, with $d_{-1}=0$, and
+$a_n=\sum_{i\le n}w_i$. By the proved shifted second-difference
+source theorem,
+\[
+            v=(1-z^{q-1})-(1-S_q)w\quad\text{has }v_i\ge0.
+\]
+Dividing this exact formal-power-series identity by
+$(1-z)(1-S_q)$ gives
+\[
+                      a=b_q-G_qv.                            \tag{2}
+\]
+Log-concavity of $G_q$ means that each ratio
+$G_q(n-i)/G_q(n)$, with negative indices set to zero, is
+nondecreasing in $n$. Moreover
+$b_q(n)/G_q(n)=1-G_q(n-q+1)/G_q(n)$ is nonincreasing.
+Equation (2), with every $v_i\ge0$, therefore proves that
+$a_n/G_q(n)$ is nonincreasing. Every coefficient comparison
+involves only a finite sum, so no convergence issue arises.
+
+The already proved unimodality of the positive derivative $d$
+means that $a=d$ through its first maximum and $a$ stays constant
+afterwards. Up to that maximum use the preceding relative bound;
+afterwards $d$ is nonincreasing while $G_q$ is nondecreasing.
+This proves (1), including its joining edge. The root limit follows
+from the elementary finite-order positive renewal recurrence.
+\end{proof}
+
+\paragraph{Exact scope and a new obstruction.}
+This comparison does not prove the own-cumulative property C.
+Indeed take $q=2$ and the nonnegative single renewal loss $v=z^3$.
+The nondecreasing integer sequence
+\[
+       d_n=b_2(n)-G_2(n-3)
+\]
+has nonnegative renewal-source loss exactly $z^3$. Reconstruct
+$F_0=F_1=1$, $F_{n+2}=F_{n+1}+d_n$, and $C_n=\sum_{i\le n}F_i$.
+At $n=8$,
+\[
+                    d_8C_6-d_7C_7=19>0,
+\]
+so $d_n/C_{n-1}$ increases. This is an abstract source-admissible
+sequence, not a claimed actual arm. It proves that the new
+second-difference source and renewal envelope alone cannot close
+property C. Actual word coupling must still be retained.
+General original unamplified coefficient unimodality remains OPEN.

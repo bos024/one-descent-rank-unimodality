@@ -1,0 +1,26 @@
+{
+  "status": "EXACT_QA_PASS_ACTUAL_THREE_FOUR_SURPLUS_COMPLETE_C_FULL_A2_AND_ORIGINAL_FAMILY",
+  "counts": {
+    "actual_ENTIRE_ordinary_tail_minors": 214046,
+    "actual_complete_C_worst_prefix_checks": 300405,
+    "actual_complete_C_logical_ALLshift_comparisons": 62458278,
+    "actual_complete_C_hosts": 861,
+    "EXACT_TRUE_cumulativeE_degreeONE_source_reads": 1405,
+    "EXACT_ACTUAL_lambda_source_EQUALS_TWO_term_V_reads": 1397,
+    "WHOLEcumulativeQ_LC_model_reads": 1389,
+    "EXACTphysical_model_contexts": 8,
+    "actual_FULL_A2_pairs": 66,
+    "actual_Q_guarded_tail_edges": 7036,
+    "ENTIRE_signed_source_windows": 300,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 60,
+    "NEW_A6_mixed_ORIGINAL_ORIGINAL_cores": 120,
+    "NEW_A6_mixed_ORIGINAL_BOTH_relative_polynomials": 240,
+    "NEW_A6_mixed_ORIGINAL_coefficient_comparisons": 74712,
+    "NEW_A6_one_heavier_append_ORIGINAL_ORIGINAL_cores": 6,
+    "NEW_A6_one_heavier_append_ORIGINAL_BOTH_relative_polynomials": 12,
+    "NEW_A6_one_heavier_append_ORIGINAL_coefficient_comparisons": 3801
+  },
+  "state_sha256": "8db82bff0366cbd7e3397b90f5959bdcffac1f3fd8cdc44457290fa104a110cb",
+  "seconds": 2.186999999990803,
+  "scope": "ALLalpha>=1,r>=32,r>=3s+8 ACTUALcompleteC+ENTIREordinarytailfromr+s2 analyticallyprovedbyTRUEcumulativeQcutwith[2]futurefactor/degreeONEremainder/physicalj0. A6deletionclosed+kappa5givesFULLA2/ORIGINALcoreBOTHrelativesANYstrictpeak+ONEheavierappend. Generaloriginal/C/A2/ALLmixedoutsideconeOPEN. TestsQAonly."
+}

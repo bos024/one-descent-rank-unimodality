@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXACT_HOMOGENEOUS_REFERENCE_C_AND_SHARP_ENTRANCE_QA",
+  "counts": {
+    "all_capacity_relative_spectral_norm_steps": 26348,
+    "exact_binary_cumulative_vs_reference_slope_determinants": 48000,
+    "exact_homogeneous_relative_amplitude_budgets": 43928,
+    "all_read_binary_cumulative_envelopes": 841797,
+    "exact_prefix_minimum_all_shift_C_payments": 205644,
+    "logical_shift_coverage": 35797904,
+    "literal_all_shift_C_products": 228673,
+    "independently_rebuilt_arbitrary_order_reference_words": 4000,
+    "finite_only_sharpened_rising_tail_LC_minors": 66730,
+    "exact_new_ordinary_and_cumulative_integration_steps": 2465104,
+    "sharpened_actual_contexts": 1200
+  },
+  "state_sha256": "1e1a3766808ec64213c5e7854c09d36407e30a6a0e55e9a29ccac5ae2630172d",
+  "seconds": 6.218999999999994,
+  "written_theorems": [
+    "homogeneous_reference_complete_C.tex",
+    "sharpened_multitail_single_entrance.tex"
+  ],
+  "scope": "Unbounded written theorem with scoped Lean kernels. QA independently rebuilds reference coefficients. Arbitrary CI entrance LC remains OPEN; tested actual LC is finite diagnostic only. General C/A2/original UI remain OPEN; no original least-counterexample bound upgrade."
+}

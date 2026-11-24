@@ -1,0 +1,268 @@
+{
+  "status": "PASS_SECOND_EARLIER_REFERENCE_AND_ACTUAL_C_BOUNDARY_AND_EIGHT_GAP_COROLLARY",
+  "new_scoped_reports": 23,
+  "kernels": {
+    "ReferencePreviousBoundaryC": {
+      "golden_tight_lower": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "two_factor_lower_margin": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "three_factor_odd_margin": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "three_factor_even_margins": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "even_capacity_exceptions": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "fib_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binary_envelope_identity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "large_fib_envelope": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_three_four_four": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_three_four_six": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_three_six_four": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exact_three_four": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ActualPreviousBoundaryC": {
+      "three_four_norm_lower": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conjugate_atom_lower": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "positive_head_at_least_one": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "base_two_head_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "base_one_head_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "previous_CI_bonus": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "earlier_symmetric_row_geometry": [
+        "Quot.sound",
+        "propext"
+      ],
+      "previous_boundary_read_guard": [
+        "Quot.sound",
+        "propext"
+      ],
+      "five_gap_all_shifts_guard": [
+        "Quot.sound",
+        "propext"
+      ],
+      "eight_gap_wedge_or_small": [
+        "Quot.sound",
+        "propext"
+      ],
+      "protected_previous_current": [
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "state_sha256": "c85226b0145d5938a2137aa59a13976e5ab4881874dca5b204d987a4d9c7d6f7",
+  "QA": {
+    "previous_reference_boundary_exact_identities": 2325,
+    "complete_reference_W_minus_one_C_reads": 147811,
+    "unbounded_two_factor_binary_envelope_formula_QA": 13,
+    "exact_second_previous_CI_bonus_identities": 1085,
+    "actual_infinite_padding_previous_boundary_golden_edges": 1085,
+    "all_padding_previous_boundary_golden_edges": 3255,
+    "actual_previous_boundary_large_shift_C_reads": 316061,
+    "five_gap_ALLshift_previous_boundary_C_reads": 271439,
+    "actual_hosts": 6053,
+    "profiles": 2325,
+    "complete_actual_monotone_head_payment_checks": 848,
+    "complementary_actual_symmetric_row_payment_checks": 68,
+    "complete_range_Cassini_formula_QA": 598,
+    "all_capacity_lower_norm_QA": 348,
+    "arbitrary_order_reference_C_boundary_reads": 23135,
+    "arbitrary_order_reference_profiles": 354,
+    "eight_gap_old_wedge_split_QA": 1208
+  },
+  "independent_counts": {
+    "independent_arbitrary_order_reference_C_reads": 1627,
+    "independent_two_rank_earlier_actual_halfline_minima": 70276,
+    "independent_two_rank_earlier_actual_halfline_hosts": 1038,
+    "independent_actual_hosts": 1671,
+    "independent_CI_profiles": 653,
+    "independent_entire_reference_previous_boundary_reads": 20477,
+    "independent_actual_previous_large_shift_reads": 42581,
+    "independent_actual_previous_ALLshift_reads": 36230,
+    "independent_reverse_quotient_previous_gap_identities": 252,
+    "independent_all_padding_previous_golden_edges": 756
+  },
+  "independent_state_sha256": "2381f1a047750f015242ca748782fca73fca2aca982a9be18ed614edd14b1999",
+  "new_finite_entrance_certificates": 4,
+  "new_finite_reference_exception_prefixes": [
+    {
+      "V": [
+        3,
+        4,
+        4
+      ],
+      "current": 10,
+      "derivative_pair": [
+        50,
+        81
+      ],
+      "ALL_C_margins": [
+        19,
+        38,
+        76,
+        152,
+        254,
+        389,
+        552
+      ]
+    },
+    {
+      "V": [
+        3,
+        4,
+        6
+      ],
+      "current": 12,
+      "derivative_pair": [
+        144,
+        233
+      ],
+      "ALL_C_margins": [
+        55,
+        110,
+        220,
+        440,
+        880,
+        1328,
+        1771,
+        2361,
+        2860
+      ]
+    },
+    {
+      "V": [
+        3,
+        6,
+        4
+      ],
+      "current": 12,
+      "derivative_pair": [
+        144,
+        233
+      ],
+      "ALL_C_margins": [
+        55,
+        110,
+        220,
+        440,
+        736,
+        1273,
+        1949,
+        2539,
+        3038
+      ]
+    },
+    {
+      "V": [
+        3,
+        4
+      ],
+      "current": 6,
+      "derivative_pair": [
+        5,
+        9
+      ],
+      "ALL_C_margins": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "reference": "PROVED EVERY infinite-BINARY reference V>=3,arbitraryorder/count/capacities: EVERYshift>=3 atEVERYcurrentN>=W-1. Exact two-top-numerator gap and all-capacity norm classify all butV3T and THREE ordered finite profiles; ALLT>=3 Cassini envelope gives Fib(T-3)+2(-1)^(T+1), with T4 separately actual-prefix paid. FOUR constant exception-prefixes directly Lean kernel-reconstructed. No sampled-host logical premise.",
+  "actual_golden_edge": "PROVED ALLr>=2,delta=h-u>=3,ALLcapacities/counts/paddings: D_(W-1)<phiD_(W-2) whenpreviouspositive,zerootherwise. Exact previous CI bonus binom(r+1,2)-epsilon retained. Full monotone divided head and complementary symmetric-row cone cover ALLdegrees. Ifdelta<=2,use exact protected reference C instead; do not assert its golden edge in the exception families.",
+  "actual_boundary": "PROVED ALLactualprofiles/paddings,CURRENTN=W-1,EVERYshiftR>=max(3,h-u-2). HenceALLshifts at thatcurrent wheneveru>=h-5. OnefactorusesOLDcompleteC;protected delta<=2 usesNEWreference theorem.",
+  "actual_halfline": "PROVED ALLu>=h-4,EVERYactualCshift>=3 atEVERYcurrentN>=W-1. This moves the continuous halfline TWOphysicalranks earlier than oldW+1. Foru=h-5 ONLY boundaryW-1 is added; currentW is still an explicit open one-rank gap, not silently filled.",
+  "eight_gap_corollary": "PROVED asCOROLLARYofOLDsharpwedge plusOLDnonbinaryweight32completeC: ALLu>=h-8 haveEVERYactualCshift>=3 atEVERYcurrentN>=W+1. Ifwedgefails anddelta<=8 thenW<=29. This is an extraction from existing theorems,not a new sampled finite entrance.",
+  "formal_scope": "TWENTY-THREE NEW scoped standard-axiom reports:12reference incl full ALL-natural Fibonacci identities/large-index payment andFOUR exact finite reference-prefix reductions;11actual incl intervalnorm/head/CI/row/read/first-loss/eight-gap guards. Actual model/root/CI identification and complete sequence assemblies WRITTEN,not end-to-end Lean actual arms. All remaining finite profiles QA ONLY.",
+  "remaining": "General actual/reference C atN<W-1 and shorter boundary shifts outside its read guard remain OPEN. u=h-5 currentW gap OPEN. The larger whole-arm wedge still startsW+1 outside the strongeru>=h-4halfline. GeneralA2/original unamplified coefficientUI OPEN; fullC first unresolved nononecount6 unchanged. Neither cumulativeLC nor numerical nonfailure is substituted for coefficientUI.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "previous_boundary_C_proof.tex": "026cd1a5aaee8879c640ac8364f3ac4f32a2e64cf61b0e2e03317ef6d82166fd",
+    "ReferencePreviousBoundaryC.lean": "eaaa3336476c131f9740efa6582c7c58e90e3b20dff9927da5893479ffeb2a67",
+    "ReferencePreviousBoundaryC.log": "d4c5e41d26a78d0d21b239d2eaf53f8634911a343edf459d54b2777427902d50",
+    "ActualPreviousBoundaryC.lean": "3b64d6ffe4e82cf317f94a3b04a0a00173963073ba4926784e48416cd2ca97aa",
+    "ActualPreviousBoundaryC.log": "5c9b1b6feb7b5d35dd16758b6494ec0c69c4488d9d54ae6400bbcf05d0ad824f",
+    "audit_previous_boundary_C.py": "9cbded2418769a1cc7b195073becd7bbdb87ebfcfa3f8135df1aeada1e210c2c",
+    "audit_previous_boundary_C.json": "474cafab5182523483a05ffeb8c7c2dd2e553e8bc14c11148be632c9528be80d",
+    "verify_previous_boundary_C.py": "3650920a29c3eb69f29eee682a4cc9ac8dd83242663883529390c768715cf66e",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "physical_boundary_golden_C_verification.json": "56058fd7ac38393c7f9e9365e951feb318a71516b205319e1c272f20f7b1a950",
+    "ordinary_golden_growth_source_verification.json": "ae495815227227e1df4d497a290f7fb3819cce5ac0dbfeccdbf71ce7d6c2e59c",
+    "golden_tail_large_shift_C_verification.json": "7ef01e16055ffba17369332f1f0f6caa88833e6dd0c344a10fd878b983110fcd",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76",
+    "sharp_CI_count_wedge_verification.json": "e5f8d6dc0efbf6132b18cf186947e847841c6ae50667eb7e38f45b133ad5a534",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7"
+  }
+}

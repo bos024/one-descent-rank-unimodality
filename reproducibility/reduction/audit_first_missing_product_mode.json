@@ -1,0 +1,14 @@
+{
+  "status": "PASS_EXACT_QA_FIRST_MISSING_PRODUCT_MODE_AND_UNBOUNDED_ONE_PART_WINDOWS",
+  "counts": {
+    "generic_whole_polynomial_three_increase_margins": 2400,
+    "actual_three_first_missing_product_increases": 1260,
+    "actual_unbounded_product_mode_bounds": 420,
+    "entire_unbounded_one_part_exceptional_profiles": 213,
+    "entire_unbounded_one_part_source_windows": 1320,
+    "actual_all_kappa_shorter_window_counterexamples": 55
+  },
+  "state_sha256": "6a023972c7bf53e11f9b0a95b428ed7bbf86fb3c079fbdfc093518086dbd196c",
+  "seconds": 2.0159999999996217,
+  "scope": "ALLfiniteproducts/windowsQAONLY;NONEfiniteproofpremises. OnepartwindowTHEOREMretainsFULLCofYandFULL_OLD_A2;generaloriginalOPEN."
+}

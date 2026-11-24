@@ -1,0 +1,13 @@
+{
+  "status": "NO COUNTEREXAMPLE FOUND",
+  "scope": "finite diagnostic in cases not certified by either actual-mode criterion",
+  "attempts": 30000,
+  "kept": 0,
+  "covered_by_mode_criteria": 19763,
+  "extra_covered_by_normalization_or_exact_layers": 19,
+  "maximum_remaining_mode_gap": 0,
+  "example": null,
+  "failure": null,
+  "seed": 2026101689,
+  "seconds": 5.703000000001339
+}

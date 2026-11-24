@@ -1,0 +1,165 @@
+\section{Exact certificates and reproducibility}\label{sec:certificates}
+Every finite domain used above is explicit. Each program returns failure on a violated assertion; successful completion is reported only after the full domain finishes. Random diagnostics are separate from the proof inputs.
+
+\subsection{Forward and reversed profiles}
+Starting at weight zero with $f_0=q_0=1$ and other entries zero, append $t$ using
+\begin{equation}\label{eq:profilealgorithm}
+ \begin{split}
+ f'_0&=1,\qquad f'_k=\sum_{j=1}^{\min(t,k)}f_{k-j}\quad(k>0),\\
+ q'_k&=\sum_{j=0}^{\min(t-1,k)}q_{k-j}+\mathbf1_{k=\mathrm{weight}+t}.
+ \end{split}
+\end{equation}
+The mirror certificate uses forward degrees through 24 and reversed deficits through 19. It enumerates $c_1,\ldots,c_6\in[0,24]$ with $9\le c_2+\cdots+c_6\le31$, checks~\eqref{eq:mirrorcertificate}, and includes the exceptional capped profile specified there. The profile count is
+\[
+ 25\left(\binom{36}{5}-5\binom{11}{5}-\binom{13}{5}\right)=9,334,875.
+\]
+There are exactly 158,635,368 applicable coefficient comparisons. Both implementations pass all of them. The C program \texttt{mirror.c} saturates reversed entries at $2^{23}$. This is exact for these comparisons: every tested forward coefficient is at most $2^{23}$, and saturation of a nonnegative sum commutes with saturation of its summands. The independent Python mirror checker uses arbitrary-precision integers without saturation.
+
+For the central certificate, compute
+\[
+ d_k=\mathbf1_{k=0}-f_k+\sum_{j=1}^Mf_{k-j},\qquad
+ \delta_k=\sum_{j=0}^{M-1}q_{k-j}-q_{k-M}.
+\]
+The omitted reversal term at degree $\wt A+M$ is beyond every deficit used. The short profile has multiplicities in $[0,13]$, non-one sum in $[2,13]$, and either weight at least 19 or some multiplicity equal to 13. The suffix has nine parts in $\{2,\ldots,M-1\}$. Each pair is tested for $0\le e\le M-4$ and $h=0,1$.
+\begin{center}
+\begin{tabular}{crrrr}\toprule
+$M$ & Short profiles & Suffixes & Pairs & Inequalities per pair\\\midrule
+4&1,209&10&12,090&2\\
+5&7,339&55&403,645&4\\
+6&32,565&220&7,164,300&6\\
+7&118,969&715&85,062,835&8\\\bottomrule
+\end{tabular}
+\end{center}
+\texttt{central\_all.c} evaluates~\eqref{eq:budgetcentral} directly. The independent \texttt{independent\_profiles.py} constructs matrices for the low-layer coefficients and separate positive-part gains for the higher layers. It also checks the suffix endpoint assertions. Both reproduce the minima in Theorem~\ref{thm:central}.
+
+All C and NumPy central arithmetic is safe in signed 64-bit integers. A short profile has length at most 26; each reversed coefficient through deficit twelve is at most $27\binom{37}{12}$. There are at most 248 relevant nonlowest heights. An unconditional bound for every intermediate absolute sum is
+\[
+ 249\cdot8\cdot27\binom{37}{12}+249\cdot16384
+ =99,633,949,536,480<2^{63}.
+\]
+The analytic bounds for fourteen or more non-one parts are also evaluated separately with Python integers.
+
+\subsection{Small bases and the bounded complement}
+\texttt{small\_bases.py} constructs rank polynomials directly from the append recurrence and the maximum decomposition. The balanced domain is $1\le b\le18$, $0\le d\le M-4$, with all increasing arms of weights $b+d,b$. The single-arm domain is $1\le b<35$, all increasing $Y$ of weight $b$ with at least nine non-one parts, $|\eta|\le M-4$, and $X=1^{b+\eta-t}t$ for $2\le t<M$ whenever the exponent is nonnegative.
+\begin{center}
+\begin{tabular}{crrrr}\toprule
+$M$ & Balanced bases & Single-arm bases & Non-one tails & Padded cores\\\midrule
+4&6,329&972&45&40,500\\
+5&56,521&12,420&165&1,579,050\\
+6&234,073&51,500&495&27,932,850\\
+7&639,460&131,110&1,287&311,397,372\\\bottomrule
+\end{tabular}
+\end{center}
+The direct Python bases use base-$2^{64}$ encoding for exact convolution. No slot can carry: balanced hosts have total weight at most 46, while in the single-arm bases $F_X(1)\le229$, $F_Y(1)\le2^{34}$, and $Q(1)\le229(1+6\cdot2^{34})<2^{64}$.
+
+The final column is the complete domain~\eqref{eq:paddingdomain}. If $T=\binom{M+6}{M-2}$ is the number of non-one tails of length at most eight, the number of padded instances is
+\[
+ (M-3)T\left(MT+2\sum_U(\wt U-\len U)\right)
+ =(M-3)(9M-16)T^2.
+\]
+The second equality follows by viewing each tail multiplicity vector, together with its unused slots, as a weak composition of eight into $M-1$ coordinates. Symmetry gives $\sum_U(\wt U-\len U)=4(M-2)T$.
+Every host in the domain has weight at most 278: with $r,t\le8$, $u\le6r$, $v\le6t$, and $0\le d\le3$,
+\[
+ \wt{X,M,Y}\le3(u+v)-2(r+t)+19+|u-v-d|\le278.
+\]
+The one-run lengths are less than 145, and full rank-polynomial masses are below $2(145\cdot6^8)+7(145\cdot6^8)^2<2^{59}$.
+
+\texttt{bounded\_tails.c} evaluates the cumulative second-difference formula~\eqref{eq:padding}. Independently, \texttt{direct\_padding.c} initializes a full rank polynomial by ordinary convolution, then maintains its coefficients. When the two one-runs increase by one, put $x=z^{\alpha+1}\RR_U$, $y=z^{\beta+1}\RR_V$. The update is
+\[
+ H(A+x,B+y)-H(A,B)=xD_B+yD_A+(S_M-1)xy.
+\]
+The direct implementation checks coefficient nonnegativity and unimodality after every update. Both programs complete all four domains with zero failures. Their intermediate absolute values are bounded by $2^{47}$ for cumulative second differences and $2^{60}$ for the direct update. The largest actual full coefficient, at peak seven, is $1,403,945,841,784,095$.
+
+\subsection{Lean scope and trust boundary}
+The eleven supplied Lean files were checked using Lean 4.34.0 with the installed mathlib environment. None contains a \texttt{sorry} or \texttt{admit} declaration. The printed axiom dependencies are included with the results.
+
+\texttt{SevenMirror.lean} defines the complete reduced mirror enumeration, including the exceptional profile, and proves its Boolean truth by \texttt{native\_decide}. It also checks the nineteen binomial inequalities at $N=32$. These theorems explicitly depend on native-evaluation axioms; they are not represented as pure kernel reduction proofs of the large computation.
+
+\texttt{LayerBridge.lean} contains ordinary kernel proofs of the passage from reflection to layer centers, positive layer budgets, and the algebraic identities for prefix reversal and repeated maxima. \texttt{SevenBridge.lean} checks the high-layer index inequality for $M\le7$, clipping and its monotonicity under capping, the weight-278 bound, the direct-padding update, single-arm payment inequalities, and auxiliary uniform index and budget steps. \texttt{QuadraticBridge.lean} proves the unbounded block-binomial inequality $t^k\le\binom{tk}{k}$, the central deficit range, the closed quadratic cutoff formula, the strict power comparison, and the finite-sum statement that one positive contribution pays all low-layer costs in Theorem~\ref{thm:uniformcentral}. \texttt{CubicBridge.lean} checks the skeleton-disparity hypotheses, both central index ranges, the single-crossing implication, the cubic weight bound, and the linear bound for a single non-one part. \texttt{DeficitGrowth.lean} proves coefficientwise differential inequalities for the actual unbounded reversed append recurrences. Its input list stores host parts from right to left; the identification of these recurrences with distinct-word rank polynomials remains a written combinatorial proof. These use only ordinary logical axioms recorded in the logs. The combinatorial interpretation, kernel shape lemmas, central matrix certificate, padding enumerations, and complete main induction have not been fully formalized in Lean.
+
+Five further files concern dilation, cumulative regularity, sharp
+growth, and a dominant maximum.
+
+\texttt{CumulativeReverse.lean} proves log-concavity for the actual
+window-plus-terminal-step recurrence on arbitrary positive lists; this
+includes the window-convolution proof and both boundary comparisons.
+\texttt{BinarySaturation.lean} proves that a nonempty fixed-length binary
+language closed under both shifts is universal.
+\texttt{EscapeDeficit.lean} proves the bound
+$|S|\le(2|S|-|T|)(2^h-1)$ for an arbitrary finite set of binary states
+$S$, a set of feasible directed edges $T$, and a prescribed block of
+$h$ shifts forcing every state to leave $S$. It verifies the two-preimage
+bound and the comparison between outgoing edges and the rank deficit.
+Its final theorem derives the forced escape condition from closure
+under contiguous factors and a missing binary word, for arbitrary
+lengths; the condition is not left as an additional hypothesis there.
+These are ordinary kernel proofs with only the standard logical axioms.
+The translation from compositions to cut strings and the cited
+cumulative-convolution closure theorem remain written proof steps.
+\texttt{DominantMaximum.lean} proves the central product inequality
+from its endpoint budgets and the unbounded sign argument excluding a
+decrease followed by an increase when $N\le2M+5$. The endpoint counting
+and Boolean-lattice inputs are proved in the text, not formalized by
+that file.
+\texttt{DilationBridge.lean} proves the unbounded coefficient-dominance
+bound for real polynomials, its ratio-bound corollary used in $b(P)$,
+and the passage from the three rank regions to a single crossing.
+The multilinear composition expansion, central curvature, and
+identification of the exact central polynomials remain written
+mathematical proofs.
+
+\subsection{Reproduction and provenance}
+Direct enumeration checks the growth bounds on 1,112 downsets, using
+9,973 rank comparisons. The shift-graph estimate is checked on 65,808
+subsets. Separate cumulative diagnostics check 6,434 exhaustive and
+4,000 random monotone arms, comprising
+3,640,541 coefficient positions. A further 16,000-core diagnostic checks
+20,438,112 cumulative comparisons, including restored terminal maxima.
+A separate rightmost-last-letter oracle is checked against direct
+distinct-word enumeration on all 512 hosts of weight at most nine.
+It then checks the valley rearrangement, common-maximum factorization,
+and 5,631,724 cumulative comparisons on 6,000 hosts, with up to 36 observed descents,
+including subsequent larger terminal maxima.
+A separate dominant-maximum diagnostic checks all 8,191 nonempty
+hosts of weight at most thirteen for the endpoint inequalities, and
+6,256 arm pairs producing 31,280 dominant-maximum hosts.
+The dilation diagnostic checks 70,113 exact coefficient differences,
+9,560 central-polynomial evaluations, 4,780 signs at million-scale
+dilations, and 2,460 evaluations of the exact mode-choice polynomial.
+Independently, 1,213 distinct balanced shapes are replayed at their
+analytically certified thresholds: 2,426 full rank sequences and
+8,678 rational-polynomial evaluations pass. The largest sufficient
+threshold in this diagnostic is 672; it is not a universal bound.
+The right-tail bound is also checked on 26,383 hosts, using 658,801
+coefficient comparisons.
+These finite diagnostics test formulas; the unbounded statements follow
+from the analytic proofs.
+
+With Python 3, NumPy, and a C compiler, run the supplied \texttt{Run-Certificates.ps1}, or run the individual programs. The mirror program takes arguments \texttt{24 9 7}; the central C and Python programs and the direct-padding program accept a peak from four through seven. The cumulative-padding program checks all four peaks. Python profiles and small bases are independent of the C path.
+
+Diagnostics in \texttt{audit\_unified.py} and \texttt{audit\_quadratic.py} compare the formulas with actual polynomials. The latter checks 27 arm pairs at peaks four through twelve and all 97 central positions in the theorem's range. The file \texttt{audit\_uniform.py} records an earlier diagnostic of the larger-count argument. The cubic reduction has an additional 375-core exact diagnostic, including 10,423 reversed-kernel growth comparisons and 18,317 central monotonicity positions. The reversed append estimates are also checked on 19,448 arms. Diagnostics do not replace analytic proofs or exhaustive certificates.
+
+The Lean runner accepts the local Lean executable and a mathlib package directory. The manuscript compiles from \texttt{paper.tex} using a standard LaTeX distribution or Tectonic. No network is required by any arithmetic checker. The manifest records the exact source and result files distributed with the paper.
+
+The maximum decomposition, elementary arm facts, and interval methods
+are background tools. The required versions, kernel estimates, peeling
+steps, and long-run lemma are proved in the manuscript. In particular,
+the padding domain follows from the proved long-run lemma and does not
+assume a general likelihood-ratio comparison for uncumulated kernels.
+
+The finite-profile argument closes peaks six and seven. Separately,
+Theorem~\ref{thm:uniformcentral} gives a quadratic one-arm bound and
+Theorem~\ref{thm:cubicbound} gives a cubic total-weight bound at every
+peak. The other main results establish cumulative regularity without a
+peak bound and sharp growth deficits for arbitrary composition
+downsets. Exact arithmetic and the stated Lean checks establish the
+supplied certificates. No claim about an inaccessible paper's full
+contents, or about the complete formalization of the manuscript, is
+made.
+
+The dilation certificate program accepts a list of positive parts.
+It constructs exact central polynomials and their coefficient bounds,
+returning a threshold that applies to every subsequent integer
+dilation. The supplied example for $(1,4,2,5,3,2,4)$ has threshold 32.
+Full-profile diagnostic replays at that threshold are separate from
+the analytic proof that the certificate covers all larger dilations.

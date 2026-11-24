@@ -1,0 +1,7 @@
+'UniversalRenewalRounding.entire_probability_renewal_unit_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UniversalRenewalRounding.entire_renewal_signed_increment_strict_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UniversalRenewalRounding.whole_mixture_normalizer_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

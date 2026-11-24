@@ -1,0 +1,14 @@
+'RelativeGoldenHeadDominantC.sixth_power_atom_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeGoldenHeadDominantC.nonempty_head_interval_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeGoldenHeadDominantC.complete_quantitative_head_tail_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RelativeGoldenHeadDominantC.all_dominant_reference_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RelativeGoldenHeadDominantC.dominant_deficit_and_small_count_mode' depends on axioms: [propext, Quot.sound]
+'RelativeGoldenHeadDominantC.dominant_surplus_actual_read_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RelativeGoldenHeadDominantC.strict_reference_tail_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelativeGoldenHeadDominantC.all_current_dominant_assembly' depends on axioms: [propext, Quot.sound]

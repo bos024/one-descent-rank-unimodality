@@ -1,0 +1,17 @@
+'ArbitraryFibonacciTailLateC.complete_regularized_Fibonacci_uniform_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitraryFibonacciTailLateC.complete_positive_numerator_margin_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitraryFibonacciTailLateC.complete_capacity_window_conjugate_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitraryFibonacciTailLateC.complete_arbitrary_word_conjugate_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitraryFibonacciTailLateC.complete_scaled_finite_tail_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArbitraryFibonacciTailLateC.complete_late_error_one_sixth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArbitraryFibonacciTailLateC.strict_all_shift_C_payment' depends on axioms: [propext, Classical.choice, Quot.sound]

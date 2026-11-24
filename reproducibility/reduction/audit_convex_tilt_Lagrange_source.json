@@ -1,0 +1,317 @@
+{
+  "status": "EXACT_QA_CONVEX_TILT_TERNARY_LAGRANGE_CONSTANT_THREE_UNDER_AUDIT",
+  "counts": {
+    "exact_Lagrange_diagonal_composition_identities": 378,
+    "unscaled_unit_interior_kernel_minors": 78890,
+    "all_rank_true_source_unit_cut_curvatures": 11761,
+    "generic_convex_tilt_clipped_LC_triples": 7000,
+    "generic_convex_tilt_all_positive": 141,
+    "complete_natural_quotient_LC_minors": 161063,
+    "complete_natural_later_primitive_LC_minors": 160236,
+    "literal_actual_startup_curvature_minors": 2481,
+    "actual_all_padding_late_D_LC_minors": 383296,
+    "actual_hosts": 4461,
+    "four_or_more_factor_profiles": 827
+  },
+  "small_u14_u15_profiles": [
+    {
+      "u": 14,
+      "V": [
+        4,
+        4,
+        4,
+        9
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        4,
+        4,
+        5,
+        8
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        4,
+        4,
+        6,
+        7
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        4,
+        5,
+        5,
+        7
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        4,
+        5,
+        6,
+        6
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        5,
+        5,
+        5,
+        6
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        5,
+        5,
+        5,
+        7
+      ],
+      "delta": 4
+    },
+    {
+      "u": 14,
+      "V": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "delta": 4
+    },
+    {
+      "u": 14,
+      "V": [
+        4,
+        4,
+        4,
+        4,
+        6
+      ],
+      "delta": 3
+    },
+    {
+      "u": 14,
+      "V": [
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        4,
+        10
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        5,
+        9
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        6,
+        8
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        7,
+        7
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        5,
+        5,
+        8
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        6,
+        6,
+        6
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        5,
+        5,
+        5,
+        7
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        5,
+        5,
+        5,
+        8
+      ],
+      "delta": 4
+    },
+    {
+      "u": 15,
+      "V": [
+        5,
+        5,
+        6,
+        7
+      ],
+      "delta": 4
+    },
+    {
+      "u": 15,
+      "V": [
+        5,
+        6,
+        6,
+        6
+      ],
+      "delta": 4
+    },
+    {
+      "u": 15,
+      "V": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "delta": 5
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        4,
+        4,
+        7
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        4,
+        5,
+        6
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        5,
+        5,
+        5
+      ],
+      "delta": 3
+    },
+    {
+      "u": 15,
+      "V": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "delta": 3
+    }
+  ],
+  "state_sha256": "f0e74964d8de56c0654ba84fd53acf620b1693ec22a56af172c1bc146ac6c64b",
+  "seconds": 10.375,
+  "actual_relative_LC_negative_control": {
+    "u": 79,
+    "V": [
+      5,
+      29,
+      51
+    ],
+    "alpha": 1,
+    "tail_centre": 44,
+    "first_tail_mode": 51,
+    "margin": -2368172787474788195319509661605950236739597868541970736018925840207297716479324833552641002342820
+  },
+  "primary_source": {
+    "author": "Ira M. Gessel",
+    "title": "Lagrange Inversion",
+    "url": "https://arxiv.org/html/1609.05988",
+    "theorem": "2.1.1 equation(2.1.4)",
+    "doi": "10.1016/j.jcta.2016.06.018"
+  },
+  "scope": "Proposed UNBOUNDED analytic ALLr>=4 minimal crossing proof for ALLu>=14; u<=13 old theorem. ALL27 small contexts here are QA ONLY, not a finite entrance premise. No registration/generalC/A2/originalUI claim."
+}

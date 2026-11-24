@@ -1,0 +1,21 @@
+'StationaryFourCompleteC.exact_quartic_seven_step_minor_recurrence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryFourCompleteC.seven_step_growth_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StationaryFourCompleteC.whole_seven_step_absolute_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StationaryFourCompleteC.three_actual_left_ordinary_minors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StationaryFourCompleteC.all_binary_seed_three_startup_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryFourCompleteC.reference_three_startup_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StationaryFourCompleteC.analytic_first_degree_crossing_and_padding_clamp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryFourCompleteC.quartic_Fibonacci_tail_norm_and_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryFourCompleteC.entire_terminal_power_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StationaryFourCompleteC.both_terminal_ordinary_inverse_corners' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'StationaryFourCompleteC.whole_quartic_reference_tail_polynomial_identity' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,155 @@
+\section{A weaker ordinary-coefficient route to full actual C}
+This section gives a conditional reduction. It does NOT prove the
+new ordinary-LC hypothesis for unbounded binary counts.
+
+\paragraph{A finite ordinary-to-cumulative bridge.}
+Let f be positive through index K+2, and assume
+$f_nf_{n+2}\le f_{n+1}^2$ for $0\le n\le K$.
+Suppose $f_1\le\lambda f_0$, and let
+\[
+ \mu=\frac{f_{K+2}-f_{K+1}}{f_{K+1}-f_K},\qquad f_{K+1}>f_K.
+\]
+Let $g_{n+1}-g_n=f_n$, with $g_0\ge0$ and
+$g_1\ge\lambda g_0$. Then
+\[
+ \mu\le\lambda,\qquad g_{n+1}\ge\mu g_n\quad(0\le n\le K+1).
+ \tag{1}
+\]
+Indeed the last ordinary minor gives
+$\mu f_K\le f_{K+1}$, because
+\[
+ (\mu f_K-f_{K+1})(f_{K+1}-f_K)
+                  =f_Kf_{K+2}-f_{K+1}^2\le0.
+\]
+Backward LC ratio propagation gives $\mu f_n\le f_{n+1}$
+for every $n\le K$. At n=0 this and the entry imply
+$\mu f_0\le f_1\le\lambda f_0$, hence $\mu\le\lambda$.
+The g entry is therefore paid. Finally
+\[
+ (g_{n+2}-\mu g_{n+1})-(g_{n+1}-\mu g_n)
+                                  =f_{n+1}-\mu f_n\ge0
+\]
+propagates it to every later read in (1). The five Lean reports
+check the ordinary-minor identity/inequality, backward scalar
+ratio step, the entire natural prefix induction, the entire bounded
+bridge, and the first-integer-loss entry below.
+
+\paragraph{A conditional theorem for ALL mixed binary/ternary counts.}
+For an actual arm $X=1^\alpha2^u3^r$, assume $u\ge1,r\ge0$,
+$\alpha\ge1$, and use its F,D,G and C notation from the pure
+ternary theorem. Put $A=r+3$ and let L be the FIRST actual D mode.
+If
+\[
+                 F_n^2\ge F_{n-1}F_{n+1}
+                     \quad(A\le n<L),                 \tag{2}
+\]
+then X has full C at every current rank and every shift at least
+three. This hypothesis is ordinary coefficient LC, not D LC,
+not a strong integer minor budget, and not actual cumulative LC.
+
+To prove it, first note $F=B_r+S^rF_{1^\alpha2^u}$, with
+$S=z+z^2+z^3$ and $B_r=\sum_{j<r}S^j$.
+The binary arm agrees with $H_3=(1-S)^{-1}$ through degree two,
+and has a positive integer loss at degree three. Thus the actual
+F agrees with $H_3$ through $A-1$ and has a loss at least one
+at A. The registered tribonacci residual norm proves
+$h_A-\lambda h_{A-1}<1$ for every $A\ge3$, giving
+\[
+                         F_A<\lambda F_{A-1}.          \tag{3}
+\]
+The protected reference G ratios are at least lambda by the proved
+renewal cumulative LC and its limiting ratio. Every N<A is protected
+renewal C; at N=A the current D alone is lowered, preserving C.
+For $A<N\le L$, discard the automatic nonincreasing-D case.
+Set K=N-A-1, $f_j=F_{A-1+j}$ and $g_j=G_{A-2+j}$.
+Then (2), (3), and the protected G entry are exactly the finite
+bridge hypotheses. Its mu is $D_N/D_{N-1}$. All later needed G
+reads satisfy (1), and all earlier protected reads have ratio at
+least lambda, hence at least mu. This proves every C shift.
+After L, D is nonincreasing by the established actual unimodality,
+so C is automatic. If L<=A the protected/direct cases already
+cover the whole argument.
+
+\paragraph{The ordinary tail after the first D mode is automatic.}
+The existing ordinary-arm theorem says F is LC on its decreasing
+side (\texttt{prefix\_tp2.tex}, by rising LC of its reversal).
+Between the first D mode and the first F mode, the positive slopes
+are nonincreasing. At any such centre
+\[
+ F_n^2-F_{n-1}F_{n+1}
+    =F_n(D_n-D_{n+1})+D_nD_{n+1}\ge0.
+\]
+An ordinary mode/plateau is LC directly. Combining these two
+already proved resources gives ordinary F LC at EVERY centre n>=L.
+Therefore (2) is equivalent, for actual arms, to ordinary F LC
+on the entire tail n>=A. This is an extraction from old structure,
+not a new assumption about arbitrary unimodal sequences.
+
+\paragraph{Uniform append-three heredity of the weaker condition.}
+Fix ANY u>=4, any alpha, and r>=6. The full-tail condition
+\[
+                  F_n^2\ge F_{n-1}F_{n+1}\quad(n\ge r+3)
+                                                               \tag{4}
+\]
+at r implies (4) at r+1. For all such u the first three ordinary
+losses relative to H3, at r+3,r+4,r+5, are exactly
+\[
+                   1,\quad r+2,\quad(r^2+5r+10)/2.      \tag{5}
+\]
+All finite-padding effects are retained: their first possible
+ordinary loss is at r+u+alpha+1>=r+6, outside these three reads.
+
+For h=H3 the ordinary minors satisfy the same exterior-square
+recurrence as the frozen tribonacci derivative minors. At centres
+3,4,5 they are 2,-3,1, dominated in absolute value by the preceding
+h coefficients 2,4,7. The registered full recurrence and signed
+majorant induction give $|M_h(n)|\le h_{n-1}$ for every n>=3.
+Use the OLD first-loss strong-minor scalar kernel with e=1, and
+the OLD second-loss kernel with parameter r+1. Their losses are
+exactly (5). They pay both first ordinary centres at every r>=6;
+the required next value is an actual nonnegative F coefficient.
+No new finite premise or new report is counted for these reused
+scalar kernels.
+
+Now $F_{r+1}=1+S F_r$. Its first two new tail centres are r+4,r+5,
+just paid by (5). For every n>=r+6, truncate the old F below index
+r+2. The truncated sequence is globally LC by (4), has interval
+support, and its [3] convolution agrees with the entire three-read
+triple of the new F at n. The unit at index zero is absent there.
+LC convolution therefore pays every later n, including modes,
+descending values, and zero support boundaries. This proves the
+whole unbounded r-heredity of (4), with u unbounded.
+
+\paragraph{The remaining diagonal is weaker and still unbounded.}
+For fixed u>=4, a proof of (2) just at r=2u and every alpha implies
+full C for EVERY r>=2u. The automatic post-D-mode LC turns (2)
+into (4), append-three heredity propagates it, and the finite
+ordinary-to-C bridge finishes each host.
+The old mode bound is $L\le B=\lfloor(3u+4r)/2\rfloor$.
+Finite-padding first perturbs original rank r+u+alpha+1. Thus
+\[
+             alpha_*=r+\lfloor u/2\rfloor
+\]
+represents every larger alpha on all needed F reads through B.
+At r=2u it suffices, for each u, to prove the ordinary minors
+at A<=n<L for 1<=alpha<=2u+floor(u/2).
+The quantifier u>=33 remains unbounded. This is NOT a completed
+finite verification, and no unconditional rich-family enlargement
+is asserted by this reduction.
+
+\paragraph{Two positive source identities for further work.}
+The exact binary-prepending ordinary recurrence is
+\[
+ F_{u+1,r}=(z+z^2)F_{u,r}+1+z^3B_r.
+\]
+Unlike its signed-derivative version, its companion is positive.
+Two subsequent ternary appends give the already frozen full macro
+identity $F_{u+1,r+2}=(z+z^2)S^2F_{u,r}+1+S+S^2+z^3S^2B_r$.
+Positive addition alone does not preserve LC; the mixed minors
+of these complete companions remain to be paid.
+
+Independent exact QA and the reported rich-family nonfailures
+are only diagnostics. In particular (2) is FALSE at u=3,r=1,
+alpha=1: at A=4<L=5 its triple is (4,6,10), with minor -4.
+This does not refute C. General C, full A2 and original coefficient
+unimodality remain OPEN.

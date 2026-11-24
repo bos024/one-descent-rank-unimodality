@@ -1,0 +1,8 @@
+'KappaNineSourceNonrecovery.simultaneous_compulsory_source_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaNineSourceNonrecovery.relative_CI_payment_closes_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KappaNineSourceNonrecovery.kappa_nine_canonical_rank_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KappaNineSourceNonrecovery.negative_rank_birth_present' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,158 @@
+\section{The surplus-three divided-CI positive-primitive theorem}
+This is an unbounded auxiliary theorem with the specific actual
+padding-two consequence stated separately. It does NOT resolve general
+C, A2, or original unamplified unimodality.
+
+Write $q=\phi-1$, $\psi=-q$, and retain the previously proved robust
+$LQ_U$ coefficient budget and the new nonsymmetric window theorem.
+For a CI $L=\prod[t_i]$, $t_i\ge3$, degree $h$, put
+\[
+ c=\psi^U L(-\phi),\qquad
+ J_{U,L}=\frac{(1+z)^UL-c}{1+qz}.
+\]
+The theorem is: for EVERY $U\ge h+3$, $J_{U,L}$ is
+nonnegative ordinary LC AND its positive first difference is LC.
+The ordinary LC and positivity are already the registered entire
+infinite-padding deficit theorem ($m'=U-1$). Only the second property
+is new here.
+
+\paragraph{Binary base, all lengths.}
+Let $R_U=J_{U,1}$. It is positive ordinary LC and satisfies
+\[
+ R_U=(1+z)R_{U-1}+\phi\psi^{U-1}.
+\]
+Consequently its signed primitive differs from that of
+$(1+z)R_{U-1}$ ONLY at ranks $0,1$. The weighted-kernel primitive
+closure proves all new primitive minors at centres at least three.
+The two missing centres admit explicit uniform estimates.
+Write $p=\phi$, $c=\psi^U$, $A=U(U-1)/2$, $C=U(U-1)(U-2)/6$.
+Its first four primitive values are
+\[
+ 1-c,\quad U-p+pc,\quad A-pU+1-c,\quad C-pA+U-q+qc.
+\]
+At centre one the exact minor is
+\[
+ \frac{U(U+1)}2-p(U-1)
+       +c\{A+p(U-2)\}+pc^2.
+\]
+For $U\ge4$, $|c|\le q^4\le4/25<1/6$ and $p\le2$ give the
+lower bound $(5U^2-21U+32)/12>0$.
+At centre two the exact minor is
+\[
+ \frac{U(U^3+5U-18)}{12}
+ -\frac{pU(2U-5)(U+1)}6
+       +c\{qA+U-pC\}.
+\]
+For $U\ge6$, $C\ge A\ge U$, so
+$-pC\le qA+U-pC\le0$. The same bounds on $c,p$ give
+\[
+ M_2\ge\frac{U(3U^3-26U^2+57U+2)}{36}>0,
+\]
+because at $U=6+w$ the cubic is
+$3w^3+28w^2+69w+56$.
+At $U=3$ the positive primitive has only two entries; at $U=4,5$
+its rank-three value is nonpositive, so the second clipped minor
+is automatic. These finite base values are independently checked.
+This supplies a full induction for positive-primitive LC of $R_U$,
+$U\ge3$, with no unchecked large-$U$ entrance.
+
+\paragraph{Appending one arbitrary interval.}
+Induct on the number of intervals, with fixed $U$.
+Let $L'=L_0[t]$, $t\ge3$, let $r=\operatorname{len}L_0$, and
+assume $U\ge\deg L'+3$. The exact polynomial identity
+\[
+ J_{U,L'}=[t]J_{U,L_0}+c_0\frac{[t]-[t](-\phi)}{1+qz}
+\]
+has correction degree $t-2$. By the induction hypothesis and the
+new window theorem, the positive primitive of $[t]J_{U,L_0}$
+is LC. Every NEW primitive minor at centre $n\ge t+1$ is
+unchanged. The remaining centres can be paid independently as follows.
+
+Set $B=L_0Q_U$, $v=U+r$, $b=B_1=v-q$, and
+$a=\phi^2c$, where now $c=\psi^UL'(-\phi)$.
+The CI spectral norm of EACH interval is at most $2q^2<4/5$.
+Since $U-\deg L'\ge3$ and $L'$ is nonempty,
+\[
+ |c|\le(4/5)q^3<1/5,\qquad |a|\le(4/5)q.
+\]
+For $1\le n<t$ the signed primitive of $J_{U,L'}$ equals
+\[
+ X_n=B_n-a\psi^n.
+\]
+At $n=t$ it is $X_t-1$, and at $n=t+1$ it is $X_{t+1}-b$.
+These identities hold through the needed indices because $t\le U-2$.
+The old robust budget proves EVERY $X$ minor at
+$1\le n\le U-2$ nonnegative. Also $X_n>0$ on $0\le n\le U-1$,
+using $B_n\ge Q_{U,n}\ge1$ and $|a|<1/2$.
+Thus centres $2,\ldots,t-2$ are paid directly. At $t-1$, lowering
+the next value by one only improves the minor (or clipping makes
+it immediate). Rank zero is normalized differently and is not
+silently replaced by $X_0$; centre one is treated separately below.
+
+\paragraph{The last junction, at $t$.}
+Here the exact primitive minor is
+\[
+ M_X(t)-2X_t+1+bX_{t-1}.
+\]
+We claim $bX_{t-1}-2X_t\ge U/30$.
+Indeed $[z]L_0=r$, and its coefficient two is
+$r(r+1)/2$ because every old interval length is at least three.
+Consequently
+\[
+ b^2-2B_2=U-r-q^2=:D.
+\]
+Ordinary LC of $B$ gives
+$bB_t\le B_2B_{t-1}$ for $t\ge2$, hence
+\[
+ b\{bB_{t-1}-2B_t\}\ge D B_{t-1}.
+\]
+Since $2r\le U-t-2\le U-5$,
+$D\ge U/2+2$, $B_{t-1}\ge Q_{U,t-1}\ge U-q\ge U-1$,
+and $b\le3U/2$. Therefore $bB_{t-1}-2B_t\ge U/3$.
+The alternating correction has absolute value at most
+\[
+ |a|q^{t-1}(b+2q)
+ \le(4/5)q^t(b+2q)\le(1/5)(b+2q)\le3U/10,
+\]
+using $t\ge3$, $q^3<1/4$ and $b+2q=U+r+q\le3U/2$.
+This proves the claim, and pays the junction minor by at least
+$1+U/30$ before any clipping.
+
+\paragraph{The first centre, with its actual normalization.}
+Let $r'$ be the number of factors of $L'$, $w=U+r'\ge6$, and
+$E_2=[z^2](1+z)^UL'=(w^2-U+r')/2\le w^2/2$.
+For the actual first three primitive values the exact minor is
+\[
+ w^2-E_2-\phi(w-1)
+       +c\{E_2+\phi(w-2)\}+\phi c^2.
+\]
+Using $|c|<1/4$, $\phi\le2$ and the coefficient bound, this is
+at least $3w^2/8-5w/2+3\ge3/2$.
+Together with ordinary LC of $J_{U,L'}$, which makes its positive
+primitive support an initial interval, this covers every zero and
+clipping case at all centres. The induction is complete.
+
+\paragraph{Actual padding-two consequence and formal scope.}
+At the SINGLE actual entrance take $m=h$ and $U=h+3$.
+The exact head identity supplies the geometric-deficit comparisons
+from centre $m+3$ through the first actual mode. Backward integration
+gives coefficient LC down to $m+2$; the separately proved two strict
+ACTUAL entrance seeds pay $m,m+1$. The old fixed-padding binary-count
+induction and reference/two-integration join give ALL late actual C
+at padding two and $u_{actual}\ge h+1$. The all-count conclusion
+uses that induction; strict seeds are not silently asserted for
+every larger $m$ by an entrance-only argument.
+
+\texttt{DividedCIPrimitive.lean} supplies SIX scoped standard-axiom
+reports: both arbitrary-real binary head payments, the actual-normalized
+nonempty first primitive head, the unbounded interval junction gap,
+the exact perturbed junction, and the ENTIRE capacity-word induction.
+\texttt{BinaryCITwoSeed.lean} supplies THREE earlier unregistered
+strict entrance-seed kernels, registered here for the first time.
+The quotient/source identities, mode/support identification, actual
+head reversal, scalar spectral bounds and application of prior
+window/backward/count/read-joining kernels are WRITTEN, not an
+end-to-end actual-arm Lean theorem. Independent exact QA checks
+all displayed scalar identities and junction bounds and reconstructs
+400 actual padding-two arms. It corroborates the unbounded proof;
+no degree/capacity cutoff is substituted for the induction.

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_UNBOUNDED_ENTIRE_CI_INFINITE_PADDING_GEOMETRIC_DEFICIT_LC",
+  "new_scoped_reports": 5,
+  "kernels": {
+    "golden_upper_five_eighths": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "final_ulc_factor_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_final_geometric_power_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "final_large_kernel_quantitative_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "twelve_small_final_rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "analytic": "EVERY CI L=prod[t], all t>=3, h=sum(t-1), EVERY m>=h: b_n=phi*C_(n-1)-C_n for C=L*sum_(k=0)^m(z+z^2)^k is POSITIVE on m+1..degC+1, zero after, and ordinary LC at EVERY centre n>=m+2. Truncating b below m+1 gives a globally nonnegative LC finite polynomial. This extends the registered critical-band deficit LC to the ENTIRE tail, including the previously missing centre m+h+1.",
+  "proof_extension": "The FINAL binomial-division kernel row s=u-1 pays EVERY k=0..u-1. For u>=6 a uniform margin >=(7/180)Q_k follows from ULC factor>=1/2, Q_(u-1)>=3/2 and unbounded geometric-power decay <=32/45; twelve exact small margins close u3..5. Cauchy-Binet and deg L<=u-1 pay the last robust centre without any L1 bound there. The old CI amplitude pays the alternating atom. Binary deficit truncation is globally LC; LC convolution handles all later centres, joining the newly extended finite bridge.",
+  "formal_scope": "FIVE NEW clean standard-axiom scoped reports: golden-root rational bound; full final-ULC-factor inequality; ENTIRE arbitrary-natural-length geometric-power estimate; quantitative final-row scalar payment; all twelve small exact margins. Polynomial quotient, Cauchy-Binet and full-tail convolution/support assembly are WRITTEN, not end-to-end actual-polynomial Lean proofs. Existing row144 integration kernels reused without recounting.",
+  "obstruction": "An exact NON-CI auxiliary counterexample disproves the hoped-for finite geometric-cut closure from global b-LC plus positive-primitive-LC of E=(1+qz)b alone, even BEFORE the first A mode. It is not an actual CI or original conjecture counterexample. Actual clipped-deficit LC through the first A mode remains OPEN.",
+  "remaining": "Finite short-padding single entrance alpha1..h at u=h+1 remains OPEN, along with earlier reference C N<=W, shorter binary counts, general actual C/A2 and ORIGINAL general unamplified UI. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "exact_final_quotient_kernel_row_budgets": 7257,
+    "exact_generic_LC_last_centre_budgets": 1200,
+    "exact_entire_positive_deficit_support_reads": 362443,
+    "exact_entire_deficit_LC_tail_minors": 359943,
+    "exact_new_bridge_centre_minors": 2500,
+    "actual_CI_contexts": 2500,
+    "actual_exact_single_entrance_contexts": 1250
+  },
+  "state_sha256": "5f67016146d2a88b5773c9166e77b79115d464b13a3e80b78ed137d1612f3cf1",
+  "sha256": {
+    "infinite_padding_full_deficit_LC.tex": "062aa2d99ab192b2e40a200958dba5b06b7a0e05dbaf16601c70a3dcb0081d78",
+    "InfinitePaddingFullDeficit.lean": "e49c5625b3c2abe917907a20eff86268fafceb32f6cc2610f014737ad9482dc0",
+    "InfinitePaddingFullDeficit.log": "a8dd0bb1d231c1901861632f393f1fbb127bf2dc26e886ef538e8a4cc9a72a76",
+    "audit_infinite_padding_full_deficit_LC.py": "b4908490b32154a055b04f2abe885758f2c04f557242810bd42cf3561211dee6",
+    "audit_infinite_padding_full_deficit_LC.json": "51fc3aa209f5a7cce2b3850b30082287894a0aa36ed1a768b505670d26dee97d",
+    "verify_infinite_padding_full_deficit_LC.py": "9b75b16f32121e8aee0ee01a22b50527f1a755b15be6119d3ba704ffb57a79a7",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "binary_CI_infinite_padding_entrance_verification.json": "2e9c98f0ee91ebf4130fb4a5f187249997925a7b882da446435bab4b610f8a04",
+    "generic_geometric_cut_obstruction.tex": "8bfa95da82e6c710f0036dc72f62de9f207541989418db5c37d9c68b11882054",
+    "probe_generic_geometric_cut_LC.py": "179762b775f415d0c974cdcb044ce421dcb5db6a3c02566ce9ebfe34fd693382",
+    "probe_generic_geometric_cut_LC.json": "0c4891ebd00ec1396edeafa83c664561e1e180f369dec107b3743773195542ed"
+  }
+}

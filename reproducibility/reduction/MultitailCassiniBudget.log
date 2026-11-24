@@ -1,0 +1,6 @@
+'MultitailCassiniBudget.all_capacity_Cassini_factor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MultitailCassiniBudget.full_Fibonacci_window_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MultitailCassiniBudget.all_word_exact_Cassini_amplitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MultitailCassiniBudget.all_word_reference_Cassini_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MultitailCassiniBudget.nonempty_word_two_step_strict_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MultitailCassiniBudget.first_defect_strict_LC_payment' depends on axioms: [propext, Classical.choice, Quot.sound]

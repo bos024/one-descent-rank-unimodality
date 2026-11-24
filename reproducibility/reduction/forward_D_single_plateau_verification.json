@@ -1,0 +1,32 @@
+{
+  "status": "PASS_UNBOUNDED_FORWARD_D_SINGLE_FLAT_AND_SMALLER_TC_CERTIFICATE",
+  "new_scoped_reports": 4,
+  "theorem": "SINGLE FORMAL arm with initial ones and later capacities>=2 in ANY order: D strictly increases through FIRST mode except possibly at finalcap+1; ell<=D_ell+2, sharp.",
+  "written_audit": "Window of the old one-flat rising prefix strictly rises to its first mode; the sole new unit dent is finalcap+1. Actual positive-D splice retains this whole prefix. No sortedness needed for this shape result.",
+  "TC_alternative": "ALL low-kappa peak-crossing failures require n<=39 and M<=35; complete independent exact finite grammar pays every eligible state.",
+  "finite_certificate": {
+    "N": 39,
+    "M_cap": 35,
+    "states": 102630,
+    "appends": 1623669,
+    "comparisons": 18321840,
+    "exact_state_set_equality": true
+  },
+  "formal_scope": "Four scoped span/source/whole-height-induction/rank-region kernels. Strict-window/actual-arm induction and finite grammar coverage are written, not end-to-end Lean formalizations.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "forward_D_single_plateau.tex": "c35c652fcac1fe451f672dc9a7a90e818e708d45ed06210b299670a077bd3e8b",
+    "ForwardDSinglePlateau.lean": "cdc1919b49c189f8ddf6ca9bba8703952e355afde049b3539e81b7a61bc7a74e",
+    "ForwardDSinglePlateau.log": "32cf3206a02e19d66deb2683f56b719a63184aeb3bae18b73c3842c2a7e92a6b",
+    "probe_forward_derivative_single_plateau.py": "9d973d73a1747519218d3566b037b463672dc855ad809538b3b67a07c3dc9013",
+    "probe_forward_derivative_single_plateau.json": "fa3a0bd19fcc59ea814a06409281863d72cb091b73dd242117010c160ed428b3",
+    "probe_low_kappa_strict_peak_TC.py": "d31c443bb39163a4612b6f095ec32197c10578b71ce9e7cb971c88f14628656f",
+    "probe_low_kappa_strict_peak_TC.json": "25c0f16e6c68b6260033dc824ee1d9ffbbd454d54bdf2ff0e0eb538add2273ee",
+    "verify_low_kappa_strict_peak_TC.py": "37e8d23043b2ba9c3957ea2a48fbe131607e8d26a07f87956fdb72763bca23e6",
+    "verify_low_kappa_strict_peak_TC.json": "248a5567c5f946348abe79c0f43660cf83dff62cb662df4c2fa10887278304a3",
+    "low_kappa_strict_peak_states.bin": "b268f16da285ed70ee0a0b7b40729a9eebe41e90429cc2523febfc9aa8a3afec",
+    "verify_forward_D_single_plateau.py": "36fc4bc275bfd0f01812f573bdf06ac5309a93e18ebf94b504e2e458418f5d1a"
+  }
+}

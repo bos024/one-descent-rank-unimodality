@@ -1,0 +1,12 @@
+{
+  "status": "PASS_EXACT_ALL_DEPTH_BINARY_C_PRODUCT_CONSEQUENCES_QA",
+  "counts": {
+    "actual_pairs": 6000,
+    "both_rising_source_ratio_minors": 424703,
+    "nonnegative_current_both_rising_nonrecoveries": 238410,
+    "beyond_fifth_and_old_diagonal_nonrecoveries": 150385,
+    "proper_zero_head_integer_budget_payments": 17661
+  },
+  "seconds": 25.562999999994645,
+  "scope": "Exact finite QA only. Source-ratio, nonrecovery and zero-head head-budget statements are distinguished. General C, remaining mixed/incoming, A2 and original coefficient UI remain OPEN."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_IDENTICAL_TERNARY_FORWARD_INVERSE_CLEAN_LOGS",
+  "new_scoped_reports": 0,
+  "note": "SAMEimmutableLeanproofsources/axioms/reports. RecompiledwithonlyunusedVariables/unnecessarySeqFocuscosmeticlintersdisabled. Nochange/fixofmathematicalproof. Originalwarning-bearinglogsandmanifestPRESERVED.",
+  "sha256": {
+    "ternary_forward_inverse_verification.json": "e42b6bd879c88f8162ce6176422c580ef5198cfe994ad114ab7c7a4266e03246",
+    "TernaryForwardInverse.lean": "1cf7406c9932531393f37546cd1c6abba3a837a61a504bd1003565d092f84ef2",
+    "TernaryForwardInverse.clean.log": "058e06a0243fa4d12903aba0a9422e3ac9dc4e701acea1e0b4732cac92e093e0",
+    "TernaryForwardInverseBase.lean": "ab45af237cbfec2c10452d0108f8e29e8cf4033a103c2f39bca968c61697cd5c",
+    "TernaryForwardInverseBase.clean.log": "2e64cbf16d28d63c300788eceb7bd50a85a9fb74500bf09ede32a7e206e3225e"
+  }
+}

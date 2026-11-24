@@ -1,0 +1,14 @@
+'ActualDyadicSourcePayment.whole_indexed_owner_raw_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActualDyadicSourcePayment.whole_generic_signed_dyadic_prefix_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ActualDyadicSourcePayment.whole_doubling_all_subreads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActualDyadicSourcePayment.whole_nonnegative_weighted_source_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ActualDyadicSourcePayment.whole_indexed_gap_thin_slope_excludes_recovery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ActualDyadicSourcePayment.whole_high_first_missing_degree_and_birth_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

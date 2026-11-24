@@ -1,0 +1,114 @@
+\section{The divided-CI positive primitive after its first centre: under audit}
+NEW WRITTEN PROOF, not yet registered. The universal theorem claimed
+here is being independently audited and formally checked.
+
+Let $L=\prod[t]$, $t\ge3$, degree $h$, and $u\ge h+1$.
+Put $c=\psi^uL(-\phi)$, $J=((1+z)^uL-c)/(1+qz)$.
+The repaired theorem states that $J$'s positive primitive is LC at
+EVERY centre $n\ge2$. Its first internal centre is deliberately
+excluded: $L=[3],u=3$ has minor $11-7\phi<0$ there.
+Global ordinary positivity and LC of $J$ are ALREADY registered.
+
+\paragraph{Windows with one exceptional initial primitive centre.}
+If $a$ is positive globally LC and its positive primitive is LC from
+centre two, then $[t]a$'s positive primitive is LC at every centre
+$n\ge t+1$. Delete rank zero of the old positive primitive, obtaining
+a globally LC sequence supported on $1,\ldots,M$, with $M$ the old
+first mode. At every centre $t+1\le n<M$, all three causal window
+reads have input index at least $n-t\ge1$; ordinary LC convolution
+applies to this truncated primitive. At $n=M$, lowering its next
+primitive by the incoming negative difference improves the minor.
+For $n\ge\max(M+1,t+1)$ use the registered Frechet proof with
+$R_k=\sum_{j>k}d_j^+$. All read $k=n-t$ and their neighbours are
+nonnegative. These $R$ values are tail cumulatives of the truncated
+LC primitive, and $R_k=M_a-a_k$, where $M_a=a_M$ is the actual height.
+Thus $(a_n+R_{n-t}-M_a)^+$ has the required LC. This proves the
+weakened window lemma with no assumption at primitive centre one.
+
+\paragraph{A doubled robust head.}
+For $u\ge12$, nonnegative LC $N$ with $N_0=1$,
+$N_1\le(u-3)/2$, and $B=NQ_u$, the claim is
+\[
+ M_B(s)\ge2q^s(B_{s+1}+2qB_s+q^2B_{s-1})
+                                \quad(2\le s\le u-2). \tag{1}
+\]
+For $1\le k\le s$, the registered ULC ratio estimate gives
+$K(s,k)\ge Q_sQ_k/(s+1)$ and $T_k/Q_k\le u+q$.
+The function $2(s+1)q^s$ decreases from $s=2$ onward and is at most
+$6q^2\le12/5$. If $s\le u-3$, binomial LC/symmetry and the positive
+$Q$ expansion give $Q_s\ge{u-1\choose2}\ge(12/5)(u+q)$.
+For the only remaining case $s=u-2\ge10$, use
+$2(s+1)q^s\le14q^6\le7/8$ and
+$Q_s\ge u-q\ge(7/8)(u+q)$ (as $u\ge12>15q$).
+This proves $K(s,k)\ge2q^sT_k$ for every $k\ge1$.
+For row zero it suffices to prove
+$Q_s\ge q^s(3u-3+2q)$. At $s=2$ use the quadratic binomial lower
+bound and $q^2\le2/5$. At $s\ge3$ use $Q_s\ge u-q$, $q^3\le1/4$,
+and $u-q\ge(3u-3+2q)/4$. The same Cauchy--Binet first-row sum as
+before, with $N_{s+1}\le N_1N_s$, pays its missing final coefficient.
+This proves (1). No numerator degree bound is used.
+
+\paragraph{Fixed-$u$ interval induction for $u\ge12$.}
+The empty-tail base has its ENTIRE positive primitive LC by the
+registered binary base (it applies for every $u\ge3$).
+Append $L'=L_0[t]$ with old length $r$, $u\ge\deg L_0+t\ge2r+3$.
+Let $B=L_0Q_u$, $a=\phi^2\psi^uL'(-\phi)$,
+$X_n=B_n-a\psi^n$. The exact interval norm bound
+$|[t](-\phi)|q^{t-1}\le2q^2<1$ gives
+\[
+ |a|\le2q,\qquad |a|\le4q^3<1\quad\hbox{if }r\ge1.
+\]
+The doubled budget (1) proves $X$ LC at centres $2,\ldots,u-2$.
+Its read entries at ranks $1,\ldots,u-1$ are positive: at ranks
+through $u-2$ use $Q_n\ge u-q$; at $u-1$ use
+$Q_{u-1}>3/2$ and $|a\psi^{u-1}|\le2q^u<1$.
+The exact primitive identities are
+\[
+ d_n=X_n\ (1\le n<t),\quad d_t=X_t-1,\quad
+                              d_{t+1}=X_{t+1}-B_1.   \tag{2}
+\]
+They are used only through index $u$ when available. The quotient
+correction to $[t]J_{L_0}$ has degree $t-2$, so the weakened window
+lemma proves all primitive centres at least $t+1$.
+Centres $2,\ldots,t-2$ use (1); at $t-1$ lowering the next value by
+one improves the minor. There is no need to pay primitive centre one.
+
+If $t\le u-2$, write $b=B_1=u+r-q$ and
+$D=b^2-2B_2=u-r-q^2$. Ordinary LC gives
+$bB_t\le B_2B_{t-1}$ and
+$B_{t-1}\ge(r+1)(u-q)\ge(r+1)(u-1)$.
+For $r\ge1$, the concave scalar inequality on $1\le r\le(u-3)/2$
+\[
+ (u-r-1)(r+1)(u-1)\ge u(u+r)
+\]
+has endpoint margins $u^2-7u+4$ and
+$(u-1)(u^2-6u-1)/4$, both positive for $u\ge12$.
+It implies $bB_{t-1}-2B_t\ge u$.
+Its perturbation error is at most
+$q^2(b+2q)\le(2/5)(3u/2)=3u/5$.
+Thus $bX_{t-1}-2X_t\ge2u/5$.
+For $r=0$, $B_{t-1}\ge b$, so the unperturbed gap is at least
+$D=u-q^2$. Its error is at most
+$2q^t(u+q)\le2q^3(u+q)\le u/2+1/3$.
+The perturbed gap is at least $u/2-11/15>0$.
+The last raw primitive minor is EXACTLY
+$M_X(t)+1+bX_{t-1}-2X_t$, so is positive in both cases.
+Global ordinary LC of $J$ gives initial-interval support of its
+positive primitive; all clipping/zero cases therefore follow.
+
+If $t>u-2$, the old tail is empty, since its degree is either zero
+or at least two. The only possibilities are $t=u$ and $t=u-1$.
+For $t=u$ exact division gives $d_u=\psi^u-1<0$.
+For $t=u-1$ it gives $d_{u-1}=q+\psi^u>0$ and
+$d_u=-u+q-q\psi^u<0$. The final primitive centre is consequently
+an endpoint with next positive part zero; earlier centres were paid
+by (1). This completes the unbounded fixed-$u$ induction.
+
+\paragraph{Complete small cases.}
+For $u\le11$ one has $h\le u-1\le10$. Enumerating EVERY degree
+partition with parts at least two gives exactly 139 $(u,L)$ contexts.
+The independent exact QA checks all 1653 later primitive minors;
+their 854 distinct $\mathbb Q(\phi)$ margins form a complete scalar
+certificate. This finite list covers only the bounded exceptions
+to the preceding unbounded proof. All registrations are deferred
+until the independent reconstruction and formal audits have passed.

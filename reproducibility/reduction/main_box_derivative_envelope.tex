@@ -1,0 +1,142 @@
+\section{A main-box envelope for ordinary derivatives at every order of rank}
+For a normalized formal arm $Y=1^\beta(v_1,\ldots,v_h)$,
+$\beta\ge1,v_i\ge2$, write
+\[
+ q=q_Y,\qquad K=[\beta+1]\prod_{i=1}^h[v_i],
+ \qquad b=\operatorname{wt}Y,\quad m=\deg K=b-h.
+\]
+No ordering of the formal capacities is needed in the first theorem.
+
+\begin{theorem}[The positive derivative is bounded by the main interval product]
+Coefficientwise on all integer ranks,
+\[
+                  (1-z)q\preceq K.
+\]
+Equivalently $q_j-K_j\le q_{j-1}$ at every rank, and
+$\max(q_j-q_{j-1},0)\le K_j$.
+\end{theorem}
+\begin{proof}
+For the initial interval, $q=K$ and nonnegativity suffices.
+Append a capacity $t\ge2$, obtaining
+$q'=[t]q+z^a$ and $K'=[t]K$.
+At every rank below $a$, the new difference is the uniform
+window of the old difference, so the claimed upper bound
+is preserved coefficientwise. At rank $a$, the new last
+two coefficients are both one, so its difference is zero,
+at most the nonnegative coefficient of $K'$.
+At rank $a+1$ its difference is negative, and all later
+differences vanish. This proves the induction.
+The scalar window/terminal-unit implication is kernel checked
+in \texttt{MainBoxDerivativeEnvelope.lean}.
+\end{proof}
+
+\begin{corollary}[A uniform curvature resource bound]
+Let $Y$ be ordinary and let $j\ge2$ lie on its rising
+side, allowing a global maximum plateau. Put
+$\delta_j=q_j-2q_{j-1}+q_{j-2}$.
+If $\delta_j>0$, then
+\[
+                         \delta_j+1\le K_j.
+\]
+\end{corollary}
+\begin{proof}
+Rising-side log-concavity and positivity imply that
+$q_{j-1}>q_{j-2}$ whenever $\delta_j>0$.
+Otherwise equality of these adjacent positive coefficients
+would force $q_j\le q_{j-1}$, contradicting positive curvature.
+Integrality gives $q_{j-1}-q_{j-2}\ge1$.
+Subtract this unit from the derivative envelope at rank $j$.
+\end{proof}
+
+\begin{corollary}[An all-rank ordinary flag]
+Let $\kappa\ge2,j\ge2$ and suppose
+$m\ge\kappa+2j-2$. If $\delta_j>0$, then
+\[
+                       q_{\kappa+j-2}\ge\delta_j+1.
+\]
+\end{corollary}
+\begin{proof}
+One has $j\le\kappa+j-2\le m-j$.
+Every positive box of $q$ is centered at least at $m/2$,
+so $q$ is nondecreasing through $\lceil m/2\rceil$.
+In particular rank $j$ is on its rising side.
+Symmetry and unimodality of the main interval product give
+$K_{\kappa+j-2}\ge K_j$, and $q\succeq K$.
+Apply the curvature resource bound.
+\end{proof}
+
+\begin{corollary}[All joining curvatures in an unbounded gap range]
+Suppose $\kappa\ge9$, $\kappa(\kappa-1)\le2c$,
+$0\le g\le\kappa-2$, $b=c+s$, $s\le g$,
+and a relevant joining index $j\ge2$ satisfies
+$2j\le g+s+1$.
+For every normalized nonrectangular ordinary opposite arm
+of weight $b$, positive curvature $\delta_j$ satisfies
+\[
+                         q_{\kappa+j-2}\ge\delta_j+1.
+\]
+\end{corollary}
+\begin{proof}
+The staircase bound gives $c\ge5\kappa-9$, since
+$(\kappa-2)(\kappa-9)\ge0$.
+The opposite non-one count obeys $2h\le b-1$.
+Combining these with $s\le g\le\kappa-2$ and the bound
+on $j$ gives $m=b-h\ge\kappa+2j-2$.
+All these domain implications are kernel checked for
+unbounded integers. Apply the all-rank flag.
+\end{proof}
+
+This supplies a genuine all-rank curvature resource;
+it does not place the right endpoints of those paying
+ordinary layers before the current joining rank.
+The latter distinction is essential: the infinite family
+in \texttt{subcritical\_post\_mode\_obstruction.tex} still
+has zero or insufficient old-product tail-drop budgets.
+Thus neither this envelope nor the all-rank flag alone
+proves the general window no-valley statement.
+
+\begin{theorem}[The same all-rank flag for every $\kappa\ge5$]
+In the preceding joining-domain corollary, the hypothesis
+$\kappa\ge9$ can be replaced by $\kappa\ge5$.
+\end{theorem}
+\begin{proof}
+Only failure of $m\ge\kappa+2j-2$ needs treating.
+Write $E=b-2h-1\ge0$ for the opposite weight excess
+above one initial one and $h$ twos.
+The failure inequalities and the staircase bound force
+\[
+ \kappa\le8,\quad b\le33,\quad c\le40,\quad
+ g\le6,\quad j\le g,\quad 0\le E\le4.
+\]
+For the last bound, the mass inequality gives
+$c\ge5\kappa-15$: for integer $\kappa\ge5$,
+$(\kappa-5)(\kappa-6)\ge0$.
+Degree failure gives $E\le5\kappa-c-11\le4$.
+The remaining bounds follow from the same linear
+inequalities; their unbounded implication is kernel checked.
+
+Enumerate $\kappa=5,6,7,8$, $0\le c\le40$,
+$0\le g\le6$, $-g-1\le s\le g$, $2\le j\le g$,
+subject to the displayed hypotheses and degree failure.
+For each opposite weight $b$, enumerate $E=0,\ldots,4$
+with $h=(b-E-1)/2$ a nonnegative integer.
+Every normalized arm in this domain has exactly the form
+\[
+       1^{A+1}2^{h-\ell(P)}(2+P_1)\cdots(2+P_{\ell(P)}),
+ \quad 0\le A\le E,\quad P\vdash E-A,\quad\ell(P)\le h.
+\]
+This follows by subtracting two from every non-one part
+and removing the resulting zeros. It is a complete
+enumeration, with no search cutoff on unspecified parameters.
+There are 73 admissible profiles, using 50 distinct arms,
+across 29 degree-order contexts. Kernel \texttt{decide +kernel}
+in \texttt{AllRankHeadFlagBoundary.lean} checks every
+positive-curvature inequality on that entire finite domain
+and the profile count 73.
+Together with the unbounded main-degree theorem, this
+proves the stated all-rank flag.
+\end{proof}
+
+The flag remains a head-coefficient resource, not an
+unrestricted joining budget: it does not force those
+ordinary layers to end before the current joining rank.

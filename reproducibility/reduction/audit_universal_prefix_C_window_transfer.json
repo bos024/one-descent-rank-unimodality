@@ -1,0 +1,17 @@
+{
+  "status": "PASS_UNIVERSAL_PREFIX_C_WINDOW_TRANSFER",
+  "counts": {
+    "actual_owners": 12000,
+    "formal_owners": 6000,
+    "old_C_representatives": 4251296,
+    "universal_loss_seeds": 15949,
+    "window_loss_payments": 156045,
+    "prefix_C_representatives": 2225226,
+    "untruncated_C_representatives": 5291077,
+    "complete_mode_appends": 10168,
+    "complete_mode_C_representatives": 3084585,
+    "newly_closed_fourth_edges": 5368
+  },
+  "seconds": 37.21899999999732,
+  "scope": "Complete written CONDITIONAL old-C transfer covers ALL n<=t+max(4,kappa-1) and ALL n<t+r. Every legal t>=old D first mode-max(4,kappa-1) fully closes. Remaining failures must have n-t>=kappa, r<=n-t and n<=old D first mode, after the first four edges. The exact generated source companions beyond this range are still unproved; original general UI remains OPEN."
+}

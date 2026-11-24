@@ -1,0 +1,28 @@
+\section{Boundary-read clarification for the degree-boundary proof}
+The registered proof \texttt{degree\_boundary\_CI\_entrance\_proof.tex}
+uses the ordinary seed at $W+1$ and its valid reads $F_W=d_*$,
+$F_{W+1}=c_*+d_*$. Its concluding aside says the ordinary seed at
+$W$ ``can fail here''. That aside is withdrawn: it is not a premise
+or a step in its proof, and its suggested failure is incorrect.
+
+Indeed, for the reference $F=B/(1-z-z^2)$,
+\[
+             r_{j+2}=F_j+B_{j+2}.
+\]
+Since $\deg B=W$, the zero-correction identity $F_j=r_{j+2}$
+already holds for $j=W-1$, not just $j\ge W$.
+In particular $F_{W-1}=r_{W+1}$, with NO added unit.
+At binary count $u=h$, the unused seed at $W$ actually has margin
+$r_{W+1}\delta>0$ relative to
+$(r_{W+2}-\delta)/r_{W+1}$.
+No theorem, scalar kernel, actual negative control, or conclusion
+of the earlier degree-boundary theorem changes. Its actual LC
+negative control $(8,12,19)$ remains valid.
+
+At the NEW count $u=h-1$ the correct ordinary seed is
+$F_{W-1}=a_*=r_{W+1}$, $F_W=a_*+b_*$, $b_*=r_W$.
+Its margin is $A_V+\delta a_*>0$, using
+$b_*^2+a_*b_*-a_*^2=A_V$. The new proof and independent literal
+coefficient checks use these corrected reads throughout.
+Earlier immutable proof records are preserved; this clarification
+is appended and must accompany references to their unused aside.

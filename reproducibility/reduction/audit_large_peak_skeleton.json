@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact finite diagnostics of the analytic arbitrary-skeleton theorem; not a replacement for its proof",
+  "arbitrary_skeleton_cores": 1100,
+  "exact_padding_identities": 17600,
+  "profile_bounds": 100194,
+  "central_concavity_comparisons": 139841,
+  "late_envelope_comparisons": 617459,
+  "seed": 2026101701,
+  "seconds": 9.281000000002678
+}

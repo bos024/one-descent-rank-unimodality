@@ -1,0 +1,157 @@
+{
+  "status": "PASS_ALL_COUNT_ALL_PADDING_PURE_TERNARY_ACTUAL_COMPLETE_C",
+  "new_scoped_reports": 12,
+  "kernels": {
+    "PureTernaryCompleteC": {
+      "PureTernaryCompleteC.whole_renewal_residual_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.entire_renewal_residual_unit_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.complete_first_physical_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.first_source_growth_gap": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.first_cut_startup_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.second_cut_startup_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.third_cut_startup_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.all_startup_source_budgets": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.true_ordinary_seed": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.finite_double_cumulative_entry_transfer": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PureTernaryCompleteC.complete_small_count_padding_reduction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "PureTernaryCompleteCCertificate": {
+      "PureTernaryCompleteCCertificate.complete_small_pure_ternary_integer_entrance": [
+        "propext"
+      ]
+    }
+  },
+  "theorem": "EVERYACTUAL1alpha3r,ALLalpha>=1/r>=0:FULLC atEVERYcurrentN/EVERYshift>=3. Counts/padding/ranks/shiftsALLUNBOUNDED. NewACTUALfamily,notjustproperCIquotient.",
+  "derivative": "ALLr>=18,ALLalpha:actualpositiveDordinaryLC atEVERYcentreN>=r+2STRICTLYBEFOREFIRSTDmode. TRUEd-infinity_(r+s)=future_bJ_s+future_bJ_(s-1)onlys>=0. PreviousphysicalvalueDIFFERSandseparatelypaid. ALLTHREEsourcecutstartupcentrespaid;degree-oneRRETAINEDoutsidecutband.",
+  "entry": "Exactresidualnormb^n implies|h_n-lambda*hprev|<1ALLn>=3. FIRSTactualgrowthgaplambda*D_(r+2)-D_(r+3)>=r-4;correctTRUEordinaryFseedF_(r+1)-mu*F_r>=6forALLmu<=firstpostsourceDratio. D-LCratiochain+protectedreferenceG+TWOcumulativeintegrationsproveALLCshifts. DoesNOTassumeactualCDFLC.",
+  "entrance": "COMPLETE98hosts11<=r<=17,1<=alpha<=r,EVERYN4..2r/EVERYk1..N-3:34062LITERALintegerCproducts/16115uniquemargins/54ordinaryLeanchunksONEaggregate. ALLlargeralphaexactprefixrepresentedbyalpha=r;FIRSTDmode<=2r. r<=10OLDweight32completeC theoremREUSED/NOTrecounted.",
+  "formal_scope": "ELEVENnewcleanstandardaxiomgenerickernelsincludingFULLresidualnorm/unitboundandboundedTWOcumulativeinduction+ONEnewaggregatecompletefiniteintegercertificate. Actualcomposition/generatingfunction/ratiochain/CassemblyWRITTEN,notendtoendLeancompositions. COMPLETEfinitepremiseis98hosts,notrandomQA.",
+  "remaining": "OriginalgeneralUI/generalC/fullA2OPEN. Mixedbinary/ternaryu>=33actualdiagonalOPEN;theWHOLEextraP_usourcecannotbereplacedbyproperJ_E. Allnewproofskeepfirstphysicalboundary,correctFIRSTmodeguardandordinaryFentry.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "counts": {
+    "COMPLETE_independent_small_entrance_hosts": 98,
+    "COMPLETE_independent_LITERAL_integer_C_products": 34062,
+    "independent_padding_representative_prefix_controls": 7,
+    "independent_Qa_ACTUAL_future_quotient_identity_reads": 485,
+    "independent_nonzero_previous_physical_remainder_controls": 7,
+    "independent_FULL_residual_tail_identity_reads": 499,
+    "independent_FULL_actual_padding_and_clipping_identity_reads": 5411,
+    "independent_actual_vs_J_FIRSTmode_controls": 42,
+    "independent_actual_PREmode_DLC_minors": 11356,
+    "independent_actual_all_shift_prefix_minima": 23137,
+    "independent_actual_logical_shifts": 1421273,
+    "independent_actual_QA_hosts": 250
+  },
+  "QA": {
+    "exact_ACTUAL_infinite_derivative_future_quotient_identity_reads": 485,
+    "actual_PREmode_D_LC_minors_from_FIRST_physical_source": 29626,
+    "actual_growth_gap_and_TRUE_ordinary_entry_seed": 489,
+    "exact_prefix_minimum_all_shift_C_payments": 60219,
+    "logical_shift_coverage": 5326184,
+    "actual_unbounded_family_QA_hosts": 489
+  },
+  "independent_state_sha256": "665a205bb375ed466048991535653ce9bd1129a2c2c4f6cf95f78cf78fdf0202",
+  "seconds": 0.39100000000325963,
+  "local_files": [
+    "pure_ternary_complete_C_proof.tex",
+    "PureTernaryCompleteC.lean",
+    "PureTernaryCompleteC.log",
+    "PureTernaryCompleteCCertificate.lean",
+    "PureTernaryCompleteCCertificate.log",
+    "build_pure_ternary_complete_C_certificate.py",
+    "pure_ternary_complete_C_certificate_data.json",
+    "audit_pure_ternary_complete_C.py",
+    "audit_pure_ternary_complete_C.json",
+    "verify_pure_ternary_complete_C.py"
+  ],
+  "dependency_files": [
+    "renewal_root_primitive_cut_verification.json",
+    "renewal_root_positive_primitive_cut_proof.tex",
+    "tribonacci_quotient_primitive_verification.json",
+    "tribonacci_rich_reverse_quotient_verification.json",
+    "tribonacci_rich_reverse_certificate_data.json",
+    "first_missing_renewal_envelope.tex",
+    "finite_initial_ones_relative_derivative.tex",
+    "sharpened_forward_derivative_centers.tex",
+    "TernaryRichCompleteC.lean",
+    "TernaryRichCompleteC.log",
+    "ternary_rich_complete_C_verification.json",
+    "multitail_binary_prefix_finite_principle_verification.json",
+    "verify_subdegree_CI_entrance.py",
+    "verify_tribonacci_quadratic_inverse.py",
+    "verify_tribonacci_rich_reverse_quotient.py"
+  ],
+  "sha256": {
+    "pure_ternary_complete_C_proof.tex": "1c885d28fa414acf89e4d7d73075a796c06b237dd64b75979ff6d69317424cdf",
+    "PureTernaryCompleteC.lean": "71316b0039851054e30662a6dbd94ef5ae7d1148018af4fe09a8e9211dfdcf90",
+    "PureTernaryCompleteC.log": "84b895282513463fd380485164c249342e3618bce2bb949ed67fdb237ec14fba",
+    "PureTernaryCompleteCCertificate.lean": "f7b6e6503282958e043255f24446e0a40daeebdd079a5d101a33c590c29ff603",
+    "PureTernaryCompleteCCertificate.log": "31f762b3ae6530b1a3dc7bed3bd2cd36c8186c1e4fb9e04960c0ad23888d018e",
+    "build_pure_ternary_complete_C_certificate.py": "389acec7e25dc3c9831dc69bbc5441084e92cdc9a62de1970e7a0b572ff53268",
+    "pure_ternary_complete_C_certificate_data.json": "a084c684c1aee3f9d105a8363909771ef635d0b8b9b20d55707a8fb1dfc3a7a5",
+    "audit_pure_ternary_complete_C.py": "9c90297431093a3ae2411c9012160431bc2dacb2b1269bc2653ee7f6ada52863",
+    "audit_pure_ternary_complete_C.json": "70532b0a07a1e39b4d98ed0f4f68070f3ec9f89220771e612eab2e52539d0822",
+    "verify_pure_ternary_complete_C.py": "5d0d86949cd8df4966b80b58acca101b9e13a60e7c2606fd40c0eef7e131786e",
+    "renewal_root_primitive_cut_verification.json": "ae37e6cf269b093ce66f8a1b263992f8b95515cf546b4a2c44d12fb4a859ee9c",
+    "renewal_root_positive_primitive_cut_proof.tex": "c6a076dcce959b3e3c621c4f9c1c4d6dd9c74eb289df7673027bde1ca2b7cda1",
+    "tribonacci_quotient_primitive_verification.json": "e3941aa3ae73744afa75a0edaf0b7570879b5a630063efb7940542c2ad755fcf",
+    "tribonacci_rich_reverse_quotient_verification.json": "37c05934f815d6f884a2921e31ade6a97bb68a2404ae9202aba71086ce86b3cf",
+    "tribonacci_rich_reverse_certificate_data.json": "b2461fa63130022b210135cc33251203776d2bb411b1062e7846d9ef215e156c",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "sharpened_forward_derivative_centers.tex": "4b3866335d12280de1bceb86a0e97b6c18eb1463dbc2da56b6a1adbecb589f87",
+    "TernaryRichCompleteC.lean": "cb6a22a0a007c8989acc75cbf6388452c14e3479386abcd5e8e45868c667d36f",
+    "TernaryRichCompleteC.log": "f083599130ded5381703697b522d63da8611b557f4a8d83d9147e42c2263df5e",
+    "ternary_rich_complete_C_verification.json": "12f80fdcd80519a57de88079e405890880e754b2b3d838abd266ed355473c328",
+    "multitail_binary_prefix_finite_principle_verification.json": "3567b9157cfcf4f91b5d8eb5f858782e04dd13fcc0c029064178c973198cb3a7",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "verify_tribonacci_quadratic_inverse.py": "d640aa93703309cb4cbb6a198076d1654fabef4c27c35d6937ae72c0ef6f5869",
+    "verify_tribonacci_rich_reverse_quotient.py": "dc5c6a5050877e1b984de16a5724805b1d2919b11b38b2fff56470985d3453ef"
+  }
+}

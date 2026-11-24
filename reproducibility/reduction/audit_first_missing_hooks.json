@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "Independent bounded and unbounded word enumeration of the first-defect hook theorem, and exact sharp first-boundary amplitudes. No later-boundary sign claim.",
+  "seed": 2026102112,
+  "first_missing_levels": 2200,
+  "allowed_word_embedding_checks": 290372,
+  "missing_words_verified_as_hooks": 3778,
+  "sharp_boundary_amplitude_examples": 9,
+  "seconds": 0.18800000000192085
+}

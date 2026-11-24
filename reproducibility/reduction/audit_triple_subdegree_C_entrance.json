@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_QA_TRIPLE_SUBDEGREE_ACTUAL_LATE_C_UNDER_AUDIT",
+  "counts": {
+    "exact_prefix_minimum_all_shift_C_payments": 1282560,
+    "logical_shift_coverage": 323545354,
+    "literal_all_shift_C_products": 2215763,
+    "actual_hosts": 7850,
+    "CI_profiles": 1122,
+    "unbounded_three_loss_and_two_seed_identity_instances": 7679,
+    "all_prefix_strong_cumulative_seed_products": 567942,
+    "strictly_growing_boundary_hosts": 7662
+  },
+  "state_sha256": "7209b694afb3de044b3912de8618508388262681383bfb07d8d9055053c64c7a",
+  "seconds": 11.343000000000757,
+  "scope": "Proposed UNBOUNDED h=u+3 actual late-C theorem. Every finite range/random word here is QA ONLY; NO NEW finite entrance premise. Actual losses retain BOTH finite binary and initial-one sources and the reference numerator unit at W-2. Universal late-D-LC is an already proved dependency. Earlier C/A2/original UI OPEN."
+}

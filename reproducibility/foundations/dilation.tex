@@ -1,0 +1,255 @@
+\section{Effective unimodality under dilation}\label{sec:dilation}
+
+For a fixed nonempty composition $w=(w_1,\ldots,w_l)$, write
+$tw=(tw_1,\ldots,tw_l)$ and $W=\sum_iw_i$.
+
+\begin{theorem}[Dilation and its eventual modes]\label{thm:dilation}
+There is a computable integer $T(w)$ such that $F_{tw}$ is unimodal
+for every integer $t\ge T(w)$.
+If $2\max_iw_i<W$, set $C_t=(tW+l-1)/2$. For all $t\ge T(w)$,
+the lower integer $\lfloor C_t\rfloor$ is a mode, and it is either
+the unique mode or belongs to exactly two adjacent modes
+$\lfloor C_t\rfloor,\lceil C_t\rceil$.
+In particular, an integral $C_t$ is the unique mode.
+The eventual choice in each parity of $t$ is computable exactly.
+There is no restriction on the length or number of descents of $w$.
+\end{theorem}
+
+The proof confines all undecided differences to a fixed finite window,
+then computes their exact polynomials in $t$. A limiting unimodal
+density, without control of these differences, would not suffice.
+
+\input{mode_window}
+
+Together with Lemma~\ref{lem:half}, the right-tail bound leaves only
+the differences strictly after $\lceil N/2\rceil$ and no later than
+$\lfloor(N+l-1)/2\rfloor$ undecided. The width of this window depends
+on the number of parts, not their sizes.
+
+\begin{lemma}[Multilinear expansion]\label{lem:multilinear}
+There are integers $a_I$, independent of $t$, such that
+\[
+ F_{tw}=\sum_{I\subseteq[l]}a_I\prod_{i\in I}S_{tw_i},
+ \qquad a_{[l]}=1,\qquad
+ \sum_{|I|=j}a_I=1\quad(0\le j\le l).
+\]
+One may choose them with $\sum_I|a_I|\le3^l$.
+\end{lemma}
+\begin{proof}
+Fix recursive splits at maxima of $w$, which remain valid under
+dilation. Apply the maximum identity, retaining a formal variable for
+each position. The resulting polynomial is multilinear and its full
+monomial has coefficient one. Setting every variable equal to $s$
+gives $1+s+\cdots+s^l$: for arms of lengths $a,b$, the expressions
+$1+(s-1)P_X=s^{a+1}$ and $1+(s-1)P_Y=s^{b+1}$ multiply.
+This proves the sums by cardinality.
+An endpoint maximum gives $P=1+sP_Y$. At an internal maximum,
+$\|P\|_1\le\|P_X\|_1+\|P_Y\|_1+2\|P_X\|_1\|P_Y\|_1$.
+For $a,b\ge1$, $3^a+3^b\le3^{a+b}$, so induction gives the norm bound.
+\end{proof}
+
+For positive widths $v_1,\ldots,v_m$, let
+$B_v=\mathbf1_{[0,v_1]}*\cdots*\mathbf1_{[0,v_m]}$.
+For $m\ge2$ its continuous representative is
+\begin{equation}\label{eq:boxspline}
+ B_v(x)=\frac1{(m-1)!}
+ \sum_{J\subseteq[m]}(-1)^{|J|}
+       \left(x-\sum_{j\in J}v_j\right)_+^{m-1}.
+\end{equation}
+Repeated integration of interval indicators proves this formula.
+
+\begin{lemma}[Negative central curvature]\label{lem:boxcurvature}
+If $m\ge3$ and $2\max_i v_i<V=\sum_i v_i$, then
+$B_v''(V/2)$ exists and is strictly negative.
+\end{lemma}
+\begin{proof}
+We use the elementary strict shape of interval convolutions. In
+centered coordinates, a convolution with total width $V$ and largest
+width $L$ has a plateau of half-width $(2L-V)_+/2$ and is strictly
+decreasing from that plateau to its support endpoint. For two
+intervals this is the trapezoid formula. Inductively put the largest
+interval last, and write $g$ for the centered convolution of the other
+intervals, of total width $D=V-L$. Then
+\[
+ B_v'(V/2+x)=g(x+L/2)-g(x-L/2).
+\]
+For $(L-D)_+/2<x<(L+D)/2$, the inner point lies inside the support,
+and the outer point lies beyond the plateau of $g$. That plateau has
+half-width strictly less than $L/2$ when at least two widths remain.
+Symmetry and the inductive strict decrease make the displayed
+difference negative. At $x=0$ the difference is zero by symmetry.
+If $L\ge D$, both terms vanish for $0\le x\le(L-D)/2$.
+This proves the asserted strict shape, including strict negativity
+of its derivative off the plateau for three or more intervals.
+
+Under $L<D$, the point $L/2$ lies strictly between the plateau and
+the support endpoint of $g$. Hence
+\[
+ B_v''(V/2)=2g'(L/2)<0.
+\]
+When $g$ is a two-interval convolution the point is in a sloping
+open segment of its trapezoid; otherwise $g'$ is continuous there.
+\end{proof}
+
+Write $c_i=a_{[l]\setminus\{i\}}$, so $\sum_i c_i=1$.
+The top two multilinear degrees have an exact symmetry:
+\begin{equation}\label{eq:topsymmetry}
+ H_t=\prod_i S_{tw_i}+\sum_i c_i\prod_{j\ne i}S_{tw_j},
+ \qquad z^{tW+l-1}H_t(1/z)=H_t(z).
+\end{equation}
+Indeed, reflection multiplies the full product by $z^{-1}$ and the
+$i$th omitted-factor product by $z^{tw_i}$. The differences cancel,
+using $z^{tw_i}-1=-(1-z)S_{tw_i}/z$ and $\sum_i c_i=1$.
+
+\begin{lemma}[Exact central polynomials]\label{lem:centralpolynomials}
+Assume $2\max_iw_i<W$. Choose a parity $\epsilon\in\{0,1\}$ and
+a half-integer $s$ with $0\le s\le l/2+1$ and
+$\epsilon W/2+s\in\mathbb Z$. There is an explicitly computable
+rational polynomial $P_s(t)$ such that
+\[
+ \Del F_{tw}(tW/2+s)=P_s(t)
+ \quad\text{for }t\ge4l+4,\quad t\equiv\epsilon\pmod2.
+\]
+For $l\ge4$, its degree is at most $l-3$, and its coefficient of
+$t^{l-3}$ is
+\begin{equation}\label{eq:centralleading}
+ B_w''(W/2)(s-l/2).
+\end{equation}
+For $l=3$ the polynomial is exactly $-2s+3$.
+At $s=l/2$, when this parity exists, write $Q_w=P_{l/2}$.
+This polynomial is either zero or has negative leading coefficient;
+for $l\ge4$ its degree is at most $l-4$.
+\end{lemma}
+\begin{proof}
+For a product of $m\ge2$ intervals the exact first-difference formula is
+\begin{equation}\label{eq:centralbinomial}
+ \Del\left(\prod_{i\in I}S_{tw_i}\right)(n)
+ =\sum_{J\subseteq I}(-1)^{|J|}
+    \binom{n-t\sum_{j\in J}w_j-2}{m-2}.
+\end{equation}
+A binomial is zero unless its upper argument is at least its
+nonnegative lower argument. This follows by expanding the numerator
+of $z^m\prod_{i\in I}(1-z^{tw_i})/(1-z)^{m-1}$.
+At $n=tW/2+s$, a summand has upper argument
+\[
+ t\beta+s-2,\qquad \beta=W/2-\sum_{j\in J}w_j.
+\]
+For $t\ge4l+4$, a positive $\beta$ is at least $1/2$ and makes the
+binomial an ordinary polynomial in $t$; a negative $\beta$ is at
+most $-1/2$ and makes it zero. If $\beta=0$, retain its constant
+binomial if it is nonzero. In that case $W$ is even and the allowed
+parity makes $s$ integral. Products with fewer than two factors have
+zero difference in this balanced central window. This constructs
+$P_s$ exactly from Lemma~\ref{lem:multilinear}.
+
+For $l\ge4$, the leading two terms of the full product's difference
+are
+\[
+ t^{l-2}B_w'(W/2)
+ +t^{l-3}\left(s-\frac{l+1}{2}\right)B_w''(W/2).
+\]
+To verify the second coefficient directly, the shifts in the
+binomial product are $2,3,\ldots,l-1$, whose sum is
+$(l-2)(l+1)/2$. The first term vanishes by symmetry.
+An omitted-factor product contributes leading coefficient
+$B_{w\setminus i}'(W/2)$ at degree $l-3$. Differentiating the
+convolution with the $i$th interval and using symmetry gives
+\[
+ B_w''(W/2)=B_{w\setminus i}'(W/2)
+              -B_{w\setminus i}'(W/2-w_i)
+           =2B_{w\setminus i}'(W/2).
+\]
+All other products are of degree at most $l-4$ after taking a
+difference. A zero-slope binomial is only constant and cannot affect
+the coefficient at degree $l-3$. Summing, with $\sum_i c_i=1$,
+proves~\eqref{eq:centralleading}.
+
+For $l=3$, all singleton subset sums are below $W/2$ and all pair
+sums are above it. The full product contributes $-2(s-2)$, each
+two-factor product has difference $-1$, and their coefficients sum
+to one. This gives $-2s+3$ exactly.
+
+Finally, the degree bound for $Q_w$ follows either from
+\eqref{eq:centralleading} or the exact cancellation
+\eqref{eq:topsymmetry}. Lemma~\ref{lem:righttail} gives $Q_w(t)\le0$
+at all integers of the indicated parity where it represents the
+central difference. A nonzero polynomial with this property has
+negative leading coefficient.
+\end{proof}
+
+For a nonzero rational polynomial $P(t)=\sum_{j=0}^d p_jt^j$, define
+\[
+ b(P)=1+\left\lceil\frac{\sum_{j<d}|p_j|}{|p_d|}\right\rceil,
+ \qquad b(0)=1.
+\]
+For every real $t\ge b(P)$, a nonzero $P(t)$ has the sign of $p_d$.
+Indeed, if $d\ge1$ and $t\ge1$, the absolute sum of its lower terms
+is at most $t^{d-1}\sum_{j<d}|p_j|<|p_d|t^d$.
+The constant case is immediate.
+
+\begin{proof}[Proof of Theorem~\ref{thm:dilation}, including an effective threshold]
+If $2\max_iw_i\ge W$, split a dilated word at its maximum $M$ and
+write $D$ for the remaining weight. Here $M\ge D$. First-half
+increase reaches rank $D$, whereas the maximum identity gives
+\[
+ \Del F_{XMY}(n)=-[z^{n-M-1}]F_XF_Y\le0
+ \qquad(n\ge D+2).
+\]
+Only the difference at $D+1$ is undecided, so take $T(w)=1$.
+Otherwise $l\ge3$ and the central curvature is negative.
+
+Fix a parity of $t$, and write $N=tW$, $L=\lceil N/2\rceil$,
+$V=\lfloor(N+l-1)/2\rfloor$, $U=\lceil(N+l-1)/2\rceil$.
+The offsets $n-N/2$ in the following list depend only on the parity:
+\[
+ L<n\le V;\qquad n=V;\qquad n=U+1.
+\]
+For the first two groups, $s<l/2$, so $P_s$ has positive leading
+coefficient. For the last index, $s>l/2$, so the leading coefficient
+is negative. Include $Q_w$ as well when $N+l$ is even.
+Take $T(w)$ to be the maximum of $4l+4$ and all the integers $b(P)$
+for these finitely many polynomials, over both parities.
+This is a finite exact-arithmetic construction.
+
+For $t\ge T(w)$, Lemma~\ref{lem:half} gives nonnegative differences
+through $L$; the selected positive polynomials give positive
+differences from $L+1$ through $V$, as well as at $V$ itself.
+Lemma~\ref{lem:righttail} gives nonpositive differences at every
+index after $V$. Hence the sequence is unimodal and $V$ is a mode.
+The strict difference at $V$ excludes earlier modes, and the strict
+negative difference at $U+1$ excludes later modes.
+If $U=V$, this proves uniqueness. Otherwise the difference at $U$
+is $Q_w(t)$; it is either strictly negative beyond its bound or
+identically zero. This proves the precise eventual alternatives.
+\end{proof}
+
+For example, the supplied exact procedure gives $T(w)=32$ for
+$w=(1,4,2,5,3,2,4)$, with unique eventual mode
+$\lfloor(21t+6)/2\rfloor$ in both parities. This is a sufficient
+threshold, not a claim of the least possible threshold.
+The procedure computes and certifies central polynomials; it does not
+test finitely many dilations and extrapolate.
+
+\begin{corollary}[Mean rank]\label{cor:dilationmean}
+Choose a distinct smaller composition uniformly from the ideal of
+$tw$, including the empty composition, and let its weight be $K_t$.
+For every fixed nonempty $w$,
+\[
+ \mathbb E K_t=\frac{tW+l-1}{2}+O(t^{-1}).
+\]
+\end{corollary}
+\begin{proof}
+A product $\prod_{i\in I}S_{tw_i}$ has mass
+$t^{|I|}\prod_{i\in I}w_i$ and mean exponent
+$(t\sum_{i\in I}w_i+|I|)/2$. The full polynomial has mass
+$t^l\prod_iw_i+O(t^{l-1})$.
+Subtract $(tW+l)/2$ times this mass from its first moment.
+The terms missing exactly one factor contribute
+\[
+ -\tfrac12t^l\prod_iw_i\sum_i c_i+O(t^{l-1})
+ =-\tfrac12t^l\prod_iw_i+O(t^{l-1});
+\]
+all other proper terms contribute $O(t^{l-1})$.
+Divide by the total mass. The same calculation holds for $l=1$,
+when the sole proper term is the empty product.
+\end{proof}

@@ -1,0 +1,144 @@
+{
+  "status": "DISPROVED_GENERIC_GEOMETRIC_CUT_LC_BY_EXACT_FIXED_COUNTER",
+  "counts": {
+    "eligible_LC_b_and_positive_primitive_LC_E": 1775,
+    "finite_only_through_first_mode_A_LC_minors": 6322
+  },
+  "random_search_counter": null,
+  "fixed_counter": {
+    "b": [
+      233,
+      2257,
+      13100,
+      19891,
+      30200,
+      39423,
+      50487,
+      61489,
+      73673,
+      86341,
+      100000,
+      83454,
+      63229
+    ],
+    "alpha": 1,
+    "first_mode": 3,
+    "n": 2,
+    "A_triple": [
+      [
+        -5262475,
+        3277629
+      ],
+      [
+        3253919,
+        -1984846
+      ],
+      [
+        -2009271,
+        1269073
+      ]
+    ],
+    "margin": [
+      -205686371365,
+      127116786985
+    ],
+    "exact_positive_E_primitive_minors": [
+      [
+        1207143,
+        417303
+      ],
+      [
+        86602050,
+        18793772
+      ],
+      [
+        89219127,
+        -51056268
+      ],
+      [
+        -57686954,
+        35666236
+      ],
+      [
+        38344846,
+        -23697805
+      ],
+      [
+        -25673098,
+        17618701
+      ],
+      [
+        18768432,
+        -11587554
+      ],
+      [
+        -12332640,
+        7649388
+      ],
+      [
+        8139414,
+        -5005926
+      ]
+    ],
+    "meaning": "Disproves the auxiliary LC-b plus positive-primitive-LC-E geometric-cut closure, even before the first A mode. E is not a CI polynomial; this is NOT an original or actual-CI counterexample."
+  },
+  "stronger_deficit_LC_counter": {
+    "trial": 4640,
+    "b": [
+      876488338465357824,
+      3469433006425374720,
+      12865814065494097920,
+      42349971298918072320,
+      135872824584028815360,
+      407618473752086446080,
+      866189256723183697920,
+      1768469732476500049920,
+      3389566987246625095680,
+      4236958734058281369600,
+      4943118523067994931200,
+      4737155251273495142400,
+      2763340563242872166400,
+      1266531091486316409600
+    ],
+    "denominator": 24,
+    "ratios": [
+      95,
+      89,
+      79,
+      77,
+      72,
+      51,
+      49,
+      46,
+      30,
+      28,
+      23,
+      14,
+      11
+    ],
+    "alpha": 1,
+    "mode": 6,
+    "n": 6,
+    "c_triple": [
+      [
+        637014151621226004480,
+        0
+      ],
+      [
+        1188887215110252134400,
+        0
+      ],
+      [
+        2263131734477729955840,
+        0
+      ]
+    ],
+    "margin": [
+      -28194131592793930206778606707134378803200,
+      0
+    ]
+  },
+  "state_sha256": "7d12df2d7c8bc2ed67e82dd8648608adaa421b4468582e02e25c3727509a18cd",
+  "seconds": 0.9369999999998981,
+  "scope": "The generic auxiliary condition is FALSE by the exact fixed counter, despite the recorded finite random nonfailures. No CI spectral-boundary assembly, no actual-CI counterexample, no general C/A2/original UI claim."
+}

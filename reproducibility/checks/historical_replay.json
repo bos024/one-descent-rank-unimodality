@@ -1,0 +1,93 @@
+{
+  "first_missing_twelve_head_certificate_verification.json": {
+    "status": "PASS_INDEPENDENT_COMPLETE_FIRST_MISSING_TEN_THROUGH_TWELVE_SOURCE_OR_HEAD_CERTIFICATE",
+    "manifest_sha256": "8190dbbc575eb506a042cb04c88b72dec211b346c4478edf6c2cbefd291b54e8",
+    "identical_fields_except_elapsed": [
+      "ALL_owner_state_sha256",
+      "by_K",
+      "chunks",
+      "counts",
+      "critical_stream_sha256",
+      "formal_scope",
+      "general_A2",
+      "general_C",
+      "general_original",
+      "independent_model",
+      "kernel_obligations",
+      "kernels",
+      "modules",
+      "sha256",
+      "status"
+    ],
+    "counts": {
+      "complete_rank_states": 3241,
+      "rank_strict_head_paid": 859,
+      "rank_source_paid": 1983,
+      "unpaid_rank_states": 399,
+      "complete_owner_rank_inputs": 1858242,
+      "noncritical_owner_edges": 1786199,
+      "positive_curvature_owner_edges": 72043,
+      "direct_owner_source_paid": 72043,
+      "distinct_canonical_owners": 945847
+    }
+  },
+  "complete_mixed_unrestricted_C_original_verification.json": {
+    "status": "PASS_COMPLETE_MIXED_CLOSED_S_AND_UNRESTRICTED_FULL_C_TO_ORIGINAL_A_INFINITY_CRITERION",
+    "manifest_sha256": "c66ed0b09b77e779c8e825bfccca63c923467c315c933e78cb27c52646a27e36",
+    "identical_fields_except_elapsed": [
+      "complete_mixed",
+      "constant_density",
+      "dependency_files",
+      "exact_constant_certificate",
+      "final_three_mixed",
+      "formal_scope",
+      "general_A2",
+      "general_C",
+      "general_original",
+      "independent_counts",
+      "independent_state_sha256",
+      "kernels",
+      "local_files",
+      "new_scoped_reports",
+      "original_A_INFINITY",
+      "primary_QA",
+      "remaining",
+      "sha256",
+      "status",
+      "unrestricted_criterion"
+    ],
+    "counts": {
+      "independent_ALL_inclusion_exclusion_seven_interval_coefficients": 1074,
+      "independent_ALL_constant_density_reads": 4827,
+      "independent_ALL_BULK_FULL_source_sum_and_cutset_bounds": 3372,
+      "independent_EXACT_actual_mixed_source_identities": 1141,
+      "independent_OUTSIDE_head_fifth_raw_gap_source_payments": 21,
+      "independent_actual_mixed_pairs": 72,
+      "independent_NONBULK_largest_initial_reads": 720,
+      "independent_NONBULK_largest_last_capacity_reads": 735
+    }
+  },
+  "one_hereditary_C_arm_arbitrary_other_verification.json": {
+    "status": "PASS_UNBOUNDED_ONE_HEREDITARY_C_ARM_ARBITRARY_OTHER_ORIGINAL",
+    "manifest_sha256": "a476c8baf581d36cca4e86f7a01a765dd8458479413da315aa6679e5eab998c1",
+    "identical_fields_except_elapsed": [
+      "additional",
+      "formal_reports",
+      "formal_scope",
+      "general_A2",
+      "general_C",
+      "general_original",
+      "independent_counts",
+      "independent_sha256",
+      "primary_sha256",
+      "remaining",
+      "sha256",
+      "status",
+      "theorem"
+    ],
+    "counts": {
+      "independent_literal_letter_ORIGINAL_and_FULL_A2": 96,
+      "independent_extra_marked_heavier_appends": 48
+    }
+  }
+}

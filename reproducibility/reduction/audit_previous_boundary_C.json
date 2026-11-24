@@ -1,0 +1,25 @@
+{
+  "status": "EXACT_QA_PREVIOUS_BOUNDARY_REFERENCE_AND_ACTUAL_C_UNDER_AUDIT",
+  "counts": {
+    "previous_reference_boundary_exact_identities": 2325,
+    "complete_reference_W_minus_one_C_reads": 147811,
+    "unbounded_two_factor_binary_envelope_formula_QA": 13,
+    "exact_second_previous_CI_bonus_identities": 1085,
+    "actual_infinite_padding_previous_boundary_golden_edges": 1085,
+    "all_padding_previous_boundary_golden_edges": 3255,
+    "actual_previous_boundary_large_shift_C_reads": 316061,
+    "five_gap_ALLshift_previous_boundary_C_reads": 271439,
+    "actual_hosts": 6053,
+    "profiles": 2325,
+    "complete_actual_monotone_head_payment_checks": 848,
+    "complementary_actual_symmetric_row_payment_checks": 68,
+    "complete_range_Cassini_formula_QA": 598,
+    "all_capacity_lower_norm_QA": 348,
+    "arbitrary_order_reference_C_boundary_reads": 23135,
+    "arbitrary_order_reference_profiles": 354,
+    "eight_gap_old_wedge_split_QA": 1208
+  },
+  "state_sha256": "c85226b0145d5938a2137aa59a13976e5ab4881874dca5b204d987a4d9c7d6f7",
+  "seconds": 6.890999999999622,
+  "scope": "Written unbounded proof under independent audit: reference ALLC fromW-1; actual CURRENTW-1 allR>=max(3,h-u-2),henceALLshiftswhen u>=h-5. Existing MASTER1211 gives allactualC fromW foru>=h-4, so this would give halflinefromW-1 in that OLDcountfamily. General earlierC,A2,originalUI OPEN; u=h-5 still has currentW gap unless separately paid. FOUR constant reference exceptions are directly Lean kernel-reconstructed,all other finite checks QA ONLY. The old wedge plus weight32 ALREADY gives allu>=h-8 lateC fromW+1."
+}

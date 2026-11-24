@@ -1,0 +1,126 @@
+\section{The fixed-tail entrance at $u=h+1$}
+Fix a nonempty sorted word $V=(t_1,\ldots,t_r)$ with $t_i\ge3$.
+Put $W=\sum t_i$, $h=W-r$, $H=h+1$, and
+$F_{u,\alpha}=F_{1^\alpha2^uV}$, $\alpha\ge1$.
+Let $D$ be its actual positive slope from rank two, and let $\ell$
+be the FIRST global $D$ mode. This result strengthens the previously
+proved entrance $h+4$; the new entrance remains an explicit hypothesis.
+
+\begin{theorem}[Sharpened single-entrance finite principle]
+Suppose at the SINGLE binary count $u=H=h+1$, for EVERY
+$1\le\alpha\le H+h+1=2h+2$, the actual slopes are LC at all centres
+\[
+                         H+r+1=W+2\le n<\ell.           \tag{1}
+\]
+Then for ALL $u\ge H$, ALL $\alpha\ge1$ and ALL current ranks
+$N\ge W+1$, every actual C comparison holds.
+If the reference additionally satisfies C at its finite earlier
+ranks $N\le W$, complete actual C follows for all $u\ge H$.
+If, in addition, complete actual C is checked for
+$0\le u<H$, $1\le\alpha\le u+h+1$, it follows for ALL $u\ge0$.
+The reference and actual finite tests use coefficients only through
+$W$ and $2u+W+1$, respectively. No assertion that every entrance
+passes, or that general original unimodality follows, is included.
+\end{theorem}
+
+\subsection*{The alternating boundary pays LC from $h+1$}
+Use the exact reference $F^\star$, slopes $r_n$, and positive
+Cassini amplitude $A_V$ of the earlier fixed-tail principle.
+Its signed homogeneous minor, INCLUDING its sign, is
+\[
+       r_n^2-r_{n-1}r_{n+1}=(-1)^{n-W}A_V\quad(n\ge W+1).
+                                                               \tag{2}
+Indeed $A_V=|B(q)B(-\varphi)|$ and
+$\operatorname{sgn}B(-\varphi)=(-1)^W$ in the Binet determinant.
+The old entire-word budget remains $r_{W+2}\ge A_V$ and
+$r_{W+4}\ge2A_V+1$.
+
+The first actual defect is at $N_0=u+r+2$ and equals
+$\delta=2$ for $\alpha=1$, and one otherwise.
+At $n=N_0-1=u+r+1\ge W+2$ the actual boundary minor is exactly
+\[
+                       (-1)^{n-W}A_V+\delta r_{n-1}.    \tag{3}
+When $n-W$ is even it is positive. When odd, $n\ge W+3$, so
+$r_{n-1}\ge r_{W+2}\ge A_V$ and (3) is nonnegative.
+Only nonnegativity is required; a zero minor is allowed.
+
+Now use the SAME whole polynomial insertion identity
+$F_{u+1,\alpha}=S_2F_{u,\alpha}+B_V$.
+Its slope forcing has degree $W+1$. The earlier proof's two-term
+LC propagation is valid above this degree, uses old LC only through
+the FIRST old mode, and uses only a nonnegative new boundary minor.
+The new centres all lie at or beyond $W+2$. The unique possible
+pre-mode flat is at lastcapacity$+1\le W+1$, outside this region.
+Thus the same induction proves LC at all $u+r+1\le n\le\ell$
+for EVERY $u\ge h+1$. Padding clamps and mode/read bounds are the
+unchanged exact arguments of the earlier finite principle.
+
+\subsection*{The replacement for the unnecessarily early D seeds}
+The new general reference theorem proves ALL C shifts from $W+1$.
+Exact prefix agreement pays actual ranks $W+1\le N<N_0$;
+at $N_0$ the first defect only improves C.
+For a later strictly increasing actual current slope, put
+$\lambda=D_N/D_{N-1}>1$ and
+$\lambda_0=(r_{N_0}-\delta)/r_{N_0-1}$.
+Propagated LC gives $\lambda\le\lambda_0$ and all required later
+$D_i\ge\lambda D_{i-1}$ starting at $i=N_0$.
+
+Write $(b,c,d)=(r_{N_0-2},r_{N_0-1},r_{N_0})$, so $d=b+c$.
+Let $k_0=N_0-3$. Reference C at $N_0$, together with $\lambda\le
+\lambda_0$, pays $G_k\ge\lambda G_{k-1}$ at EVERY $k\le k_0$.
+The ordinary coefficients at the next two reads are exactly
+\[
+                F_{k_0}=c,\quad F_{k_0+1}=d,
+                         \quad F_{k_0+2}=c+d.           \tag{4}
+\]
+All three ranks precede the first actual defect. The homogeneous
+identity $F^star_j=r_{j+2}$ applies there: the smallest read
+$k_0=N_0-3\ge W$.
+The first ordinary comparison $d\ge\lambda c$ is immediate.
+For the second,
+\[
+ c(c+d)-d(d-\delta)=c^2-bd+\delta d
+                          =(-1)^{N_0-1-W}A_V+\delta d\ge0. \tag{5}
+\]
+If the Cassini sign is positive this is immediate. If negative,
+$N_0-1\ge W+3$, hence $d\ge r_{W+4}\ge2A_V+1$.
+Thus $F_{k_0+2}\ge\lambda F_{k_0+1}$ as well.
+Using $G_{j}=G_{j-1}+F_j$, these two ordinary comparisons extend
+the cumulative comparison twice, to $k_0+1$ and $k_0+2$.
+
+For every subsequent required rank use
+$F_i=F_{i-1}+D_i$ and $G_i=G_{i-1}+F_i$.
+The $F$ comparison at $i-1$ and the $D$ comparison at $i$ imply
+the $F$ comparison at $i$; then the $G$ comparison at $i-1$
+implies the $G$ comparison at $i$. This finite induction proves
+$G_k\ge\lambda G_{k-1}$ for EVERY $k\le N-3$.
+Every D read lies on the actual increasing support through the
+current rank; no post-mode identity with positive parts is used.
+Flat or decreasing current slopes give C immediately.
+This proves all-shift actual C from $W+1$ under (1).
+
+The earlier reference tests and shorter-count/padding tests finish
+the stated complete-C implications exactly as before.
+
+\paragraph{Compatibility with the quadratic inverse reduction.}
+At this new entrance $u=h+1$, the CI degree is $L=u+h=2u-1$.
+Thus the exact derivative head through $2u$ covers EVERY triple
+in (1). The stronger full-array inverse-kernel LC conjecture already
+tested at degree at most 34 would directly supply this entrance if
+proved for all CI tails; it is still OPEN. The proof above reduces
+the sufficient entrance without assuming that conjecture.
+
+\paragraph{An automatic actual band independent of entrance LC.}
+For every $u,\alpha$, exact reference transport and the first-defect
+payment already give ALL actual C shifts throughout
+\[
+                         W+1\le N\le u+r+2.
+\]
+The band is nonempty at $u\ge h-1$; neither (1) nor any density
+LC assumption is needed for this band alone.
+
+\paragraph{Scope.}
+The general $u=h+1$ entrance, earlier arbitrary reference C,
+general actual C/A2 and the ORIGINAL one-descent conjecture remain
+OPEN. These are new universal implications and an unconditional
+reference theorem, not a solution of any of those remaining claims.

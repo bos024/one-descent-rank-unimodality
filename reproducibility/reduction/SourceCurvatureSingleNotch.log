@@ -1,0 +1,7 @@
+'SourceCurvatureSingleNotch.record_after_single_notch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceCurvatureSingleNotch.spaced_source_comparison' depends on axioms: [propext, Quot.sound]
+'SourceCurvatureSingleNotch.crossing_window_source_order' depends on axioms: [propext, Quot.sound]
+'SourceCurvatureSingleNotch.isolated_source_second_difference' depends on axioms: [propext, Quot.sound]
+'SourceCurvatureSingleNotch.immediate_recovery_payment' depends on axioms: [propext, Quot.sound]
+'SourceCurvatureSingleNotch.actual_family_source_dip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceCurvatureSingleNotch.exact_actual_counterexample_member' depends on axioms: [propext]

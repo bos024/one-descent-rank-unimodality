@@ -1,0 +1,203 @@
+\section{Complete mixed-source comparison and an unrestricted FULL-C-to-original coefficient criterion}
+TEN scoped standard-axiom Lean reports verify the whole polynomial,
+weighted-kernel, convolution, template, Cauchy, rank and source-payment
+arguments below. Actual word/CI/counting identifications and the
+unrestricted induction are the written assembly, not an end-to-end
+Lean composition implementation. There is NO finite word proof premise.
+General higher-capacity C and the GENERAL ORIGINAL conjecture remain OPEN.
+
+\paragraph{Definitions and scope of the final implication.}
+For an actual normalized increasing arm $X$, put $F=F_X$,
+$G_k=\sum_{i=0}^kF_i$, and $D_n=(F_n-F_{n-1})^+$ for $n\ge2$
+(with $D_0=D_1=0$). FULL C means
+\[
+ G_{k+1}D_n\ge G_kD_{n+1}\quad
+ (0\le k\le n-3,\ D_nD_{n+1}>0).
+\]
+A final-deletion-closed FULL-C class contains every last-part deletion
+of each of its arms, and every arm in it has FULL C. It need NOT be the
+class of all increasing arms. For ordinary $p=q_Xq_Y$, FULL A2 means
+unimodality of $2^n(p_n-p_{n-1})^+$ at EVERY rank. The original strict
+core is
+\[
+ H=F_X+F_Y+(S_M-1)F_XF_Y,
+\]
+with relatives $F_X+(S_M-1)F_XF_Y$ and $F_Y+(S_M-1)F_XF_Y$, for EVERY
+strict peak $M>\max(X,Y)$. The theorem below proves actual coefficient
+unimodality for these polynomials under FULL C; ordinary log-concavity
+of their cumulative coefficients is not substituted for that conclusion.
+
+Keep $\rho=3/5$, $b=35/32$, $q=6125/6144<1$, $v=175/192$,
+$K_0=125/22$, and $r_t=S_t(\rho)/b^{t-1}$. Frozen whole-fold norm:
+$F(\rho)+K_0\le10b^M$. Frozen whole offset contraction for all
+capacities at least three and the ratio envelope $r_t\le r_{\max(4,L)}$
+for $t\ge L\ge3$ are available.
+
+\subsection{A new constant-density theorem for EVERY first missing weight at least thirteen}
+Theorem: for ANY actual $Y$ with $\kappa_Y\ge13$,
+\[
+ s_Y=\min(\lfloor M/2\rfloor,M-B),\quad m>s_Y
+       \quad\Longrightarrow\quad20\,\Delta F_Y(m)\le2^m.       \tag{1}
+\]
+This is a CONSTANT density bound, weaker than $m\Delta F\le2^m$
+when $m>20$, and is deliberately paired below with a stronger owner gap.
+
+Such a $Y$ has LAST ELEVEN capacities at least $2,3,\ldots,12$.
+Absorb the first into the unrestricted earlier prefix. The next TWO
+capacities are at least three and four. Let $G$ be the prefix after
+these first three terminal capacities, with skeleton degree $M_G$.
+Offset contraction and the ratio envelope give
+\[
+                      G(\rho)\le10b^{M_G}r_4^2.       \tag{2}
+\]
+There remain EIGHT capacities at least $5,6,\ldots,12$, with total
+skeleton degree at least $4+5+\cdots+11=60$.
+
+Delete the LAST capacity $T$. Then
+$\Delta F_Y(m)\le F_{Y_0}(m-1)$.
+Expand the other SEVEN last capacities of $Y_0$:
+\[
+ F_{Y_0}=\sum_{\ell=0}^6\prod_{\text{last }\ell}S_t
+             +\left(\prod_{\text{last }7}S_t\right)G.          \tag{3}
+\]
+The positive source sum at rank $m-1$ has at most the number of
+compositions of $m-1$ with at most six parts. Their cut sets have size
+at most five. List each cut set in increasing order and pad with zeroes
+to a five-tuple; this is an injection into $m^5$ tuples. Thus its
+coefficient $U_m$ satisfies $U_m\le m^5$ for $m\ge2$.
+The empty-product source has zero coefficient at the ranks used here.
+
+For the SEVEN interval kernel, stars and bars give
+\[
+ [z^i]\prod_{\text{last }7}[t]\le\binom{i+6}{6},\qquad
+                \binom{i+6}{6}\rho^i\le3003\rho^8.     \tag{4}
+\]
+The last sequence has its two maxima at indices eight and nine.
+Its consecutive ratio is $\rho(i+7)/(i+1)$; this gives a whole
+unbounded proof, not a chosen coefficient range. The same WHOLE
+positive weighted-convolution argument as the frozen two-interval
+bound now yields
+\[
+ \rho^m\bigl(F_{Y_0}(m-1)-U_m\bigr)
+                         \le3003\rho^{16}G(\rho).    \tag{5}
+\]
+It is ESSENTIAL to retain $U_m$; those seven source products do NOT
+all vanish. Their entire contribution is paid separately.
+
+In the BULK $M\le2m$, the eleven-part staircase gives $M\ge67$,
+so $m\ge34$, and $M_G+60\le M\le2m$. Exact rational bases are
+\[
+ 25\cdot30030\rho^{16}r_4^2\le b^{60},\qquad
+              100\cdot34^5\le2^{34}.                 \tag{6}
+\]
+The whole induction $100m^5\le2^m$ holds for every $m\ge34$:
+$(m+1)/m\le35/34$ and $(35/34)^5<2$.
+Equations (2), (5), (6) and $q^m\le1$ give the long-kernel
+density at most $1/25$. The ENTIRE source sum gives density at most
+$m^5/2^m\le1/100$. Their sum is $1/20$, proving (1) in the bulk.
+Numerically the long-kernel constant before allocating $1/25$ is
+approximately $0.03899449166$; only the exact inequality (6) is used.
+
+In the NONBULK $m>M-B$, the old largest-factor proof applies with
+smaller degree thresholds. If the last capacity interval is largest,
+$O=M-B\ge1+10\cdot11/2=56$, $j=m-1\ge O$, and
+$\Delta F_Y(m)/2^m\le5v^j\le1/20$, from $100v^{56}\le1$.
+If the initial interval is largest, its other degree is at least
+$1+\cdots+11=66$, $m\ge67$, and
+$\Delta F_Y(m)/2^m\le10v^m\le1/20$, from $200v^{67}\le1$.
+Both are unbounded decreasing-power statements; zero and negative
+slopes cause no issue. This proves (1) for all capacities, counts, weights and initial runs.
+
+\subsection{The remaining first-missing values force a FIVE-to-one raw owner gap}
+Take a positive mixed/source-prefix recovery with rising-opposite
+first missing $K\in\{13,14,15\}$. At nonnegative owner reverse rank
+$r$, frozen first-source and primitive facts give
+\[
+ D=2r+2+e,\quad h\le D,\quad \alpha+e+3\le K,\quad
+       j=\alpha+h+r+2+e.                              \tag{7}
+\]
+If $j-2\le s_Y$, the genuine strict opposite head already pays every
+proper absolute head. Otherwise
+\[
+ j-2>s_Y\ge S_K=\left\lfloor\frac{1+(K-2)(K-1)/2}{2}\right\rfloor,
+ \qquad(S_{13},S_{14},S_{15})=(33,39,46).
+\]
+The finite THREE-value arithmetic of (7), without any finite owner
+enumeration, implies
+\[
+                               e\le2r+2.              \tag{8}
+\]
+This is an exact unbounded linear-integer implication, checkable by
+splitting ONLY $K=13,14,15$. In particular
+$h+r+1\le3r+3+e\le5(r+1)$.
+The frozen ordinary Hilbert growth and mixed owner phase now give,
+with $Q=q_Z(r+1)$ and $R=2q_Z(r)-q_Z(r-1)$,
+\[
+ (r+1)Q\le(h+r+1)q_Z(r)\le5(r+1)q_Z(r),\quad
+                   R\ge q_Z(r),\quad\boxed{Q\le5R}.  \tag{9}
+\]
+
+Put $N=j+1$. The frozen WHOLE dyadic source-prefix sum pays
+\[
+             \text{source}\ge Q\left(1-4\,2^{-N}\Delta F_Y(N)\right).
+\]
+Here $j-2>s_Y$ gives $N>s_Y$, so (1) implies
+$4\,2^{-N}\Delta F_Y(N)\le1/5$.
+By (9), the whole source pays $Q-R=C$, hence $T\le0$, contradicting
+positive recovery. Thus every positive mixed recovery at $K=13,14,15$
+is inside the genuine strict-head range. The negative-rank birth is
+paid by the first source unless $j\le K-2$, also inside that head.
+One-part owners have only this same birth exception.
+Frozen absolute one-term and relative $+1$ head payments therefore
+prove ENTIRE correctly conditioned MIXED proper CLOSED S at these
+last three values. No arbitrary opposite capacity/count/padding cutoff
+or finite word certificate is a premise.
+
+\subsection{Complete FULL-C-to-coefficient criterion, with no first-missing bound}
+The independently verified proof above closes the count induction for EVERY final-deletion-closed FULL-C class closes
+without restricting first missing weights. For an old maximum at most
+twelve, use the frozen arbitrary-heavy-append theorem. Otherwise:
+\begin{itemize}
+\item rising-opposite $K\ge16$: frozen fixed-fourteen mixed theorem;
+\item $K=13,14,15$: the complete new mixed argument above;
+\item $K=10,11,12$: frozen complete source-or-head certificate for ANY owner;
+\item $K\le9$: an owner of first missing at least thirteen has at least
+eleven non-one parts, so frozen absolute-nine/six-part and absolute-eight/
+four-part nonrecovery excludes positive recovery.
+\end{itemize}
+The possible one-part rising opposite needs an explicit check: it has
+$K=3$, so $d=K-\alpha\le2\le e+2$. The frozen FIRST-birth lower-center
+reflection immediately pays every nonnegative-rank owner curvature;
+its proof uses only the first source coefficient and the nondecreasing
+source prefix, not a two-part count for the opposite. The negative-rank
+unit birth is also present for the large owner. For $K\ge4$ an opposite
+necessarily has at least two non-one parts, so the stated absolute
+eight/nine inputs apply literally. Rectangular old factors are the
+frozen unconditional base.
+Both-forward-rising C and both-forward-nonincreasing actual resources
+cover the other phases. FULL OLD A2 supplies the nonnegative head budget.
+The frozen COMPLETE closed-S-to-window theorem, INCLUDING equality and
+the first boundary, gives EVERY uniform window FULL A2. The actual
+terminal source starts above the new first mode, so heavy append truncates
+positive differences and preserves FULL A2. Proper deletion and lower-peak/
+reflection joins then give ORIGINAL strict-core and BOTH-relative coefficient
+unimodality at every strict peak, plus ONE arbitrary legal heavier append.
+
+This proves the unrestricted conditional implication
+\[
+ \boxed{\text{ANY hereditary actual FULL-C class}
+        \Longrightarrow\text{FULL A2 and ORIGINAL unamplified coefficients}.}
+\]
+It does NOT prove general C. In particular it does NOT solve the
+GENERAL original conjecture unless general C or a replacement for its
+both-rising use is established separately.
+
+An explicit new unbounded original family follows: start with ANY
+uniform hereditary FULL-C seed family (in particular the whole capacity-four
+alphabet, at most two arbitrary nonbinary parts, or fixed nonbinary weight
+at most 32), and append ANY FINITE NUMBER of independent successive dominant
+capacities $T_i\ge2(W_0+\sum_{v<i}T_v)$, with first at least five and
+empty-seed first jump handled by the frozen one-jump base. BOTH original arms
+may independently have arbitrarily many such jumps, arbitrary initial runs
+and binary counts, any strict peak, and ONE additional arbitrary legal
+heavier append. There is no amplification and no bound of seven jumps.

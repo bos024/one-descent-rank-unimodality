@@ -1,0 +1,10 @@
+'SourceBirthGapRefinements.gap_six_all_large_rank_payments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapRefinements.gap_seven_all_large_rank_payments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapRefinements.second_source_growth_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapRefinements.second_source_stationary_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SourceBirthGapRefinements.general_early_curvature_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceBirthGapRefinements.tied_multiplicity_curvature_scaling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

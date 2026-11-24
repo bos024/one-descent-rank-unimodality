@@ -1,0 +1,168 @@
+\section{An all-order renewal-root cut from the positive primitive}
+This is an auxiliary closure theorem, not a proof of general actual-arm
+C or original one-descent coefficient unimodality. All renewal orders
+and delay parameters in the theorem are unbounded.
+
+Fix $t\ge2$, let $0<q<1$ be the unique solution of
+$q+\cdots+q^t=1$, and put $\lambda=q^{-1}$ and $p=t-1$. Set
+\[
+ Q_t=1-z-\cdots-z^t=(1-\lambda z)B_t(z),\qquad
+ (B_t)_i=\sum_{k=1}^{t-i}q^k\quad(0\le i\le t-1).
+\]
+In particular $(B_t)_0=1$. All sequences below have zero extension
+outside their specified finite intervals. A sequence is LC when its
+adjacent $2$ by $2$ minors are nonnegative and its positive support is
+an interval; the identically zero sequence is permitted.
+
+\begin{theorem}[All-order cut]
+Let $J$ be finite, nonnegative, unimodal, and positive on an interval
+starting at zero. Let $M$ be its first mode. Assume
+\[
+ e_n=(J_n-J_{n-1})^+\boldsymbol1_{n\ge1}
+\]
+is LC. For any $\ell\ge0$ define, on integer indices,
+\[
+ x_n=\sum_{j\ge1}q^jJ_{n+j},\quad Y=[p]x,\quad
+ A_n=\bigl(Y_n-(z^\ell B_tJ)_n\bigr)^+.
+\]
+Then $A$ is LC at every centre $\ell+t\le n<M$.
+If $E=B_tJ+R$ with $\deg R\le t-2$, the same conclusion holds
+with $z^\ell E$ in place of $z^\ell B_tJ$, on exactly that band.
+No claim beyond the first mode of $J$ is made.
+\end{theorem}
+
+\begin{lemma}[A complete kernel calculation]
+Let $X_j=q^{-j}$ for $j\le-1$ and zero otherwise. The bilateral
+kernel
+\[
+ K=\frac{[p]X-z^\ell B_t}{1-z}
+\]
+has positive support $(-\infty,U]$, $U=\ell+t-2$, and is LC.
+Here division by $1-z$ means cumulative summation from the negative
+infinite end; the sum converges. Its negative head is exactly
+\[
+ K_j=\frac{[p](q)}{1-q}q^{-j}\quad(j\le-1).
+\]
+Writing $L_n=K_{U-n}$ for $n\ge0$ gives the complete ordinary
+generating function
+\[
+ L(z)=\frac{q\{[p](z)[h](z)+z^p\}}{1-qz},\qquad h=\ell+2.
+ \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+Cumulative summation gives explicitly
+\[
+ (1-q)K_j=\sum_{s=0}^{p-1}q^{\max(1,s-j)}
+ -(1-q)\sum_{i=0}^{\min(t-1,j-\ell)}(B_t)_i,
+ \tag{2}
+\]
+where the last sum is empty when $j<\ell$. Equivalently, reversing
+the identity
+$(1-\lambda z)(1-z)K=-[p]-z^\ell Q_t$ gives
+\[
+ \lambda(1-qz)(1-z)L=[p+1]-z^{p+1}-z^h[p]
+       =(1-z)([p][h]+z^p).
+\]
+These are convergent bilateral identities on $|z|>q$ or, equivalently,
+finite coefficient identities from (2); no formal infinite Laurent
+series multiplication is required. This proves (1), its support, and
+its negative head.
+
+It remains to prove LC of $F=g/(1-qz)$ for $g=[p][h]+z^p$.
+The root equation implies $1/2\le q\le2/3$: its finite geometric
+identity gives $1-q=q-q^{t+1}<q$, while $q+q^2\le1$ gives the
+upper bound. We consider both possible width orders.
+
+If $2\le h\le p$, the coefficients of $g$ are the initial ramp
+$1,2,\ldots,h$, a plateau at $h$ extending through index $p$,
+and then $h-2,h-3,\ldots,1$. For $h=2,3,4$ this is LC:
+the only potentially exceptional junction is
+$(h-2)^2\ge h\max(0,h-3)$. Geometric convolution preserves LC.
+For $h\ge5$, compare the sequence through index $p$ with the
+globally LC source $\min(n+1,h)$ and put
+\[
+ V=\frac h{1-q},\quad
+ R=\frac{q^{p-h+2}(1-q^h)}{(1-q)^2}\ge0.
+\]
+Then
+\[
+ F_p=V-R,\quad F_{p+1}=V-2-qR,\quad
+ F_{p+2}=V-3-2q-q^2R.
+\]
+The centre-$p$ minor improves when the next source is reduced by
+two. The only new centre satisfies the exact identity
+\[
+ F_{p+1}^2-F_pF_{p+2}
+ =4+V(2q-1)+R\{(h-2)(1-q)-1\}\ge4.
+ \tag{3}
+\]
+The last sign uses $h\ge5$ and $q\le2/3$. Thereafter $g$ is a
+decreasing linear ramp and is LC. The following exact propagation
+identity pays every remaining positive-source centre. If
+$B=qA+g$ and $C=qB+h$, then
+\[
+ g(Ch-Bk)=qh(Bg-Ah)+B(h^2-gk).                 \tag{4}
+\]
+Apply (4) to consecutive source coefficients $g,h,k$, using the
+previous minor and the next source minor. After the source ends
+the sequence is geometric; its joining minor is nonnegative and
+its later minors vanish.
+
+If $h>p$, the source through $p$ is the complete ramp $n+1$.
+The root equation implies
+\[
+ (1-q)F_p=p.
+ \tag{5}
+\]
+Indeed $(1-q)\sum_{i=0}^pq^{p-i}(i+1)
+=p+1-\sum_{j=1}^{p+1}q^j=p$. Thus $F$ reaches
+$V=p/(1-q)$ exactly at $p$ and is constant through $h-1$.
+For $p\ge2$, the first decreasing values are $V-1,V-2-q$,
+whose new minor is $1+qV>0$. The ramp-to-plateau joins are LC;
+(4) pays the remaining decreasing-source tail. For $p=1$ the
+source ends at $h-1$ and the following tail is already geometric.
+This covers every $p\ge1,h\ge2$ and proves the lemma.
+\end{proof}
+
+\begin{proof}[Proof of the theorem]
+Put $d=(1-z)J$, including its final negative entry. The finite
+convolution identity is
+\[
+                   Y-z^\ell B_tJ=K*d.                    \tag{6}
+\]
+Every negative $d_k$ has $k>M$ by unimodality. For $n\le M$
+these terms use only the geometric negative head of $K$, giving
+exactly $-T\lambda^n$ for one constant $T\ge0$. If $n>U$,
+the $d_0$ term is zero as well. Hence on $U<n\le M$,
+\[
+             (K*d)_n=(K*e)_n-T\lambda^n.                \tag{7}
+\]
+The first term is LC and nonnegative: truncate the negative
+kernel tail below the finite read band and use ordinary LC
+convolution. The truncations agree on every needed finite band.
+After division by $\lambda^n$, subtract $T$ and take positive
+parts. This preserves LC, including all zero boundaries, by the
+registered constant-cut lemma in \texttt{GoldenPrimitiveCut.lean}.
+Multiplication back by $\lambda^n$ preserves LC. All three reads
+at $\ell+t\le n<M$ lie in $U<n-1\le n+1\le M$.
+Finally, at these centres all three source indices are at least
+$t-1$, so a remainder of degree at most $t-2$ has no contribution.
+\end{proof}
+
+\paragraph{Checks and exact scope.}
+\texttt{RenewalRootPrimitiveCut.lean} checks nine standard-axiom
+reports: the notch identity and its complete large-width payment;
+all small widths; the unbounded ramp fixed-point induction; all
+renewal root bounds; the full interval-product factorization;
+the exact three-read band; tail-minor propagation; and the first
+decreasing-ramp minor. Kernel reversal, interval-support convolution,
+and signed-tail assembly are written arguments, not an end-to-end
+formalization of composition hosts. Exact root-ring tests are QA
+only and introduce no finite premise into the theorem.
+
+For $t=2$ this recovers the golden cut with $Y=x$; for $t=3$
+it gives $Y=x+zx$ and the proper quadratic tribonacci denominator.
+The factor $[t-1]$ is required. The theorem does not identify an
+actual binary/ternary host with this model and does not discard
+the actual extra source polynomial.

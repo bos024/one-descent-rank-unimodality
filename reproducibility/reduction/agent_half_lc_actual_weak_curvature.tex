@@ -1,0 +1,328 @@
+\section{Actual ordinary products have nonrecovering sources after their last mode through half}
+This is a weaker-curvature theorem, not an ordinary half-log-concavity
+theorem. The proof is an induction on the total number of non-one arm
+parts. It uses established single-arm source shape, ordinary-product
+unimodality, interval-product derivative resources, first-missing mass,
+and the completed both-forward-nonincreasing first-half theorem. It uses
+neither property C nor OLD A1. All comparisons are of actual coefficients.
+
+For a polynomial $p$, zero-extend its coefficients and write
+\[
+ E_p(n)=2p_n-p_{n-1},\qquad
+ T_p(n)=E_p(n+1)-E_p(n)=2p_{n+1}-3p_n+p_{n-1}.
+\]
+\begin{theorem}[Ordinary half-tail source nonrecovery]\label{thm:actual-half-tail}
+Let $X,Y$ be normalized actual increasing nonempty arms, and put
+$p=q_Xq_Y$, $D=\operatorname{wt}X+\operatorname{wt}Y$.
+If $\nu$ is the LAST ordinary coefficient mode of $p$, then
+\[
+                        T_p(n)\le0\qquad(\nu<n,\ 2n\le D). \tag{W}
+\]
+No nonnegative-source hypothesis is required. In fact $E_p(n)\ge0$
+through this whole half range independently of (W).
+\end{theorem}
+
+\paragraph{Actual inputs used in the proof.}
+A normalized arm $Z=1^\alpha U$ has non-one count $h$, weight $w$,
+ordinary polynomial $q_Z$, main interval product
+$K_Z=[\alpha+1]\prod_{u\in U}[u]$ of degree $w-h$, and corrected source
+\[
+ e_Z=(2-z)q_Z-z^w+z^{w+1}.
+\]
+The established actual inputs are:
+\begin{itemize}
+\item $q_Z$ is positive on $[0,\operatorname{wt}Z]$, unimodal,
+and every ordinary height interval has endpoint sum at most its weight;
+\item $e_Z$ is nonnegative unimodal, positive exactly on
+$[0,\operatorname{wt}Z+1-\kappa_Z]$, starts with coefficient two,
+and every height interval has endpoint sum at most $\operatorname{wt}Z-1$;
+\item $q_Z\succeq K_Z$ and
+$(q_Z(j)-q_Z(j-1))^+\le K_Z(j)$ at every rank;
+\item $2h\le\operatorname{wt}Z-1$ and
+$\operatorname{wt}Z\ge\kappa_Z(\kappa_Z-1)/2$;
+\item for a nonrectangular arm, its second ordinary height interval is
+exactly $[1,\operatorname{wt}Z-2]$.
+\end{itemize}
+The main-box derivative bound is
+\texttt{main\_box\_derivative\_envelope.tex}; the mass bound is
+\texttt{first\_defect\_mass.tex}. The remaining shape inputs are the
+established ordinary and corrected-source layer theorems.
+
+\paragraph{A window identity and its crossing case.}
+Suppose $p$ is unimodal, with first mode $m$ and last mode $\ell$,
+and $w=[t]p$. On the ordinary tail of $w$, put $k=n+1-t$.
+Then
+\[
+ T_w(n)=E_p(n+1)-E_p(k),\qquad
+ \Delta w_{n+1}-\Delta w_n=\Delta p_{n+1}-\Delta p_k.   \tag{1}
+\]
+The first window mode is at least $m$. If $k\le\ell$, the leaving
+input increment is nonnegative, and the entering input increment is
+nonpositive because $n$ is after the window mode and therefore at least
+the first old mode. Hence $\Delta w_{n+1}\le\Delta w_n$; since the window
+is on its ordinary tail, $\Delta w_{n+1}\le0$ as well. Therefore
+\[
+ T_w(n)=\Delta w_{n+1}+(\Delta w_{n+1}-\Delta w_n)\le0. \tag{2}
+\]
+This includes all maximum plateaus and negative leaving indices.
+Only the case $k>\ell$ needs a source comparison.
+
+\begin{lemma}[Rectangle-factor base]
+Statement (W) holds whenever at least one arm is rectangular.
+\end{lemma}
+\begin{proof}
+Write $p=[A+1]q$ with $\deg q=b$.
+If $A\ge b$, its maximum plateau is exactly $[b,A]$, so there is no
+strict post-LAST-mode position through $(A+b)/2$.
+If $A<b$, write $e=(2-z)q-z^b+z^{b+1}$. Its proved unimodality and
+the causal averaging relation $2q_j=e_j+q_{j-1}$ below rank $b$ imply
+that the source mode is no later than the first $q$ mode. Consequently
+the raw source of $q$ is nonincreasing after its ordinary mode up to
+rank $b-1$. The window argument (1)--(2) pays every required comparison
+with $n+1<b$: in its noncrossing case both source endpoints lie in
+this monotone prefix.
+
+The only remaining possibility is $n+1=b$, which the half-range
+condition permits only for $b-A\in\{1,2\}$. The exact identity
+\[
+                  (2-z)p=[A+1]e+z^b-z^{A+b+1}
+\]
+gives
+$T_p(b-1)=1-e_{b-A-1}\le0$, since $e_0=2$ and $e_1\ge1$.
+Two rectangular factors can also be handled directly by their
+log-concave trapezoidal product.
+\end{proof}
+
+\paragraph{Induction setup and the NEW terminal-source edges.}
+Assume both new arms are nonrectangular. Choose the NEW heavier arm,
+of weight $a\ge b$, delete its last non-one part $t$, and call its
+old weight $c=a-t$. Let $p$ be the old ordinary product, and $P$ the
+new one. Then
+\[
+                          P=[t]p+z^a q_Y.              \tag{3}
+\]
+The total non-one count decreases by one, so (W) holds for $p$ by
+induction. The first mode of $P$ is strictly below $a$.
+At that mode $P$ agrees with $w=[t]p$, and $w\le P$ everywhere,
+so $\max w=\max P$ and every maximum of $w$ is also a maximum of $P$.
+In particular
+$\operatorname{lastmode}w\le\operatorname{lastmode}P$.
+Thus a strict ordinary-tail position of $P$ is on the window tail.
+
+The source in (3) can affect a half-range coefficient triple only when
+$n\ge a-1$, hence only for NEW weight gaps $a-b=0,1,2$.
+Those edges are all covered by the proved theorem ``the entire
+both-nonincreasing first half'' in
+\texttt{agent\_bothdeclining\_first\_birth.tex}:
+\[
+\begin{array}{c|c|c}
+a-b&n&j=a+b-n\\\hline
+2&a-1&a-1=b+1\\
+1&a-1&a\\
+0&a-1,\ a&a+1,\ a
+\end{array}
+\]
+At each listed forward edge both actual factors are nonincreasing,
+and $2j\le a+b+2$. That theorem gives $T_P(n)\le0$ without a mode,
+source-sign or OLD assumption. Henceforth
+\[
+                              n+1<a.                   \tag{4}
+\]
+Then $T_P(n)=T_w(n)$ and $k=n+1-t<c$.
+By (2) a possible failure must have $k>\ell$, the LAST old mode.
+
+\paragraph{An OLD rectangular arm created by deletion.}
+The unchanged old opposite arm is nonrectangular. If the deleted arm
+has become the rectangle $[c+1]$, the old product is $[c+1]q_Y$ and
+its LAST mode is at least $c$: it strictly increases through rank $c$
+when $c<b$, and has maximum plateau $[b,c]$ when $c\ge b$.
+But (4) gives $k<c\le\ell$, so (2) pays the edge.
+The remaining induction case therefore has BOTH old arms nonrectangular.
+
+\paragraph{The OLD positive source prefix and the entering correction.}
+Orient the OLD weights as $M\ge s$, write $d=M+s$, and let
+$\kappa\ge3$ be the larger old arm's first missing weight. Put
+\[
+ R=M+1-\kappa,\quad
+ C=e_Lq_S,\quad E=(2-z)p.
+\]
+Then
+\[
+                         E=C+z^M(1-z)q_S.              \tag{5}
+\]
+Thus $E_j=C_j\ge0$ below $M$.
+Every interval-product component of $C$ has endpoint sum at most
+$M+s-1=d-1$, so $C$ is nonincreasing from $\lfloor d/2\rfloor$ onwards.
+Together with the old induction hypothesis, this proves
+\[
+ E_u\ge E_v\quad(\ell<u\le v<M).                       \tag{6}
+\]
+No global sign-prefix or OLD A1 assertion is used.
+
+If $n\le M-2$, both source endpoints in (1) lie in this old prefix,
+so (6) pays the edge. Suppose now $n\ge M-1$.
+
+\begin{lemma}[The initial entering-source boundary]
+The position $n=M-1$ is always paid.
+\end{lemma}
+\begin{proof}
+Here the entering value is $E_M=C_M+1$.
+If $\kappa\le s+2$ and $M>s$, pair the lowest source layer $[0,R]$
+with the lowest ordinary layer $[0,s]$. Its trapezoid loses exactly
+one at $M-1\to M$, because the leaving point $\kappa-2$ lies in
+$[0,s]$. All other component differences are nonnegative, so
+$E_M\le E_{M-1}\le E_k$.
+If $M=s$, use the second ordinary layer $[1,s-2]$ instead: the leaving
+point $\kappa-2$ belongs to it because $3\le\kappa\le M$.
+
+If $\kappa>s+2$, then $C$ has support endpoint
+$R+s=M+s+1-\kappa\le M-2$, so $E_M=1$.
+The half-range condition gives $k=M-t\le s+2$.
+Since $s\ge3$, this case has $\kappa\ge6$, and first-missing mass
+gives $R\ge2$. The convolution $C$ is positive on all of $[0,R+s]$,
+which contains $[0,s+2]$. Since $k>\ell\ge0$ and $k<M$,
+$E_k=C_k\ge1=E_M$.
+\end{proof}
+
+\paragraph{All later entering-source positions.}
+Write $n=M+r$, $r\ge0$. Equations (1) and (5) give
+\[
+ T_P(n)=C_{M+r+1}+q_S(r+1)-q_S(r)-E_k.                 \tag{7}
+\]
+The new half-range condition gives
+\[
+                      k\le k_*:=s-r+1.                 \tag{8}
+\]
+Every comparison of a component at $M-1$ with $M+r+1$ has nonnegative
+drop, since the two indices sum to $2M+r\ge d-1$.
+
+\begin{lemma}[Late entering-source payment]
+If $r+3\ge\kappa$, then (7) is nonpositive.
+\end{lemma}
+\begin{proof}
+For each $q_S$ height interval $[A,B]$ starting at $A=r+1$, pair it
+with the lowest source layer $[0,R]$. At $M-1$ this convolution counts
+the entire interval, because $B\le s-r-1\le M-1$ and
+$M-1-R=\kappa-2\le A$. At $M+r+1$ it misses at least $A$, since
+$M+r+1-R=r+\kappa\ge A+1$.
+Thus the total drop is at least the number of such starting layers,
+which is at least $q_S(r+1)-q_S(r)$. Therefore
+$E_{M+r+1}\le E_{M-1}\le E_k$, by (6).
+\end{proof}
+
+Only $0\le r\le\kappa-4$ remains. Let $h_S$ be the old short arm's
+non-one count and $m_S=s-h_S$ the degree of its main interval product.
+
+\begin{lemma}[A short main-box payment]
+If $m_S\ge\kappa+r-1$, then (7) is nonpositive.
+\end{lemma}
+\begin{proof}
+The lowest source layer contributes exactly
+\[
+ \sum_{u=\kappa-2}^{\kappa+r-1}q_S(u)
+                  -\sum_{u=M}^{M+r+1}q_S(u)             \tag{9}
+\]
+to $C_{M-1}-C_{M+r+1}$. The second sum is zero if $M>s$, and one if
+$M=s$. Let $K_S$ be the short arm's main interval product. Its symmetry
+and unimodality, together with $r+1\le\kappa-2$ and
+$\kappa+r-1\le m_S$, give
+\[
+ q_S(\kappa-2)\ge K_S(\kappa-2)\ge K_S(r+1)
+                         \ge(q_S(r+1)-q_S(r))^+.
+\]
+There is at least one further positive coefficient in (9), namely
+$q_S(\kappa-1)\ge1$, since $\kappa-1\le m_S\le s$.
+It pays the possible terminal penalty one. Other component drops are
+nonnegative, so again $E_{M+r+1}\le E_{M-1}\le E_k$.
+\end{proof}
+
+\begin{lemma}[A virtual central head payment]
+Suppose $k_*<M$ and $\kappa\le M-s+2r+1$. Then (7) is nonpositive.
+The number $M-s+2r$ is only a comparison width, not a claimed legal arm part.
+\end{lemma}
+\begin{proof}
+Compare $C_{k_*}$ with $C_{M+r+1}$. Their indices sum to $d+2$,
+so every component has nonnegative drop. For a $q_S$ height interval
+beginning at $A=r+1$, its right endpoint obeys
+$B\le s-r-1=k_*-2$. At the head $k_*$ the lowest source layer counts
+all of $[A,B]$, since
+\[
+                   k_*-R=s-r+1-(M+1-\kappa)\le A.
+\]
+At the tail it misses $A$ as in the late payment.
+Thus $E_{M+r+1}\le C_{k_*}=E_{k_*}\le E_k$ by (6) and (8).
+\end{proof}
+
+\paragraph{The two resources cover every nonexceptional head.}
+Suppose $k_*<M$. If both preceding payments failed, then
+\[
+ M\le s+\kappa-2r-2,\qquad m_S\le\kappa+r-2.
+\]
+Normalization $2m_S\ge s+1$ gives $s\le2\kappa+2r-5$, and hence
+$M\le3\kappa-7$. This contradicts first-missing mass:
+\[
+ \kappa(\kappa-1)/2>3\kappa-7
+       \quad(\kappa\ge3),
+\]
+because the doubled gap is
+$(\kappa-3)(\kappa-4)+2>0$ for every integer $\kappa\ge3$.
+
+\paragraph{The three exceptional heads are also covered.}
+The condition $k_*=s-r+1\ge M\ge s$ has only three possibilities.
+\begin{itemize}
+\item $M=s,r=0$: mass gives $s\ge2\kappa-3$, so
+$2m_S\ge s+1$ implies $m_S\ge\kappa-1$ and the main-box payment applies.
+\item $M=s+1,r=0$: mass gives $M\ge2\kappa-3$, and
+$2m_S\ge s+1=M$ implies the same integer bound $m_S\ge\kappa-1$.
+\item $M=s,r=1$: for $\kappa\le4$ the late payment already applies;
+for $\kappa\ge5$, mass gives $s\ge2\kappa-1$, hence
+$m_S\ge\kappa$ and the main-box payment applies.
+\end{itemize}
+This pays every source-free half-range comparison after the last new mode.
+Together with the NEW terminal-source edges and the rectangular cases,
+the induction is complete, proving (W).
+
+\paragraph{Meaning and formal scope.}
+This theorem excludes positive ordinary source recovery throughout the
+strict post-LAST-mode reverse first half. It does not assert coefficient
+half LC, full property C, the other half of coupled S, or original
+one-descent unimodality. The source signs through half follow directly
+from (5), including the positive correction one at $M$ in the equal-weight
+case, so no unproved coefficient-tilt assertion is hidden in the proof.
+The unbounded interval-layer and induction assembly is written here.
+Generic scoped kernels are identified separately; no end-to-end Lean
+formalization of actual arm membership or this theorem is claimed.
+
+\paragraph{Verification and independent review.}
+The four reports in
+\texttt{agent\_half\_lc\_weak\_window\_transport.lean} check the
+crossing-window curvature certificate, finite chaining of adjacent
+source comparisons, removal of an old nonnegative-source guard, and
+the earlier sufficient gap arithmetic. The four reports in
+\texttt{agent\_half\_lc\_interval\_payments.lean} check the exact
+integer interval-overlap formula's whole-layer/missing-first-point
+payment, its one-step boundary loss, and the actual late/virtual index
+payments. The nine reports in \texttt{HalfTailClosureArithmetic.lean}
+check complementary source budgets, the three exceptional heads, their
+mass/normalization resources, and the source-free/new-source arithmetic.
+All seventeen reports pass with only standard kernel axioms and no
+\texttt{sorryAx}; both agent logs have zero warnings or errors.
+These are scoped generic kernels. The actual-arm identifications,
+height-layer expansion and induction assembly remain the unbounded
+written proof above. The completed both-nonincreasing first-half theorem
+is reused with its previously declared formal scope.
+
+An independent mathematical review checked every induction boundary,
+mode transfer, selected height layer, source support and arithmetic case
+without finding a gap. Its independent reverse-append diagnostic
+\texttt{agent\_weak\_T\_independent\_diagnostic.py/.json} checks all
+735078 unordered pairs from the 1212 actual normalized arms of weight
+at most eighteen, including rectangles, plus 1600 wide random pairs:
+1495817 strict-post-LAST-mode half-range triples all satisfy (W).
+The separate source-prefix/assembly QA
+\texttt{agent\_half\_lc\_weak\_window\_transport.py/.json} checks
+4000 actual append contexts, 700792 nonnegative old-source prefix
+coefficients, 120993 upper-half source-monotonicity edges, 54868
+transported prefix-tail edges, and 27455 complete new half-tail edges.
+These finite checks are diagnostics only; none supplies an unbounded
+step in the proof.

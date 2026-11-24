@@ -1,0 +1,13 @@
+{
+  "status": "PASS_CI_FULL_POSITIVE_DIFFERENCE_LC_EXACT_QA",
+  "counts": {
+    "generic_fusion_instances": 20580,
+    "actual_CI_fusion_steps": 581544,
+    "LC_minors_including_zero_extensions": 119528907,
+    "CI_products": 20000,
+    "unbounded_modified_LC_counterfamily_instances": 4656
+  },
+  "sha256": "d1e43c0f78f70d2206f497fb41fc57d9442ca50e0b819b5408975f9d32e197dc",
+  "seconds": 55.952999999999975,
+  "scope": "Exact finite QA of written discrete-PL fusion proof. No actual-arm sum closure, general C/A2/original UI theorem or novelty claim."
+}

@@ -1,0 +1,202 @@
+\section{Direct ordinary minors of mixed infinite-binary references}
+Write $P_j=1-z-\cdots-z^j$, $S_j=z[j]$, and
+\[
+ R_{r,s}=\sum_{i<s}S_4^i+S_4^s\left(\sum_{i<r}S_3^i+S_3^r/P_2\right),
+ \quad W=3r+4s,\quad w=r+s,\quad A=w+3.
+\]
+This is an infinite-BINARY reference, not the actual finite arm.
+\begin{theorem}
+For EVERY $r\ge57$ and EVERY $s\ge0$, $R_{r,s}$ has complete C
+at all currents and shifts. Its ordinary coefficients are LC at
+EVERY centre $A\le n\le W$. If $r+3\le3s$, the earlier entrance
+$s+4\le n\le W$ is also LC. No count-ratio or finite entrance
+premise is imposed. Ordinary LC after $W$ is NOT asserted.
+\end{theorem}
+The proof uses direct ordinary minors. The golden-residual head
+can fail LC for mixed three/four words and is not an input here.
+
+\subsection{A universal four-minor terminal theorem}
+For ANY ordered word $V=(t_1,\ldots,t_w)$, all $t_i\ge3$, let
+$R=B/P_2$ be its infinite-binary reference, $W=\sum t_i$, and
+$K=\prod_i C_{t_i}$ its positive whole-word Cassini amplitude,
+where $C_t=\operatorname{Fib}(t-1)+\operatorname{Fib}(t+1)-1-(-1)^t$.
+The complete numerator recurrence is
+$B'=P_2+S_tB=1+(z^3+\cdots+z^t)+S_t(B-1)$.
+Thus $B$ is nonnegative, has degree $W$ and leading coefficient one.
+Set $p=B_{W-1}$ and $v=B_{W-2}$. The positive suffix expansion gives
+\[
+ w-1\le p\le w,\qquad v\ge w(w-1)/2.                 \tag{1}
+\]
+Indeed the full product has reversed first coefficients
+$1,w,w(w+1)/2$. Only its largest proper suffix can affect these
+three reads. If $t_1=3$, $(p,v)=(w-1,w(w-1)/2)$;
+if $t_1=4$, $(p,v)=(w,w(w+1)/2-1)$; otherwise
+$(p,v)=(w,w(w+1)/2)$. Every other suffix is too short to contribute.
+This argument uses all capacities at least three but NO order condition.
+
+Put $x=R_{W-3}$ and $y=R_{W-2}$. Since $B\ge1$,
+$R\ge1/P_2$, so $y\ge x\ge w$ when $w\ge9$; use
+$W\ge3w$ and $\operatorname{Fib}(n+1)\ge n$ for $n\ge2$.
+The established whole-word Cassini mass bound is
+$K\le D_{W+2}=R_W=x+2y+p+1$.
+It is the old ALL-word budget of the fixed-tail finite principle,
+not a sampled amplitude estimate. The homogeneous Cassini sign is
+$(-1)^{n-W}$ and $M_R(W)=K$.
+The exact backward identity
+\[
+ M_R(n)+M_R(n-1)=R_nB_n-R_{n-1}B_{n+1}
+\]
+gives the other three terminal minors:
+\[
+\begin{split}
+ M_R(W-1)&=x+2y+p+1-K,\\
+ M_R(W-2)&=(p-3)y+(p-1)x+p(p-1)-1+K,\\
+ M_R(W-3)&=(v-p+3)y-(2p-1)x-p(p-1)+1-K.
+\end{split}                                                    \tag{2}
+\]
+The last expression equals
+\[
+ (R_W-K)+(v-p+1)(y-x)+(v-3p+1)x-p^2.               \tag{3}
+\]
+For $w\ge9$, (1) implies $v-3p+1\ge w$, and $x\ge w$,
+$0\le p\le w$ pay the last two terms. Every term needed for
+the preceding minor is nonnegative as well. Thus ALL FOUR centres
+$W-3,\ldots,W$ are LC for every word of length at least nine.
+This direct ordinary theorem has no finite premise.
+
+\subsection{The true mixed first-defect source and all three left minors}
+Let $T_s=\sum_{i<s}S_4^i+S_4^s/P_3$, whose full C and ordinary
+LC head $s+4\le n\le4s-2$ were proved previously. EXACTLY
+\[
+ T_s-R_{r,s}=\frac{z^{w+3}[3]^r[4]^s}{P_2P_3}.       \tag{4}
+\]
+Since the first four coefficients of $1/(P_2P_3)$ are
+$1,2,5,11$, the first four ordinary losses at $A,\ldots,A+3$ are
+\[
+ 1,\quad B=w+2,\quad C=w(w+1)/2+2w+5,
+\quad D=w(w+1)(w+2)/6+w(w+1)+5w+11-r.              \tag{5}
+\]
+The term $-r$ is retained: $[3]^r[4]^s$ has third coefficient
+$\binom{w+2}{3}-r$. No residual is identified with an incomplete CI source.
+For EVERY real $w\ge8$, $0\le r\le w$, the complete budgets are
+\[
+ B\ge5,\qquad C\ge4B+1,\qquad D\ge4C+1.             \tag{6}
+\]
+The last difference is $w(w+1)(w-4)/6-3w-10-r\ge0$.
+All three unbounded scalar budgets are kernel checked.
+
+We need $M_{T_s}(n)\ge-(T_s)_{n-1}$ only at $n=A,A+1,A+2$.
+If $n\le4s-2$, then $n\ge s+4$ and this follows from the proved
+ordinary head. If $n\ge4s-1$, ALL THREE reads are in the exact tail
+$T_s(n)=2^s h_3(n-s)$, whose start is $4s-2$.
+The previously proved cubic norm gives
+\[
+ |M_{h_3}(m)|\le10h_3(m-1)b^{\lfloor m/2\rfloor},\qquad b=1/\lambda_3.
+\]
+For $s\ge18$ use the OLD near-phase payment
+$10\,2^s b^{\lfloor m/2\rfloor}<1$ whenever $3s\le m+2$;
+here $m=n-s\ge3s-1$. For $s\le17$ use the OLD all-count payment
+at $m\ge3s+9$: $m\ge r+3\ge60\ge3s+9$ because $r\ge57$.
+This is a complete two-case proof, not an unbounded diagonal test.
+In particular no pure-tail formula is used at an earlier physical read.
+The entire far/near rank split is a new Nat kernel.
+
+The reference has $(T_s)_n\le2(T_s)_{n-1}$. The first startup
+minor is at least $(T_s)_{A-1}(B-5)+1$. The second and third use
+the exact previously proved signed-loss identity
+\[
+ (v-B)^2-(u-a)(w-C)
+ =M_T-2Bv+B^2+uC+a(w-C).
+\]
+The actual successors $w-C$ are positive. Equations (6) and the
+unit minor bound pay both remaining startups. This checks all
+THREE new left centres, including every true source jet.
+
+\subsection{Whole four-count induction and both C entries}
+At $s=0$, the complete pure-three infinite-binary reference theorem
+gives ordinary LC from $r+3$ through $3r$ for every $r\ge57$.
+To append a four use $R_{r,s+1}=1+S_4R_{r,s}$.
+Truncate the old ordinary sequence to its interval
+$[A_{\rm old}-1,W_{\rm old}+1]$; it is globally LC by the old
+head hypothesis. Every middle new triple agrees with its positive
+$S_4$ convolution. The three left centres were just paid, and the
+four right centres are (2). These bands cover the entire new head;
+the complete read partition is kernel checked. Induction therefore
+proves ordinary LC at $w+3\le n\le W$ for ALL $s$.
+
+If $A\le4s$, the old $T_s$ ordinary head pays every protected
+centre before $A-1$. At $A-1$ only the next coefficient loses one.
+This improves its minor. The only case where this centre lies
+outside the old head is $A=4s$, where it is $4s-1$; here
+$s\ge20$ and the same near-phase unit payment pays that unit.
+Consequently the entire ordinary head extends back to $s+4$.
+The first $h_4$ loss is one at $s+4$, since the pure-three seed
+with $r\ge57$ agrees with $h_3$ through degree four. Universal
+order-four rounding supplies the strict entry below $\lambda_4$.
+The established bounded ordinary-to-C bridge pays every current
+through $W$, and the OLD general reference C from $W-1$ pays the rest.
+
+If $A>4s$, its integer value is at least $4s+1$. Both reads in
+the cubic root entry are in the true tail, and
+\[
+ (T_s)_A-\lambda_3(T_s)_{A-1}=2^s e_{r+3},
+ \qquad |e_m|\le2b^{\lfloor m/2\rfloor}.
+\]
+The same far/near damping gives $|2^s e_{r+3}|<1$.
+Losing one at $A$ makes $R_A<\lambda_3R_{A-1}$.
+Before this first loss all needed reads equal $T_s$, whose ordinary
+CDF ratios are strictly above $\lambda_3$ by its positive numerator
+and universal renewal rounding. Its complete C pays earlier currents
+and the lowered current at $A$. The bounded ordinary-to-C bridge
+and the old late reference theorem pay all later ones.
+This proves complete reference C in both phases without golden-residual LC.
+
+\subsection{A genuine actual binary/three/four family and original coefficients}
+For actual $X=1^\alpha2^u3^r4^s$, $u\ge1$, its first loss from
+$R_{r,s}$ is at $N_0=u+r+s+2$, with ordinary loss
+$\delta=2$ if $\alpha=1$ and one otherwise. Its next ordinary
+loss is $\eta=(u+r+s)\delta+a_3$, where $a_3$ is respectively
+$3,3,2$ for $\alpha=1,2,\ge3$. Thus $\eta\ge3\delta$ here.
+At the current $N_0+1$, EVERY cumulative read is still protected.
+Writing them as $G,H$ with $G\le2H$, the exact change in a C minor is
+\[
+ H\eta-\delta(G+H)=\delta(2H-G)+H(\eta-3\delta)\ge0.   \tag{7}
+\]
+The actual previous slope is positive: the reference slope is at
+least $\operatorname{Fib}(N_0-1)>2$. If the current signed slope
+is negative, its positive part is zero and C is automatic.
+One new scalar kernel proves (7) INCLUDING this clipping case.
+
+Therefore every actual C current through $N_0+1$ is paid.
+If $u\ge h-5$, $h=2r+3s$, then $N_0+1\ge W-2$.
+The existing all-padding actual late-C theorem at $u\ge h-5$
+starts at $W-1$, so the two ranges cover EVERY current.
+We have proved, with no finite entrance premise:
+\[
+ \boxed{\alpha\ge1,\ r\ge57,\ s\ge0,\ u\ge2r+3s-5
+       \quad\Longrightarrow\quad X\hbox{ has FULL C}.}
+\]
+Let $\mathcal A_9$ be $\mathcal A_8$ together with these actual
+dense mixed arms. It is closed under final-part deletion: deleting
+fours lowers the density requirement, and after the last four the
+entire binary/three family is already present. Every member has
+complete C and first missing weight at most five. The established
+sharp first-missing-five criterion therefore proves FULL pair A2,
+the entire positive-source cone for both nonrectangular arms, and
+ORIGINAL UNAMPLIFIED coefficient unimodality of the strict core
+and BOTH relatives at EVERY strict central peak. One arbitrary
+legal heavier final append is allowed by the same earlier criterion.
+No cumulative-LC substitution for original coefficient unimodality is made.
+
+\paragraph{Exact scope.}
+Nine new scoped Lean reports check the four terminal scalar minors,
+their complete Cassini identities, all three source budgets, the
+far/near and full read partitions, the dense range join, and the
+one-post-defect C payment with clipping. Model identifications,
+LC convolution, whole-word Cassini/positive numerator assembly,
+ordinary-to-C and original-family assembly are written proofs using
+the frozen inputs named above, not an end-to-end Lean formalization
+of composition ideals. All finite computations are QA ONLY; no new
+finite entrance certificate is a premise. Reference $r<57$, arbitrary
+short binary prefixes in the mixed family, general capacities and
+the GENERAL original conjecture remain OPEN.

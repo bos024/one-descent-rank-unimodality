@@ -1,0 +1,128 @@
+{
+  "status": "PASS_GAP_SIX_AND_KAPPA_EIGHT_COMPLETE_FINITE_COMPLEMENTS",
+  "configurations": {
+    "gap6_four_parts": {
+      "config": {
+        "name": "gap6_four_parts",
+        "gap": 6,
+        "hmin": 4,
+        "rbound": 7,
+        "fixed_alpha": null,
+        "first_two": false,
+        "extra_source": false
+      },
+      "counts": {
+        "finite_owner_representatives": 33447,
+        "critical_curvature_cases": 25325,
+        "sharp_equalities": 7
+      },
+      "layers": [
+        {
+          "r": 0,
+          "states": 16,
+          "sha256": "51a3c29eb6a076f887762e081d2d48190f334e06d553c45faab4c481a7a6d8e3"
+        },
+        {
+          "r": 1,
+          "states": 125,
+          "sha256": "413a9ff523d7666227aac092703e8b7d51dfe80704c421c40c192e383191345e"
+        },
+        {
+          "r": 2,
+          "states": 476,
+          "sha256": "39065c1f113d71af0f8b1b09c2ee35e1c20121d0da9cfdca99ff7b48dacfb08e"
+        },
+        {
+          "r": 3,
+          "states": 1324,
+          "sha256": "85ce853afcd4f2f9e66616325453385bdc198cc0473baabf7f26684e0fb3edca"
+        },
+        {
+          "r": 4,
+          "states": 3146,
+          "sha256": "4befadda1ab60c36050345d638161a5eacd5ca2b1786283565ae1455583ff364"
+        },
+        {
+          "r": 5,
+          "states": 6746,
+          "sha256": "7ec58ab6c54d4cd74f99e6251a736cfd72a88b02c7287e554117b837b9a7a136"
+        },
+        {
+          "r": 6,
+          "states": 13492,
+          "sha256": "0044632fc10f07423e64de36b327ef099f398e1327ccbe4ec46a81ea86bb6759"
+        }
+      ]
+    },
+    "kappa8_canonical": {
+      "config": {
+        "name": "kappa8_canonical",
+        "gap": 7,
+        "hmin": 4,
+        "rbound": 10,
+        "fixed_alpha": 1,
+        "first_two": true,
+        "extra_source": true
+      },
+      "counts": {
+        "finite_owner_representatives": 10101,
+        "critical_curvature_cases": 2758,
+        "sharp_equalities": 3
+      },
+      "layers": [
+        {
+          "r": 0,
+          "states": 7,
+          "sha256": "e41673ffb34e832e763afba423df7c3bf9358bc9748dc92f6d2ecc17fb063582"
+        },
+        {
+          "r": 1,
+          "states": 25,
+          "sha256": "853c45de57f98464b41b0e80ebeead87e4121f699296fbbadd7720624606e716"
+        },
+        {
+          "r": 2,
+          "states": 57,
+          "sha256": "ff3486a40614d5081a48912bbebb53e3df746d2ed9fcda11aa8f96dc59e47579"
+        },
+        {
+          "r": 3,
+          "states": 99,
+          "sha256": "aba790cb96be4d968705e1cd24c60e98b553745156ef91de5e4a1d614f8dc665"
+        },
+        {
+          "r": 4,
+          "states": 161,
+          "sha256": "23848ee0208b5d619a11854f3f8679b96e1230b803dc7829b8e6cfc7322826d7"
+        },
+        {
+          "r": 5,
+          "states": 237,
+          "sha256": "f5cc59c9ab85b062314f277e545d1495c9dfcdcb86d211e661b1e7e6a4222d4c"
+        },
+        {
+          "r": 6,
+          "states": 354,
+          "sha256": "c66b63463562ab6d5f8ed0a8d528e3dc35c417c765632f827aca186c60db79ec"
+        },
+        {
+          "r": 7,
+          "states": 480,
+          "sha256": "445175f29dda934b2a097603157b78246aabfbf49f91342bdb03efe974d5aacc"
+        },
+        {
+          "r": 8,
+          "states": 607,
+          "sha256": "96eb20ea81d1a1ae0f44d8c84381b476265030c49c7f3198e8f20ee9f4f3481f"
+        },
+        {
+          "r": 9,
+          "states": 731,
+          "sha256": "049eb34a05296f931b590c41907e67e42e1932448a69d3fa9ddda1b20c238346"
+        }
+      ]
+    }
+  },
+  "seconds": 0.4529999999995198,
+  "scope": "COMPLETEboundedcomplementsafterprovedunboundedCIbackwardratio/rankpayments. Gap6h>=4:r0..6,allalphaexactlyclamped. Absolutekappa8remainingcanonicalalpha1/first2:r0..9withcompulsorysourceincrementwoffset2>=1. No randomhosts. GeneralotherS/A2/C/originalUIremainOPEN;independentverificationrequired."
+}

@@ -1,0 +1,196 @@
+\section{An unbounded dyadic source proof pays mixed proper heads from first missing twenty onward}
+This theorem uses fourteen scoped standard-axiom Lean reports for the
+whole fold, power, indexed-gap and finite-source-sum arguments below.
+The actual word, CI, Cauchy and proper-head assembly is the written proof,
+not an end-to-end Lean word implementation. General C, general A2 and
+the ORIGINAL conjecture remain OPEN.
+
+Set $\rho=3/5$, $b=35/32$, $c=3/2$, $q=b^2/(2\rho)=6125/6144$,
+and $v=b/(2\rho)=175/192$. For $t\ge2$ put
+\[
+ s_t=S_t(\rho)=\tfrac32(1-\rho^t).
+\]
+All capacities, counts, weights and initial runs below are UNBOUNDED.
+
+\subsection{A uniform positive evaluation bound, including the whole append fold}
+For EVERY formal word $1^\beta V$, allowing $\beta=0$, let
+$M=\beta+\sum_{t\in V}(t-1)$. Then
+\[
+                       F_{1^\beta V}(\rho)\le10b^M-125/22<10b^M. \tag{1}
+\]
+The bound does not require ordered capacities. To prove it, first note
+\[
+ 0\le s_t\le b^{t-1}\quad(t\ge2),\qquad
+ s_t\ge147/125=1+22/125\quad(t\ge3).                  \tag{2}
+\]
+For $t=2,3,4,5$ the upper bounds are four explicit rational inequalities.
+For $t\ge6$, use $s_t\le3/2\le b^5\le b^{t-1}$.
+The seed $[\beta+1](\rho)\le5/2$ and $b^\beta\ge1$ establish
+(1) at the empty capacity word, including $\beta=0$.
+If (1) holds before appending $t$, then $F'=1+s_tF$ and $M'=M+t-1$.
+For $t\ge3$, the negative offset pays the whole new unit:
+$(125/22)(s_t-1)\ge1$. For $t=2$, use $b^M\ge1$ and the exact
+positive margin
+\[
+           10(b-24/25)-1-(125/22)/25=97/880>0.
+\]
+This proves the ENTIRE arbitrary-length fold, not a sampled range.
+
+\subsection{A count-free first-missing penalty and a uniform power block}
+Let $K=\kappa_Y\ge20$ and $n=K-2\ge18$. The LAST $n$ non-one
+capacities of the ordered actual arm $Y$ are respectively at least
+$2,3,\ldots,n+1$. Their skeleton degree is at least
+$D_n=n(n+1)/2$. Write $M_0$ for the earlier prefix's skeleton degree.
+Since $s_t\le c$, the whole tail fold satisfies
+\[
+ F_Y(\rho)+2\le c^n(F_{Y_0}(\rho)+2)
+                  \le10c^n b^{M_0}.                  \tag{3}
+\]
+The last bound RETAINS the negative offset $125/22>2$ in (1).
+The exact integer power checks are
+\[
+ q^{224}\le\tfrac12,\qquad
+           2240c^{18}\le b^{171},\qquad c\le b^5.    \tag{4}
+\]
+They imply, for EVERY integer $m\ge0$ and $n\ge18$,
+\[
+                 m q^m\le224,\qquad2240c^n\le b^{D_n}. \tag{5}
+\]
+Indeed write $m=224a+r$, $0\le r<224$. Then
+$m q^m\le224(a+1)2^{-a}\le224$ by $a+1\le2^a$.
+For the second assertion start at $n=18$, use
+$D_{n+1}=D_n+n+1$, and multiply by $b^{n+1}\ge b^5\ge c$.
+Thus (5) is a whole unbounded block/triangle induction.
+
+\subsection{The ACTUAL forward slope is dyadically thin outside its strict CI head}
+Let $M=\beta+\sum(t-1)$ be the main-box degree of $Y$, and
+$B=\max(\beta,\max(t-1))$. Put
+\[
+                            s_Y=\min(\lfloor M/2\rfloor,M-B).
+\]
+Then for EVERY $m>s_Y$,
+\[
+                          m\,\Delta F_Y(m)\le2^m.    \tag{6}
+\]
+First suppose $M<2m$. Positivity of coefficients, (3), and
+$M\ge M_0+D_n$ give
+\[
+ b^{D_n}\frac{F_Y(m)}{2^m}
+        \le10c^n q^m.
+\]
+Multiplication by $m$ and (5) prove $mF_Y(m)\le2^m$,
+which is stronger than (6).
+
+It remains to treat $m>M-B=:O$. The first-missing staircase gives
+$O\ge1+(K-3)(K-2)/2\ge154$.
+If the largest interval is the last capacity interval $[T]$, delete it
+to obtain the actual prefix $Y_0$ with skeleton degree $O$. The exact
+forward recurrence gives
+\[
+ \Delta F_Y(m)=F_{Y_0}(m-1)-F_{Y_0}(m-T-1)\le F_{Y_0}(m-1).
+\]
+Write $j=m-1\ge O$. From (1) and positivity,
+\[
+                   \frac{\Delta F_Y(m)}{2^m}\le5v^j.
+\]
+If instead the initial interval $[\beta+1]$ is largest, write
+$F_Y=A+P[\beta+1]$ by positive suffix boxes, where
+$A$ is their proper-suffix sum and $P=\prod S_t$.
+Then coefficientwise
+\[
+ (1-z)F_Y=(1-z)A+P(1-z^{\beta+1})\preceq A+P=:F_{0,V}.
+\]
+This is the allowed zero-initial-run formal fold of skeleton degree $O$,
+so (1) gives $\Delta F_Y(m)/2^m\le10v^m$.
+The exact base $10\cdot101v^{100}<1$, followed by the decreasing-ratio
+induction $v(j+2)\le j+1$ for $j\ge100$, proves
+$10(j+1)v^j\le1$ for EVERY $j\ge100$. Since $O\ge154$,
+both largest-factor cases prove (6). These cases cover the actual minimum
+in $s_Y$, including ties, plateaus and zero/negative slopes.
+
+\subsection{An indexed curvature gap for ANY actual mixed owner}
+Let $Z=1^\alpha U$ have $h\ge2$ non-one parts, skeleton degree $D$,
+weight $a=\alpha+D+h$, and ordinary reversal $Q=q_Z$.
+At a mixed/source-prefix recovery rank let $r=a-j\ge0$,
+$Q_r\ge Q_{r-1}$ and
+\[
+                           C=Q_{r+1}-2Q_r+Q_{r-1}>0.
+\]
+The frozen primitive-center theorem gives $D\ge2r+2$.
+The frozen ordinary Hilbert realization gives
+$(r+1)Q_{r+1}\le(h+r+1)Q_r$, including every padding and capacity.
+We claim the stronger indexed gap
+\[
+                    (j+1)(2Q_r-Q_{r-1})\ge4Q_{r+1}.  \tag{7}
+\]
+For $r\ge2$ it suffices to show
+$(j+1)(r+1)\ge4(h+r+1)$, because $2Q_r-Q_{r-1}\ge Q_r$.
+We have $j+r\ge2h+1$ and $j\ge h+r+3$.
+For $r\ge3$ use
+$(h+r+4)(r+1)-4(h+r+1)=h(r-3)+r(r+1)\ge0$.
+For $r=2$, split at $h=6$ and use the respective two bounds on $j$.
+For $r=1$, use $Q_0=1,Q_1=h+1$,
+$2Q_2\le(h+1)(h+2)$ and $j\ge2h$; the remaining positive polynomial
+is $2h^2-2h-3\ge1$ at $h\ge2$.
+For $r=0$, $Q_{-1}=0,Q_0=1,Q_1=h+1$ and $j\ge2h+1$ give (7)
+directly. No first-missing bound or C assumption is used for the owner.
+
+\subsection{A whole dyadic source sum pays the indexed gap}
+Write $A=F_Z$, $B=F_Y$, $N=j+1$, and
+$E_B=1-z+(2z-1)B$. Its entire prefix through $N$ is nondecreasing
+in the mixed region; put $w_s=\Delta E_B(s)\ge0$.
+Its first possible birth is at least three. The actual doubling law
+$A_{i+1}\le2A_i$ gives, for every used $s$,
+\[
+                       A_{N-s}\ge2^{2-s}A_{N-2}.
+\]
+The COMPLETE telescoping identity, including the rank-two correction, is
+\[
+ 4\sum_{s=2}^N2^{-s}w_s
+                   =1-4\,2^{-N}\Delta B_N.           \tag{8}
+\]
+It follows from $B_0=B_1=1$ and $E_B(s)=2B_{s-1}-B_s$ for $s\ge2$.
+Consequently
+\[
+ \Delta(E_BA)_N\ge A_{N-2}(1-4\,2^{-N}\Delta B_N).    \tag{9}
+\]
+The exact mixed tail increment is $T=C-\Delta(E_BA)_N$.
+By (7), (9), and $N\Delta B_N\le2^N$ one obtains $T\le0$.
+Thus positive recovery NECESSARILY has
+\[
+                           N\Delta F_Y(N)>2^N.         \tag{10}
+\]
+For $K\ge20$, (6) contradicts (10) whenever $N>s_Y$.
+Therefore EVERY positive mixed recovery at nonnegative reverse rank has
+\[
+                              j+1\le s_Y.             \tag{11}
+\]
+This retains the actual opposite main degree and largest interval.
+It does NOT replace them by a first-missing-only linear surrogate.
+
+\subsection{All properly conditioned mixed CLOSED S heads at first missing twenty or above}
+At both strict positive windows, the frozen reflection guard gives
+$k+1\le j-2$ and $k+1\le a-1$. By (11), the ACTUAL signed opposite
+differences satisfy $\Delta q_Y(i)\ge1$ throughout every used head:
+the main CI has positive primitive support through $s_Y$, while each
+proper shifted-CI summand has nonnegative differences there.
+All used coefficients of the raw owner source $R_Z=(2-z)q_Z$ are
+nonnegative by the second guard. If $0\le r<k$, its index $r+1$ term
+pays $H\ge R_Z(r+1)\Delta q_Y(k-r)\ge C\ge T$.
+The frozen relative raw-kernel theorem with $+1$ surplus pays $r\ge k$,
+including CLOSED source equality $0\le E_n=E_k$.
+
+For $r\le-2$ positive recovery is impossible. At $r=-1$ the first
+source birth pays the unit curvature unless $a\le K-3$, whence
+$j\le K-2$ and $k+1\le K-4\le s_Y$; the raw constant term pays.
+One-part owners have only this same negative-rank birth exception.
+For nonpositive $T$, the usual OLD-A2 head gives $H\ge0$.
+This proves the ENTIRE mixed proper CLOSED S comparison for EVERY
+$K\ge20$, without capacity, count, weight, padding or amplification bounds.
+
+The remaining mixed first-missing gap is now only $13\le K\le19$
+after the accompanying full independent scope/constant verification. The previously frozen
+max-twelve criterion, both-forward-rising C resource, both-nonrising
+actual theorem and WHOLE closed-S-to-window bridge remain unchanged.
+General higher-capacity C still needs proof, and the GENERAL ORIGINAL
+conjecture is NOT concluded by this new mixed-source theorem alone.

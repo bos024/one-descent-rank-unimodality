@@ -1,0 +1,4 @@
+'ForwardDSinglePlateau.two_edge_span_is_strict' depends on axioms: [propext, Quot.sound]
+'ForwardDSinglePlateau.strict_window_survives_unit_except_one_edge' depends on axioms: [propext, Quot.sound]
+'ForwardDSinglePlateau.height_from_one_possible_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForwardDSinglePlateau.smaller_TC_peak_failure_region' depends on axioms: [propext, Classical.choice, Quot.sound]

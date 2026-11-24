@@ -1,0 +1,64 @@
+\section{Next route: the weighted divided quotient for padding one}
+Historical derivation notes. The separate weighted divided-CI proof
+now supplies all the base, ordinary-head and prefix-induction work
+listed below; actual padding-one late C is proved separately. The
+old OPEN labels below document the route, not the current status.
+For $u=m+1\ge h+1$, set
+\[
+ E=(2+z)(1+z)^uL,\quad c=q^2\psi^uL(-\phi),\quad
+ J=(E-c)/(1+qz).
+\]
+As for padding two, the ACTUAL raw geometric deficit at $n=u+s$
+is $[z^s](1-z)J$ for $1\le s\le u$; not at $s=0$.
+Only positive-primitive LC at centres $2\le s\le u-2$ is needed,
+because the existing two coefficient seeds bypass the first defect.
+
+An interval induction could retain global ordinary LC of $J$ and
+positive-primitive LC only through $K=u-2$. The generic window
+proof extends to a FINITE prefix with the same $K$: if the old
+first mode lies above $K$, use only causal convolution of the LC
+positive-primitive prefix; if it lies at or below $K$, the entire
+positive primitive is known and the proved mixed-window argument
+applies. This prefix extension must be written and audited separately.
+
+After appending $[t]$, the exact divided-quotient correction again
+has degree $t-2$, so primitive centres above $t$ are inherited.
+For lower centres use $B=(2+z)L_0Q_u$, $a=\phi^2c$, and
+$X_n=B_n-a\psi^n$. Here $B_0=2$,
+\[
+ B_1=2(u+r-q)+1,\qquad B_1^2-4B_2=4(u-r-q^2)+1.
+\]
+Normalizing the numerator by two gives the prior robust budget
+$M_B\ge2q^nT_B$: its first-coefficient condition holds for an OLD
+tail, since $u\ge\deg L_0+t\ge2r+3$.
+The last junction is now
+\[
+ M_X(t)-4X_t+4+B_1X_{t-1}.
+\]
+It matters only if $t\le K=u-2$. In that range
+$2r\le u-t\le u-3$, $B_{t-1}\ge2(u-q)$,
+$B_1\le3u$, and the unperturbed junction gap is at least $4u/3$.
+The spectral correction is at most
+$(4/5)q^t(B_1+4q)\le3u/5$, so the junction appears to have
+ample slack. Cases $t>K$ need only the low robust head; no invalid
+extension of that robust budget beyond $u-2$ is required.
+
+For nonempty $L$, let $r'=\operatorname{len}L$, $v=u+r'\ge4$.
+Then $E_0=2$, $E_1=2v+1$, $E_2=v^2+2r'$ and $|c|<1/5$.
+The exact first primitive minor for arbitrary $e=E_0,w=E_1$ is
+\[
+ w^2-eE_2-\phi e(w-e)
+       +c\{E_2+\phi(w-2e)\}+\phi c^2.
+\]
+With $e=2$ the coarse bound is
+$(9v^2-24v+31-22r')/5$, positive using $3r'\le v-1$.
+
+REMAINING BASE/ASSEMBLY WORK: prove global ordinary LC of the
+weighted quotient (the identity $J=(2+z)J_{u,L}+\phi\psi^uL(-\phi)$
+changes only its constant coefficient, so only its first ordinary
+minor needs a new payment); prove positive-primitive LC of the
+empty-tail weighted quotient for all $u$ by its binary recurrence,
+which changes only primitive ranks zero/one, leaving two explicit
+head minors; audit all first/minimal cases and the prefix-window
+assembly. These are OPEN and cannot be replaced by the finite
+alpha1/2 nonfailures already observed.

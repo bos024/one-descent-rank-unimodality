@@ -1,0 +1,33 @@
+\section{An arm with one non-one part}\label{sec:single}
+\begin{lemma}\label{lem:single}
+Let $4\le M\le7$, $X=1^\alpha t$ with $2\le t<M$, and $|\wt X-\wt Y|\le M-4$. If $Y$ has at least nine non-one parts, then $Q_{X,Y}$ is unimodal.
+\end{lemma}
+\begin{proof}
+Put $b=\wt Y$, $\eta=\wt X-b$, $R=b+M$, and $q_i=(F_Y)_{b-i}$. The cases $b<35$ are the direct finite bases in Section~\ref{sec:certificates}. Assume $b\ge35$. With $D=D_Y$ and $P=S_t[\alpha+1]D$, we have $Q=D+P$ and $P$ is unimodal. The kernel grows through rank 21, while two-step reflection gives growth of $Q$ through at least $R-4$. The exact window formula is
+\begin{equation}\label{eq:singlewindow}
+ \Del P(n)=\sum_{j=1}^t(d_{n-j}-d_{n-\alpha-j-1}).
+\end{equation}
+
+For $c=0,1,2,3$, telescoping gives
+\begin{align}\label{eq:singlegaps}
+ \Del Q(R-c)-\Del Q(R-c+1)
+ ={}&q_c+\sum_{j=c+2}^{c+t}q_j-T_{c+t-M}\notag\\
+ &+d_{M-c+t-\eta-1}-d_{M-c-\eta-1}
+   +2\mathbf1_{M=4,\ c=3},
+\end{align}
+where $T_s=0$ for $s<0$, and $T_s=\sum_{j=0}^{s-1}q_j+2q_s$ for $s\ge0$. To check the endpoint correction, $d_{R-x}=\sum_{j=0}^xq_j$ for $x<M$; when $x=M+s$, the latter sum must be reduced by $T_s$. Only $s=0,1,2$ occurs. The extra two arises from $d_{R-c-1}=d_b$ when $M=4,c=3$. The displayed low kernel difference is nonnegative, since its indices lie between zero and fifteen.
+
+Let $N\ge9$ be the number of non-one parts in $Y$. Its reversed recurrence gives
+\[
+ q_0=1,\quad q_1\le N+1,\quad q_2\le\binom{N+2}{2},
+ \qquad q_j\ge\binom Nj.
+\]
+For the upper bounds, an initial run of ones supplies at most one extra geometric factor. A correction at degree two can occur only with no initial ones and first part two, still within the displayed bound. Thus $T_s\le(N+2)^2$ for $s\le2$. Both $\binom N4$ and $\binom N5$ are at least $(N+2)^2$ for $N\ge9$: check $N=9$, and compare successive ratios. If a correction occurs and $c=3$, the positive sum contains $q_5$ and pays for it. If $c=2$, it contains $q_4$. If $c=1$, only $T_0=2$ occurs, paid by $q_3$; for $c=0$ no correction occurs. In all cases $q_c>0$ remains. The five differences at $R-3,\ldots,R+1$ therefore strictly decrease.
+
+For $R+1\le n\le R+t$, another telescoping of~\eqref{eq:singlewindow} gives
+\[
+ \Del P(n+1)-\Del P(n)
+ =-d_{n-t}-(d_{n-\alpha-1}-d_{n-\alpha-t-1})\le0,
+\]
+because $d_n=0$ and the low indices are at most 21. For $n\ge R+t+1$, all high terms in~\eqref{eq:singlewindow} vanish, so $\Del P(n)\le0$. If any of the five central differences of $Q$ is negative, their strict decrease and integrality give $\Del P(R+1)=\Del Q(R+1)+1\le0$, and no later increase occurs. Otherwise the increasing segment joins the unimodal tail $P$. This proves the lemma.
+\end{proof}

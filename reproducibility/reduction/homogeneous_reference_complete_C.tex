@@ -1,0 +1,133 @@
+\section{Complete reference C from the first homogeneous rank}
+Let $H=(1-z-z^2)^{-1}$ and obtain $F_V$ by repeatedly applying
+$F_{Vt}=1+S_tF_V$, where $S_t=z+\cdots+z^t$ and $t\ge2$.
+Remove all leading twos, which fix $H$. For the remaining nonempty
+word $V$ put $W=\sum t$, $r=|V|$, $B=(1-z-z^2)F_V$,
+$d=(1-z)F_V$ and $G=F_V/(1-z)$. The word need not be sorted.
+The existing numerator argument proves $B\ge0$, $B_0=1$,
+$\deg B=W$, and $d_n>0$ for $n\ge2$.
+
+\begin{theorem}[All shifts at every homogeneous rank]
+For EVERY finite word as above, every $N\ge W+1$ and every $R\ge3$,
+\[
+                    G_{N-R}d_{N-1}\ge G_{N-R-1}d_N.       \tag{1}
+\]
+Negative indices are zero. Empty effective words have the already
+proved complete binary C. This improves the previous universal
+start $W+6$ to $W+1$. It does not assert C at every earlier rank.
+\end{theorem}
+
+\subsection*{A lower ratio envelope using the binary cumulative sequence}
+Write $f_n=\operatorname{Fib}(n)$ and $g_k=f_{k+3}-1$ for $k\ge0$,
+with $g_k=0$ for $k<0$. This is the cumulative sequence of $H$.
+For $k\ge1$, its LC minor is exactly
+\[
+                   g_k^2-g_{k-1}g_{k+1}=f_k+(-1)^k\ge0. \tag{2}
+\]
+Indeed the Fibonacci Cassini term is $(-1)^k$, and the remaining
+linear term is $f_{k+2}+f_{k+4}-2f_{k+3}=f_k$.
+Thus for $1\le k\le n$ and every $i\ge0$,
+\[
+                 g_{k-i}g_{n-1}\ge g_{k-i-1}g_n.
+\]
+For negative lower indices this follows by zero extension; otherwise
+it is an ordinary ratio comparison in the positive LC sequence $g$.
+Multiplication by $B_i$ and summation give the all-read envelope
+\[
+                  G_k g_{n-1}\ge G_{k-1}g_n
+                            \qquad(1\le k\le n).        \tag{3}
+\]
+No LC of the arbitrary-reference cumulative sequence $G$ is assumed.
+Consequently it suffices for all the comparisons at rank $N\ge4$
+to prove the SINGLE comparison
+\[
+           (f_N-1)d_{N-1}\ge(f_{N-1}-1)d_N.              \tag{4}
+\]
+The reads $k\le0$ are automatic.
+
+\subsection*{A relative spectral bound for the entire word}
+Let $p=\varphi$, $q=p^{-1}=p-1$ and $\psi=-q$.
+Evaluation at either zero of $1-z-z^2$ gives
+\[
+ A:=B(q)=\prod_{t\in V}S_t(q)>0,\qquad
+ C:=B(-p)=\prod_{t\in V}S_t(-p).
+\]
+The exact all-capacity identities are
+\[
+ pS_t(-p)=(-p)^t-1,\qquad
+ p^t S_t(q)=p(p^t-1).                                  \tag{5}
+\]
+For EVERY $t\ge2$ they imply
+\[
+                    p|S_t(-p)|\le p^t S_t(q).           \tag{6}
+\]
+For $t=2$ both windows are one. For $t\ge3$, the triangle
+inequality and $p^t\ge p^3$ give
+\[
+ p|S_t(-p)|\le p^t+1\le p(p^t-1).
+\]
+The last inequality is $(p-1)p^t\ge p+1=p^2$ and is an equality
+at $t=3$. Multiplying (6) over the WHOLE word gives
+\[
+                         p^r|C|\le p^W A.              \tag{7}
+\]
+This relative bound retains the positive-root amplitude $A$;
+the older absolute bound $|C|\le p^W$ loses precisely this resource.
+Also $\operatorname{sgn}(C)=(-1)^W$, since the first identity in (5)
+shows $\operatorname{sgn}(S_t(-p))=(-1)^t$.
+
+\subsection*{The exact comparison at all homogeneous ranks}
+The binary signed slope at rank $j\ge0$ is $f_{j-1}$, using
+$f_{-1}=1$. The exceptional atom at zero is therefore INCLUDED.
+Binet's formula consequently gives, already for $n\ge W$,
+\[
+               \sqrt5\,d_n=A p^{n-1}-C\psi^{n-1}.       \tag{8}
+\]
+Thus at $N\ge W+1$ the conjugate error is exactly
+\[
+                     d_N-pd_{N-1}=C\psi^{N-2}.          \tag{9}
+\]
+If $N-W$ is odd, (9) is negative. Since $g_k-pg_{k-1}>0$
+for every nonnegative $k$, (1) follows directly. In particular
+the FIRST homogeneous rank $N=W+1$ is always paid, with no norm bound.
+
+Suppose now $N\ge W+2$ and $r\ge2$. By (7),
+\[
+                              |C|\le A p^{N-4}.         \tag{10}
+\]
+Put $\sigma=(-1)^{N-2}$. Using (8), the exact determinant in (4) is
+\[
+\begin{split}
+ \sqrt5\{(f_N-1)d_{N-1}-(f_{N-1}-1)d_N\}
+  =A(p^{N-3}-\sigma p^{-1})
+                  -\sigma C p(1-p^{-N+2}).             \tag{11}
+\end{split}
+If $\sigma C\le0$, both terms have nonnegative total sign directly.
+Otherwise (10) bounds (11) below by
+\[
+ A\{p^{N-3}-\sigma p^{-1}-p^{N-3}(1-p^{-N+2})\}
+                         =A p^{-1}(1-\sigma)\ge0.
+\]
+This proves (4). Applying (3) with $n=N-3$ proves EVERY $R\ge3$.
+For $r=1$, write $V=(t)$. At $N=W+2=t+2$ the explicit one-window
+slopes give $d_{N-1}=f_{N-1}-1$ and $d_N=f_N-1$, so (4) is
+an equality. For $N\ge W+3$, (7) again implies (10), since
+$W-r=W-1\le N-4$, and (11) proves (4). The first rank $W+1$
+was already paid by its negative conjugate error. Thus the proof
+does not require an imported early one-jump C theorem.
+This completes the proof of (1).
+
+\paragraph{An exact equality checking the delicate boundary.}
+For $V=(3,3)$, $W=6$, the reference slopes at ranks seven and eight
+are twelve and twenty. At $N=W+2=8$, the binary comparison (4)
+is an equality: $(f_8-1)12-(f_7-1)20=20\cdot12-12\cdot20=0$.
+The actual-reference all-shift C assertion is still valid; the proof
+does not falsely promote this intermediate comparison to strictness.
+
+\paragraph{Scope.}
+The theorem proves unrestricted word/capacity/count/rank/shift C
+in the ENTIRE homogeneous range, and uses written polynomial/Binet
+identification with explicitly scoped Lean kernels and exact QA.
+Earlier ranks $N\le W$, general actual C, general A2 and the
+original unamplified one-descent unimodality conjecture remain OPEN.
+No original least-counterexample numerical bound is upgraded.

@@ -1,0 +1,126 @@
+\section{A sharp improved center bound by pairing the first two positive sources}
+\begin{theorem}[One-unit improvement, arbitrary number of capacities]
+Let $X=1^\alpha(t_1,\ldots,t_h)$ with $\alpha\ge1$, $h\ge2$,
+each $t_i\ge2$, and $t_1\le t_2$. The later capacities may have
+ANY order. Put $W=\sum_i t_i$, and use
+$D_0=D_1=0$, $D_n=(F_n-F_{n-1})^+$ for $n\ge2$.
+EVERY nonempty height layer of $D$ has endpoints $L,R$ satisfying
+\[
+                            L+R\le W+h.                 \tag{1}
+\]
+In particular
+\[
+                     \ell_D\le\left\lfloor\frac{W+h}{2}\right\rfloor.
+                                                               \tag{2}
+\]
+This improves the previous all-formal-order layer bound $W+h+1$
+by one. It is sharp on an unbounded actual family. In particular
+it holds for every actual increasing arm with at least two
+non-one parts. The initial-one length does not enter the bound.
+\end{theorem}
+
+\paragraph{An exact positive decomposition, not a sign estimate.}
+For $2\le a\le b$ one has
+\[
+ [b-1]+S_b[a-1]
+                  =[a-1][b+1]+z^{a-1}[b-a].              \tag{3}
+\]
+The last term is zero if $a=b$. Both nonzero terms are symmetric
+unimodal CI polynomials. Their endpoint sums are respectively
+$a+b-2$ and $a+b-3$, one or two earlier than the old separate
+upper-center estimate $a+b-1$ for the left side.
+
+Identity (3) holds as a polynomial over every commutative ring.
+For example multiply both sides by $(1-z)^2$ and use
+$(1-z)[q]=1-z^q$; both numerators are equal by expansion.
+\texttt{SharpenedForwardDerivativeCenters.lean} proves the COMPLETE
+identity for arbitrary natural lengths $a-1,b-a$ in every integral
+domain, including the equality case and $z=1$. Thus it applies
+directly to polynomial rings; it is not a finite coefficient check.
+
+\paragraph{All sizes and every finite initial-one correction.}
+The earlier exact derivative decomposition is
+\[
+ d^\infty=\sum_{i=1}^h[t_i-1]\prod_{j>i}S_{t_j},\qquad
+ D_{n+2}=(d^\infty_n-K_n)^+,
+ \quad K=z^{\alpha+h-1}\prod_i[t_i].                     \tag{4}
+\]
+Pair the $i=1,2$ terms using (3), then multiply their two
+positive CI pieces by $\prod_{j\ge3}S_{t_j}$.
+Their centers are respectively
+\[
+                       W+h-4,\qquad W+h-5.
+\]
+Every remaining source, $i\ge3$, has center
+$\sum_{j\ge i}t_j+h-i-2\le W+h-4$.
+Thus $d^\infty$ is a sum of symmetric unimodal nonnegative
+polynomials with endpoint sums at most
+\[
+                              C=W+h-4.
+\]
+This is an exact positive expansion for arbitrary $h$, not an
+extrapolation from finitely many cases.
+
+For $2n\ge C$, every summand has coefficient at $C-n$ at least
+its coefficient at $n$. Hence the same holds for $d^\infty$.
+The correction $K$ is symmetric unimodal with center
+\[
+                2\alpha+W+h-2=C+2\alpha+2>C,
+\]
+so its reflected inequality goes in the opposite direction.
+Subtracting and taking positive parts preserves the upper-center
+comparison. The already proved unimodality of positive forward
+differences holds for all these formal orders. Reflect a right
+height-layer endpoint $R'$ about $C/2$; the same height is
+attained at $C-R'$, so its left endpoint satisfies
+$L'\le C-R'$. Thus $L'+R'\le C$.
+Undoing the shift by two in (4) gives (1), and the first
+maximum lies no later than $\lfloor(W+h)/2\rfloor$.
+All coefficients are zero-extended, so boundaries cause no exception.
+
+Sharpness already follows from the prior odd uniform triples:
+$h=3$, $t_1=t_2=t_3=2m+1\ge3$, $\alpha\ge3t_1$.
+Their unique derivative maximum is at $3m+3$, whose maximal
+height layer has endpoint sum $6m+6=W+h$.
+Thus both (1) and (2) are attained on an unbounded actual family.
+
+The first-two ordering premise cannot be dropped. The FORMAL
+unsorted arm $1^2(3,2)$ has derivative maximum two at rank four.
+Its maximal layer $[4,4]$ has endpoint sum eight, whereas
+$W+h=5+2=7$. Its first mode four also exceeds
+$\lfloor(W+h)/2\rfloor=3$. This is not an actual increasing arm
+or an original unimodality counterexample. The older $W+h+1$
+bound remains valid for arbitrary formal order.
+
+\paragraph{Consequences for the unresolved C induction.}
+In every actual four-capacity old arm in the C5 induction, replace
+\[
+                   2n\le a+b+c+d+5
+       \quad\hbox{by}\quad 2n\le a+b+c+d+4.              \tag{5}
+\]
+The older source slack $Z=a+b+c+d-2n+5$ is therefore at least
+one. Previously excluded near-uniform $cd/bccd$ boundary shapes
+with $Z=0$ are now excluded by a general all-size theorem.
+For the $abbc$ geometry $a=b$, $c=a+v$, $d=c+u$,
+$n=2a+v+3$, (5) gives $u\ge2$ for every $v$, removing the
+whole last-gap-one boundary family.
+
+The proved actual large-initial-one C5 consequence also improves to
+\[
+ \alpha\ge\max\left\{1,
+             \left\lfloor\frac{a+b+c+d+4}{2}\right\rfloor-4\right\}:
+\]
+every remaining old rank is at most the new bound and precedes
+the finite-one subtraction at degree $\alpha+5$.
+All general conditional C append thresholds may likewise use
+$\ell_D\le\lfloor(W+h)/2\rfloor$ when $h\ge2$ and the first
+two capacities are sorted.
+
+The six new scoped kernel reports cover the arbitrary-length
+positive interval identity, both base centers, arbitrary-tail
+center arithmetic, the finite correction gap, the shifted first-mode
+bound and the whole equal-first-pair last-gap consequence.
+CI reflection, the known derivative unimodality and actual generation
+assembly are the complete written argument above. No end-to-end
+composition datatype formalization or general C/original UI solution
+is asserted.

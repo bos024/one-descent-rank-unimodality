@@ -1,0 +1,17 @@
+\section{Explicit support convention for the new robust-head statement}
+Read the phrase ``nonnegative LC numerator'' in
+\texttt{double\_subdegree\_CI\_entrance\_proof.tex} with the
+INTERVAL-SUPPORT hypothesis of the registered Toeplitz convolution
+theorem: there are NO internal zeros in its positive support.
+Equivalently, the numerator belongs to the nonnegative TP2 sequence
+class. This hypothesis is used in the Cauchy--Binet step and in
+$N_{s+1}\le N_1N_s$. Merely checking adjacent three-term
+inequalities while allowing a long internal gap is insufficient.
+
+Every numerator actually used for the quotient, actual derivative
+tail and late-C application is a product of interval polynomials.
+It has positive coefficients throughout its support. Thus the new
+all-padding actual late-C theorem, its finite exception coverage,
+and its Lean kernels are unchanged. This note makes the GENERIC
+robust-head statement's support convention explicit; it does not
+extend that statement to gapped nonnegative sequences.

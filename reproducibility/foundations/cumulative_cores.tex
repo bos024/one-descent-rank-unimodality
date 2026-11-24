@@ -1,0 +1,144 @@
+\section{Tail counts and composition at a common maximum}\label{sec:cumulativecores}
+
+We distinguish log-concavity of a coefficient sequence from log-concavity
+of its tail sums. For a nonnegative polynomial $P$ of degree $d$, write
+\[
+ \mathcal T_P(k)=\sum_{j=k}^{d}P_j\qquad(k\in\mathbb Z),
+\]
+where coefficients outside $[0,d]$ vanish. Thus $\mathcal T_P$ is constant
+for $k\le0$ and zero for $k>d$.
+
+\begin{lemma}[Cumulative convolution closure]
+Let $p,q$ be nonzero nonnegative finitely supported sequences. If their
+cumulative sums are log-concave on all integer indices, the cumulative
+sums of $p*q$ are log-concave as well.
+\end{lemma}
+\begin{proof}
+Normalize $p$ and $q$ by their positive total masses and translate their
+supports into the nonnegative integers. The hypothesis says precisely
+that both distributions are discrete decreasing reversed hazard
+distributions. Apply Nanda and Sengupta~\cite{NandaSengupta},
+Theorem 4.2(d). Undo the normalization and the translations.
+\end{proof}
+
+\begin{lemma}[Closure at a common maximum]\label{lem:cumulativegraft}
+Fix $M\ge2$ and arbitrary hosts $X,Y$ with parts at most $M$.
+Suppose the cumulative sums of each of $q_X,q_Y,\delta_X,\delta_Y$
+are log-concave, where the two kernels use peak $M$.
+Then both the reversed rank polynomial and the reversed peak-$M$
+kernel of $XMY$ have log-concave cumulative sums.
+\end{lemma}
+\begin{proof}
+The maximum identity gives
+\[
+ D_{XMY}=D_XD_Y,\qquad
+ q_{XMY}=q_X\delta_Y+z^{a+M}q_Y,
+ \qquad a=\wt X,\quad b=\wt Y.
+\]
+The first identity follows by expanding
+$1+(S_M-1)(F_X+F_Y+(S_M-1)F_XF_Y)$.
+After reversing, it gives $\delta_{XMY}=\delta_X\delta_Y$;
+cumulative convolution closure proves the kernel assertion.
+
+For the rank polynomial, interchange the arms if necessary so that
+$a\ge b$. This leaves the polynomial unchanged. The cumulative sums of
+$q_X\delta_Y$ are log-concave. At centers $r\le a+M-2$, the
+added term has not entered any of the three cumulative values.
+At every remaining center, the consecutive increments of the full
+cumulative sequence satisfy
+\[
+ (q_{XMY})_r\ge(q_{XMY})_{r+1}.
+\]
+Indeed, their forward ranks are $a+b+M-r\le b+1$ and the preceding
+rank, while $b+1\le\lceil(a+b+M)/2\rceil$. Apply
+Lemma~\ref{lem:half}; ranks outside the support cause no difficulty.
+Nonnegative decreasing increments imply concavity and hence
+log-concavity of the cumulative sequence. This includes the joining
+center $a+M-1$.
+\end{proof}
+
+\begin{theorem}[Valleys separated by a common maximum]
+\label{thm:separated}
+Let
+\[
+ w=Z_0\,M\,Z_1\,M\cdots M\,Z_s,
+\]
+where each $Z_i$ weakly decreases and then weakly increases, possibly
+with one or both segments empty, and every part of $Z_i$ is strictly
+below $M$.
+There is no restriction on $M$, $s$, or the block lengths.
+Both $F_w$ and $1+(S_M-1)F_w$ have log-concave tail counts.
+In particular, the number of descents need not be bounded.
+\end{theorem}
+\begin{proof}
+For $M=1$, all blocks are empty, and the word consists of ones;
+both conclusions follow directly from the corresponding intervals.
+Assume $M\ge2$. Every nonempty valley block has a global maximum at
+an endpoint; removing that maximum leaves a valley block. Word reversal
+preserves the rank polynomial, so removing either endpoint maximum $t$
+uses the identity $F=1+S_tF_{\mathrm{rest}}$. Induction shows that a
+valley block has the same rank polynomial as its increasing rearrangement.
+Thus each block has the two cumulative properties proved for monotone
+arms in the preceding section. Repeated application of
+Lemma~\ref{lem:cumulativegraft} proves both conclusions. Equivalently,
+the kernel factorization is
+\[
+ D_w=\prod_{i=0}^s D_{Z_i}.
+\]
+This factorization concerns the kernels at the same peak $M$.
+\end{proof}
+
+For example, $(1,7,10,8,3,10,2,9,10,7,4,1)$ has five descents and
+satisfies the theorem with $M=10$. The theorem remains a statement about
+cumulative counts; it makes no rank-unimodality assertion for this
+larger class. Appending or prepending successive global maxima also
+preserves the rank-tail conclusion, by the reverse append argument.
+
+\begin{theorem}[Log-concavity of one-descent tail counts]
+Let $w$ be any composition with at most one adjacent descent, with no
+bound on its length or part sizes. Then
+\[
+ \mathcal T_{F_w}(k)^2\ge
+ \mathcal T_{F_w}(k-1)\mathcal T_{F_w}(k+1)
+ \qquad(k\in\mathbb Z).
+\]
+The same conclusion holds for every bitonic composition. For increasing
+strict arms $X,Y$, it also holds for the relative polynomial $F_XD_Y$.
+\end{theorem}
+
+\begin{proof}
+Consider first a strict core $(X,M,Y)$. The proved cumulative reverse-arm and reverse-kernel
+theorems, together with cumulative convolution closure, show that the
+cumulative sums of $q_X\delta_Y$ are log-concave. This proves the
+relative-polynomial assertion, by reversing the index.
+The core itself is covered by Theorem~\ref{thm:separated} with two
+blocks.
+
+Monotone hosts are already covered by the reverse-arm theorem.
+Appending a global maximum changes $F$ to $1+S_tF$ and preserves
+log-concavity of the cumulative reverse profile by the same window and
+terminal-step argument used for monotone arms. That argument requires
+only a nonnegative polynomial with constant coefficient one, a
+log-concave cumulative reverse profile, and the maximum append identity.
+Strip successive global maxima from the terminal increasing segment of
+a one-descent word until the strict core is reached, and then restore
+them. Inserting another copy next to the central peak also changes
+$F$ to $1+S_MF$: its peak-$M$ kernel is multiplied by $S_M$, by the
+maximum identity. Thus repeated copies of the peak are restored by
+the same cumulative argument.
+Finally, reversing the decreasing arm of a bitonic word does not change
+its arm polynomial; the maximum decomposition gives the identical
+core polynomial. This proves all assertions.
+\end{proof}
+
+The theorem asserts log-concavity of tail \emph{counts}, not tail
+log-concavity of the individual rank coefficients. The latter is a
+different, stronger shape condition. Log-concavity of tail sums alone
+does not imply rank-unimodality.
+
+\paragraph{External input and verification boundary.}
+The cumulative convolution lemma is an external theorem. Ordinary
+convolution closure for log-concave coefficient sequences does not
+justify this step. The supplied Lean files verify the reverse append
+and escape counting models; they do not formalize this external
+probability theorem or the complete core theorem.

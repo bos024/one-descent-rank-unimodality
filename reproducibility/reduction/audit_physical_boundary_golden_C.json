@@ -1,0 +1,43 @@
+{
+  "status": "EXACT_QA_PHYSICAL_BOUNDARY_GOLDEN_D_AND_EARLIER_C_UNDER_AUDIT",
+  "counts": {
+    "exact_previous_r_units_and_current_unit_identities": 1291,
+    "zero_binary_boundary_payments": 119,
+    "finite_padding_boundary_density_transfers": 4441,
+    "all_padding_boundary_golden_payments": 3544,
+    "exact_prefix_minimum_all_shift_C_payments": 448270,
+    "logical_shift_coverage": 115549786,
+    "all_padding_earlier_full_C_halfline_hosts": 2909,
+    "actual_hosts": 4441,
+    "CI_profiles": 1291,
+    "protected_reference_boundary_gap_identities": 660,
+    "sharp_one_factor_parity_controls": 103,
+    "all_padding_protected_odd_counteredges": 156,
+    "all_shift_reference_boundary_C_products": 74370,
+    "actual_new_boundary_large_shift_C_products": 193012,
+    "exact_boundary_quotient_plus_phi_identities": 512,
+    "unbounded_monotone_CI_head_payments": 227,
+    "two_degree_gap_positive_payments": 116,
+    "multiple_factor_norm_payments": 557,
+    "large_degree_symmetric_row_payments": 169
+  },
+  "state_sha256": "738ba69282e3a62d9a990994cb0f39ffa04820083dc3a51eafb693e2224ddb04",
+  "seconds": 7.203000000001339,
+  "actual_D_LC_earlier_start_counter": {
+    "alpha": 3,
+    "u": 46,
+    "V": [
+      12,
+      18,
+      20
+    ],
+    "centre": 50,
+    "D": [
+      20296909601,
+      32841089600,
+      53137999199
+    ],
+    "minor": -4885249599
+  },
+  "scope": "Written universal physicalW golden D edge with exactly old onefactor odd-capacity protected exceptions; ALL actual boundaryC shiftsR>=max(3,h-u-1); ALLu>=h-4 actual everyC startsW insteadW+1; ALLnonbinary infinite-binary reference everyC startsW. No finite entrance premise. D-LC itself does NOT start one earlier. General earlierC/fullA2/originalUI OPEN."
+}

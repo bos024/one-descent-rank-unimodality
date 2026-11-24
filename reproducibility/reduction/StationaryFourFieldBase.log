@@ -1,0 +1,3 @@
+'StationaryFourFieldBase.complete_quartic_majorant_and_fixed_eight_reference_entrance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

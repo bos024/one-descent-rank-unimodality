@@ -1,0 +1,151 @@
+{
+  "status": "EXACT_ACTUAL_TRIANGULAR_SOURCE_INDUCTION_DIAGNOSTIC",
+  "counts": {
+    "actual_append_contexts": 50000,
+    "triangular_curvature_comparisons": 2166342,
+    "pre_old_peak_comparisons": 1837601,
+    "old_peak_crossings": 328741,
+    "large_kappa_pre_peak": 1461270,
+    "large_kappa_collision_profile_checks": 27897,
+    "stationary_boundary_paid": 5980,
+    "peak_crossings_not_paid_by_M_minus_one": 8679,
+    "collision_first_boundary_paid": 3420,
+    "collision_second_boundary_paid": 342
+  },
+  "failures": {},
+  "small_peak_budget_states": {
+    "(3, 1, 4, 1)": 7804,
+    "(4, 2, 5, 2)": 678,
+    "(4, 2, 5, 3)": 38,
+    "(5, 3, 6, 3)": 24,
+    "(5, 3, 6, 4)": 44,
+    "(5, 4, 6, 4)": 40,
+    "(6, 5, 7, 6)": 50,
+    "(6, 6, 7, 7)": 1
+  },
+  "small_peak_budget_examples": {
+    "(3, 1, 4, 1)": {
+      "alpha": 68,
+      "U": [
+        6
+      ],
+      "t": 7,
+      "ell": 2,
+      "M": 1,
+      "ln": 7,
+      "n": 7,
+      "value": 4,
+      "budget": 1
+    },
+    "(4, 2, 5, 2)": {
+      "alpha": 45,
+      "U": [
+        2,
+        7
+      ],
+      "t": 7,
+      "ell": 3,
+      "M": 2,
+      "ln": 9,
+      "n": 8,
+      "value": 9,
+      "budget": 2
+    },
+    "(5, 4, 6, 4)": {
+      "alpha": 20,
+      "U": [
+        2,
+        3,
+        4
+      ],
+      "t": 6,
+      "ell": 6,
+      "M": 5,
+      "ln": 9,
+      "n": 9,
+      "value": 19,
+      "budget": 9
+    },
+    "(6, 5, 7, 6)": {
+      "alpha": 32,
+      "U": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "t": 6,
+      "ell": 8,
+      "M": 19,
+      "ln": 12,
+      "n": 10,
+      "value": 43,
+      "budget": 20
+    },
+    "(4, 2, 5, 3)": {
+      "alpha": 62,
+      "U": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "t": 4,
+      "ell": 6,
+      "M": 5,
+      "ln": 9,
+      "n": 8,
+      "value": 10,
+      "budget": 5
+    },
+    "(5, 3, 6, 4)": {
+      "alpha": 43,
+      "U": [
+        2,
+        2,
+        3,
+        4
+      ],
+      "t": 5,
+      "ell": 7,
+      "M": 9,
+      "ln": 10,
+      "n": 9,
+      "value": 22,
+      "budget": 9
+    },
+    "(6, 6, 7, 7)": {
+      "alpha": 1,
+      "U": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "t": 6,
+      "ell": 7,
+      "M": 12,
+      "ln": 10,
+      "n": 10,
+      "value": 44,
+      "budget": 27
+    },
+    "(5, 3, 6, 3)": {
+      "alpha": 1,
+      "U": [
+        2,
+        17,
+        20
+      ],
+      "t": 20,
+      "ell": 5,
+      "M": 5,
+      "ln": 21,
+      "n": 9,
+      "value": 18,
+      "budget": 5
+    }
+  },
+  "scope": "Actual finite diagnostics only; triangular curvature, general S/C/A2 and original UI remain OPEN.",
+  "seconds": 16.405999999988126
+}

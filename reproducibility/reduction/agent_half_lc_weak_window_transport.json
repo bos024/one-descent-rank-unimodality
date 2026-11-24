@@ -1,0 +1,21 @@
+{
+  "status": "PASS_EXACT_QA_OF_ACTUAL_HALF_TAIL_CURVATURE_ASSEMBLY",
+  "counts": {
+    "actual_source_prefix_nonnegative_coefficients": 700792,
+    "actual_upper_half_source_monotonic_edges": 120993,
+    "old_half_weak_premise_passed": 4000,
+    "assembled_post_mode_source_prefix_edges": 146651,
+    "conditional_actual_transported_tail_edges": 54868,
+    "actual_complete_new_half_tail_edges": 27455,
+    "proof_branch_crossing_concavity": 26979,
+    "actual_pairs": 4000,
+    "fully_covered_unbalanced_contexts": 1439,
+    "fully_covered_unbalanced_new_half_tail_edges": 9838,
+    "proof_branch_new_terminal_edge": 471,
+    "proof_branch_late_source_layer": 1,
+    "proof_branch_short_main_box": 4
+  },
+  "witness": null,
+  "seconds": 5.953000000001339,
+  "scope": "Finite QA only. The complete unbounded actual induction is in agent_half_lc_actual_weak_curvature.tex. OLD-W is tested here as the old induction premise; no OLD A1 or actual half-LC is assumed. General S and original UI remain OPEN."
+}

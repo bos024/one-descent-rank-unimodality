@@ -1,0 +1,100 @@
+\section{A genuine C-to-S bridge while the opposite deficit is rising}
+This section uses exact source coefficients and their monotonicity,
+without any forward cumulative log-concavity assumption.
+
+\begin{theorem}[Nonrecovering reverse deficit from one-arm C]
+Let $A=F_Z$, $B=F_Y$ be actual increasing nonrectangular arms, and
+assume $A$ has property C. Set $D_i=(A_i-A_{i-1})^+$,
+$D_0=D_1=0$, $E_B=1-z+(2z-1)B$, and $H=E_BA$.
+At a forward comparison $j\ge2$, assume
+$D_jD_{j+1}>0$ and $E_B$ is nondecreasing throughout ranks
+zero through $j+1$. If
+\[
+                    2(AB)_j-(AB)_{j+1}\ge0,
+\]
+then
+\[
+            2(AB)_{j-1}-(AB)_j
+                       \le2(AB)_j-(AB)_{j+1}.           \tag{1}
+\]
+In particular the deficit monotonicity premise holds whenever $B$
+is still strictly rising at $j+1$, by the established single-arm
+ordinary/deficit mode ordering. If both ordinary factors are still
+strictly rising, the theorem applies whenever either one has C.
+\end{theorem}
+\begin{proof}
+Write $w_r=E_B(r)-E_B(r-1)$. Nonrectangularity gives $w_r=0$
+for $r<3$; the prefix hypothesis gives $w_r\ge0$ through $j+1$.
+The exact source identities are
+\[
+ H_j=\sum_{r=3}^j w_rG_A(j-r),\qquad
+ H_{j+1}=\sum_{r=3}^{j+1}w_rG_A(j+1-r).
+\]
+Multiply the shift-$r$ C inequalities by $w_r$ and sum, retaining
+the nonnegative newly born $r=j+1$ term. This proves
+$H_{j+1}D_j\ge H_jD_{j+1}$. Also
+$H_{j+1}-H_j=\sum_rw_rA_{j+1-r}\ge0$.
+
+The exact identity
+\[
+                    (2z-1)AB=E_BA-(1-z)A
+\]
+identifies the two deficits in (1) with $H_j-D_j$ and
+$H_{j+1}-D_{j+1}$. The latter is nonnegative by hypothesis.
+These facts imply its monotonicity by the positive decomposition
+\[
+\begin{split}
+ H_{j+1}\bigl((H_{j+1}-D_{j+1})-(H_j-D_j)\bigr)
+  ={}&(H_{j+1}D_j-H_jD_{j+1})\\
+    &+(H_{j+1}-H_j)(H_{j+1}-D_{j+1})\ge0.
+\end{split}
+\]
+Here $H_{j+1}\ge D_{j+1}>0$, so division proves (1).
+This step uses BOTH the unclipped ratio comparison and monotonicity
+of the actual source convolution; clipping alone would not suffice.
+\end{proof}
+
+\begin{corollary}[Correct coupled S on the two-rising-factor branch]
+Put $p=q_Zq_Y$, $a=\operatorname{wt}Z$, $b=\operatorname{wt}Y$,
+and $R_i=2p_i-p_{i-1}$. At a usual S crossing index $n$ set
+$j=a+b-n$. If $j\ge2$, both $F_Z,F_Y$ are still strictly rising
+at $j+1$, at least one of them has C, and $R_n\ge0$, then
+\[
+                         R_{n+1}\le R_n.                \tag{2}
+\]
+Assume, as in the A2 induction, that the OLD weighted positive
+differences $2^iu_i$ are unimodal. For $k<\ell$, with $\ell$ their
+first mode, one has $u_k\le2u_{k+1}$. Formula (2) is exactly
+$v_n\le2v_{n+1}$, where $v_n=p_{n-1}-p_n$ in the crossing
+range. Adding gives
+\[
+                    u_k+v_n\le2(u_{k+1}+v_{n+1}),
+\]
+which is S. Strict weighted fall is not needed inside this positive
+branch, although it cannot be removed from general S.
+\end{corollary}
+
+The completed C theorem through five non-one parts makes the C premise
+UNCONDITIONAL whenever either old arm has at most five such parts;
+the other arm is unrestricted. The OLD A2 premise remains an inductive
+input: the corollary does not assert A2 for arbitrary products or the
+original conjecture. General C alone would close this two-rising-factor
+branch at every size, not the remaining branches where an individual
+factor has already ceased rising.
+
+The companion \texttt{zero\_head\_C\_bridge.tex} combines this with the
+local first-defect branch and a double-defect convolution bound. It
+closes the ENTIRE correctly conditioned zero-head S range whenever
+both old arms have at least two non-one parts and one has C, without
+requiring OLD A2 in that zero-head case.
+
+\texttt{CToCoupledSRisingWindow.lean} proves the complete arbitrary-real
+monotone-excess implication by the displayed positive decomposition and
+the S sum implication, and the integer double-defect/positive-slopes
+implication. The unbounded weighted source sum is the existing
+\texttt{weighted\_ratio\_sum} certificate from
+\texttt{ClippedForwardRatio.lean}. Exact composition source identities,
+the known deficit mode ordering and reversal give the written assembly.
+No end-to-end composition formalization or general A2/UI solution is
+claimed. This is a conditional bridge into an actual weighted-difference
+resource, rather than an identification of cumulative LC with coefficient UI.

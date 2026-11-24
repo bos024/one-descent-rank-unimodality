@@ -1,0 +1,319 @@
+\section{First-source payment without a nondecreasing source prefix}
+This note proves a scoped extension, not the unrestricted assertion that
+two nonincreasing forward factors always have nonrecovering product tails.
+Let $Z,Y$ be actual increasing normalized arms, of weights $a,b$,
+with forward polynomials $A,B$, and write $P=AB$,
+$q_Z=z^aA(1/z)$, $q_Y=z^bB(1/z)$.
+The POSITIVE corrected reverse source is
+\[
+ \widetilde e_Y=z^{b+1}E_Y(1/z)
+    =(2-z)q_Y-z^b+z^{b+1},
+ \qquad E_Y=1-z+(2z-1)B.
+\]
+It must not be confused with the raw polynomial $(2-z)q_Y$.
+For every actual increasing arm, $E_Y$ and $\widetilde e_Y$ are
+nonnegative and unimodal by the legal-maximum append argument in
+\texttt{deficit\_unimodality.tex}. Every height interval of
+$\widetilde e_Y$ has endpoint sum at most $b-1$, by
+\texttt{deficit\_forward\_reflection.tex}. Every height interval
+of $q_Z$ has endpoint sum at most its degree $a$.
+These are established SINGLE-arm inputs, independent of general A2.
+
+Put $\kappa=\kappa_Y$, $r=a-j$, $n=a+b-j$, and
+\[
+ C_Z=\Delta q_Z(r+1)-\Delta q_Z(r),\qquad
+ T=P_{j+1}-3P_j+2P_{j-1}.
+\]
+All coefficient sequences are zero-extended.
+
+\begin{proposition}[Unconditional first-height payment]
+If $j\le b$ and $2j\le a+b+2$, then
+\[
+ \boxed{T\le C_Z-q_Z(r+\kappa-1).}                 \tag{1}
+\]
+In particular (1) holds whenever $j\le\min(a,b)$.
+No source-prefix, OLD A2, weighted-tail, head, or mode assumption
+is used in this assertion.
+\end{proposition}
+\begin{proof}
+The corrected source identity is
+\[
+ (2-z)q_Zq_Y=\widetilde e_Yq_Z+z^b(1-z)q_Z.
+\]
+Taking its difference at $n+1$ gives exactly
+\[
+ T=C_Z-\{(\widetilde e_Yq_Z)_n
+                  -(\widetilde e_Yq_Z)_{n+1}\}.    \tag{2}
+\]
+Every product of one height interval of $\widetilde e_Y$ and
+one height interval of $q_Z$ is symmetric unimodal and has
+endpoint sum at most $a+b-1$. The assumption
+$2j\le a+b+2$ says $2n+1\ge a+b-1$, so every such
+component has a nonnegative drop from $n$ to $n+1$.
+
+The lowest height interval of $\widetilde e_Y$ is exactly
+$[0,b+1-\kappa]$: the forward source has positive interval
+support $[\kappa,b+1]$, and its final coefficient is two.
+The drop contributed by this ONE layer convolved with $q_Z$ is
+\[
+ q_Z(n-(b+1-\kappa))-q_Z(n+1)
+   =q_Z(r+\kappa-1),
+\]
+because $j\le b$ implies $n\ge a$ and hence $q_Z(n+1)=0$.
+All remaining layer-product drops are nonnegative. Substitution
+in (2) proves (1).
+\end{proof}
+
+\paragraph{Consequences of the already proved first-birth payments.}
+Suppose $Z=1^\alpha U$, $h=|U|\ge2$, $D=a-\alpha-h$,
+and $A_{j+1}\le A_j$. Throughout the FULL region
+$j\le b$, $2j\le a+b+2$,
+all first-birth arguments in \texttt{source\_birth\_gap\_nonrecovery.tex},
+\texttt{source\_birth\_gap\_refinements.tex}, and
+\texttt{arbitrary\_source\_gap\_finite\_owner.tex} remain valid
+with (1) replacing the nondecreasing-source convolution bound.
+Their scalar/primitive/reflection statements use no other source-prefix
+assumption. Consequently:
+\begin{itemize}
+\item $\alpha\ge\kappa-5$ forces $T\le0$;
+\item if $h\ge4$, $\alpha\ge\kappa-6$ forces $T\le0$;
+\item if $T>0$, then, for $d=\kappa-\alpha$,
+      $d\ge6$ and $D\le2d(d-3)$, hence
+      $a\le\alpha+4d(d-3)$ and $j\le a+1$.
+\end{itemize}
+The earlier gap-five and gap-six proofs retain their exhaustive finite
+small-reverse-rank complements; this note supplies a new source payment,
+not a new independent formalization of those complements.
+The negative reverse-rank cases also transfer: $r\le-2$ has
+$C_Z=0$, and $r=-1$ has $C_Z=1$, paid by the same support
+coefficient used in the earlier birth arguments. Thus the displayed
+full region is not being silently restricted to $r\ge0$.
+If BOTH $A$ and $B$ are nonincreasing and $j\le\min(a,b)$, these
+necessary bounds apply in BOTH orientations. This does not itself
+exclude simultaneous first-birth failure; the capacity argument below
+does exclude it in this common-short-rank region.
+
+\begin{proposition}[The second lowest layer pays the second birth]
+Assume the first-height proposition's full scope, $\kappa\ge4$,
+and $A_{j+1}\le A_j$. Put $v=r+\kappa-1$. If
+\[
+                         C_Z\le q_Z(v)+q_Z(v+2),     \tag{3}
+\]
+then $T\le0$.
+\end{proposition}
+\begin{proof}
+The early normalized source bound gives $E_Y(\kappa+2)\ge2$.
+Since $\widetilde e_Y(0)=2$, the SECOND height interval also
+starts at zero. Its right endpoint is $b+1-\kappa-\delta$
+for some $\delta\in\{0,1,2\}$. At the compared edge its drop
+after convolution with $q_Z$ is exactly $q_Z(v+\delta)$.
+The first two height layers are distinct, even when their
+endpoints agree, so
+\[
+                T\le C_Z-q_Z(v)-q_Z(v+\delta).
+\]
+If $C_Z\le q_Z(v)$, the first-height proposition already pays.
+Otherwise $C_Z>q_Z(v)\ge0$, so $r\ge-1$; the premise on $A$
+gives $\Delta q_Z(r)\ge0$, including its zero extension at $r=-1$.
+Hence
+\[
+ q_Z(r+1)\ge\Delta q_Z(r+1)\ge C_Z>q_Z(v),
+ \qquad r+1<v.
+\]
+Unimodality of $q_Z$ therefore puts $v$ after its first mode
+and makes $q_Z(v+\delta)\ge q_Z(v+2)$.
+Now (3) pays the two-layer bound.
+\end{proof}
+
+Consequently the full absolute first-weight-eight theorem for
+$h\ge4$ from \texttt{source\_birth\_gap\_refinements.tex} also
+transfers to $j\le b$, $2j\le a+b+2$ without a source-prefix
+assumption. Its only non-first-birth finite complement uses exactly
+the two-term criterion (3); the same canonical initial exchange,
+exhaustive small-rank complement, and earlier first-birth proof apply.
+Thus an owner with at least four non-one parts has $T\le0$
+throughout this region whenever $\kappa_Y\le8$.
+
+\begin{proposition}[A later source increment with its subtraction removed]
+Assume $2j\le a+b+2$, let $L\ge2$ and $L\le\kappa-3$, and suppose
+\[
+                       b-j\ge\kappa+L-2.            \tag{4}
+\]
+Then
+\[
+ \boxed{T\le C_Z-2^{L-2}q_Z(r+\kappa-1+L).}         \tag{5}
+\]
+\end{proposition}
+\begin{proof}
+The proved early source-curvature profile gives
+$\Delta E_Y(\kappa+L)\ge2^{L-2}$.
+Under reversal, this counts at least $2^{L-2}$ distinct
+height intervals of $\widetilde e_Y$ whose RIGHT endpoint is
+$R=b+1-\kappa-L$. For each such interval $[\ell,R]$,
+its endpoint-sum bound gives
+\[
+ \ell+R\le b-1,\qquad \ell\le\kappa+L-2\le b-j.
+\]
+Its drop after convolution with $q_Z$ is
+\[
+ q_Z(n-R)-q_Z(n+1-\ell)
+    =q_Z(r+\kappa-1+L),
+\]
+since $n+1-\ell\ge a+1$ by (4). Every unselected
+layer-product has a nonnegative drop by the same upper-center
+comparison as before. Equation (2) proves (4).
+\end{proof}
+
+Thus the linear-degree argument of
+\texttt{source\_curvature\_linear\_owner.tex} also transfers
+to this region whenever its $L=d-(D-2r-2)-3\ge2$ satisfies (4).
+For $L=0,1$, that proof uses only the first birth, so (4) is unnecessary.
+Without (4), dropping the second coefficient of a higher height interval
+would be unjustified. In particular no global source-prefix assumption
+has silently been replaced by an unconditional positive convolution.
+
+\begin{lemma}[The owner's last capacity pays a primitive curvature]
+Suppose $Z=Z^-t$, $t\ge2$, and $A_{j+1}\le A_j$.
+Write $r=a-j$ as above. For every integer $1\le\delta\le t$,
+\[
+                    C_Z\le q_Z(r+\delta)
+                 \quad\hbox{whenever }C_Z>0.        \tag{6}
+\]
+\end{lemma}
+\begin{proof}
+For $r\le-2$ the premise $C_Z>0$ is impossible. For $r=-1$,
+$C_Z=1$ and $q_Z(\delta-1)\ge1$, since
+$0\le\delta-1\le t-1<a$. Assume $r\ge0$.
+The last two ordinary coefficients of $q_Z$ are both one.
+Thus $\Delta q_Z(r)\ge0$ and $C_Z>0$ force $r\le a-2$:
+at $r=a-1$, the first condition gives $q_Z(a-2)\le1$, whereas
+the second would require $q_Z(a-2)>1$; the later cases have
+nonpositive curvature or a negative first difference.
+
+Put $Q=q_{Z^-}$ and $W=[t]Q$. The terminal unit of
+$q_Z=W+z^a$ is absent through $r+1$, so
+\[
+ \Delta q_Z(r)=Q_r-Q_{r-t}\ge0,\qquad
+ C_Z=\Delta Q(r+1)-\Delta Q(r+1-t)>0.                \tag{7}
+\]
+If $\Delta Q(r+1)\le0$, (7) gives
+$\Delta Q(r+1-t)<0$. Unimodality of $Q$ then makes it
+nonincreasing from this strict negative edge onwards. Hence
+$Q_r\le Q_{r+1-t}<Q_{r-t}$, contradicting (7).
+Therefore $\Delta Q(r+1)>0$. No earlier difference of a
+unimodal sequence can be negative before a positive difference,
+so $\Delta Q(r+1-t)\ge0$. Consequently
+\[
+ C_Z\le\Delta Q(r+1)\le Q_{r+1}.
+\]
+The interval sum $W_{r+\delta}$ includes the summand $Q_{r+1}$,
+because its contributing old indices range from
+$r+\delta-t+1$ to $r+\delta$ and $1\le\delta\le t$.
+All summands are nonnegative, proving (6).
+\end{proof}
+
+\begin{theorem}[Complete common-short-rank both-nonincreasing theorem]
+Suppose BOTH arms are nonrectangular, BOTH ordinary factors
+are nonincreasing at $j+1$, and
+$j\le\min(a,b)$. Then $T\le0$, with no source-prefix,
+nonnegative-tail, OLD A2, head, or product-mode assumption.
+\end{theorem}
+\begin{proof}
+Orient the arms so the last capacity $t$ of $Z$ is at least
+the last capacity of $Y$. The first missing weight satisfies
+$\kappa_Y\le\max(Y)+1$, so $1\le\kappa_Y-1\le t$.
+If $C_Z\le0$, the first-height proposition pays immediately.
+Otherwise apply (6) with $\delta=\kappa_Y-1$, and then (1).
+\end{proof}
+
+More generally, within the first-height proposition's full scope,
+a nonincreasing owner $Z$ with last capacity at least
+$\kappa_Y-1$ always has $T\le0$. In particular a positive
+recovery in that full scope requires
+$\kappa_Y\ge\max(Z)+2$. This capacity exclusion is independent
+of the earlier source/initial-run gap exclusions.
+
+\begin{theorem}[The entire both-nonincreasing first half]
+For two actual nonrectangular increasing arms, suppose BOTH forward
+factors are nonincreasing at $j+1$ and
+\[
+                             2j\le a+b+2.           \tag{8}
+\]
+Then $T\le0$. No source-prefix, nonnegative-tail, OLD A2,
+head, or product-mode assumption is needed.
+\end{theorem}
+\begin{proof}
+Orient $a\le b$. The preceding theorem handles $j\le a$.
+If $a+2\le j\le b$, then $r=a-j\le-2$, so $C_Z=0$,
+and the first-height proposition gives $T\le0$.
+If $j=a+1\le b$, then $C_Z=1$. The opposite nonincreasing
+premise forces $\kappa_Y\le j+1=a+2$: otherwise both opposite
+coefficients are still universal and strictly double.
+Thus $0\le\kappa_Y-2\le a$, and the first-height proposition
+pays $C_Z$ by $q_Z(\kappa_Y-2)\ge1$.
+
+It remains that $j>b$. Integrality, (8), and $a\le b$ force
+$a=b$, $j=a+1$, $n=a-1$. All source-layer products still
+have nonnegative drops, because their endpoint sums are at most
+$a+b-1=2n+1$. The lowest source height interval contributes
+\[
+ q_Z(\kappa_Y-2)-q_Z(a)=q_Z(\kappa_Y-2)-1.
+\]
+If $g$ is the opposite non-one count, then
+$3\le\kappa_Y\le g+2$ and $2g\le a-1$ imply
+$1\le\kappa_Y-2\le a-2$.
+Every interior coefficient of $q_Z$ on $[1,a-2]$ is at
+least two: $q_Z(1)=h+1\ge2$, $q_Z(a-2)=A_2=2$, and
+unimodality bounds every intervening coefficient below by
+the smaller endpoint value. The displayed drop is therefore
+at least one and pays $C_Z=1$.
+\end{proof}
+
+The nonrectangular hypothesis in this first-half theorem is real.
+For two equal all-ones arms of weight $a$, the triangular product
+has $T=1$ at $j=a+1$, which satisfies (8); that edge is after
+the ordinary product mode and therefore is not a proper S edge.
+
+\paragraph{A large-weight closure in the common-short-rank region.}
+Orient $a\ge b$, assume $j\le\min(a,b)$ and $A_{j+1}\le A_j$,
+and suppose the main box of $Z$ has degree $m=a-h\ge2^{30}$.
+Then $T\le0$. Indeed if $C_Z\le0$, use (1) directly.
+Otherwise the ordinary relative-growth theorem gives
+\[
+ C_Z\le K_{r+1}-K_r,
+ \quad K=[\alpha+1]\prod_{t\in U}[t].
+\]
+Put $\delta=\kappa_Y-2$. Actual universality gives
+$\kappa_Y(\kappa_Y-1)\le2b$. Since $h\le(a-1)/2$,
+\[
+ \delta^2\le\kappa_Y(\kappa_Y-1)\le2b\le2a\le4m.
+\]
+The proved uniform shifted first-difference payment in
+\texttt{interval\_product\_shifted\_curvature.tex}, at rank $r+1$,
+therefore yields
+\[
+ q_Z(r+\kappa_Y-1)\ge K_{(r+1)+\delta}
+           \ge K_{r+1}-K_r\ge C_Z.
+\]
+Equation (1) finishes. This argument is independently valid,
+but the complete common-short-rank theorem above now covers its
+BOTH-nonincreasing application at every weight; no giant finite
+complement is needed for that application.
+
+\paragraph{What remains open here.}
+The general both-nonincreasing claim with the proper product-mode guard
+has no counterexample in the independent diagnostic accompanying this
+note, but is NOT proved. Its remaining region $2j>a+b+2$ is
+not removed by the first-half theorem. No general S/C/A2 or
+original-unimodality claim follows from this note.
+
+Twelve generic standard-axiom Lean reports in
+\texttt{agent\_bothdeclining\_first\_birth.lean} check the maximal
+scope and terminal exclusion, exact first/later source indices,
+nonnegative component payment, conditional second-birth payment,
+window-curvature arithmetic and interval containment, the large-box
+shift budget, and both exceptional first-half boundary calculations.
+The actual-arm unimodality/layer inputs, their use in the window
+curvature argument, and the final actual-pair assembly are the written
+proof above. The independent finite diagnostics do not substitute
+for any of these unbounded arguments.

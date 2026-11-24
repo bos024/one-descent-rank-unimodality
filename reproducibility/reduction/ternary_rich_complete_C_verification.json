@@ -1,0 +1,166 @@
+{
+  "status": "PASS_STATIONARY_THREE_COMPLETE_C_BINARY_COUNTS_FOUR_THROUGH_THIRTY_TWO",
+  "new_scoped_reports": 13,
+  "generic_reports": 12,
+  "finite_certificate_reports": 1,
+  "kernels": {
+    "TernaryRichCompleteC.exterior_square_tribonacci_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.signed_third_order_majorant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.full_tribonacci_minor_recurrence": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.universal_tribonacci_previous_minor_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.central_integer_budget_implies_relative_LC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.first_ternary_loss_minor_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.second_ternary_loss_minor_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.strict_integer_concavity_minor_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.positive_three_window_minor_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.exact_all_padding_clamp": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.later_three_window_old_minor_reads": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichCompleteC.strict_mode_transition_read_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryRichDiagonalCertificate.all_diagonal_integer_margins": [
+      "propext"
+    ]
+  },
+  "QA": {
+    "WHOLE_relative_tribonacci_LC_centres_through_FIRSTmode": 79555,
+    "strong_INTEGER_minor_budgets_after_r_plus3": 44508,
+    "exact_prefix_minimum_all_shift_C_payments": 194267,
+    "logical_shift_coverage": 56005571,
+    "ternary_rich_full_C_hosts": 400,
+    "positive_THREE_window_full_old_budget_transfers": 43708,
+    "strict_INTEGER_mode_transition_concavity_payments": 399
+  },
+  "independent_counts": {
+    "independent_COMPLETE_diagonal_strong_minor_comparisons": 93831,
+    "independent_COMPLETE_diagonal_padding_hosts": 1298,
+    "independent_exact_ALL_larger_padding_clamp_representatives": 58,
+    "independent_positive_box_WHOLE_relative_tribonacci_LC": 27624,
+    "independent_FULL_C_all_current_prefix_minima": 65358,
+    "independent_FULL_C_all_shift_logical_reads": 14605538,
+    "independent_arbitrary_later_three_count_hosts": 170
+  },
+  "complete_entrance_state_sha256": "7fd3e68ff2fc2b4244f6bf22566f8f46b0ae65613d6086050571f1c274a962f4",
+  "independent_later_state_sha256": "0ce89819059ff69e5264b94a36ffd9e2c5d47e2ae0ca57df9f001a09961d2238",
+  "new_finite_entrance": {
+    "binary_counts": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "three_count": "r0=2u",
+    "padding": "ALL1<=alpha<=r0+floor(u/2),lastrepALLlarger",
+    "contexts": 1298,
+    "comparisons": 93831,
+    "distinct_integer_margins": 34977,
+    "kernel_chunks": 117
+  },
+  "theorem": "PROVED FULLactualC EVERYcurrentN/EVERYshift>=3 forALL1alpha2u3r with4<=u<=32,r>=2u,alpha>=1. THREEcountandpaddingUNBOUNDED;binaryrangeEXPLICIT. No universalu>=33claim.",
+  "strong_heredity": "PROVED forallfixedu>=4,EVERYr>=8,ALLpadding: actualpre-FIRSTDmodeintegerbudgetD_n^2-DprevDnext>=D_nfromn>=r+3isHEREDITARYunderappend3. TWOnewentrancespaidANALYTICALLYbyexactlosses1,r+1,(r^2+3r+6)/2andALL-ntribonacci-minorbound;laterpositive3windowusesFULLcrossidentitywithpositiveinputguard;OLDmode-transitionstrictconcavityusesactualsoleflat4. No oldLCafterFIRSTmodeassumed.",
+  "renewal_transfer": "PROVED WHOLEactualD/H3-D relativeLCthroughFIRSTmode: reference|minor|<=previousfromactualcentre5viaFULLthird-orderexterior-square+signedmajorantinduction;strongactualminor>=centralandcentraldominationfromFULLsecondsourcepayrelativeLC. Exactprefixbeforefirstloss+boundaryretained. COMPLETEH3renewalC/normalizedtilt/twiceLRthenpayALLactualCshifts;laterDnonincreasingautomatic.",
+  "long_last_jump": "PROVED samequalifyingbinary-threeblock+ANYsortedL>=3withL+4>=floor((3u+4r)/2)hasFULLCbyconditionalprefix/oldFIRSTDmode. ALLr/padding/Lunbounded. DoesNOTclaimALLlargejumpswithouttheexplicitthreshold.",
+  "coupled": "OrdinaryproductcoefficienttiltUIvsANYoppositeandALLdepthguardedBOTH-FrisingC-to-Snonrecovery;OLDweightedA2head/physical/currentguardsretained. No generaloriginalUIinference.",
+  "formal_scope": "TWELVEnewcleanstandardaxiomgenericreports,includingFULLnatural-indextribonacci-minorrecurrenceanduniformprevious-coefficientbound,relativeLCpayment,TWOanalyticentrances,positive3windowcrosspayment,strictconcavityandread/paddingguards. ONEadditionalaggregateordinaryLean-kernelreportchecksALL34977diagonalintegermarginsin117chunks. Actualword/Fibonacci/reference/loss/positive-support/single-flat/mode/signed-splice/cumulative/fullr-inductionandCassemblyWRITTENwithregisteredinputs. IndependentPOSITIVEboxrebuildcoversALL1298finitehosts/93831minors,notrandom. Notend-to-endLeancompositiondatatype.",
+  "remaining": "Generalu>=33ternary-richdiagonalr=2uUNPROVED;u<=3andothernon-dominantmulti-threeFULLCnotclaimedhere. GeneralC/fullA2/originalunamplifiedcoefficientUIOPEN;totalnononefirstunresolved6unchanged. CDFLCNOTsubstitutedforcoefficientUI.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "ternary_rich_finite_entrance_complete_C_proof.tex": "80d9bb0e3ae40d0714a8e38cb76889ed86684dbc5a55a81b9e32049ab050a59b",
+    "TernaryRichCompleteC.lean": "cb6a22a0a007c8989acc75cbf6388452c14e3479386abcd5e8e45868c667d36f",
+    "TernaryRichCompleteC.log": "f083599130ded5381703697b522d63da8611b557f4a8d83d9147e42c2263df5e",
+    "TernaryRichDiagonalCertificate.lean": "1376d84a323ccac94fd24926555a090dc66fa8a6dbb2870197c04b45b2064f4e",
+    "TernaryRichDiagonalCertificate.log": "fc77adf92097dd02774f3a26dcc53785abba14547320dd1d11769642d57624e3",
+    "build_ternary_rich_diagonal_certificate.py": "9a6a5a79d7703136a25cfb938ad010512114e321e15ac53d70e5df4d542507b5",
+    "ternary_rich_diagonal_certificate_data.json": "ae3cfe1dfaedae39fa6934686fea9106baabebc86f162094fd5d9620b1d91b4a",
+    "audit_ternary_rich_complete_C.py": "d3c293f4b1f1013ba505204e3aca17ef71909104a33974ce8871e1b78dd2b352",
+    "audit_ternary_rich_complete_C.json": "637add2cac620899dc9343adf381fa1afd0910a2d24182fc33b4e0e6fefdc99e",
+    "verify_ternary_rich_complete_C.py": "4a765b8c810bcc472ba06d6b0635df68963cea562198ca1fa4df0cd5a8218f50",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76",
+    "source_single_notch_verification.json": "2050376534c3700e4f433252ccdd927c1e00d0bbf33b1d27388e173cb11b0e67",
+    "mode_only_uniform_tail_closure_verification.json": "52aaf8f1842736ab79defb1bd6a2e90033614daab555a4b1c1bd3c1da3f87a22",
+    "general_one_jump_analytic_C_verification.json": "4e999678f5de15ba77ebc86333b19c3d61578b8dc615a650c18f7c3c9ac6be17",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8",
+    "FirstMissingRenewalEnvelope.lean": "a68782702f1c562f951cb577e8e846b7372b2a494a50270c5e3d772bf0ee3ba6",
+    "FirstMissingRenewalEnvelope.log": "3dcecb80638fb300c07a73080d4aa059331d4d40fcaa62cae3ee745dc5f8e74f",
+    "audit_first_missing_renewal_envelope.json": "713ff4eea947f6c084a3d88ff75be4c9c6cdc8575da9e1d48cf8051c4d427024",
+    "second_forward_difference_source.tex": "c19351088b404a07ecb90613d7297e92c2573e66748cfb2f1ae33f0b9b2ee778",
+    "sharpened_forward_derivative_centers.tex": "4b3866335d12280de1bceb86a0e97b6c18eb1463dbc2da56b6a1adbecb589f87",
+    "SharpenedForwardDerivativeCenters.lean": "85f4ae2a94275d665249d8ac7b361506070c549341a5dcc5360c571d3fcdc12d",
+    "SharpenedForwardDerivativeCenters.log": "22cfaac4677f15fbfbe1834b561751765084c09d2f7a8cac97a0dfa3f89f2aa3",
+    "universal_prefix_C_window_transfer.tex": "2ac43b41bf569f092b6ef034d22f66eb11369c9ae0b423e9476482dcebd42344",
+    "UniversalPrefixCWindowTransfer.lean": "5cbaf40bc320aa7d7c0f84ceef4e2ced1a6e35e27a0bd99bfd380623e0c527ae",
+    "UniversalPrefixCWindowTransfer.log": "14314a8d57ef65b806dc7d1fae1c79dc70ac2c0cb92e3a5dca6f518a20813f60"
+  }
+}

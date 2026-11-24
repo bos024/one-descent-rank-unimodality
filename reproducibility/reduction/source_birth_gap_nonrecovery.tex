@@ -1,0 +1,206 @@
+\section{A sharper single-arm primitive envelope omits the initial interval}
+For $Z=1^\alpha U$, put $a=\operatorname{wt}Z$, $h=|U|$,
+$D=\sum_{t\in U}(t-1)=a-\alpha-h$, $K_Z=\prod_{t\in U}[t]$, and
+$d=(\Delta q_Z)^+$. Then the ENTIRE relative density
+\[
+                              d_n/(K_Z)_n
+\]
+is nonincreasing, in the cross-multiplied sense.
+
+This strengthens the existing single-arm main-box envelope by
+omitting $[\alpha+1]$. The proof is the SAME generic interval-window
+positive/negative-difference transport from
+\texttt{ordinary\_relative\_growth.tex}, with the sharper initial
+pair $d=1$, $K=1$ for an all-ones arm. Under appending $t$ the
+positive differences are those of $[t]q$, since the final unit
+creates no positive difference. The denominator becomes $[t]K$.
+The already kernel-checked generic transport proves the full induction.
+This sharpening is asserted for a SINGLE arm; its naive two-arm
+counterpart without the longer initial interval is not asserted.
+
+At a strictly increasing primitive edge $d_{r+1}>d_r>0$, the
+proved skeleton-center theorem gives $2r+2\le D$. The CI degree
+rank-ratio bound and this sharper relative order imply
+\[
+ (r+1)(d_{r+1}-d_r)\le(D-2r-1)d_r.                    \tag{1}
+\]
+Indeed the skeleton box $K$ satisfies
+$(r+1)K_{r+1}\le(D-r)K_r$ on this side of its center, and
+$d_{r+1}K_r\le d_rK_{r+1}$. Its positive coefficient $K_r$
+can be cancelled. The unbounded scalar implication is kernel checked.
+
+\section{The first opposite source pays a sharp gap of five}
+\begin{theorem}[Unconditional mixed-tail nonrecovery from the source birth]
+Let $Z=1^\alpha U$, $Y$ be actual increasing old arms, each with
+at least two non-one parts. At $j\ge2$, assume $F_Z(j+1)\le F_Z(j)$,
+and that the ENTIRE prefix of $E_Y$ through $j+1$ is nondecreasing.
+The latter holds, in particular, whenever $F_Y$ has not yet passed
+its global plateau, by the proved forward-slope doubling theorem.
+Write $\kappa=\kappa_Y$. If
+\[
+                              \alpha\ge\kappa-5,       \tag{2}
+\]
+then, for $p=q_Zq_Y$, $n=a+b-j$ and $e=(2-z)p$,
+\[
+                               e_{n+1}\le e_n.         \tag{3}
+\]
+Neither C, a half-weight assumption, nonnegative $e_n$, nor OLD A2
+is required for (3). With the usual nonnegative head input from
+OLD A2, it closes S at EVERY head in this branch.
+The constant five is optimal for this uniform pointwise conclusion.
+\end{theorem}
+\begin{proof}
+Put $A=F_Z$, $Q=E_Y A$, $r=a-j$, and $s_r=\Delta q_Z(r)$.
+The exact source identities give
+\[
+ e_n=Q_{j+1}+s_r,\quad e_{n+1}=Q_j+s_{r+1},\quad
+ T=e_{n+1}-e_n=(s_{r+1}-s_r)-(Q_{j+1}-Q_j).          \tag{4}
+\]
+The source-prefix assumption gives
+$w_i=\Delta E_Y(i)\ge0$ through $j+1$, while $w_\kappa\ge1$.
+Thus $Q$ is nondecreasing there, and, whenever $\kappa\le j+1$,
+\[
+             Q_{j+1}-Q_j=\sum_i w_i A_{j+1-i}
+                                      \ge A_{j+1-\kappa}.       \tag{5}
+\]
+This is a direct positive convolution term; no coefficient bound
+has been differentiated. The finite-sum birth payment is kernel checked.
+
+For $r\le-2$, the primitive contribution in (4) is zero, so $T\le0$.
+For $r=-1$ it is one. Here $j=a+1$, and, writing
+$\delta=\kappa-\alpha\le5$, the index in (5) is
+$D+h+2-\delta\ge1$, since $D\ge h\ge2$.
+It is at most $a-1$ because $\kappa\ge3$.
+Every actual ordinary coefficient on its support is at least one,
+so (5) pays this case as well.
+
+Let $r\ge0$ and suppose for contradiction $T>0$.
+Then $s_r\ge0$ by the nonincreasing $A$ premise, and (4) gives
+$s_{r+1}>s_r$. Initial interval support of the reverse positive
+differences excludes $s_r=0$, so
+$d_r=s_r>0$, $d_{r+1}=s_{r+1}>d_r$.
+Put $e_0=D-2r-2\ge0$. The positive curvature to be paid is
+$C=d_{r+1}-d_r$, and (1) becomes
+\[
+                         (r+1)C\le(e_0+1)d_r.         \tag{6}
+\]
+The birth index is
+\[
+ j+1-\kappa=D-r+h+1-\delta\ge r\ge0,
+\]
+so (5) is indeed present. In reverse coordinates it is
+$q_Z(v)$ with $v=r+\kappa-1$.
+
+Every ordinary $q_Z$ is a sum of shifted CI boxes with endpoint
+sums at least $M=a-h=\alpha+D$. Consequently
+\[
+          q_Z(v)\ge q_Z(u)\quad\hbox{if }u\le v,\quad u+v\le M.
+                                                               \tag{7}
+\]
+This is the established lower-center reflection, applied separately
+to the positive boxes; it does not require full LC of $q_Z$.
+If $2r+\kappa\le M$, use $u=r+1$ in (7).
+It pays $C\le q_Z(r+1)$ immediately.
+
+Otherwise put $s=2r+\kappa-M=\delta-e_0-2>0$.
+Condition (2) leaves precisely
+\[
+ 1\le s\le3,\quad0\le e_0\le2,\quad3\le\delta\le5.
+\]
+Use $u=r-s+1$ in (7); its pair with $v$ has endpoint sum EXACTLY $M$.
+For $r\ge10$ the following three complete estimates pay (6):
+\begin{itemize}
+\item $s=1$: $e_0\le2$ gives $C\le3d_r/(r+1)\le d_r\le q_Z(r)$.
+\item $s=2$: $e_0\le1$ and $h\le D\le2r+3$ give, by the ordinary
+primitive Hilbert growth,
+$d_r\le(3r+2)d_{r-1}/r$.
+Thus $C\le2(3r+2)d_{r-1}/(r(r+1))\le d_{r-1}\le q_Z(r-1)$.
+\item $s=3$: necessarily $e_0=0$, $h\le2r+2$.
+Two Hilbert steps give
+$(r-1)d_r\le3(3r+1)d_{r-2}$.
+Hence $C\le3(3r+1)d_{r-2}/((r+1)(r-1))\le d_{r-2}\le q_Z(r-2)$.
+\end{itemize}
+All denominator and polynomial comparisons for $r\ge10$ are kernel
+checked. Together with (5)--(7), each gives $T\le0$, a contradiction.
+
+The ENTIRE remaining complement has $0\le r\le9$,
+$e_0\in\{0,1,2\}$, $D=2r+2+e_0$, and
+$e_0+3\le\delta\le5$.
+Enumerate all partitions of $D$ into $h\ge2$ positive increments
+$t_i-1$. This covers ALL sorted owner capacities and every possible
+count, without a hidden host-size bound.
+For each owner let $b_0=D-r+h+1-\delta$ and
+$N=\max(b_0,r+1)$. Only $q_Z$ through rank $r+1$ and $A_{b_0}$
+are needed. All $\alpha\ge N$ agree on both: the initial interval
+and every reverse terminal source have identical low coefficients
+after clipping $\alpha$ to $N$. Thus $1\le\alpha\le N$ covers
+ALL initial runs exactly.
+
+There are 154048 complete representatives, of which 96070 have
+the required strict positive primitive curvature. Every one satisfies
+\[
+                           A_{b_0}\ge C.              \tag{8}
+\]
+An independent full-forward recurrence and separate partitions-of-$D$
+enumeration reconstruct every state; all ten canonical layer hashes,
+counts and six equality cases agree. This is an exhaustive finite
+complement of the proved unbounded reductions, not a random search.
+Equation (8) pays (5), contradicting $T>0$. This proves (3).
+\end{proof}
+
+\subsection{Sharpness and consequences for the remaining research}
+For every $\alpha\ge1$, take
+\[
+ Z=1^\alpha2^2,\quad a=\alpha+4,\quad
+ Y=1(\alpha+5)^{\alpha+4},\quad j=a.
+\]
+The opposite is universal through $j+1$ and has
+$\kappa_Y=\alpha+6$. Its compared tail is
+$e_n=d_0=1$, $e_{n+1}=d_1=2$, so it recovers by one.
+Thus replacing five by six in (2) is FALSE, on an unbounded
+actual family. This is not an S or original-UI counterexample:
+head zero has explicit budget $2\alpha+13>1$, and the binary-owner
+original family is independently proved. All usual geometric S
+guards can be retained with $k=0$, $t=n=\operatorname{wt}Y$;
+the two window inequalities follow from
+$P_{a-1}\ge2^{\alpha+3}>\alpha+8=p_1$ and $P_a>1$.
+No unbounded OLD A2 premise is inferred from this sharpness family.
+
+In particular a rising or globally flat opposite with first missing
+weight at most SIX now forces mixed-tail nonrecovery against ANY
+other normalized actual owner ($\alpha\ge1$). This is a restriction
+on the opposite's FIRST MISSING weight, not on its maximum capacity;
+its length and maximum capacity can be unbounded.
+More generally any remaining positive mixed recovery with a
+nondecreasing opposite prefix requires $\kappa_Y\ge\alpha_Z+6$.
+The exact initial exchange sharpens this further. If $t_1$ is the
+owner's first non-one capacity, exchanging $\alpha+1$ and $t_1$
+when necessary gives an equivalent increasing arm with
+$\alpha_* =\max(\alpha,t_1-1)$ and the SAME full rank polynomial,
+weight and non-one count. Thus the theorem applies whenever
+$\kappa_Y\le\alpha_*+5$. In particular any remaining positive
+mixed recovery with a nondecreasing opposite source prefix must have
+\[
+                     \kappa_Y\ge\max(\alpha,t_1-1)+6.
+\]
+This is a relative source/first-capacity constraint; no original
+least-counterexample bound is raised solely from this S branch.
+Other mixed cases where this source prefix has already declined,
+general both-rising late overlap, general C/A2 and original
+unamplified coefficient unimodality remain OPEN.
+
+Eight scoped kernel reports cover the source-birth finite sum,
+skeleton-relative curvature implication, reflection arithmetic,
+all three unbounded large-r payments and strip reduction.
+Skeleton density induction reuses the previously verified generic
+window transport; the actual box/source identifications and exhaustive
+program coverage are the written proof. No end-to-end Lean composition
+datatype or finite-program formalization is asserted.
+
+Subsequent refinement in \texttt{source\_birth\_gap\_refinements.tex}
+proves the sharp gap SIX when the owner has at least four non-one
+parts, and pays EVERY opposite first missing weight at most EIGHT
+in that owner range. It also proves a genuine initial source-curvature
+profile from the exact last source step. The sharp gap-five theorem
+above remains the uniform conclusion when owner counts two and three
+are included. The general original conjecture is not inferred.

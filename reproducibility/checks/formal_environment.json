@@ -1,0 +1,10 @@
+{
+  "platform": "Windows x86_64",
+  "python": "3.12.14",
+  "lean": "4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "mathlib_lean_toolchain": "leanprover/lean4:v4.34.0",
+  "mathlib_dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "mathlib_revision_status": "The installed .git/HEAD branch reference and the enclosing lake-manifest both identify this revision. No assertion is made that every installed source or compiled object was independently compared with the remote repository.",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435"
+}

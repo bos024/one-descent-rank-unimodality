@@ -1,0 +1,75 @@
+\section{The actual padding-one entrance at every CI degree}
+For every nonempty sorted tail $V$ with capacities at least three,
+degree $h=\sum_{t\in V}(t-1)$, length $r$ and weight $W=h+r$,
+and EVERY binary count $u\ge h+1$, the actual arm $1\,2^uV$
+has LC positive slopes at all moving centres
+\[
+                     u+r+1\le N<\ell,
+\]
+where $\ell$ is the first global positive-slope mode. Consequently
+EVERY actual C comparison holds at EVERY $N\ge W+1$ and shift
+$R\ge3$. Earlier reference ranks and shorter counts are not included.
+
+\begin{proof}
+The proved fixed-padding count induction reduces the assertion to
+the SINGLE entrance $u=h+1$. Put $m=h$,
+$E=(1+z)^uL$, $C^1=C^\infty-z^{m+1}E$, $A_n=(C^1_n)^+$.
+For $n\ge h-1$ this is exactly the actual signed derivative at
+physical rank $r+2+n$. Before the first subtraction, $A_m>A_{m-1}$
+by the Fibonacci prefix and all earlier formal coefficients are
+smaller than $A_m$. This also gives a strictly rising actual edge
+at $W+2$. The previously proved actual positive-slope unimodality
+identifies its first mode with the first global $A$ mode, say $e$.
+
+Take the weighted quotient
+\[
+ J=\frac{(2+z)E-c}{1+qz},\qquad
+                 c=q^2\psi^uL(-\phi).
+\]
+Since $(2-\phi)=q^2$, its numerator vanishes at $-\phi$.
+For $1\le s\le u$ and $n=u+s$, exact division gives
+\[
+              \phi C^1_{n-1}-C^1_n=[z^s](1-z)J.       \tag{1}
+\]
+Indeed $(1-z)(2+z)=2-z-z^2=1+(1-\phi z)(1+qz)$.
+The unperturbed head $LQ_u$ supplies the infinite deficit, while
+the second term on the right supplies the signed source correction.
+For $s\ge1$, the constant numerator $c$ contributes
+$\phi^2c\psi^s=\psi^{u+s}L(-\phi)$ to the primitive, exactly its
+spectral term. Equation (1) is NOT used at $s=0$.
+
+The weighted prefix theorem proves LC of the positive primitive
+through centre $u-2$. The source density relative to $C^\infty$
+is nondecreasing, so the actual first mode cannot lie to the right
+of the infinite first mode. The already proved bound gives
+\[
+                  e\le\lceil(3m+h)/2\rceil=2m.
+\]
+Thus every deficit triple at centres $m+3,\ldots,e$ reads offsets
+$2,\ldots,e-u\le u-2$ with neighbours inside $1,\ldots,u$.
+The likelihood-ratio argument also gives positive geometric deficits
+on the positive actual tail. If the last next coefficient is clipped,
+its actual next deficit is smaller than its raw value; this improves
+the relevant minor. Backward geometric-deficit integration starting
+at the first mode proves coefficient LC down to centre $m+2$.
+The already proved TWO strict actual seeds at $m,m+1$, valid for
+EVERY padding including one, complete this entrance. In their exact
+boundary formula padding one has first defect two and second defect
+$2(W+1)+1$; it is not replaced by the padding-two defect.
+
+Finally use the previously proved fixed-padding count induction at
+padding one, without changing that padding in any induction step.
+It propagates the moving comparisons to every $u\ge h+1$.
+The homogeneous reference C theorem from $W+1$, the first-defect
+improvement and TWO ordinary-F/read seeds then give every late C
+shift by the existing D/F/G integration and joining argument.
+\end{proof}
+
+\paragraph{Scope and residual.}
+Together with the padding-two and large-padding theorems, at
+$u=h+1$ the arbitrary-padding entrance is now reduced to
+$3\le\alpha\le h$. These remain genuine unresolved instances.
+General earlier reference C $N\le W$, smaller binary counts,
+general C/A2 and original unamplified unimodality remain OPEN.
+No numerical least-counterexample bound for the original conjecture
+is changed by this late-C theorem.

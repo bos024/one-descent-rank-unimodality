@@ -1,0 +1,109 @@
+% Complete single-arm results. No two-arm or unrestricted core claim.
+\section{A sharp doubling bound for forward positive differences}
+For an increasing nonempty arm write $F=\sum f_nz^n$ and put
+$D_n=\max(f_n-f_{n-1},0)$ for $n\ge2$, with $D_0=D_1=0$.
+\begin{theorem}
+For every $n\ge3$,
+\[
+                            D_n\le2D_{n-1}.
+\]
+The constant two is sharp. Thus $D_n/2^n$ is nonincreasing
+from rank two onward.
+\end{theorem}
+\begin{proof}
+Normalize the first part to an initial run of ones, without
+changing the polynomial. A rectangular arm has $D=0$.
+Append a part $t\ge2$. If the old arm is rectangular, the
+new positive differences are a terminal truncation of
+$z^2[t-1]$, so the assertion holds.
+
+Otherwise the old arm has $D_2=1$. Let $\kappa$ be its first
+missing weight. Then $3\le\kappa\le t+1$: the old maximum
+part is at most $t$, and the single-letter word $(t+1)$ is
+missing. Put $G=(1-2z)D$. Induction says
+$G_2=1$ and $G_i\le0$ for $i\ge3$. Moreover $G_\kappa\le-1$.
+Indeed ranks below $\kappa$ are full, while at rank $\kappa$
+at least one word is missing; therefore
+$D_{\kappa-1}=2^{\kappa-3}$ and
+$D_\kappa\le2^{\kappa-2}-1$.
+
+Consider the nonnegative polynomial
+\[
+                         P=z^2[t-1]+z[t]D.
+\]
+Its coefficient of $(1-2z)P$ is nonpositive at every rank
+$n\ge3$. For $3\le n\le t$, the first summand contributes
+$-1$ and the window of $G$ contributes at most $1$.
+At $n=t+1$ these bounds are $-2$ and $1$.
+At $n=t+2$ the coefficient is
+$\sum_{i=2}^{t+1}G_i\le0$, because this sum includes
+$G_2=1$ and $G_\kappa\le-1$.
+For $n>t+2$ the window includes only nonpositive $G_i$.
+
+Let $m$ be the last mode of the old $F$. At ranks through
+$m+1$, the new positive differences agree with $P$, since
+$F_{\rm new}=1+z[t]F$ and all old differences through $m$
+are nonnegative. Beyond $m+1$ the new positive differences
+are nonincreasing: while positive they equal
+$f_{n-1}-f_{n-t-1}$, with the first term nonincreasing and
+the second nondecreasing. Once both indices exceed $m$,
+this expression is nonpositive. This also checks the joining
+edge at $m+1$. Consequently the doubling bound for $P$
+gives the bound for the actual positive differences at every rank.
+
+For sharpness, the increasing host $(1,2,3)$ contains every
+word of weight at most three. Thus $D_2=1$ and $D_3=2$.
+\end{proof}
+
+The proof needs only that each appended part $t$ is at least
+$\kappa-1$ for the preceding nonrectangular arm; monotonicity
+of the host is a sufficient way to guarantee this condition.
+The theorem concerns forward differences of one arm. The
+analogous doubling bound for two-arm forward differences is
+false, as recorded previously. The general weighted reverse
+difference single-crossing conjecture therefore remains open.
+
+The doubling bound is also a consequence of the earlier
+single-arm deficit mode ordering. In fact, on the increasing
+side of $F$, for $j=a-n+2$ one has
+$\Delta R_j=D_n-2D_{n-1}$; this rank is on the decreasing
+side of $R$. The preceding proof supplies an independent
+universality-defect induction and is not claimed as a
+logically independent new restriction beyond that ordering.
+
+\begin{theorem}[Shape of the positive forward differences]
+For every formal arm with an initial nonempty run of ones
+and all subsequent parts at least two, in arbitrary order,
+the sequence $(D_n)_{n\ge2}$ is unimodal.
+\end{theorem}
+\begin{proof}
+Use induction on the number of appended parts. A rectangular
+arm has zero positive differences. After the first part, the
+positive differences form an interval of ones.
+
+For the inductive step the old nonzero $D$ has initial support
+$[2,e]$ and $D_2=1$. As above, form
+$P=z^2[t-1]+W$, where $W=z[t]D$. The interval window $W$
+is unimodal. At every rank $n\ge3$, its difference agrees
+with that of $P$ except at $n=t+1$, where $P$ has one unit
+subtracted. The new positive unit at rank two cannot create
+a descent.
+
+At the exceptional rank,
+$\Delta W_{t+1}=D_t$. If $D_t\ge1$, the exceptional
+difference is still nonnegative. If $D_t=0$, initial interval
+support implies $D_j=0$ for all $j\ge t$, so
+$\Delta W_n=D_{n-1}-D_{n-t-1}\le0$ for every $n\ge t+1$.
+The exceptional rank is therefore on a nonincreasing tail.
+In both cases $P$ is unimodal.
+
+The actual new positive differences agree with $P$ through
+one rank after the old last mode and are nonincreasing
+afterward, by the crossing calculation in the preceding proof.
+This splice preserves unimodality and completes induction.
+\end{proof}
+
+The initial support assertion used in this induction is also
+preserved: $P$ is positive from rank two until its support
+ends, and the terminal nonincreasing splice cannot insert
+an internal zero before a later positive value.

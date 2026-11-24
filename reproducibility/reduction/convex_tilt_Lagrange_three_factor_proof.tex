@@ -1,0 +1,187 @@
+\section{A ternary-tree source theorem closes every four-or-more-factor crossing}
+This is an unbounded analytic refinement of the constant-five entrance
+reduction. It concerns late positive-derivative LC. General C, A2 and
+original unamplified one-descent coefficient unimodality remain OPEN.
+There is NO new finite-host entrance premise in this proof.
+
+\paragraph{Convex-source subtraction after geometric tilt.}
+Let a nonnegative LC background triple be $(X,x,Z)$, with
+$x\le RX$, $R>0$. Suppose a nonnegative source $(e_-,e,e_+)$
+satisfies $e\ge Re_-$ and
+$e_+-2Re+R^2e_-\ge0$. Then $(X-e_-,x-e,Z-e_+)^+$ is LC.
+If a neighbour is zero this is automatic. Otherwise the background
+triple is positive, by its LC, so ratios below are legitimate.
+Ordinary LC and $x\le RX$ imply $Z\le Rx$. Put
+$C=R^2xX-2RXZ+xZ$. The exact identity
+\[
+ xC=X(Rx-Z)^2+Z(x^2-XZ)\ge0
+\]
+and the next identity prove convexity of the source density:
+\[
+ e_-xZ+e_+Xx-2eXZ
+  =Xx(e_+-2Re+R^2e_-)+2X(Rx-Z)(e-Re_-)+e_-C\ge0.
+\]
+Thus $a=e_-/X,b=e/x,c=e_+/Z$ satisfy $a+c\ge2b$.
+Their positive complementary triple is LC: if neighbours survive,
+$b<1$ and its exact minor is
+$(b-a)^2+(1-a)(a+c-2b)\ge0$.
+Pointwise multiplication by the LC background proves the theorem.
+The complete clipped scalar implication, not only its polynomial
+identity, is kernel checked in \texttt{ConvexTiltLagrangeSource.lean}.
+
+\paragraph{A uniformly positive ternary diagonal.}
+Let $p=\phi$, $q=p-1$, and
+$U^{(r)}_j=[z^j](1+z)^u/(1-z)^r$. Write
+\[
+ Q^{(r)}_{u,j}=U^{(r)}_{j+1}-2pU^{(r)}_j+p^2U^{(r)}_{j-1},
+ \qquad Q^{(r)}_{u,-1}=1.
+\]
+For ALL $j\ge1$, $u\ge3j$, we prove
+\[
+                  Q^{(4)}_{u,j}\ge26-13p>4.          \tag{1}
+\]
+The standard external input is the formal Lagrange formula in
+Ira M. Gessel, \emph{Lagrange Inversion}, Theorem 2.1.1,
+equation (2.1.4),
+\texttt{https://arxiv.org/html/1609.05988}; JCTA144(2016),212--249,
+DOI \texttt{10.1016/j.jcta.2016.06.018}. No priority is claimed
+for that formula. If $w=t(1+w)^3$, it states
+\[
+ [t^k]\frac{f(w)}{1-t\Phi'(w)}=[z^k]f(z)\Phi(z)^k,
+                         \qquad\Phi(z)=(1+z)^3.
+\]
+For fixed integer $e\ge0$, substitute
+$f(z)=(1-pz)^2(1+z)^{e-3}/(1-z)^4$.
+Its diagonal series becomes
+\[
+ G(w)(1+w)^e,\qquad
+ G(z)=\frac{(1-pz)^2}{(1-z)^2(1-z^2)^2(1-2z)}.
+\]
+At $k=j+1$, the original coefficient is exactly
+$Q^{(4)}_{3j+e,j}$. This equality is valid in formal series
+over $\mathbb Q(p)$; the negative exponent $e-3$ is permitted.
+
+All coefficients of $G$ are positive. Indeed, for
+$g(z)=(1-pz)^2/((1-z)^2(1-2z))$, one has
+$g_0=1,g_1=4-2p$, and, for $n\ge2$,
+$g_n=q^4 2^n-q^2n+3p-4$.
+Here $g_2=12-7p>0$ and
+$g_{n+1}-g_n=q^4 2^n-q^2\ge18-11p>0$, using $p\le13/8$.
+The complete all-rank lower bound $g_n\ge5/8$ is kernel checked.
+Multiplication by $(1-z^2)^{-2}$ preserves coefficient positivity;
+specifically $G_1=4-2p$ and $G_2=14-7p$.
+The unique ternary-tree series $w$ has positive integer coefficients,
+with $[t^k]w\ge3$ and $[t^k]w^2\ge1$ for every $k\ge2$.
+These follow directly from $w=t+3tw+3tw^2+tw^3$.
+Since $(1+w)^e$ has nonnegative coefficients,
+$[t^k]G(w)(1+w)^e\ge3G_1+G_2=26-13p$.
+This proves (1) for EVERY $u=3j+e\ge3j$.
+
+For EVERY $r\ge4$, multiplication by $(1-z)^{-(r-4)}$ now gives
+\[
+ Q^{(r)}_{u,j}\ge(r-3)(26-13p)>r
+                  \qquad(j\ge2,\ u\ge3j).          \tag{2}
+\]
+Retain the first two convolution terms and use (1) at $j$ and $j-1$.
+All remaining terms are nonnegative: they have source indices
+$-1..j$, and $Q^{(4)}_{u,0}=u+4-2p>0$ as well.
+The strict scalar payment of the possible $r$ unit cuts is kernel
+checked for ALL real $r\ge4$.
+
+\paragraph{The true CI source, including its first capacity cuts.}
+For a deletion-minimal crossing write $h=u+\delta$, $\delta\ge3$,
+$r\ge4$, and $d_i=t_i-1\ge\delta$.
+Let $L=\prod[t_i]$, $E=(1+z)^uL$.
+Through source rank $\delta$, $E$ is EXACTLY $U^{(r)}$:
+every capacity bound is still inactive. At rank $\delta+1$ its
+only losses are the individual unit cuts at capacities $\delta+1$,
+in number at most $r$. Because $(r-1)\delta\le u$, every
+$2\le j\le\delta$ satisfies $u\ge3j$. Equation (2) therefore
+proves
+\[
+ E_{j+1}-2\phi E_j+\phi^2E_{j-1}>0
+                          \quad(2\le j\le\delta).  \tag{3}
+\]
+Also $jE_j\ge(u-j+1)E_{j-1}$, so $E_j\ge2E_{j-1}$
+on this range. These are precisely the convex-source conditions
+against any already proved subgolden LC background.
+
+\paragraph{The natural quotient entrance at every count.}
+Counts $u\le13$ are already covered by the registered all-small-binary
+crossing theorem. Assume $u\ge14$. Remove the LARGEST $[t]$.
+Minimality and $r\ge4$ give
+\[
+ h_0=u+\delta-t+1\le u,\quad 3\le r_0=r-1\le u/3,
+                           \quad t\le u-5.          \tag{4}
+\]
+Its old quotient is a registered positive global-LC degree-boundary
+or surplus seed with later-primitive LC. No exceptional $u=3$
+quotient occurs.
+The ULC factor from the preceding unscaled theorem improves to
+an UNSCALED UNIT interior kernel already at $u\ge12$:
+\[
+ K(s,k)\ge T_k\quad(2\le s\le u-3,\ 1\le k\le s).
+\]
+Its scalar margin, after $q\le2/3$, is
+$3u^3-26u^2-26u+4$; at $u=12+x$ this is
+$3x^3+82x^2+646x+1132>0$.
+For every interval-supported LC numerator $N_0=1$,
+$N_1\le u/3+1$, with NO degree bound, Cauchy--Binet gives
+\[
+ M_{NQ_u}(s)\ge B_{s+1}+2qB_s+q^2B_{s-1}
+                                  \quad(2\le s\le u-3).
+\]
+Row zero is paid by $\binom{u-1}{2}\ge4u/3+5/3$.
+
+The stronger norm for capacities at least four is
+$\rho=q+q^6<27/40$, so for every $r\ge4$,
+$\phi^2\rho^r\le(21/8)(27/40)^4<3/5$.
+Consequently exactly the natural-head proof of the >=6-factor theorem
+applies, with this $3/5$ atom and the unit budget:
+the quotient tail from rank $\delta-1$ is positive global LC,
+and its positive primitive after deleting rank zero is global LC.
+All ordinary and primitive head centres are within (4)'s interior.
+The only changed junction estimate is the unperturbed $3u/2$ gap.
+It holds uniformly on $3\le r_0\le u/3$, $u\ge12$, by concavity;
+its endpoint margins are
+$(5u^2-49u+32)/2$ and $(2u^3-17u^2-12u+9)/9$.
+The atom error is at most $4u/5+2/5$, leaving a strict margin.
+All these unbounded scalar and interval-gap implications are checked
+by the new Lean file. No finite entrance cases are substituted here.
+
+\paragraph{All finite paddings and the constant-three conclusion.}
+The geometric inverse of the positive LC natural quotient gives the
+ACTUAL infinite-initial-ones signed derivative tail from physical
+$W$, including its indispensable previous unit. Its ratios are
+strictly less than $\phi$ and its pre-mode triples are LC.
+For lag $a=\alpha-1$ the full finite source remains $E_{s-a}$,
+including the spectral atom. Discarding original primitive indices
+below $\delta$ is legitimate in EVERY output triple from centre
+$a+\delta+1$, by the registered kernel-prefix support theorem.
+The signed-primitive LC/constant-cut proof pays every later triple.
+Before that range, source indices are at most $\delta$.
+Ranks zero and one use their registered exact startup payments;
+equation (3) and the convex-source theorem pay every rank $2..\delta$.
+The old same-word derivative-density order and inverse-mode bound
+put the finite first tail mode inside this proved range.
+
+Thus EVERY deletion-minimal crossing with AT LEAST FOUR CI factors
+has actual all-padding late positive-derivative LC. Together with
+the already proved single-factor, degree-$u+1$ and degree-$u+2$
+seeds and arbitrary CI insertion, the ENTIRE universal late-D-LC
+entrance now needs only TWO- or THREE-factor minimal crossings:
+\[
+ r\in\{2,3\},\quad 3\le d_i\le u,\quad
+ u+3\le h\le2u,\quad h-\min d_i\le u,
+\]
+and they may have no subset of degree $u+1$ or $u+2$.
+Their binary count and capacities are still unbounded. No assertion
+is made that these last entrances have been verified in full.
+General C/A2/original UI remain OPEN; actual late-C threshold
+$u\ge h-2$ is unchanged, and no original numerical bound is upgraded.
+
+The formal Lagrange input and series coefficient/composition assembly
+are written mathematics, supported by primary literature and independent
+exact identities. Lean checks the new unbounded scalar, clipped-source,
+all-rank kernel and gap implications. No end-to-end arbitrary-composition
+or complete formal-power-series Lean theorem is claimed.

@@ -1,0 +1,223 @@
+% Complete unbounded closure, conditional only on the explicitly stated old mixed property.
+% Original general conjecture remains open outside this reachable family.
+\section{Full mixed closure below twice the first missing weight}
+\begin{theorem}
+Let $X$ be a normalized increasing arm with first missing
+weight $\kappa\ge5$, quasi-centered deficit $e=e_X$, and
+full mixed unimodality: $e q_Y$ is unimodal for every ordinary
+increasing arm $Y$. Every legal append
+\[
+                   t=\kappa+g,\qquad0\le g\le\kappa-2
+\]
+preserves both quasi centering and full mixed unimodality.
+The gap $g$ and the first missing weight are unbounded.
+\end{theorem}
+
+Write $c=\operatorname{wt}X$ and $D=c+1-\kappa=\deg e$.
+The mass bound and $(\kappa-5)(\kappa-2)\ge0$ give
+\[
+                    D\ge2\kappa-4.                     \tag{1}
+\]
+In particular $t\le c$. The exact nonresonance theorem
+therefore gives a quasi-centered new deficit
+$f=[t]e+z^c$, of degree $c+g$ and layer endpoint sums
+at most $c+g+1$.
+
+For a nonrectangular opposite arm $Y$ write $b=\operatorname{wt}Y$,
+$q=q_Y$, $p=e q$, $V=[t]p$. In the central degree orders
+$b=c+s$ and at joining rank $c+j$, the actual increment is
+\[
+        A_j=p_{c+j}-p_{c+j-t}+a_j,\qquad
+        a_0=1,\quad a_j=q_j-q_{j-1}\ (j\ge1).            \tag{2}
+\]
+Only $0\le j\le\lfloor(g+s+1)/2\rfloor\le g$ can
+remain undecided by the new layer-center bound.
+
+\paragraph{A strengthened resource classification, including the linear budget.}
+In the central band $-g-1\le s\le g$, all increments of
+the old $p$ from rank $c$ onward are nonpositive. Pairing
+the full lowest deficit layer $[0,D]$ with ordinary layers
+shows
+\[
+ p_{c+j-1}-p_{c+j}\ge q_{\kappa+j-2}-(F_Y)_{s-j}.
+                                                               \tag{3}
+\]
+All other proper-layer products have nonpositive increments;
+the full ordinary-layer window is nonincreasing there as well.
+
+For $j\ge2$, the preceding section proves that the right side
+pays every positive $a_j-a_{j-1}$, except possibly when an
+ordinary long rectangle is already saturated. More precisely,
+failure of this payment must belong to one of the following
+two \emph{whole-profile} classes:
+\begin{enumerate}
+\item $Y=Z T$, $h=\operatorname{wt}Z<s$, and $T=b-h>c$.
+\item $Y=1^\alpha U$, $H=\prod_{v\in U}[v]$ has
+      degree $h\le s$, and $\alpha=b-\operatorname{wt}U>g$.
+\end{enumerate}
+To see the extra restrictions, in the first long-capacity case
+let $H=q_Z$. At a saturated head $q_J=H(1)$ the diagonal is
+$\sum_{i\le h-(s-j)}H_i-{\bf1}_{s=j}$.
+If $h\ge s$ and $s>j$, it contains $H_j$.
+If $s=j$, removing the empty-composition unit still leaves
+at least $H_j$, since $H_0=1$ and $j\ge1$.
+Either bound pays $H_j-H_{j-1}$. In the second case put
+$P=\prod[v]$. Proper ordinary reflection gives
+$(F_Y)_r\le\sum_{i\le r}P_i$ below the long initial interval.
+If $\deg P\ge s+1$, symmetry makes the remaining tail
+mass at least $P_j$, again paying the curvature.
+
+The same classification holds for failure of the linear
+budget with $j=1$, whose target is $a_1=q_1-1$.
+Its bounded-capacity proof uses the main-box gap lemma at
+$j=1$ and the identity $a_1=K_1-1$.
+For a relevant first edge, $2\le g+s+1$ and the mass bound
+imply $\deg K\ge\kappa$, so no small-degree exception occurs.
+If $s-1<0$, $q_{\kappa-1}\ge K_1=q_1$ pays directly.
+In a long-capacity case with $J<\operatorname{wt}Z$, the
+CDF reflection lemma pays $H_1$ when $s\ge2$; at $s=1$
+the initial cumulative sum includes $H_0+H_1$, cancelling
+the one empty-composition unit. At a saturated head,
+$\operatorname{wt}Z\ge s$ would again pay $H_1$.
+The long-initial-ones argument likewise pays $P_1$ unless
+$\deg P\le s$.
+
+Thus either all the linear and adjacent resources pay, or
+the fixed $Y$ belongs to one of the two displayed classes.
+We handle the latter directly, without imposing a false
+post-input-mode budget.
+
+\paragraph{Direct joining concavity for the exceptional long rectangles.}
+For a finite polynomial $P$, let
+$C_P(n)=\sum_{i\le n}P_i$, with $C_P(n)=0$ for $n<0$.
+Use a bar to reverse a polynomial in its own degree.
+
+In class 1 put $H=q_Z$ of degree $h<s$. Throughout the
+support $0\le i\le h$ of the correction, $c+i<b$ and
+the exact window calculation gives
+\[
+ A_i=C_{\bar e\bar H}(h+g-i)
+                -C_{eH}(h-s+i)+H_i.                   \tag{4}
+\]
+The extra final monomial in $q_Y=[T]H+z^b$ is absent at
+these ranks. The first window is a tail cumulative sum
+because $\deg(eH)=D+h<c$; the second is a head cumulative
+sum because $h-s+i<t$.
+
+In class 2 put $W=\operatorname{wt}U$ and
+$H=\prod[v]$, of degree $h=W-|U|\le s$.
+Define the ordinary padding kernel recursively by
+\[
+ K_\varnothing=1,\qquad K_{Zv}=1-z+z[v]K_Z.
+\]
+It is nonnegative: the product $[v]K_Z$ has constant
+coefficient one, so the only negative source at rank one
+cancels, and every higher coefficient is nonnegative.
+Its degree is $W$ and its mass is $H(1)$.
+The exact ordinary identity is
+\[
+                       (1-z)q_Y=H-z^{\alpha+1}\bar K_U.
+\]
+Now $a_i=H_i$ through the joining band, and
+\[
+ A_i=C_{\bar e\bar H}(h+g-i)
+                  -C_{e\bar K_U}(W+i-s-1)+H_i
+                                    \qquad(0\le i\le h).       \tag{5}
+\]
+Again the first term is a tail cumulative sum. The second
+index is smaller than $t$, since $W\le2h$, $h\le s\le g$
+and $g\le\kappa-2$.
+
+In either formula, for $1\le i\le h$ the first cumulative
+term loses the coefficient
+$(\bar e\bar H)_{h+g-i+1}$, while the second loses a
+nonnegative coefficient. By (1),
+\[
+                  h\le h+g-i+1\le2g\le D.
+\]
+Every coefficient of $\bar e$ in its support is a positive
+integer. Hence this first loss is at least $H(1)$: all
+coefficients of $\bar H$ are sampled with multiplicity at
+least one. This pays $H_i-H_{i-1}$, proving
+\[
+                         A_i\le A_{i-1}\qquad(1\le i\le h).
+                                                               \tag{6}
+\]
+For $i>h$ the correction increment is zero, so $A_i$ is
+an increment of the unimodal old window $V$. If any
+earlier $A_i$ is negative, then the corresponding increment
+of $V$ is negative as well, because $H_i\ge0$.
+Unimodality of $V$ prevents any later positive increment
+once the correction has ended. Thus (6) proves the entire
+joining no-valley statement in both exceptional classes.
+
+The unbounded coefficient-mass domination, cumulative-slope
+implication, support arithmetic and zero-correction splice
+are kernel checked in \texttt{LongRectangleRepair.lean}.
+The exact ordinary-polynomial identifications (4)--(5)
+are the written calculations above, independently checked
+with arbitrary positive integer deficit profiles in
+\texttt{audit\_long\_rectangle\_repair.json}.
+
+\paragraph{Closing the full mixed induction.}
+Induct on the number of non-one parts of $Y$; rectangular
+opposite arms are uniform-window bases.
+If $b\ge c+g+1$, deleting the last part of $Y$ gives
+the old new-deficit mixed window below rank $b$.
+The quasi-center bound makes every proper ordinary-layer
+product nonincreasing at $b$. The full ordinary layer is
+constant there because it covers the complete support of $f$.
+Thus the induction prefix joins a nonincreasing tail.
+If $b\le c-g-2$, the center bound gives the same join at
+rank $c$, before which the shifted correction is absent.
+
+In the remaining band $c-g-1\le b\le c+g$, the established
+first-edge dichotomy says $p_c<p_{c-1}$ or $p_c=\max p$.
+Integer unit repair handles $A_0$ and the earlier window
+prefix. If all the resources in (3) pay, then
+\[
+ p_c-p_{c+j}\ge a_j,\qquad
+ p_{c+j-1}-p_{c+j}\ge a_j-a_{j-1}.
+\]
+Indeed the first linear budget starts the telescoping sum;
+nonpositive curvatures need no payment because $p$ is
+nonincreasing there. The general multi-edge repair therefore
+propagates every positive joining increment backwards.
+If any resource fails, (4)--(6) give the same no-valley
+conclusion directly. Beyond the last joining edge, the
+new center bound makes all actual increments nonpositive.
+This proves full mixed unimodality of $f$ and closes the
+induction on $Y$.
+
+The argument combines the established unit/multi-edge repair
+theorems with the new exact resource and long-rectangle
+lemmas. It does not infer coefficient unimodality from
+cumulative log-concavity.
+
+\begin{corollary}[Arbitrarily many doubling phases]
+All arms
+\[
+ 1^\alpha4^{m_4}8^{m_8}16^{m_{16}}\cdots(2^L)^{m_{2^L}}
+\]
+have full mixed unimodality against arbitrary opposite
+increasing arms if $\alpha\ge1$, $m_4\ge3$, every nonfinal
+phase $u\ge8$ has $m_u\ge u/2$, and the final phase has
+at least one copy. Their strict-peak cores and both
+relative polynomials are unimodal by the established
+short-prefix reflection join.
+\end{corollary}
+\begin{proof}
+The three-four seed has first missing weight five and is
+already quasi centered with full mixed unimodality.
+After a saturated phase $u$, the next capacity $2u$ is
+exactly $2\kappa-2$, where $\kappa=u+1$.
+Its next $u-1$ repeats raise first missing weight to $2u+1$;
+all those appends fall in the same new range. Further
+repeats use the established stationary closure.
+Iterate the theorem and apply the existing core join.
+\end{proof}
+
+This completes a previously open unbounded range of append
+gaps. It leaves the general unamplified conjecture open:
+large jumps $t\ge2\kappa-1$, small old first missing weights,
+and general non-quasi-centered prefixes are not covered.

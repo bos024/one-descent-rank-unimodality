@@ -1,0 +1,102 @@
+{
+  "status": "PASS_ALL_ORDER_RENEWAL_ROOT_POSITIVE_PRIMITIVE_CUT",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "RenewalRootPrimitiveCut": {
+      "RenewalRootPrimitiveCut.exact_notch_minor_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.whole_large_width_notch_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.all_small_width_notch_minors": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.whole_unbounded_ramp_fixed_point": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.all_renewal_root_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.complete_interval_product_spike_factor": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.whole_cut_three_read_band": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.complete_geometric_tail_minor_propagation": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RenewalRootPrimitiveCut.whole_decreasing_ramp_first_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "theorem": "ALLt>=2/ell>=0: q+...+q^t=1,B_t=(1-S_t)/(1-lambda*z), finiteUIJ withpositiveprimitiveAFTERrank0LCandintervalsupport. x=future_q J,Y=[t-1]x. (Y-z^ell B_tJ)^+LCatEVERYell+t<=n<FIRSTmodeJ. Deg<=t-2 remainderinactualEABSENTonlyonthisthree-readband.",
+  "complete_kernel": "BILATERALKhaspositiveintervalsupport(-infty,ell+t-2];reverseK=q*([t-1][ell+2]+z^(t-1))/(1-qz). ALLorders/delaysLC: bothwidthorders,smallwidths2..4,largewidthnotch>=4,rootfixedpoint,geometrictailpropagationALLpaid. No finiteentrancepremise.",
+  "scope": "NINEcleanstandardaxiomreports forcompleteuniformscalar/CommRing/Naturalinductionkernels. Rootfactorization/reversalkernel/LCconvolution/negative-tailcutandsequenceassemblyWRITTEN,notendtoendactualcompositionformalization. GenericJneedNOTordinaryLC. Noactualsourceidentificationasserted.",
+  "remaining": "Actual1alpha2u3r retainsEXTRAsourceP_u; doNOTidentifywholeactualresidualwithproperCIquotient. OriginalUI/generalC/fullA2OPEN. GeneralcutonlyBEFOREFIRSTJmode,notunboundedactualDmodewithoutproof.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "counts": {
+    "independent_top_down_bilateral_kernel_reads": 2964,
+    "independent_reciprocal_root_kernel_minors": 2678,
+    "independent_unbounded_formula_QA_contexts": 143,
+    "independent_full_model_cut_minors": 577,
+    "independent_cut_models_including_non_LC_J": 96
+  },
+  "QA": {
+    "EXACT_rational_all_width_notch_profiles": 1050,
+    "EXACT_renewal_root_LC_minors": 4821,
+    "EXACT_bilateral_kernel_and_source_identity_reads": 5532,
+    "EXACT_algebraic_root_profiles": 237,
+    "EXACT_FULL_cut_model_LC_minors": 1386,
+    "EXACT_nonsymmetric_or_binomial_cut_models": 126
+  },
+  "independent_state_sha256": "d94fe2534bce81cca01bb7f39a48340392b405839ae78486b418659b4141db30",
+  "seconds": 0.6870000000053551,
+  "local_files": [
+    "renewal_root_positive_primitive_cut_proof.tex",
+    "RenewalRootPrimitiveCut.lean",
+    "RenewalRootPrimitiveCut.log",
+    "audit_renewal_root_primitive_cut.py",
+    "audit_renewal_root_primitive_cut.json",
+    "verify_renewal_root_primitive_cut.py"
+  ],
+  "dependency_files": [
+    "GoldenPrimitiveCut.lean",
+    "GoldenPrimitiveCut.log",
+    "golden_signed_primitive_cut_closure.tex",
+    "first_missing_renewal_envelope.tex"
+  ],
+  "sha256": {
+    "renewal_root_positive_primitive_cut_proof.tex": "c6a076dcce959b3e3c621c4f9c1c4d6dd9c74eb289df7673027bde1ca2b7cda1",
+    "RenewalRootPrimitiveCut.lean": "357b43c1a3db50b7a4679b552331b1e7f2683f15d1c2accfae5cd1a49ced873c",
+    "RenewalRootPrimitiveCut.log": "44aa643214fdbee9c03163c25288cdb07c5e7b698a18115f49cef719743264be",
+    "audit_renewal_root_primitive_cut.py": "2769727e06c6940506efca0c3c84aa1b1c7511e489c74242616150215b1070a1",
+    "audit_renewal_root_primitive_cut.json": "1398c3401bbff8b2df11f7ac9fba8530f47c6ac05950dc9765719b931f2bb80e",
+    "verify_renewal_root_primitive_cut.py": "1c4c7584a55a90cd19abcb1e1f83fe10a76f31ad70f6ab5a97c62d499534c06e",
+    "GoldenPrimitiveCut.lean": "030c58b6319f5673a9cd1dcf07dfe9baee0011ddc50441416c2b19d491835e15",
+    "GoldenPrimitiveCut.log": "fdf171721916496ceeee3d0b116ed7a78d900be29c914a7a6d3b72697b2a371a",
+    "golden_signed_primitive_cut_closure.tex": "89dbac6bac410fc10bd4c225f1d582a3ffd66d9ce1e9ca25d97ca1f94d87ee80",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8"
+  }
+}

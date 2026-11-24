@@ -1,0 +1,58 @@
+% Additional arm structure; not the general one-descent theorem.
+\section{The opposite reflection for increasing-arm deficits}
+\begin{theorem}
+For a nonempty increasing arm of weight $a$, every height layer
+of $E_X=1-z+(2z-1)F_X$ has endpoint sum at least $a+3$.
+Equivalently, every layer of its reverse $e_X=z^{a+1}E_X(1/z)$
+has endpoint sum at most $a-1$.
+\end{theorem}
+\begin{proof}
+For a single part of size $a$, or any interval arm polynomial,
+$E_X=z^2[a-1]+2z^{a+1}$, whose layers have the asserted centers.
+Induct under appending a current maximum $t$. Write $c$ for
+the old arm weight and $E$ for its deficit. The exact recurrence
+is $E_{Zt}=W+z^{t+1}$, where $W=S_tE$.
+The old layer bound makes every layer-product endpoint sum of
+$W$ at least $c+t+4$. Hence $W$ satisfies reflection about
+$(c+t+3)/2$ with one unit of center margin.
+
+If $c<t$, the added singleton lies on the right of that center
+(or at the center), so it preserves the reflected inequalities.
+Suppose $c\ge t$. Only the reflected pair at $t+1,c+2$ can
+lose one. We prove $W_{c+2}-W_{t+1}\ge1$.
+The old reflection gives, after pairing indices beyond its midpoint,
+\[
+ \sum_{i=1}^{t}E_i\le\sum_{i=c-t+3}^{c+2}E_i.
+\]
+Since $E_{c+2}=0$, this implies
+\[
+ W_{c+2}-W_{t+1}
+ =\sum_{i=c-t+2}^{c+1}E_i-\sum_{i=1}^{t}E_i
+ \ge E_{c-t+2}.
+\]
+If $c-t+2$ belongs to the positive support $[\kappa,c+1]$,
+this lower bound is at least one. Otherwise $c-t+2<\kappa$,
+so the first sum contains the entire deficit. The second sum
+omits the final coefficient $E_{c+1}=2$, because $t\le c$.
+The difference is then at least two.
+Thus the extra singleton is paid for in every case.
+The increasing-arm deficit is already known to be unimodal,
+so the reflected inequalities imply the stated height-layer bound.
+\end{proof}
+
+Together with the reverse lower bounds proved separately, a
+normalized nonrectangular arm $1^\alpha U$, with
+$s=\operatorname{len}U$, has deficit-layer endpoint sums in
+$[s,a-1]$ after reversal. The lower endpoint improves to $s+1$
+unless the arm is $1,2^s$.
+
+\paragraph{Sharpness of the uniform forward constant.}
+It is false that every nonrectangular increasing arm has deficit
+layer endpoint sums at least $a+4$. For
+$X=1^9(6,18,19,38,91)$ one has $a=181$ and the minimum sum is
+$184=a+3$. This counterexample does not affect the theorem.
+
+Nor should the two-sided layer bounds be replaced by log-concavity
+of the reverse deficit on its increasing side. For $X=(1,2,10)$
+the first four reverse-deficit coefficients are $2,5,5,6$;
+the log-concavity inequality at the third coefficient fails.

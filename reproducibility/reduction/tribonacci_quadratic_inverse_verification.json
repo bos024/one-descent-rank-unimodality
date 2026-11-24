@@ -1,0 +1,120 @@
+{
+  "status": "PASS_FULL_COUNT_TRIBONACCI_QUADRATIC_INVERSE_PREFIX",
+  "new_scoped_reports": 13,
+  "kernels": {
+    "TribonacciInverseTerminalNorm": {
+      "TribonacciInverseTerminalNorm.exact_binary_terminal_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseTerminalNorm.exact_ternary_terminal_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseTerminalNorm.whole_unbounded_two_count_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseTerminalNorm.terminal_form_coercive": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseTerminalNorm.geometric_eighteen_terminal_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseTerminalNorm.complete_terminal_quarter_box": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "TribonacciInverseClosure": {
+      "TribonacciInverseClosure.root_interval_from_cubic_endpoint_signs": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseClosure.quadratic_interval_lower_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseClosure.strict_finite_Bernstein_combination": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseClosure.all_counts_from_complete_entrance": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciInverseClosure.excluded_pure_two_negative_minor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "TribonacciInverseCompleteCertificate": {
+      "TribonacciInverseCompleteCertificate.all_positive_scalar_bounds": [
+        "propext"
+      ],
+      "TribonacciInverseCompleteCertificate.exact_integer_cubic_root_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "theorem": "ALLu/r>=0,w>=1,D=u+2r>=2:ZERO-TRUNCATEDfiniteprefixof[2]^u[3]^r/(1+a*z+b*z\u00b2)throughD-2isSTRICTLYpositive/GLOBALLYLC EXCEPTONLY(u0,r2). lambdaTRIBONACCIroot,a=lambda-1,b=1/lambda. AllcountsUNBOUNDED. LastTWOcoefficientsdiscarded/maybeNEGATIVE. D1prefixEMPTY.",
+  "norm": "EXACT ALLcountsterminalQ(e0,e1)=e0\u00b2+a*e0e1+b*e1\u00b2=(a\u00b2)^u*(1-a)^r. BinarypairlineartransformscalesQbya\u00b2;ternaryscalesby1-a. COMPLETEtwo-Natinduction. BOTHnonreal-rootphaseretained. CoercivityQ>=(e0\u00b2+e1\u00b2)/10;w>=18impliesFULLquarterbox. NOphaseerasure.",
+  "unbounded_corners": "ONEbinarynewvalue/oneuncoveredminor;TWOternarynewvalues/TWOuncoveredminors. ALLSIXrawcornerexpressionsPOSITIVEforALLREALw>=18,0<=r<=w,terminalquarterbox. COMPLETE125Q(lambda)Bernsteincoefficientsnonnegative/ALLX0positive. IndepCOMPLETE810tensoridentitygridreadsforDEGREEBOUND(4,2,2,2)proveENTIREpolynomialidentities,NOTcountboundedparameterQA. Rootintervalwidth10^-50signedbyEXACTintegercubics;allfieldboundsLean-certified.",
+  "entrance": "COMPLETE188contexts1<=u+r<=18EXCEPTu0r2;3228retainedcoeffs+2856LCminorsALLpositive. D1emptycontextexplicit. IndependentCLOSEDbinomial/trinomialcoefficients/FORWARDinverseinDIFFERENTQ(a)basis/ALLcontextbytesmatch. ONEsingleexcludedprefix(1,2-a,4-3a)minor=a\u00b2-a<0. StronginductionALLhighercountsformalizedaswholepredicatekernel.",
+  "formal_scope": "THIRTEENNEWreports:6terminalnorm/coercivity/box+5root/interval/Bernsteinsum/ALLcountpredicate/exception+2COMPLETEfinitefield/root certificates. 61ordinaryLeanIntegerchunksONEaggregate;noNative/sorry/nonstandardaxioms. Seq-to-pair/coefficient/convolution/actualrootlifting/COMPLETEboundeddegreeinterpolationassemblyandwholeprefixinductionarewrittenproof;NOendtoendLeancompositions. CompletefiniteentranceisEXPLICIT,notrandomQA.",
+  "remaining": "TRIBONACCIkerneltheoremONLY. ActualfullDtransferstillOPEN. OppositeREVERSEDquadraticquotienthasDIFFERENTdenominator;doNOTsilentlyidentify. Actualunboundeddiagonalu>=33/generalearlierC/fullA2/ORIGINALundilatedcoefficientUIOPEN. NoactualfullC32rangeenlargementalone.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "counts": {
+    "independent_complete_base_hosts": 188,
+    "independent_retained_base_coefficients": 3228,
+    "independent_base_LC_minors": 2856,
+    "COMPLETE_tensor_polynomial_identity_reads": 810
+  },
+  "QA": {
+    "positive_LC_prefix_hosts": 882,
+    "retained_coefficient_reads": 109505,
+    "LC_minor_reads": 107745,
+    "exact_full_two_count_terminal_norm_identities": 883,
+    "exact_single_exception_controls": 1,
+    "uniform_terminal_quarter_box_hosts": 710
+  },
+  "positive_field_triples": 5855,
+  "kernel_chunks": 61,
+  "Bernstein_coefficients": 125,
+  "independent_state_sha256": "4edb14611d672d70db8c3e2de3e343387d7c1b3fc917f1cd2bd7809a1ccd4e0b",
+  "seconds": 0.48399999999674037,
+  "sha256": {
+    "tribonacci_quadratic_inverse_proof.tex": "a2ddacc2f097dbfa866efb347ebcf45726d759cd433a3f66b325506e102a417b",
+    "TribonacciInverseTerminalNorm.lean": "20a183f5711ac726bbe07b1063b9418a61be15af8a6fd4eff195a926e0844afb",
+    "TribonacciInverseTerminalNorm.log": "5c379ea223f1ecea63ff5ba99156a361221976761b9e9076565cd03c0a324874",
+    "TribonacciInverseClosure.lean": "21ffa04800fb0d5cae0d62f3a9734486c15c1cab4e054139eb85d084a3c8c145",
+    "TribonacciInverseClosure.log": "b864ee1b72d36604de06f145e0c00573fe522e1901a6800c13ad89e6d1a2a582",
+    "TribonacciInverseCompleteCertificate.lean": "9d75db0e6c81d199a4920c6360c36894a58e84a77f4d2853e7b8270b7340deda",
+    "TribonacciInverseCompleteCertificate.log": "47ce89872d6c2d76249e961e1555e94a330597ae178aef1e23b0395cf55e5aa0",
+    "build_tribonacci_inverse_complete_certificate.py": "769a4fb7b319bb342e0bfcc1c8822a7c4dce6d661debd98e7b52b16ab0b4d4a0",
+    "tribonacci_inverse_complete_certificate_data.json": "983e214abcbc45b87ac1654b5a30dcc640b58f7217ed7f856d3694cc673c2233",
+    "audit_tribonacci_quadratic_inverse.py": "4daae98108eaa23093d596f0a95af1b4d090387f412e590f1d4b32376679631d",
+    "audit_tribonacci_quadratic_inverse.json": "e7408d21783ca627a1ec598be873463dbc923dcce1ff57cb59bba481d74d8ede",
+    "verify_tribonacci_quadratic_inverse.py": "d640aa93703309cb4cbb6a198076d1654fabef4c27c35d6937ae72c0ef6f5869",
+    "probe_tribonacci_quadratic_inverse.py": "5b6ffa31528288c017058455c0e269efe6a7418a85cf61da4de499cdefe71cf8",
+    "probe_tribonacci_inverse_bernstein_corners.py": "8545b75c4baa2c9947446a051b73acb39101048f21ab011e297e969a92fe3057",
+    "probe_tribonacci_inverse_bernstein_corners.json": "7cc34db4f8c334f21ade9c605e644d324fec8f8d71eb420cff5257e5304df350"
+  }
+}

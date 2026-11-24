@@ -1,0 +1,5 @@
+'GeneralFiniteSourcePatch.arbitrary_finite_patch_no_revival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneralFiniteSourcePatch.whole_body_guarded_critical_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GeneralFiniteSourcePatch.entire_finite_window_patch_up_down' depends on axioms: [propext, Classical.choice, Quot.sound]

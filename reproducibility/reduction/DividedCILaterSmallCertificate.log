@@ -1,0 +1,3 @@
+'DividedCILaterSmallCertificate.golden_fine_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterSmallCertificate.all_scalar_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DividedCILaterSmallCertificate.complete_actual_startup_margins' does not depend on any axioms

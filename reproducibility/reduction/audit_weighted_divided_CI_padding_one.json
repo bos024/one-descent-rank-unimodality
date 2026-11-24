@@ -1,0 +1,41 @@
+{
+  "status": "PASS_EXACT_QA_WEIGHTED_CI_PREFIX_AND_ACTUAL_PADDING_ONE_ENTRANCE",
+  "counts": {
+    "exact_small_weighted_binary_bases": 5,
+    "exact_weighted_binary_first_head_payments": 149,
+    "exact_weighted_binary_constant_update_identities": 149,
+    "exact_entire_weighted_binary_positive_primitive_minors": 11175,
+    "exact_weighted_binary_second_head_payments": 145,
+    "exact_entire_weighted_CI_ordinary_LC_minors": 120123,
+    "exact_weighted_ordinary_first_head_payments": 1200,
+    "exact_weighted_interval_append_quotient_identities": 1200,
+    "exact_weighted_low_primitive_source_identities": 17832,
+    "exact_weighted_robust_X_head_minors": 61216,
+    "exact_weighted_quantitative_last_junction_payments": 1158,
+    "exact_weighted_actual_first_primitive_payments": 1200,
+    "exact_weighted_CI_positive_primitive_prefix_minors": 61216,
+    "exact_prefix_window_boundary_minors": 218125,
+    "weighted_CI_induction_contexts": 1200,
+    "exact_padding_one_primitive_head_identities": 19430,
+    "exact_actual_padding_one_through_first_mode_LC_minors": 15220,
+    "exact_padding_one_all_read_prefix_minimum_C_payments": 39260,
+    "actual_padding_one_entry_contexts": 400
+  },
+  "state_sha256": "3209121fac0270a3dc8665b0aed9d988cf8ffe320f4c370600f88d93d4ab3d05",
+  "seconds": 5.03099999999904,
+  "postmode_negative_control": {
+    "V": [
+      4,
+      32
+    ],
+    "m": 34,
+    "alpha": 19,
+    "first_A_mode": 61,
+    "n": 63,
+    "minor": [
+      92474729448806994408,
+      -59412110474266913988
+    ]
+  },
+  "scope": "Exact finite QA only of the WRITTEN all-degree weighted prefix induction and actual alpha1 corollary. Prefix is through u-2, NOT a general arbitrary-padding full-tail assertion. No general C/A2/original UI conclusion."
+}

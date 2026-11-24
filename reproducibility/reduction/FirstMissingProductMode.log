@@ -1,0 +1,28 @@
+'FirstMissingProductMode.partial_coefficient_product_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.constant_term_pays_product_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstMissingProductMode.exact_complete_product_slope_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.first_missing_dyadic_tail_dominates_its_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.all_three_first_missing_product_slope_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.complete_protected_first_missing_difference_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.whole_first_missing_product_three_strict_increases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.strict_forward_growth_places_every_ordinary_mode_after' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.arbitrary_one_part_exception_and_complete_window_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FirstMissingProductMode.arbitrary_first_missing_birth_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

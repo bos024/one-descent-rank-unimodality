@@ -1,0 +1,698 @@
+{
+  "status": "PASS_EXACT_QA_SIGNED_PRIMITIVE_CUT_AND_ALL_PADDING_ACTUAL_LATE_C",
+  "counts": {
+    "complete_small_actual_pre_mode_LC_minors": 135,
+    "exact_right_geometric_actual_Cinf_identifications": 169730,
+    "exact_signed_primitive_convolution_and_constant_cut_identities": 41813,
+    "exact_generic_cut_LC_after_deleted_initial_primitive": 39606,
+    "exact_actual_all_padding_through_first_mode_LC_minors": 80157,
+    "exact_uniform_first_source_startup_minors": 2366,
+    "exact_all_padding_all_read_prefix_minimum_C_payments": 216092,
+    "actual_all_padding_CI_contexts": 1200
+  },
+  "complete_small_actual_contexts": [
+    {
+      "u": 3,
+      "V": [
+        3
+      ],
+      "alpha": 1,
+      "clamp": 2,
+      "first_A_mode": 2,
+      "margins": [
+        8
+      ]
+    },
+    {
+      "u": 3,
+      "V": [
+        3
+      ],
+      "alpha": 2,
+      "clamp": 2,
+      "first_A_mode": 3,
+      "margins": [
+        6,
+        9
+      ]
+    },
+    {
+      "u": 4,
+      "V": [
+        3
+      ],
+      "alpha": 1,
+      "clamp": 3,
+      "first_A_mode": 4,
+      "margins": [
+        4,
+        34
+      ]
+    },
+    {
+      "u": 4,
+      "V": [
+        3
+      ],
+      "alpha": 2,
+      "clamp": 3,
+      "first_A_mode": 4,
+      "margins": [
+        0,
+        27
+      ]
+    },
+    {
+      "u": 4,
+      "V": [
+        3
+      ],
+      "alpha": 3,
+      "clamp": 3,
+      "first_A_mode": 5,
+      "margins": [
+        0,
+        21,
+        37
+      ]
+    },
+    {
+      "u": 4,
+      "V": [
+        4
+      ],
+      "alpha": 1,
+      "clamp": 3,
+      "first_A_mode": 4,
+      "margins": [
+        13,
+        32
+      ]
+    },
+    {
+      "u": 4,
+      "V": [
+        4
+      ],
+      "alpha": 2,
+      "clamp": 3,
+      "first_A_mode": 5,
+      "margins": [
+        9,
+        23,
+        61
+      ]
+    },
+    {
+      "u": 4,
+      "V": [
+        4
+      ],
+      "alpha": 3,
+      "clamp": 3,
+      "first_A_mode": 5,
+      "margins": [
+        9,
+        16,
+        44
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3
+      ],
+      "alpha": 1,
+      "clamp": 3,
+      "first_A_mode": 5,
+      "margins": [
+        16,
+        66
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3
+      ],
+      "alpha": 2,
+      "clamp": 3,
+      "first_A_mode": 6,
+      "margins": [
+        10,
+        45,
+        144
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3
+      ],
+      "alpha": 3,
+      "clamp": 3,
+      "first_A_mode": 6,
+      "margins": [
+        10,
+        35,
+        106
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        4
+      ],
+      "alpha": 1,
+      "clamp": 4,
+      "first_A_mode": 5,
+      "margins": [
+        9,
+        80
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        4
+      ],
+      "alpha": 2,
+      "clamp": 4,
+      "first_A_mode": 6,
+      "margins": [
+        2,
+        58,
+        152
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        4
+      ],
+      "alpha": 3,
+      "clamp": 4,
+      "first_A_mode": 6,
+      "margins": [
+        2,
+        47,
+        110
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        4
+      ],
+      "alpha": 4,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        2,
+        47,
+        93,
+        133
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        5
+      ],
+      "alpha": 1,
+      "clamp": 4,
+      "first_A_mode": 6,
+      "margins": [
+        25,
+        73,
+        154
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        5
+      ],
+      "alpha": 2,
+      "clamp": 4,
+      "first_A_mode": 6,
+      "margins": [
+        18,
+        48,
+        169
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        5
+      ],
+      "alpha": 3,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        18,
+        36,
+        126,
+        193
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        5
+      ],
+      "alpha": 4,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        18,
+        36,
+        108,
+        124
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3,
+        3
+      ],
+      "alpha": 1,
+      "clamp": 4,
+      "first_A_mode": 6,
+      "margins": [
+        40,
+        160,
+        499
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3,
+        3
+      ],
+      "alpha": 2,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        28,
+        101,
+        454,
+        907
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3,
+        3
+      ],
+      "alpha": 3,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        28,
+        81,
+        355,
+        753
+      ]
+    },
+    {
+      "u": 5,
+      "V": [
+        3,
+        3
+      ],
+      "alpha": 4,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        28,
+        81,
+        324,
+        592
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        3
+      ],
+      "alpha": 1,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        16,
+        144,
+        369
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        3
+      ],
+      "alpha": 2,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        6,
+        97,
+        339
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        3
+      ],
+      "alpha": 3,
+      "clamp": 4,
+      "first_A_mode": 8,
+      "margins": [
+        6,
+        81,
+        256,
+        514
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        3
+      ],
+      "alpha": 4,
+      "clamp": 4,
+      "first_A_mode": 8,
+      "margins": [
+        6,
+        81,
+        231,
+        383
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        4
+      ],
+      "alpha": 1,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        27,
+        153,
+        403
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        4
+      ],
+      "alpha": 2,
+      "clamp": 4,
+      "first_A_mode": 7,
+      "margins": [
+        16,
+        100,
+        380
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        4
+      ],
+      "alpha": 3,
+      "clamp": 4,
+      "first_A_mode": 8,
+      "margins": [
+        16,
+        82,
+        289,
+        571
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        4
+      ],
+      "alpha": 4,
+      "clamp": 4,
+      "first_A_mode": 8,
+      "margins": [
+        16,
+        82,
+        261,
+        426
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        5
+      ],
+      "alpha": 1,
+      "clamp": 5,
+      "first_A_mode": 7,
+      "margins": [
+        13,
+        176,
+        413
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        5
+      ],
+      "alpha": 2,
+      "clamp": 5,
+      "first_A_mode": 8,
+      "margins": [
+        1,
+        121,
+        391,
+        701
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        5
+      ],
+      "alpha": 3,
+      "clamp": 5,
+      "first_A_mode": 8,
+      "margins": [
+        1,
+        102,
+        294,
+        595
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        5
+      ],
+      "alpha": 4,
+      "clamp": 5,
+      "first_A_mode": 8,
+      "margins": [
+        1,
+        102,
+        264,
+        442
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        5
+      ],
+      "alpha": 5,
+      "clamp": 5,
+      "first_A_mode": 8,
+      "margins": [
+        1,
+        102,
+        264,
+        400
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        6
+      ],
+      "alpha": 1,
+      "clamp": 5,
+      "first_A_mode": 7,
+      "margins": [
+        40,
+        160,
+        439
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        6
+      ],
+      "alpha": 2,
+      "clamp": 5,
+      "first_A_mode": 8,
+      "margins": [
+        28,
+        101,
+        423,
+        697
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        6
+      ],
+      "alpha": 3,
+      "clamp": 5,
+      "first_A_mode": 8,
+      "margins": [
+        28,
+        81,
+        324,
+        592
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        6
+      ],
+      "alpha": 4,
+      "clamp": 5,
+      "first_A_mode": 9,
+      "margins": [
+        28,
+        81,
+        293,
+        433,
+        584
+      ]
+    },
+    {
+      "u": 6,
+      "V": [
+        6
+      ],
+      "alpha": 5,
+      "clamp": 5,
+      "first_A_mode": 9,
+      "margins": [
+        28,
+        81,
+        293,
+        389,
+        375
+      ]
+    }
+  ],
+  "complete_small_actual_integer_margins": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    8,
+    9,
+    10,
+    13,
+    16,
+    18,
+    21,
+    23,
+    25,
+    27,
+    28,
+    32,
+    34,
+    35,
+    36,
+    37,
+    40,
+    44,
+    45,
+    47,
+    48,
+    58,
+    61,
+    66,
+    73,
+    80,
+    81,
+    82,
+    93,
+    97,
+    100,
+    101,
+    102,
+    106,
+    108,
+    110,
+    121,
+    124,
+    126,
+    133,
+    144,
+    152,
+    153,
+    154,
+    160,
+    169,
+    176,
+    193,
+    231,
+    256,
+    261,
+    264,
+    289,
+    293,
+    294,
+    324,
+    339,
+    355,
+    369,
+    375,
+    380,
+    383,
+    389,
+    391,
+    400,
+    403,
+    413,
+    423,
+    426,
+    433,
+    439,
+    442,
+    454,
+    499,
+    514,
+    571,
+    584,
+    592,
+    595,
+    697,
+    701,
+    753,
+    907
+  ],
+  "state_sha256": "2c50f9993f124f4cb5a92d7bcb6ea1d76ac7f6903d49f404f0baf575d99081cb",
+  "seconds": 6.297000000002299,
+  "scope": "Independent exact QA of a NEW written universal cut theorem and all-padding actual assembly, contingent on repaired later-primitive theorem and formal audits. Complete small-startup exception enumeration with old analytic alpha-clamp. No earlier reference C, shorter binary counts, general C/A2/original UI claim."
+}

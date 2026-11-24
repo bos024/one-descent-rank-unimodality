@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_QA_PASS_ALL_STATIONARY_THREE_REFERENCE_AND_BINARY_DENSE_ACTUAL_C_UNDER_PROOF_AUDIT",
+  "counts": {
+    "exact_golden_residual_LC_tail_minors": 22185,
+    "exact_reference_ordinary_LC_head_minors": 22330,
+    "exact_reference_FIRST_late_ordinary_LC_failure_controls": 145,
+    "exact_prefix_minimum_all_shift_C_payments": 178638,
+    "logical_shift_coverage": 41508803,
+    "infinite_binary_stationary_three_reference_hosts": 145,
+    "actual_binary_dense_complete_C_hosts": 548
+  },
+  "state_sha256": "86cc941cd1d11031010d486962b842d07daaa237841a1df439db04ea4f66a1e2",
+  "seconds": 3.5,
+  "scope": "QAONLY. AnalyticreferenceHLCr>=6withONEfixedr6base+twoleftminors+oldCIterminalbudget;ordinaryreferenceLCONLYA..W/fullCviaoldlateC. Actualallr/u>=max(0,2r-3)viareferenceprefix+universallateC. GeneraloriginalUIOPEN."
+}

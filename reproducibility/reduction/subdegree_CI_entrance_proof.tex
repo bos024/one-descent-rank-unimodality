@@ -1,0 +1,214 @@
+\section{One below degree: every actual late C at $u\ge h-1$}
+This is a proved refinement of the registered degree-boundary theorem.
+It adds the count $u=h-1$ and therefore gives every actual late C
+comparison at every binary count $u\ge h-1$. Existing immutable
+proof records are preserved; the appended boundary-read clarification
+is explicitly included among this proof's sources.
+ONE-FACTOR tails already have complete C by the general one-jump
+theorem; the new quotient statements below are ONLY for $r\ge2$.
+
+\paragraph{A useful weakening of the geometric-cut theorem.}
+Global ordinary LC of $b$ is not used by the registered signed-
+primitive cut proof except to ensure unimodality and initial support
+of its positive primitive. It is enough that $b$ be finite positive
+UNIMODAL, with first mode $M$, and that $(\Delta b)^+$ after deleting
+rank zero be LC. The same LC kernel $K_a$ then gives
+$(x_n-E^*_{n-a})^+$ LC at every $a+2\le n<M$.
+For $n\le M$, the entire future signed primitive contributes
+$-T\phi^n$ with $T\ge0$, and the exceptional initial primitive is
+absent beyond lag $a$. The old constant-cut proof is unchanged.
+In fact even future unimodality can be relaxed: if $M$ is a global
+maximum, weighted telescoping gives
+\[
+ \sum_{k>M}q^k\Delta b_k
+ =q^2\sum_{k>M}q^kb_k-q^{M+1}b_M\le0,
+\]
+using $b_k\le b_M$; only a nonnegative LC primitive BEFORE $M$
+then suffices. This stronger weakening is recorded as an
+optional future route; the present $u=h-1,r\ge2$ proof already
+has full unimodality and does not need it.
+
+\paragraph{A geometric inverse can be LC when $b$ itself is not.}
+Suppose $b>0$, $b$ after deleting rank zero is global LC, and
+$qb_1\ge b_0$. For $x_n=\sum_{j\ge1}q^jb_{n+j}$,
+$x$ is GLOBAL LC on the integers. For $n\ge1$ use ordinary LC
+convolution on the rank-one truncated $b$. For $n\le-2$ it is
+geometric. At $-1$, lowering the next geometric value by $b_0$
+improves the minor. At ZERO the exact minor is
+\[
+ x_0^2-x_{-1}x_1
+       =x_0(qb_1-b_0)+qb_0b_1\ge0.                  \tag{1}
+\]
+Here $x_{-1}=q(x_0+b_0)$ and $x_1=\phi x_0-b_1$.
+This bypasses a genuine bad first ordinary minor of the quotient.
+
+\paragraph{Fourfold head with the relaxed first numerator value.}
+The registered $u\ge16$ FOURFOLD kernel estimates are independent
+of the numerator. They also apply to ANY LC $N$ with $N_0=1$ and
+$N_1\le(u+1)/2$, without a degree bound. Only its row-zero payment
+changes from $q^s(6u+4q)$ to $q^s(6u+2+4q)$.
+For $2\le s\le u-3$ the same quadratic binomial lower bound pays
+$(2/5)(6u+2+4q)$. At $u-2$ use
+$u-q\ge(6u+2+4q)/16$; at $u-1$ use
+$6u+2+4q\le u(u+1)$ and the registered quadratic-geometric decay.
+These scalar inequalities hold uniformly at $u\ge16$.
+
+\paragraph{Entire quotient theorem at $u=h-1$, $r\ge2$.}
+Put $c=\psi^uL(-\phi)<0$, $J=((1+z)^uL-c)/(1+qz)$.
+The exact norm gives $|c|\le\phi(2q^2)^r\le4q^3<1$.
+The theorem states: $J>0$; $J$ after deleting rank zero is
+GLOBAL ordinary LC; $J_1>J_0$; $qJ_1>J_0$; and its positive
+primitive is LC at EVERY centre at least two.
+These assertions do not include ordinary LC at centre one, which
+does fail: $V=(3,3),u=3$ has first ordinary minor $62-41\phi<0$.
+ONE-FACTOR tails are deliberately excluded.
+
+For $u\ge16$, remove a LARGEST interval $[t]$ and call the rest
+$L_0$ of length $r_0\ge1$. Then
+$u=\deg L_0+t-2\ge\deg L_0+1$, so its OLD quotient is registered
+positive global LC with the entire later-primitive property.
+Its window gives ordinary LC of $J$ at all centres $n\ge t$,
+and primitive LC at all centres $n\ge t+1$.
+The new ordinary head $J_n=(LQ_u)_n-c\psi^n$ through rank $u$
+is positive, since $L_n\ge1$ there and $|c|<1$.
+The relaxed fourfold budget pays every ordinary centre $2..u-1$;
+$[z]L=r\le(u+1)/2$. Since $t\le u$ for a nonempty old tail,
+this joins the entire ordinary tail after deleting rank zero.
+Also $J_0<2$, $J_1\ge u+r-2q>u$, so $qJ_1>J_0$ at $u\ge16$.
+The first increasing edge and LC from centre two make $J$ unimodal.
+
+For its primitive put $B=L_0Q_u$, $a=\phi^2c<0$,
+$X_n=B_n-a\psi^n$, $b=B_1=u+r_0-q$.
+Now $|a|/q\le4$, so the SAME fourfold head pays every required
+$X$ minor through $u-1$. Its entries at ranks $1..u$ are positive:
+$|a|\le4q$ gives $|a\psi^n|\le4q^2<2$, whereas the read entries
+of $B$ are at least $u-q$ through $u-2$ and at least $3/2$ at
+the last two ranks; at those last ranks the atom is much smaller
+than one. At rank one, $B_1\ge u+1-q>u$.
+As before $d_n=X_n$ for $1\le n<t$, $d_t=X_t-1$ and
+$d_{t+1}=X_{t+1}-b$.
+
+For $t\le u-1$ set $D=b^2-2B_2=u-r_0-q^2$.
+The concave scalar
+$F(r)=(u-r-1)(r+1)(u-1)-u(u+r)$ is nonnegative on
+$1\le r\le(u-1)/2$: its endpoints are
+$u^2-7u+4$ and $(u^3-7u^2+u+1)/4$.
+Thus the unperturbed last-junction gap is at least $u$.
+Its perturbation is bounded by
+\[
+ |a|q^{t-1}(b+2q)\le\frac{16}{25}
+                         \left(\frac{3u}{2}+\frac16\right)
+                         \le\frac{39u}{40}.          \tag{2}
+\]
+For the first inequality: if $t\ge4$, use $|a|\le4q$ and
+$4q^4\le16/25$. If $t=3$ is LARGEST, all intervals are threes,
+so $u=2r_0+1\ge16$ gives $r_0\ge3$; hence
+$|a|q^2\le16q^7\le16/25$, using $q^5\le1/10$ and
+$q^2\le2/5$. The perturbed gap is at least $u/40$.
+The final primitive minor is consequently at least $1+u/40$.
+
+The exceptional long junction $t=u$ forces $L_0=[3]$. Exact division
+then gives
+\[
+             d_{u+1}=-u+2q(1-\psi^u)<0.             \tag{3}
+\]
+Indeed $B_{u+1}=\phi-2q^{2u+1}$ in formal division and
+$a\psi^{u+1}=-2q^{2u+1}+2q\psi^u$.
+The positive primitive therefore ends by $u$; its last centre is
+an endpoint, while centre $u-1$ was already paid by lowering the
+next $X_u$ by one. No unproved final robust row at centre $u$
+is used. This completes the unbounded induction.
+The COMPLETE small range $u\le15$, $h=u+1$, $r\ge2$ has
+215 contexts, all independently rebuilt and kernel certified.
+
+\paragraph{The actual boundary unit aligns with the geometric inverse.}
+At $u=h-1$ the infinite coefficient tail $C=L\sum_{k=0}^{u-1}
+(z+z^2)^k$ satisfies $x_s=C_{u+s}$ for every $s\ge0$.
+The missing leading coefficient of $L$ gives EXACTLY
+\[
+       x_{-1}=C_{u-1}+1.                              \tag{4}
+\]
+This is the actual derivative at physical rank $W$; for every
+$s\ge0$, physical rank $W+1+s$ has positive derivative
+$(x_s-E_{s-a})^+$, $a=\alpha-1$, with the true source
+$E=(1+qz)J+c$.
+The extra actual unit must NOT be discarded: unlike the $u=h$
+case, it is exactly what completes the geometric inverse here.
+
+By (1), $x$ is globally LC and all its ratios are below $\phi$
+from rank zero. The relaxed unimodal-$b$ cut theorem pays centres
+$a+2$ through the first $J$ mode. Source LR, finite support and
+$x_M<\phi J_M$ put every pre-first-$A$-mode centre in that range.
+The registered first/second source startup payments apply when
+$w=u+r\ge8$. The remaining $w<8$ has exactly FOUR tail contexts
+and SEVENTEEN paddings $1\le\alpha\le u$. The padding clamp follows
+from the positive symmetric-row centre bound
+$\operatorname{firstmode}C\le2u-1$; every $\alpha\ge u+1$ starts
+after it. All finite startup comparisons are independently rebuilt from
+positive suffix-box sums of literal actual coefficients. Thus the result is actual
+LC at every centre $W+1\le N<\ell$, whenever this pre-mode band
+is nonempty. There is no assertion at the earlier centre $W$.
+
+\paragraph{C uses a different ordinary seed, with the correct positive Cassini.}
+The first defect is now $N_0=W+1$. Let $b_*=r_W$, $a_*=r_{W+1}$,
+$d_*=r_{W+2}=a_*+b_*$. Its exact conjugate error is
+$a_*-\phi b_*=c<0$, so
+$\lambda_0=(a_*-\delta)/b_*<\phi$, $\delta\in\{1,2\}$.
+Every later increasing current ratio is at most $\lambda_0$ by
+the proved actual LC. All cumulative reads through $W$ are
+unchanged reference reads and have ratios greater than $\phi$.
+The required ordinary seed is at $W$, since
+$F_{W-1}=a_*$ and $F_W=a_*+b_*$.
+The homogeneous Cassini identity at centre $W+1$ yields
+$b_*^2+a_*b_*-a_*^2=A_V$, so its EXACT seed margin is
+\[
+ b_*(a_*+b_*)-(a_*-\delta)a_*
+                 =A_V+\delta a_*>0.                \tag{5}
+\]
+This does NOT incorrectly invoke a homogeneous slope recurrence at
+$W-1$, where the numerator's last coefficient still matters.
+The ordinary identity is $F_j=r_{j+2}-B_{j+2}$; it already has
+zero correction at $j=W-1$. The separate boundary-read correction
+record withdraws an unused aside in the earlier immutable proof.
+Ordinary/cumulative integration from this seed covers every later
+read. Homogeneous reference C at $N_0=W+1$, improved by the first
+defect, pays the first current comparison. This proves ALL
+late actual C for $u=h-1$ with $r\ge2$; the one-factor theorem
+and registered $u\ge h$ results complete the asserted union.
+
+\paragraph{Further structural observation, not used above.}
+For ANY deficit $d=h-u$, the same missing-leading-coefficient
+calculation gives model/actual alignment at physical $W$:
+$x_{d-2}=C_{h-2}+1$ and $x_s=C_{u+s}$ for $s\ge d-1$.
+Thus the actual positive derivative tail from $W$ is always the
+geometric quotient cut at offsets $s\ge d-2$, regardless of the
+sign of the early quotient. Larger deficits require additional
+quotient-head deletion and startup payments and remain OPEN.
+
+\paragraph{Verification and scope.}
+The authoritative registration is
+\texttt{subdegree\_CI\_entrance\_verification.json}.
+\texttt{SubdegreeCI.lean} has eleven new scoped kernel reports;
+\texttt{SubdegreeCIChunkCertificate.lean} has three finite reports,
+including one axiom-free integer certificate. Ordinary kernel
+reduction over 31 bounded chunks checks all 11853 distinct field
+margins and all 24 distinct integer startup margins. A separate
+capacity-multiset grammar and reverse polynomial division rebuild
+all 215 low-degree quotient contexts. Independent positive suffix-
+box sums rebuild all 17 small actual hosts and all 31 startup minors,
+without using the iterated append algorithm of the primary QA.
+The unbounded ULC/window/convolution and unimodal-cut assemblies,
+model identification and all-read integration are written proofs,
+not an end-to-end Lean theorem for arbitrary compositions.
+
+The one-factor $[6],u=4$ primitive minor $4-3\phi<0$ remains an
+explicit exclusion control; its actual C is already known by the
+separate one-jump theorem. The first ordinary minor of the actual
+multifactored quotient $[3]^2,u=3$ is genuinely negative, so the
+weaker inverse/cut argument is necessary. The pre-mode LC assertion
+here is ONLY for the new count $u=h-1$. It is not propagated to the
+same physical centre at $u=h$, where the prior $(8,12,19)$ actual
+LC counter remains valid. The union is a theorem of C comparisons.
+Counts $0\le u<h-1$, earlier reference C, general C/A2 and the
+ORIGINAL general unamplified one-descent UI remain OPEN. No original
+least-counterexample numerical bound is upgraded.

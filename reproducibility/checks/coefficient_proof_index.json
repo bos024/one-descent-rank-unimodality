@@ -1,0 +1,154 @@
+{
+  "formal_arm_extensions.tex": {
+    "sha256": "d58c5585836f0315bcf8d6d1b9ce63af28663af1149f46b5db2b8228a7ab01e8",
+    "spans": [
+      [
+        171,
+        206
+      ]
+    ]
+  },
+  "joint_rising_differences.tex": {
+    "sha256": "9d50ca67c3dcbd3f0080a061b8ec98fe6609eaf5e8e70e7b067a8cbaedcfb974",
+    "spans": [
+      [
+        3,
+        49
+      ]
+    ]
+  },
+  "binary_ternary_A2_original_family_proof.tex": {
+    "sha256": "956160d8e49eaa86fbb62f8f63cacbbc411bfc2e7f2fac3bd4cf3003512ae393",
+    "spans": [
+      [
+        122,
+        135
+      ]
+    ]
+  },
+  "deficit_cumulative_ratios.tex": {
+    "sha256": "97a6591b82a393150d4148b00c8f8c02a024542ee15cbe44832e1e6fbe3255ca",
+    "spans": [
+      [
+        3,
+        122
+      ]
+    ]
+  },
+  "clipped_forward_ratio_frontier.tex": {
+    "sha256": "2be25e51bc51ac92b3134cb022ebce5458ac92e8ed804305b2d9de7741f7d0d8",
+    "spans": [
+      [
+        3,
+        49
+      ],
+      [
+        116,
+        162
+      ]
+    ]
+  },
+  "C_to_coupled_S_rising_window.tex": {
+    "sha256": "6788e20513abef72901493e538ace2279ccee2b5c7dc20f32257fb757c44ecaa",
+    "spans": [
+      [
+        5,
+        75
+      ]
+    ]
+  },
+  "agent_bothdeclining_first_birth.tex": {
+    "sha256": "c646a7eddfb2486a02136832a5dc19f99021f807100ddffac346ba95e22478e9",
+    "spans": [
+      [
+        4,
+        275
+      ]
+    ]
+  },
+  "agent_half_lc_actual_weak_curvature.tex": {
+    "sha256": "0191ec32500869be5d687ece5be011db4de6df7cfe47bf6cd1186ab4bc0b7674",
+    "spans": [
+      [
+        9,
+        284
+      ]
+    ]
+  },
+  "coupled_source_window_A2_and_kappa_nine_original_proof.tex": {
+    "sha256": "b65c3109a0716fc83ff0f884b4e1839e42143f31fde3892aa490c139b5cadb24",
+    "spans": [
+      [
+        5,
+        87
+      ],
+      [
+        90,
+        243
+      ]
+    ]
+  },
+  "first_missing_twelve_original_criterion_proof.tex": {
+    "sha256": "3eea816138a0be3cb9ed89101d25a54492c7d948aeebff0fbe33e9c8f0df7c5c",
+    "spans": [
+      [
+        2,
+        193
+      ]
+    ]
+  },
+  "actual_dyadic_slope_thinness_and_high_source_mixed_S_proof.tex": {
+    "sha256": "78a55b9bd8afcea31e3e50c4c7337f1152246cadd3f8c126eec321b253f8e1f5",
+    "spans": [
+      [
+        8,
+        189
+      ]
+    ]
+  },
+  "fixed_terminal_fourteen_slope_thinness_proof.tex": {
+    "sha256": "00d637c553bd2b494284e2e652398d4156b9bad1c77ab77e30c4841f3a70bdf8",
+    "spans": [
+      [
+        8,
+        122
+      ]
+    ]
+  },
+  "complete_mixed_source_unrestricted_C_original_criterion_proof.tex": {
+    "sha256": "088f62296f947795b516ae39c9895b82f98d2c7a87dd34a10f87e477afde4056",
+    "spans": [
+      [
+        30,
+        154
+      ]
+    ]
+  },
+  "inductive_signed_window.tex": {
+    "sha256": "c1b3b891a505f5160fb78f290b743d4dbc40dc260b7b58a194bb167e4904c1ae",
+    "spans": [
+      [
+        3,
+        80
+      ]
+    ]
+  },
+  "short_prefix_reflection_join.tex": {
+    "sha256": "ac6fc6b522d4e88d2c38cad6244b25d552c995dd528958921fcd28d47a60790a",
+    "spans": [
+      [
+        4,
+        120
+      ]
+    ]
+  },
+  "general_base_join_route.tex": {
+    "sha256": "defaac23a307d9ea9cd229b96031752f84e1f807e7c2189d76c21c0504a40c81",
+    "spans": [
+      [
+        35,
+        70
+      ]
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "status": "PASS_EXACT_ACTUAL_STRICT_HEAD_AND_MAIN_BOX_DIFFERENCE_QA",
+  "counts": {
+    "actual_strict_head_coefficients": 43675,
+    "main_box_differences_dominated": 43675,
+    "actual_opposite_profiles": 20,
+    "integer_budget_crosschecks": 1927
+  },
+  "profiles": [
+    {
+      "K": 74,
+      "beta": 1,
+      "g": 72,
+      "N": 1313,
+      "M": 2629,
+      "other_degree": 2557,
+      "sha256": "7c5e737331c2bde6cbe180a7010a6b2b0bc887baedc72664296eb29b048b3917"
+    },
+    {
+      "K": 74,
+      "beta": 2636,
+      "g": 72,
+      "N": 1313,
+      "M": 5264,
+      "other_degree": 2628,
+      "sha256": "4cabaebaefe5e24f2d0126b9e597fde849b2d951a71b85c4fb83986d69eda48a"
+    },
+    {
+      "K": 74,
+      "beta": 1,
+      "g": 72,
+      "N": 1313,
+      "M": 5195,
+      "other_degree": 2557,
+      "sha256": "212bbe0d034eb1e719e5ff70478fc7e62106b437449fbb0e41bb5c27809c1006"
+    },
+    {
+      "K": 74,
+      "beta": 17,
+      "g": 150,
+      "N": 1313,
+      "M": 2723,
+      "other_degree": 2651,
+      "sha256": "f62b1b143a84bccd8b419e548673656e15682b30647a9f385ad7afe962a0ed71"
+    },
+    {
+      "K": 74,
+      "beta": 22,
+      "g": 72,
+      "N": 1313,
+      "M": 4042,
+      "other_degree": 3970,
+      "sha256": "33faee6731a1e618dbf4fcab6e97818bf9ae4aa427abc3b76ea8fe56d486073b"
+    },
+    {
+      "K": 75,
+      "beta": 1,
+      "g": 73,
+      "N": 1332,
+      "M": 2702,
+      "other_degree": 2629,
+      "sha256": "76ec2939fb4de68aee18804a6e892e6ce17afdde572634bf3581e35fae87e99d"
+    },
+    {
+      "K": 75,
+      "beta": 2674,
+      "g": 73,
+      "N": 1332,
+      "M": 5375,
+      "other_degree": 2701,
+      "sha256": "3cc8ced6c707cd099145020fec39c9f38ddbe35a6b57278c1cc2e9e462429b6d"
+    },
+    {
+      "K": 75,
+      "beta": 1,
+      "g": 73,
+      "N": 1332,
+      "M": 5305,
+      "other_degree": 2629,
+      "sha256": "fd57d8e3e82118c02423111cb79950eba243fe90c3a0e7befa30d56277e47cf4"
+    },
+    {
+      "K": 75,
+      "beta": 11,
+      "g": 152,
+      "N": 1332,
+      "M": 2791,
+      "other_degree": 2718,
+      "sha256": "c3744c9bd7b60997c91617669ae88733105282029417b3ec76c14eba4abd939d"
+    },
+    {
+      "K": 75,
+      "beta": 1,
+      "g": 73,
+      "N": 1332,
+      "M": 4032,
+      "other_degree": 3959,
+      "sha256": "7c017f2c32093d6621138d4cb47d89508ce96f9b43fb3d4c81fbd73031d6cbf7"
+    },
+    {
+      "K": 96,
+      "beta": 1,
+      "g": 94,
+      "N": 1720,
+      "M": 4466,
+      "other_degree": 4372,
+      "sha256": "34a70229ffe2b8792f9331efb225aa8a1848fb00c00fda945446894404b8a61d"
+    },
+    {
+      "K": 96,
+      "beta": 3450,
+      "g": 94,
+      "N": 1720,
+      "M": 7915,
+      "other_degree": 4465,
+      "sha256": "ca134353463c7aa0f43c05eccb22cd972168ad4346986e1897d882bd450be09b"
+    },
+    {
+      "K": 96,
+      "beta": 1,
+      "g": 94,
+      "N": 1720,
+      "M": 7824,
+      "other_degree": 4372,
+      "sha256": "1b8288e1b72323c6326fc2d5788b51f547d2e80a0dd51e4328b640a02c2cbbdf"
+    },
+    {
+      "K": 96,
+      "beta": 18,
+      "g": 194,
+      "N": 1720,
+      "M": 4583,
+      "other_degree": 4489,
+      "sha256": "a59caa542c8619d45660ce19beeb6eb5a532fe675023f9fbeff221ab77f6f2d6"
+    },
+    {
+      "K": 96,
+      "beta": 17,
+      "g": 94,
+      "N": 1720,
+      "M": 6316,
+      "other_degree": 6222,
+      "sha256": "5875997ca98e4aaf406b11f9a9be4163c46c3a71cfbed69822d57ed8a36d8365"
+    },
+    {
+      "K": 239,
+      "beta": 1,
+      "g": 237,
+      "N": 4366,
+      "M": 28204,
+      "other_degree": 27967,
+      "sha256": "26ea55c005dc68d47410bb30d80f1c88f6c78c6301f744ff16f2229f2ffaaf7c"
+    },
+    {
+      "K": 239,
+      "beta": 8742,
+      "g": 237,
+      "N": 4366,
+      "M": 36945,
+      "other_degree": 28203,
+      "sha256": "edc526003183cdabd46354d0a731136c4d95c667ef06c4088fcf5410c20ac310"
+    },
+    {
+      "K": 239,
+      "beta": 1,
+      "g": 237,
+      "N": 4366,
+      "M": 36711,
+      "other_degree": 27967,
+      "sha256": "30a6565652202cf50e5416cf30988f88d0966e1f3544ecd6ff3f15dc8ebf12af"
+    },
+    {
+      "K": 239,
+      "beta": 17,
+      "g": 480,
+      "N": 4366,
+      "M": 28463,
+      "other_degree": 28226,
+      "sha256": "002ed7bec67c8b2bfd309862161fac8833dbebbdfeedb2beecec5a19a8a1293f"
+    },
+    {
+      "K": 239,
+      "beta": 5,
+      "g": 237,
+      "N": 4366,
+      "M": 42079,
+      "other_degree": 41842,
+      "sha256": "8871de035cc75141b013d9f113941bebb1e92a30dd02211a914bd6bbe0e6227b"
+    }
+  ],
+  "seconds": 1.578,
+  "independent_mathematical_review": "Root and audit_linear_clipping agent independently checked raw-source single-term payment, main-box strictness, extra CI lower centers and sharper positive-recovery head bound.",
+  "scope": "Finite diagnostics only. Unbounded 74 conclusion uses the written source-birth/CI proof and generic Lean kernels. The failure at73 is only of the sufficient budget, not an actual S counterexample. General original UI remains open."
+}

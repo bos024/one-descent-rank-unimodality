@@ -1,0 +1,120 @@
+{
+  "status": "PASS_UNBOUNDED_TERNARY_RICH_PROPER_QUADRATIC_QUOTIENT",
+  "new_scoped_reports": 7,
+  "kernels": {
+    "TribonacciRichReverseQuotient": {
+      "TribonacciRichReverseQuotient.complete_reverse_binary_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciRichReverseQuotient.complete_reverse_ternary_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciRichReverseQuotient.whole_reverse_two_count_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciRichReverseQuotient.strong_reverse_quarter_box": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciRichReverseQuotient.rich_norm_uniform_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "TribonacciRichReverseQuotient.binary_increasing_norm_cone_induction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "TribonacciRichReverseCertificate": {
+      "TribonacciRichReverseCertificate.complete_reverse_scalar_certificate": [
+        "propext"
+      ]
+    }
+  },
+  "theorem": "ALLu>=4,r>=2u:TRUEpolynomialdivision[2]^u[3]^r=(1+a*z+b*z\u00b2)J+R0+R1z hasSTRICTLYpositive/GLOBALLYordinaryLC J. NOupperbinary/threecountbound. ActualD/primitiveLCnotasserted.",
+  "norm_cone": "MOREGENERALALLr>=18,u>=0withb*sigma^u*b^r<=1/64 havepositiveGLOBALordinaryLCJ; sigma=a\u00b2/b=1+2lambda-lambda\u00b2>1. FirstprovepureALLr>=18fromONEpure18seedandcontractingternarynorm;thenALLbinarycountsbyINCREASINGnormtargetinductionsinceEVERYearliernorm<=target. No unboundedcriticaldiagonalpremise.",
+  "norm": "BOTHreverse-normalizedinverseTERMINALpairANDsignedPOLYNOMIALREMAINDERpairhaveR=b*x\u00b2+a*xy+y\u00b2=b*sigma^u*b^r. Binarymap/ADJUGATEremainderMAPbothnormscaleSIGMA;ternarymap/dualremainderMAPbothscaleb. EXACTtwo-countnorminduction. StrongcoercivityR>=sumSquares/4;richR=b*(a\u00b2*b)^u*b^(r-2u)<=48/3125<1/64ALLu>=4. ALLphases/remaindersretained.",
+  "full_head": "ReverseprefixthroughD-4givesJ[2..]LCONLYcentres>=3. EXPLICITBOTHmissingJcentre1AND2andJ0/J1/J2positivepaidatALLREALw>=12,r\u2208[0,w],REMAINDERquarterboxby102Bernsteincoeffs. Neveromitcentre2. ReverseextensionALLSIXcornersforw>=18/fullterminalboxpaidby376coeffs. TOTAL478coeffs;COMPLETE3105tensoridentityreadswithdegreebounds(8,4,2,2)/(4,2,2,2),notparameterQA.",
+  "entrance": "ONEpureu0r18J[2..]seed+COMPLETE30richr8..17quotients=31contexts;993coefficients/931minorsallpositive. 2350distinctfieldtriples/25LeanIntegerchunksONEaggregate. IndependentlyclosedCIproducts/FORWARDinverseofREVERSEDdenominatorinQ(a),notprimaryBACKWARDJinQ(lambda). BOTHterminal/remaindernormandALLdivisioncoefficientsindependentlyreconstructed.",
+  "formal_scope": "SEVENnewreports:6completepair/dual-pairnorms/two-Natnorm/strongbox/richall-u-kpayment/increasingbinaryconepredicate+1ALLfinitecertificate. Oldroot/BernsteinsumkernelsREUSEDwithoutrecount. LCconvolution,properdivision/reversal/pairidentifications,completebounded-degreeinterpolationandwholepure-then-binarynormconeassemblyarewrittenproof,NOendtoendLeancompositions. ONEpure+30smallrfiniteentranceEXPLICIT/no sampled universalpremise.",
+  "remaining": "PositiveprimitiveLCofJstillSEPARATEOPENcandidate(despite490hostdiagnostics). ActualinfiniteonesDhasALLotherQ3sourcecomponents;wholeactuallambda-residualordinaryLCisFALSE(u71r209,n400). DoNOTinferactualstrongdiagonal/generalC/fullA2/ORIGINALUIfromquotientalone. ActualcompleteCbinaryrange4..32unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "primitive_LC": "OPEN",
+  "counts": {
+    "independent_ALL_division_identity_reads": 1057,
+    "independent_complete_entrance_hosts": 31,
+    "independent_base_coefficients": 993,
+    "independent_base_LC_minors": 931,
+    "independent_full_two_phase_norm_identities": 31,
+    "COMPLETE_tensor_identity_reads_reverse_extension": 2430,
+    "COMPLETE_tensor_identity_reads_whole_J_head": 675
+  },
+  "QA": {
+    "whole_proper_quotient_LC_minors": 135758,
+    "ALL_polynomial_division_identity_reads": 137914,
+    "EXACT_norm_and_complete_remainder_box_hosts": 539,
+    "rich_hosts": 322,
+    "general_norm_cone_hosts": 217
+  },
+  "independent_state_sha256": "8d0b18cafeea84d311d150d78d2b70062af8c9294c915b6afdd5f5d34f2890b8",
+  "seconds": 2.5940000000045984,
+  "local_files": [
+    "tribonacci_rich_reverse_quotient_proof.tex",
+    "TribonacciRichReverseQuotient.lean",
+    "TribonacciRichReverseQuotient.log",
+    "TribonacciRichReverseCertificate.lean",
+    "TribonacciRichReverseCertificate.log",
+    "build_tribonacci_rich_reverse_certificate.py",
+    "tribonacci_rich_reverse_certificate_data.json",
+    "audit_tribonacci_rich_reverse_quotient.py",
+    "audit_tribonacci_rich_reverse_quotient.json",
+    "verify_tribonacci_rich_reverse_quotient.py",
+    "probe_reverse_tribonacci_bernstein_corners.py",
+    "probe_reverse_tribonacci_bernstein_corners.json",
+    "probe_reverse_tribonacci_head_payments.py",
+    "probe_reverse_tribonacci_head_payments.json"
+  ],
+  "dependency_files": [
+    "tribonacci_quadratic_inverse_verification.json",
+    "tribonacci_inverse_complete_certificate_data.json",
+    "verify_tribonacci_quadratic_inverse.py",
+    "probe_tribonacci_quadratic_inverse.py",
+    "probe_tribonacci_inverse_bernstein_corners.py",
+    "TribonacciInverseClosure.lean",
+    "TribonacciInverseClosure.log"
+  ],
+  "sha256": {
+    "tribonacci_rich_reverse_quotient_proof.tex": "a11aeaef1b5323773288d25fcaea1395cfdc324665c2a5c1038e30de80b9da5d",
+    "TribonacciRichReverseQuotient.lean": "a1fc99e8bb6179c47154fcf95b190796c3d70d1389319b08c0cb41b00095f662",
+    "TribonacciRichReverseQuotient.log": "c72e067dbd2c83017d20416c2fab8765bfeab2b74b82a9cd200ace9060418e21",
+    "TribonacciRichReverseCertificate.lean": "a1b0b114c9445937cd3722732b61fee751b4c26975ce6b3eacb18de52ac259ba",
+    "TribonacciRichReverseCertificate.log": "e6bb87a1c243e350718012e7dca67fa9b7361e107c098c22c8bcf80fb52eebd9",
+    "build_tribonacci_rich_reverse_certificate.py": "02f5b77d87a2c4556be51005ee093e7561e755a64260570565ca32449c846cbe",
+    "tribonacci_rich_reverse_certificate_data.json": "b2461fa63130022b210135cc33251203776d2bb411b1062e7846d9ef215e156c",
+    "audit_tribonacci_rich_reverse_quotient.py": "2e2e4e430862378462666c2f3f985cd6af8f13c1c1662779f8ef25c2597309ee",
+    "audit_tribonacci_rich_reverse_quotient.json": "d66426d67430585568b5a2e54fac515b0fe78d6212cf1d357a522407657d01eb",
+    "verify_tribonacci_rich_reverse_quotient.py": "dc5c6a5050877e1b984de16a5724805b1d2919b11b38b2fff56470985d3453ef",
+    "probe_reverse_tribonacci_bernstein_corners.py": "617f0415f6e9812c2adf85b248a30de5eac79f90e9d905c5fce4171e8f377fad",
+    "probe_reverse_tribonacci_bernstein_corners.json": "5e408c4df9d2e0d723b5b2693f7fa9c31e4df68e2af717c913d0272cfac46255",
+    "probe_reverse_tribonacci_head_payments.py": "e7f08ddcfc5982227a61a5ba952b6a42fa17ac5ff57cac85001b99a2c92dd1fa",
+    "probe_reverse_tribonacci_head_payments.json": "e1bb1b626129acd1cbfc89dcbfa3c9533071951838f715ff0aa0e89cd71098c2",
+    "tribonacci_quadratic_inverse_verification.json": "4648136f232de4b3f3b72b000fc23156ce84c9df415ce1dcb4bfe854ce83cf49",
+    "tribonacci_inverse_complete_certificate_data.json": "983e214abcbc45b87ac1654b5a30dcc640b58f7217ed7f856d3694cc673c2233",
+    "verify_tribonacci_quadratic_inverse.py": "d640aa93703309cb4cbb6a198076d1654fabef4c27c35d6937ae72c0ef6f5869",
+    "probe_tribonacci_quadratic_inverse.py": "5b6ffa31528288c017058455c0e269efe6a7418a85cf61da4de499cdefe71cf8",
+    "probe_tribonacci_inverse_bernstein_corners.py": "8545b75c4baa2c9947446a051b73acb39101048f21ab011e297e969a92fe3057",
+    "TribonacciInverseClosure.lean": "21ffa04800fb0d5cae0d62f3a9734486c15c1cab4e054139eb85d084a3c8c145",
+    "TribonacciInverseClosure.log": "b864ee1b72d36604de06f145e0c00573fe522e1901a6800c13ad89e6d1a2a582"
+  }
+}

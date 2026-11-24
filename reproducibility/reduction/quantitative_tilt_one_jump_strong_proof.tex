@@ -1,0 +1,163 @@
+\section{Quantitative normalized tilts and every one-factor crossing entrance}
+This refinement strengthens the registered normalized relative-C theorem.
+It supplies the strong physical entrance needed by the new hereditary
+theorem for EVERY actual one-jump arm $1^\alpha2^uL$ with
+$u\ge1$ and $L-1>u$. Consequently arbitrary later sorted nonbinary
+suffixes are allowed. No general multi-tail density LC is assumed.
+
+\paragraph{Normalized geometric tilts preserve additive cumulative margins.}
+Use the existing atom models
+\[
+ Q_D=1+\sum_{n\ge2}D_nz^n,\qquad
+ F_D=Q_D/(1-z),\quad G_D=Q_D/(1-z)^2,
+ \qquad D^a_n=a^{n-2}D_n,\quad0<a\le1.
+\]
+Suppose $H_i=G_D(i)-\lambda G_D(i-1)\ge c$ for $1\le i\le k$,
+where $0\le c\le1$, $H_0=1$, and $\mu=a\lambda\ge1$.
+The exact registered coefficient identity is
+\[
+ a^2\{G_{D^a}(k)-\mu G_{D^a}(k-1)\}
+ =\sum_{i=0}^k K_a(k-i)a^iH_i
+       +(a^2-1)\{1+k(1-\mu)\},                       \tag{1}
+\]
+where $K_a(0)=1$ and
+$K_a(j)=2(1-a)+(j-1)(1-a)^2$ for $j\ge1$.
+All weights in the sum are nonnegative. Its COMPLETE row sum is
+\[
+ \sum_{i=0}^kK_a(k-i)a^i=1+k(1-a).
+\]
+One unbounded induction proves this identity: the row totals start at1
+and satisfy $T_{k+1}=aT_k+2(1-a)+k(1-a)^2$.
+Keeping the rank-zero term one, rather than replacing it by the
+weaker bound c, bounds the right side of (1) below by
+\[
+ K_a(k)+c\{1+k(1-a)-K_a(k)\}
+       +(a^2-1)\{1+k(1-\mu)\}.
+\]
+Its difference from $a^2c$ is EXACTLY
+\[
+ k(1-a)\{(1-c)(1-a)+c+(1+a)(\mu-1)\}\ge0.           \tag{2}
+\]
+Hence every needed tilted cumulative margin is at least c.
+No division at $a=0$ is used; actual tilts have $a>0$.
+The unit atom is essential.
+
+Suppose now the actual normalized density over a positive reference
+is nonincreasing and relatively LC through the current rank N,
+with both atom sequences normalized by $D_2=r_2=1$.
+Set $a=(D_N/r_N)/(D_{N-1}/r_{N-1})\le1$.
+The existing density induction gives $D_i/(a^{i-2}r_i)$ nondecreasing
+and at least one on the entire read prefix.
+With the shared atom one at zero, cumulative LR order holds for F
+and, after a second summation, for G. Coordinatewise domination also holds.
+Thus if the tilted G has margin c, the actual G has at least that margin:
+for actual (X,Y) and tilted (A,B), use
+$XB\ge AY$, $Y\ge B>0$ and $A-\mu B\ge c\ge0$.
+Multiplying by B gives $X-\mu Y\ge c$.
+This is the quantitative strengthening of normalized relative inheritance.
+
+\paragraph{An all-capacity ordinary seed for the tilted one-jump reference.}
+Let $f_n=\operatorname{Fib}(n)$, $f_0=0$, $f_1=1$.
+The reference $R=1+S_L/(1-z-z^2)$ has
+$r_n=f_n-f_{n-L}$ for $n\ge2$.
+In particular $r_L=f_L$, $r_{L+1}=f_{L+1}-1$.
+For $n\le L$ its normalized tilt has ordinary values
+\[
+ T_n=1+\sum_{i=2}^n a^{i-2}f_i,\quad T_0=T_1=1.
+\]
+Put $\mu=a(f_{L+1}-1)/f_L$. We prove the UNIFORM polynomial bound
+\[
+ P_L(a):=f_LT_L-a(f_{L+1}-1)T_{L-1}\ge4
+                   \qquad(L\ge3,\ 0\le a\le1).       \tag{3}
+\]
+At L=3 the polynomial is exactly4. For L>=4, collecting EVERY
+coefficient gives
+\[
+\begin{split}
+ P_L(a)={}&2f_L+(2-2f_{L-1})a\\
+ &+\sum_{k=2}^{L-3}
+ \{(-1)^{k+1}f_{L-k-1}+f_{k+1}\}a^k\\
+ &+\{f_{L-1}+(-1)^{L+1}\}a^{L-2}.                  \tag{4}
+\end{split}
+\]
+The middle coefficient identity is the full Fibonacci determinant
+$f_Lf_{k+2}-f_{L+1}f_{k+1}=(-1)^{k+1}f_{L-k-1}$.
+The last coefficient is Cassini. These are exact identities at
+arbitrary indices, not sampled polynomial interpolation.
+
+The last term of (4) is nonnegative. Its first linear coefficient
+is nonpositive and therefore its contribution is at least
+$2-2f_{L-1}$. Each middle contribution is at least $-f_{L-k-1}$,
+since $0\le a^k\le1$. The ENTIRE negative budget is
+\[
+ \sum_{k=2}^{L-3}f_{L-k-1}
+       =\sum_{j=2}^{L-3}f_j=f_{L-1}-2.
+\]
+It follows that
+\[
+ P_L(a)\ge2f_L-3f_{L-1}+4=f_{L-4}+4\ge4.
+\]
+The empty middle sum at L=4 is included. The complete finite-sum
+payment and both unbounded Fibonacci identities are kernel checked.
+In particular (3) proves the ordinary tilted seed
+$T_L-\mu T_{L-1}>0$ whenever $a>0$.
+
+\paragraph{All actual one-factor crossings have a strong entrance.}
+Take $1^\alpha2^uL$, $L-1>u\ge1$, nonbinary weight W=L.
+If $D_{L+1}\le D_L$ or the pair is clipped, its later C comparisons
+are automatic by the registered D shape/LC.
+Otherwise $L+1$ lies through the first actual D mode.
+The registered general one-jump proof gives normalized nonincreasing
+relative LC of actual D over r through that entire prefix:
+its uniform entrance covers all binary counts $u\le L+2$,
+and here $u\le L-2$.
+
+The current reference ratio
+$\lambda=(f_{L+1}-1)/f_L<\phi$.
+The registered arbitrary-reference quantitative theorem gives
+$G_r(k)-\phi G_r(k-1)\ge q^2$ at EVERY k>=1.
+It therefore gives the same margin at ratio lambda.
+Use (1)--(2) with c=q² and the actual density tilt a.
+Cumulative LR transfer gives the strong ACTUAL G margin q²
+at all reads1..L, including the two reads beyond the ordinary
+C shift-three prefix.
+
+For the ordinary seed use (3): $F_{r^a}(L)/F_{r^a}(L-1)>\mu$.
+One cumulative LR comparison gives
+$F_{\rm actual}(L)/F_{\rm actual}(L-1)\ge
+F_{r^a}(L)/F_{r^a}(L-1)>\mu$.
+Thus actual ordinary LC at centre L is strict.
+Universal actual pre-mode D-LC, ordinary positive-slope concavity
+after the D mode, and ordinary tail LC prove the full ordinary
+LC tail from L. All three strong entrance conditions are established.
+
+The hereditary theorem now gives, for EVERY $\alpha,u\ge1$ and EVERY
+sorted nonbinary tail V whose FIRST capacity is at least u+2,
+every actual C shift at every current
+\[
+                              N\ge\sum V+1.
+\]
+The later capacities and their number are arbitrary.
+This is stronger than the old one-jump C theorem: the latter alone
+did not supply the additive margin and ordinary seed required to
+append an arbitrary nonbinary suffix.
+
+In the remaining large-u late-C reduction, a first crossing prefix
+of length one is therefore COMPLETELY ELIMINATED, rather than reduced
+to one later factor. Any possible large-u failure now has a first
+crossing prefix of at least two nonbinary factors, which fails the
+seed cone, followed by at most SIX factors. In particular the FIRST
+nonbinary capacity must be at most u+1. The crossing prefix and u
+remain unbounded; general earlier C, the unseeded crossing, full A2
+and original unamplified coefficient unimodality remain OPEN.
+
+Nine new scoped Lean reports check the full normalized-tilt row
+induction, exact positive factorization, finite weighted-margin/LR
+transfer, entire coefficient negative-budget payment, both full
+Fibonacci sum/linear identities, and the L3 seed.
+The actual density reference identification, all-capacity coefficient
+formula (4), formal-series/source identifications and entire actual
+sequence/mode assembly are the written proof above; no end-to-end
+Lean composition-ideal theorem is claimed. Every new finite test is
+QA only. No finite entrance premise is introduced.
+

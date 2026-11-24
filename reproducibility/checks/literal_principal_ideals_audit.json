@@ -1,0 +1,14 @@
+{
+  "status": "PASS_LITERAL_HOSTS_AND_ALL_JOINT_UPPER_SETS",
+  "max_host_weight": 14,
+  "counts": {
+    "distinct_hosts": 6095,
+    "one_descent_or_monotone": 5020,
+    "bitonic": 3332,
+    "both_classes": 2257,
+    "genuine_rank_coefficients": 82468,
+    "distinct_word_memberships": 907940,
+    "exact_joint_upper_sets": 210461
+  },
+  "digest": "4e0e8a0144c2586ee0fc83f043b3cb9c4e3ab6d308a52b4f0c25e08bcf020f88"
+}

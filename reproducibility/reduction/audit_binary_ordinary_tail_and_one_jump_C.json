@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_BINARY_ORDINARY_TAIL_AND_DOMINANT_ONE_JUMP_C_QA",
+  "counts": {
+    "full_binary_ordinary_tail_minors": 237248,
+    "binary_ordinary_relative_LC_minors": 172137,
+    "ALL_nondegenerate_C_shifts": 39914699,
+    "actual_dominant_one_jump_arms": 5245,
+    "exact_mode_boundary_arms": 1583,
+    "actual_binary_prefixes": 1600
+  },
+  "seconds": 11.172000000005937,
+  "scope": "Finite exact actual-word QA only. Separate unbounded polynomial recurrence/tail induction and normalized-relative-C transfer prove the declared families. No theorem for smaller jumps, general C/A2/original UI."
+}

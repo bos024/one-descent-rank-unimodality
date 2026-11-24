@@ -1,0 +1,19 @@
+{
+  "status": "EXACT_QA_UNBOUNDED_CI_COUNT_WEDGE_LATE_C_UNDER_AUDIT",
+  "counts": {
+    "reference_CDF_dyadic_growth_comparisons": 108703,
+    "actual_loss_triple_growth_comparisons": 75768,
+    "exact_integer_dyadic_ternary_prefix_payments": 75768,
+    "actual_ordinary_boundary_seed_payments": 5946,
+    "all_prefix_strong_C_seed_products": 640326,
+    "strictly_growing_actual_boundary_hosts": 5946,
+    "exact_prefix_minimum_all_shift_C_payments": 1263606,
+    "logical_shift_coverage": 361688200,
+    "actual_hosts": 5946,
+    "CI_profiles": 991,
+    "literal_all_shift_C_products": 1913455
+  },
+  "state_sha256": "904b97cc26e22d82ebdff255e64cbec27aa515c7c336a29b979446bacd5b65d2",
+  "seconds": 12.29700000000048,
+  "scope": "WHOLE unbounded cone u+r>=4(h-u)-5,delta>=5 proposed actual late C. Every finite profile and bound here is QA ONLY, NO finite entrance premise. Exact source pays EVERY cumulative read directly; ordinary and double cumulative losses retained. General earlier C/A2/original UI OPEN."
+}

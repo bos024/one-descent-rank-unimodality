@@ -1,0 +1,222 @@
+\section{A hereditary strong late-C entrance and unrestricted sorted suffixes}
+Let $F$ be the ordinary rank sequence of an actual normalized sorted arm
+$1^\alpha2^uV$. Write $h=\sum_{t\in V}(t-1)$, $W=\sum V$,
+$r=|V|$, $w=u+r$, $q=\phi-1$, and $c=q^2=2-\phi$.
+Cumulatives are $G_k=\sum_{j\le k}F_j$, zero below zero and constant
+after the ordinary support. Signed slopes are $d_n=F_n-F_{n-1}$,
+and positive slopes $D_n=d_n^+$ have $D_0=D_1=0$.
+All conclusions below concern actual finite padding, with all capacities,
+counts and ranks unbounded.
+
+We use the registered actual ordinary and positive-slope unimodality,
+strict positive-slope support, ordinary tail LC, and universal positive-D
+LC before its first mode at centres $W+1$ and later when $h>u$.
+The ordinary tail-LC input includes its actual first-mode boundary.
+No global ordinary LC or finite/infinite relative LC is assumed.
+
+\paragraph{The conditional strong entrance.}
+For an arm with $h>u$, call its physical entrance strong if, WHEN
+$D_{W+1}>D_W>0$, its ratio $\lambda=D_{W+1}/D_W$ satisfies
+\[
+ \lambda<\phi,\qquad
+ F_n^2\ge F_{n-1}F_{n+1}\quad(n\ge W),\qquad
+ G_k-\lambda G_{k-1}\ge c\quad(1\le k\le W).       \tag{1}
+\]
+When the entrance is flat, falling or clipped, (1) imposes no
+ordinary-LC or positive-ratio assertion. Universal pre-mode D-LC
+and D-unimodality imply all later D pairs are nonincreasing,
+so every later C comparison is automatic in this branch.
+A pre-mode flat is excluded using LC, not unimodality alone.
+
+A strong entrance implies every C comparison from current $W+1$.
+Indeed, at a later strictly growing current $N$, use its OWN ratio
+$\mu=D_N/D_{N-1}\le\lambda$. Every earlier positive-D ratio from
+$W+1$ through $N$ is at least $\mu$, by pre-first-mode D-LC.
+Ordinary LC at centre $W$ is exactly
+$D_WF_W-D_{W+1}F_{W-1}\ge0$, so $F_W-\mu F_{W-1}\ge0$.
+Integrate the nonnegative $d_j-\mu d_{j-1}$ to extend this ordinary
+comparison, then integrate once more to extend the cumulative margin.
+The paid prefix in (1) therefore supplies every C read, with additive
+margin at least $c$ whenever the current pair strictly grows.
+Falling current pairs and zero support are immediate.
+
+\paragraph{A quantitative reference margin strengthens the existing seeds.}
+For the infinite binary cumulative $g_n=\operatorname{Fib}(n+3)-1$,
+set $K_0=1$, $K_n=g_n-\phi g_{n-1}$ for $n\ge1$.
+Its exact recurrence is $K_{n+1}=1-qK_n$. The interval $[q^2,1]$
+is invariant: if $q^2\le K\le1$, then
+$1-qK\ge1-q=q^2$ and $1-qK\le1$.
+Thus every positive reference read has golden margin at least $c$.
+
+An append $t\ge3$ gives $g'_k=1+\sum_{i=1}^t g_{k-i}$.
+Its golden residual is $-q$ plus the sum of the old residuals.
+For $1\le k\le t$ the rank-zero residual contributes one, paying
+the atom and leaving at least $1-q=c$; all other reads are nonnegative.
+For $k>t$, there are $t$ positive reads, so the margin is at least
+$tc-q\ge c$, since $t\ge3$ and $2q^2\ge q$.
+Induction on the entire arbitrary capacity list proves
+\[
+                g_k-\phi g_{k-1}\ge c\quad(k\ge1).    \tag{2}
+\]
+The order need not be sorted for this reference statement.
+
+The registered weaker count-cone proof supplies strong entrances at
+EVERY seed with
+\[
+ r\ge2,\quad h-u\ge5,\quad W\ge33,\quad
+                    17u+4r+30\ge13h.                \tag{3}
+\]
+This is a strengthening of its recorded margins, not an appeal to its
+finite QA. At every unprotected read the proof pays the full source
+with strictly positive surplus $711E_j/928$, IN ADDITION TO the
+reference golden margin (2). Protected reads satisfy (2) directly.
+Its two ordinary seeds preserve the same cumulative margin through
+the last two reads. Its first ordinary seed gives LC at centre $W$.
+Universal D-LC integrates ordinary LC up to the first D mode;
+thereafter positive nonincreasing slopes give ordinary LC by concavity
+until the ordinary mode, and registered ordinary tail LC covers the rest.
+This establishes the ENTIRE ordinary LC tail in (1).
+The low-degree and small-weight cases of the earlier count-cone theorem
+are not silently assumed to have this stronger invariant; only (3) is
+used as a new seed.
+
+There are additional strong seeds at EVERY $u\ge33$, $1\le h-u\le4$,
+including one-factor tails. Here is the complete low-gap argument.
+Write $x=D^{\rm ref}_W$, $y=D^{\rm ref}_{W+1}$ and
+$A=x^2+xy-y^2>0$. At gap one the full reference prefix through W
+is retained, and the next derivative loses $c_0=1$ or2. The ordinary
+seed is exactly $A+c_0y>0$, the ratio decreases below $y/x<\phi$,
+and (2) gives every G margin without a lost prefix read.
+At gap two the losses at W,W+1 are
+$(b_0,c_0)=(2,2w+1)$ for alpha1, $(1,w+2)$ for alpha2,
+and $(1,w+1)$ thereafter. Since $w\ge33$, $c_0\ge3b_0$.
+The reference G prefix through W-1 is retained; the ordinary seed is
+\[
+ (x-b_0)(x+y-b_0)-(y-c_0)y
+ =A+b_0^2+x(c_0-3b_0)+(y-x)(c_0-b_0)>0.
+\]
+It extends the unchanged cumulative margin to W and lowers the entry
+ratio below phi. At gap three the TWO registered ordinary seeds in
+the triple-subdegree proof extend its protected G prefix through W-2.
+At gap four the THREE registered seeds in the four-subdegree proof
+extend its protected prefix through W-3. Their hypotheses $w\ge6$
+and $w\ge11$ follow from $u\ge33$. In each case the exact additive
+margin (2), rather than merely nonnegativity, is preserved. The same
+ordinary-seed/D-LC integration gives the full ordinary LC tail.
+
+\paragraph{Hereditary theorem: every legal nonbinary append preserves (1).}
+Suppose an arm has a strong entrance and append any $t\ge\max V$,
+$t\ge3$. The exact actual recurrence is $F'=1+S_tF$.
+Put $W'=W+t$, $a=W$, $b=W+t$. Its signed entrance pair is
+\[
+ A=d'_{W'}=F_{b-1}-F_{a-1},\qquad
+ B=d'_{W'+1}=F_b-F_a.                              \tag{4}
+\]
+Only $B>A>0$ needs proof.
+
+Ordinary unimodality and strict positive-slope support first imply
+$d_a>0$: if rank $a$ had no positive slope, $F$ could not rise
+between $a-1$ and $b-1$, contrary to $A>0$.
+Equation (4) gives $d_b-d_a=B-A>0$, hence $d_b>d_a>0$.
+D-unimodality makes EVERY signed slope on $[a,b]$ positive.
+If the old entry were flat or falling, its universal D-LC and UI
+would exclude this rise, so its conditional strong invariant applies.
+
+Every old D ratio on $[a+1,b]$ is at most $\lambda$: use pre-mode
+LC up to the first D mode and ratio at most one thereafter.
+Sum these inequalities and use (4):
+\[
+                     \mu:=B/A\le\lambda<\phi.       \tag{5}
+\]
+This argument includes windows crossing the first D mode.
+
+All ordinary values on $[a-1,b]$ are positive. Ordinary LC from
+centre $a$ gives decreasing adjacent F ratios, in particular
+$F_bF_{a-1}\le F_aF_{b-1}$. Exact subtraction then gives
+\[
+  B F_{b-1}\le A F_b,\qquad
+              \mu\le F_b/F_{b-1}.                  \tag{6}
+\]
+Thus EVERY F ratio from index $a$ through $b$ is at least $\mu$.
+This uses the upper endpoint ratio, rather than the latest D ratio.
+
+By (5), every old G read through $W$ retains margin $c$ at ratio $\mu$.
+For $W<k\le b-1$ use
+\[
+ (G_k-\mu G_{k-1})-(G_{k-1}-\mu G_{k-2})
+                         =F_k-\mu F_{k-1}\ge0
+\]
+and (6). Hence every old G read needed by the new strong prefix
+has the same additive margin. The exact cumulative identity gives
+\[
+ G'_k-\mu G'_{k-1}
+       =1-\mu+\sum_{i=1}^t(G_{k-i}-\mu G_{k-i-1}).   \tag{7}
+\]
+For $1\le k\le t$ the sum contains the rank-zero term one,
+leaving $2-\mu\ge2-\phi=c$. For $k>t$ it contains $t$ positive
+old gaps, leaving at least $tc-(\mu-1)\ge tc-q\ge c$.
+All other negative-index terms are exactly zero.
+This proves every new strong G read through $W'$.
+
+Finally truncate the old F below index $W-1$. The resulting sequence
+is globally LC: all its interior centres are at least $W$, and its
+new left endpoint is automatic. Its length-$t$ window agrees with
+the new F at EVERY centre $n\ge W+t$, including both neighbouring
+reads. Ordinary LC convolution therefore proves the new entire
+ordinary LC tail from $W'$. This supplies the new ordinary seed.
+Together with (5) and (7) it closes (1).
+If the new entrance is not strictly growing, the automatic branch
+applies. Thus induction over EVERY finite sorted suffix is valid.
+
+Consequently, whenever ANY nonbinary prefix satisfies (3), the
+whole actual sorted arm has every C shift at every current
+\[
+                         N\ge W_{\rm final}+1,      \tag{8}
+\]
+regardless of the suffix's number or size of parts. The final word
+need not satisfy any count cone. The extra boundary $N=W_{\rm final}$
+is not claimed by this hereditary argument.
+
+\paragraph{An explicit new family and a constant-size suffix reduction.}
+Let $u\ge33$ and let $d=\max V-1$ satisfy $13d\le4u+38$.
+If $h\le u$, old results give late C. Otherwise take the first
+nonbinary prefix whose degree $h_0\ge u+1$. Its overshoot is
+$h_0\le u+d$. It has at least two factors since $d<u+1$.
+Thus $13(h_0-u)\le13d\le4u+38\le4(u+r_0)+30$,
+and $W_0\ge33$. It is a seed (3), so (8) follows.
+For degree gaps one through four, use the additional low-gap seeds
+just proved instead of the gap-at-least-five seed (3).
+In fact the bound on $d$ is needed only through this crossing
+prefix; the entire later suffix is arbitrary and sorted.
+
+For general residual late C at $u\ge33$, impose the registered
+automatic-complement bound $h\le3u-2$.
+Let the first prefix of degree greater than $u$ end with capacity
+$t_0=d_0+1$, and let $m$ count the subsequent nonbinary factors.
+If this prefix has at least two factors and is not a seed, its
+cone must fail:
+\[
+ 4u+4r_0+30<13(h_0-u)\le13d_0.
+\]
+Sorting gives $h\ge u+1+md_0$. These two inequalities imply
+$m\le6$: if $m\ge7$, then $7d_0\le2u-3$ whereas
+$13d_0>4u+4r_0+30\ge4u+38$, which is impossible.
+If the crossing prefix is a single factor, $d_0\ge u+1$ and
+$(m+1)d_0\le3u-2$ instead imply $m\le1$.
+Thus a possible remaining large-u late-C failure has AT MOST SIX
+nonbinary factors after its first crossing prefix, or at most one
+in the single-factor crossing case.
+The crossing prefix and binary count are still unbounded.
+This is not a finite completed verification and not a complete C theorem.
+
+Twenty-four scoped Lean reports check the unbounded ratio/mode/sum/margin
+arguments, full arbitrary-prefix and first-crossing inductions, and
+the integer uniform-family/six-suffix guards. Actual recurrence,
+support and global mode identification, LC-convolution application,
+and the complete actual sequence assembly are the written proof above,
+not an end-to-end Lean formalization of composition ideals.
+All new finite profiles are independent QA only; no finite entrance
+certificate is introduced. General earlier C, the unseeded crossing
+entrance, full A2 and original unamplified coefficient unimodality
+remain OPEN.
+

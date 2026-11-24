@@ -1,0 +1,8 @@
+'HomogeneousReferenceC.all_capacity_relative_spectral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.entire_word_relative_spectral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.entire_word_homogeneous_rank_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.entire_convolution_ratio_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.spectral_determinant_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.alternating_first_defect_LC_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.later_ordinary_seed_exact_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HomogeneousReferenceC.simultaneous_finite_read_integration' depends on axioms: [propext, Classical.choice, Quot.sound]

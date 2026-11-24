@@ -1,0 +1,123 @@
+{
+  "status": "PASS_UNIVERSAL_ACTUAL_ALL_PADDING_ALL_SHIFT_LATE_C_BY_FIRST_CROSSING",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "crossing_read_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "golden_endpoint_cross": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "strict_subtracted_window_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "full_alternating_partial_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "reference_residual_dominance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "full_cumulative_residual_propagation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "exact_ordinary_window_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ordinary_seed_gives_LC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "first_strict_crossing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "state_sha256": "379a271a701b33dc31be9f51a91cba9551eb1e08ce19e17c7a49f53a42a94f3c",
+  "QA": {
+    "old_surplus_ordinary_LC_centres_INCL_u5to15": 404775,
+    "exact_prefix_minimum_all_shift_C_payments": 467127,
+    "logical_shift_coverage": 107021527,
+    "actual_crossing_hosts": 3552,
+    "old_entire_read_additive_margins": 133647,
+    "NEW_strong_G_entire_prefix_reads": 135488,
+    "NEW_entire_ordinary_LC_tail": 260159,
+    "strict_first_crossings": 1841,
+    "strict_first_crossings_u5_to15": 313,
+    "growing_first_crossings_OUTSIDE_ALL_previous_cones": 750
+  },
+  "independent_counts": {
+    "independent_LOOSENED_surplus_LC_including_low_u": 46926,
+    "independent_ENTIRE_universal_late_C_minima": 275635,
+    "independent_deficit_family_ENTIRE_ordinary_LC_tail_from_W": 185445,
+    "independent_UNIVERSAL_deficit_strong_G_prefix_reads": 34833,
+    "independent_actual_hosts": 2094,
+    "independent_COMPLETE_first_crossing_ordinary_window_payments": 269,
+    "independent_first_crossings_below_analytic_quotient_cutoff": 57,
+    "independent_random_final_words": 500
+  },
+  "independent_state_sha256": "f0c4a4e69395d30b295fbe698e7799bf62f18ba6194eb02efa8d3bc4ad9a122b",
+  "new_finite_entrance_certificates": 0,
+  "theorem": "PROVED EVERYactualnormalized1alpha2uV,nonemptyV>=3,ALLbinaryu>=0/taildegrees/counts/caps/paddingalpha>=1: EVERYCshiftR>=3 atEVERYcurrentN>=W+1. GENERALACTUALLATE-CENTRANCENOWCLOSED. No countcone,capacity/densityrecord/first-crossing residual. PurebinaryarmsusetheirOLDcompleteC.",
+  "surplus_guard_refinement": "PROVED ordinaryFLCfromu+r+1 atALLu>=h withu+r>=6. Earliercutoff16ONLYinvokedanalyticordinaryquotientLC;OLDdegreeboundarycertificateALREADYPROVESfullordinaryJLCatALLu=h incl175lowucontexts,OLDsurpluscoversu>h. NewscalarproofneedsONLYw>=6. OLDcertificatesREUSED,notrecounted,no newfiniteentrance.",
+  "first_crossing": "PROVED firstprefixdegree>u: nonemptyoldsurplusprefixhasordinaryLCfromL=u+r0+1 andPROTECTEDGthroughL. LEFTordinaryendpointatoldWgrowsoverphi,RIGHTatnewWbelowphi,soNEWwindowratio<lastordinaryratio<phi. ThisextendsALLoldGadditivemargins;rankzero/t>=3paysNEWstrongprefix.",
+  "ordinary_seed": "PROVED MISSINGordinarywindowseedbyREFERENCEGAPDOMINANCE: allreferenceGphi-residualsafteroldWstrictlydominateatoldW-1,viaFULLalternatingpartialsum>=q\u00b2lastgap. ProtectedprefixcarriesdominancetoactualL;nonnegativeordinaryresidualspropagatetonewW-1. ExactwindowdifferencegivesFnewW-muFnewprev>0. NOactualdensityrecord/relativeLChypothesisneeded.",
+  "assembly": "EmptyoldprefixusesOLDallonefactorstrongentrance;ARBITRARYlaterlegalsuffixesinheritbyOLDhereditarytheorem. u<=4usesOLDsmallbinarythrough8,h<=uusesOLDcomplete lateC. Allclipped/flat/pre-first-mode/post-ordinary-modeguardsexplicit. Universalpre-modeDLCintegratesseedtoALLlatercurrents.",
+  "ordinary_deficit_corollary": "PROVED ALLu>=5,h>u: ordinaryactualcoefficientLCatEVERYcentreN>=W. Growingentriesbynewstrongentrance;nonincreasingpositiveentriesbyconcavityandordinarytailLC. ThisdoesNOTclaimphysicalWordinaryLCwhenh<=u.",
+  "formal_scope": "NINEnewcleanstandardaxiomscopedreports;FULLfirst-crossingListinduction,ALLreadguards,strictendpointsubtraction,FULLalternatingpartialsuminduction,referencegapdominance,fullresidualintegration,exactordinarywindow/LCseedalgebra. Actualword/root/source/protectedprefix/mode/sequenceassemblyWRITTEN,notend-to-endLeancompositiontheorem. NewfinitehostsonlyQA;no newfinitepremise.",
+  "remaining": "GENERALFULLCATEARLIERRANKSN<=W,shorterphysicalWboundaryshifts,fullA2andORIGINALunamplifiedcoefficientUIremainOPEN. DensityrecorduniversalassertionstillOPENbutUNNECESSARYforuniversalLATEC. FirstunresolvedFULLCnononecount6unchanged; no originalnumericalboundupgrade.",
+  "late_C": "PROVED_UNIVERSAL",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "new_coverage_witness": {
+    "alpha": 18,
+    "u": 5,
+    "V": [
+      6,
+      6
+    ],
+    "oldh": 5,
+    "oldW": 6,
+    "newW": 12,
+    "L": 7,
+    "pair": [
+      119,
+      135
+    ]
+  },
+  "sha256": {
+    "universal_late_C_first_crossing_proof.tex": "4c12c7a85680f03e7d89416910e67505eaf3e618648e7390d5678089c70798b2",
+    "surplus_ordinary_tail_LC_guard_refinement.tex": "caffb8a8ac6e99a705d79a5b124586dd50dffd0cd05fcfb7ce0e5340620b9020",
+    "UniversalLateCFirstCrossing.lean": "9b6960ca04a7e8a709d50dd8818295a1476271bf14dd447a4d1cb44ba01a5a8b",
+    "UniversalLateCFirstCrossing.log": "9f9419ff5cd823c0996c5d811a28d66dcc4d5c5f9ac788cb19e07b58ea1eddc3",
+    "audit_universal_first_crossing_strong_C.py": "f686bdeef0f3702401b03304845605d5a6c9303e7dbfa731a379f5f832678a79",
+    "audit_universal_first_crossing_strong_C.json": "f31668ac178e766206827208b40fc28736bf62e6d245c0d12335e9053ee95c22",
+    "verify_universal_first_crossing_strong_C.py": "2ffb1ab2af9ed3a9dccb05a59c25083b1e1a34669cc11ff3dd818548fc96491f",
+    "surplus_ordinary_tail_LC_verification.json": "3df5dc94a457ae0fc5c31a84e674547c9bf1fc96f927c1b6e22cd3afedfbc60e",
+    "degree_boundary_CI_entrance_verification.json": "fd6fbee14ec008ca7c0fb94b9f723f6c0a84ad36a965c7b2d1dbdf50fbf9c075",
+    "infinite_padding_full_deficit_LC_verification.json": "65f50dccc0f9c35d80a0712cde737c5f8efd08c779142820eea9d15062dd9c82",
+    "automatic_late_C_cones_verification.json": "74c5749c54fe6ba4e885c40e7598ea28e0e8c4defe117d24f97021d0a0250abd",
+    "reference_ordinary_golden_prefix_verification.json": "b5c6eac22baa0a470ec1760c0caef3363131db33482d0926da87329c7dba9788",
+    "ordinary_golden_growth_source_verification.json": "ae495815227227e1df4d497a290f7fb3819cce5ac0dbfeccdbf71ce7d6c2e59c",
+    "hereditary_strong_late_C_verification.json": "d4ac624d9905c35c4fb48fb3544ad1b9bd36a3e06a23bc5cd3dc6bda00f9a729",
+    "quantitative_tilt_one_jump_strong_verification.json": "d53b5b7f717cb0555e56ae891d7b6b68662ec886b5a290d53454dae1b1dc8cf5",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "golden_tail_large_shift_C_verification.json": "7ef01e16055ffba17369332f1f0f6caa88833e6dd0c344a10fd878b983110fcd"
+  }
+}

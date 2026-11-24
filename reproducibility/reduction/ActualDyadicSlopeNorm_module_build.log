@@ -1,0 +1,8 @@
+'ActualDyadicSlopeNorm.whole_capacity_eval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActualDyadicSlopeNorm.whole_arbitrary_capacity_fold_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ActualDyadicSlopeNorm.whole_actual_seed_and_word_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActualDyadicSlopeNorm.whole_arbitrary_tail_preserves_plus_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

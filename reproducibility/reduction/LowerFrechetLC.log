@@ -1,0 +1,2 @@
+'LowerFrechetLC.decreasing_lower_frechet_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerFrechetLC.entire_lower_frechet_LC_clipping' depends on axioms: [propext, Classical.choice, Quot.sound]

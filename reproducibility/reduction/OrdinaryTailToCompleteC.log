@@ -1,0 +1,7 @@
+'OrdinaryTailToCompleteC.ordinary_minor_bounds_slope_tilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryTailToCompleteC.previous_ordinary_ratio_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryTailToCompleteC.whole_prefix_ordinary_tilt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryTailToCompleteC.complete_finite_ordinary_to_cumulative_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrdinaryTailToCompleteC.first_integer_loss_spectral_entry' depends on axioms: [propext, Classical.choice, Quot.sound]

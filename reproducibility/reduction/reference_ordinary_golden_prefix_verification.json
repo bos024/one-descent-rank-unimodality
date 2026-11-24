@@ -1,0 +1,95 @@
+{
+  "status": "PASS_ALL_REFERENCE_ORDINARY_GOLDEN_PREFIX_AND_GENERAL_CONDITIONAL_DENSITY_RECORD_C_ENTRANCE",
+  "new_scoped_reports": 9,
+  "kernels": {
+    "interval_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "positive_golden_atom_budgets": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "head_interval_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "head_interval_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "zero_head_interval_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "one_head_interval_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "complete_head_plus_alternating_tail_window": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all_current_window_geometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "generic_ordinary_tilt_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "state_sha256": "53931a5dcefe107ca3bf82e78c304e089d36ab0490fd1f18d0b4e46330063561",
+  "QA": {
+    "arbitrary_order_full_ordinary_golden_prefix_reads": 230718,
+    "exact_full_append_gap_window_identities": 230104,
+    "generic_reference_exact_ordinary_tilt_seed_identities": 2147,
+    "reference_profiles": 1816,
+    "analytic_W3_exception_equality_q6": 1
+  },
+  "independent_counts": {
+    "independent_arbitrary_order_ordinary_golden_prefix_reads": 21058,
+    "independent_exact_alternating_tail_and_partial_margin_reads": 7040,
+    "independent_generic_reference_tilt_seed_identifications": 2633,
+    "independent_actual_strict_entrances": 410,
+    "independent_actual_record_conditioned_entrances": 410,
+    "independent_record_conditioned_strong_cumulative_reads": 24964,
+    "independent_record_conditioned_entire_ordinary_LC_tail": 54945,
+    "independent_record_conditioned_all_late_C_minima": 54945
+  },
+  "independent_state_sha256": "135019f98e43131fe71e3f1a52dbc13693cdcf93a0264e3d7ca08bbf55cd18d5",
+  "new_finite_entrance_certificates": 0,
+  "reference": "PROVED EVERYinfiniteBINARYreference withANYorderednonbinaryV>=3,ALLcaps/counts: F_n>phiFprev forEVERY2<=n<=W. COMPLETEarbitrarywordinduction:oldpositiveheadplusFULLalternatingtailwindow;ONLYW3scalarcasepaidbyEXACTq^6>0,ALLappendcaps. No finite exception premise.",
+  "generic_tilt_seed": "PROVED EVERYsuchreference,EVERYnormalizedgeometrictilta in(0,1] withmu=a*r_(W+1)/r_W>1: ordinarytiltedF_W>muFprev. FULLone-cumulativeatomidentity;keep rank0/1TOGETHER,1+a-mu>=1-a>=0. Alllaterprefixordinaryresidualspositive byNEWreferencegoldenprefix,correctionnonnegative. Not limited toonefactor.",
+  "conditional_actual": "PROVED SUFFICIENT actualphysicalentrycriterion: currentnormalizedDdensityratioa_N<=1 andisRECORDMINIMUMoverALLpastreadratios3..W. DoesNOTrequirefullrelativeLC. QuantitativeGtilt+twicecumulativeLR paysALLstrongGreads>=q^2;NEWgenericordinarytiltseed+oneLR paysF_W;universalDLCintegratesEVERYactualCfromW+1. Nonincreasing/clippedentryautomatic.",
+  "density_record_universal": "OPEN. No proof thatEVERYactualstrictlygrowingphysicalentrancesatisfiesrecordcondition. Finite5714entrance/699345pastreadnonfailureisONLYdiagnostic; independentconditionedtestsalsoONLYQA. General lateC isNOTdeclaredproved.",
+  "independent_record_counterexamples": [],
+  "formal_scope": "NINEnewcleanstandardaxiomreports;FULLunboundedfiniteintervalhead/tailwindowcaseproof inclW3/allindexguards;genericordinarytiltseedalgebra. Reference/source/numerator/tailgeometricidentityandwordassembly,actualdensityLRandsequenceintegrationWRITTEN,notend-to-endactualLean. No finite logical premise.",
+  "remaining": "Universalactualdensityrecordhypothesis,unseededcrossing,earlierC/fullA2/originalunamplifiedcoefficientUIremainOPEN. FirstunresolvedfullCnononecount6unchanged.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "reference_ordinary_golden_prefix_proof.tex": "84bf6672a419855202d6eabafad35cbe9c25e01f57209e23f54221c7a6be1581",
+    "ReferenceGoldenPrefix.lean": "00f9ea38c22587c17e6b6376f8e4879b1149ff0ac75893eb548e9f0169916ffd",
+    "ReferenceGoldenPrefix.log": "9c4df8dbb56e54a891119c8422b1ef3df348bb2df291b03da2fd371a6f51d887",
+    "audit_reference_ordinary_golden_prefix.py": "4c37d46053fb19646bcd5dd7fa91b6ae1f0f839360e38897f43e1bc9819228dd",
+    "audit_reference_ordinary_golden_prefix.json": "2996558fc25e402a3609544edbc81c6bc7a5cb8c8f596fc96009e3761aa07111",
+    "verify_reference_ordinary_golden_prefix.py": "93ce90aa33f4e6f5adca330a97328981bffb9dc72e044a4c8d28b3df5ec1c303",
+    "probe_physical_entry_density_record.py": "bddedbe2ea3f97f3fa2a746558ef0e75dd2e6f4e8ea2694dcd33024214418f8e",
+    "probe_physical_entry_density_record.json": "5f75090a75690658aef0044cd7d68a9b1dea33fd41c6d439cee784a087a83c9d",
+    "quantitative_tilt_one_jump_strong_verification.json": "d53b5b7f717cb0555e56ae891d7b6b68662ec886b5a290d53454dae1b1dc8cf5",
+    "hereditary_strong_late_C_verification.json": "d4ac624d9905c35c4fb48fb3544ad1b9bd36a3e06a23bc5cd3dc6bda00f9a729",
+    "two_factor_complete_entrance_verification.json": "50b59d31326b7881700ec32d0eec28cccf0eeb20315be7e15dee0a773c22aa40",
+    "homogeneous_reference_and_sharp_entrance_verification.json": "c5ba03c827b3ab44a9fe69e8e5e1478f1be6b5121d9dd3d5c392b88dcd96a4cc"
+  }
+}

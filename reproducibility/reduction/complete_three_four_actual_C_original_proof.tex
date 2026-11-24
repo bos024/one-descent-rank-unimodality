@@ -1,0 +1,222 @@
+\section{Complete actual C for every three/four arm, and original A8 coefficients}
+\begin{theorem}
+EVERY actual normalized arm $1^\alpha3^r4^s$, with
+$\alpha\ge1$ and arbitrary $r,s\ge0$, has complete C at every
+current rank and every shift. There is no count or padding cutoff.
+\end{theorem}
+This completes the alphabet with non-one parts three and four.
+It does not yet include an arbitrary binary prefix $2^u$, nor general
+capacities. The GENERAL original one-descent conjecture remains OPEN.
+
+The unbounded region $r\ge50$ is the preceding all-four-count theorem.
+Pure ternary and pure four arms were already proved at all counts.
+It remains to cover $1\le r\le49$ and $s\ge1$; the four count is still
+unbounded. We give a complete finite reduction with explicit independent
+and kernel-checked entrances. No finite nonfailure is substituted for
+an unbounded moving diagonal.
+
+\subsection{The exact rank and padding clamps}
+For at least two actual sorted non-one parts, the proved sharpened
+first-positive-derivative-mode bound is
+\[
+ \ell_D\le L=\left\lfloor{4r+5s\over2}\right\rfloor.
+\]
+This is the ONE-UNIT-SHARPENED bound of
+\texttt{sharpened\_forward\_derivative\_centers.tex}; the older bound
+with an added one is not used. Ordinary coefficient LC is already
+proved on and after this first derivative mode. Thus ordinary LC
+from any entrance $A$ reduces to checking EVERY centre $A\le n<L$.
+All required coefficient reads lie at or below $L$.
+
+Put $w=r+s$ and $\alpha_0=L-w+1\ge1$.
+If $I$ denotes infinite initial padding and $C_E=E/(1-z)$,
+$E=[3]^r[4]^s$, the exact padding identity is
+\[
+             F_{1^\alpha3^r4^s}(n)=I_n-(C_E)_{n-\alpha-w-1}.       \tag{1}
+\]
+For every $\alpha\ge\alpha_0$, its first padding loss occurs after $L$.
+Therefore ALL such paddings have the SAME complete prefix through $L$.
+Every ordinary entrance is proved for every padding by checking
+EXACTLY $1\le\alpha\le\alpha_0$ and all centres $A\le n<L$.
+The rank/padding arithmetic, including the zero-extended indices, is
+a new all-natural kernel report.
+
+\subsection{Forty-nine fixed four entrances and complete heredity}
+For each $1\le r\le49$ choose the FIXED count
+\[
+                         s_*(r)=\max\{8,\lfloor(r+4)/3\rfloor\}.
+\]
+It lies in $[8,17]$. This is a list of forty-nine fixed finite entrances,
+not an unbounded diagonal premise. Set $a_0=3$ for $r=1$ and $a_0=4$
+for $r\ge2$. The first loss relative to $h_4$ is at $s+a_0$.
+At $s=s_*(r)$ the complete ordinary entrance checks use (1) and the
+clamp above. They prove ordinary LC from $s_*+a_0$ for EVERY padding.
+
+The first four seed losses relative to $h_4$ satisfy
+\[
+ a\ge1,\qquad b\ge2a,\qquad c\ge4a-1,\qquad d\ge8a-3.       \tag{2}
+\]
+For $r\ge6$ they are exactly $(1,2,5,12)$: the finite pure-ternary
+seed first differs from $h_3$ at $r+2\ge8$.
+For $r=1,\ldots,5$, EVERY $\alpha=1,\ldots,7$ is explicitly checked;
+all larger paddings agree through rank seven, so this table is complete.
+There are 35 finite seed contexts, with all four budgets in (2)
+included in the integer certificate.
+
+The existing ordinary four-heredity theorem uses (2), the unit
+$h_4$ minor and factor-two growth bounds, and the three generic
+startup kernels. Their statements allow the first seed loss to occur
+at $a_0=3$ OR four. The rest of the new tail is an exact uniform
+convolution of the old full LC tail; the new atom at zero is absent
+from these physical reads. Hence ordinary LC from $s+a_0$ persists
+at every $s\ge s_*$, for every padding. The universal first-$h_4$-defect
+criterion gives complete C throughout this unbounded four-count region.
+
+\subsection{A conditional cubic cut that covers the remaining small three phase}
+The small three phase is assigned to $r+2>3s$.
+For its unresolved finite pairs, $3r+4s>32$ implies $w=r+s\ge10$;
+the elementary phase/rank implication is kernel checked.
+Write proper division
+\[
+ E=BQ+R_0+R_1z,\quad B=1+az+bz^2,\quad
+ a=\lambda_3-1,\ b=1/\lambda_3,
+\]
+and $V=Q/(1-z)+\gamma/(1-z)$, $\gamma=(R_0+R_1)/B(1)$.
+Here is a sufficient exact predicate, with no quarter-remainder or
+large-count assumption:
+\begin{enumerate}
+\item $Q$ is strictly positive and globally ordinary LC;
+\item $V_0>0$ and $V_1^2-V_0V_2\ge0$;
+\item the ordinary physical minor at $A=r+s+2$ is nonnegative for
+infinite initial padding and for initial padding ONE;
+\item $2^s\{(h_3)_{r+2}-\lambda_3(h_3)_{r+1}\}<1$.
+\end{enumerate}
+These predicates imply the ENTIRE ordinary coefficient tail from $A$
+and full actual C for ALL $\alpha\ge1$. We justify this transfer,
+instead of identifying a quotient with an actual derivative.
+
+By predicate 2 and the complete cumulative-LC propagation along the
+LC sequence $Q_1,Q_2,\ldots$, $V$ is positive globally LC and is
+increasing to a constant tail. Its positive primitive after deleting
+rank zero is precisely the LC sequence $Q$ restricted to positive
+indices. No bound on $\gamma$ is needed in this transfer.
+The complete source identity is STILL
+\[
+ C_E=BV+(R_0-\gamma)+b\gamma z.                            \tag{3}
+\]
+The actual infinite-padding tail at physical offset $A$ is STILL
+$x=[2]\operatorname{future}_b V$ at every offset $j\ge0$.
+The complete degree cancellation in the preceding actual-cut proof
+needs only $r\ge3s-4$; here the stronger $r\ge3s-1$ holds.
+In particular all other polynomial sources, the degree-one remainder
+and the factor $[2]$ are retained.
+
+The order-three signed-primitive cut therefore proves every later
+pre-mode centre outside the startup band; constant-tail truncation
+and the actual finite-padding density mode guard are exactly as in
+the previous actual theorem. The source startup budgets, formerly
+used at $w\ge32$, hold in fact for EVERY real $w\ge10$, $0\le r\le w$:
+\[
+ m_1\ge4,\quad m_2\ge4m_1,\quad m_3\ge4m_2,
+ \quad m_1^2\ge m_2,\quad m_2^2\ge m_1m_3,
+\]
+where $m_1=w+1$, $m_2=(w+1)(w+2)/2$ and
+$m_3=(w+1)(w+2)(w+3)/6-r$.
+The new whole real-parameter report proves these stronger budgets.
+The old generic signed-source-minor kernel then pays ALL three
+centres $\ell,\ell+1,\ell+2$ at positive offsets, with
+$\ell=\alpha-1$. The first-next-only centre improves automatically.
+
+Physical offset zero is handled by predicate 3. For $\alpha\ge3$,
+all its three reads equal the infinite-padding reads. For $\alpha=2$
+only the next read loses one, improving that same minor. The one
+remaining case $\alpha=1$ is precisely the second minor in predicate 3.
+Thus every initial padding is covered, without using the future
+identity at offset $-1$.
+
+Finally predicate 4 gives the strict actual first-defect entry below
+$\lambda_3$, since the true loss is one or two. Before this first
+loss the actual arm equals the already proved COMPLETE reference
+$R_s$, whose cumulative ratios all exceed $\lambda_3$.
+The complete ordinary tail and bounded C bridge prove all later
+comparisons; decreasing positive slopes are automatic.
+This proves the conditional transfer for every padding and shift.
+
+\subsection{The complete finite boundary certificate}
+For each $1\le r\le49$ and $1\le s<s_*(r)$, first reuse the established
+actual C theorem if $3r+4s\le32$ or $r\ge32$, $r\ge3s+8$.
+There are EXACTLY 224 such reused pairs.
+Of the remaining pairs:
+\begin{itemize}
+\item the 47 pairs with $r+2\le3s$ use the complete ordinary-$h_4$
+entrance with the rank/padding clamp (1);
+\item the 207 pairs with $r+2>3s$ use the FOUR conditional cubic-cut
+predicates above.
+\end{itemize}
+Every pair in the finite complement is assigned exactly once.
+
+The 49 fixed ordinary entrances plus the 47 small four-phase entrances
+give 96 contexts, 2957 finite-padding hosts and 180306 complete ordinary
+minors. There are 59933 distinct retained nonnegative integer margins
+after including both physical offset-zero margins for all 207 cut pairs
+and every one of the 35 startup seed rows.
+ALL are kernel checked, in 333 chunks with ONE axiom-free aggregate.
+
+For the 207 small three-phase pairs, the certificate retains their
+ENTIRE proper quotient: 14914 positive coefficients and 14500 ordinary
+LC minors. It also retains the actual remainder, scaled $V_0$,
+scaled first cumulative minor, and strict root-entry predicate.
+There are 29198 distinct nonzero algebraic sign obligations.
+They use the SAME exact rational interval
+\[
+ {N\over M}\le\lambda_3\le{N+1\over M},\quad
+ N=183928675521416113255185256465328660042417874609759,
+ \quad M=10^{50},
+\]
+whose cubic endpoint signs and root enclosure were already kernel
+proved. Each quadratic field scalar has a complete integer lower
+numerator on this interval; all 29198 lower numerators are STRICTLY
+positive. They are checked in 305 chunks with ONE aggregate report.
+Formal zero field minors are retained as zeros in the full contexts
+and require no positive lower-bound obligation.
+
+Independent verification reconstructs EVERY ordinary prefix and
+EVERY finite boundary from positive suffix boxes, and EVERY quotient
+by closed CI counts and forward division in a different algebraic
+basis. It checks the ENTIRE parameter partition, complete state hashes,
+all integer/algebraic sign sets and every generated kernel chunk.
+This is a complete explicit finite proof input, not a random test of
+the unbounded theorem. Separate larger parameter tests are QA only.
+
+For $r\ge50$ use the preceding analytic theorem; for $r=0$ and $s=0$
+use the complete pure families. For $1\le r\le49$, the ordinary
+four entrance and its whole heredity cover every $s\ge s_*$, while
+the complete finite partition covers every smaller positive $s$.
+The final whole two-count reduction is a new scoped Nat-induction
+kernel. These cases prove complete actual C at ALL counts.
+
+\begin{corollary}[Original A8 family]
+Adjoin ALL $1^\alpha3^r4^s$ to $\mathcal A_7$, and call the union
+$\mathcal A_8$. It is closed under final-part deletion, has complete C
+throughout and first missing weight at most five. The existing sharp
+criterion proves FULL pair A2, the entire positive-source cone for
+both nonrectangular arms, and ORIGINAL UNAMPLIFIED coefficient
+unimodality of the strict core and BOTH relatives at EVERY strict
+central peak. One arbitrary legal heavier final append is also allowed.
+Three and four may now both occur in the SAME arm with completely
+unrestricted counts, including zero. This statement is about actual
+original coefficients, not a replacement by a cumulative theorem.
+\end{corollary}
+
+\paragraph{Verification scope and remaining research.}
+Three new scoped reports prove the improved source startup budgets,
+complete padding/phase arithmetic and whole two-count finite reduction.
+Two complete kernel aggregates check all integer and algebraic finite
+inputs. All earlier actual-cut/ordinary-four-heredity/mode/reference/
+root-interval/C/original first-missing-five kernels are reused without
+recounting. Exact composition/model identifications and LC-convolution
+assemblies are written proofs, not an end-to-end Lean composition
+formalization. The finite proof premises are explicitly listed above.
+The general alphabet $1^\alpha2^u3^r4^s$ with arbitrary binary prefix,
+general capacities, general C/A2 and the GENERAL original conjecture
+remain OPEN.

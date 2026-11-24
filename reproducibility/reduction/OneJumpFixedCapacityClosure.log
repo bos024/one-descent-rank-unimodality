@@ -1,0 +1,11 @@
+'OneJumpFixedCapacityClosure.reference_trim_full_tail_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpFixedCapacityClosure.reference_amplitude_start_budget' depends on axioms: [propext, Quot.sound]
+'OneJumpFixedCapacityClosure.reference_first_defect_seed_ratios' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpFixedCapacityClosure.two_integrations_prefix_ratio_propagation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OneJumpFixedCapacityClosure.fixed_capacity_padding_read_geometry' depends on axioms: [propext, Quot.sound]

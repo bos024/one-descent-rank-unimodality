@@ -1,0 +1,72 @@
+% Auxiliary structural lemma; not a solution of the general conjecture.
+\section{First differences of products of intervals}
+\begin{lemma}[Shrinking interval masses]
+Let $(d_j)_{j\in\mathbb Z}$ be nonnegative and log-concave, with
+interval support. For fixed integers $A,B$, put
+\[
+ g_n=\sum_{j=A+n}^{B-n}d_j,
+\]
+where an empty sum is zero. On any range where the intervals are
+nonempty, $(g_n)$ is log-concave. The statement also holds after
+extending it by zero past the first empty interval.
+\end{lemma}
+\begin{proof}
+At one center write $a=A+n$, $b=B-n$, $G=\sum_a^b d_j$,
+$I=\sum_{a+1}^{b-1}d_j$, $L=d_a+d_b$, and
+$R=d_{a-1}+d_{b+1}$. If $a\ge b$, the next interval is empty
+and the desired inequality is immediate. Otherwise $G=I+L$.
+For every interior index, log-concavity and interval support give
+\[
+ d_{a-1}d_j\le d_a d_{j-1},\qquad
+ d_{b+1}d_j\le d_b d_{j+1}.
+\]
+After summation, $RI\le LG$. Therefore
+$G^2-(G+R)I=GL-RI\ge0$, as required. Zero entries outside
+the support require no division and cause no exception.
+\end{proof}
+
+\begin{theorem}[Log-concave rising differences of interval products]
+Let $C(z)=\prod_{i=1}^s[t_i]=\sum_{j=0}^D c_jz^j$, with all
+$t_i\ge1$. The sequence
+\[
+ d_j=c_j-c_{j-1}\qquad
+ (0\le j\le\lfloor D/2\rfloor),\quad c_{-1}=0,
+\]
+is nonnegative and log-concave, with interval positive support.
+\end{theorem}
+\begin{proof}
+Induct on the number of factors, beginning with $C=1$.
+Extend the old sequence $d$ by zero outside
+$[0,\lfloor D/2\rfloor]$. For $C'=[t]C$ and
+$0\le n\le\lfloor(D+t-1)/2\rfloor$, symmetry and telescoping give
+\[
+ d'_n=c_n-c_{n-t}
+     =\sum_{j=\max(0,n-t+1)}^{\min(n,D-n)}d_j.
+\]
+The expression is nonnegative. For $n\le\lfloor D/2\rfloor$
+it is the ordinary length-$t$ window of $d$, which is log-concave
+by convolution. At the junction, the next shrinking-interval mass
+is at most the ordinary next window mass; thus the same
+log-concavity inequality remains valid. Explicitly, if $D=2m$,
+the next mass omits $d_m$ from that window, and if $D=2m+1$,
+the two next masses agree.
+
+For subsequent centers, the summation interval has endpoints
+$n-t+1$ and $D-n$, so the shrinking-interval lemma applies.
+At the first such center when $D$ is odd, the preceding enlarged
+interval differs from the preceding actual window only by the
+zero term $d_{\lfloor D/2\rfloor+1}$. Clipping the lower endpoint
+at zero is identical to zero extension. Empty final intervals
+give a terminal string of zeros. The supports of the moving and
+shrinking windows overlap at their junction, so the positive
+support is an interval. This completes the induction.
+\end{proof}
+
+\paragraph{Limitation for the current problem.}
+The analogous assertion fails for the reverse of a product of
+two monotone-composition rank polynomials. For example, for
+$X=(2,13,16,38)$ and $Y=(2)$, its positive first differences at
+indices $29,30,31$ are $13,7,4$, and $7^2<13\cdot4$.
+Consequently the theorem can be applied to individual interval
+products, but not to their arm expansions without a further
+argument controlling the sum.

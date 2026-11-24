@@ -1,0 +1,256 @@
+\section{A closed-gap source criterion for FULL A2 under a uniform window}
+Write $[t]=1+\cdots+z^{t-1}$. All coefficient sequences are zero extended.
+The general original conjecture remains OPEN.
+
+\begin{theorem}[A complete source-to-window A2 bridge]
+Let $p$ be an actual old ordinary arm product. Assume FULL OLD A2
+and coefficient tilt A1 for $p$. Put $u=(\Delta p)^+$, let $m$ be
+the LAST ordinary mode of $p$, and let $\ell$ be the first mode of
+$2^nu_n$. Set $E_n=2p_n-p_{n-1}$.
+Assume the following CLOSED-gap proper comparison for every $t\ge1$:
+whenever $n>m$, $k=n-t\ge0$, $k<\ell$,
+\[
+ p_n>p_k,\quad p_{n+1}>p_{k+1},\quad 0\le E_n\le E_k,
+\]
+one has $E_{n+1}-E_n\le E_{k+1}-E_k$.
+Then EVERY ordinary uniform window $[t]p$ has FULL A2.
+This theorem concludes weighted-positive-D UI, not whole raw-source UI.
+\end{theorem}
+\begin{proof}
+Put $v=[t]p$ and $w_n=\Delta v_n=p_n-p_{n-t}$. Uniform convolution
+makes $v$ ordinarily UI. Its positive differences have initial interval
+support: before the old first mode the entering term strictly exceeds
+the outgoing term; across the old mode interval its differences are
+nonincreasing; after that interval they are nonpositive. This also
+follows directly from the established actual positive-difference support.
+Write $\sigma$ for its first mode and $f_n=2^n(w_n)^+$.
+
+First build a COMPLETE UI head comparison, including its first boundary.
+For $n\le m$, every signed old difference is nonnegative, so
+$w_n=([t]u)_n$. Its weighted sequence is convolution of the old A2
+sequence by $(1,2,\ldots,2^{t-1})$, a log-concave kernel without holes.
+Such convolution preserves UI. Denote this WHOLE UI sequence by $g$.
+At $m+1$, signed convolution and clipping give $f_{m+1}\le g_{m+1}$.
+Alternatively, for $n<t$ one has $w_n=p_n$ and $f_n=2^np_n$,
+whose whole sequence is UI by A1; at $t$, $f_t\le2^tp_t$.
+Choose
+\[
+                         c=\max(m,t-1).
+\]
+If $m\ge t-1$ use the first head sequence; otherwise use the second.
+In either case $f=g$ through $c$, $f_{c+1}\le g_{c+1}$, and $g$ is
+WHOLE UI. An earlier strict fall of $f$ therefore forces
+$f_{c+1}\le f_c$. It remains to propagate NONSTRICT falls after this
+boundary; using strict falls alone would leave an equality gap.
+
+At a crossing $n>m$, $n\ge t$, if $w_n,w_{n+1}>0$, set $k=n-t$.
+If $k\ge\ell$, the old weighted geometric tail gives
+\[
+ w_n\le\sum_{i=k+1}^{\mathrm{firstmode}(p)}u_i\le2u_{k+1}.
+\]
+The finite sum bound follows from $2u_{i+1}\le u_i$ throughout the
+used tail; its sharper telescoping form subtracts the last coefficient.
+Also
+\[
+ w_{n+1}=w_n-u_{k+1}-(p_n-p_{n+1}),\qquad p_n-p_{n+1}\ge0,
+\]
+so $2w_{n+1}\le w_n$ unconditionally in this branch.
+
+If $k<\ell$, then $E_k,E_{k+1}>0$ and
+$H=E_{k+1}-E_k=2u_{k+1}-u_k\ge0$. A nonstrict weighted fall means
+\[
+          2w_n-w_{n-1}=E_n-E_k\le0.                    \tag{1}
+\]
+If $E_n<0$, A1 implies $E_{n+1}\le0$, hence
+$2w_{n+1}-w_n=E_{n+1}-E_{k+1}<0$.
+Otherwise the CLOSED-gap hypothesis and (1) give
+\[
+ E_{n+1}-E_{k+1}\le E_n-E_k\le0,
+\]
+again proving $2w_{n+1}\le w_n$. Once the positive-difference support
+ends, $f$ is zero and every later edge is nonincreasing.
+Thus nonstrict falls propagate throughout the entire crossing range.
+The kernel-checked head/boundary/closed-cross lemma excludes every
+strict fall followed by a later rise of $f$. Finiteness supplies a
+whole up/down mode. This proves FULL A2 for $[t]p$.
+\end{proof}
+
+\paragraph{The relative raw-kernel theorem retains a strict surplus at equality.}
+The frozen relative-head proof assumes $0\le E_n<E_k$, but its exact
+lower bound is stronger: with $\lambda=C/d_r>0$,
+\[
+ H\ge\lambda E_k+1,\qquad E_n\ge d_r>0,\quad T\le C.
+\]
+Thus $E_n\le E_k$ already gives $H\ge C+1>T$. Its proof of the
+raw-kernel convolution inequality used neither strictness of the gap
+nor C. The CLOSED-gap extension is therefore valid, with no appeal to
+an unproved continuity or equality argument. It covers every $r\ge k$.
+
+\section{First-missing-nine FULL A2 and ORIGINAL unamplified coefficients}
+\begin{theorem}
+Every final-deletion-closed class of ACTUAL normalized increasing arms
+with FULL C and $\kappa\le9$ has FULL pair A2. The ORIGINAL strict
+core and BOTH relatives are coefficient UI at EVERY strict peak,
+including ONE arbitrary legal heavier append.
+For an old nonrectangular pair with maximum first missing weight nine,
+EVERY ordinary uniform window of its reverse product has FULL A2.
+No whole raw-source-window UI conclusion is asserted.
+\end{theorem}
+
+\subsection{All positive mixed recoveries have shared forward rank at most ten}
+The old maximum-$\kappa\le8$ class and arbitrary heavier append are
+frozen. Consider an old pair of maximum first missing weight nine,
+with FULL OLD A2 in the count induction. A1 follows from FULL C.
+Both-rising C and both-nonrising actual resources give $T\le0$ after
+the LAST ordinary product mode whenever the current source is nonnegative.
+The latter includes both halves by combining the unconditional forward
+both-nonincreasing theorem and the actual reverse half-tail theorem.
+Only mixed recovery remains.
+
+If its rising opposite has $\kappa\le8$, the complete frozen pointwise
+exceptions have owner weight at most eight. An owner of first missing
+weight nine has weight at least 36, so none is possible. Hence a positive
+new mixed recovery must have opposite first missing weight NINE.
+With $Z=1^\alpha U$ the nonincreasing owner, use the exact initial
+exchange $\alpha_* =\max(\alpha,t_1-1)$.
+The frozen absolute-nine theorem pays all owners with $h\ge6$.
+The gap-six theorem pays $h=4,5$ when $\alpha_*\ge3$; the gap-five
+theorem pays $h=2,3$ when $\alpha_*\ge4$.
+The remaining canonical domain is
+\[
+\begin{array}{c|c|c|c}
+ \alpha& h& t_1& D_{\max}\\\hline
+ 1&2,3,4,5&2&71\\
+ 2&2,3,4,5&2,3&56\\
+ 3&2,3&2,3,4&36
+\end{array}                                                     \tag{2}
+\]
+Here $D=\sum(t_i-1)$, $d=9-\alpha$, and the unbounded necessary
+bound is $D\le\min(2d(d-3),12d-25)$.
+
+For $r=a-j\ge0$, positive recovery forces positive primitive curvature,
+$D=2r+2+e$, and $0\le e\le d-3$. Put $L=d-e-3$ and
+\[
+ R_m=\frac{\binom{r+e+m+2}{m}}{\binom r m}.
+\]
+The genuine compulsory source increments give the frozen sufficient
+rank payment
+\[
+ \frac{\mathbf1_{L\le r}}{R_L}
+ +\sum_{\substack{2\le v\le6\\L+v\le r}}
+       \frac{2^{v-2}}{R_{L+v}}\ \ge\ \frac{e+1}{r+1}.    \tag{3}
+\]
+All these offsets are in the mode-free early-source range through
+$\kappa-3=6$; included birth reads have nonnegative actual indices.
+The old CI-relative/reflection proof of (3) applies for every $h\ge2$,
+not only the $h\ge6$ specialization of the earlier nine-threshold result.
+
+The COMPLETE rank grammar (2)--(3) has 406 states. Exact rational
+arithmetic pays 291. Its remaining 115 states have $D\le25$.
+For EVERY remaining state enumerate all sorted partitions of $D$ into
+the specified counts, with minimum increment at most $\alpha$.
+This reconstructs 2143 distinct canonical owners and ALL 4377 used
+owner/rank inputs. Of these, 3757 have nonpositive curvature and are
+irrelevant to positive recovery. At the 620 positive-curvature inputs,
+the direct complete compulsory-source bound pays 601:
+\[
+ F_Z(v)+F_Z(v-2)+2F_Z(v-3)+4F_Z(v-4)
+                  +8F_Z(v-5)+16F_Z(v-6)\ge C,
+ \qquad v=a-r-8.                                      \tag{4}
+\]
+The ONLY 19 source-unpaid candidates all have $j=a-r\le10$.
+All rational numerators/positive denominators, nonpositive-curvature
+classifications, payments (4), and candidate rank bounds reduce to
+719 distinct nonnegative integer obligations in six ordinary-kernel
+chunks and ONE complete public aggregate. An independent degree/maximum-part
+grammar must reconstruct the entire rank and owner partition, every
+category, every numerator, and the public obligations.
+
+For $r\le-2$ no primitive curvature is available. At $r=-1$, the
+unit birth is absent only when $a+2-9<0$, so $a\le6$ and $j=a+1\le7$.
+One-part owners have positive primitive curvature ONLY at this same
+negative index and are handled by the identical bound. Therefore
+\[
+             T>0\quad\Longrightarrow\quad j\le10       \tag{5}
+\]
+throughout the entire new mixed/source-prefix region, independently
+of every opposite capacity, count, padding and weight.
+
+\subsection{A genuine strict opposite head pays all nineteen candidates}
+At a proper crossing, BOTH strict positive windows give
+\[
+                  k+n+2<a+b,\qquad k+1\le j-2\le8.
+\]
+This uses actual upper-centre reflection of $q_Zq_Y$, not a synthetic
+scalar rank profile. Also $j\le a+1$, hence $k+1\le a-1$.
+The entire used RAW owner source $R_Z=(2-z)q_Z$ is consequently
+nonnegative, because it agrees with the corrected positive source
+below degree $a$; its constant coefficient is two.
+
+The opposite main interval product has degree $M$ and largest factor
+degree $B$. Its complete first-missing staircase forces
+\[
+ M\ge1+\frac{7\cdot8}{2}=29,\qquad
+ M-B\ge1+\frac{6\cdot7}{2}=22.
+\]
+The exact CI positive-primitive support formula gives positive
+differences through $\min(\lfloor M/2\rfloor,M-B)\ge14$.
+Every other actual shifted-CI summand has endpoint sum at least $M$,
+so its differences are nonnegative through $\lfloor M/2\rfloor$.
+Thus the ACTUAL opposite coefficients satisfy
+\[
+                       \Delta q_Y(i)\ge1\quad(0\le i\le14).      \tag{6}
+\]
+No coefficientwise lower bound is differentiated to obtain (6).
+
+The exact head increment is $H=[z^{k+1}]R_Z(1-z)q_Y$.
+All used terms are nonnegative. If $0\le r<k$, its owner term $r+1$
+and (6) give
+\[
+ H\ge R_Z(r+1)\Delta q_Y(k-r)
+   \ge R_Z(r+1)=q_Z(r+1)+d_{r+1}\ge C\ge T.
+\]
+For $r=-1$ the owner-constant term gives $H\ge2\ge T$.
+For $r\ge k$, the CLOSED-gap relative raw-kernel proof above gives
+$H>T$. Every positive recovery is therefore paid at EVERY proper
+closed-gap head. For $T\le0$, FULL OLD A2 gives $H\ge0$.
+Terminal forward ranks zero/one are paid directly or have negative
+current source. This proves the complete closed-gap source criterion.
+
+\subsection{FULL induction and original coefficients}
+The first theorem gives FULL A2 for EVERY uniform window of an old
+maximum-nine pair. In the non-one-count induction orient a heavier
+new arm $Zt$. Empty, rectangular and heavier-one-part bases are frozen.
+If the old pair has maximum first missing weight at most eight, its
+frozen arbitrary heavier-append theorem applies. Otherwise use the new
+window theorem. The exact actual correction starts at the new heavier
+weight, and the NEW first ordinary mode is strictly below that weight.
+Hence its positive differences are a terminal truncation of the window's
+positive differences, followed by zeros; FULL A2 is preserved.
+This closes the induction and also proves ONE arbitrary extra legal
+heavier append without requiring C of that new arm. The frozen proper
+deletion and lower-peak/reflection joins then give ORIGINAL coefficient
+UI of the strict core and BOTH relatives.
+
+Let A15 be A14 together with ALL max-four-prefix arms followed by FOUR
+successive dominant capacities $T_i\ge2(W_0+\sum_{j<i}T_j)$, with
+$T_1\ge\max(5,2W_0)$, and all max-eight tails of nonbinary weight at
+most 32. Binary counts and initial padding are arbitrary. Frozen
+dominant C and max-four/fixed-weight C give FULL C; final deletion
+closure and $\kappa\le9$ are exact. Thus BOTH original arms may
+independently have FOUR such jumps, arbitrary strict peak, and ONE
+further legal heavier append. No amplification is used.
+
+\paragraph{Verification scope and present status.}
+NINE new abstract standard-axiom reports check CLOSED source propagation,
+the negative tail, whole finite geometric budgets, the relative surplus
+at equality, the WHOLE UI-head/boundary/closed-cross no-revival proof,
+head selection and complete proper-head guards. ONE complete finite
+aggregate checks all 719 distinct obligations. The actual convolution,
+CI, old A1/A2/source and original-model assemblies above are written
+proofs, NOT an end-to-end Lean composition implementation. The complete
+406-rank/2143-owner finite premise requires independent reconstruction.
+Additional actual windows and greedy originals are QA ONLY. General C,
+general unbounded-first-missing A2, and the general ORIGINAL conjecture
+remain OPEN. No whole raw-source-window shape is inferred from the
+new weighted-positive-difference theorem.

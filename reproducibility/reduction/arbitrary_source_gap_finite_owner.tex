@@ -1,0 +1,198 @@
+\section{An arbitrary-gap birth payment and a finite owner theorem}
+The source-gap constants five and six are sharp for pointwise
+nonrecovery on their respective owner-count ranges. They do not
+prevent an unbounded theorem in which the allowable skeleton
+degree varies with the source gap. Here such a theorem is proved
+without a finite computation or a fixed upper bound on the gap.
+
+Let $Z=1^\alpha U$ and $Y$ be actual increasing arms, with
+$h=|U|\ge2$, $g\ge2$, and write
+\[
+ a=\operatorname{wt}Z,\quad D=\sum_{t\in U}(t-1)=a-\alpha-h,
+ \quad\kappa=\kappa_Y,\quad d=\kappa-\alpha.
+\]
+At shared forward rank $j\ge2$, suppose
+\[
+ F_Z(j+1)\le F_Z(j),\qquad
+ E_Y(0),\ldots,E_Y(j+1)\ \hbox{is nondecreasing}.       \tag{1}
+\]
+These are the same mixed/source-prefix premises as before.
+Put $n=a+\operatorname{wt}Y-j$ and
+$T=e_{n+1}-e_n$ for $e=(2-z)q_Zq_Y$.
+
+\begin{theorem}[Finite owner at every first missing weight]
+If $T>0$ under (1), then
+\[
+ \boxed{d\ge6,\qquad D\le2d(d-3),\qquad
+       a\le\alpha+4d(d-3),\qquad
+       j\le\alpha+4d(d-3)+1.}                         \tag{2}
+\]
+In particular, for each fixed $\kappa$, there are only finitely
+many possible owner arms and shared ranks with positive recovery.
+Explicit bounds, independent of every opposite capacity and count, are
+\[
+ \boxed{a\le1+4(\kappa-1)(\kappa-4),\qquad
+        j\le2+4(\kappa-1)(\kappa-4).}                 \tag{3}
+\]
+Equivalently, if $d\ge3$ and $D>2d(d-3)$, the mixed tail
+cannot recover. With the usual nonnegative OLD A2 head input,
+this gives S at every head, without C, a half-weight premise,
+or a restriction on the first missing weight.
+\end{theorem}
+
+\begin{proof}
+Use the exact source identity and primitive notation from the
+preceding source-birth theorem:
+\[
+ T=(s_{r+1}-s_r)-\Delta(E_YF_Z)_{j+1},\quad
+ r=a-j,\quad s_r=\Delta q_Z(r),\quad
+ \Delta(E_YF_Z)_{j+1}\ge F_Z(j+1-\kappa)               \tag{4}
+\]
+whenever the displayed birth index is present. All terms of the
+source difference convolution through this rank are nonnegative.
+The proved uniform gap-five theorem already excludes $d\le5$;
+thus assume $d\ge6$ when proving necessity in (2).
+For the stated sufficient large-$D$ version, $3\le d\le5$
+is already covered by that same earlier theorem.
+
+If $r\le-2$, the primitive curvature is zero and $T\le0$.
+If $r=-1$, the curvature is one. Unless $D+h+2-d<0$,
+the birth coefficient in (4) lies on $F_Z$'s support and is
+at least one. Hence a positive recovery in this case requires
+$D\le d-h-3\le d-5\le2d(d-3)$, as required.
+
+For $r\ge0$, a positive recovery forces
+$d_{r+1}>d_r>0$ for the ordinary positive primitive
+$d_r=(\Delta q_Z(r))^+$. Set
+\[
+       e=D-2r-2\ge0,\qquad C=d_{r+1}-d_r>0.
+\]
+The skeleton-only relative envelope and degree rank ratio give
+\[
+                         (r+1)C\le(e+1)d_r.           \tag{5}
+\]
+If $s=d-e-2\le0$, the first birth is present, and lower-center
+reflection gives $F_Z(j+1-\kappa)\ge q_Z(r+1)\ge C$.
+Thus necessarily $s>0$. Write $L=s-1=d-e-3\ge0$.
+
+We claim that
+\[
+                    r\ge dL+e                         \tag{6}
+\]
+is already sufficient to pay the entire curvature by the FIRST
+birth. This is a simpler, gap-uniform sufficient condition for
+the earlier finite-product criterion. It applies at every gap.
+Condition (6) implies $r\ge L$, so all following indices exist.
+For $0\le i<L$ put
+\[
+             x_i=\frac{e+3+2i}{r-i}\ge0,
+             S=\sum_{i=0}^{L-1}x_i,\qquad
+             P=\prod_{i=0}^{L-1}(1+x_i).
+\]
+The sharper primitive relative envelope gives the backward chain
+\[
+ d_{r-i}\le(1+x_i)d_{r-i-1},\qquad d_r\le P d_{r-L}.   \tag{7}
+\]
+Let $B=r-L+1>0$. Since $B\le r-i$ at each step,
+\[
+ BS\le\sum_{i=0}^{L-1}(e+3+2i)
+      =L(e+L+2)=L(d-1).
+\]
+Consequently
+\[
+ B(1-S)\ge r+1-dL\ge e+1>0,
+ \quad S<1,\quad (r+1)(1-S)\ge e+1.                 \tag{8}
+\]
+For arbitrary nonnegative $x_i$ of sum at most one,
+\[
+                     (1-S)\prod_i(1+x_i)\le1.         \tag{9}
+\]
+Here is the complete elementary induction: after a partial sum
+$u$ and product $V\ge0$, insertion of $x\ge0$ multiplies the
+budget by a coefficient satisfying
+$(1-u-x)(1+x)\le1-u$, because the difference is $x(u+x)$.
+Every partial sum is at most one, so the induction applies.
+Empty sums and products are included.
+Combining (8)--(9) gives $(e+1)P\le r+1$.
+Together with (5)--(7), this proves
+\[
+                              C\le d_{r-L}.           \tag{10}
+\]
+The reflected pair
+$u=r-L=r-s+1$, $v=r+\kappa-1$ has endpoint sum
+$u+v=\alpha+D=a-h$. Both indices are nonnegative,
+and $u\le v$. The established lower-center comparison therefore
+gives
+\[
+ F_Z(j+1-\kappa)=q_Z(v)\ge q_Z(u)\ge d_u\ge C.
+\]
+The birth index is present: explicitly it equals
+$r+h-L\ge h$. Equations (4) and (10) contradict $T>0$.
+This proves the claim (6).
+
+Any positive recovery with $r\ge0$ must therefore satisfy
+\[
+ r<d(d-e-3)+e,
+ \quad r+(d-1)e<d(d-3).
+\]
+All parameters are integers. Hence
+\[
+ D=2r+2+e\le2d(d-3)-(2d-3)e\le2d(d-3).             \tag{11}
+\]
+Since $h\le D$, this proves (2), including $j\le a+1$.
+For fixed $\kappa$, $\alpha=\kappa-d\ge1$ and
+$6\le d\le\kappa-1$. The expression
+$\kappa-d+4d(d-3)$ increases over this integer interval:
+its difference from the endpoint value is
+$(\kappa-1-d)(4(\kappa-1+d)-13)\ge0$.
+Thus (3) follows. There are finitely many $\alpha,h,D$ and
+partitions of $D$ into $h$ positive capacity increments, so
+these are genuine finite-owner conclusions, not just rank bounds.
+\end{proof}
+
+Every step of the arbitrary-length product budget, backward
+chain, ratio-sum estimate and scalar payment, together with the
+integer owner/weight implications, is checked in
+\texttt{ArbitrarySourceGapFiniteOwner.lean}. These are unbounded
+generic results. Their identification with the previously proved
+actual-arm skeleton and source identities is the written proof
+above. No end-to-end Lean composition datatype is asserted.
+
+\section{A count-only corollary of the exact head-mass criterion}
+For $K=\lfloor(2g+1)/5\rfloor+1$, the earlier mass polynomial satisfies
+\[
+ A(g,L_Y)=[z^K](1+z)^{g-L_Y+4}[3]^{L_Y}
+           \ge {g+4\choose K}\ge2^K.                 \tag{12}
+\]
+Indeed $2K\le g+4$ for every $g\ge2$; choose $K$ disjoint
+pairs of the $g+4$ binary variables and exactly one variable
+from each pair. Their $2^K$ distinct subsets all have rank $K$.
+If $2g\ge5j+4$, then $K\ge j+2$ and
+$A(g,L_Y)\ge2^{j+2}\ge5\,2^{j-1}$.
+Thus the earlier general mixed mass theorem proves S at ALL
+heads in this count range, without OLD A2 or any source-prefix
+premise. For a mixed S edge still outside that theorem,
+\[
+                               2g<5j+4.               \tag{13}
+\]
+Combining (3) and (13), all still-uncovered mixed S edges with
+a fixed opposite $\kappa$ and a nondecreasing opposite SOURCE
+prefix have bounded owner weight, shared forward rank, and
+opposite non-one count. Opposite capacities and padding may
+remain unbounded; no complete finite reduction for every S
+guard is claimed here.
+
+These conclusions do not settle both-forward-rising late source
+overlap or the mixed region after the opposite SOURCE prefix
+has declined. They also do not prove S for the remaining finite
+owner ranges at each $\kappa$, and therefore do not imply general
+C/A2 or original unamplified coefficient unimodality. The main
+conjecture remains OPEN. The twelve scoped kernel reports and
+independent exact diagnostics are kept distinct from a proof
+of that conjecture.
+
+The subsequent theorem in \texttt{source\_curvature\_linear\_owner.tex}
+uses genuine later source increments to strengthen the degree bound
+to $D\le12d-25$ and the fixed-first-weight owner bound to
+$a\le24\kappa-73$. The quadratic bounds above remain valid and
+are stronger for the smallest source gaps.

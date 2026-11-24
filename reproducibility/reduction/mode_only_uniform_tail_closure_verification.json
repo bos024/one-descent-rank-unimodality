@@ -1,0 +1,93 @@
+{
+  "status": "PASS_MODE_ONLY_UNIFORM_WINDOWS_HEREDITARY_ACTUAL_TAIL_LC_AND_ALL_SMALL_BINARY_CROSSINGS",
+  "new_scoped_reports": 5,
+  "kernels": {
+    "ModeOnlyUniformWindow": {
+      "concave_triple_is_LC": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "uniform_transition_payment": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "signed_transition_is_nonincreasing": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "minimal_crossing_geometry": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "ModeOnlyCrossingCertificate": {
+      "all_integer_margins": [
+        "propext"
+      ]
+    }
+  },
+  "generic": "ANY nonnegative finite UI sequence with interval support and LC ONLY strictly before its FIRST mode remains UI and pre-FIRST-mode LC after convolution with EVERY uniform interval. Before old mode use truncated positive LC convolution; entire transition is concave by entering-nonincreasing/outgoing-nondecreasing values. For signed sequences nonnegative through L and nonpositive after, the positive part of EVERY uniform convolution has mode at most L and no later than the positive-only convolution, so the same pre-mode LC holds. Tail truncation preserves it. No LC of the descending positive part is needed.",
+  "insertion": "Fix arbitrary binary u>=1 and alpha>=1. For ANY sorted CI capacity multiset V>=3 of weight W, its ACTUAL SIGNED derivative tail s_k from physical W includes its indispensable numerator unit at k0. After ANY capacity insertion t>=3 and re-sorting, the ACTUAL new signed tail from W+t is EXACTLY snew_k=sum(j=k..k+t-1)s_j. This is only a TAIL identity; early F/G and C are NOT permutation invariant. Thus pre-first-tail-mode LC of positive actual D from W is HEREDITARY under ANY CI insertion, without OLD C, ordinary F tail LC or descending D LC.",
+  "analytic_family": "For ANY u>=1, ALL padding, actual late D is pre-first-mode LC at ALL centres N>=W+1 whenever V contains a factor L>=u+2 (one-factor analytic base from the registered general one-jump proof), OR a multifactored CI submultiset of degree u+1 (registered subdegree base), OR ANY independently verified tail-LC seed. Arbitrary other CI factors may be inserted without bound on count/degree/capacity. This asserts derivative LC, not complete C or original one-descent UI.",
+  "finite_principle": "For EACH fixed u, to prove late D pre-mode LC for EVERY CI of degree h>u, only minimal degree-crossing seeds remain: 2<=d_i<=u,u<h<=2u,h-min d_i<=u,r<=floor(u/2)+1. Every h>u CI either has a one-factor analytic seed L>=u+2 or contains one of these deletion-minimal seeds. Padding clamp alpha<=ceil((u+h-1)/2), plus an infinite case, is analytic by symmetric-row centres. A finite entrance principle for derivative LC ONLY, not C/A2/original UI.",
+  "small_binary_family": "PROVED every 0<=u<=13, EVERY sorted CI V>=3 with h>u, EVERY padding alpha>=1: actual positive derivative is LC at EVERY pre-first-mode centre N>=W+1. u0 is the trivial one-unit signed tail; u1 has an analytic one-factor seed; ALL remaining counts use COMPLETE515 deletion-minimal crossings,6662 actual padding hosts,43960 integer comparisons,24553 distinct kernel-checked margins. Arbitrary CI count/capacity/degree/padding is unbounded by hereditary insertion. NO corresponding tail-LC assertion when h<=u; the degree-boundary (8,12,19) counter remains valid.",
+  "formal_scope": "FIVE NEW scoped reports: FOUR ModeOnlyUniformWindow scalar concavity/transition/signed-decrease/minimal-crossing kernels and ONE ModeOnlyCrossingCertificate ALL24553 integer margins over64 ordinary-reduction chunks (propext only). Independent capacity-multiset grammar and positive suffix-box sums rebuild ALL515 seeds/6662 hosts/43960 comparisons. Mode-only convolution, signed clipping, actual product-order tail identity, analytic one-factor base, minimal-subset coverage and padding assembly are WRITTEN, not end-to-end Lean of arbitrary compositions. Old one-jump/subdegree and LC convolution resources reused without recounting.",
+  "remaining": "General crossing seeds at u>=14 without an analytic/hereditary seed; joining derivative LC to all own-cumulative C still needs actual early ordinary/cumulative entrance budgets. Master late-C threshold remains u>=h-1. Earlier reference C, general C/A2 and ORIGINAL general unamplified UI remain OPEN. NO original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "actual_C_threshold": "u>=h-1 UNCHANGED",
+  "independent_seeds": 515,
+  "independent_hosts": 6662,
+  "independent_integer_comparisons": 43960,
+  "integer_margins": 24553,
+  "QA": {
+    "complete_crossing_seed_hosts": 6662,
+    "complete_crossing_seed_LC_minors": 43960,
+    "generic_mode_only_uniform_minors": 41399,
+    "generic_signed_mode_only_minors": 41399,
+    "generic_window_contexts": 5000,
+    "exact_order_independent_signed_tail_window_reads": 79642,
+    "actual_premise_satisfied_insertions": 1861,
+    "literal_actual_sorted_tail_identifications": 79642,
+    "actual_arbitrary_insertion_mode_only_LC": 458
+  },
+  "seed_counts": {
+    "1": 0,
+    "2": 1,
+    "3": 3,
+    "4": 6,
+    "5": 10,
+    "6": 16,
+    "7": 23,
+    "8": 33,
+    "9": 45,
+    "10": 61,
+    "11": 79,
+    "12": 105,
+    "13": 133
+  },
+  "state_sha256": "5b674c9938d077edb5f3f61f71548b4b98f6539b7c29cd3dedbf88fde06c336c",
+  "sha256": {
+    "mode_only_uniform_tail_closure_proof.tex": "72b0fb292f874000cddb4b74141dab144f5dd9d04df244234bcf9e3267e7df9d",
+    "ModeOnlyUniformWindow.lean": "4738d526ad154d412a471882db246140541a9184605269dea767cc93092b97e8",
+    "ModeOnlyUniformWindow.log": "8ccfffb5d13b443878d86ded21a29d6c08e62ae92cde224266b6dffb48dba6fb",
+    "ModeOnlyCrossingCertificate.lean": "f1083a3c793bc087ea7a8c6024f0e45aa30b54a5436cc43ff7e44b5aabd3f26f",
+    "ModeOnlyCrossingCertificate.log": "246083c5f7ef54eaa44fbf9adcef105d40c052270047ee831da2e729708830b6",
+    "audit_mode_only_uniform_tail_closure.py": "0dcbb549c3fd4444658bfb44f02c70f6f988e9155555f419d556b930319d9b6f",
+    "audit_mode_only_uniform_tail_closure.json": "b85b89960230d859aa6fc1a5b223e2d02787ed7553d17d66f95d1d5fe7866a42",
+    "emit_mode_only_crossing_certificate.py": "61df7e56ed6c951a27960b2ac3c898232563798ebefde4f933197e30736c11f2",
+    "verify_mode_only_uniform_tail_closure.py": "67336767998f0eb1ed43393993a0ee44a38117b185a3f5387de89e89c8e36066",
+    "subdegree_CI_entrance_verification.json": "186f8fb85f53291ec653920f7e3e1be3e32698159a9083de0e6fe681ad1ae6cb",
+    "subdegree_CI_entrance_proof.tex": "9a628bd22389e30e5f70d8615cde47d48b7d5eb7d90cbe5e2029070959342b3f",
+    "general_one_jump_complete_C.tex": "9085604bc0ca4acaec6088a911ed0969cadcb7e899c1ecbe2730bc5000eedafb",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "binary_CI_two_seed_closure_workbench.tex": "74cabac11d7725f0ca758d71c3934cd4ee354da5d64b53e17beb134796ec702f",
+    "audit_binary_CI_tail_and_two_seeds.py": "23cc3a282bbc10c897e7d770590c20925d698a0c4efb9cf833d4ddd3f7968cd7",
+    "audit_binary_CI_tail_and_two_seeds.json": "3d99679dae0d59811ea7c438e7a2ea7a6a1016740a6ed1f4cee6d0d0b250371b"
+  }
+}

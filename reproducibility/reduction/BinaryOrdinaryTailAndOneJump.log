@@ -1,0 +1,13 @@
+'BinaryOrdinaryTailAndOneJump.strict_binary_ordinary_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryOrdinaryTailAndOneJump.window_LC_strict_when_growing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryOrdinaryTailAndOneJump.ordinary_binary_full_tail_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryOrdinaryTailAndOneJump.ordinary_binary_relative_LC_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BinaryOrdinaryTailAndOneJump.binary_ordinary_mode_count_bound' depends on axioms: [propext, Quot.sound]
+'BinaryOrdinaryTailAndOneJump.shared_current_decrease_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryOrdinaryTailAndOneJump.positive_support_outgoing_unit' depends on axioms: [propext, Quot.sound]

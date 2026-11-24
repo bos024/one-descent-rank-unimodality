@@ -1,0 +1,108 @@
+{
+  "status": "PASS_FULL_TERNARY_RICH_QUOTIENT_POSITIVE_PRIMITIVE_LC",
+  "new_scoped_reports": 4,
+  "kernels": {
+    "TribonacciQuotientPrimitiveTransfer": {
+      "TribonacciQuotientPrimitiveTransfer.exact_binary_quotient_correction": [
+        "propext",
+        "Quot.sound"
+      ],
+      "TribonacciQuotientPrimitiveTransfer.exact_ternary_quotient_correction": [
+        "propext",
+        "Quot.sound"
+      ],
+      "TribonacciQuotientPrimitiveTransfer.whole_primitive_three_head_to_tail_join": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "TribonacciQuotientPrimitiveCertificate": {
+      "TribonacciQuotientPrimitiveCertificate.complete_positive_primitive_certificate": [
+        "propext"
+      ]
+    }
+  },
+  "theorem": "ALLu>=4/r>=2u TRUEpropertribonacciJ hasFULLpositiveprimitive(DeltaJ)^+GLOBALLYLC INCLUDINGd0=J0. SameENTIREr>=18smallnormcone. Strongerthanonlycentres>=2;fullinitial-atomwindowclosurehypothesissatisfied.",
+  "complete_corrections": "BinaryJnew=[2]J+lambdaR1. TernaryJnew=[3]J+lambda(R0+R1-a*lambdaR1)+lambdaR1z. FULLpolynomialidentities/remainderskernelchecked. Signedprimitiveunchangedafterindices1/2respectively,soALLLCcentres>=4inheritregisterednonsymmetricwindowclosure;ALLTHREEheadcentres1/2/3paidexplicitly.",
+  "head": "ALLREALw>=12,r\u2208[0,w],targetREMAINDERquarterbox:actuald0..d4STRICTLYpositiveandprimitiveLCcentres1/2/3STRICTLYpaid. COMPLETE235Bernsteincoeffs/COMPLETE2016tensoridentitygridreadsbydegreebound(6,3,2,2). No hiddenheadatom/clippingsignorcentre2/3omission.",
+  "entrance": "COMPLETE31FULLprimitivecontexts(ONEpure18+30smallrrich),995signed/clippedreads/933LCminors,includingd0andfirstminor. ALLnonzeroSIGNEDprimitivechoicesseparatelyfield-sign-certified;zeroLCminorsexact. 1693positivefieldtriples/18ordinaryLeanIntegerchunksONEaggregate,includingONEnegativeactualcontrol.",
+  "actual_obstruction": "WHOLEACTUALlambda-residualpositiveprimitiveLCisFALSEonfinitehost1^160 2^20 3^40 atSHIFTEDcentre77<firstDmode107. ExactnegativefieldminorandpositiveinputsCERTIFIED;independentPOSITIVE-SUFFIXBOXfullfinitehostrebuild. ThisisNOTaUI/C/Jprimitivecounter. DoNOTidentifyactualresidualwithproperJ.",
+  "formal_scope": "FOURNEWreports:2COMPLETECommRingquotientcorrectionidentities+ENTIREnatural-index3head/tailjoin+ONEaggregatefieldcertificate. OlduniformLC+FULLprimitivewindowclosure/norm/root/BernsteinkernelsREUSED/NOTrecounted. Coefficient/actualgeneration/LC-window/completeinterpolationandunboundednormconeinductionarewrittenassemblies,notendtoendLeancompositions. Complete31primitiveentranceisNEWexplicitfinitepremise,notoldordinaryJcertificateorQA.",
+  "remaining": "ActualsourceV=S3r(z+S2u+z\u00b3B2u),finitepaddingrelativeLC/strongDdiagonalu>=33/generalearlierC/fullA2/ORIGINALUIOPEN. ActualfullC4<=u<=32scopeunchanged. Wholeactuallambda-residualprimitiveFALSE;quotientprimitiveNOWPROVED.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "quotient_primitive_LC": "PROVED",
+  "counts": {
+    "independent_FULL_initial_atom_primitive_hosts": 31,
+    "independent_signed_and_clipped_coefficients": 995,
+    "independent_ALL_positive_primitive_LC_minors": 933,
+    "COMPLETE_tensor_polynomial_identity_reads": 2016,
+    "independent_ACTUAL_finite_host_negative_controls": 1
+  },
+  "QA": {
+    "FULL_positive_primitive_LC_minors_including_initial_atom": 153789,
+    "COMPLETE_binary_or_ternary_quotient_correction_hosts": 1050,
+    "ALL_quotient_correction_coefficient_reads": 311253,
+    "actual_proper_quotient_hosts": 525
+  },
+  "independent_state_sha256": "24649c7a7f31cccb7a184cb70942133de4b753c155ccc0694d0101b773536a9b",
+  "seconds": 0.9850000000005821,
+  "local_files": [
+    "tribonacci_quotient_positive_primitive_proof.tex",
+    "TribonacciQuotientPrimitiveTransfer.lean",
+    "TribonacciQuotientPrimitiveTransfer.log",
+    "TribonacciQuotientPrimitiveCertificate.lean",
+    "TribonacciQuotientPrimitiveCertificate.log",
+    "build_tribonacci_quotient_primitive_certificate.py",
+    "tribonacci_quotient_primitive_certificate_data.json",
+    "audit_tribonacci_quotient_primitive.py",
+    "audit_tribonacci_quotient_primitive.json",
+    "verify_tribonacci_quotient_primitive.py",
+    "probe_tribonacci_quotient_primitive_head.py",
+    "probe_tribonacci_quotient_primitive_head.json"
+  ],
+  "dependency_files": [
+    "tribonacci_rich_reverse_quotient_verification.json",
+    "tribonacci_rich_reverse_certificate_data.json",
+    "lc_positive_primitive_window_closure_verification.json",
+    "lc_positive_primitive_window_closure.tex",
+    "LowerFrechetLC.lean",
+    "LowerFrechetLC.log",
+    "verify_tribonacci_quadratic_inverse.py",
+    "verify_tribonacci_rich_reverse_quotient.py",
+    "verify_subdegree_CI_entrance.py",
+    "build_tribonacci_rich_reverse_certificate.py",
+    "probe_tribonacci_quadratic_inverse.py",
+    "probe_tribonacci_inverse_bernstein_corners.py",
+    "probe_reverse_tribonacci_bernstein_corners.py"
+  ],
+  "sha256": {
+    "tribonacci_quotient_positive_primitive_proof.tex": "b0d461fc8df509e395391923659cd3df842e973851f76c8f11dc76f66cf90228",
+    "TribonacciQuotientPrimitiveTransfer.lean": "8077b9877b1fa0534ef4d019661484751b04918b2d43757d19e15edf6aa3cc14",
+    "TribonacciQuotientPrimitiveTransfer.log": "6e74dc5f5c4d223fb6d3f265d436016fe42770d80cc325a4e763d1b08248f725",
+    "TribonacciQuotientPrimitiveCertificate.lean": "cdcb34c78a079f15630fb287b7883d8af7d76dcdaece4a0a8ead3166a647c411",
+    "TribonacciQuotientPrimitiveCertificate.log": "0cec5a55d7d9040e717e901f33580dd692386f0a262c0dbf1283d37f74fe9c5d",
+    "build_tribonacci_quotient_primitive_certificate.py": "16e55f7b5c87cfb7cdd2934b0c6ea52d0203035a7304df82b7f8f5dd180d1a57",
+    "tribonacci_quotient_primitive_certificate_data.json": "ec40d5477c6bcdf4f4a04b8e5c865efc8c3308b41a9ccef0f628603c0c783aad",
+    "audit_tribonacci_quotient_primitive.py": "4acef49ddd2784e8e6fbc63be7c184e823c67f316ccba1cbfb27e9c59df3e61b",
+    "audit_tribonacci_quotient_primitive.json": "b7de7de87e48aa633ab9a5eb880087f0fe323d90f585455cbc971f584009be77",
+    "verify_tribonacci_quotient_primitive.py": "a2dd295a8ddcb51fd4aa1b253fd2abafe9a33e1c25ea979e7282bba75d3db3fa",
+    "probe_tribonacci_quotient_primitive_head.py": "307fb4933f5bf1ddd1644207a6c74f4ff9dd8191c6dd86e680d1b958e2379410",
+    "probe_tribonacci_quotient_primitive_head.json": "52507a271d2bcb94b29631590bcfe94873c3ff879f31301a1478c858e0e26fb9",
+    "tribonacci_rich_reverse_quotient_verification.json": "37c05934f815d6f884a2921e31ade6a97bb68a2404ae9202aba71086ce86b3cf",
+    "tribonacci_rich_reverse_certificate_data.json": "b2461fa63130022b210135cc33251203776d2bb411b1062e7846d9ef215e156c",
+    "lc_positive_primitive_window_closure_verification.json": "351fbd627c33a881470734ad74143a338d566b9500c2d3fea3c5aafb7aebeb9f",
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "LowerFrechetLC.lean": "2e3700a5d83dc3b3525e0e6f986b71444f769874d9dbdb23e3458dc010d76683",
+    "LowerFrechetLC.log": "ec5be5b82a49f78640df3baa529acca03ff41468940bfcbba89176246ade0c53",
+    "verify_tribonacci_quadratic_inverse.py": "d640aa93703309cb4cbb6a198076d1654fabef4c27c35d6937ae72c0ef6f5869",
+    "verify_tribonacci_rich_reverse_quotient.py": "dc5c6a5050877e1b984de16a5724805b1d2919b11b38b2fff56470985d3453ef",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63",
+    "build_tribonacci_rich_reverse_certificate.py": "02f5b77d87a2c4556be51005ee093e7561e755a64260570565ca32449c846cbe",
+    "probe_tribonacci_quadratic_inverse.py": "5b6ffa31528288c017058455c0e269efe6a7418a85cf61da4de499cdefe71cf8",
+    "probe_tribonacci_inverse_bernstein_corners.py": "8545b75c4baa2c9947446a051b73acb39101048f21ab011e297e969a92fe3057",
+    "probe_reverse_tribonacci_bernstein_corners.py": "617f0415f6e9812c2adf85b248a30de5eac79f90e9d905c5fce4171e8f377fad"
+  }
+}

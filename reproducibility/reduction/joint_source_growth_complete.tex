@@ -1,0 +1,224 @@
+\section{Two leading source coefficients and a growing offset budget}
+This section proves two SINGLE sorted-arm theorems. The actual-arm append
+assembly and the finite clipping argument are written proofs; the scoped
+Lean kernels check the complete pre-peak window payments and scalar
+reductions, and a separate kernel certificate checks the entire 106-state
+low-offset closure. The larger peak certificate is rebuilt independently
+with exact equality of every state. No end-to-end Lean formalization of
+actual composition ideals or of the large enumeration is asserted.
+
+Use the normalized actual sorted arm $1^\alpha U$, with $\alpha\ge1$,
+and put
+\[
+ E=1-z+(2z-1)F,\quad \kappa=\min\{i:E_i>0\},\quad
+ \delta=E_\kappa,\quad\eta=E_{\kappa+1},\quad J=\delta+\eta.
+\]
+Write $D_0=D_1=0$, $D_i=(F_i-F_{i-1})^+$ for $i\ge2$,
+$\ell=\min\operatorname{argmax}D$ and $M=D_\ell$. Nonrectangular
+arms have $\kappa\ge3$. The early source profile gives $\eta\ge1$.
+
+\begin{lemma}[The second offset is positive through the first mode]
+For every actual nonrectangular sorted arm,
+\[
+            \ell\ge\kappa+2\quad\Longrightarrow\quad
+                    \Delta E_{\kappa+2}\ge1.                 \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+For $\kappa\ge5$, the genuine early source-curvature theorem in
+\texttt{source\_birth\_gap\_refinements.tex} gives
+$\Delta E_{\kappa+L}\ge2^{L-2}$ for $2\le L\le\kappa-3$.
+This is a theorem about increments, not a differentiated coefficient bound.
+Take $L=2$.
+
+For $\kappa=3,4$, retain coefficients $F_0,\ldots,F_6$, the last
+capacity clamped to six, and $\kappa$. Clamp $\alpha$ and all capacities
+to six. This preserves these seven coefficients, sortedness, and every
+transition with first missing weight at most four. The exact recurrence is
+$F'=1+S_tF$, and $\kappa'=\min(\kappa+1,t+1)$.
+Since $\kappa$ never decreases, all ancestors of a final $\kappa\le4$
+remain in this grammar. The entire grammar consists of 106 states and
+179 retained edges, starting at the six initial all-ones prefixes.
+\texttt{SecondOffsetSourceCertificate.lean} checks ALL base states,
+ALL retained edges and closure, and ALL curvature alternatives by
+kernel reduction. In each of the 15 states where the curvature in (1)
+is smaller than one, a strict decrease $D_i<D_{i-1}$ occurs for
+$3\le i\le\kappa+2$. Unimodality of $D$ therefore forces
+$\ell<i\le\kappa+2$, contradicting the hypothesis. The exact same
+106-state set is also the projection of the independently reconstructed
+complete 13-jet certificate. Induction on actual appended words proves
+coverage; no global mode is asserted to survive clamping.
+\end{proof}
+
+\begin{theorem}[Joint leading-source curvature]
+For every actual nonrectangular sorted arm,
+\[
+             \boxed{\Delta E_n\ge\delta+\eta
+                         \quad(\kappa+4\le n\le\ell).}       \tag{J}
+\]
+The starting offset cannot be reduced to three: for
+$X=1^{44}2^{10}$, $\kappa=3$, $\delta=\eta=1$, and
+$\Delta E_6=1<2$, with $6\le\ell$.
+\end{theorem}
+\begin{proof}
+Induct strongly on the number of non-one capacities. An all-ones arm
+followed by one capacity has first derivative mode two, so the claimed
+range is empty. For the induction step the OLD arm is nonrectangular.
+Use hats for the NEW arm after a legal append $t\ge\kappa-1$.
+The exact source window is
+\[
+ \Delta\widehat E_n
+   =\sum_{i=n-t}^{n-1}\Delta E_i
+           +\mathbf1_{n=t+1}-\mathbf1_{n=t+2}.                \tag{2}
+\]
+The three legal source transitions give
+\[
+\begin{array}{c|c|c|c}
+ t&\widehat\kappa&\widehat\delta&\widehat\eta\\ \hline
+ \kappa-1&\kappa&1&\delta\\
+ \kappa&\kappa+1&\delta+1&\eta+\delta\\
+ >\kappa&\kappa+1&\delta&\eta+\delta+\mathbf1_{t=\kappa+1}.
+\end{array}                                                   \tag{3}
+\]
+We use the already proved triangular curvature theorem
+\[
+ \Delta E_i\ge B(\delta):=\max\{1,\tbinom{\delta+1}{2}-1\}
+                  \quad(\kappa+3\le i\le\ell).                \tag{4}
+\]
+In particular $B(\delta)\ge\delta$ and $B(\delta)\ge1$.
+
+First suppose $n-1\le\ell$. Every summand in (2) is nonnegative.
+For a stationary append, $\widehat J=\delta+1$. At its first required
+rank $n=\kappa+4$, the distinct terms $i=\kappa+3,\kappa+2$
+belong to the window and pay $\delta+1$ by (4) and (1).
+At every later rank $n\ge\kappa+5$, the term $i=n-1$ pays
+$J=\delta+\eta\ge\delta+1$ by OLD (J). Both isolated units lie
+before this range.
+
+For either growth append, $n\ge\kappa+5$ and $t\ge\kappa\ge3$.
+The three distinct terms $n-1,n-2,n-3$ lie in the window.
+OLD (J) pays $J$ at $n-1$, and (4) pays $\delta$ at $n-2$.
+At $n-3$, (1) pays one when $n=\kappa+5$, and (4) pays at least
+one at every later rank. Thus the window pays $J+\delta+1$.
+For tied growth, this is exactly $\widehat J$ and both units have
+already finished. For preserving growth, it exceeds $\widehat J$
+by one unless $t=\kappa+1$. In that exceptional case the negative
+unit is at $n=\kappa+3$, outside the required range. At every
+negative-unit rank that is in the required range, $t\ge\kappa+3$,
+so the spare unit pays it. This proves every pre-old-peak comparison.
+The complete finite-window payment, including all these cases, is
+the theorem \texttt{joint\_pre\_peak\_window\_payment} in
+\texttt{JointSourceGrowth.lean}.
+
+It remains to treat $n-1>\ell$. The actual mode/splice theorem gives
+$\widehat\ell\le\min(R+1,\ell+t)$, where $R$ is the first ordinary
+mode of $F$. The exact window (2) contains $\ell+1$, whose increment
+is at least $M$. Every subsequent summand through $n-1\le R$
+is at least one. Every other summand is nonnegative. Consequently
+\[
+ \Delta\widehat E_n\ge M-1,\qquad
+ \Delta\widehat E_n\ge M+n-\ell-3\ge n-5.                      \tag{5}
+\]
+The last inequality uses the established sharp bound $\ell\le M+2$.
+
+For old $\kappa\ge8$, the universal prefix gives
+$M\ge D_\kappa=2^{\kappa-2}-\delta\ge2^{\kappa-2}-\kappa$.
+The proved first-source jet bounds imply
+\[
+ \widehat J\le\widehat\kappa+
+       \frac{\widehat\kappa(\widehat\kappa+1)}2-1
+       \le\frac{(\kappa+1)(\kappa+4)}2-1.                     \tag{6}
+\]
+For every integer $\kappa\ge8$,
+\[
+       2\cdot2^{\kappa-2}\ge\kappa^2+7\kappa+4.              \tag{7}
+\]
+At eight this is $128\ge124$. Doubling the polynomial dominates
+its successor since the difference is $\kappa^2+5\kappa-4\ge0$.
+This proves (7) by unbounded induction and makes $M-1\ge\widehat J$.
+
+For old $\kappa\le7$, one has $\widehat\kappa\le8$ and
+$\widehat J\le43$. By (5), any failure must have
+\[
+                             M\le43,\qquad n\le47.           \tag{8}
+\]
+The complete 47-jet certificate below pays every comparison in (8),
+closing this last branch and the strong induction.
+\end{proof}
+
+\paragraph{Complete peak-crossing certificate and coverage.}
+Retain $F_0,\ldots,F_{47}$, the last capacity clamped to 47, and
+old $\kappa\le7$. Start with the 47 initial all-ones prefixes;
+append every legal clamped capacity $2\le t\le47$. A new first
+weight eight is evaluated but not queued. Retain a queued state only
+when every retained positive derivative coefficient is at most 43.
+This pruning loses no potential failure: legal actual appends increase
+every positive derivative coefficient, so every ancestor of a failing
+old arm with $M\le43$ has this property. Clamping preserves all
+read coefficients. Since every retained $D_i\le43$, its coefficients
+are at most $1+46\cdot43$, safely represented as unsigned 16-bit
+integers. Equal states have equal future coefficients and transitions.
+
+The entire exhausted graph has 207049 states, 3905898 legal appends,
+3903736 eligible nonrectangular appends, 3678542 derivative-budget
+prunings and 53508829 necessary-guard comparisons, all paid.
+The necessary guards are $n\ge\widehat\kappa+4$, $n\ge m+2$,
+$n\le m+t$, nondecrease of the NEW derivative through $n$, and
+$D_{n-1}>0$, where $m$ is the first mode of the retained OLD
+derivative prefix. For a genuine failure (8), $\ell\le M+2\le45$,
+so $m=\ell$; every guard is necessary by the mode bounds used in (5).
+The retained predicate is a superset of the actual comparisons, not
+an assertion that a truncated ordinary polynomial has the same modes.
+
+The independent verifier uses a depth-first traversal and rolling sums,
+rather than the producer's direct prefix sums and breadth-first traversal.
+It reconstructs every state and comparison, then compares the ENTIRE
+sorted raw state stream byte for byte; a hash collision assumption is
+not used. Both programs give the counts above and no unpaid comparison.
+
+\begin{theorem}[Offset-linear source curvature]
+Every actual nonrectangular sorted arm also satisfies
+\[
+          \boxed{\Delta E_n\ge n-\kappa-2
+                         \quad(\kappa+3\le n\le\ell).}       \tag{L}
+\]
+\end{theorem}
+\begin{proof}
+Again induct on the number of non-one capacities; the one-capacity
+range is empty. A comparison crossing the old first derivative peak
+is paid directly by (5): $n-5\ge n-\widehat\kappa-2$ since
+$\widehat\kappa\ge3$.
+Before that peak all window summands are nonnegative.
+For stationary growth $\widehat\kappa=\kappa$, the first rank
+$n=\kappa+3$ is paid by the contained second-offset term (1).
+At $n=\kappa+4$, the second-offset term and (4) pay two.
+At every $n\ge\kappa+5$, OLD (L) at $n-1$ pays $n-\kappa-3$
+and (4) at the distinct window index $n-2$ pays the remaining one.
+The isolated units lie outside these ranks.
+For a growth step $\widehat\kappa=\kappa+1$, OLD (L) at $n-1$
+already pays $n-\widehat\kappa-2$. If the negative unit is present,
+$n=t+2\ge\kappa+4$, so the additional distinct birth index
+$\kappa$ is in the window $[2,t+1]$ and supplies
+$\Delta E_\kappa=\delta\ge1$. This pays the unit loss.
+The complete pre-peak finite-window argument is checked by
+\texttt{linear\_pre\_peak\_window\_payment}.
+Thus (L) requires no additional large enumeration beyond (1) and
+the already established triangular and single-flat theorems.
+\end{proof}
+
+\paragraph{A further complete source-overlap subcase.}
+At the second overlap of two arms with first weights $p,q\ge3$,
+leading multiplicities $\delta_X=\delta_Y=1$, and both positive
+forward derivatives strictly increasing, put $j+1=p+q+1$.
+Then $j+1\ge p+4,q+4$, and the compared index is at or before
+both FIRST derivative modes. By (J),
+\[
+ \Delta E_X(j+1)+\Delta E_Y(j+1)
+    \ge2+\eta_X+\eta_Y\ge (E_XE_Y)_{p+q+1}.
+\]
+The exact product contrast therefore gives tail halving. The case
+where either forward derivative is flat or falling is covered by the
+earlier direct nonrecovery theorem. Nonnegative tail and the usual
+OLD head premise then give the corresponding all-head S statement.
+No general higher-multiplicity second overlap, arbitrary later overlap,
+general C, A2, or original unamplified coefficient unimodality is claimed.

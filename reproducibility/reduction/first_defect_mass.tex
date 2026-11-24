@@ -1,0 +1,86 @@
+\section{Sharp weight cost of the first missing-hook multiplicity}
+Let $X=(x_1\le\cdots\le x_\ell)$ be a nonempty increasing
+host of weight $a$, let $\kappa$ be its first missing weight,
+and let $d$ be the number of missing compositions of weight
+$\kappa$. Thus $d$ is the leading coefficient of $E_X$,
+or the last coefficient of its reverse deficit $e_X$.
+The first-missing-hook theorem is an established input here.
+
+\begin{theorem}[Exact nonnegative excess decomposition]
+Put $n=\kappa-1$, let $t_1,\ldots,t_n$ be the last $n$
+capacities of $X$, and let $P$ be the total weight before
+these last $n$ positions. Set $\varepsilon=1$ when $\ell=n$
+and zero otherwise. Then $t_j\ge j$ and
+\[
+ d=\varepsilon+\#\{1\le j\le n:t_j=j\},
+\]
+\[
+ a=\frac{\kappa(\kappa-1)}2+\kappa-d
+     +(P+\varepsilon-1)
+     +\sum_{j=1}^{\kappa-1}\max(t_j-j-1,0).                 \tag{1}
+\]
+Both terms following $\kappa-d$ are nonnegative. In particular
+\[
+ 1\le d\le\kappa,\qquad
+ a\ge\frac{\kappa(\kappa-1)}2+\kappa-d.                    \tag{2}
+\]
+The bound is sharp for every $\kappa\ge2$ and every
+$1\le d\le\kappa$.
+\end{theorem}
+\begin{proof}
+Universality through weight $n$ gives the final staircase
+$t_j\ge j$. At weight $n+1$, the all-ones hook fails
+exactly when $\ell=n$, while the hook with first part
+$j+1$ fails exactly when $t_j<j+1$, equivalently $t_j=j$.
+All missing words at the first missing level are hooks,
+which proves the formula for $d$.
+
+For $t_j\ge j$, the point identity
+\[
+ t_j=j+1-\mathbf1_{\{t_j=j\}}+\max(t_j-j-1,0)
+\]
+holds. Sum it and add $P$. This proves (1).
+If $\ell=n$, then $P=0,\varepsilon=1$.
+Otherwise $P\ge1,\varepsilon=0$. Hence $P+\varepsilon-1\ge0$.
+The hook count gives $1\le d\le n+1=\kappa$, and (2) follows.
+
+For sharpness, start from $(1,2,\ldots,\kappa-1)$ and
+increase any $\kappa-d$ of its capacities by one.
+The list remains weakly increasing because adjacent
+baseline capacities differ by one. Its last staircase
+still embeds every word of weight $\kappa-1$, while
+exactly $d$ hooks of weight $\kappa$ fail. Its weight is
+the right side of (2).
+\end{proof}
+
+\begin{corollary}[All equality hosts]
+Equality in (2) holds exactly when all the final staircase
+capacities obey $t_j\in\{j,j+1\}$ and $P+\varepsilon=1$.
+Equivalently, the host has either $\kappa-1$ positions and
+no earlier prefix, or exactly $\kappa$ positions with a
+single leading one before its last $\kappa-1$ positions;
+in both cases the displayed two-value condition holds.
+The first-missing condition excludes the cases with zero
+failing hooks.
+\end{corollary}
+\begin{proof}
+All excesses in (1) are nonnegative integers. Equality
+forces each to vanish and is conversely sufficient.
+The position-count description follows because every
+earlier capacity has positive integer weight.
+\end{proof}
+
+Thus an actual deficit ending in one has the stronger
+mass bound $a\ge\kappa(\kappa-1)/2+\kappa-1$; more
+generally every missing terminal unit below $\kappa$
+costs at least one extra host weight above the minimal
+staircase. This adds a quantitative coupling between
+the previously used first-missing mass bound and the
+terminal deficit coefficient. It is not a coefficient
+unimodality conclusion.
+
+\texttt{FirstDefectMass.lean} kernel-checks the exact
+unbounded sum identity, weight bound, equality classification
+and hook-count upper bound. The interpretation of the
+equal-position count as the actual missing-hook multiplicity
+uses the written staircase and first-missing-hook theorems.

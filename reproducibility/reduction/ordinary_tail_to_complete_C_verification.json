@@ -1,0 +1,111 @@
+{
+  "status": "PASS_CONDITIONAL_ORDINARY_TAIL_TO_COMPLETE_C_AND_UNBOUNDED_THREE_HEREDITY",
+  "new_scoped_reports": 5,
+  "kernels": {
+    "OrdinaryTailToCompleteC.ordinary_minor_bounds_slope_tilt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinaryTailToCompleteC.previous_ordinary_ratio_dominates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinaryTailToCompleteC.whole_prefix_ordinary_tilt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinaryTailToCompleteC.complete_finite_ordinary_to_cumulative_bridge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OrdinaryTailToCompleteC.first_integer_loss_spectral_entry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "theorem": "ALLACTUAL1alpha2u3r,u>=1/r>=0/alpha>=1:IFordinaryFLCatEVERYcentreA=r+3<=n<FIRSTDmodeTHENFULLC ALLranks/shifts. FIRSTactualordinarysourceentryF_A<lambda3*FprevPROVEDunconditionallybyfirstintegerloss+registeredH3residualnorm. ConditionalLCpremiseNOTproveduniversally.",
+  "automatic_tail": "EXTRACTIONfromOLDactualDUIandreverseordinaryrisingLC:actualFautomaticallyLCatEVERYcentre>=FIRSTDmode. ThusonlystrictpreDmodeordinaryLCneedsproof;thisisWEAKERthanstrongDminororDLC.",
+  "heredity": "ALLfixedu>=4/r>=6/alpha:ordinaryFLCfromr+3ENTIREtailishereditaryunderappend3. TWOnewordinaryentrancespaidbyOLDscalarstrongminorkernelswithEXACTlosses1,r+2,(r\u00b2+5r+10)/2;generictribonacciordinaryminorboundfrombases2,-3,1. EVERYlatercentreLCbypositive3windowoftailtruncatedatoldr+2. OldkernelsREUSED/NOTrecounted.",
+  "remaining_diagonal": "SUFFICIENTforALLu>=4/r>=2ucompleteC:proveONLYordinaryFLCatcriticalr=2u,ALLu>=33,ALL1<=alpha<=2u+floor(u/2),centresr+3<=n<FIRSTDmode. Largerpaddingexactprefixrepresentedusingoldmodebound. QUANTIFIERuUNBOUNDED;NOTcompletedfinitecheck. Noactualrichu>=33enlargementasserted.",
+  "positive_companion": "ExactordinarybinaryprependingF_(u+1,r)=S2F_(u,r)+1+z\u00b3B3r. AllpositivebutLCadditionisNOTautomatic;fullmixedminorsstillneeded. Frozenmacrosourceidentityretained.",
+  "formal_scope": "FIVEnewcleanstandardaxiomreports:2scalarsteps,WHOLEbackwardordinaryratioinduction,WHOLEboundedordinary-to-Gbridge,firstintegerlossentry. Actualreferenceidentification/automaticpost-DmodeLC/append3heredity/paddingdiagonalreductionWRITTENusingOLDgenericresources. No newFINITEentrancepremise. RichordinaryLCnonfailuresONLYdiagnostic.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "counts": {
+    "exact_rational_complete_bridge_reads": 27616,
+    "exact_rational_complete_bridge_contexts": 3090,
+    "independent_ALLcount_FIRSTsource_spectral_entries": 1040,
+    "independent_automatic_ordinary_LC_after_FIRSTDmode": 106499,
+    "actual_hosts_SATISFYING_ordinary_LC_hypothesis": 872,
+    "independent_ACTUAL_conditional_all_shift_payments": 101198,
+    "independent_ACTUAL_logical_shift_reads": 11893517,
+    "actual_hosts_EXCLUDED_by_ordinary_LC_hypothesis": 168,
+    "independent_actual_negative_hypothesis_controls": 1
+  },
+  "rich_diagnostic": {
+    "status": "DIAGNOSTIC_ONLY_RICH_TERNARY_ORDINARY_LC_ROUTE",
+    "counts": {
+      "ENTIRE_ordinary_tail_LC_minors": 1035502,
+      "pre_FIRSTDmode_ordinary_LC_minors": 448746,
+      "actual_hosts": 1394
+    },
+    "counterexamples": {},
+    "state_sha256": "8d4d9398676e38d7dce565dbd52b1fa2f2f73e600d5bf2ba57af81ba1baa34ba",
+    "seconds": 42.18699999999808,
+    "scope": "NOanalyticordinaryLCproofasserted;IFordinaryFLCfromFIRSTordinarysourceA=r+3throughFIRSTDmode-1andprotectedentryF_A/Fprev<=lambdaTHENFULLCwithoutstrongDminor. No actualCDFLCassumed."
+  },
+  "independent_state_sha256": "f9c5c418fc5f9476153d65fd13b4f30d6499cb52a001ed38a45fd3f7bce1d666",
+  "seconds": 3.0939999999973224,
+  "local_files": [
+    "ordinary_tail_to_complete_C_proof.tex",
+    "OrdinaryTailToCompleteC.lean",
+    "OrdinaryTailToCompleteC.log",
+    "verify_ordinary_tail_to_complete_C.py",
+    "probe_rich_ternary_ordinary_tail.py",
+    "probe_rich_ternary_ordinary_tail.json"
+  ],
+  "dependency_files": [
+    "pure_ternary_complete_C_verification.json",
+    "PureTernaryCompleteC.lean",
+    "PureTernaryCompleteC.log",
+    "first_missing_renewal_envelope.tex",
+    "finite_initial_ones_relative_derivative.tex",
+    "sharpened_forward_derivative_centers.tex",
+    "prefix_tp2.tex",
+    "formal_arm_extensions.tex",
+    "TernaryRichCompleteC.lean",
+    "TernaryRichCompleteC.log",
+    "ternary_rich_complete_C_verification.json",
+    "ternary_forward_inverse_verification.json",
+    "verify_renewal_root_primitive_cut.py",
+    "verify_subdegree_CI_entrance.py"
+  ],
+  "sha256": {
+    "ordinary_tail_to_complete_C_proof.tex": "a39333b1e5da9abddb76ed3832a4d074eb047d4bf8a5b51983dfb8d5e347ee2a",
+    "OrdinaryTailToCompleteC.lean": "ce6407b97ac6a0554067c5a04ba6bbacf912fd65a1187788536045dfff02a8fb",
+    "OrdinaryTailToCompleteC.log": "caf50f66758fd1c15ddfe06d8bdbd5aa1246c073df2b2bdb056b68a7c1001057",
+    "verify_ordinary_tail_to_complete_C.py": "b74447938ea4e5b5090dfdc4c6a64e99ca4f6123040b9f53e617b43724fd5928",
+    "probe_rich_ternary_ordinary_tail.py": "2b245188db927fc583a95960a9cb4fbbee94f8a1b8c10b4ca0cb2786f5fcecbd",
+    "probe_rich_ternary_ordinary_tail.json": "edc1d17db20d8b63830ab8665169391258138efa5024ce9b219dcf55e7eea2a0",
+    "pure_ternary_complete_C_verification.json": "40e32acbadd64b8af2cdcf56fb65ec49fd69f275dcf78590a5cee845080de57e",
+    "PureTernaryCompleteC.lean": "71316b0039851054e30662a6dbd94ef5ae7d1148018af4fe09a8e9211dfdcf90",
+    "PureTernaryCompleteC.log": "84b895282513463fd380485164c249342e3618bce2bb949ed67fdb237ec14fba",
+    "first_missing_renewal_envelope.tex": "7d7056db69b6b9b7d8ceccc467b20b9f74b63cadb43ae5d4239a32f4c0519ca8",
+    "finite_initial_ones_relative_derivative.tex": "85764e022de248a0c298d3b1e1ecb00b96188b6f4ecd32b7b011e87aaafed9da",
+    "sharpened_forward_derivative_centers.tex": "4b3866335d12280de1bceb86a0e97b6c18eb1463dbc2da56b6a1adbecb589f87",
+    "prefix_tp2.tex": "e48c4f5f63a28bab3a6b3b0e29ca59f37aa618be289356b787544840fdcf0530",
+    "formal_arm_extensions.tex": "d58c5585836f0315bcf8d6d1b9ce63af28663af1149f46b5db2b8228a7ab01e8",
+    "TernaryRichCompleteC.lean": "cb6a22a0a007c8989acc75cbf6388452c14e3479386abcd5e8e45868c667d36f",
+    "TernaryRichCompleteC.log": "f083599130ded5381703697b522d63da8611b557f4a8d83d9147e42c2263df5e",
+    "ternary_rich_complete_C_verification.json": "12f80fdcd80519a57de88079e405890880e754b2b3d838abd266ed355473c328",
+    "ternary_forward_inverse_verification.json": "e42b6bd879c88f8162ce6176422c580ef5198cfe994ad114ab7c7a4266e03246",
+    "verify_renewal_root_primitive_cut.py": "1c4c7584a55a90cd19abcb1e1f83fe10a76f31ad70f6ab5a97c62d499534c06e",
+    "verify_subdegree_CI_entrance.py": "611f1992b276e96a75150761879ff6fad94bd4694d2c3cb7a5be121572f7ab63"
+  }
+}

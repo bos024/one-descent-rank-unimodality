@@ -1,0 +1,183 @@
+\section{Complete stationary-three reference C and an unbounded binary-dense actual cone}
+Let $S=z+z^2+z^3$, $T=z+z^2$, $B_r=\sum_{j<r}S^j$, and
+\[
+ R^{(r)}=B_r+\frac{S^r}{1-T},\quad W=3r,\quad A=r+3.
+\]
+This is the infinite-BINARY reference with r final ternary parts,
+not the infinite-initial-ones derivative used in the preceding pure
+ternary theorem. Put $\phi=1+q$, $q^2+q=1$, $q>0$, and
+$H^{(r)}_n=R^{(r)}_n-\phi R^{(r)}_{n-1}$.
+
+\begin{theorem}
+For EVERY r>=0, the reference $R^{(r)}$ has full C at every current
+rank and every shift at least three. For r>=6 its ordinary coefficients
+are LC at EVERY centre A<=n<=W. This ordinary-LC statement stops
+at W: the minor at W+1 is strictly negative for every r>=1.
+
+Consequently EVERY ACTUAL $1^\alpha2^u3^r$ with
+\[
+                 \alpha\ge1,\qquad u\ge\max(0,2r-3)
+\]
+has full C at all current ranks and all shifts. The binary and ternary
+counts and padding length are all unbounded. General C and original
+one-descent coefficient unimodality remain OPEN.
+\end{theorem}
+
+\paragraph{A complete golden residual with its alternating tail retained.}
+The reference satisfies $R^{(r+1)}=1+S R^{(r)}$ and
+\[
+ H^{(r)}(z)=\frac{C_r(z)}{1+qz},\quad C_r=1+z^3B_r,\qquad
+ H^{(r+1)}=S H^{(r)}+(1-\phi z).                 \tag{1}
+\]
+The polynomial C_r has degree W, top coefficient one, and next
+coefficient r-1 for r>=1. Its finite prefix H_0..H_W is not
+identified with a polynomial outside that interval. In fact
+\[
+ \tau_r=H^{(r)}_W=(2q^2)^r>0,\qquad
+ H^{(r)}_{W+j}=(-q)^j\tau_r\quad(j\ge0).         \tag{2}
+\]
+For example evaluate C_r at -phi using $1-T(-\phi)=0$ and
+$S(-\phi)=-2\phi$, or induct directly in (1). The complete top
+reads are
+\[
+ H_W=\tau_r,\quad H_{W-1}=\phi(1-\tau_r),\quad
+ H_{W-2}=\phi\{r-1-\phi(1-\tau_r)\}.           \tag{3}
+\]
+The registered all-reference golden-head theorem proves H_n>0
+for EVERY 2<=n<=W. These positive entries, not the later alternating
+ones, form the finite tail used below.
+
+\paragraph{Unbounded controls for the unperturbed H3 residual.}
+Let $h=(1-S)^{-1}$ and $K_n=h_n-\phi h_{n-1}$. It obeys
+the tribonacci recurrence with initial values 1,-q,1-q.
+For every n>=6,
+\[
+ 0<K_{n-1},\quad K_n\le2K_{n-1},\quad
+ |K_n^2-K_{n-1}K_{n+1}|\le K_{n-1}.             \tag{4}
+\]
+Here is a full induction rather than a sampled envelope. The
+positive starting values at ranks 5,6,7 are
+6-7q,11-13q,20-24q. The initial values of
+$2K_{n-1}-K_n$, at n=6,7,8, are 1-q,2-2q,3-4q.
+Both sequences obey the positive tribonacci recurrence, so positivity
+propagates. The minors at centres 6,7,8 are 2-3q,-3+q,1+4q,
+bounded in absolute value by the respective preceding K values.
+Their exterior-square recurrence is $M_{n+3}=-M_{n+2}-M_{n+1}+M_n$.
+The registered signed-majorant argument proves the whole (4).
+The new Lean theorem verifies this entire assembly, with the bounds
+3/5<=q<=5/8 derived from the quadratic equation.
+
+\paragraph{Both new left entries are paid uniformly.}
+We prove, by induction from r=6, that
+\[
+ (H^{(r)}_n)^2\ge H^{(r)}_{n-1}H^{(r)}_{n+1}
+                         \quad(A\le n<W).          \tag{5}
+\]
+The first three ordinary losses of R relative to h, at A,A+1,A+2,
+are 1,r+2,(r^2+5r+10)/2. This follows from the first losses
+1,2,5 of h relative to $1/(1-T)$ and multiplication by S^r.
+Thus the first three H losses relative to K are
+\[
+           1,\quad b=r+2-\phi,\quad
+           c=(r^2+5r+10)/2-\phi(r+2).             \tag{6}
+\]
+For r>=7, b>=5 and
+\[
+                c-4b-1=r(r-7)/2+(2-\phi)(r-2)\ge0.
+\]
+At the first centre, (4) bounds the actual minor below by
+$(b-5)K_{A-1}+1\ge0$. At the second centre its exact expansion
+is $M_K-2bK_{A+1}+b^2+cK_A+(K_{A+2}-c)$.
+This is at least $(c-4b-1)K_A+b^2+(K_{A+2}-c)\ge0$.
+The last term is the ACTUAL positive H_{A+2}, since A+2<=W.
+Both entrance payments, including this actual-input guard, have a
+single scoped Lean theorem.
+
+\paragraph{All middle reads and both terminal corrections.}
+Assume (5) at r>=6 and let W=3r. Truncate the old H to the
+positive interval [r+2,W]. By (5) this finite sequence is globally
+LC. Convolution by S preserves LC. At new centres n>=r+6 and
+n<=W, its entire triple agrees with (1); every old read is within
+the positive truncated interval. At centre W+1 the preceding and
+current values still agree, while the next value is lowered by
+q*tau_r, because the first old tail value is -q*tau_r. Lowering that
+successor improves the minor.
+
+Only the last new interior centre W+2 remains. Its complete triple
+is, by (2),(3),
+\[
+ \phi(r-1)-1+2\tau_r,\quad
+ \phi(1-\tau_r)+q^2\tau_r,\quad 2q^2\tau_r.
+\]
+The frozen forward-inverse endpoint identity gives its minor
+\[
+                 \phi^2-2\{\phi+q(r-1)\}\tau_r.      \tag{7}
+\]
+The OLD pure-ternary forward-CI theorem, for every r>=6, already
+proves $2(\phi+qr)\tau_r\le\phi^2$ from its one fixed r=6
+potential and the contracting recurrence. Formula (7) has the
+additional nonnegative slack 2q*tau_r. Its complete payment is
+also kernel checked. The last positive value at W+3 joins zero
+extension and has an automatic endpoint minor. Thus every target
+centre is covered: two new left entries, all middle reads, the
+improved penultimate read, and the one terminal corner.
+
+The ONLY new finite premise is r=6: the eleven values H8..H18
+are positive and the nine minors at centres 9..17 are positive.
+They are reconstructed exactly in the quadratic field and checked
+in ONE Lean report for the exact root; its narrow rational root
+bounds are proved internally. No parameter enumeration is used
+as an unbounded induction premise.
+
+\paragraph{From residual LC to ordinary LC and complete reference C.}
+The first ordinary F minor at A is nonnegative by the previously
+registered first-loss scalar kernel and the unbounded ordinary
+tribonacci minor bound. In fact its strong bound is at least R_A.
+Use $R_n=\phi R_{n-1}+H_n$ and the exact geometric-cumulative
+minor-propagation identity of the all-order cut theorem. Positive H
+and (5) propagate ordinary LC from A through W-1. At W, the
+identity
+$M_R(W)=R_WH_W-R_{W-1}H_{W+1}>0$ pays the endpoint directly.
+At W+1, H is negative and its successor positive, so the same
+identity proves the claimed strictly negative minor.
+
+The first ordinary loss at A is one. The proved H3 renewal-root
+residual bound gives $R_A<\lambda_3R_{A-1}$, while every protected
+H3 cumulative ratio is at least lambda3. The finite ordinary-to-G
+bridge therefore proves every C shift for A<N<=W+1. For N<A
+the whole needed prefix is H3, and at N=A the current derivative
+alone is lowered, preserving reference C. Finally the OLD general
+infinite-binary reference theorem already gives all C at N>=W-1.
+These ranges cover every current, without assuming a first mode
+for an infinite growing reference. For r<=5, take arbitrarily long
+binary prefixes in the OLD nonbinary-weight-at-most-32 complete-C
+family; each finite read agrees with the infinite reference. The
+case r=0 is the established binary renewal reference.
+
+\paragraph{Return to actual arms with BOTH counts unbounded.}
+Let $F_{\alpha,u}=\sum_{j<u}T^j+T^u[\alpha+1]$ be the binary
+arm. Then
+\[
+ R^{(r)}-F_{1^\alpha2^u3^r}
+      =S^rT^u\{(1-T)^{-1}-[\alpha+1]\}\ge0.
+\]
+For u>=1 the first loss occurs exactly at original rank u+r+2:
+the bracket begins at degree two, with coefficient two for alpha=1
+and one for alpha>=2. If u>=2r-2, every read through W-1 agrees
+with the complete-C reference. At u=2r-3 the first ordinary loss
+is exactly at W-1; only its current D is lowered in the C comparison
+there, so it is still paid. All earlier currents are unchanged.
+The OLD universal ACTUAL C theorem covers every N>=W, every
+padding and every shift. For r<=5 the weight-32 theorem covers
+all u directly; r=0 is already binary. This proves the actual cone.
+
+\paragraph{Formal scope.}
+Four generic reports verify the unbounded K controls, both left
+payments, inherited terminal budget, and every two-ended window
+read guard. One fixed-base report certifies the complete r=6
+quadratic-field entrance. Existing forward-CI potential, LC
+convolution, ordinary-to-G bridge, renewal bounds, general reference
+late C and universal actual late C are reused and not recounted.
+Generating functions, exact source losses and the reference/actual
+assembly are written proofs, not end-to-end Lean composition
+formalizations. No general original UI conclusion is asserted.

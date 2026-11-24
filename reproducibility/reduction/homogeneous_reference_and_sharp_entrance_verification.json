@@ -1,0 +1,85 @@
+{
+  "status": "PASS_UNBOUNDED_HOMOGENEOUS_REFERENCE_C_AND_HPLUS1_FINITE_PRINCIPLE",
+  "new_scoped_reports": 8,
+  "kernels": {
+    "all_capacity_relative_spectral_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_word_relative_spectral_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_word_homogeneous_rank_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "entire_convolution_ratio_envelope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "spectral_determinant_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "alternating_first_defect_LC_boundary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "later_ordinary_seed_exact_payment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "simultaneous_finite_read_integration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "reference": "EVERY finite capacity word>=2, ANYORDER, after removing all leading twos: W=degB=sumV. COMPLETE ALL-shift reference C at EVERY N>=W+1, improving W+6 to FIRST homogeneous rank. B>=0 and ALL-read binary cumulative ratio envelope, RELATIVE full-word bound phi^r|B(-phi)|<=phi^W B(1/phi). FIRST rank W+1 has negative conjugate error. All remaining ranks use exact determinant and sharp amplitude budget; singleton rank W+2 is exact equality. No early single-jump C theorem imported. General earlier reference ranks N<=W remainOPEN.",
+  "sharpened_principle": "ANY fixed sorted nonempty V>=3, r=len,W=sum,h=W-r,H=h+1: FIRSTDmode ordinary LC only at SINGLEu=H and alpha<=2h+2, centersW+2..FIRSTmode, implies ALLlateactualC atN>=W+1 forEVERYu>=H,ALLalpha. Add early reference C N<=W and shorter actual u<H,alpha<=u+h+1 to obtain COMPLETEC for ALLu. Exact same padding/mode bounds read<=2u+W+1. Alternating signed Cassini pays boundary nonnegatively; zero allowed. TWO explicit ORDINARY F seeds atN0-2/N0-1 replace unnecessarily early D seeds, followed by FULL finite F/G integration. Entrance remains HYPOTHESIS for arbitraryV.",
+  "actual_band": "UNCONDITIONALLY ALL actual C shifts for 1alpha2^uV throughout W+1<=N<=u+r+2; nonempty at u>=h-1. No density/entrance LC hypothesis for this band. First mismatch improves C, not prefix equality at that endpoint.",
+  "formal_scope": "EIGHT NEW clean standard-axiom scoped reports: ALLcapacity relative norm, FULL unbounded word relative-amplitude induction, arbitrary word/rank amplitude budget, ENTIRE finite convolution ratio-envelope transport, spectral scalar determinant payment, alternating-negative-boundary LC payment, exact later ordinary seed identity, FULL arbitrary-length simultaneous F/G finite-read induction. Numerator generation, Binet/atom identification, binary cumulative LC, exact spectral determinant identification/sign joining, actual polynomial/mode/ordinary-seed assembly and whole LC propagation are WRITTEN with old propagation kernels reused, not end-to-end Lean actual-composition proof. QA independently rebuilds references from suffix products. Finite CI LC diagnostics are not a universal entrance proof.",
+  "remaining": "Arbitrary CI inverse-kernel/actual u=h+1 entrance LC remains OPEN. Earlier arbitrary-reference C N<=W, general actualC/A2 and ORIGINAL general unamplified UI remainOPEN. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "all_capacity_relative_spectral_norm_steps": 26348,
+    "exact_binary_cumulative_vs_reference_slope_determinants": 48000,
+    "exact_homogeneous_relative_amplitude_budgets": 43928,
+    "all_read_binary_cumulative_envelopes": 841797,
+    "exact_prefix_minimum_all_shift_C_payments": 205644,
+    "logical_shift_coverage": 35797904,
+    "literal_all_shift_C_products": 228673,
+    "independently_rebuilt_arbitrary_order_reference_words": 4000,
+    "finite_only_sharpened_rising_tail_LC_minors": 66730,
+    "exact_new_ordinary_and_cumulative_integration_steps": 2465104,
+    "sharpened_actual_contexts": 1200
+  },
+  "state_sha256": "1e1a3766808ec64213c5e7854c09d36407e30a6a0e55e9a29ccac5ae2630172d",
+  "sha256": {
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338",
+    "sharpened_multitail_single_entrance.tex": "b3373c11e2e1585ca2227097699a11dcaa710fe41704b032fce18e8b312f8718",
+    "HomogeneousReferenceC.lean": "b5d62c0685f017cd0474c530d9b320ee3a190ed6f03f33a19aed3ca72cbd6219",
+    "HomogeneousReferenceC.log": "cb295d62c3baf4ab76000231212ef43f36d4b791d7dd2cc8dd570ae1aa0b3794",
+    "audit_homogeneous_reference_and_sharp_entrance.py": "c7ce5dbcea4b61e5ccf5611d6733c692bfd0f8bd0016f74167e02b7696c6542a",
+    "audit_homogeneous_reference_and_sharp_entrance.json": "d4d25766211e391635e4b415e984e158cd5bdd6399cc2600387a5799595188ae",
+    "verify_homogeneous_reference_and_sharp_entrance.py": "3b6146252803271d80b33024b1abed09f59b49e02f7f88223db0dc2610b21de5",
+    "arbitrary_Fibonacci_tail_late_C.tex": "b41f1fe8965e1f4fc8f57217a26bd5ba340314d969ca259d5314e628981bcbfa",
+    "ArbitraryFibonacciTailLateC.lean": "d9d5d6e9af6ccf319f2733219880e2630ab24f381be1f8b26d8a951d9183dd77",
+    "ArbitraryFibonacciTailLateC.log": "2ca862453850852d53fbc1f6589fe9ad60317abb0212db91bf14e3bca56f110b",
+    "multitail_binary_prefix_finite_principle.tex": "f62e1ebcf0f9eaff68400b6117314c881a58f5955974a917b75d258153244417",
+    "MultitailCassiniBudget.lean": "7a9ee352f0e9d5a3d73a0eefc7f5dcf46e218cd94e7669e8fc5e35de9e9ac149",
+    "MultitailCassiniBudget.log": "9ad86f58c9404185c53d8d70d8d152cb144598ed68a8df7c93615aee00061e66",
+    "OneJumpUniformAnalyticKernels.lean": "7ec0c7fd64b51e8ac11e49c8476aa2c43a55d64083f092eef0c4bd09a13805e1",
+    "OneJumpUniformAnalyticKernels.log": "ca49ae72d611a09f368d57489d9fe6698d6efc7016a0a0f90b83f0ea86cf6889"
+  }
+}

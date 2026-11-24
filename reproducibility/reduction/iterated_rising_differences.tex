@@ -1,0 +1,63 @@
+% A rising-side shape theorem. No assertion about signed products is made.
+\section{Iterating positive differences of ordinary two-arm products}
+Write $\mathcal D p=(\Delta p)^+$, with zero extension at the left.
+Call a finite nonnegative sequence recursively rising-unimodal if every
+$\mathcal D^j p$, $j\ge0$, is unimodal and log-concave on its rising
+side, through its last mode.
+
+\begin{lemma}
+This class is preserved by terminal truncation and by convolution with
+an interval polynomial $[t]$.
+\end{lemma}
+\begin{proof}
+Truncation commutes with $\mathcal D$, apart from replacing the new
+terminal negative difference by zero. Thus every iterated positive
+difference is the corresponding truncation of the original one.
+For windows, first apply the signed-window lemma to $\Delta p$:
+its positive part is $\mathcal Dp$, and its positive support is an
+initial interval. The window has a positive part which agrees with
+$[t]\mathcal Dp$ until the end of the positive input, followed by a
+nonincreasing part. Hence its next positive difference is a terminal
+truncation of the corresponding positive difference of
+$[t]\mathcal Dp$. Repeating this observation proves every order.
+Equivalently one may induct on the order of differentiation; at each
+step only a terminal truncation of a uniform window occurs. The
+rising-side log-concavity at the joining edge follows from the
+signed-window lemma. The assertion for order zero is the ordinary
+rising-side log-concavity window lemma.
+\end{proof}
+
+\begin{theorem}
+Let $A_T,A_W$ be formal arms whose ones occur initially and whose
+remaining parts are at least two, in any order. Then the reverse of
+$A_TA_W$ is recursively rising-unimodal. The analogous assertion
+holds for a single reversed formal arm.
+\end{theorem}
+\begin{proof}
+An interval is an immediate base case. A single reversed arm is
+obtained by $q_{Tt}=[t]q_T+z^{\operatorname{wt}T+t}$.
+The final two coefficients are both one, so this last monomial
+does not change any positive difference. The window lemma proves
+the assertion by induction.
+
+For the product use its established unimodality and the established
+strict first-mode bound $m_0<\max(a,b)$ when both factors are
+nonrectangular. Orient $a\ge b$ and delete the last part $t$ of
+the first arm. Then
+\[
+ p=[t]q_{T^-}q_W+z^a q_W.
+\]
+Through its first mode $m_0<a$, $p$ agrees with the window. Its
+positive differences are therefore a terminal truncation of those
+of that window; all further positive differences are truncated in
+the same way. Apply induction and the window lemma. If a factor is
+rectangular, the product is itself a uniform window and is covered
+by the lemma. Rising-side log-concavity at order zero is the
+already established ordinary-product assertion.
+\end{proof}
+
+In particular, the positive first differences are log-concave on
+their own rising side. This does not assert their full log-concavity:
+the previously recorded descending-side counterexamples still apply.
+Nor does recursive rising-unimodality settle the signed two-arm
+window required for the unrestricted one-descent problem.

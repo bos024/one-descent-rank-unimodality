@@ -1,0 +1,198 @@
+% An unbounded late-overlap wedge.  No general C or S claim.
+\section{A universal upper envelope for the first-defect source}
+Write $E_X=1-z+(2z-1)F_X$, let $p\ge2$ be the first missing
+weight, and put $A_X=z^{-p}E_X$.  All formal-series comparisons
+below are coefficientwise.  For every actual increasing arm,
+\[
+ A_X\preceq N_p:=\frac{p}{(1-2z)(1-z)^{p-2}}.             \tag{1}
+\]
+The same conclusion holds for the normalized source append grammar
+with nondecreasing first missing weights.  The sharper first jet is
+\[
+ A_X(0)\le p,\qquad [z]A_X\le f(p):=\frac{p(p+1)}2-1.    \tag{2}
+\]
+Here $A_X(0)$ means its constant coefficient, not evaluation at one.
+
+\begin{proof}
+An initial all-ones arm has first missing weight two, and every
+coefficient of its normalized source is at most two.  Thus (1)
+holds against $N_2=2/(1-2z)$; its first jet is at most two, as
+required by (2).  Use the established leading multiplicity bound
+$A_X(0)\le p$.  In a stationary append $t=p-1$, the exact source
+recurrence is $A'=1+S_tA$, where $S_t=z+\cdots+z^t$.
+Since $S_t\preceq z/(1-z)$,
+\[
+ (1-S_t)N_p\succeq\frac{p}{(1-z)^{p-1}}\succeq1.
+\]
+Consequently $1+S_tA\preceq N_p$.  In a growth step from first
+weight $p-1$ to $p$, the recurrence is
+$A'=[t]A+z^{t-p+1}$, with $t\ge p-1$ and $[t]=1+\cdots+z^{t-1}$.
+The exact difference
+\[
+ N_p-\frac{N_{p-1}}{1-z}
+       =\frac1{(1-2z)(1-z)^{p-2}}\succeq\frac1{1-z}
+\]
+pays the entire current unit birth at any offset.  This proves (1)
+by the exact source grammar; no derivative of a coefficient bound
+is used.  In a stationary step the new first jet is the old leading
+multiplicity, at most $p\le f(p)$ for $p\ge3$.  In a growth step
+it is at most $f(p-1)+(p-1)+1=f(p)$.  This proves (2).
+\end{proof}
+
+\section{A general explicit later-overlap payment without C}
+Let $A=F_Z,B=F_Y$ be actual increasing nonrectangular arms, with
+first missing weights $3\le p\le q$.  At shared forward rank $j$
+write
+\[
+ n=\operatorname{wt}Z+\operatorname{wt}Y-j,\quad
+ e_n=2(AB)_j-(AB)_{j+1},\quad j+1=p+q+r,\quad r\ge0.
+\]
+Define the explicit nonnegative integer
+\[
+ K_r(p,q)=[z^r]\frac1{(1-2z)^2(1-z)^{p+q-4}}
+  =\sum_{l=0}^r(l+1)2^l\binom{p+q+r-l-5}{r-l}.       \tag{3}
+\]
+The binomial in (3) has nonnegative upper argument since $p+q\ge6$.
+
+\begin{theorem}[Source-envelope late-overlap criterion]
+Suppose both ordinary factors are still strictly rising at $j+1$.
+If either positive ordinary forward derivative is nonincreasing
+at this edge, the established direct source-monotonicity proof
+already gives $e_{n+1}\le e_n$.  If both positive derivatives
+strictly increase, the numerical condition
+\[
+                 pqK_r(p,q)\le2^{p-1}-p-q              \tag{4}
+\]
+gives the stronger conclusion $2e_{n+1}\le e_n$.
+Thus under (4) and $e_n\ge0$ the tail cannot recover, and the
+usual OLD A2 head input gives S at every head.
+\end{theorem}
+\begin{proof}
+Put $D_X(i)=(F_X(i)-F_X(i-1))^+$ for $i\ge2$.
+Strict increase of both $D$ at the compared edge puts the whole
+used prefix at or before both first global $D$ modes.  The proved
+delayed second-source bound gives
+\[
+ \Delta E_Z(j+1)\ge D_Z(q+r),\qquad
+ \Delta E_Y(j+1)\ge D_Y(p+r).                          \tag{5}
+\]
+The first term is at least $D_Z(p)=2^{p-2}-E_Z(p)
+\ge2^{p-2}-p$.  If $p+r<q$, the second term is the universal
+$2^{p+r-2}\ge2^{p-2}$; otherwise it is at least
+$D_Y(q)=2^{q-2}-E_Y(q)\ge2^{p-2}-q$.  Hence in all cases
+\[
+             \Delta E_Z(j+1)+\Delta E_Y(j+1)
+                            \ge2^{p-1}-p-q.            \tag{6}
+\]
+The positive source envelope (1) gives
+$(E_ZE_Y)_{j+1}\le pqK_r(p,q)$.  Combine (4)--(6) with the
+exact product contrast
+\[
+ e_n-2e_{n+1}
+ =\Delta E_Z(j+1)+\Delta E_Y(j+1)-(E_ZE_Y)_{j+1}.
+\]
+This proves the assertion.  The nonincreasing-derivative branch
+uses the previously proved source-monotonicity proposition and
+does not need (4).
+\end{proof}
+
+\begin{corollary}[An unbounded wedge of genuinely later overlaps]
+The preceding nonrecovery conclusion holds whenever
+\[
+              64\le p\le q\le2p,\qquad0\le16r\le p,  \tag{7}
+\]
+both ordinary factors are strictly rising, and $e_n\ge0$.
+Counts, capacities and initial-one lengths are unrestricted.
+In particular the allowed late-overlap depth $r$ is unbounded.
+\end{corollary}
+\begin{proof}
+Evaluate the positive series in (3) at $z=1/16$:
+\[
+ K_r\le\frac{64}{49}\,16^r(16/15)^{p+q-4}
+       \le\frac{64}{49}\,2^{3p/4}.                   \tag{8}
+\]
+For the last step use $16r\le p$, $p+q-4\le3p$ and
+$(16/15)^6<2$.  For every integer $p\ge64$,
+\[
+ 2^{p/4}\ge\frac{512}{49}p^2,\qquad3p\le2^{p-2}.   \tag{9}
+\]
+The first holds at 64 and propagates by one: $2^{1/4}>17/16$
+while $((p+1)/p)^2\le(65/64)^2<17/16$.
+The second holds at 64 and doubles faster than its linear right
+parameter.  Therefore
+\[
+ pqK_r\le\frac{128}{49}p^2\,2^{3p/4}
+       \le2^{p-2}\le2^{p-1}-3p\le2^{p-1}-p-q.
+\]
+This proves (4), with an arbitrary-length integer induction in (9).
+\end{proof}
+
+\section{A sharper complete second-overlap diagonal}
+At precisely the SECOND source-overlap rank $j+1=p+q+1$, (2)
+gives the stronger bound
+\[
+ (E_ZE_Y)_{j+1}\le p f(q)+q f(p)
+                   =\frac{pq(p+q+2)}2-p-q.           \tag{10}
+\]
+Consequently both strictly increasing positive derivatives give
+$2e_{n+1}\le e_n$ under the sharper condition
+\[
+                       2^{p-1}\ge\frac{pq(p+q+2)}2.   \tag{11}
+\]
+In particular EVERY equal-first-weight second overlap with
+$p=q\ge12$ is paid.  Indeed (11) is then
+$2^{p-1}\ge p^2(p+1)$; it holds at 12, and propagation follows
+from $2p^2\ge(p+1)(p+2)$ for $p\ge4$.
+The flat/falling positive-derivative branch is already paid
+without (11).  Under $e_n\ge0$ this gives tail nonrecovery
+and hence all-head S with the usual OLD A2 head input.
+
+These are scoped new late-overlap regions, not a proof of
+general both-rising nonrecovery, C, full S/A2, or original
+undilated coefficient unimodality.  They can apply in the
+pre-count residual $p+q\le j\le h+g-2$ by taking counts large;
+neither proof assumes the post-count rank threshold.
+
+\paragraph{The complete zero-head branch in these new regions.}
+For two actual old arms with at least two non-one parts each,
+proper zero-head S holds throughout either (4) or (11), with
+NO separate both-rising or OLD A2 premise.  Indeed strict weighted
+fall is precisely $e_n<e_0=2$ at this head; together with the
+nonnegative integer tail it gives $e_n\in\{0,1\}$.  Since
+$j+1\ge p+q$, both first sources have appeared.  The previously
+proved double-defect convolution bound then forces both ordinary
+factors to be strictly rising.  The preceding theorem gives tail
+nonrecovery (using the direct branch if a positive derivative
+does not increase).  The explicit positive zero-head head budget
+pays S.  In particular this unconditional zero-head conclusion
+holds on the unbounded wedge (7) and at every equal-first-weight
+second overlap $p=q\ge12$.
+
+\paragraph{Verification scope.}
+The companion Lean file has sixteen scoped unbounded scalar/finite-sum
+reports: affine source-majorant transport, arbitrary finite product
+majorants, stationary and growth first jets, source contrast, nonnegative
+halving, the zero-head integer bound and two-source positive-slope
+implication, the first-jet product payment, second-overlap payment,
+the COMPLETE $p\ge12$ exponential induction, the eighth-power step,
+the COMPLETE $p\ge64$ fourth-power exponential induction, the linear
+exponential induction, final wedge payment and exact rational constants.
+Every report uses only the standard axioms \texttt{propext},
+\texttt{Classical.choice}, \texttt{Quot.sound}.  The fourth-power
+formulation is exactly the fourth power of the first inequality in (9),
+so no real-exponent evaluation is used as a proof oracle.
+The formal-series coefficient identities, exact actual source grammar,
+positive coefficient evaluation at $1/16$, and assembly with the existing
+delayed-second-source and double-defect theorems remain written proofs;
+no end-to-end Lean composition theorem is asserted.
+
+The independent direct-forward and source-grammar diagnostic checks
+113386 source coefficients in 1800 arms, 31009 both-rising overlap
+edges in 2400 actual pairs, and 173609 exact numerical wedge points.
+Three explicit nonnegative-tail examples are inside
+$p+q\le j\le h+g-2$, including
+$Z=Y=1\,2^{137}63^{61}$ at $p=q=64,r=4,j=131$.
+These finite checks support the identities and boundary bookkeeping;
+the unbounded grammar/inequality proof above, rather than the sample,
+proves the theorem.  The separate small nonactual doubling-cone
+counterexample in the diagnostic JSON does not refute this result.

@@ -1,0 +1,1 @@
+'AutomaticLateCInfiniteEdge.certified_infinite_tail_edge' depends on axioms: [propext, Classical.choice, Quot.sound]

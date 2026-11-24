@@ -1,0 +1,274 @@
+\section{Relative Fibonacci log-concavity and complete property C for binary arms}
+The statements below have unbounded numbers of twos and unbounded initial
+strings of ones.  This is a single-arm result and a both-rising two-arm
+consequence; general C and the original one-descent conjecture remain open.
+Write $f_n=\operatorname{Fib}(n+1)$, with $\operatorname{Fib}(0)=0$.
+For an ordinary unimodal arm $F=F_{1^\alpha2^h}$ put
+$D_n=\max(F_n-F_{n-1},0)$ for $n\ge2$, with $D_0=D_1=0$.
+
+\subsection*{The terminal-trimming family}
+\begin{lemma}[Exact binary clipping]
+For $h\ge1$ the sequence $d_h(n)=D_{n+2}$ has interval positive
+support starting at zero, and $d_1=(1)$.  If $d_h$ ends at index $L$,
+then $d_{h+1}$ is obtained from
+\[
+                  (1)+(z+z^2)d_h
+\]
+by lowering only the last coefficient, at index $L+2$, to a
+nonnegative integer.  A zero final coefficient is deleted.
+\end{lemma}
+\begin{proof}
+The arm recurrence is $F'=1+(z+z^2)F$.  If $R$ is the first
+ordinary mode of $F$, its signed differences are positive through
+$R$, nonpositive after $R$, and its positive-difference support is
+$[2,R]$.  The new signed differences, at ranks at least two, equal
+$\mathbf1_{n=2}+\Delta F_{n-1}+\Delta F_{n-2}$.
+Through $R+1$ this is the stated positive convolution.  At $R+2$
+its positive part is between zero and $D_R$, the raw last coefficient.
+At every later rank both old differences are nonpositive.  At the
+first append, $F=1+(z+z^2)[\alpha+1]$ has $D=z^2$, for every
+$\alpha\ge1$.  Ordinary arm unimodality supplies the signed-slope
+description; no conjectured coefficient or cumulative log-concavity
+is used.
+\end{proof}
+
+In fact allow the last coefficient at each step to be lowered
+\emph{arbitrarily}.  The following stronger statement holds for
+every history in this enlarged family.
+\begin{lemma}[Tail minors in every arbitrary-trim history]
+At step $h\ge1$, the support is an interval $[0,L_h]$, and
+\[
+ d_h(n)=f_n\quad(0\le n<h),\qquad
+ 0\le d_h(n)\le f_n,\qquad d_h(h)\le f_h-1.                 \tag{1}
+\]
+Moreover
+\[
+ d_h(n)^2\ge d_h(n-1)d_h(n+1)\quad(n\ge h-1),             \tag{2}
+\]
+and the minor in (2) is at least one if $n\ge h$ and
+$d_h(n)>0$.  All sequences are zero-extended.
+\end{lemma}
+\begin{proof}
+The support and bounds in (1) follow by positive convolution,
+$f_n=f_{n-1}+f_{n-2}$, and induction.  The next trim is at
+$L_h+2\ge h+1$, so it does not touch the new exact prefix.
+At the next first-defect index $h+1$, either the last coefficient
+is lowered, or the old defect and one old prefix value add;
+in either case at least one unit is missing from $f_{h+1}$.
+The base $h=1$ is $d=(1)$.
+
+For (2), first examine the new boundary centre $n=h$.
+The three raw values are $f_{h-1},f_h$, and at most $f_{h+1}-1$.
+Cassini gives the lower bound
+\[
+ f_h^2-f_{h-1}(f_{h+1}-1)
+       =f_{h-1}+(-1)^h\ge0.                              \tag{3}
+\]
+For a later centre $n\ge h+1$, write four consecutive old values
+as $A,B,C,D$.  The raw new minor is
+\[
+ (B+C)^2-(A+B)(C+D)
+   =(B^2-AC)+(C^2-BD)+(BC-AD).                           \tag{4}
+\]
+Old log-concavity at the two relevant centres applies.  If the
+new central value is positive, interval support implies $B>0$.
+Multiplying $B^2-AC\ge0$ by $C$, and $C^2-BD\ge0$ by $A$,
+shows $B(BC-AD)\ge0$; hence the last summand is nonnegative.
+If $C>0$, the old strict assertion gives $C^2-BD\ge1$.
+If $C=0$, interval support gives $D=0$, and (4) is $B^2\ge1$.
+At zero central values the assertion follows from interval support.
+For the low boundary $h=1,n=2$, the raw triple is $(1,1,0)$
+and the same strict claim is immediate.
+
+Finally, lowering only the last coefficient improves its preceding
+minor, leaves earlier minors unchanged, and changes its own minor
+to the square of the new last value.  A positive integer last value
+therefore retains a minor at least one.  This proves both induction
+assertions, including arbitrary terminal trims.
+\end{proof}
+
+\begin{theorem}[Relative Fibonacci log-concavity]
+Every binary arm satisfies, at every $n\ge1$,
+\[
+ d_h(n)^2 f_{n-1}f_{n+1}
+       \ge d_h(n-1)d_h(n+1) f_n^2.                       \tag{5}
+\]
+Thus the zero-extended sequence $d_h(n)/f_n$ is log-concave.
+\end{theorem}
+\begin{proof}
+For $n\le h-2$ the assertion is equality.  At $n=h-1$ it
+follows from the exact prefix and $d_h(h)\le f_h$.
+For $n\ge h$, a zero central value has zero successor.  Otherwise
+let $m=d_h(n)^2-d_h(n-1)d_h(n+1)\ge1$ and
+$\varepsilon=f_n^2-f_{n-1}f_{n+1}=(-1)^n\le1$.
+The minor in (5) is
+\[
+ f_{n-1}f_{n+1}m-d_h(n-1)d_h(n+1)\varepsilon
+ \ge f_{n-1}f_{n+1}-d_h(n-1)d_h(n+1)\ge0.
+\]
+The final inequality is the componentwise bound in (1).
+\end{proof}
+
+\subsection*{An abstract density-to-C theorem}
+\begin{theorem}[A relative-LC criterion for every C shift]
+Let $D_2=D_3=1$ and let the positive support of $D$ start at two.
+Suppose $\rho_n=D_n/\operatorname{Fib}(n-1)$ is log-concave on
+that support.  Set $F_0=F_1=1$, $F_n=F_{n-1}+D_n$ and
+$G_k=\sum_{i=0}^kF_i$.  For all $N$ in the positive support and
+all $R\ge3$, with $G$ zero-extended below zero,
+\[
+                    G_{N-R}D_{N-1}\ge G_{N-R-1}D_N.       \tag{6}
+\]
+\end{theorem}
+\begin{proof}
+If $D_N\le D_{N-1}$ the assertion follows directly from
+$G_k\ge G_{k-1}\ge0$.  Otherwise put
+$a=\rho_N/\rho_{N-1}$.  Relative log-concavity and
+$\rho_2=\rho_3=1$ imply $0<a\le1$, and every preceding
+successive density ratio is at least $a$.
+
+Use the one-parameter model
+\[
+ D^{(a)}_2=D^{(a)}_3=1,\qquad
+ D^{(a)}_i=\operatorname{Fib}(i-1)a^{i-3}\quad(i\ge3),     \tag{7}
+\]
+with its integrated sequences $F^{(a)},G^{(a)}$.  Add an atom
+of mass one at index zero and a zero at index one to both $D$
+and $D^{(a)}$.  Their density ratio is one at indices zero,
+two and three, and is nondecreasing thereafter up to $N$.
+Thus the actual atom sequence dominates the model in likelihood-ratio
+order.  Two cumulative summations give respectively $F$ and $G$.
+Cumulative summation preserves this order: if $x_i y_j\ge x_jy_i$
+for $i\ge j$, then
+\[
+ (\sum_{i\le k}x_i)(\sum_{i<k}y_i)
+ -(\sum_{i<k}x_i)(\sum_{i\le k}y_i)
+       =\sum_{j<k}(x_ky_j-y_kx_j)\ge0.                 \tag{8}
+\]
+The adjacent inequalities yield all pairs by positive denominators,
+so (8) can be applied a second time.  In particular
+\[
+             G_k/G_{k-1}\ge G^{(a)}_k/G^{(a)}_{k-1}.      \tag{9}
+\]
+It remains to prove
+\[
+ \operatorname{Fib}(N-2)G^{(a)}_k
+  -a\operatorname{Fib}(N-1)G^{(a)}_{k-1}\ge0
+                       \quad(N\ge k+3).                 \tag{10}
+\]
+For $k=0$ the second cumulative is zero; for $k=1,2$ the
+model cumulative ratio is two, while every Fibonacci ratio
+in (10) is at most two.  Consider $k\ge3$.  The expression in
+(10), as a function of $N$, satisfies the Fibonacci recurrence.
+Consequently it suffices to check $N=k+3,k+4$, namely
+\[
+ \Phi^{(e)}_k(a)=\operatorname{Fib}(k+1+e)G^{(a)}_k
+       -a\operatorname{Fib}(k+2+e)G^{(a)}_{k-1}\ge0,
+                         \qquad e=0,1.                  \tag{11}
+\]
+Direct summation of (7) gives
+\[
+ G^{(a)}_k=3k-2+
+  \sum_{j=1}^{k-3}(k-j-2)\operatorname{Fib}(j+2)a^j.
+\]
+The constant coefficient of $\Phi$ is positive and its linear
+coefficient is negative.  For every $2\le j\le k-3$ its coefficient
+is, by the Fibonacci determinant identity,
+\[
+ c_j=(k-j-2)(-1)^{j+1}\operatorname{Fib}(k-j+e).           \tag{12}
+\]
+Indeed the determinant identity is
+$\operatorname{Fib}(p+j+1)\operatorname{Fib}(j+2)
+ -\operatorname{Fib}(p+j+2)\operatorname{Fib}(j+1)
+ =(-1)^{j+1}\operatorname{Fib}(p)$, proved by induction on $j$.
+
+Pair each negative even-power term with the following positive
+odd-power term.  Write such a pair as $-A a^j+B a^{j+1}$,
+$j\ge2$.  Formula (12) gives $A,B\ge0$ and $jA\ge(j+1)B$:
+put $m=k-j\ge4$ and use
+$2\operatorname{Fib}(m+e)\ge3\operatorname{Fib}(m-1+e)$,
+together with the respective factors $m-2$ and $m-3$.
+For $0\le a\le1$,
+\[
+ j(1-a^{j+1})\le(j+1)(1-a^j),
+\]
+since $H_j=1-(j+1)a^j+ja^{j+1}$ has $H_0=0$ and
+$H_{j+1}-H_j=(j+1)a^j(1-a)^2\ge0$.
+It follows that $-A a^j+B a^{j+1}\ge-A+B$.
+The negative linear term and any final unpaired negative even
+term also have value at least their value at one.  Hence
+$\Phi^{(e)}_k(a)\ge\Phi^{(e)}_k(1)$.
+At $a=1$ the model is the Fibonacci arm and
+$G^{(1)}_k=\operatorname{Fib}(k+3)-1$.  Cassini now gives
+\[
+ \Phi^{(0)}_k(1)=\operatorname{Fib}(k)-(-1)^{k+1}\ge0,
+ \qquad \Phi^{(1)}_k(1)=\operatorname{Fib}(k+1)>0.
+\]
+This proves (11), (10), and then (6) by (9) and the exact
+current ratio $D_N/D_{N-1}=a\operatorname{Fib}(N-1)/
+\operatorname{Fib}(N-2)$.  No cumulative log-concavity of
+the actual sequence is assumed.
+\end{proof}
+
+\begin{theorem}[Complete binary property C]
+Every actual arm $1^\alpha2^h$, $\alpha\ge1$, $h\ge1$,
+satisfies every property-C comparison on its positive ordinary
+slope prefix, at every rank and every shift $R\ge3$.
+\end{theorem}
+\begin{proof}
+For $h=1$, $D=z^2$ and all comparisons are immediate.
+For $h\ge2$, $D_2=D_3=1$; apply (5) and the abstract theorem.
+On the positive-slope prefix the actual ordinary coefficients
+are exactly $F_n=1+\sum_{i=2}^nD_i$, so the cumulatives used
+in (6) are the actual ones.  Coefficients past that prefix never
+enter the compared cumulative ranks.
+\end{proof}
+
+\begin{corollary}[All-depth both-rising branch with first missing weight three]
+For a product of two actual arms, suppose one arm has first
+missing weight three and both arms ordinarily rise at the current
+rank.  A nonnegative current reverse deficit cannot recover at
+the next comparison.  There is no restriction on overlap depth,
+opposite first weight, counts, capacities or initial padding.
+The usual OLD head still supplies the all-head S conclusion.
+\end{corollary}
+\begin{proof}
+If the first-weight-three arm has at least two non-one capacities,
+sortedness forces them all to equal two.  Its complete C property
+therefore applies in the established local C-to-S bridge: expand
+the opposite nonnegative, nondecreasing source as a nonnegative
+sum of shifts, and sum (6).  If it has just one non-one capacity,
+its positive ordinary differences have height one and hence
+never strictly increase.  Direct source convolution then gives
+nonrecovery while that arm still ordinarily rises, independently
+of the phase of its opposite arm.  The proper-zero-head phase
+forcing and usual OLD-head argument are unchanged.
+\end{proof}
+
+\begin{corollary}[The entire proper zero-head branch with a binary arm]
+If each actual arm has at least two non-one capacities and either
+has first missing weight three, every properly conditioned zero-head
+S comparison holds.  No OLD A2, opposite first-weight bound, depth
+bound, or ordinary-phase hypothesis is needed.
+\end{corollary}
+\begin{proof}
+The first-weight-three arm is binary and has C.  Apply the complete
+one-arm-C zero-head theorem in \texttt{zero\_head\_C\_bridge.tex}.
+Its first-defect alternatives are already unconditional; in its
+double-defect alternative the zero-head integer budget forces both
+ordinary factors to rise.  Thus the preceding corollary applies
+exactly where it is needed, without imposing a global phase premise.
+\end{proof}
+
+The corollary does not remove the still-rising hypothesis on the
+binary owner.  It does not assert the general C conjecture for
+capacities above two, the remaining mixed branch, A2, or original
+coefficient unimodality.  Finite diagnostic counts are recorded
+separately and are not used to extend any quantifier here.  The two
+companion Lean files verify 20 scoped kernels, including the full
+arbitrary-trim tail induction, relative-minor transfer, unbounded
+power-pair payment, Fibonacci determinant and coefficient bounds,
+endpoint identities, cumulative LR and scalar C transfer.  Exact
+word-to-trim identification, polynomial coefficient assembly, and
+the whole composition theorem are written proofs, not an end-to-end
+Lean formalization.

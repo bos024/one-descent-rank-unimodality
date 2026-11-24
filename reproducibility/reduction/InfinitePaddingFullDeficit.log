@@ -1,0 +1,9 @@
+'InfinitePaddingFullDeficit.golden_upper_five_eighths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfinitePaddingFullDeficit.final_ulc_factor_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InfinitePaddingFullDeficit.entire_final_geometric_power_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfinitePaddingFullDeficit.final_large_kernel_quantitative_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InfinitePaddingFullDeficit.twelve_small_final_rows' depends on axioms: [propext, Classical.choice, Quot.sound]

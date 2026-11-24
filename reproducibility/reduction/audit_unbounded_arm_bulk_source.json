@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "Finite diagnostics of the complete unbounded formal-series source proof and its exact finite initial range. No central finite-arm theorem inferred.",
+  "profiles": 985,
+  "actual_source_comparisons": 62055,
+  "exact_source_identities": 62055,
+  "finite_arm_coefficient_equalities": 240
+}

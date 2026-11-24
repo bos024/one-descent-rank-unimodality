@@ -1,0 +1,63 @@
+\section{An exact divided-CI positive-primitive target for padding two}
+This reduction originally isolated an OPEN target. The separate
+surplus-three theorem now proves the $U\ge h+3$ instance needed for
+ACTUAL padding two. Two stronger primitive assertions below remain
+OPEN. Ordinary deficit LC or the unperturbed window theorem alone
+does not prove them.
+
+For $L=\prod[t_i]$, $t_i\ge3$, degree $h$, define
+\[
+ E_U=(1+z)^U L,\qquad c_U=E_U(-\phi),\qquad
+ J_U(z)=\frac{E_U(z)-c_U}{1+qz},\quad q=\phi-1.
+\]
+The numerator vanishes at $-1/q=-\phi$, so $J_U$ is a genuine
+polynomial of degree $U+h-1$. At $U\ge h+1$, it is exactly the
+entire infinite-padding geometric-deficit tail for binary parameter
+$m'=U-1$, beginning at physical tail index $U$. Thus the registered
+whole-tail theorem proves its nonnegative ordinary LC. It does NOT
+prove LC of its positive first differences.
+
+\paragraph{Exact connection to the unresolved actual entrance.}
+Let $m\ge h$, $u=m+1$, $C^\alpha=C^\infty-z^{m+\alpha}(1+z)^uL$,
+and take $\alpha=2$. Put $U=u+2=m+3$. At indices
+$n=u+s$, $1\le s\le u$, direct division gives
+\[
+ \phi C^2_{n-1}-C^2_n
+      =[z^s](1-z)J_U.                              \tag{1}
+\]
+Indeed $P_2=(1+z)^2$, $P_2(-\phi)=q^2$, and
+$c_U=(-q)^u L(-\phi)q^2$. On these coefficient indices the formal
+quotient of $E_U$ agrees with $(1+z)^2LQ_u$, while for $s\ge1$
+\[
+ [z^s]\frac{(1-z)c_U}{1+qz}
+       =\phi^2c_U(-q)^s=L(-\phi)(-q)^{u+s}.
+\]
+The equality (1) is NOT asserted at $s=0$, where the zero extension
+of the primitive lacks its preceding geometric value.
+
+Consequently LC of the positive primitive of $J_U$ at all centres
+$s\ge2$ through the required read band would suffice for the ACTUAL
+$\alpha=2$ entrance. Start backward coefficient-LC integration at
+the first actual positive-slope mode, use (1) only down to centre
+$m+2$, and use the ALREADY proved coefficient seeds at $m,m+1$.
+Thus the exceptional $s=0$ normalization is never substituted into
+a deficit triple. Terminal clipping, if present in the last read,
+only lowers the next geometric deficit and improves that last minor.
+The separate surplus-three theorem now supplies this implication's
+$U=m+3$ input, and the actual padding-two entrance is proved in
+\texttt{actual\_padding\_two\_CI\_entrance.tex}.
+
+\paragraph{Precise open primitive assertions.}
+Two candidate repairs are: full positive-primitive LC of $J_U$ for
+$U\ge h+2$, or positive-primitive LC from centre $2$ for $U\ge h+1$.
+Both would supply the above $U=m+3$ instance, which now has the
+separate weaker surplus-three proof. Neither stronger assertion is
+currently proved. The full assertion at $U=h+1$ is FALSE: at
+$L=[3]$, $h=2,U=3$, the positive primitive starts
+\[
+             (-5+4\phi,\ \phi,\ 2),
+\]
+whose first internal minor is $11-7\phi<0$.
+This is not an actual finite-padding or original-conjecture
+counterexample. It fixes the necessary initial-centre boundary.
+The unperturbed window theorem does not justify erasing $c_U$.

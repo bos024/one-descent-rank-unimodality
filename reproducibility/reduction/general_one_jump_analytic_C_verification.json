@@ -1,0 +1,46 @@
+{
+  "status": "PASS_UNBOUNDED_ANALYTIC_COMPLETE_C_FOR_ALL_ONE_JUMP_ARMS",
+  "new_scoped_reports": 7,
+  "kernels": {
+    "OneJumpUniformAnalyticKernels": 7
+  },
+  "modified_binary": "ALLh>=2,n>=h+2 withordinarybinaryF_n>Fprev: (F_n-1)^2>=Fprev*(Fnext-1), hence ordinaryminor>=2F_n-Fprev-1>=Fprev+1. Exact firsttwo defects(1,h+2)/(1,h+3)/(2,2h+3), full unbounded countinduction with two distinct old-mode branches. Entire ordinary tailLC reused, not differentiated dominance.",
+  "valley_theorem": "ANYreal normalizedincoming density(x,xu,z),0<=u<=1,z<=xu^2,p<=x<=1, outgoing densitylocalVALLEY0<=q<=p<1,q<=w<1: relativeLC survives subtractingoutgoing fromboth. Complete concavequadratic/chord and factoredendpoint proof. OppositeFibonacci parity uses modifiedinteger margin and negative referenceCassini minor.",
+  "uniform_entrance": "ANYL>=3 andALL1<=h<=L+2,ALLalpha: actualpositiveD/r(onejump infinitebinaryreference) isrelativeLC onTRUNCATEDprefixthroughFIRSTDmode. OrdinarybinaryrelativeLC/modifiedmargin plus exactoutgoingFibtriple and paritysplit. Diagonalh=L+2 improvesell<=2h using binarysignedslope(2h)<=1 versus slope(h+2)>1. NOFINITEHOST/CAPACITYENTRANCEused.",
+  "full_theorem": "EVERY ACTUAL1alpha2^h L,alpha>=1,h>=1,L>=3,ALLparametersUNBOUNDED,has COMPLETEpropertyC atALLpositivecurrentranks/shifts>=3. Uniformanalyticentrance replacescapacity32certificate; higherh uses FULLRISINGTAILcountinductiononlythroughFIRSTDmode, withstrictwindowliftkeepingBOTHoldreadsinsideOLD FIRSTmode. Both earlyD plusF/G ratioseeds and FINITEreadtwointegration payALLC. NoLCafteroldDmodeassumed.",
+  "first_weight_four_corollary": "ALLactualfirstmissing4 withmaxcapacity>=4haveCOMPLETEC: count<=2oldC, count>=3exactclassificationforcesbinaryprefixplusONElastcapacity. Multiplethrees/last3firstweight4family NOTclaimed.",
+  "coupled": "ALLdepthBOTHordinaryrising/nonnegativecurrent tailnonrecovery whenANYarmonejump orfirstweight4/max>=4, usualOLDheadretainedforS. ENTIREproperzeroheadbothcounts>=2 withthisqualifyingarm C/OLD-free withoutphasecondition bypriorbridge. Nooriginalleastcounterexampleboundupgrade.",
+  "formal_scope": "SevenNEWordinary-axiom scopedreports, including FULLunboundedmodifiedbinaryfamilyinduction and FULLrisingreferencetailinduction, arbitraryrealvalleytheorem, exactallhboundary andparity/windowkernels. Actual word/polynomial/support/mode/reference/parityidentifications and completeunboundedCassemblyWRITTEN. EarlierLC/relativeC/reference andCseed/finite-readkernels reusedwithoutrecounting. NOFINITEcapacity32entrance orfinite-wordnonfailureusedintheNEWlogicalproof; oldcertificates remain historical independentchecks. Notend-to-endLeancompositionformalization.",
+  "independent_actual_QA": {
+    "exact_first_two_binary_defect_sets": 3000,
+    "actual_modified_binary_tail_minors": 165215,
+    "actual_diagonal_improved_mode_bounds": 755,
+    "actual_UNIFORM_entrance_relative_LC_minors": 131297,
+    "actual_outgoing_exact_prefix_triples": 51211,
+    "actual_peak_parity_ordinary_LC_payments": 19809,
+    "actual_valley_parity_transfers": 31402,
+    "actual_rising_tail_LC_beyond_uniform_entrance": 120605,
+    "actual_ALL_C_current_ranks": 508454,
+    "actual_ALL_C_shifts_covered": 61830091,
+    "actual_one_jump_arms": 3000,
+    "actual_strict_window_lifts_inside_old_FIRST_mode": 10506
+  },
+  "remaining": "GeneralnonbinaryC>=6, firstmissing4MULTIPLEthrees, fullA2/lighterbinaryincoming, remainingmixednonzerohead/deeperhigherfirstweightS, ORIGINALgeneralunamplifiedcoefficientUI OPEN. ALLonejumpCresiduals/capacitycutoffsNOWREMOVED, notoriginalUIelimination.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "sha256": {
+    "general_one_jump_complete_C.tex": "9085604bc0ca4acaec6088a911ed0969cadcb7e899c1ecbe2730bc5000eedafb",
+    "OneJumpUniformAnalyticKernels.lean": "7ec0c7fd64b51e8ac11e49c8476aa2c43a55d64083f092eef0c4bd09a13805e1",
+    "OneJumpUniformAnalyticKernels.log": "ca49ae72d611a09f368d57489d9fe6698d6efc7016a0a0f90b83f0ea86cf6889",
+    "audit_general_one_jump_analytic_C.py": "1485bfc405884257e8fd9ea9f4f55ab3c9dfb008e1aa065d880e3c93bcdbb9b2",
+    "audit_general_one_jump_analytic_C.json": "38c52dff7ed557a992ccb89661233dfb753f237da50f8badcb77972e48f5031a",
+    "verify_general_one_jump_analytic_C.py": "d713089fc7943b286ddb8ae860f7597153b2b3bb8a4a9ef2084c17b1e600e2e5",
+    "ordinary_rooted_caterpillar_model.tex": "2325d255e2c49e48e6e2669c223cf406ca83ccd467681560f82fae4597d8bd99",
+    "property_C_five_nonone_arms.tex": "c1a264c81e0a98177425a0bcb995292232a960830427127b9a90908a3dfb1f50",
+    "audit_minimum_staircase_scaled_dyadic.py": "2b21ac1adb19e110473d958952a2699d33d71326faaa54c5af7f90bd91c5ed45",
+    "binary_ordinary_tail_and_one_jump_C_verification.json": "f096cdb526006928dcbe15a8d6effadd3cfb1bb5712a6dd30f21ca9ab819c45c",
+    "relative_C_inheritance_verification.json": "a36cc794d28bcb614e2b48e0441d74e23e4c5901b2d2e5314714e58d184ceb76",
+    "one_jump_fixed_capacity_finite_principle_verification.json": "c4f9de9e18b82004c47d49638ff0074bf1d1af73c84ad1d124621d3a8c694b4e"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "EXACT_QA_FOUR_SUBDEGREE_ACTUAL_LATE_C_UNDER_AUDIT",
+  "counts": {
+    "actual_CI_factor_count_growth_margins": 118716,
+    "exact_prefix_minimum_all_shift_C_payments": 964659,
+    "logical_shift_coverage": 227862033,
+    "literal_all_shift_C_products": 1379705,
+    "actual_hosts": 6547,
+    "CI_profiles": 936,
+    "all_prefix_strong_C_seed_comparisons": 459044,
+    "strictly_growing_boundary_hosts": 6273,
+    "unbounded_loss_and_three_seed_instances": 5922
+  },
+  "state_sha256": "7312e25aa4bddafb1bc54362c4095041740b94aa8f04a08fe7d2731e1e9c1b43",
+  "seconds": 8.718999999997322,
+  "scope": "UNBOUNDED h=u+4 proposed actual late-C proof. All finite cases are QA ONLY; smallw<11 uses OLD weight32 theorem. Actual factor-count source growth uses w=u+r, includes all finite-count and one-padding losses and the reference numerator x-1. Original C/A2/UI OPEN."
+}

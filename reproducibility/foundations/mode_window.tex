@@ -1,0 +1,29 @@
+\begin{lemma}[A universal right-tail bound]\label{lem:righttail}
+For a nonempty host of weight $N$ and length $l$, its rank polynomial
+is a nonnegative sum of products of interval polynomials, each
+symmetric about a point at most $(N+l-1)/2$.
+Consequently
+\[
+ [z^n]F_w\le[z^{n-1}]F_w
+       \qquad\left(n\ge\left\lceil\frac{N+l}{2}\right\rceil\right).
+\]
+\end{lemma}
+\begin{proof}
+For $l=1$, use $F_w=\Iv0N$. Assume $l\ge2$. Set
+$m_i=\max(w_{i+1},\ldots,w_l)$, with $m_l=0$, and
+$N_i=w_1+\cdots+w_i$. Group the terms of the rightmost-last-letter
+identity according to their host position:
+\[
+ F_w=1+\sum_{i:w_i>m_i}\Iv{m_i+1}{w_i}F_{w_1\cdots w_{i-1}}.
+\]
+For $i\ge2$, the induction hypothesis bounds twice the center of
+each product in this summand by
+\[
+ N_{i-1}+i-2+(w_i+m_i+1)=N_i+i-1+m_i\le N+l-1,
+\]
+since $m_i\le N-N_i$. For $i=1$, the twice-center is
+$w_1+m_1+1\le N+l-1$, using $l\ge2$.
+The constant term also meets the bound. Products of intervals are
+symmetric and unimodal, so each is nonincreasing at every difference
+index $n\ge\lceil(N+l)/2\rceil$. Summing proves the assertion.
+\end{proof}

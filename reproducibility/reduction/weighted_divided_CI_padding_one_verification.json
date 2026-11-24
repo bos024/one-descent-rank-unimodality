@@ -1,0 +1,99 @@
+{
+  "status": "PASS_UNBOUNDED_WEIGHTED_CI_PRIMITIVE_PREFIX_AND_ACTUAL_PADDING_ONE_LATE_C",
+  "new_scoped_reports": 6,
+  "kernels": {
+    "ordinary_first_head": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "binary_first_primitive_head": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "binary_second_primitive_head": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "nonempty_first_primitive_head": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unperturbed_interval_junction_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "exact_perturbed_last_junction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "analytic": "For EVERY CI L=prod[t], t>=3, degree h, and EVERY u>=h+1, the WEIGHTED divided quotient J=(((2+z)(1+z)^u L)-c)/(1+qz), c=q^2(1-phi)^u L(-phi), is a positive globally LC polynomial and its POSITIVE primitive is LC at EVERY prefix centre 1<=n<=u-2. No degree/count/capacity cutoff. Proof: all-length weighted binary base, generic primitive-window PREFIX extension, independent global ordinary first-head payment, exact interval quotient correction and robust perturbed junction >=4+11u/15.",
+  "actual": "For EVERY ACTUAL sorted tail V>=3, degree h, length r, weight W=h+r, EVERY binary count u>=h+1, at padding alpha=1 the actual positive slopes are LC at all MOVING centres u+r+1<=N<FIRSTDmode; EVERY actual C shift R>=3 holds at EVERY N>=W+1. Proof uses SINGLE entry m=h, exact raw deficit=primitive(weighted J) ONLY for offsets s>=1, first-mode upper bound, backward integration through correctly scoped head, the existing TWO strict ACTUAL seeds with padding-one defects, then previously proved fixed-padding count propagation and ordinary-F/read joining.",
+  "finite_reduction": "At entry u=h+1 the remaining arbitrary-padding entrance set is NOW ONLY 3<=alpha<=h. Alpha1 and alpha2 are proved at EVERY CI degree, and alpha>=h+1 was already proved. This does NOT establish the remaining short paddings.",
+  "formal_scope": "SIX NEW scoped standard-axiom reports in WeightedDividedCI: ordinary first head, weighted binary primitive first and second heads, correctly normalized nonempty first primitive head, unperturbed weighted junction gap and exact perturbed junction. Prior window/quotient/CI-induction/backward-integration/actual-seed/count/read kernels reused WITHOUT recounting. Prefix-window proof, polynomial identities, spectral estimates, entire CI assembly and identification of actual arms are WRITTEN, not end-to-end Lean formalization. Exact QA independently checks the displayed identities; finite nonfailures are not used as a universal proof.",
+  "remaining": "Residual single-entry paddings 3<=alpha<=h; arbitrary early reference C N<=W; shorter binary counts; general C/A2 and ORIGINAL general unamplified UI all OPEN. General arbitrary-padding full-head deficit LC is FALSE after the first mode, even at exact entry: V=[4,32],m=h=34,alpha19,n63>mode61 has exact negative Q(phi) minor. No original least-counterexample numerical bound upgrade.",
+  "general_original": "OPEN",
+  "general_C": "OPEN",
+  "general_A2": "OPEN",
+  "QA": {
+    "exact_small_weighted_binary_bases": 5,
+    "exact_weighted_binary_first_head_payments": 149,
+    "exact_weighted_binary_constant_update_identities": 149,
+    "exact_entire_weighted_binary_positive_primitive_minors": 11175,
+    "exact_weighted_binary_second_head_payments": 145,
+    "exact_entire_weighted_CI_ordinary_LC_minors": 120123,
+    "exact_weighted_ordinary_first_head_payments": 1200,
+    "exact_weighted_interval_append_quotient_identities": 1200,
+    "exact_weighted_low_primitive_source_identities": 17832,
+    "exact_weighted_robust_X_head_minors": 61216,
+    "exact_weighted_quantitative_last_junction_payments": 1158,
+    "exact_weighted_actual_first_primitive_payments": 1200,
+    "exact_weighted_CI_positive_primitive_prefix_minors": 61216,
+    "exact_prefix_window_boundary_minors": 218125,
+    "weighted_CI_induction_contexts": 1200,
+    "exact_padding_one_primitive_head_identities": 19430,
+    "exact_actual_padding_one_through_first_mode_LC_minors": 15220,
+    "exact_padding_one_all_read_prefix_minimum_C_payments": 39260,
+    "actual_padding_one_entry_contexts": 400
+  },
+  "state_sha256": "3209121fac0270a3dc8665b0aed9d988cf8ffe320f4c370600f88d93d4ab3d05",
+  "postmode_negative_control": {
+    "V": [
+      4,
+      32
+    ],
+    "m": 34,
+    "alpha": 19,
+    "first_A_mode": 61,
+    "n": 63,
+    "minor": [
+      92474729448806994408,
+      -59412110474266913988
+    ]
+  },
+  "sha256": {
+    "weighted_divided_CI_padding_one_proof.tex": "654494cb6d13ea93a44f6d3d264c26a7c602accdf40717fda779cc1880158ba5",
+    "actual_padding_one_CI_entrance.tex": "058625d4135bfac5d7405f27e830df9249a336c6772fea009ef39c68d0952221",
+    "padding_one_weighted_division_research_notes.tex": "57112e4d0139a89d08454a0660100807237dfd525600912ef340b877b8f67dc8",
+    "WeightedDividedCI.lean": "206c3e4acfb2273c42fa4e7cef6283dfbe232ff34b1a5cba8daf7d27e43176a0",
+    "WeightedDividedCI.log": "3e9d7bb79e5a8798dfaa978ba90a186f1ddbee5a0e8c1c5b49c1e9127e00bcd9",
+    "audit_weighted_divided_CI_padding_one.py": "279c00111b04ccfffb3ef9394809881f4fda54365e7184d5b7cac6576a67cca0",
+    "audit_weighted_divided_CI_padding_one.json": "0bc4599066702f78dd18c6e60b32f5db10d12a682912e6e147a64211ebe24967",
+    "verify_weighted_divided_CI_padding_one.py": "ff2e3578c0c48cc1b84abb35ed823194bca0c98fa349b6a74b8b7ee7fe2c84fb",
+    "verify_divided_CI_surplus_three_primitive.py": "4013a85d2d41809a7fbabe672caf8d0c2cde24d221d4bb6a66cbf96a786e3591",
+    "divided_CI_surplus_three_primitive_verification.json": "e661f70c3b263009daa2e753d63288199af039c5bab8169f717f704b6ee4d6ac",
+    "actual_padding_two_CI_entrance.tex": "5aeefc35cc7c0f7f60357b030180250fe6b12839707d47b94e6113cf467f40f6",
+    "binary_CI_two_seed_closure_workbench.tex": "74cabac11d7725f0ca758d71c3934cd4ee354da5d64b53e17beb134796ec702f",
+    "binary_CI_infinite_padding_entrance.tex": "849218e922876a9a328459248297edd1dbab22f8efaf7c9a8a0877a0cef875e3",
+    "infinite_padding_full_deficit_LC.tex": "062aa2d99ab192b2e40a200958dba5b06b7a0e05dbaf16601c70a3dcb0081d78",
+    "lc_positive_primitive_window_closure.tex": "d074a2688d450710691a072efd8a4945d71be0561e3592c91c1f074c28ff7767",
+    "sharpened_multitail_single_entrance.tex": "b3373c11e2e1585ca2227097699a11dcaa710fe41704b032fce18e8b312f8718",
+    "homogeneous_reference_complete_C.tex": "a720be2f70987155161b9f7b101fb1c84d17c260844763a0d23a30796182d338"
+  }
+}

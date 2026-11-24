@@ -1,0 +1,77 @@
+\section{A geometric cut closure from the later positive primitive}
+NEW proof under formal and independent audit; no registration is
+made in this file alone.
+
+Let $0<q<1$ satisfy $q^2+q=1$, and write $\phi=1/q=1+q$.
+Let $b$ be positive LC on the finite interval $0,\ldots,H$, with
+zero extension. Let $M$ be its FIRST mode and $d_n=b_n-b_{n-1}$,
+including $d_{H+1}=-b_H$. Assume $(d_n)^+\mathbf1_{n\ge1}$ is LC.
+This permits an exceptional primitive minor at centre one.
+For every integer $a\ge0$ define
+\[
+ x_n=\sum_{j\ge1}q^j b_{n+j},\quad E_n=b_n+qb_{n-1},\quad
+                         A_n=(x_n-E_{n-a})^+.
+\]
+Then $A$ is LC at every centre $a+2\le n<M$.
+
+\begin{proof}
+On integer indices put
+\[
+ K_a(j)=\begin{cases}
+ q^{-j},&j\le-1,\\
+ q,&0\le j<a,\\
+ q^3,&j=a,\\
+ 0,&j>a.
+ \end{cases}
+\]
+Its nonzero ratios, in order, are $1/q$, then one if that block is
+present, then $q^2$. For $a=0$ there is simply the jump from $1/q$
+to $q^2$. Thus $K_a$ is LC with interval support. Its infinite left
+tail can be truncated below any finite read band; this preserves LC.
+
+The recurrence $x_{n-1}=q(x_n+b_n)$ gives
+$\Delta x_n=q^2x_n-qb_n$. Also
+\[
+ E_{n-a}=\phi b_n-\phi\sum_{k=0}^{a-1}d_{n-k}-qd_{n-a}.
+\]
+Since $q^2\phi=q$, exact substitution gives
+\[
+                 q^2(x_n-E_{n-a})=(K_a*d)_n.          \tag{1}
+\]
+All sums over $d$ are finite. Negative $d$ occur only at indices
+$k>M$. For $n\le M$ these indices use only the geometric left tail
+of $K_a$. Their contribution is $-T\phi^n$, where
+$T=\sum_{k>M}q^k(-d_k)\ge0$. If also $n>a$, the $d_0$ term
+vanishes because $K_a$ has upper support endpoint $a$.
+Consequently on $a<n\le M$ the right side of (1) equals
+\[
+ F_n-T\phi^n,\qquad
+ F=K_a*((d_n)^+\mathbf1_{n\ge1}).                    \tag{2}
+\]
+The sequence $F$ is nonnegative LC by ordinary LC convolution;
+its finite-read truncations agree with this formula.
+
+Dividing by $\phi^n$ preserves LC. For any nonnegative LC triple
+$(l,v,r)$ and constant $T\ge0$, subtracting $T$ and taking positive
+parts preserves LC. If both neighbouring positive parts are nonzero,
+then $l,r>T$; LC forces $v>T$, and the unclipped determinant is
+\[
+ (v-T)^2-(l-T)(r-T)
+   =v^2-lr+T(l+r-2v)\ge0.
+\]
+When $l+r\ge2v$ this follows directly from LC. When $l+r\le2v$,
+rewrite the same determinant as
+$(v-l)^2+(l-T)(2v-l-r)\ge0$. If either neighbouring positive part
+is zero the assertion is automatic. The superlevel support is an
+interval, because the original sequence is LC. Apply this to (2)
+and multiply back by $\phi^n$. Every triple at centre
+$a+2\le n<M$ lies entirely in the exact range $a<n\le M$.
+\end{proof}
+
+This theorem uses LC of the positive primitive of $b$ ITSELF after
+deleting rank zero. LC of the positive primitive of $E$ alone is
+insufficient, as the earlier registered exact non-CI counterexample
+shows. Nothing in that counterexample contradicts this theorem.
+The constant-cut determinant and exact golden scalar transformation
+are checked by \texttt{GoldenPrimitiveCut.lean}; the finite convolution,
+sign support and geometric-tail assembly are written arguments.

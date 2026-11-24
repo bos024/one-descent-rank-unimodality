@@ -1,0 +1,8 @@
+'PhysicalBoundaryGoldenC.previous_CI_units' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhysicalBoundaryGoldenC.degree_two_gap_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhysicalBoundaryGoldenC.positive_head_gap_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhysicalBoundaryGoldenC.multiple_factor_norm_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhysicalBoundaryGoldenC.large_degree_row_geometry' depends on axioms: [propext, Quot.sound]
+'PhysicalBoundaryGoldenC.nonincreasing_CI_row_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhysicalBoundaryGoldenC.boundary_C_read_guard' depends on axioms: [propext, Quot.sound]
+'PhysicalBoundaryGoldenC.four_gap_all_shift_guard' depends on axioms: [propext, Quot.sound]

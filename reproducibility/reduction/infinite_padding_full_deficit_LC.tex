@@ -1,0 +1,110 @@
+\section{Extending the infinite-padding deficit LC to the entire tail}
+This is a further written unbounded refinement of the registered
+infinite-padding theorem. It does NOT handle the finite-padding deficit
+LC target or solve general C/A2/original UI. Its registration is separate.
+
+Use the notation $Q_u,q$ of
+\texttt{binary\_CI\_infinite\_padding\_entrance.tex}.
+
+\begin{lemma}[The final binomial-division kernel row]
+For $u\ge3$, $s=u-1$, and EVERY $0\le k\le s$,
+\[
+ Q_sQ_k-Q_{s+1}Q_{k-1}
+       \ge q^s(Q_{k+1}+2qQ_k+q^2Q_{k-1}).             \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+First let $u\ge6$. The earlier ULC ratio bound gives
+\[
+ Q_sQ_k-Q_{s+1}Q_{k-1}\ge\frac12 Q_sQ_k,
+\]
+since its exact factor is $(u-k)(u+1)/(u(u-k+1))\ge1/2$;
+for $k=0$ the factor is one directly.
+Also $Q_s=(1-(1-q)^u)/q\ge1+q^2+q^4=4-4q\ge3/2$,
+using $q<5/8$, which follows from $q^2+q=1$.
+The prior bound $T_k/Q_k\le u+q$ holds up to $k=u-2$.
+For $k=u-1$, the ULC upper bound $r_u\le(u-q)/u^2\le1$
+and the earlier lower ratio bound $r_{u-1}\ge1/(u-1)$ give
+\[
+ T_{u-1}/Q_{u-1}\le1+2q+q^2(u-1)\le u+q.
+\]
+Finally $g_u=q^{u-1}(u+q)$ decreases for $u\ge6$, since
+$g_{u+1}/g_u\le(2/3)(7/6)=7/9$. At six,
+$g_6\le(2/3)(2/5)^2(20/3)=32/45<3/4$.
+Thus the right side of (1) is at most $(3/4)Q_k$, paid by
+$(1/2)Q_sQ_k$.
+More precisely the displayed estimates give the uniform strict margin
+$(7/180)Q_k$ for $u\ge6$.
+
+For the twelve remaining cases, the exact margins in basis $(1,\phi)$
+are as follows, in order $k=0,\ldots,u-1$:
+\[
+\begin{array}{c|l}
+u&\text{margins}\\\hline
+3&(5,-3),(26,-15),(27,-16)\\
+4&(28,-17),(81,-48),(103,-61),(55,-33)\\
+5&(38,-23),(264,-160),(574,-349),(588,-359),(277,-170).
+\end{array}
+\]
+Using $\phi<13/8$, their minimum lower bounds are respectively
+$1/8,3/8,5/8$, all positive.
+\end{proof}
+
+\begin{corollary}[The last robust coefficient centre]
+If $L$ is nonnegative LC, $L_0=1$, and $\deg L\le u-1$, then
+for $B=LQ_u$ and $s=u-1$,
+\[
+ B_s^2-B_{s-1}B_{s+1}\ge q^s(B_{s+1}+2qB_s+q^2B_{s-1}).
+                                                               \tag{2}
+\]
+\end{corollary}
+\begin{proof}
+Retain the first Cauchy--Binet row exactly as in the registered
+proof and apply (1) at all $k=s-i$. The formerly missing term is
+$L_{s+1}=L_u=0$ by the degree bound. No bound on $L_1$ is needed
+at this LAST centre alone.
+\end{proof}
+
+\begin{theorem}[Entire infinite-padding geometric deficit LC]
+For every CI $L=\prod[t]$ with $t\ge3$, degree $h$, and $m\ge h$,
+put $C=L\sum_{k=0}^m(z+z^2)^k$ and $b_n=\phi C_{n-1}-C_n$.
+Then $b_n$ is positive throughout $m+1\le n\le\deg C+1$,
+zero after that support, and LC at EVERY centre $n\ge m+2$.
+Consequently truncating it below $m+1$ produces a globally LC,
+nonnegative finite polynomial.
+\end{theorem}
+\begin{proof}
+Positivity follows from the registered $C$ tail LC and its strict
+sub-$\phi$ ratio at $m+1$.
+First consider the binary polynomial alone. Its deficit is positive
+from $m+1$ through $2m+1$, and its LC at $m+2,\ldots,2m$
+is exactly the registered robust-budget argument with numerator
+$L=1$. The endpoint $2m+1$ is automatic, having next value zero.
+Thus its truncation below $m+1$ is globally LC.
+Convolve this truncation with $L$. Every triple of the actual full
+deficit agrees with it from centre $m+h+2$ onward, so ordinary LC
+convolution proves that far tail.
+
+In the remaining band $m+2\le n\le m+h+1$, set $s=n-m-1$.
+For $1\le s\le h$ use the registered robust budget at $s\le u-2$,
+where $u=m+1$. The ONLY extra case is $m=h$, $s=h=u-1$;
+it is paid by (2). In each case the exact geometric-deficit minor
+is the robust $B$ minor plus the bounded alternating spectral term,
+whose magnitude is at most $q^sT_s$. This proves LC on the entire
+remaining band. No finite-padding sequence is substituted here.
+\end{proof}
+
+\paragraph{Formal and arithmetic scope.}
+\texttt{InfinitePaddingFullDeficit.lean} checks five new scoped
+standard-axiom statements: the golden-root rational bound, the final
+ULC ratio factor, the ENTIRE unbounded geometric-power estimate,
+the quantitative large-row payment, and all twelve small exact
+margin inequalities. The quotient-polynomial and Cauchy--Binet
+identifications, convolution assembly and support argument are the
+written proof, not an end-to-end actual-polynomial Lean theorem.
+\texttt{audit\_infinite\_padding\_full\_deficit\_LC.py} independently
+checks 7257 final-row budgets, 1200 generic LC last-centre budgets
+without an $L_1$ bound, and 359943 entire-tail deficit minors on
+2500 actual CI contexts. These finite checks corroborate, rather
+than replace, the unbounded argument. Finite short padding, general
+C, A2 and the original unamplified conjecture remain OPEN.

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_EXACT_SIGNED_BINARY_CI_TAIL_IDENTITIES_AND_ENTIRE_TWO_SEED_FORMULAS",
+  "counts": {
+    "all_signed_actual_tail_coefficients_including_negative_tail": 255857,
+    "unbounded_seed_formula_instances_exact_QA": 1618,
+    "actual_tail_contexts": 2400
+  },
+  "sha256": "3a77efe9c0c63f3088f1f8e58049d534cf77919a2ff95f16c8eebd73e7f53956",
+  "seconds": 1.765000000001237,
+  "scope": "Written all-parameter identities and two strict entrance seeds, with three scoped Lean kernels. Generic two-seed LC closure remains OPEN; general C/A2/original UI remain OPEN."
+}

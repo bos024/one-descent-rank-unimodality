@@ -1,0 +1,45 @@
+{
+  "status": "PASS_UNBOUNDED_STRICT_HEAD_PAYMENT_AND_INDEPENDENT_REVIEW",
+  "proof": "agent_mixed_strict_head_74.tex",
+  "lean": "agent_mixed_strict_head_74.lean",
+  "lean_log": "agent_mixed_strict_head_74.log",
+  "lean_exit_code": 0,
+  "new_scoped_reports": 9,
+  "errors": 0,
+  "warnings": 0,
+  "axiom_allowlist": ["propext", "Classical.choice", "Quot.sound"],
+  "exact_QA": "agent_mixed_strict_head_74_verify.py",
+  "exact_QA_result": "agent_mixed_strict_head_74_verify.json",
+  "diagnostic_counts": {
+    "actual_opposite_profiles": 20,
+    "actual_strict_head_coefficients": 43675,
+    "main_box_differences_dominated": 43675,
+    "integer_budget_crosschecks": 1927
+  },
+  "unbounded_result": {
+    "absolute_source_cutoff": 74,
+    "sharper_head_bound": "floor((37*kappa-111)/2)",
+    "main_degree_minimum": "1+(kappa-2)(kappa-1)/2",
+    "other_degree_minimum": "1+(kappa-3)(kappa-2)/2",
+    "head_statement": "Actual opposite signed ordinary differences are >=1 throughout the complete head prefix.",
+    "payment": "H is the coefficient of raw_owner_source * signed_opposite_difference. Every head term is nonnegative; the owner r+1 term pays the entire absolute curvature.",
+    "source_scope": "Positive mixed recovery with nondecreasing ENTIRE opposite deficit prefix. Both strict positive windows retained.",
+    "OLD_scope": "Positive recoveries need no OLD A2. Full S for nonpositive recoveries uses the usual nonnegative OLD head budget.",
+    "remaining_finite_source_prefix_positive_recovery_bound": "kappa<=73"
+  },
+  "independent_reviews": {
+    "root": "Confirmed raw-source coefficient identity, strict opposite main-box prefix, both-window boundary and sharpened 74 head bound.",
+    "audit_linear_clipping": "Independently confirmed the full 74 arithmetic, initial interval largest case, derivative domination from shifted CI centers, and the r=-1 boundary via the SECOND positive window."
+  },
+  "earlier_valid_certificates": [
+    "The minimum-degree suffix 383 certificate remains valid.",
+    "The full-staircase suffix 239 certificate and its five reports remain valid.",
+    "The strict ordinary-head 96 estimate is a weaker consequence of the new 74 result and is not counted as a separate new report."
+  ],
+  "scope_limits": [
+    "The CI primitive SUPPORT formula is used; primitive right-heaviness/convexity beyond support is not needed in this sharper argument.",
+    "Actual source birth/reflection, positive CI expansion and raw relative-head bridge are written/reused inputs, not end-to-end Lean composition formalizations.",
+    "Failure of the sufficient degree budget at73 is not an actual S counterexample or a sharpness claim.",
+    "The finite kappa<=73 verification is incomplete; general S/C/A2 and original UI remain open."
+  ]
+}

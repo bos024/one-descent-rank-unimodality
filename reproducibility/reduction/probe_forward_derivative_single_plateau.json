@@ -1,0 +1,11 @@
+{
+  "status": "FINITE_QA_ONLY_STRICT_RISING_RULE",
+  "counts": {
+    "complete_jet_profiles": 657394,
+    "wide_actual_profiles": 15000,
+    "interior_flat_edges": 1333
+  },
+  "failures": [],
+  "seconds": 18.485000000000582,
+  "scope": "Tests proposed strict growth of D before FIRST global mode except possibly at lastcap+1. Unbounded proof must be checked separately. Original UI OPEN."
+}

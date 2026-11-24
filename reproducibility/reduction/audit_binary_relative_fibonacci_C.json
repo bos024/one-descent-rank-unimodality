@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXACT_BINARY_RELATIVE_FIBONACCI_AND_C_QA",
+  "counts": {
+    "actual_terminal_trims": 2950,
+    "actual_relative_LC": 158598,
+    "arbitrary_trims": 35000,
+    "arbitrary_tail_LC": 1029745,
+    "arbitrary_strict_tail_LC": 994745,
+    "arbitrary_relative_LC": 2202245,
+    "exact_model_polynomial_coefficients": 13572,
+    "exact_model_scalar_payments": 1416,
+    "rational_density_C": 305839,
+    "actual_binary_C": 3839164
+  },
+  "seconds": 2.875,
+  "scope": "Finite exact diagnostics only. Arbitrary terminal trimming, rational relative-LC class and all-index model formulas are tested separately. Unbounded proofs require companion TeX/Lean; general C, A2 and original conjecture are not proved here."
+}

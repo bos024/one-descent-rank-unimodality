@@ -1,0 +1,22 @@
+{
+  "status": "EXACT_QA_PASS_COMPLETE_ACTUAL_THREE_FOUR_C_AND_A8_ORIGINAL_FAMILY",
+  "counts": {
+    "ALLcount_actual_three_four_hosts": 1078,
+    "ALLcurrent_COMPLETEworst_prefix_C_reads": 381408,
+    "logical_ALLshift_C_reads": 99837403,
+    "SMALLthree_UNBOUNDEDfour_QA_hosts": 484,
+    "actual_FULL_A2_pairs": 126,
+    "actual_Q_guarded_tail_edges": 16651,
+    "ENTIRE_signed_source_windows": 560,
+    "actual_A1_and_ENTIRE_positive_source_hosts": 112,
+    "A8_ALLthree_four_ORIGINAL_ORIGINAL_cores": 112,
+    "A8_ALLthree_four_ORIGINAL_BOTH_relative_polynomials": 224,
+    "A8_ALLthree_four_ORIGINAL_coefficient_comparisons": 90894,
+    "A8_heavier_append_ORIGINAL_ORIGINAL_cores": 14,
+    "A8_heavier_append_ORIGINAL_BOTH_relative_polynomials": 28,
+    "A8_heavier_append_ORIGINAL_coefficient_comparisons": 12216
+  },
+  "state_sha256": "2aff2c5e812dcff0e1729222e05c7cc806384f3aa0120b96488b406815929b85",
+  "seconds": 2.7339999999967404,
+  "scope": "ALLalpha/r/s actualcompleteC proofusesanalyticr>=50+COMPLETE96ordinaryentrances/207propercutpredicates/224oldpairs,thenWHOLEfourheredity. ALLthree/fourcountsunrestricted. A8ORIGINALcore/BOTHrelativesANYstrictpeak+ONEheavierappend. ThisextraQAisNOTfinitepremise. Binaryprefixu>=1/generaloriginal/C/A2remainOPEN."
+}

@@ -1,0 +1,127 @@
+\section{An unscaled divided-binomial head and a fast-source LC comparison}
+These are unbounded auxiliary statements. They do not complete a
+general CI crossing, general C, A2 or original coefficient unimodality.
+The scoped Lean kernels and independent QA are recorded separately.
+Every nonnegative LC numerator below has INTERVAL SUPPORT: no internal
+zeros. This is the hypothesis required for its Toeplitz minors.
+
+\paragraph{Unscaled kernel theorem.}
+Let $u\ge32$, $Q=Q_u$ be the degree-$u$ truncation of
+$(1+z)^u/(1+qz)$, $q^2+q=1$, $q>0$. Put
+$T_k=Q_{k+1}+2qQ_k+q^2Q_{k-1}$ and
+$K(s,k)=Q_sQ_k-Q_{s+1}Q_{k-1}$. Then
+\[
+ K(s,k)\ge(8/5)T_k\quad
+                (2\le s\le u-2,\ 1\le k\le s).      \tag{1}
+\]
+The registered ULC order is $u$, not $u-1$. Its exact ratio
+comparison gives
+\[
+ K(s,k)\ge Q_sQ_k
+       \frac{(u+1)(s+1-k)}{(s+1)(u-k+1)}.             \tag{2}
+\]
+If $s\le u-3$, this factor is at least
+$4(u+1)/(u+2)^2$. Indeed its comparison to
+$(u+1)/((s+1)(u-s+1))$ reduces to $(s-k)(u-s)\ge0$;
+the second comparison is the square $(u-2s)^2\ge0$.
+The registered bounds $Q_s\ge\binom{u-1}{2}$ and
+$T_k/Q_k\le u+q$ now pay (1), because
+\[
+ (8/5)(u+2)^2(u+q)\le2(u+1)(u-1)(u-2).
+\]
+After $q\le2/3$, its margin is the polynomial
+$6u^3-172u^2-190u-4$; at $u=32+x$ this equals
+$6x^3+404x^2+7234x+14396>0$.
+
+At $s=u-2$, the exact endpoint formula is
+$Q_s=\phi u-\phi^2+\phi^2q^{2u}\ge3u/2$.
+For $2k\le u$, the factor in (2) is at least $2/3$.
+The proof is $u^2-1-(u+5)k\ge0$. Also
+$Q_{k+1}/Q_k\le(u-q)/2$ and
+$Q_{k-1}/Q_k\le k/(u-k)\le1$, hence
+$T_k/Q_k\le u/2+2$. The payment is
+$u\ge(8/5)(u/2+2)$.
+For $2k>u$, the factor is at least $1/3$.
+Here ULC gives $Q_{k+1}/Q_k\le1$ and the positive expansion
+gives $Q_{k-1}/Q_k\le(u-2)/2$. Thus
+$T_k/Q_k\le u/5+29/15$ and
+$u/2\ge(8/5)(u/5+29/15)$ pays the row. This proves (1).
+
+\paragraph{Unscaled convolution theorem.}
+If $N$ is nonnegative LC with interval support, $N_0=1$,
+$N_1\le u/2$, $\deg N\le u-3$, and $B=NQ_u$, then
+\[
+ B_s^2-B_{s-1}B_{s+1}\ge(8/5)
+              (B_{s+1}+2qB_s+q^2B_{s-1})
+                           \quad(2\le s\le u-2).    \tag{3}
+\]
+Retain the same first-intermediate-row terms in the registered
+Cauchy--Binet expansion. Equation (1) pays all rows $k\ge1$.
+At $s\le u-3$, row zero and its omitted coefficient are paid by
+\[
+ Q_s\ge\binom{u-1}{2}\ge(8/5)(u+q+N_1),
+ \qquad N_{s+1}\le N_1N_s.
+\]
+At $s=u-2$, both $N_s$ and $N_{s+1}$ vanish by the degree
+bound; no zero-row payment is required. Every omitted Toeplitz term
+is nonnegative. This completes the unbounded written proof of (3).
+
+\paragraph{Its precise natural-crossing application.}
+For a minimal crossing let $h=u+\delta$, $\delta\ge3$,
+$c=\psi^uL(-\phi)$ and $L=L_0[t]$, with $t$ largest.
+At every primitive centre $n\ge\delta+1$,
+\[
+ |\phi^2c|q^{n-1}\le\phi^2(2q^2)^r\le4q^2<8/5.
+\]
+When $\delta+1\le n\le t-2$, its old degree
+$h_0=u+\delta-t+1$ is at most $u-3$. Thus (3) pays every
+such primitive centre also satisfying $n\le u-2$, as well as
+the corresponding ordinary quotient centre. The read entries are
+positive, since the atom is at most $4q^2$ on their whole read band
+and $Q_j\ge\phi(1-q^{2u})>8/5$ even at rank $u-1$.
+The first natural minor, the interval endpoint junctions and the
+longer actual-source startup remain separate; no complete arbitrary
+crossing theorem is inferred from these inner-head payments.
+
+\paragraph{Fast-source theorem, including positive clipping.}
+Let $x_-,x,x_+\ge0$, $x^2\ge x_-x_+$, and
+$x\le R x_-$ with $R>0$. Let $e_-,e,e_+\ge0$ satisfy
+$e\ge2R e_-$ and $e_+\ge2R e$. Then the triple
+\[
+ ((x_--e_-)^+,(x-e)^+,(x_+-e_+)^+)
+\]
+is LC. If a neighbouring positive part is zero this is immediate.
+Otherwise $x_->e_-$ and $x_+>e_+$. If $x\le e$, ordinary LC
+and $x\le R x_-$ would give $x_+\le R x\le R e\le e_+$,
+a contradiction. Thus all three raw differences are positive.
+Their minor equals
+\[
+ M_x+(x_--e_-)e_+-2xe+x_+e_-+e^2
+ \ge M_x+x_+e_-+e(e-2R e_-)\ge0.
+\]
+This proof uses the FAST SOURCE inequalities themselves, and does
+not assert that arbitrary LC subtraction preserves LC.
+
+\paragraph{An unconditional early source window.}
+For ANY polynomial $N\ge0$ and integer $u\ge0$, the coefficients
+of $E=(1+z)^uN$ satisfy
+\[
+ jE_j\ge(u-j+1)E_{j-1}\quad(j\ge1).
+\]
+The exact positive identity is
+$(1+z)E'-uE=(1+z)^{u+1}N'$. Thus for $R\le5/3$,
+the fast-source theorem applies at source centre $j$ whenever
+$13(j+1)\le3(u+1)$, provided the independently needed positive
+LC background triple and ratio bound $x/x_-\le R$ hold there.
+In particular it can pay early startup rows of a genuine binomial-CI
+source against a proved subgolden LC tail. No background LC premise
+is silently removed.
+
+\paragraph{Verification and scope.}
+\texttt{UnscaledHeadFastSource.lean} checks nine unbounded algebraic,
+factor, penultimate-row, clipped-minor and source-growth implications.
+The registered ULC/convolution inputs, positive differential identity,
+Toeplitz assembly and actual inner-head identification are written.
+No end-to-end Lean statement about arbitrary composition ideals is
+claimed. Finite diagnostics of natural minimal-crossing quotients
+are recorded as diagnostics, not as a proof of all their entrances.
